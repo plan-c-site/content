@@ -1,0 +1,6 @@
+[submodule "content"]
+	path = content
+	url = https://github.com/plan-c-site/content.git
+[submodule "website"]
+	path = website
+	url = https://github.com/plan-c-site/website.git
