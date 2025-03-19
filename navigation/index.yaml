@@ -12,5 +12,11 @@ navBar:
     - discriminant: section
       value:
         label: FAQ
-        children: []
+        children:
+          - discriminant: section
+            value:
+              label: A Child Section
+              children:
+                - label: Some link
+                  url: /
 footer: {}
