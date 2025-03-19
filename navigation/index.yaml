@@ -3,3 +3,14 @@ messageBar:
   mainLink: /
   quickExitText: Quick Exit
   quickExitLink: https://weather.com
+navBar:
+  links:
+    - discriminant: link
+      value:
+        label: Find Pills
+        url: /
+    - discriminant: section
+      value:
+        label: FAQ
+        children: []
+footer: {}
