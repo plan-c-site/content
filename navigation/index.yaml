@@ -1,0 +1,5 @@
+messageBar:
+  text: Message Bar Text >
+  mainLink: /
+  quickExitText: Quick Exit
+  quickExitLink: https://weather.com
