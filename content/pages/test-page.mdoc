@@ -1,3 +1,22 @@
 ---
-title: test page
+title: test-page
 ---
+{% heroSection
+   image="/images/test-page/c879ca67f1ee53b2051f025346a64a38.png"
+   imageSide="right"
+   color="blue"
+   imageBackgroundColor="cyan" %}
+## hello
+{% /heroSection %}
+
+{% bodySection centered=true color="red" textSize="medium" %}
+# A Section
+
+of text
+
+{% bodySection centered=false color="green" textSize="small" %}
+Inner Section
+{% /bodySection %}
+
+Outer again
+{% /bodySection %}
