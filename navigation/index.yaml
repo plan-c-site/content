@@ -5,13 +5,9 @@ messageBar:
   quickExitLink: https://weather.com
 navBar:
   links:
-    - discriminant: link
-      value:
-        label: Find Pills
-        url: /
     - discriminant: section
       value:
-        label: FAQ
+        label: Get involved
         children:
           - discriminant: section
             value:
@@ -19,4 +15,48 @@ navBar:
               children:
                 - label: Some link
                   url: /
+    - discriminant: section
+      value:
+        label: Abortion pills
+        children:
+          - discriminant: link
+            value:
+              label: Search by state
+              url: /
+          - discriminant: link
+            value:
+              label: FAQ
+              url: /
+          - discriminant: link
+            value:
+              label: Pills in advance
+              url: /
+          - discriminant: link
+            value:
+              label: Abortion pill instructions
+              url: /
+          - discriminant: link
+            value:
+              label: Support & resources
+              url: /
+          - discriminant: link
+            value:
+              label: Blogs
+              url: /
+    - discriminant: section
+      value:
+        label: About
+        children:
+          - discriminant: link
+            value:
+              label: About Plan C
+              url: /
+    - discriminant: link
+      value:
+        label: Donate
+        url: /
+    - discriminant: link
+      value:
+        label: Español
+        url: /
 footer: {}
