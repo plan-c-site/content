@@ -7,16 +7,6 @@ navBar:
   links:
     - discriminant: section
       value:
-        label: Get involved
-        children:
-          - discriminant: section
-            value:
-              label: A Child Section
-              children:
-                - label: Some link
-                  url: /
-    - discriminant: section
-      value:
         label: Abortion pills
         children:
           - discriminant: link
@@ -43,6 +33,16 @@ navBar:
             value:
               label: Blogs
               url: /
+    - discriminant: section
+      value:
+        label: Get involved
+        children:
+          - discriminant: section
+            value:
+              label: A Child Section
+              children:
+                - label: Some link
+                  url: /
     - discriminant: section
       value:
         label: About
