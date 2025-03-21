@@ -55,8 +55,4 @@ navBar:
       value:
         label: Donate
         url: /
-    - discriminant: link
-      value:
-        label: Español
-        url: /
 footer: {}
