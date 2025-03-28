@@ -202,3 +202,23 @@ Download a condensed version of this page, formatted to print or share.
    endIcon=false /%}
 {% /layoutSection %}
 {% /bodySection %}
+
+{% bodySection
+   centered=false
+   fullWidth=true
+   color="blue"
+   textSize="medium" %}
+{% layoutSection
+   type={discriminant: "flex", value: {direction: "flex-col", warp: true}}
+   justify="start"
+   align="center"
+   gap=2 %}
+# Our research and work has been featured in:
+
+{% layoutSection
+   type={discriminant: "grid", value: {columns: {discriminant: "auto", value: 5}}}
+   justify="center"
+   align="center"
+   gap=2 /%}
+{% /layoutSection %}
+{% /bodySection %}
