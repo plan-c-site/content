@@ -1,4 +1,16 @@
 ---
 title: Body section test
 ---
-{% bodySection centered=false color="beige" textSize="medium" /%}
+{% cardLayoutSection color="beige" %}
+{% cardSection image={discriminant: ""} imageOnly=false %}
+Test etc.
+{% /cardSection %}
+
+{% cardSection image={discriminant: ""} imageOnly=false %}
+Test 2
+{% /cardSection %}
+
+{% cardSection image={discriminant: ""} imageOnly=false %}
+Test 3
+{% /cardSection %}
+{% /cardLayoutSection %}
