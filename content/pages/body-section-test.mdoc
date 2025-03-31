@@ -1,10 +1,14 @@
 ---
 title: Body section test
 ---
-{% bodySection
-   centered=false
-   fullWidth=false
+{% horizontalSection
    color="beige"
-   textSize="medium" %}
-# 
-{% /bodySection %}
+   icon=""
+   image={discriminant: ""}
+   link={}
+   equalSplit=false
+   direction="flex-row" %}
+{% faqSection color="beige" embedded=false /%}
+
+{% faqSection color="beige" embedded=false /%}
+{% /horizontalSection %}
