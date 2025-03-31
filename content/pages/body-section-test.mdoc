@@ -21,10 +21,6 @@ title: Body section test
    embedded=false /%}
 {% /horizontalSection %}
 
-{% bodySection
-   centered=false
-   fullWidth=false
-   color="beige"
-   textSize="medium" %}
-# Lorem ipsum dolor sit amet
-{% /bodySection %}
+{% cardSection
+   image={discriminant: "one-off", value: {image: "/images/body-section-test/community_doc.jpg"}}
+   imageOnly=true /%}
