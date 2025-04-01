@@ -1,6 +1,14 @@
 ---
 title: Body section test
 ---
+{% heroSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="cyan" %}
+# 
+{% /heroSection %}
+
 {% horizontalSection
    color="beige"
    title="Test"
@@ -32,7 +40,7 @@ We have a new 501c3 fiscal sponsor, Possibility Labs (EIN 85-3989363).&nbsp;See 
 {% logoBanner
    title="Plan C has appeared in the following things:"
    color="blue"
-   logos=[{discriminant: "one-off", value: {image: "/images/body-section-test/Bloomberg_logo_violetRGB.png"}}, {discriminant: "uploaded", value: "logo-educational-foundation-of-america"}, {discriminant: "uploaded", value: "logo-educational-foundation-of-america"}] /%}
+   logos=[{discriminant: "one-off", value: {image: "/images/body-section-test/Bloomberg_logo_violetRGB.png"}}, {discriminant: "uploaded", value: "logo-educational-foundation-of-america"}, {discriminant: "uploaded", value: "logo-educational-foundation-of-america"}, {discriminant: "uploaded", value: "logo-educational-foundation-of-america"}] /%}
 
 {% cardLayoutSection color="beige" %}
 {% cardSection
