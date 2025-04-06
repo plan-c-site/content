@@ -12,3 +12,7 @@ title: blog-list
 {% articleList
    type={discriminant: "simple"}
    filtering={discriminant: "manual", value: ["a-blog-post", "another-blog-post"]} /%}
+
+{% articleList
+   type={discriminant: "simple"}
+   filtering={discriminant: "category", value: "blog"} /%}
