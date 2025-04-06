@@ -9,4 +9,6 @@ title: blog-list
 # Blog Example
 {% /heroSection %}
 
-{% articleList /%}
+{% articleList
+   type={discriminant: "simple"}
+   filtering={discriminant: "manual", value: ["a-blog-post", "another-blog-post"]} /%}
