@@ -9,10 +9,10 @@ title: blog-list
 # Blog Example
 {% /heroSection %}
 
-{% articleList
+{% postList
    type={discriminant: "simple"}
    filtering={discriminant: "manual", value: ["a-blog-post", "a-partnership-post"]} /%}
 
-{% articleList
+{% postList
    type={discriminant: "headlines", value: {color: "green", buttonLabel: "Link to blog post", pagination: 2}}
    filtering={discriminant: "category", value: {category: "blog"}} /%}
