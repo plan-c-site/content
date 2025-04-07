@@ -9,6 +9,20 @@ title: another-test-file
 asdawfwaafwfwaawfaw
 {% /heroSection %}
 
+{% horizontalSection
+   color="red"
+   title="Plan C Press"
+   text="Some test articles filtered"
+   icon=""
+   image={discriminant: ""}
+   link={}
+   equalSplit=false
+   direction="flex-col" %}
+{% articleList
+   pagination=10
+   filtering={discriminant: "category", value: {category: "plan-c"}} /%}
+{% /horizontalSection %}
+
 {% bodySection
    centered=false
    fullWidth=false
