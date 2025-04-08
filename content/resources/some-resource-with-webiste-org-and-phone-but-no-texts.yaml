@@ -1,7 +1,7 @@
-title: Some Resource With Webiste, org and phone but no texts
+title: Some Resource With website, org and phone but no texts
 summary: free and confidential help understanding how to get pills and how to use them.
 author: Organization
-webiste: example.com
+website: https://example.com
 phone:
   number: +1-555-555-5555
   canText: false

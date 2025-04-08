@@ -1,6 +1,6 @@
 title: Some Resource With url only
 summary: free and confidential help understanding how to get pills and how to use them.
-webiste: example.com
+website: https://example.com
 phone:
   canText: false
 icon: stethoscope

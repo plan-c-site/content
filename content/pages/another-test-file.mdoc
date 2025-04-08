@@ -41,17 +41,17 @@ asdawfwaafwfwaawfaw
 And some text for an embeded resource item.
 
 {% resourceItem
-   resource="some-resource-with-webiste-org-and-phone-but-no-texts"
+   resource="some-resource-with-website-org-and-phone-but-no-texts"
    type="embedded" /%}
 {% /bodySection %}
 {% /horizontalSection %}
 
 {% resourceList
-   resources=["some-resource-with-url-only", "some-resource-with-webiste-and-org", "some-resource-with-webiste-org-and-phone-but-no-texts", "some-resource-with-webiste-org-and-phone"]
+   resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone"]
    type={discriminant: "simple"} /%}
 
 {% resourceList
-   resources=["some-resource-with-url-only", "some-resource-with-webiste-and-org", "some-resource-with-webiste-org-and-phone-but-no-texts", "some-resource-with-webiste-org-and-phone"]
+   resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone"]
    type={discriminant: "carousel", value: {color: "red", title: "Carousel resource list", text: "some text in the carousel header", icon: "minus"}} /%}
 
 {% bodySection

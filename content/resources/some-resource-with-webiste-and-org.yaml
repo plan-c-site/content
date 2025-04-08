@@ -1,7 +1,7 @@
-title: 'Some Resource With Webiste and org '
+title: 'Some Resource With website and org '
 summary: free and confidential help understanding how to get pills and how to use them.
 author: Organization
-webiste: example.com
+website: https://example.com
 phone:
   canText: false
 icon: stethoscope
