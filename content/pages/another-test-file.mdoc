@@ -23,6 +23,37 @@ asdawfwaafwfwaawfaw
    filtering={discriminant: "category", value: {category: "plan-c"}} /%}
 {% /horizontalSection %}
 
+{% horizontalSection
+   color="green"
+   title="Simple Resource Items"
+   icon=""
+   image={discriminant: ""}
+   link={}
+   equalSplit=false
+   direction="flex-col" %}
+{% resourceItem resource="some-resource-with-url-only" type="block" /%}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+And some text for an embeded resource item.
+
+{% resourceItem
+   resource="some-resource-with-webiste-org-and-phone-but-no-texts"
+   type="embedded" /%}
+{% /bodySection %}
+{% /horizontalSection %}
+
+{% resourceList
+   resources=["some-resource-with-url-only", "some-resource-with-webiste-and-org", "some-resource-with-webiste-org-and-phone-but-no-texts", "some-resource-with-webiste-org-and-phone"]
+   type={discriminant: "simple"} /%}
+
+{% resourceList
+   resources=["some-resource-with-url-only", "some-resource-with-webiste-and-org", "some-resource-with-webiste-org-and-phone-but-no-texts", "some-resource-with-webiste-org-and-phone"]
+   type={discriminant: "carousel", value: {color: "red", title: "Carousel resource list", text: "some text in the carousel header", icon: "minus"}} /%}
+
 {% bodySection
    centered=false
    fullWidth=false
