@@ -24,9 +24,22 @@ Plan C is a public health creative campaign on abortion pill access, started in 
    slug="recent-plan-c-press"
    toc={discriminant: true, value: "Recent Plan C press"} /%}
 
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Recent Plan C press" icon="" %}
+{% inContentButton
+   label="View all recent press"
+   icon=""
+   size="standard"
+   background="green"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false /%}
+{% /sectionHeader %}
+
 {% articleList
    pagination=4
    filtering={discriminant: "category", value: {category: "plan-c"}} /%}
+{% /horizontalSplit %}
 
 {% tocAnchor
    slug="other_abortion_news"
