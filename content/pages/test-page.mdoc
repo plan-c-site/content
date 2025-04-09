@@ -100,7 +100,23 @@ Some text is here
    text="with some text and stuff going in there"
    icon=""
    image={discriminant: ""}
-   link={} /%}
+   link={} %}
+Test some text
+
+{% inContentImage
+   image={discriminant: "uploaded", value: "mailbox"}
+   maxWidth=100
+   newTab=false /%}
+
+{% inContentButton
+   label="A Button"
+   icon="arrowDown"
+   size="standard"
+   background="beige"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false /%}
+{% /sectionHeader %}
 
 {% flexSection direction="flex-row" noWrap=false %}
 {% bodySection
