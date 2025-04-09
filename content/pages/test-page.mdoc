@@ -93,7 +93,24 @@ Some text is here
 {% horizontalSplit noHeader=false %}
 {% sectionHeader
    color="blue"
-   title="A Section" /%}
+   title="A Section"
+   icon="" %}
+Test some text
+
+{% inContentImage
+   image={discriminant: "uploaded", value: "mailbox"}
+   maxWidth=100
+   newTab=false /%}
+
+{% inContentButton
+   label="A Button"
+   icon="arrowDown"
+   size="standard"
+   background="beige"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false /%}
+{% /sectionHeader %}
 
 {% flexSection direction="flex-row" noWrap=false %}
 {% bodySection
