@@ -159,14 +159,15 @@ Learn more about these options on&nbsp;Plan C’s Guide&nbsp;and&nbsp;ineedana.c
    embedded=true /%}
 {% /bodySection %}
 
-{% horizontalSection
+{% horizontalSplit noHeader=true %}
+{% sectionHeader
    color="beige"
-   title="Left 50%"
-   icon="arrowUp"
+   title="Left (50%)"
+   text="test"
+   icon="minus"
    image={discriminant: ""}
-   link={}
-   equalSplit=true
-   direction="flex-col" %}
+   link={} /%}
+
 {% sectionHeader
    color="beige"
    title="Right 50%"
@@ -174,7 +175,7 @@ Learn more about these options on&nbsp;Plan C’s Guide&nbsp;and&nbsp;ineedana.c
    icon="phone"
    image={discriminant: ""}
    link={} /%}
-{% /horizontalSection %}
+{% /horizontalSplit %}
 
 {% tocAnchor slug="testimonials" toc={discriminant: false} /%}
 
@@ -202,42 +203,6 @@ In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Pl
 {% /timelineSection %}
 
 {% tocAnchor slug="todo" toc={discriminant: true, value: "ToDo"} /%}
-
-{% horizontalSection
-   color="cyan"
-   title="Todo"
-   icon=""
-   image={discriminant: ""}
-   link={}
-   equalSplit=false
-   direction="flex-col" %}
-{% toDoSection
-   color="beige"
-   number=1
-   numberBackgroundColor="pink"
-   title="Check your Dates"
-   image={discriminant: "one-off", value: {image: "/images/test-page/image 305.png"}} %}
-Use a calendar or a gestational age calculator. Measure from the first day of your last period to today.
-{% /toDoSection %}
-
-{% toDoSection
-   color="beige"
-   number=2
-   numberBackgroundColor="blue"
-   title="Check your Dates"
-   image={discriminant: "one-off", value: {image: "/images/test-page/image 305.png"}} %}
-Use a calendar or a gestational age calculator. Measure from the first day of your last period to today.
-{% /toDoSection %}
-
-{% toDoSection
-   color="beige"
-   number=12
-   numberBackgroundColor="pink"
-   title="Check your Dates"
-   image={discriminant: "one-off", value: {image: "/images/test-page/image 305.png"}} %}
-Use a calendar or a gestational age calculator. Measure from the first day of your last period to today.
-{% /toDoSection %}
-{% /horizontalSection %}
 
 {% actionBanner
    title="Quick Resource List"
