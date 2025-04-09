@@ -45,3 +45,27 @@ Use a calendar or a gestational age calculator. Measure from the first day of yo
 {% /toDoSection %}
 {% /flexSection %}
 {% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="cyan" title="Method 2: Misoprostol only" icon="" %}
+This method is also very safe and effective. The World Health Organization supports this method, which is used by many people around the world where mifepristone is not available.
+
+{% inContentDropdown
+   label="Download PDF"
+   size="standard"
+   background="blue"
+   altHoverBackground=""
+   options=[{discriminant: "link", value: {label: "English", url: "/"}}, {discriminant: "link", value: {label: "Español", url: "/"}}] /%}
+{% /sectionHeader %}
+
+{% flexSection direction="flex-col" noWrap=false %}
+{% toDoSection
+   color="beige"
+   number=1
+   numberBackgroundColor="cyan"
+   title="Check your dates"
+   image={discriminant: "one-off", value: {image: "/images/how-to-take-abortion-pills/01-check-your-dates.png", altText: "calendar"}} %}
+Use a calendar or a gestational age calculator. Measure from the first day of your last period to today.
+{% /toDoSection %}
+{% /flexSection %}
+{% /horizontalSplit %}
