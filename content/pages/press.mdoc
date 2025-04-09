@@ -1,0 +1,53 @@
+---
+title: Press
+---
+{% heroSection
+   image={discriminant: "one-off", value: {image: "/images/press/megaphone-hand-right.png", altText: "hand holding megaphone"}}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="cyan" %}
+# Plan C in the news
+
+Plan C is a public health creative campaign on abortion pill access, started in 2015 by a small team of veteran public health advocates, researchers, social justice activists.
+
+{% tableOfContents /%}
+{% /heroSection %}
+
+{% logoBanner
+   title="Our research and work has been featured in:"
+   color="blue"
+   logos=[{discriminant: "uploaded", value: "logo-educational-foundation-of-america"}, {discriminant: "uploaded", value: "logo-educational-foundation-of-america"}]
+   maxItemWidth=12
+   maxItemHeight=0 /%}
+
+{% tocAnchor
+   slug="recent-plan-c-press"
+   toc={discriminant: true, value: "Recent Plan C press"} /%}
+
+{% articleList
+   pagination=4
+   filtering={discriminant: "category", value: {category: "plan-c"}} /%}
+
+{% tocAnchor
+   slug="other_abortion_news"
+   toc={discriminant: true, value: "Other abortion news"} /%}
+
+{% articleList
+   pagination=3
+   filtering={discriminant: "category", value: {category: "abortion-news"}} /%}
+
+{% tocAnchor
+   slug="about_plan_c"
+   toc={discriminant: true, value: "About Plan C"} /%}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+Plan C is a public health creative campaign on abortion pill access, started in 2015 by a small team of veteran public health advocates, researchers, social justice activists.&nbsp;
+
+Plan C works to transform access to abortion in the US by normalizing the self-directed option of abortion pills by mail. ‍ Our Vision:&nbsp;A near future in which the ability to end an early pregnancy is directly in the hands of anyone who seeks it.
+
+Read more about our work in the&nbsp;[2024 Annual Report](/2024-annual-report).
+{% /bodySection %}
