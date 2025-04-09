@@ -59,10 +59,7 @@ to go over in height
 {% tocAnchor slug="faq" toc={discriminant: true, value: "Before FAQ"} /%}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader
-   color="pink"
-   title="A Section"
-   icon=""/%}
+{% sectionHeader color="pink" title="A Section" icon="" /%}
 
 {% flexSection direction="flex-col" noWrap=false %}
 {% bodySection
@@ -91,11 +88,8 @@ Some text is here
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader
-   color="blue"
-   title="A Section"
-   icon="" %}
-Test some text
+{% sectionHeader color="blue" title="A Section" icon="" %}
+Test [some](https://google.com) text
 
 {% inContentImage
    image={discriminant: "uploaded", value: "mailbox"}
@@ -174,15 +168,9 @@ Learn more about these options on&nbsp;Plan C’s Guide&nbsp;and&nbsp;ineedana.c
 {% /bodySection %}
 
 {% horizontalSplit noHeader=true %}
-{% sectionHeader
-   color="beige"
-   title="Left (50%)"
-   icon="minus"/%}
+{% sectionHeader color="beige" title="Left (50%)" icon="minus" /%}
 
-{% sectionHeader
-   color="beige"
-   title="Right 50%"
-   icon="phone" /%}
+{% sectionHeader color="beige" title="Right 50%" icon="phone" /%}
 {% /horizontalSplit %}
 
 {% tocAnchor slug="testimonials" toc={discriminant: false} /%}
