@@ -58,15 +58,16 @@ to go over in height
 
 {% tocAnchor slug="faq" toc={discriminant: true, value: "Before FAQ"} /%}
 
-{% horizontalSection
-   color="red"
-   title="A section"
+{% horizontalSplit noHeader=false %}
+{% sectionHeader
+   color="pink"
+   title="A Section"
    text="with some text and stuff going in there"
-   icon="stethoscope"
+   icon=""
    image={discriminant: ""}
-   link={}
-   equalSplit=false
-   direction="flex-col" %}
+   link={} /%}
+
+{% flexSection direction="flex-col" noWrap=false %}
 {% bodySection
    centered=false
    fullWidth=false
@@ -74,32 +75,34 @@ to go over in height
    textSize="medium" %}
 Some text is here
 {% /bodySection %}
-
-{% faqSection
-   faq="how-does-the-abortion-pill-work"
-   color="beige"
-   embedded=false /%}
-
-{% faqSection
-   faq="how-does-the-abortion-pill-work"
-   color="beige"
-   embedded=false /%}
 
 {% faqSection
    faq="where-someone-lives-makes-a-difference"
    color="beige"
    embedded=false /%}
-{% /horizontalSection %}
 
-{% horizontalSection
+{% faqSection
+   faq="how-does-the-abortion-pill-work"
+   color="beige"
+   embedded=false /%}
+
+{% faqSection
+   faq="how-does-the-abortion-pill-work"
+   color="beige"
+   embedded=false /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader
    color="blue"
-   title="A section"
+   title="A Section"
    text="with some text and stuff going in there"
    icon=""
    image={discriminant: ""}
-   link={}
-   equalSplit=false
-   direction="flex-row" %}
+   link={} /%}
+
+{% flexSection direction="flex-row" noWrap=false %}
 {% bodySection
    centered=false
    fullWidth=false
@@ -115,7 +118,8 @@ Some text is here
    textSize="medium" %}
 Some text is here
 {% /bodySection %}
-{% /horizontalSection %}
+{% /flexSection %}
+{% /horizontalSplit %}
 
 {% tocAnchor
    slug="information-resource"
