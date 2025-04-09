@@ -26,6 +26,8 @@ Plan C is a public health creative campaign on abortion pill access, started in 
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Recent Plan C press" icon="" %}
+Read the latest press coverage featuring the work of Plan C.
+
 {% inContentButton
    label="View all recent press"
    icon=""
@@ -47,14 +49,44 @@ Plan C is a public health creative campaign on abortion pill access, started in 
    slug="other_abortion_news"
    toc={discriminant: true, value: "Other abortion news"} /%}
 
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="cyan" title="Other abortion news" icon="" %}
+Articles covering the latest news, legal battles, policy changes, and key discussions on abortion.
+
+{% inContentButton
+   label="View all abortion news"
+   icon=""
+   size="standard"
+   background="cyan"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false /%}
+{% /sectionHeader %}
+
+{% flexSection direction="flex-col" noWrap=false %}
 {% articleList
    pagination=3
    filtering={discriminant: "category", value: {category: "abortion-news"}} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
 
 {% tocAnchor
    slug="about_plan_c"
    toc={discriminant: true, value: "About Plan C"} /%}
 
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="pink" title="About Plan C" icon="" %}
+{% inContentButton
+   label="Our history"
+   icon=""
+   size="standard"
+   background="pink"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false /%}
+{% /sectionHeader %}
+
+{% flexSection direction="flex-col" noWrap=false %}
 {% bodySection
    centered=false
    fullWidth=false
@@ -66,3 +98,5 @@ Plan C works to transform access to abortion in the US by normalizing the self-d
 
 Read more about our work in the&nbsp;[2024 Annual Report](/2024-annual-report).
 {% /bodySection %}
+{% /flexSection %}
+{% /horizontalSplit %}
