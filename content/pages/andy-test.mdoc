@@ -25,14 +25,15 @@ ever since the 1500s, when an unknown printer took a galley of type and scramble
 
 {% timelineSection title="1990s" color="" /%}
 
-{% horizontalSection
+{% horizontalSplit noHeader=false %}
+{% sectionHeader
    color="green"
    title="How to"
    icon=""
    image={discriminant: ""}
-   link={}
-   equalSplit=false
-   direction="flex-col" %}
+   link={} /%}
+
+{% flexSection direction="flex-col" noWrap=false %}
 {% toDoSection
    color="beige"
    number=1
@@ -50,7 +51,8 @@ Check your dates today
    image={discriminant: "one-off", value: {image: "/images/andy-test/02-make-sure-you-are-pregnant.png"}} %}
 Check your dates today
 {% /toDoSection %}
-{% /horizontalSection %}
+{% /flexSection %}
+{% /horizontalSplit %}
 
 {% tocAnchor
    slug="Best ways to make pasta"
