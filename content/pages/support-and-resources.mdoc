@@ -4,7 +4,19 @@ title: Support & Resources
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Medical support" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection direction="flex-row" noWrap=false %}
+{% resourceList
+   resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone", "some-resource-with-website-and-org"]
+   type={discriminant: "simple"} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="cyan" title="Legal support" icon="" %}
+\
+{% /sectionHeader %}
+
+{% flexSection direction="flex-row" noWrap=false %}
 {% resourceList
    resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone", "some-resource-with-website-and-org"]
    type={discriminant: "simple"} /%}
