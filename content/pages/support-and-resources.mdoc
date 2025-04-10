@@ -1,0 +1,10 @@
+---
+title: Support & Resources
+---
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Medical support" icon="" /%}
+
+{% resourceList
+   resources=["some-resource-with-url-only", "some-resource-with-website-org-and-phone", "some-resource-with-website-and-org"]
+   type={discriminant: "simple"} /%}
+{% /horizontalSplit %}
