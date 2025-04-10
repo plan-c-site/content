@@ -49,7 +49,7 @@ And some text for an embeded resource item.
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% flexSection direction="flex-row" noWrap=false %}
+{% flexSection direction="flex-col" noWrap=false %}
 {% resourceList
    resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone"]
    type={discriminant: "simple"} /%}
