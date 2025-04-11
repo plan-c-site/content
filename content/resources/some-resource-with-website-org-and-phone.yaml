@@ -5,4 +5,5 @@ website: https://example.com
 summary: free and confidential help understanding how to get pills and how to use them.
 buttonIcon: ''
 buttonUrl:
-  discriminant: url
+  discriminant: phone
+  value: +1-555-5555
