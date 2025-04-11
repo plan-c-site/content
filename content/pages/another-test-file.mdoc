@@ -10,12 +10,9 @@ asdawfwaafwfwaawfaw
 {% /heroSection %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader
-   color="cyan"
-   title="Plan C Press"
-   icon=""/%}
+{% sectionHeader color="cyan" title="Plan C Press!!!!" icon="" /%}
 
-{% flexSection direction="flex-col" %}
+{% flexSection direction="flex-col" noWrap=false %}
 {% articleList
    pagination=3
    filtering={discriminant: "category", value: {category: "plan-c"}} /%}
@@ -23,12 +20,13 @@ asdawfwaafwfwaawfaw
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader
-   color="green"
-   title="Simple Resource Items"
-   icon="" /%}
+{% sectionHeader color="green" title="Simple Resource Items" icon="" /%}
 
-{% flexSection direction="flex-col" %}
+{% flexSection direction="flex-col" noWrap=false %}
+{% resourceList
+   resources=["some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts"]
+   type={discriminant: "simple"} /%}
+
 {% resourceItem
    resource="some-resource-with-website-and-org"
    type={discriminant: "block"} /%}
@@ -51,7 +49,7 @@ And some text for an embeded resource item.
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% flexSection direction="flex-row" %}
+{% flexSection direction="flex-row" noWrap=false %}
 {% resourceList
    resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone"]
    type={discriminant: "simple"} /%}
