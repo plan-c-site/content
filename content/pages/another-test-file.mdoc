@@ -59,6 +59,12 @@ And some text for an embeded resource item.
    resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone"]
    type={discriminant: "carousel", value: {color: "red", title: "Carousel resource list", text: "some text in the carousel header", icon: "minus"}} /%}
 
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="cyan" title="Youtube Test" icon="" /%}
+
+{% youtubeEmbed videoId="xXOuSoWzlgQ" startAt=0 /%}
+{% /horizontalSplit %}
+
 {% bodySection
    centered=false
    fullWidth=false
