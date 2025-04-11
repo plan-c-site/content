@@ -1,4 +1,8 @@
 title: Some resource with URL only
-summary: free and confidential help understanding how to get pills and how to use them.
+heading: Some resource with URL only
 author: M+A Hotline
 website: https://example.com
+summary: free and confidential help understanding how to get pills and how to use them.
+buttonIcon: ''
+buttonUrl:
+  discriminant: url
