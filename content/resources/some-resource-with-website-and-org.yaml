@@ -1,4 +1,8 @@
 title: 'Some Resource With website and org '
-summary: free and confidential help understanding how to get pills and how to use them.
+heading: 'Some Resource With website and org '
 author: Organization
 website: https://example.com
+summary: free and confidential help understanding how to get pills and how to use them.
+buttonIcon: ''
+buttonUrl:
+  discriminant: url
