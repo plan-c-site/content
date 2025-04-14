@@ -19,4 +19,30 @@ seo:
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
+
+{% formSection type="submitted" %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+Submitted....
+{% /bodySection %}
+{% /formSection %}
+
+{% formSection type="success" %}
+{% bodySection
+   centered=true
+   fullWidth=false
+   color="green"
+   textSize="large" %}
+Success!
+{% /bodySection %}
+{% /formSection %}
+
+{% formSection type="error" %}
+{% bodySection centered=true fullWidth=false color="red" textSize="large" %}
+Form submission failed
+{% /bodySection %}
+{% /formSection %}
 {% /formWrapper %}
