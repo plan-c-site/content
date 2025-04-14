@@ -1,0 +1,9 @@
+title: M+A Hotline
+heading: Medical questions
+author: M+A Hotline
+website: mahotline.org
+buttonText: Call or text
+buttonIcon: phone
+buttonUrl:
+  discriminant: url
+  value: mahotline.org
