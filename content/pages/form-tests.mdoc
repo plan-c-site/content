@@ -47,3 +47,47 @@ Form submission failed
 {% /bodySection %}
 {% /formSection %}
 {% /formWrapper %}
+
+{% formWrapper
+   formType={discriminant: "custom", value: {code: "console.log(inputs);"}} %}
+{% formSection type="waiting" %}
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Testing a Custom Form" icon="" /%}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+{% formInput
+   fields=[{label: {name: "Some Text", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something..."}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}]}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+{% /bodySection %}
+{% /horizontalSplit %}
+{% /formSection %}
+
+{% formSection type="submitted" %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+Submitted....
+{% /bodySection %}
+{% /formSection %}
+
+{% formSection type="success" %}
+{% bodySection
+   centered=true
+   fullWidth=false
+   color="green"
+   textSize="large" %}
+Success!
+{% /bodySection %}
+{% /formSection %}
+
+{% formSection type="error" %}
+{% bodySection centered=true fullWidth=false color="red" textSize="large" %}
+Form submission failed
+{% /bodySection %}
+{% /formSection %}
+{% /formWrapper %}
