@@ -4,7 +4,8 @@ seo:
   image:
     discriminant: ''
 ---
-{% formWrapper formType={discriminant: "custom", value: {}} %}
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "/[:lang:]/[:text:]"}} %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Testing a Custom Form" icon="" /%}
@@ -15,7 +16,7 @@ seo:
    color="beige"
    textSize="medium" %}
 {% formInput
-   fields=[{label: {name: "Some Text", slug: "some-text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something..."}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}]}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+   fields=[{label: {name: "Some Text", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something..."}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}]}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
