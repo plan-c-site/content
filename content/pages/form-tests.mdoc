@@ -11,8 +11,14 @@ seo:
 \
 {% /sectionHeader %}
 
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
 {% formInput
    fields=[{label: {name: "Some Text", slug: "some-text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something..."}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}]}}}] /%}
+{% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
 {% /formWrapper %}
