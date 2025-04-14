@@ -1,0 +1,9 @@
+title: Plan C
+image:
+  discriminant: ''
+defaultDomain: https://www.plancpills.org/
+languageDomains:
+  - language: en
+    domain: https://en.plancpills.org
+  - language: es
+    domain: https://es.planc.org
