@@ -94,7 +94,8 @@ Form submission failed
 {% /formSection %}
 {% /formWrapper %}
 
-{% formWrapper formType={discriminant: "hubspot", value: {}} %}
+{% formWrapper
+   formType={discriminant: "hubspot", value: {invisibleFields: [{id: "hidden-value", value: "some-field-value"}]}} %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="Testing a HubSpot Form" icon="" /%}
