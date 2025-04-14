@@ -49,7 +49,7 @@ Form submission failed
 {% /formWrapper %}
 
 {% formWrapper
-   formType={discriminant: "custom", value: {code: "console.log(inputs);"}} %}
+   formType={discriminant: "custom", value: {code: "console.log(inputs);\nreturn \"success\";"}} %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Testing a Custom Form" icon="" /%}
