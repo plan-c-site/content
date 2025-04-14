@@ -17,14 +17,12 @@ title: Support & Resources
 {% flexSection direction="flex-row" noWrap=false %}
 {% resourceList
    resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone", "some-resource-with-website-and-org"]
-   type={discriminant: "simple"} /%}
+   type={discriminant: "simple", value: 1} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="beige" title="Test" icon="" %}
-\
-{% /sectionHeader %}
+{% sectionHeader color="beige" title="Test" icon="" /%}
 
 {% flexSection direction="flex-col" noWrap=false /%}
 {% /horizontalSplit %}
