@@ -49,7 +49,7 @@ Form submission failed
 {% /formWrapper %}
 
 {% formWrapper
-   formType={discriminant: "custom", value: {code: "console.log(inputs);\nreturn \"success\";"}} %}
+   formType={discriminant: "custom", value: {code: "console.log(inputs);\nif (inputs.text.length > 2) {\nreturn \"success\";\n}\nreturn \"error\";"}} %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Testing a Custom Form" icon="" /%}
@@ -60,7 +60,7 @@ Form submission failed
    color="beige"
    textSize="medium" %}
 {% formInput
-   fields=[{label: {name: "Some Text", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something..."}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}]}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+   fields=[{label: {name: "Some Text (must be longer than 2 characters)", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something..."}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}]}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
