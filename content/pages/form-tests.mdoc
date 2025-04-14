@@ -52,7 +52,9 @@ Form submission failed
    formType={discriminant: "custom", value: {code: "console.log(inputs);\nif (inputs.text.length > 2) {\nreturn \"success\";\n}\nreturn \"error\";"}} %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="red" title="Testing a Custom Form" icon="warning" /%}
+{% sectionHeader color="red" title="Testing a Custom Form" icon="warning" %}
+These should only be used if **Absolutely Necessary**
+{% /sectionHeader %}
 
 {% bodySection
    centered=false
