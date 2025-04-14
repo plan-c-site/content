@@ -95,7 +95,7 @@ Form submission failed
 {% /formWrapper %}
 
 {% formWrapper
-   formType={discriminant: "hubspot", value: {invisibleFields: [{id: "hidden-value", value: "some-field-value"}]}} %}
+   formType={discriminant: "hubspot", value: {formId: "35d3f280-9c43-49e9-9a80-8a4d1a49214d", invisibleFields: [{id: "add_me_to_the_newsletter", value: "on"}, {id: "datetime_stampe"}]}} %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="Testing a HubSpot Form" icon="" /%}
@@ -106,7 +106,7 @@ Form submission failed
    color="beige"
    textSize="medium" %}
 {% formInput
-   fields=[{label: {name: "Some Text", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something..."}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}]}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+   fields=[{label: {name: "First Name", slug: "firstname"}, required: true, type: {discriminant: "text", value: {placeholder: "First Name..."}}}, {label: {name: "Last Name", slug: "lastname"}, required: true, type: {discriminant: "text", value: {placeholder: "Last Name"}}}, {label: {name: "email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "email@example.com"}}}, {label: {name: "phone", slug: "phone"}, required: false, type: {discriminant: "text", value: {placeholder: "+1-555-555-5555"}}}, {label: {name: "company", slug: "company"}, required: false, type: {discriminant: "text", value: {placeholder: "Company"}}}, {label: {name: "Subject", slug: "webform_subject"}, required: true, type: {discriminant: "select", value: {placeholder: "What is this about?", options: [{label: "Help finding an abortion provider", value: "help"}, {label: "Press Contact", value: "press"}]}}}, {label: {name: "message", slug: "message"}, required: false, type: {discriminant: "text", value: {placeholder: "Message..."}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
