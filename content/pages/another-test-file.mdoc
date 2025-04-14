@@ -1,5 +1,8 @@
 ---
 title: another-test-file
+seo:
+  image:
+    discriminant: ''
 ---
 {% heroSection
    image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"}
@@ -29,7 +32,7 @@ asdawfwaafwfwaawfaw
 
 {% resourceItem
    resource="some-resource-with-website-and-org"
-   type={discriminant: "block"} /%}
+   type={discriminant: "block", value: {noIcon: false}} /%}
 
 {% bodySection
    centered=false
@@ -55,9 +58,28 @@ And some text for an embeded resource item.
    type={discriminant: "simple"} /%}
 {% /flexSection %}
 
-{% resourceList
-   resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone"]
-   type={discriminant: "carousel", value: {color: "red", title: "Carousel resource list", text: "some text in the carousel header", icon: "minus"}} /%}
+{% horizontalSplit noHeader=false %}
+{% sectionHeader
+   color="blue"
+   title="Resources in vertical list with no icons"
+   icon="" %}
+\
+{% /sectionHeader %}
+
+{% flexSection direction="flex-col" noWrap=false %}
+{% resourceItem
+   resource="m-a-hotline"
+   type={discriminant: "block", value: {noIcon: true}} /%}
+
+{% resourceItem
+   resource="m-a-hotline"
+   type={discriminant: "block", value: {noIcon: true}} /%}
+
+{% resourceItem
+   resource="m-a-hotline"
+   type={discriminant: "block", value: {noIcon: true}} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="cyan" title="Youtube Test" icon="" /%}
