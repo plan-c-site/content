@@ -4,3 +4,15 @@ seo:
   image:
     discriminant: ''
 ---
+{% formWrapper formType={discriminant: "custom", value: {}} %}
+{% formSection type="waiting" %}
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Testing a Custom Form" icon="" %}
+\
+{% /sectionHeader %}
+
+{% formInput
+   fields=[{label: {name: "Some Text", slug: "some-text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something..."}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}]}}}] /%}
+{% /horizontalSplit %}
+{% /formSection %}
+{% /formWrapper %}
