@@ -4,6 +4,20 @@ seo:
   image:
     discriminant: ''
 ---
+{% heroSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageSide="right"
+   color="green"
+   imageBackgroundColor="pink" %}
+# Testing Plan C Forms
+
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "https://www.plancpills.org/abortion-pill/[:state:]"}} %}
+{% formInput
+   fields=[{label: {name: "Find Pills", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Choose a state", options: [{label: "Alabama", value: "alabama"}, {label: "California", value: "california"}], embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: "green"}}}}}] /%}
+{% /formWrapper %}
+{% /heroSection %}
+
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "/[:lang:]/[:text:]"}} %}
 {% formSection type="waiting" %}
@@ -16,7 +30,7 @@ seo:
    color="beige"
    textSize="medium" %}
 {% formInput
-   fields=[{label: {name: "Some Text", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something...", multiline: false}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}]}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+   fields=[{label: {name: "Some Text", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}], embedSubmitButton: {discriminant: false}}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
@@ -62,7 +76,7 @@ These should only be used if **Absolutely Necessary**
    color="beige"
    textSize="medium" %}
 {% formInput
-   fields=[{label: {name: "Some Text (must be longer than 2 characters)", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something...", multiline: false}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}]}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+   fields=[{label: {name: "Some Text (must be longer than 2 characters)", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Something...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Language", slug: "lang"}, required: true, type: {discriminant: "select", value: {options: [{label: "English", value: "en"}, {label: "Spanish", value: "es"}], embedSubmitButton: {discriminant: false}}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
@@ -106,7 +120,7 @@ Form submission failed
    color="beige"
    textSize="medium" %}
 {% formInput
-   fields=[{label: {name: "First Name", slug: "firstname"}, required: true, type: {discriminant: "text", value: {placeholder: "First Name...", multiline: false}}}, {label: {name: "Last Name", slug: "lastname"}, required: true, type: {discriminant: "text", value: {placeholder: "Last Name", multiline: false}}}, {label: {name: "se", slug: "se"}, required: false, type: {discriminant: "separator"}}, {label: {name: "email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "email@example.com", multiline: false}}}, {label: {name: "phone", slug: "phone"}, required: false, type: {discriminant: "text", value: {placeholder: "+1-555-555-5555", multiline: false}}}, {label: {name: "company", slug: "company"}, required: false, type: {discriminant: "text", value: {placeholder: "Company", multiline: false}}}, {label: {name: "Checkbox Test", slug: "checkbox_test"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Is this a donation or grant?", slug: "webform_subject"}, required: true, type: {discriminant: "select", value: {placeholder: "Donation or Grant?", options: [{label: "Donation", value: "donation"}, {label: "Grant", value: "grant"}]}}}, {label: {name: "message", slug: "message"}, required: false, type: {discriminant: "text", value: {placeholder: "Message...", multiline: true}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+   fields=[{label: {name: "First Name", slug: "firstname"}, required: true, type: {discriminant: "text", value: {placeholder: "First Name...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last Name", slug: "lastname"}, required: true, type: {discriminant: "text", value: {placeholder: "Last Name", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "se", slug: "se"}, required: false, type: {discriminant: "separator"}}, {label: {name: "email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "email@example.com", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "phone", slug: "phone"}, required: false, type: {discriminant: "text", value: {placeholder: "+1-555-555-5555", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "company", slug: "company"}, required: false, type: {discriminant: "text", value: {placeholder: "Company", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Checkbox Test", slug: "checkbox_test"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Is this a donation or grant?", slug: "webform_subject"}, required: true, type: {discriminant: "select", value: {placeholder: "Donation or Grant?", options: [{label: "Donation", value: "donation"}, {label: "Grant", value: "grant"}], embedSubmitButton: {discriminant: false}}}}, {label: {name: "message", slug: "message"}, required: false, type: {discriminant: "text", value: {placeholder: "Message...", multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
