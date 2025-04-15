@@ -26,7 +26,7 @@ seo:
 {% /formWrapper %}
 
 {% formWrapper
-   formType={discriminant: "multiStep", value: [{discriminant: "custom", value: {code: "alert(`Got: ${inputs.feedback}`)"}}, {discriminant: "custom", value: {code: "alert(`Second Step: ${inputs.feedback}`)"}}]}
+   formType={discriminant: "multiStep", value: [{discriminant: "custom", value: {code: "alert(`Got: ${inputs.feedback}`)\nreturn\"success\""}}, {discriminant: "custom", value: {code: "alert(`Second Step: ${inputs.feedback}`)\nreturn \"error\""}}]}
    afterSubmit="reset" %}
 {% formInput
    fields=[{label: {name: "Give us feedback", slug: "feedback"}, required: false, type: {discriminant: "text", value: {placeholder: "Feedback", multiline: true, embedSubmitButton: {discriminant: true, value: {icon: "quote", background: "blue", altHoverBackground: "blue"}}}}}] /%}
