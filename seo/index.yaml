@@ -1,6 +1,7 @@
 title: Plan C
 image:
-  discriminant: ''
+  discriminant: uploaded
+  value: meta-social-share-820x320
 customSchema: >-
   {"@context":"https://schema.org",
 
