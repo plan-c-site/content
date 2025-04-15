@@ -16,6 +16,12 @@ seo:
 {% formInput
    fields=[{label: {name: "Find Pills", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Choose a state", options: [{label: "Alabama", value: "alabama"}, {label: "California", value: "california"}], embedSubmitButton: {discriminant: true, value: {icon: "pill", background: "black", altHoverBackground: ""}}}}}] /%}
 {% /formWrapper %}
+
+{% formWrapper
+   formType={discriminant: "custom", value: {code: "alert(`Got: ${inputs.email}`)"}} %}
+{% formInput
+   fields=[{label: {name: "Sign up to newsletter", slug: "email"}, required: false, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "check", background: "green", altHoverBackground: "red"}}}}}] /%}
+{% /formWrapper %}
 {% /heroSection %}
 
 {% formWrapper
