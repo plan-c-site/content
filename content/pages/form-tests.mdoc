@@ -12,26 +12,30 @@ seo:
 # Testing Plan C Forms
 
 {% formWrapper
-   formType={discriminant: "link", value: {pattern: "https://www.plancpills.org/abortion-pill/[:state:]"}} %}
+   formType={discriminant: "link", value: {pattern: "https://www.plancpills.org/abortion-pill/[:state:]"}}
+   afterSubmit="nothing" %}
 {% formInput
    fields=[{label: {name: "Find Pills", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Choose a state", options: [{label: "Alabama", value: "alabama"}, {label: "California", value: "california"}], embedSubmitButton: {discriminant: true, value: {icon: "pill", background: "black", altHoverBackground: ""}}}}}] /%}
 {% /formWrapper %}
 
 {% formWrapper
-   formType={discriminant: "custom", value: {code: "alert(`Got: ${inputs.email}`)"}} %}
+   formType={discriminant: "custom", value: {code: "alert(`Got: ${inputs.email}`)"}}
+   afterSubmit="reset" %}
 {% formInput
    fields=[{label: {name: "Sign up to newsletter", slug: "email"}, required: false, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "check", background: "green", altHoverBackground: "red"}}}}}] /%}
 {% /formWrapper %}
 
 {% formWrapper
-   formType={discriminant: "custom", value: {code: "alert(`Got: ${inputs.feedback}`)"}} %}
+   formType={discriminant: "custom", value: {code: "alert(`Got: ${inputs.feedback}`)"}}
+   afterSubmit="reset" %}
 {% formInput
    fields=[{label: {name: "Give us feedback", slug: "feedback"}, required: false, type: {discriminant: "text", value: {placeholder: "Feedback", multiline: true, embedSubmitButton: {discriminant: true, value: {icon: "quote", background: "blue", altHoverBackground: "blue"}}}}}] /%}
 {% /formWrapper %}
 {% /heroSection %}
 
 {% formWrapper
-   formType={discriminant: "link", value: {pattern: "/[:lang:]/[:text:]"}} %}
+   formType={discriminant: "link", value: {pattern: "/[:lang:]/[:text:]"}}
+   afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Testing a Link Form" icon="" /%}
@@ -75,7 +79,8 @@ Form submission failed
 {% /formWrapper %}
 
 {% formWrapper
-   formType={discriminant: "custom", value: {code: "console.log(inputs);\nif (inputs.text.length > 2) {\nreturn \"success\";\n}\nreturn \"error\";"}} %}
+   formType={discriminant: "custom", value: {code: "console.log(inputs);\nif (inputs.text.length > 2) {\nreturn \"success\";\n}\nreturn \"error\";"}}
+   afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="red" title="Testing a Custom Form" icon="warning" %}
@@ -121,7 +126,8 @@ Form submission failed
 {% /formWrapper %}
 
 {% formWrapper
-   formType={discriminant: "hubspot", value: {formId: "35d3f280-9c43-49e9-9a80-8a4d1a49214d", invisibleFields: [{id: "add_me_to_the_newsletter", value: "on"}, {id: "datetime_stamp", value: " "}]}} %}
+   formType={discriminant: "hubspot", value: {formId: "35d3f280-9c43-49e9-9a80-8a4d1a49214d", invisibleFields: [{id: "add_me_to_the_newsletter", value: "on"}, {id: "datetime_stamp", value: " "}]}}
+   afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="Testing a HubSpot Form" icon="" /%}
