@@ -20,7 +20,7 @@ seo:
 
 {% formWrapper
    formType={discriminant: "custom", value: {code: "alert(`Got: ${inputs.email}`)"}}
-   afterSubmit="reset" %}
+   afterSubmit="nothing" %}
 {% formInput
    fields=[{label: {name: "Sign up to newsletter", slug: "email"}, required: false, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "check", background: "green", altHoverBackground: "red"}}}}}] /%}
 {% /formWrapper %}
