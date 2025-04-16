@@ -79,6 +79,32 @@ Form submission failed
 {% /formWrapper %}
 
 {% formWrapper
+   formType={discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236791013599", input: "id_eng"}, {id: "46236994830559", input: "id_spa"}]}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% bodySection
+   centered=true
+   fullWidth=false
+   color="green"
+   textSize="medium" %}
+# Shopify Test
+
+{% formInput
+   fields=[{label: {name: "English", slug: "id_eng"}, required: false, type: {discriminant: "select", value: {options: [{label: "0", value: "0"}, {label: "1", value: "1"}, {label: "2", value: "2"}, {label: "3", value: "3"}, {label: "4", value: "4"}, {label: "5", value: "5"}], embedSubmitButton: {discriminant: false}}}}, {label: {name: "Spanish", slug: "id_spa"}, required: false, type: {discriminant: "select", value: {options: [{label: "0", value: "0"}, {label: "1", value: "1"}, {label: "2", value: "2"}, {label: "3", value: "3"}, {label: "4", value: "4"}, {label: "5", value: "5"}, {label: "6", value: "6"}], embedSubmitButton: {discriminant: false}}}}] /%}
+{% /bodySection %}
+
+{% heroSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageSide="left"
+   color="beige"
+   imageBackgroundColor="green" %}
+{% formInput
+   fields=[{label: {name: "email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "check", background: "black", altHoverBackground: "green"}}}}}] /%}
+{% /heroSection %}
+{% /formSection %}
+{% /formWrapper %}
+
+{% formWrapper
    formType={discriminant: "custom", value: {code: "console.log(inputs);\nif (inputs.text.length > 2) {\nreturn \"success\";\n}\nreturn \"error\";"}}
    afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
