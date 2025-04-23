@@ -1,0 +1,14 @@
+title: Ally Chatbot
+author: Ally Chatbot
+phone: "(833) 221-2559\L‍"
+summary: >-
+  Ally is a 24/7, safe abortion chatbot accessible over WhatsApp. Users can
+  instantly access medical abortion protocols, pre- and post-abortion care
+  considerations, links to contraceptives, and customized country-specific
+  resources to safely self-manage their abortion. Ally also connects users to
+  online counseling support.
+buttonText: WhatsApp
+buttonIcon: phone
+buttonUrl:
+  discriminant: url
+  value: https://api.whatsapp.com/send?phone=18332212559
