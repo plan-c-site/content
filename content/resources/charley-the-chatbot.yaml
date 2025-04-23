@@ -1,0 +1,12 @@
+title: Charley the Chatbot
+author: Charley the Chatbot
+website: https://www.chatwithcharley.org/
+summary: >-
+  Provides users with personalized abortion options, including information about
+  different abortion care methods, nearby clinics, accessing abortion pills, and
+  referrals to support services.
+buttonText: Visit website
+buttonIcon: arrowRight
+buttonUrl:
+  discriminant: url
+  value: https://www.chatwithcharley.org/
