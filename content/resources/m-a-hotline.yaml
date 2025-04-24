@@ -2,9 +2,10 @@ title: M+A Hotline
 heading: Medical questions
 author: M+A Hotline
 website: mahotline.org
+phone: (833) 246-2632
 summary: Free and confidential support from expert clinicians. M+A does not sell pills.
 buttonText: Call or text
 buttonIcon: phone
 buttonUrl:
   discriminant: url
-  value: mahotline.org
+  value: sms:833-246-2632
