@@ -1,0 +1,12 @@
+title: Exhale Pro-Voice
+author: Exhale Pro-Voice
+website: exhaleprovoice.org
+phone: (617) 749-2948
+summary: >-
+  Exhale is a talkline that gives callers space to process feelings around
+  abortion, after your abortion or miscarriage.
+buttonText: Call
+buttonIcon: phone
+buttonUrl:
+  discriminant: phone
+  value: (617) 749-2948
