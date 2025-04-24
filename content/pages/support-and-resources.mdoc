@@ -9,7 +9,22 @@ seo:
 
 {% flexSection direction="flex-row" noWrap=false %}
 {% resourceList
-   resources=["m-a-hotline", "repro-legal-helpline", "reprocare-healthline", "charley-the-chatbot"]
+   resources=["m-a-hotline", "ally-chatbot"]
+   type={discriminant: "simple", value: 2} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader
+   color="cyan"
+   title="Logistical and emotional support"
+   icon="" %}
+\
+{% /sectionHeader %}
+
+{% flexSection direction="flex-row" noWrap=false %}
+{% resourceList
+   resources=["reprocare-healthline", "all-options", "exhale-pro-voice"]
    type={discriminant: "simple", value: 2} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
