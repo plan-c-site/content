@@ -4,6 +4,14 @@ seo:
   image:
     discriminant: ''
 ---
+{% actionBanner
+   title="Quick Resource List"
+   color="red"
+   icon="document"
+   link={label: "Download PDF", target: "/"} %}
+Download a condensed version of this page, formatted to print or share.
+{% /actionBanner %}
+
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Medical support" icon="" /%}
 
@@ -35,10 +43,4 @@ seo:
    resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
    type={discriminant: "simple", value: 2} /%}
 {% /flexSection %}
-{% /horizontalSplit %}
-
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="beige" title="Test" icon="" /%}
-
-{% youtubeEmbed videoId="yhw-ItyTeao" startAt=0 /%}
 {% /horizontalSplit %}
