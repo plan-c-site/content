@@ -9,7 +9,7 @@ seo:
 
 {% flexSection direction="flex-row" noWrap=false %}
 {% resourceList
-   resources=["m-a-hotline", "ally-chatbot"]
+   resources=["m-a-hotline-site-wide-support-block", "ally-chatbot"]
    type={discriminant: "simple", value: 2} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
@@ -18,9 +18,7 @@ seo:
 {% sectionHeader
    color="cyan"
    title="Logistical and emotional support"
-   icon="" %}
-\
-{% /sectionHeader %}
+   icon="" /%}
 
 {% flexSection direction="flex-row" noWrap=false %}
 {% resourceList
@@ -30,20 +28,12 @@ seo:
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="cyan" title="Legal support" icon="" /%}
+{% sectionHeader color="pink" title="Legal support" icon="" /%}
 
 {% flexSection direction="flex-row" noWrap=false %}
 {% resourceList
-   resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone", "some-resource-with-website-and-org"]
+   resources=["repro-legal-helpline-support-page"]
    type={discriminant: "simple", value: 2} /%}
-
-{% resourceItem
-   resource="cobalt-fund-abortion-fund"
-   type={discriminant: "block", value: {noIcon: false}} /%}
-
-{% resourceItem
-   resource="some-resource-with-url-only"
-   type={discriminant: "block", value: {noIcon: false}} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
