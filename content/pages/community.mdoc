@@ -51,3 +51,22 @@ The&nbsp;Plan C Community Road Trip&nbsp;is a nationwide journey from June 23rd 
    leftIcon=false /%}
 {% /sectionHeader %}
 {% /horizontalSplit %}
+
+{% formWrapper
+   formType={discriminant: "hubspot", value: {formId: "af55fe23-a71e-42ab-b844-c0e7b84b6939", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "u_s__state__dropdown_", value: {discriminant: "text"}}]}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% bodySection
+   centered=true
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+## Join the community newsletter
+
+For breaking developments in abortion pill access and opportunities to take action.
+
+{% formInput
+   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "City", slug: "city"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "State", slug: "state"}, required: false, type: {discriminant: "text", value: {placeholder: "Select one", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Sign up", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+{% /bodySection %}
+{% /formSection %}
+{% /formWrapper %}
