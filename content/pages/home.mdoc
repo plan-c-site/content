@@ -1,0 +1,24 @@
+---
+title: Home
+seo:
+  image:
+    discriminant: ''
+---
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="pink" title="Frequently asked questions" icon="" %}
+\
+
+{% inContentButton
+   label="View all FAQs"
+   icon=""
+   size="primary"
+   background="pink"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false /%}
+{% /sectionHeader %}
+
+{% flexSection direction="flex-col" noWrap=false %}
+{% faqSection color="beige" embedded=false /%}
+{% /flexSection %}
+{% /horizontalSplit %}
