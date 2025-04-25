@@ -20,4 +20,67 @@ You can also print your own stickers, mini-flyers and protest posters using our 
 
 {% formWrapper
    formType={discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236791013599", input: "qr_sticker__dark_blue_white_"}, {id: "46236994830559", input: "qr_sticker_spanish"}]}}
-   afterSubmit="show-screens" /%}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="QR Code Stickers" icon="" %}
+2” stickers, available in English and Spanish, with a QR code that links directly to the Plan C website.
+{% /sectionHeader %}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+{% textSize textSize="large" inline=true %}**How many stickers do you need?**{% /textSize %}
+
+{% formInput
+   fields=[{label: {name: "English", slug: "qr_sticker__dark_blue_white_"}, required: false, type: {discriminant: "select", value: {placeholder: "0", options: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}], embedSubmitButton: {discriminant: false}}}}, {label: {name: "Spanish", slug: "qr_sticker_spanish"}, required: false, type: {discriminant: "select", value: {placeholder: "0", options: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}], embedSubmitButton: {discriminant: false}}}}] /%}
+
+{% insetSection %}
+{% textSize textSize="large" inline=true %}**Need more materials? We’ve got you covered!**{% /textSize %}
+
+Email us at [community@plancpills.org](mailto:community@plancpills.org) with your outreach details and needs, and we’ll get back to you ASAP to discuss.
+{% /insetSection %}
+{% /bodySection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="cyan" title="Checkout" icon="" %}
+You will be directed to a secure platform to collect your shipping address.
+{% /sectionHeader %}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+{% textSize textSize="large" inline=true %}**How many stickers do you need?**{% /textSize %}
+
+{% formInput
+   fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Email address", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "How did you hear about the Plan C QR code stickers?", slug: "how_did_you_hear_about_plan_c__dropdown_"}, required: false, type: {discriminant: "select", value: {placeholder: "Select one", options: [{label: "Google search", value: "Google search"}, {label: "Social media post", value: "Social media post"}, {label: "Radio", value: "Radio"}, {label: "Billboard", value: "Billboard"}, {label: "Sticker", value: "Sticker"}, {label: "Local organization or event", value: "Local organization or event"}, {label: "Word of mouth", value: "Word of mouth"}, {label: "Other", value: "Other"}], embedSubmitButton: {discriminant: false}}}}, {label: {name: "Are you connected with any groups in the reproductive health community? (Student groups, reproductive health orgs, healthcare providers, etc.)", slug: "are_you_connected_with_any_repro_groups_"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Please share any additional information about your affiliations, activism journey or feedback:", slug: "additional_notes"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}] /%}
+
+{% insetSection %}
+{% textSize textSize="large" inline=true %}**Pay What You Can / Pay it Forward**{% /textSize %}
+
+Stickers cost us a minimum of $10 per package to fulfill. After checkout you will have the option to donate to Plan C. If you are able, please give what you can to cover these costs or pay it forward. **Donation is not required.**
+
+Thanks for your support!
+
+Materials will be delivered in unbranded packaging material. It will not say Plan C or "abortion" on the outside of the package or envelope.
+{% /insetSection %}
+
+{% formInput
+   fields=[{label: {name: "Continue to checkout", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "arrowRight", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+{% /bodySection %}
+{% /horizontalSplit %}
+{% /formSection %}
+{% /formWrapper %}
+
+{% actionBanner
+   title="Print your own stickers & flyers"
+   color="red"
+   icon="document"
+   link={label: "DIY stickers & flyers", target: "/"} %}
+Check out our DIY templates for stickers, mini-flyers and protest posters.
+{% /actionBanner %}
