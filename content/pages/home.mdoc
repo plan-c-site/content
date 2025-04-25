@@ -6,8 +6,6 @@ seo:
 ---
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="Frequently asked questions" icon="" %}
-\
-
 {% inContentButton
    label="View all FAQs"
    icon=""
@@ -19,6 +17,42 @@ seo:
 {% /sectionHeader %}
 
 {% flexSection direction="flex-col" noWrap=false %}
-{% faqSection color="beige" embedded=false /%}
+{% faqSection
+   faq="home_what-is-the-abortion-pill"
+   color="beige"
+   embedded=false /%}
+
+{% faqSection
+   faq="home_how-do-i-get-abortion-pills"
+   color="beige"
+   embedded=false /%}
+
+{% faqSection
+   faq="can-i-get-in-trouble-for-using-abortion-pills"
+   color="beige"
+   embedded=false /%}
 {% /flexSection %}
 {% /horizontalSplit %}
+
+{% cardLayoutSection color="green" %}
+{% cardSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageOnly=false
+   title="Pills in advance" %}
+Many providers send abortion pills in advance, in case of future need.
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageOnly=false
+   title="Get free stickers" %}
+Our QR code stickers link directly to the Plan C Guide.  Order a pack for free and place them far and wide—every sticker helps empower and inform!
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageOnly=false
+   title="Join the community" %}
+A growing collective of activists and advocates taking action in their own communities.
+{% /cardSection %}
+{% /cardLayoutSection %}
