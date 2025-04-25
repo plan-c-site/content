@@ -1,0 +1,23 @@
+---
+title: Stickers
+seo:
+  image:
+    discriminant: ''
+---
+{% heroSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="cyan" %}
+# Stickers
+
+Thank you for your interest in spreading the word about Plan C. To order stickers, please fill out the secure form below and click Submit.
+
+Our stickers are available in English and Spanish, with a QR code that links directly to the Plan C website.
+
+You can also print your own stickers, mini-flyers and protest posters using our DIY sticker & flyer templates.
+{% /heroSection %}
+
+{% formWrapper
+   formType={discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236791013599", input: "qr_sticker__dark_blue_white_"}, {id: "46236994830559", input: "qr_sticker_spanish"}]}}
+   afterSubmit="show-screens" /%}
