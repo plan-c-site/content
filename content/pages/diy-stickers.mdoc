@@ -17,6 +17,10 @@ Thank you for your interest in spreading the word about Plan C. Use the template
 {% tableOfContents /%}
 {% /heroSection %}
 
+{% tocAnchor
+   slug="diy-templates"
+   toc={discriminant: true, value: "DIY templates"} /%}
+
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="QR code stickers" icon="" %}
 {% inContentImage
@@ -31,3 +35,11 @@ Thank you for your interest in spreading the word about Plan C. Use the template
    type={discriminant: "simple", value: 2} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
+
+{% actionBanner
+   title="Order printed stickers here"
+   color="red"
+   icon="document"
+   link={label: "Order stickers", target: "/"} %}
+Request free Plan C stickers to spread the word in your community.
+{% /actionBanner %}
