@@ -19,8 +19,6 @@ Thank you for your interest in spreading the word about Plan C. Use the template
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="QR code stickers" icon="" %}
-\
-
 {% inContentImage
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66be8da88ef76cd17c608886_qr-stickers.png"}
    maxWidth=100
@@ -28,6 +26,8 @@ Thank you for your interest in spreading the word about Plan C. Use the template
 {% /sectionHeader %}
 
 {% flexSection direction="flex-row" noWrap=false %}
-{% resourceList resources=[] type={discriminant: "simple", value: 2} /%}
+{% resourceList
+   resources=["diy-stickers_qr-code-diy-sticker-template", "diy-stickers_qr-code-pro-sticker-template"]
+   type={discriminant: "simple", value: 2} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
