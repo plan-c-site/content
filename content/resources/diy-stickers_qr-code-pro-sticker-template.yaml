@@ -1,0 +1,8 @@
+title: QR code Pro sticker template
+author: Pro sticker template
+summary: Use this template to have stickers made by a professional printer.
+buttonText: Download PDF
+buttonIcon: arrowDown
+buttonUrl:
+  discriminant: url
+  value: /
