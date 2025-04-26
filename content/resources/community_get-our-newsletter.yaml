@@ -1,0 +1,7 @@
+title: Get our newsletter
+heading: Get our newsletter
+buttonText: Sign up
+buttonIcon: arrowRight
+buttonUrl:
+  discriminant: url
+  value: /
