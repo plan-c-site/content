@@ -78,8 +78,11 @@ A near future where this safe and effective method is in the hands of anyone tha
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
 
 {% formWrapper
-   formType={discriminant: "hubspot", value: {formId: "b4570ae3-3568-4f50-be01-5d68e3865dac", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: false}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Advocacy or Partnership"}}]}}
+   formType={discriminant: "hubspot", value: {formId: "b4570ae3-3568-4f50-be01-5d68e3865dac", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Advocacy or Partnership"}}]}}
    afterSubmit="show-screens" %}
-{% formSection type="waiting" /%}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organization", slug: "organization"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Message", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+{% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
