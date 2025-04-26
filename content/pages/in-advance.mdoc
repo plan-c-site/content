@@ -17,7 +17,9 @@ Our research shows that many providers will send abortion pills in advance, to h
 {% tableOfContents /%}
 {% /heroSection %}
 
-{% tocAnchor toc={discriminant: false} /%}
+{% tocAnchor
+   slug="what-does-it-mean-to-get-abortion-pills-in-advance"
+   toc={discriminant: true, value: "What does it mean to get abortion pills in advance?"} /%}
 
 {% bodySection
    centered=false
@@ -38,9 +40,7 @@ Our research shows that many providers will send abortion pills in advance, to h
 {% sectionHeader
    color="cyan"
    title="Where people get pills in advance"
-   icon="" %}
-\
-{% /sectionHeader %}
+   icon="" /%}
 
 {% bodySection
    centered=false
@@ -69,9 +69,7 @@ If you decide to use pills later, the services will still help with instructions
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Resources & information" icon="" %}
-\
-{% /sectionHeader %}
+{% sectionHeader color="pink" title="Resources & information" icon="" /%}
 
 {% flexSection direction="flex-row" noWrap=false %}
 {% resourceList
@@ -80,10 +78,18 @@ If you decide to use pills later, the services will still help with instructions
 {% /flexSection %}
 {% /horizontalSplit %}
 
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="blue"
+   textSize="medium" %}
+## Find an abortion pill provider
+
+Options for at-home abortion pill access will vary by location. Click below to find options by state or territory.
+{% /bodySection %}
+
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="red" title="Frequently asked questions" icon="" %}
-\
-{% /sectionHeader %}
+{% sectionHeader color="red" title="Frequently asked questions" icon="" /%}
 
 {% flexSection direction="flex-row" noWrap=false %}
 {% faqSection
