@@ -8,7 +8,8 @@ seo:
    image={discriminant: "uploaded", value: "mailbox"}
    imageSide="right"
    color="green"
-   imageBackgroundColor="pink" %}
+   imageBackgroundColor="pink"
+   ignoreImageBorder=false %}
 # Testing Plan C Forms
 
 {% formWrapper
@@ -98,7 +99,8 @@ Form submission failed
    image={discriminant: "uploaded", value: "mailbox"}
    imageSide="left"
    color="beige"
-   imageBackgroundColor="green" %}
+   imageBackgroundColor="green"
+   ignoreImageBorder=false %}
 {% formInput
    fields=[{label: {name: "email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "check", background: "black", altHoverBackground: "green"}}}}}] /%}
 {% /heroSection %}
