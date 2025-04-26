@@ -1,0 +1,7 @@
+title: Subscribe to our Linktree
+heading: Subscribe to our Linktree
+buttonText: Plan C Linktree
+buttonIcon: arrowRight
+buttonUrl:
+  discriminant: url
+  value: /
