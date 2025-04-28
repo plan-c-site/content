@@ -1,0 +1,107 @@
+---
+title: Home
+seo:
+  image:
+    discriminant: ''
+---
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="pink" title="Frequently asked questions" icon="" %}
+{% inContentButton
+   label="View all FAQs"
+   icon=""
+   size="primary"
+   background="pink"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false /%}
+{% /sectionHeader %}
+
+{% flexSection direction="flex-col" noWrap=false %}
+{% faqSection
+   faq="home_what-is-the-abortion-pill"
+   color="beige"
+   embedded=false /%}
+
+{% faqSection
+   faq="home_how-do-i-get-abortion-pills"
+   color="beige"
+   embedded=false /%}
+
+{% faqSection
+   faq="can-i-get-in-trouble-for-using-abortion-pills"
+   color="beige"
+   embedded=false /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% cardLayoutSection color="beige" %}
+{% cardSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageOnly=false
+   title="Pills in advance"
+   link="/" %}
+Many providers send abortion pills in advance, in case of future need.
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageOnly=false
+   title="Get free stickers"
+   link="/" %}
+Our QR code stickers link directly to the Plan C Guide.  Order a pack for free and place them far and wide—every sticker helps empower and inform!
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageOnly=false
+   title="Join the community"
+   link="/" %}
+A growing collective of activists and advocates taking action in their own communities.
+{% /cardSection %}
+{% /cardLayoutSection %}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="red"
+   textSize="medium" %}
+## Plan C is an information resource.
+
+We do not give medical or legal advice or sell abortion pills. &nbsp;This website is an educational resource for learning about how people in the US are accessing abortion pills and safely managing their own abortions. Plan C provides research-based information but does not endorse any of the services listed on our website. Plan C is not affiliated with any of the services listed in our directory. For questions about paying for, delivery of, or how to order abortion pills from these services, please contact the service directly.‍
+
+‍A note on language:&nbsp;Abortion pills can be used by people who have a uterus and can get pregnant. This includes cisgender women and people who identify as trans, non-binary, gender-expansive, intersex, Two-Spirit, and more. By using a variety of terms on this website—including “women” and “people who are pregnant”—we aim to be inclusive of all pregnant people who need these services.
+{% /bodySection %}
+
+{% horizontalSplit noHeader=true %}
+{% sectionHeader
+   color="green"
+   title="Plan C is a nonprofit 501c3 initiative."
+   icon="" %}
+Grants and individual donations make this work possible.
+
+{% inContentButton
+   label="Donate now"
+   icon=""
+   size="primary"
+   background="green"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false /%}
+{% /sectionHeader %}
+
+{% sectionHeader
+   color="cyan"
+   title="Our research makes change happen."
+   icon="" %}
+Since 2016, our mission has been to conduct research on abortion pill access, share information widely, and normalize modern methods of abortion access in the US.
+
+{% inContentButton
+   label="About Plan C"
+   icon=""
+   size="primary"
+   background="cyan"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false /%}
+{% /sectionHeader %}
+{% /horizontalSplit %}

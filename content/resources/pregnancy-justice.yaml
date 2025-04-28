@@ -1,0 +1,13 @@
+title: Pregnancy Justice
+heading: For individuals
+author: Pregnancy Justice
+website: pregnancyjusticeus.org
+summary: >-
+  The leading organization providing pro-bono (free) criminal defense for people
+  charged with crimes because they were pregnant and had (or tried to have) an
+  abortion.
+buttonText: Visit website
+buttonIcon: arrowRight
+buttonUrl:
+  discriminant: url
+  value: https://www.pregnancyjusticeus.org/

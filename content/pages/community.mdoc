@@ -1,0 +1,119 @@
+---
+title: Community
+seo:
+  image:
+    discriminant: ''
+---
+{% heroSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="cyan"
+   ignoreImageBorder=false %}
+# Join the movement for abortion access
+
+Plan C is more than just a resource—it's a community of activists, organizers, and advocates fighting for accessible, self-managed abortion care. By joining the movement you take a stand for reproductive freedom and ensure that safe, self-managed options remain available.
+
+{% tableOfContents /%}
+{% /heroSection %}
+
+{% tocAnchor
+   slug="the-basics"
+   toc={discriminant: true, value: "The basics"} /%}
+
+{% bodySection
+   centered=true
+   fullWidth=false
+   color="blue"
+   textSize="medium" %}
+## I only have a few minutes
+{% /bodySection %}
+
+{% cardLayoutSection color="beige" minColumnWidth=23 %}
+{% cardSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageOnly=false
+   title="Get free stickers"
+   link="/stickers" %}
+‍Our stickers are available in English and Spanish, with a QR code that links directly to the Plan C website.
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageOnly=false
+   title="Attend a webinar"
+   link="/" %}
+Catch one of our monthly rotating topics: “Legal Eagles”, “Call the Midwife”, and “Takin’ it to the Streets.”
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageOnly=false
+   title="Join our newsletter"
+   link="/stickers" %}
+The Plan C ICYMI newsletter will keep you updated on breaking developments in abortion access and opportunities to take action.
+{% /cardSection %}
+{% /cardLayoutSection %}
+
+{% bodySection
+   centered=true
+   fullWidth=false
+   color="cyan"
+   textSize="medium" %}
+## I want to get more involved
+{% /bodySection %}
+
+{% resourceList
+   resources=["community_join-our-discord-server", "community_subscribe-to-our-linktree", "community_get-our-newsletter"]
+   type={discriminant: "carousel", value: {color: "green", title: "Stay connected", icon: ""}} /%}
+
+{% resourceList
+   resources=["community_join-our-discord-server", "community_subscribe-to-our-linktree", "community_get-our-newsletter"]
+   type={discriminant: "carousel", value: {color: "cyan", title: "Materials & merch", icon: ""}} /%}
+
+{% resourceList
+   resources=["community_join-our-discord-server", "community_subscribe-to-our-linktree", "community_get-our-newsletter"]
+   type={discriminant: "carousel", value: {color: "pink", title: "Education & events", icon: ""}} /%}
+
+{% resourceList
+   resources=["community_join-our-discord-server", "community_subscribe-to-our-linktree", "community_get-our-newsletter"]
+   type={discriminant: "carousel", value: {color: "blue", title: "DIY action", icon: ""}} /%}
+
+{% horizontalSplit noHeader=true %}
+{% inContentImage
+   image={discriminant: "uploaded", value: "event-image-test"}
+   maxWidth=100
+   newTab=false /%}
+
+{% sectionHeader color="cyan" title="Plan C community road trip" icon="" %}
+The&nbsp;Plan C Community Road Trip&nbsp;is a nationwide journey from June 23rd to November 5th, connecting communities and organizers through dynamic events hosted by diverse partner organizations. With the goal of uniting abortion activists, local organizers, and supporters in the fight for abortion access this 50+ stop adventure fosters inclusive conversations and raises awareness about safe, accessible abortion options.
+
+{% inContentButton
+   label="Find a stop in your state"
+   icon=""
+   size="primary"
+   background="cyan"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false /%}
+{% /sectionHeader %}
+{% /horizontalSplit %}
+
+{% formWrapper
+   formType={discriminant: "hubspot", value: {formId: "af55fe23-a71e-42ab-b844-c0e7b84b6939", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "u_s__state__dropdown_", value: {discriminant: "text"}}]}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% bodySection
+   centered=true
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+## Join the community newsletter
+
+For breaking developments in abortion pill access and opportunities to take action.
+
+{% formInput
+   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "City", slug: "city"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "State", slug: "state"}, required: false, type: {discriminant: "text", value: {placeholder: "Select one", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Sign up", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+{% /bodySection %}
+{% /formSection %}
+{% /formWrapper %}

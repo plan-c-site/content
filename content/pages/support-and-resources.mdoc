@@ -1,32 +1,161 @@
 ---
 title: Support & Resources
+seo:
+  image:
+    discriminant: ''
 ---
+{% heroSection
+   image={discriminant: "uploaded", value: "mailbox"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="cyan" %}
+# Support & resources
+
+No matter where you live, there is free confidential support available for using abortion pills.
+
+{% tableOfContents /%}
+{% /heroSection %}
+
+{% tocAnchor
+   slug="quick-resource-list"
+   toc={discriminant: true, value: "Quick resource list"} /%}
+
+{% actionBanner
+   title="Quick Resource List"
+   color="red"
+   icon="document"
+   link={label: "Download PDF", target: "/"} %}
+Download a condensed version of this page, formatted to print or share.
+{% /actionBanner %}
+
+{% tocAnchor
+   slug="medical-support"
+   toc={discriminant: true, value: "Medical support"} /%}
+
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Medical support" icon="" /%}
 
 {% flexSection direction="flex-row" noWrap=false %}
 {% resourceList
-   resources=["m-a-hotline", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone", "some-resource-with-website-and-org"]
-   type={discriminant: "simple"} /%}
+   resources=["m-a-hotline-site-wide-support-block", "ally-chatbot"]
+   type={discriminant: "simple", value: 2} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
+{% tocAnchor
+   slug="logistical-emotional-support"
+   toc={discriminant: true, value: "Logistical & emotional support"} /%}
+
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="cyan" title="Legal support" icon="" /%}
+{% sectionHeader
+   color="cyan"
+   title="Logistical and emotional support"
+   icon="" /%}
 
 {% flexSection direction="flex-row" noWrap=false %}
 {% resourceList
-   resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone", "some-resource-with-website-and-org"]
+   resources=["reprocare-healthline", "all-options", "exhale-pro-voice"]
    type={discriminant: "simple", value: 2} /%}
-
-{% resourceItem
-   resource="cobalt-fund-abortion-fund"
-   type={discriminant: "block"} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="beige" title="Test" icon="" /%}
+{% tocAnchor
+   slug="legal-support"
+   toc={discriminant: true, value: "Legal support"} /%}
 
-{% youtubeEmbed videoId="yhw-ItyTeao" startAt=0 /%}
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="pink" title="Legal support" icon="" /%}
+
+{% flexSection direction="flex-row" noWrap=false %}
+{% resourceList
+   resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
+   type={discriminant: "simple", value: 2} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug="financial-support"
+   toc={discriminant: true, value: "Financial support"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="blue" title="Financial support" icon="" /%}
+
+{% flexSection direction="flex-row" noWrap=false %}
+{% resourceList
+   resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
+   type={discriminant: "simple", value: 2} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug="learn-about-abortion-pills"
+   toc={discriminant: true, value: "Learn about abortion pills"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="red" title="Learn about abortion pills" icon="" /%}
+
+{% flexSection direction="flex-row" noWrap=false %}
+{% resourceList
+   resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
+   type={discriminant: "simple", value: 2} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug="apps-on-abortion"
+   toc={discriminant: true, value: "Apps on abortion"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Apps on abortion" icon="" /%}
+
+{% flexSection direction="flex-row" noWrap=false %}
+{% resourceList
+   resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
+   type={discriminant: "simple", value: 2} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug="other-options-for-getting-an-abortion"
+   toc={discriminant: true, value: "Other options for getting an abortion"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader
+   color="cyan"
+   title="Other options for getting an abortion"
+   icon="" /%}
+
+{% flexSection direction="flex-row" noWrap=false %}
+{% resourceList
+   resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
+   type={discriminant: "simple", value: 2} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug="birth-control-resources"
+   toc={discriminant: true, value: "Birth control resources"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="pink" title="Birth control resources" icon="" /%}
+
+{% flexSection direction="flex-row" noWrap=false %}
+{% resourceList
+   resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
+   type={discriminant: "simple", value: 2} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug="international"
+   toc={discriminant: true, value: "International"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="blue" title="International" icon="" /%}
+
+{% flexSection direction="flex-row" noWrap=false %}
+{% resourceList
+   resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
+   type={discriminant: "simple", value: 2} /%}
+{% /flexSection %}
 {% /horizontalSplit %}

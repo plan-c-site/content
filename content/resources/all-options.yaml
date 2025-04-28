@@ -1,0 +1,13 @@
+title: All Options
+author: All Options
+website: all-options.org
+phone: (888) 493-0092
+summary: >-
+  All-Options provides counseling as well as emotional support and referrals at
+  any point during or after someone's experience with pregnancy, parenting,
+  abortion, and adoption.
+buttonText: Call or text
+buttonIcon: phone
+buttonUrl:
+  discriminant: url
+  value: sms:888-493-0092

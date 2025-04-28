@@ -1,0 +1,10 @@
+title: Get our newsletter
+heading: Get our newsletter
+summary: >-
+  The Plan C ICYMI newsletter will keep you updated on breaking developments in
+  abortion access and opportunities to take action.
+buttonText: Sign up
+buttonIcon: arrowRight
+buttonUrl:
+  discriminant: url
+  value: /
