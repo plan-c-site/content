@@ -36,11 +36,12 @@ asdawfwaafwfwaawfaw
 
 {% flexSection direction="flex-col" noWrap=false %}
 {% resourceList
-   resources=["some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts"]
-   type={discriminant: "simple"} /%}
+   resources=["abortion-access-legal-defense-fund", "community_join-our-discord-server"]
+   type={discriminant: "simple"}
+   icon="stethoscope" /%}
 
 {% resourceItem
-   resource="some-resource-with-website-and-org"
+   resource="ally-chatbot"
    type={discriminant: "block", value: {icon: "document"}} /%}
 
 {% bodySection
@@ -51,11 +52,11 @@ asdawfwaafwfwaawfaw
 And some text for an embeded resource item.
 
 {% resourceItem
-   resource="some-resource-with-website-org-and-phone-but-no-texts"
+   resource="community_get-our-newsletter"
    type={discriminant: "embedded", value: false} /%}
 
 {% resourceItem
-   resource="some-resource-with-website-org-and-phone-but-no-texts"
+   resource="repro-legal-helpline-site-wide-support-block"
    type={discriminant: "embedded", value: true} /%}
 {% /bodySection %}
 {% /flexSection %}
@@ -63,8 +64,9 @@ And some text for an embeded resource item.
 
 {% flexSection direction="flex-row" noWrap=false %}
 {% resourceList
-   resources=["some-resource-with-url-only", "some-resource-with-website-and-org", "some-resource-with-website-org-and-phone-but-no-texts", "some-resource-with-website-org-and-phone"]
-   type={discriminant: "simple"} /%}
+   resources=["charley-the-chatbot", "community_get-our-newsletter", "for-providers_if-when-how", "charley-the-chatbot"]
+   type={discriminant: "simple"}
+   icon="circles" /%}
 {% /flexSection %}
 
 {% horizontalSplit noHeader=false %}
