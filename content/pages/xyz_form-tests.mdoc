@@ -32,6 +32,16 @@ seo:
 {% formInput
    fields=[{label: {name: "Give us feedback", slug: "feedback"}, required: true, type: {discriminant: "text", value: {placeholder: "Feedback", multiline: true, embedSubmitButton: {discriminant: true, value: {icon: "quote", background: "blue", altHoverBackground: "blue"}}}}}] /%}
 {% /formWrapper %}
+
+{% inContentButton
+   label="Popup Test"
+   icon=""
+   size="standard"
+   background="beige"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "popup", value: "xyz-test-popup"} /%}
 {% /heroSection %}
 
 {% formWrapper
