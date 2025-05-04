@@ -4,6 +4,11 @@ messageBar:
   mainLink: /
   quickExitText: Quick Exit
   quickExitLink: https://weather.com
+externalLink:
+  title: You are leaving the Plan C website.
+  dontShowAgainText: Don’t show this again
+  continueText: Continue to provider
+  continueIcon: arrowRight
 navBar:
   links:
     - discriminant: section
