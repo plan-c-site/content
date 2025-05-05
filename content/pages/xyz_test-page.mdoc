@@ -26,7 +26,8 @@ see [testimonials](#testimonials) {% inContentIcon icon="heartHandshake" size="s
    image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"}
    imageOnly=false
    title="Some Title"
-   label="A label below the card" %}
+   label="A label below the card"
+   action={discriminant: ""} %}
 Othe**r content and stuff**
 
 I think we can add content...
@@ -36,7 +37,8 @@ I think we can add content...
    image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"}
    imageOnly=false
    title="Some Title"
-   label="A label below the card" %}
+   label="A label below the card"
+   action={discriminant: ""} %}
 Othe**r content and stuff**
 
 I think we can add content...
@@ -49,7 +51,8 @@ to go over in height
 {% cardSection
    image={discriminant: "one-off", value: {image: "/images/xyz_test-page/c879ca67f1ee53b2051f025346a64a38.png"}}
    imageOnly=true
-   label="A label below the card" %}
+   label="A label below the card"
+   action={discriminant: "external", value: "https://google.com"} %}
 Othe**r content and stuff**
 
 I think we can add content...
@@ -69,7 +72,7 @@ to go over in height
    size="standard"
    background="beige"
    altHoverBackground=""
-   options=[{discriminant: "label", value: "Languages"}, {discriminant: "separator"}, {discriminant: "link", value: {label: "English", url: "https://www.google.com"}}, {discriminant: "link", value: {label: "Spanish", url: "https://www.google.es"}}] /%}
+   options=[{discriminant: "label", value: "Languages"}, {discriminant: "separator"}, {discriminant: "link", value: {label: "English", action: {discriminant: ""}, url: "https://www.google.com"}}, {discriminant: "link", value: {label: "Spanish", action: {discriminant: ""}, url: "https://www.google.es"}}] /%}
 {% /sectionHeader %}
 
 {% flexSection direction="flex-col" noWrap=false %}
@@ -105,6 +108,7 @@ Some text is here
 {% inContentImage
    image={discriminant: "uploaded", value: "mailbox"}
    maxWidth=100
+   action={discriminant: ""}
    newTab=false /%}
 
 {% inContentButton
@@ -114,7 +118,8 @@ Some text is here
    background="beige"
    altHoverBackground=""
    smallShadow=false
-   leftIcon=false /%}
+   leftIcon=false
+   action={discriminant: ""} /%}
 
 {% inContentButton
    label="PRIMARY button"
@@ -123,7 +128,8 @@ Some text is here
    background="green"
    altHoverBackground="red"
    smallShadow=false
-   leftIcon=true /%}
+   leftIcon=true
+   action={discriminant: ""} /%}
 {% /sectionHeader %}
 
 {% flexSection direction="flex-row" noWrap=false %}
@@ -232,7 +238,7 @@ In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Pl
    title="Quick Resource List"
    color="red"
    icon="document"
-   link={label: "Download PDF With Some Long Text"} %}
+   link={label: "Download PDF With Some Long Text", click: {discriminant: ""}} %}
 We have a new 501c3 fiscal sponsor, Possibility Labs (EIN 85-3989363).
 {% /actionBanner %}
 
