@@ -25,7 +25,8 @@ clinicTypes:
     singular: Community network clinic
     color: pink
     icon: heartHandshake
-    labels: []
+    labels:
+      - label: Peer support
     howDoesThisWork: xyz-test-popup
   - label: Websites that sell pills
     keyValue: Website that sells pills
