@@ -10,15 +10,26 @@ clinicTypes:
     keyValue: Online clinic
     singular: Online clinic
     color: cyan
+    icon: arrowRight
+    labels: []
+    howDoesThisWork: xyz-test-popup
   - label: International online clinics
     keyValue: International online clinic
     singular: International online clinic
     color: blue
+    icon: arrowRight
+    labels: []
+    howDoesThisWork: xyz-test-popup
   - label: Community network clinics
     keyValue: Community network
     singular: Community network clinic
     color: pink
+    icon: heartHandshake
+    labels: []
+    howDoesThisWork: xyz-test-popup
   - label: Websites that sell pills
     keyValue: Website that sells pills
     singular: Website that sells pills
     color: red
+    icon: arrowRight
+    labels: []
