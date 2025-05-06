@@ -11,7 +11,9 @@ clinicTypes:
     singular: Online clinic
     color: cyan
     icon: arrowRight
-    labels: []
+    labels:
+      - label: Price
+      - label: Delivery
     howDoesThisWork: xyz-test-popup
   - label: International online clinics
     keyValue: International online clinic
@@ -27,6 +29,7 @@ clinicTypes:
     icon: heartHandshake
     labels:
       - label: Peer support
+      - label: Price
     howDoesThisWork: xyz-test-popup
   - label: Websites that sell pills
     keyValue: Website that sells pills
