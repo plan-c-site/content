@@ -37,3 +37,22 @@ clinicTypes:
     color: red
     icon: arrowRight
     labels: []
+filterFields:
+  - field: Financial aid
+    label: Financial Assistance
+    selectType: multi
+    helpPopup:
+      discriminant: false
+  - field: Provider Interaction
+    label: Service options
+    selectType: multi
+    helpPopup:
+      discriminant: false
+  - field: Gestational age limit
+    label: Weeks of pregnancy
+    selectType: single
+    helpPopup:
+      discriminant: true
+      value:
+        label: How do you calculate  weeks of pregnancy?
+        popup: xyz-test-popup
