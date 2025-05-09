@@ -14,7 +14,7 @@ seo:
 
 Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.
 
-see [testimonials](#testimonials) {% inContentIcon icon="heartHandshake" size="standard" background="" color="black" /%}
+see {% inlineLink action={discriminant: "external", value: "#testimonials"} %}testimonials{% /inlineLink $} {% inContentIcon icon="heartHandshake" size="standard" background="" color="black" /%}
 
 {% tableOfContents /%}
 
@@ -103,7 +103,7 @@ Some text is here
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="A Section" icon="" %}
-**Test** [some](https://google.com) text
+**Test** {% inlineLink action={discriminant: "external", value: "https://google.com"} %}some{% /inlineLink $} text
 
 {% inContentImage
    image={discriminant: "uploaded", value: "mailbox"}
