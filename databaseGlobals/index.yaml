@@ -6,6 +6,7 @@ support:
 inPersonClinicResources:
   - reprocare-healthline
 medicallySafe: xyz-test-popup
+medicallySafeLabel: Medically very safe, possible legal risk
 clinicTypes:
   - label: Online Clinics
     keyValue: Online clinic
