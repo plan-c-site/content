@@ -5,6 +5,7 @@ support:
   - reprocare-healthline
 inPersonClinicResources:
   - reprocare-healthline
+medicallySafe: xyz-test-popup
 clinicTypes:
   - label: Online Clinics
     keyValue: Online clinic
