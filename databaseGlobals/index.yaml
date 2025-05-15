@@ -7,6 +7,8 @@ inPersonClinicResources:
   - reprocare-healthline
 medicallySafe: xyz-test-popup
 medicallySafeLabel: Medically very safe, possible legal risk
+howManyPillsPopup: xyz-test-popup
+howManyPillsLabel: How many pills are needed?
 clinicTypes:
   - label: Online Clinics
     keyValue: Online clinic
