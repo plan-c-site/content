@@ -8,7 +8,12 @@ seo:
    image={discriminant: "uploaded", value: "mailbox"}
    imageSide="right"
    color="beige"
-   imageBackgroundColor="cyan" %}
+   imageBackgroundColor="cyan"
+   ignoreImageBorder=false %}
+# \
+
+\
+
 # About Plan C
 
 Plan C is a public health creative campaign on abortion pill access, started in 2015 by a small team of veteran public health advocates, researchers, social justice activists. Read about our values here.‍
@@ -24,7 +29,7 @@ Our vision: A near future in which the ability to end an early pregnancy is dire
    title="2024 Plan C annual report"
    color="red"
    icon="document"
-   link={label: "View PDF", click: { discriminant: "", value: null}} %}
+   link={label: "View PDF", click: {discriminant: ""}} %}
 Read more about our work in the 2024 annual report.
 {% /actionBanner %}
 
@@ -33,7 +38,19 @@ Read more about our work in the 2024 annual report.
    toc={discriminant: true, value: "Who we are"} /%}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Who we are" icon="" /%}
+{% sectionHeader color="blue" title="Who we are" icon="" %}
+{% inContentButton
+   label="Test"
+   icon="download"
+   size="standard"
+   background="beige"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=true
+   action={discriminant: ""} /%}
+
+\
+{% /sectionHeader %}
 
 {% bodySection
    centered=false
