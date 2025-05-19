@@ -18,6 +18,8 @@ clinicTypes:
     labels:
       - label: Price
       - label: Delivery
+      - label: FDA-approved
+      - {}
     howDoesThisWork: xyz-test-popup
   - label: International online clinics
     keyValue: International online clinic
@@ -60,8 +62,3 @@ filterFields:
       value:
         label: How do you calculate  weeks of pregnancy?
         popup: xyz-test-popup
-  - field: Languages
-    label: Languages
-    selectType: single
-    helpPopup:
-      discriminant: false
