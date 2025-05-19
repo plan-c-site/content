@@ -53,6 +53,7 @@ clinicTypes:
       - {}
       - {}
       - {}
+    howDoesThisWork: xyz-test-popup
 filterFields:
   - field: Financial aid
     label: Financial Assistance
