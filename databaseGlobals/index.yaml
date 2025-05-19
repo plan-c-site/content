@@ -16,9 +16,9 @@ clinicTypes:
     color: cyan
     icon: arrowRight
     labels:
-      - label: Price
-      - label: Delivery
-      - label: FDA-approved
+      - {}
+      - {}
+      - {}
       - {}
     howDoesThisWork: xyz-test-popup
   - label: International online clinics
@@ -26,23 +26,33 @@ clinicTypes:
     singular: International online clinic
     color: blue
     icon: arrowRight
-    labels: []
+    labels:
+      - {}
+      - {}
+      - {}
+      - {}
     howDoesThisWork: xyz-test-popup
-  - label: Community network clinics
+  - label: Community networks
     keyValue: Community network
-    singular: Community network clinic
+    singular: Community network
     color: pink
     icon: heartHandshake
     labels:
-      - label: Peer support
-      - label: Price
+      - {}
+      - {}
+      - {}
+      - {}
     howDoesThisWork: xyz-test-popup
   - label: Websites that sell pills
     keyValue: Website that sells pills
     singular: Website that sells pills
     color: red
     icon: arrowRight
-    labels: []
+    labels:
+      - {}
+      - {}
+      - {}
+      - {}
 filterFields:
   - field: Financial aid
     label: Financial Assistance
