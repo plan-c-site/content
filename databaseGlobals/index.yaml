@@ -60,3 +60,8 @@ filterFields:
       value:
         label: How do you calculate  weeks of pregnancy?
         popup: xyz-test-popup
+  - field: Languages
+    label: Languages
+    selectType: single
+    helpPopup:
+      discriminant: false
