@@ -56,4 +56,51 @@ clinicTypes:
       - {}
       - {}
     howDoesThisWork: xyz-test-popup
-filterFields: []
+filterFields:
+  - field: Financial aid
+    label: Financial Assistance
+    selectType:
+      discriminant: multi
+      value:
+        - value: Discounts available
+          label: Discounts available
+          invert: false
+        - value: Accepts some insurance
+          label: Accepts some insurance
+          invert: false
+        - value: Free with medicaid
+          invert: false
+    helpPopup:
+      discriminant: false
+  - field: Services
+    label: Service options
+    selectType:
+      discriminant: multi
+      value:
+        - value: Pills in advance
+          invert: false
+        - value: Video visit required
+          label: No video visit required
+          invert: true
+        - value: No ID required
+          invert: false
+    helpPopup:
+      discriminant: false
+  - field: Age minimum
+    label: Ages served
+    selectType:
+      discriminant: number
+      value:
+        direction: gte
+        zeroIsAny: true
+        emptyIsAny: true
+        anyLabel: No minimum age
+        numberLabel: Serves ages %%+
+        options:
+          - 14
+          - 15
+          - 16
+          - 17
+          - 18
+    helpPopup:
+      discriminant: false
