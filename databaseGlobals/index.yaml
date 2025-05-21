@@ -95,7 +95,7 @@ filterFields:
     selectType:
       discriminant: number
       value:
-        direction: gte
+        direction: lte
         zeroIsAny: true
         emptyIsAny: true
         anyLabel: No minimum age
