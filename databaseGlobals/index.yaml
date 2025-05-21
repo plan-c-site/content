@@ -68,7 +68,8 @@ filterFields:
         - value: Accepts some insurance
           label: Accepts some insurance
           invert: false
-        - value: Free with medicaid
+        - value: Accepts medicaid
+          label: Free with medicaid
           invert: false
     helpPopup:
       discriminant: false
@@ -78,12 +79,15 @@ filterFields:
       discriminant: multi
       value:
         - value: Pills in advance
+          label: Pills in advance
           invert: false
         - value: Video visit required
           label: No video visit required
           invert: true
+          overrideField: Provider Interaction
         - value: No ID required
           invert: false
+          overrideField: Provider Interaction
     helpPopup:
       discriminant: false
   - field: Age minimum
