@@ -108,3 +108,9 @@ filterFields:
           - 18
     helpPopup:
       discriminant: false
+linkToStudies:
+  color: beige
+  icon: arrowRight
+medicaidText:
+  color: yellow
+  icon: arrowRight
