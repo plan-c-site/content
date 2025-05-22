@@ -16,7 +16,7 @@ clinicTypes:
     keyValue: Online clinic
     singular: Online clinic
     color: cyan
-    icon: arrowRight
+    icon: mousePointer
     labels:
       - {}
       - {}
@@ -27,7 +27,7 @@ clinicTypes:
     keyValue: International online clinic
     singular: International online clinic
     color: blue
-    icon: arrowRight
+    icon: globe
     labels:
       - {}
       - {}
@@ -49,7 +49,7 @@ clinicTypes:
     keyValue: Website that sells pills
     singular: Website that sells pills
     color: red
-    icon: arrowRight
+    icon: shoppingCart
     labels:
       - {}
       - {}
