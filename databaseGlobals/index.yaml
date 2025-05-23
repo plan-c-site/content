@@ -1,58 +1,116 @@
 faqs:
   - home_how-do-i-get-abortion-pills
+faqLink: guide-how-to-get-abortion-pills
 support:
   - m-a-hotline-site-wide-support-block
   - reprocare-healthline
+supportLink: support-resources
 inPersonClinicResources:
   - reprocare-healthline
+medicallySafe: xyz-test-popup
+medicallySafeLabel: Medically very safe, possible legal risk
+howManyPillsPopup: xyz-test-popup
+howManyPillsLabel: How many pills are needed?
 clinicTypes:
   - label: Online Clinics
     keyValue: Online clinic
     singular: Online clinic
     color: cyan
-    icon: arrowRight
+    icon: mousePointer
     labels:
-      - label: Price
-      - label: Delivery
+      - {}
+      - {}
+      - {}
+      - {}
     howDoesThisWork: xyz-test-popup
   - label: International online clinics
     keyValue: International online clinic
     singular: International online clinic
     color: blue
-    icon: arrowRight
-    labels: []
+    icon: globe
+    labels:
+      - {}
+      - {}
+      - {}
+      - {}
     howDoesThisWork: xyz-test-popup
-  - label: Community network clinics
+  - label: Community networks
     keyValue: Community network
-    singular: Community network clinic
+    singular: Community network
     color: pink
     icon: heartHandshake
     labels:
-      - label: Peer support
-      - label: Price
+      - {}
+      - {}
+      - {}
+      - {}
     howDoesThisWork: xyz-test-popup
   - label: Websites that sell pills
     keyValue: Website that sells pills
     singular: Website that sells pills
     color: red
-    icon: arrowRight
-    labels: []
+    icon: shoppingCart
+    labels:
+      - {}
+      - {}
+      - {}
+      - {}
+    howDoesThisWork: xyz-test-popup
 filterFields:
   - field: Financial aid
     label: Financial Assistance
-    selectType: multi
-    helpPopup:
-      discriminant: false
-  - field: Provider Interaction
-    label: Service options
-    selectType: multi
-    helpPopup:
-      discriminant: false
-  - field: Gestational age limit
-    label: Weeks of pregnancy
-    selectType: single
-    helpPopup:
-      discriminant: true
+    selectType:
+      discriminant: multi
       value:
-        label: How do you calculate  weeks of pregnancy?
-        popup: xyz-test-popup
+        - value: Discounts available
+          label: Discounts available
+          invert: false
+        - value: Accepts some insurance
+          label: Accepts some insurance
+          invert: false
+        - value: Accepts medicaid
+          label: Free with medicaid
+          invert: false
+    helpPopup:
+      discriminant: false
+  - field: Services
+    label: Service options
+    selectType:
+      discriminant: multi
+      value:
+        - value: Pills in advance
+          label: Pills in advance
+          invert: false
+        - value: Video visit required
+          label: No video visit required
+          invert: true
+          overrideField: Provider Interaction
+        - value: No ID required
+          invert: false
+          overrideField: Provider Interaction
+    helpPopup:
+      discriminant: false
+  - field: Age minimum
+    label: Ages served
+    selectType:
+      discriminant: number
+      value:
+        direction: lte
+        zeroIsAny: true
+        emptyIsAny: true
+        anyLabel: No minimum age
+        numberLabel: Serves ages %%+
+        options:
+          - 14
+          - 15
+          - 16
+          - 17
+          - 18
+    helpPopup:
+      discriminant: false
+linkToStudies:
+  color: beige
+  icon: arrowRight
+medicaidText:
+  color: yellow
+  icon: check
