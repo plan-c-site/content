@@ -18,7 +18,8 @@ asdawfwaafwfwaawfaw
    background="beige"
    altHoverBackground=""
    smallShadow=false
-   leftIcon=false /%}
+   leftIcon=false
+   action={discriminant: ""} /%}
 {% /heroSection %}
 
 {% horizontalSplit noHeader=false %}
@@ -38,11 +39,12 @@ asdawfwaafwfwaawfaw
 {% resourceList
    resources=["abortion-access-legal-defense-fund", "community_join-our-discord-server"]
    type={discriminant: "simple"}
-   icon="stethoscope" /%}
+   icon="truckFast"
+   iconColor="beige" /%}
 
 {% resourceItem
    resource="ally-chatbot"
-   type={discriminant: "block", value: {icon: "text"}} /%}
+   type={discriminant: "block", value: {icon: "truckFast", iconColor: "red"}} /%}
 
 {% bodySection
    centered=false
@@ -66,7 +68,8 @@ And some text for an embeded resource item.
 {% resourceList
    resources=["charley-the-chatbot", "community_get-our-newsletter", "for-providers_if-when-how", "charley-the-chatbot"]
    type={discriminant: "simple"}
-   icon="circles" /%}
+   icon="circles"
+   iconColor="" /%}
 {% /flexSection %}
 
 {% horizontalSplit noHeader=false %}
@@ -78,15 +81,15 @@ And some text for an embeded resource item.
 {% flexSection direction="flex-col" noWrap=false %}
 {% resourceItem
    resource="cobalt-fund-abortion-fund"
-   type={discriminant: "block", value: {icon: ""}} /%}
+   type={discriminant: "block", value: {icon: "", iconColor: ""}} /%}
 
 {% resourceItem
    resource="reprocare-healthline"
-   type={discriminant: "block", value: {icon: ""}} /%}
+   type={discriminant: "block", value: {icon: "", iconColor: ""}} /%}
 
 {% resourceItem
    resource="repro-legal-helpline-support-page"
-   type={discriminant: "block", value: {icon: ""}} /%}
+   type={discriminant: "block", value: {icon: "", iconColor: ""}} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -110,13 +113,15 @@ hello tasderae Something elseasdadw
    background="cyan"
    altHoverBackground=""
    smallShadow=false
-   leftIcon=false /%}
+   leftIcon=false
+   action={discriminant: ""} /%}
 
 {% youtubeEmbed videoId="xXOuSoWzlgQ" startAt=0 /%}
 
 {% inContentImage
    image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"}
    maxWidth=100
+   action={discriminant: ""}
    link="https://www.google.com"
    newTab=true /%}
 {% /bodySection %}
