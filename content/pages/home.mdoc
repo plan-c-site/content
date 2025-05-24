@@ -4,16 +4,31 @@ seo:
   image:
     discriminant: ''
 ---
+{% heroSection
+   image={discriminant: "noco", value: "1"}
+   imageSide="right"
+   color="blue"
+   imageBackgroundColor="cyan"
+   ignoreImageBorder=false %}
+# Abortion pills by mail in every state.
+
+Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.
+
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "/abortion-clinic/[:input_id:]"}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Type or select", options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "black", altHoverBackground: ""}}}}}] /%}
+{% /formSection %}
+{% /formWrapper %}
+
+{% textSize textSize="small" inline=false %}We do not collect or store personal data.{% /textSize %}
+{% /heroSection %}
+
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="Frequently asked questions" icon="" %}
-{% inContentButton
-   label="View all FAQs"
-   icon=""
-   size="primary"
-   background="pink"
-   altHoverBackground=""
-   smallShadow=false
-   leftIcon=false /%}
+{% formInput fields=[] /%}
 {% /sectionHeader %}
 
 {% flexSection direction="flex-col" noWrap=false %}
@@ -39,6 +54,7 @@ seo:
    image={discriminant: "uploaded", value: "mailbox"}
    imageOnly=false
    title="Pills in advance"
+   action={discriminant: ""}
    link="/" %}
 Many providers send abortion pills in advance, in case of future need.
 {% /cardSection %}
@@ -47,6 +63,7 @@ Many providers send abortion pills in advance, in case of future need.
    image={discriminant: "uploaded", value: "mailbox"}
    imageOnly=false
    title="Get free stickers"
+   action={discriminant: ""}
    link="/" %}
 Our QR code stickers link directly to the Plan C Guide.  Order a pack for free and place them far and wide—every sticker helps empower and inform!
 {% /cardSection %}
@@ -55,6 +72,7 @@ Our QR code stickers link directly to the Plan C Guide.  Order a pack for free a
    image={discriminant: "uploaded", value: "mailbox"}
    imageOnly=false
    title="Join the community"
+   action={discriminant: ""}
    link="/" %}
 A growing collective of activists and advocates taking action in their own communities.
 {% /cardSection %}
@@ -86,7 +104,8 @@ Grants and individual donations make this work possible.
    background="green"
    altHoverBackground=""
    smallShadow=false
-   leftIcon=false /%}
+   leftIcon=false
+   action={discriminant: ""} /%}
 {% /sectionHeader %}
 
 {% sectionHeader
@@ -102,6 +121,7 @@ Since 2016, our mission has been to conduct research on abortion pill access, sh
    background="cyan"
    altHoverBackground=""
    smallShadow=false
-   leftIcon=false /%}
+   leftIcon=false
+   action={discriminant: ""} /%}
 {% /sectionHeader %}
 {% /horizontalSplit %}
