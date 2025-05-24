@@ -110,7 +110,7 @@ filterFields:
       discriminant: false
 linkToStudies:
   color: beige
-  icon: arrowRight
+  icon: info
 medicaidText:
   color: yellow
-  icon: check
+  icon: info
