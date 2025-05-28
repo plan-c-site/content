@@ -67,6 +67,11 @@ to go over in height
 
 {% tocAnchor slug="faq" toc={discriminant: true, value: "Before FAQ"} /%}
 
+{% filteredListings
+   title="Filtered"
+   color="red"
+   listings={discriminant: "field", value: {field: "Delivery", value: "1 week or less"}} /%}
+
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="A Section" icon="" %}
 {% inContentDropdown
