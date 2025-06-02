@@ -27,7 +27,7 @@ navBar:
               label: FAQ
               action:
                 discriminant: internal
-                value: guide-how-to-get-abortion-pills
+                value: xyz_test-page
               url: /
           - discriminant: link
             value:
