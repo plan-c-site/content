@@ -18,26 +18,40 @@ navBar:
           - discriminant: link
             value:
               label: Search by state
+              action:
+                discriminant: internal
+                value: home
               url: /
           - discriminant: link
             value:
               label: FAQ
+              action:
+                discriminant: internal
+                value: guide-how-to-get-abortion-pills
               url: /
           - discriminant: link
             value:
               label: Pills in advance
+              action:
+                discriminant: ''
               url: /
           - discriminant: link
             value:
               label: Abortion pill instructions
+              action:
+                discriminant: ''
               url: /
           - discriminant: link
             value:
               label: Support & resources
+              action:
+                discriminant: ''
               url: /
           - discriminant: link
             value:
               label: Blogs
+              action:
+                discriminant: ''
               url: /
     - discriminant: section
       value:
@@ -48,6 +62,8 @@ navBar:
               label: A Child Section
               children:
                 - label: Some link
+                  action:
+                    discriminant: ''
                   url: /
     - discriminant: section
       value:
@@ -56,6 +72,8 @@ navBar:
           - discriminant: link
             value:
               label: About Plan C
+              action:
+                discriminant: ''
               url: /
     - discriminant: link
       value:
