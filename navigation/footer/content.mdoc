@@ -1,32 +1,34 @@
-{% sectionHeader color="blue" title="Get the plan c newsletter" icon="" %}
+{% flexSection direction="flex-col" noWrap=false %}
+## Get the plan c newsletter
+
 {% formWrapper
    formType={discriminant: "custom", value: {code: "alert(\"GOT\\n\" + JSON.stringify(inputs))"}}
    afterSubmit="show-screens" %}
 {% formInput
    fields=[{label: {name: "Email", slug: "email"}, required: false, type: {discriminant: "text", value: {placeholder: "Email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "green"}}}}}] /%}
 {% /formWrapper %}
-{% /sectionHeader %}
+{% /flexSection %}
 
-{% sectionHeader color="blue" icon="" %}
+{% flexSection direction="flex-col" noWrap=false %}
 **Abortion Pills**
 
-{% inlineLink action={discriminant: ""} %}link{% /inlineLink %}
+Link
 
-{% inlineLink action={discriminant: ""} %}link{% /inlineLink %}
-{% /sectionHeader %}
+Link
+{% /flexSection %}
 
-{% sectionHeader color="blue" icon="" %}
+{% flexSection direction="flex-col" noWrap=false %}
 **Abortion Pills**
 
-{% inlineLink action={discriminant: ""} %}link{% /inlineLink %}
+Link
 
-{% inlineLink action={discriminant: ""} %}link{% /inlineLink %}
-{% /sectionHeader %}
+Link
+{% /flexSection %}
 
-{% sectionHeader color="blue" icon="" %}
+{% flexSection direction="flex-col" noWrap=false %}
 **Abortion Pills**
 
-{% inlineLink action={discriminant: ""} %}link{% /inlineLink %}
+Link
 
-{% inlineLink action={discriminant: ""} %}link{% /inlineLink %}
-{% /sectionHeader %}
+Link
+{% /flexSection %}
