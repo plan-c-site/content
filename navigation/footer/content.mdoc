@@ -69,3 +69,39 @@ Link
 {% /flexSection %}
 {% /flexSection %}
 {% /flexSection %}
+
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2 %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2 %}
+Copyright and other notes
+{% /flexSection %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2 /%}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2 %}
+{% inContentImage
+   image={discriminant: "uploaded", value: "event-image-test"}
+   maxWidth=100
+   action={discriminant: ""}
+   newTab=false /%}
+{% /flexSection %}
+{% /flexSection %}
