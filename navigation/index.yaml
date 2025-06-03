@@ -9,6 +9,15 @@ externalLink:
   dontShowAgainText: Don’t show this again
   continueText: Continue to provider
   continueIcon: arrowRight
+social:
+  - action:
+      discriminant: external
+      value: https://www.x.com
+    icon: xTwitter
+  - action:
+      discriminant: external
+      value: https://www.facebook.com
+    icon: facebook
 navBar:
   links:
     - discriminant: section
