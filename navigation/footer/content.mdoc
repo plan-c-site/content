@@ -1,4 +1,14 @@
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=true %}
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=false
+   grow=true
+   gap=0.5 %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=true %}
 ## Get the plan c newsletter
 
 {% formWrapper
@@ -9,7 +19,11 @@
 {% /formWrapper %}
 {% /flexSection %}
 
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=true %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false %}
 **Abortion Pills**
 
 Link
@@ -17,18 +31,27 @@ Link
 Link
 {% /flexSection %}
 
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=true %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false %}
+**Abortion Pills**
+
+Link
+
+Link
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false %}
 **Abortion Pills**
 
 Link
 
 Link
 {% /flexSection %}
-
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=true %}
-**Abortion Pills**
-
-Link
-
-Link
+{% /flexSection %}
 {% /flexSection %}
