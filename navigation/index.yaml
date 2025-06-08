@@ -12,12 +12,24 @@ externalLink:
 social:
   - action:
       discriminant: external
-      value: https://www.x.com
+      value: https://www.instagram.com/plancpills/
+    icon: instagram
+  - action:
+      discriminant: external
+      value: https://twitter.com/Plancpills
     icon: xTwitter
   - action:
       discriminant: external
-      value: https://www.facebook.com
+      value: https://www.facebook.com/plancpills
     icon: facebook
+  - action:
+      discriminant: external
+      value: https://ng.linkedin.com/company/plancpills
+    icon: linkedin
+  - action:
+      discriminant: external
+      value: https://www.tiktok.com/@plancpills
+    icon: tiktok
 navBar:
   links:
     - discriminant: section
