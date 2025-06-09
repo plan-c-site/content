@@ -23,3 +23,33 @@ This guide lists results of our abortion pill research
 {% /insetSection %}
 {% /conditionalSection %}
 {% /heroSection %}
+
+{% dbClinic /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="pink" title="Frequently Asked Questions" icon="" %}
+{% inContentButton
+   label="View all FAQs"
+   icon=""
+   size="standard"
+   background="pink"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: ""} /%}
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% faqList
+   faqs=["home_how-do-i-get-abortion-pills"]
+   color="beige"
+   appendStateField="Additional FAQs" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
