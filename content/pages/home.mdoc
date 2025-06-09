@@ -27,23 +27,28 @@ Plan C provides up-to-date information on how people in the U.S. are accessing a
 {% /heroSection %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Frequently asked questions" icon="" %}
-{% formInput fields=[] /%}
-{% /sectionHeader %}
+{% sectionHeader color="pink" title="Frequently asked questions" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% faqSection
    faq="home_what-is-the-abortion-pill"
    color="beige"
    embedded=false /%}
 
 {% faqSection
-   faq="home_how-do-i-get-abortion-pills"
+   faq="home_what-is-the-abortion-pill"
    color="beige"
    embedded=false /%}
 
 {% faqSection
-   faq="can-i-get-in-trouble-for-using-abortion-pills"
+   faq="home_what-is-the-abortion-pill"
    color="beige"
    embedded=false /%}
 {% /flexSection %}
@@ -54,8 +59,7 @@ Plan C provides up-to-date information on how people in the U.S. are accessing a
    image={discriminant: "uploaded", value: "mailbox"}
    imageOnly=false
    title="Pills in advance"
-   action={discriminant: ""}
-   link="/" %}
+   action={discriminant: "internal", value: "in-advance"} %}
 Many providers send abortion pills in advance, in case of future need.
 {% /cardSection %}
 
@@ -63,8 +67,7 @@ Many providers send abortion pills in advance, in case of future need.
    image={discriminant: "uploaded", value: "mailbox"}
    imageOnly=false
    title="Get free stickers"
-   action={discriminant: ""}
-   link="/" %}
+   action={discriminant: "internal", value: "stickers"} %}
 Our QR code stickers link directly to the Plan C Guide.  Order a pack for free and place them far and wide—every sticker helps empower and inform!
 {% /cardSection %}
 
@@ -72,8 +75,7 @@ Our QR code stickers link directly to the Plan C Guide.  Order a pack for free a
    image={discriminant: "uploaded", value: "mailbox"}
    imageOnly=false
    title="Join the community"
-   action={discriminant: ""}
-   link="/" %}
+   action={discriminant: "internal", value: "community"} %}
 A growing collective of activists and advocates taking action in their own communities.
 {% /cardSection %}
 {% /cardLayoutSection %}
@@ -105,7 +107,7 @@ Grants and individual donations make this work possible.
    altHoverBackground=""
    smallShadow=false
    leftIcon=false
-   action={discriminant: ""} /%}
+   action={discriminant: "internal", value: "donate"} /%}
 {% /sectionHeader %}
 
 {% sectionHeader
@@ -122,6 +124,6 @@ Since 2016, our mission has been to conduct research on abortion pill access, sh
    altHoverBackground=""
    smallShadow=false
    leftIcon=false
-   action={discriminant: ""} /%}
+   action={discriminant: "internal", value: "about"} /%}
 {% /sectionHeader %}
 {% /horizontalSplit %}
