@@ -54,8 +54,6 @@ This guide lists results of our abortion pill research
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% conditionalSection
-   condition={discriminant: "stateFieldTruthy", value: "Additional In Person Clinic Resources"} %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Get support" icon="" %}
 {% inContentButton
@@ -85,8 +83,9 @@ This guide lists results of our abortion pill research
    appendStateField="Additional Support Resources" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
-{% /conditionalSection %}
 
+{% conditionalSection
+   condition={discriminant: "stateFieldTruthy", value: "Additional In Person Clinic Resources"} %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="grey" title="In-person clinics" icon="" %}
 Clinics offer abortion pill pickup and other in-person abortion
@@ -111,3 +110,4 @@ care options.
    appendStateField="Additional In Person Clinic Resources" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
+{% /conditionalSection %}
