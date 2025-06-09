@@ -53,3 +53,59 @@ This guide lists results of our abortion pill research
    appendStateField="Additional FAQs" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
+
+{% conditionalSection
+   condition={discriminant: "stateFieldTruthy", value: "Additional In Person Clinic Resources"} %}
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Get support" icon="" %}
+{% inContentButton
+   label="View all support"
+   icon=""
+   size="standard"
+   background="green"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: ""} /%}
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% resourceList
+   resources=["abortion-access-legal-defense-fund"]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor=""
+   appendStateField="Additional Support Resources" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+{% /conditionalSection %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="grey" title="In-person clinics" icon="" %}
+Clinics offer abortion pill pickup and other in-person abortion
+care options.
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% resourceList
+   resources=[]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor=""
+   appendStateField="Additional In Person Clinic Resources" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
