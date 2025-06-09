@@ -42,50 +42,78 @@ navBar:
               action:
                 discriminant: internal
                 value: home
-              url: /
           - discriminant: link
             value:
               label: FAQ
               action:
                 discriminant: internal
-                value: xyz_test-page
-              url: /
+                value: guide-how-to-get-abortion-pills
           - discriminant: link
             value:
               label: Pills in advance
               action:
-                discriminant: ''
-              url: /
+                discriminant: internal
+                value: in-advance
           - discriminant: link
             value:
               label: Abortion pill instructions
               action:
-                discriminant: ''
-              url: /
+                discriminant: internal
+                value: how-to-take-abortion-pills
           - discriminant: link
             value:
               label: Support & resources
               action:
-                discriminant: ''
-              url: /
+                discriminant: internal
+                value: support-resources
           - discriminant: link
             value:
               label: Blogs
               action:
-                discriminant: ''
-              url: /
+                discriminant: internal
     - discriminant: section
       value:
         label: Get involved
         children:
           - discriminant: section
             value:
-              label: A Child Section
+              label: Spread the word
               children:
-                - label: Some link
+                - label: Plan C Community
                   action:
-                    discriminant: ''
-                  url: /
+                    discriminant: internal
+                    value: community
+                - label: Stickers & flyers
+                  action:
+                    discriminant: internal
+                    value: stickers
+                - label: Take action
+                  action:
+                    discriminant: internal
+                    value: community
+                - label: Social media toolkit
+                  action:
+                    discriminant: internal
+                    value: social-media-toolkit
+                - label: Plan C merch
+                  action:
+                    discriminant: external
+                    value: /
+          - discriminant: section
+            value:
+              label: Connect with us
+              children:
+                - label: Partner with us
+                  action:
+                    discriminant: internal
+                    value: partnerships
+                - label: For medical professionals
+                  action:
+                    discriminant: internal
+                    value: medical-professional-abortion-services
+                - label: Work with Plan C
+                  action:
+                    discriminant: internal
     - discriminant: section
       value:
         label: About
