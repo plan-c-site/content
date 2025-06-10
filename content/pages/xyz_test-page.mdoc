@@ -87,7 +87,13 @@ to go over in height
    options=[{discriminant: "label", value: "Languages"}, {discriminant: "separator"}, {discriminant: "link", value: {label: "English", action: {discriminant: ""}, url: "https://www.google.com"}}, {discriminant: "link", value: {label: "Spanish", action: {discriminant: ""}, url: "https://www.google.es"}}] /%}
 {% /sectionHeader %}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% bodySection
    centered=false
    fullWidth=false
@@ -99,17 +105,20 @@ Some text is here
 {% faqSection
    faq="where-someone-lives-makes-a-difference"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=true /%}
 
 {% faqSection
    faq="how-does-the-abortion-pill-work"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=true /%}
 
 {% faqSection
    faq="how-does-the-abortion-pill-work"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=true /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -144,7 +153,13 @@ Some text is here
    action={discriminant: ""} /%}
 {% /sectionHeader %}
 
-{% flexSection direction="flex-row" noWrap=false %}
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% bodySection
    centered=false
    fullWidth=false
@@ -202,7 +217,8 @@ Learn more about these options on&nbsp;Plan C’s Guide&nbsp;and&nbsp;ineedana.c
 {% faqSection
    faq="where-someone-lives-makes-a-difference"
    color="beige"
-   embedded=true /%}
+   embedded=true
+   anchor=true /%}
 {% /bodySection %}
 
 {% horizontalSplit noHeader=true %}
