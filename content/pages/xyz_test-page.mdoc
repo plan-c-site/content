@@ -65,7 +65,9 @@ to go over in height
 {% /cardSection %}
 {% /cardLayoutSection %}
 
-{% tocAnchor slug="faq" toc={discriminant: true, value: "Before FAQ"} /%}
+{% tocAnchor
+  slug={name="Before FAQ", slug="faq"}
+  type={discriminant: "toc", value: null } /%}
 
 {% filteredListings
    title="1 week or less"
@@ -179,8 +181,8 @@ Some text is here
 {% /horizontalSplit %}
 
 {% tocAnchor
-   slug="information-resource"
-   toc={discriminant: true, value: "Plan C is an Information Resource"} /%}
+  slug={name="Plan C is an Information Resource", slug="information-resource"}
+  type={discriminant: "toc", value: null } /%}
 
 {% bodySection centered=true fullWidth=false color="red" textSize="medium" %}
 ## Plan C is an information resource.
@@ -235,7 +237,9 @@ Learn more about these options on&nbsp;Plan C’s Guide&nbsp;and&nbsp;ineedana.c
 {% sectionHeader color="beige" title="Right 33%" icon="phone" /%}
 {% /horizontalSplit %}
 
-{% tocAnchor slug="testimonials" toc={discriminant: false} /%}
+{% tocAnchor
+  slug={name="testimonials", slug="testimonials"}
+  type={discriminant: "anchor", value: null } /%}
 
 {% cardLayoutSection color="beige" minColumnWidth=32 %}
 {% testimonialSection
@@ -260,7 +264,9 @@ In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Pl
 In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Plan B, the “morning after pill,” over the counter – a long but successful journey catalyzing business, FDA and public goals. (Read From Secret to Shelf, 1999).
 {% /timelineSection %}
 
-{% tocAnchor slug="todo" toc={discriminant: true, value: "ToDo"} /%}
+{% tocAnchor
+  slug={name="ToDo", slug="todo"}
+  type={discriminant: "toc", value: null } /%}
 
 {% actionBanner
    title="Quick Resource List"

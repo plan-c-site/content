@@ -4,7 +4,9 @@ seo:
   image:
     discriminant: ''
 ---
-{% tocAnchor slug="top" toc={discriminant: false} /%}
+{% tocAnchor
+  slug={name="top", slug="top"}
+  type={discriminant: "anchor", value: null } /%}
 
 {% heroSection
    image={discriminant: "uploaded"}
@@ -27,8 +29,8 @@ We have a new 501c3 fiscal sponsor, Possibility Labs (EIN 85-3989363).&nbsp;See 
 {% /actionBanner %}
 
 {% tocAnchor
-   slug="how-to-donate"
-   toc={discriminant: true, value: "How to donate"} /%}
+  slug={name="How to donate", slug="how-to-donate"}
+  type={discriminant: "toc", value: null } /%}
 
 {% horizontalSplit noHeader=true %}
 {% sectionHeader color="green" title="Give online" icon="" %}
@@ -71,8 +73,8 @@ Email&nbsp;{% inlineLink action={discriminant: "external", value: "mailto:suppor
 {% /horizontalSplit %}
 
 {% tocAnchor
-   slug="where-do-donations-go"
-   toc={discriminant: true, value: "Where do donations go?"} /%}
+  slug={name="Where do donations go?", slug="where-do-donations-go"}
+  type={discriminant: "toc", value: null } /%}
 
 {% bodySection
    centered=false
@@ -91,8 +93,8 @@ All of our work fits into two main goals:&nbsp;that People Know (about pills)&nb
 {% /bodySection %}
 
 {% tocAnchor
-   slug="donor-testimonials"
-   toc={discriminant: true, value: "Donor testimonials"} /%}
+  slug={name="Donor testimonials", slug="donor-testimonials"}
+  type={discriminant: "toc", value: null } /%}
 
 {% cardLayoutSection color="blue" minColumnWidth=34 %}
 {% testimonialSection
@@ -109,8 +111,8 @@ All of our work fits into two main goals:&nbsp;that People Know (about pills)&nb
 {% /cardLayoutSection %}
 
 {% tocAnchor
-   slug="past-funders"
-   toc={discriminant: true, value: "Past funders"} /%}
+  slug={name="Past funders", slug="past-funders"}
+  type={discriminant: "toc", value: null } /%}
 
 {% logoBanner
    title="Past funders include"
