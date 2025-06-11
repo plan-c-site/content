@@ -25,7 +25,13 @@ asdawfwaafwfwaawfaw
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="cyan" title="Plan C Press!!!!" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% articleList
    pagination=3
    filtering={discriminant: "category", value: {category: "plan-c"}} /%}
@@ -35,15 +41,24 @@ asdawfwaafwfwaawfaw
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Simple Resource Items" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% resourceList
    resources=["abortion-access-legal-defense-fund", "community_join-our-discord-server"]
    type={discriminant: "simple"}
    icon="truckFast"
-   iconColor="pink" /%}
+   iconColor="pink"
+   hideHeaders=false
+   appendStateField="" /%}
 
 {% resourceItem
    resource="ally-chatbot"
+   header={discriminant: "override", value: "An Overriden Heading for Ally Chatbot"}
    type={discriminant: "block", value: {icon: "truckFast", iconColor: "red"}} /%}
 
 {% bodySection
@@ -55,21 +70,31 @@ And some text for an embeded resource item.
 
 {% resourceItem
    resource="community_get-our-newsletter"
+   header={discriminant: "source"}
    type={discriminant: "embedded", value: false} /%}
 
 {% resourceItem
    resource="repro-legal-helpline-site-wide-support-block"
+   header={discriminant: "source"}
    type={discriminant: "embedded", value: true} /%}
 {% /bodySection %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% flexSection direction="flex-row" noWrap=false %}
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% resourceList
    resources=["charley-the-chatbot", "community_get-our-newsletter", "for-providers_if-when-how", "charley-the-chatbot"]
    type={discriminant: "simple"}
    icon=""
-   iconColor="white" /%}
+   iconColor="white"
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 
 {% horizontalSplit noHeader=false %}
@@ -78,17 +103,26 @@ And some text for an embeded resource item.
    title="Resources in vertical list with no icons"
    icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% resourceItem
    resource="cobalt-fund-abortion-fund"
+   header={discriminant: "source"}
    type={discriminant: "block", value: {icon: "", iconColor: ""}} /%}
 
 {% resourceItem
    resource="reprocare-healthline"
+   header={discriminant: "source"}
    type={discriminant: "block", value: {icon: "", iconColor: ""}} /%}
 
 {% resourceItem
    resource="repro-legal-helpline-support-page"
+   header={discriminant: "source"}
    type={discriminant: "block", value: {icon: "", iconColor: ""}} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
