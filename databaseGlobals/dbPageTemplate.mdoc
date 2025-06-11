@@ -1,4 +1,4 @@
-{% tocAnchor slug={name: "Top", slug: "top"} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "Top", slug: "top"} type={discriminant: "anchor"} /%}
 
 {% actionBanner
    title="Plan C does not sell pills or provide medical advice."
@@ -28,6 +28,10 @@ This guide lists results of our abortion pill research
 {% tableOfContents /%}
 {% /heroSection %}
 
+{% tocAnchor
+   slug={name: "List of providers", slug: "list-of-providers"}
+   type={discriminant: "toc"} /%}
+
 {% dbClinic /%}
 
 {% horizontalSplit noHeader=false %}
@@ -51,10 +55,16 @@ This guide lists results of our abortion pill research
    gap=2
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% faqList
-   faqs=["home_how-do-i-get-abortion-pills"]
+{% faqSection
+   faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   appendStateField="Additional FAQs"
+   embedded=false
+   anchor=true /%}
+
+{% faqSection
+   faq="how-does-the-abortion-pill-work"
+   color="beige"
+   embedded=false
    anchor=true /%}
 {% /flexSection %}
 {% /horizontalSplit %}
