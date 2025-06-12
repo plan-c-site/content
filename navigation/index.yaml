@@ -12,23 +12,33 @@ externalLink:
 social:
   - action:
       discriminant: external
-      value: https://www.instagram.com/plancpills/
+      value: 
+        url: https://www.instagram.com/plancpills/
+        showPopup: false
     icon: instagram
   - action:
       discriminant: external
-      value: https://twitter.com/Plancpills
+      value: 
+        url: https://twitter.com/Plancpills
+        showPopup: false
     icon: xTwitter
   - action:
       discriminant: external
-      value: https://www.facebook.com/plancpills
+      value: 
+        url: https://www.facebook.com/plancpills
+        showPopup: false
     icon: facebook
   - action:
       discriminant: external
-      value: https://ng.linkedin.com/company/plancpills
+      value: 
+        url: https://ng.linkedin.com/company/plancpills
+        showPopup: false
     icon: linkedin
   - action:
       discriminant: external
-      value: https://www.tiktok.com/@plancpills
+      value: 
+        url: https://www.tiktok.com/@plancpills
+        showPopup: false
     icon: tiktok
 navBar:
   links:
@@ -98,7 +108,9 @@ navBar:
                 - label: Plan C merch
                   action:
                     discriminant: external
-                    value: /
+                    value: 
+                      url: /
+                      showPopup: false
           - discriminant: section
             value:
               label: Connect with us
