@@ -12,11 +12,11 @@ seo:
    ignoreImageBorder=false %}
 # Abortion pills by mail in every state
 
-Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.
+{% textSize textSize="large" inline=true %}Plan C{% /textSize %} provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.
 
 {% inlineLink action={discriminant: "popup", value: "xyz-test-popup"} %}Popup?{% /inlineLink %}
 
-see {% inlineLink action={discriminant: "external", value: { url: "#testimonials", showPopup: false }} %}testimonials{% /inlineLink %} {% inContentIcon icon="heartHandshake" size="standard" background="" color="black" /%}
+see {% inlineLink action={discriminant: "external", value: {url: "#testimonials", showPopup: false}} %}testimonials{% /inlineLink %} {% inContentIcon icon="heartHandshake" size="standard" background="" color="black" /%}
 
 {% tableOfContents /%}
 
@@ -54,7 +54,7 @@ to go over in height
    image={discriminant: "one-off", value: {image: "/images/xyz_test-page/c879ca67f1ee53b2051f025346a64a38.png"}}
    imageOnly=true
    label="A label below the card"
-   action={discriminant: "external", value: { url: "https://google.com", showPopup: false }} %}
+   action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} %}
 Othe**r content and stuff**
 
 I think we can add content...
@@ -66,8 +66,8 @@ to go over in height
 {% /cardLayoutSection %}
 
 {% tocAnchor
-  slug={name:"Before FAQ", slug:"faq"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Before FAQ", slug: "faq"}
+   type={discriminant: "toc"} /%}
 
 {% filteredListings
    title="1 week or less"
@@ -126,7 +126,7 @@ Some text is here
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="A Section" icon="" %}
-**Test** {% inlineLink action={discriminant: "external", value: { url: "https://google.com", showPopup: false }} %}some{% /inlineLink %} text
+**Test** {% inlineLink action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} %}some{% /inlineLink %} text
 
 {% inContentImage
    image={discriminant: "uploaded", value: "mailbox"}
@@ -181,8 +181,8 @@ Some text is here
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Plan C is an Information Resource", slug:"information-resource"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Plan C is an Information Resource", slug: "information-resource"}
+   type={discriminant: "toc"} /%}
 
 {% bodySection centered=true fullWidth=false color="red" textSize="medium" %}
 ## Plan C is an information resource.
@@ -238,8 +238,8 @@ Learn more about these options on&nbsp;Plan C’s Guide&nbsp;and&nbsp;ineedana.c
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"testimonials", slug:"testimonials"}
-  type={discriminant: "anchor", value: null } /%}
+   slug={name: "testimonials", slug: "testimonials"}
+   type={discriminant: "anchor"} /%}
 
 {% cardLayoutSection color="beige" minColumnWidth=32 %}
 {% testimonialSection
@@ -264,9 +264,7 @@ In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Pl
 In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Plan B, the “morning after pill,” over the counter – a long but successful journey catalyzing business, FDA and public goals. (Read From Secret to Shelf, 1999).
 {% /timelineSection %}
 
-{% tocAnchor
-  slug={name:"ToDo", slug:"todo"}
-  type={discriminant: "toc", value: null } /%}
+{% tocAnchor slug={name: "ToDo", slug: "todo"} type={discriminant: "toc"} /%}
 
 {% actionBanner
    title="Quick Resource List"
