@@ -1,14 +1,12 @@
-{% tocAnchor
-  slug={name:"Top", slug:"top"}
-  type={discriminant: "toc", value: null } /%}
+{% tocAnchor slug={name: "Top", slug: "top"} type={discriminant: "anchor"} /%}
 
-{% actionBanner
-   title="Plan C does not sell pills or provide medical advice."
-   color="red"
+{% narrowBanner
    icon="circleAlert"
-   link={click: {discriminant: ""}} %}
-This guide lists results of our abortion pill research
-{% /actionBanner %}
+   color="red"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% textSize textSize="small" inline=true %}**Plan C does not sell pills or provide medical advice.** This guide lists results of our abortion pill research.{% /textSize %}
+{% /narrowBanner %}
 
 {% heroSection
    image={discriminant: "state"}
@@ -21,14 +19,22 @@ This guide lists results of our abortion pill research
 {% dbMarkdoc source="Summary" /%}
 
 {% conditionalSection
-   condition={discriminant: "stateFieldTruthy", value: ""} %}
-{% insetSection %}
-{% textSize textSize="small" inline=true %}If you live in this state and are seeking an abortion, you may qualify to participate in a paid research study about abortion access.&nbsp;{% inlineLink action={discriminant: ""} %}Click here to learn more.{% /inlineLink %}{% /textSize %}
-{% /insetSection %}
+   condition={discriminant: "stateFieldTruthy", value: "Link to studies (in languages)"} %}
+{% narrowBanner
+   icon="alertCircle"
+   color="beige"
+   iconAlign="items-start"
+   fullWidth=false %}
+{% textSize textSize="small" inline=true %}If you live in this state and are seeking an abortion, you may qualify to participate in a paid research study about abortion access.&nbsp;{% inlineLink action={discriminant: "internal", value: "about"} %}Click here to learn more{% /inlineLink %}.{% /textSize %}
+{% /narrowBanner %}
 {% /conditionalSection %}
 
 {% tableOfContents /%}
 {% /heroSection %}
+
+{% tocAnchor
+   slug={name: "List of providers", slug: "list-of-providers"}
+   type={discriminant: "toc"} /%}
 
 {% dbClinic /%}
 
@@ -53,13 +59,27 @@ This guide lists results of our abortion pill research
    gap=2
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% faqList
-   faqs=["home_how-do-i-get-abortion-pills"]
+{% faqSection
+   faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   appendStateField="Additional FAQs"
+   embedded=false
+   anchor=false /%}
+
+{% faqSection
+   faq="how-does-the-abortion-pill-work"
+   color="beige"
+   embedded=false
    anchor=true /%}
 {% /flexSection %}
 {% /horizontalSplit %}
+
+{% narrowBanner
+   icon="arrowUp"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% inlineLink action={discriminant: "anchor", value: "top"} %}Back to top{% /inlineLink %}
+{% /narrowBanner %}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Get support" icon="" %}
@@ -95,10 +115,7 @@ This guide lists results of our abortion pill research
    condition={discriminant: "stateFieldTruthy", value: "Additional In Person Clinic Resources"} %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="grey" title="In-person clinics" icon="" %}
-Clinics offer abortion pill pickup and other in-person abortion
-care options.
-
-{% dbText source="Additional In Person Clinic Resources" /%}
+Clinics offer abortion pill pickup and other in-person abortion care options. Find the nearest clinic to {% dbText source="Name" /%} using this search tool.
 {% /sectionHeader %}
 
 {% flexSection
@@ -118,3 +135,7 @@ care options.
 {% /flexSection %}
 {% /horizontalSplit %}
 {% /conditionalSection %}
+
+{% tocAnchor
+   slug={name: "Pregnancy Calculator", slug: "pregnancy-calculator"}
+   type={discriminant: "action", value: {discriminant: "pregnancy"}} /%}
