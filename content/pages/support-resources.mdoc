@@ -118,6 +118,14 @@ Download a condensed version of this page, formatted to print or share.
    grow=false
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=0
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% resourceItem
    resource="repro-legal-helpline-site-wide-support-block"
    header={discriminant: "source"}
@@ -127,11 +135,21 @@ Download a condensed version of this page, formatted to print or share.
    resource="repro-legal-helpline-site-wide-support-block"
    header={discriminant: "none"}
    type={discriminant: "block", value: {icon: "chevronRight", iconColor: "pink"}} /%}
+{% /flexSection %}
 
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% resourceItem
    resource="repro-legal-helpline-site-wide-support-block"
    header={discriminant: "override", value: "New heading"}
    type={discriminant: "block", value: {icon: "chevronRight", iconColor: "pink"}} /%}
+{% /flexSection %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
