@@ -51,6 +51,7 @@ navBar:
               label: Search by state
               action:
                 discriminant: internal
+                value: home
           - discriminant: link
             value:
               label: FAQ
