@@ -18,8 +18,8 @@ No matter where you live, there is free confidential support available for using
 {% /heroSection %}
 
 {% tocAnchor
-  slug={name:"Quick resource list", slug:"quick-resource-list"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Quick resource list", slug: "quick-resource-list"}
+   type={discriminant: "toc"} /%}
 
 {% actionBanner
    title="Quick Resource List"
@@ -30,8 +30,8 @@ Download a condensed version of this page, formatted to print or share.
 {% /actionBanner %}
 
 {% tocAnchor
-  slug={name:"Medical support", slug:"medical-support"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Medical support", slug: "medical-support"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Medical support" icon="" /%}
@@ -47,13 +47,15 @@ Download a condensed version of this page, formatted to print or share.
    resources=["m-a-hotline-site-wide-support-block", "ally-chatbot"]
    type={discriminant: "simple", value: 2}
    icon=""
-   iconColor="green" /%}
+   iconColor="green"
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Logistical & emotional support", slug:"logistical-emotional-support"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Logistical & emotional support", slug: "logistical-emotional-support"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader
@@ -72,13 +74,15 @@ Download a condensed version of this page, formatted to print or share.
    resources=["reprocare-healthline", "all-options", "exhale-pro-voice"]
    type={discriminant: "simple", value: 2}
    icon=""
-   iconColor="cyan" /%}
+   iconColor="cyan"
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Legal support", slug:"legal-support"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Legal support", slug: "legal-support"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="Legal support" icon="" /%}
@@ -94,13 +98,15 @@ Download a condensed version of this page, formatted to print or share.
    resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
    type={discriminant: "simple", value: 2}
    icon=""
-   iconColor="pink" /%}
+   iconColor="pink"
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Financial support", slug:"financial-support"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Financial support", slug: "financial-support"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="Financial support" icon="" /%}
@@ -112,17 +118,26 @@ Download a condensed version of this page, formatted to print or share.
    grow=false
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% resourceList
-   resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
-   type={discriminant: "simple", value: 2}
-   icon=""
-   iconColor="blue" /%}
+{% resourceItem
+   resource="repro-legal-helpline-site-wide-support-block"
+   header={discriminant: "source"}
+   type={discriminant: "block", value: {icon: "chevronRight", iconColor: "pink"}} /%}
+
+{% resourceItem
+   resource="repro-legal-helpline-site-wide-support-block"
+   header={discriminant: "none"}
+   type={discriminant: "block", value: {icon: "chevronRight", iconColor: "pink"}} /%}
+
+{% resourceItem
+   resource="repro-legal-helpline-site-wide-support-block"
+   header={discriminant: "override", value: "New heading"}
+   type={discriminant: "block", value: {icon: "chevronRight", iconColor: "pink"}} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Learn about abortion pills", slug:"learn-about-abortion-pills"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Learn about abortion pills", slug: "learn-about-abortion-pills"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="red" title="Learn about abortion pills" icon="" /%}
@@ -138,13 +153,15 @@ Download a condensed version of this page, formatted to print or share.
    resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
    type={discriminant: "simple", value: 2}
    icon=""
-   iconColor="red" /%}
+   iconColor="red"
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Apps on abortion", slug:"apps-on-abortion"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Apps on abortion", slug: "apps-on-abortion"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Apps on abortion" icon="" /%}
@@ -160,13 +177,15 @@ Download a condensed version of this page, formatted to print or share.
    resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
    type={discriminant: "simple", value: 2}
    icon=""
-   iconColor="green" /%}
+   iconColor="green"
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Other options for getting an abortion", slug:"other-options-for-getting-an-abortion"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Other options for getting an abortion", slug: "other-options-for-getting-an-abortion"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader
@@ -185,13 +204,15 @@ Download a condensed version of this page, formatted to print or share.
    resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
    type={discriminant: "simple", value: 2}
    icon=""
-   iconColor="cyan" /%}
+   iconColor="cyan"
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Birth control resources", slug:"birth-control-resources"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Birth control resources", slug: "birth-control-resources"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="Birth control resources" icon="" /%}
@@ -207,13 +228,15 @@ Download a condensed version of this page, formatted to print or share.
    resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
    type={discriminant: "simple", value: 2}
    icon=""
-   iconColor="pink" /%}
+   iconColor="pink"
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"International", slug:"international"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "International", slug: "international"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="International" icon="" /%}
@@ -229,6 +252,8 @@ Download a condensed version of this page, formatted to print or share.
    resources=["repro-legal-helpline-support-page", "abortion-access-legal-defense-fund"]
    type={discriminant: "simple", value: 2}
    icon=""
-   iconColor="blue" /%}
+   iconColor="blue"
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
