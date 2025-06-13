@@ -23,6 +23,19 @@ summary: >-
   eleifend. Sed elementum purus sit amet arcu luctus, ac cursus sem accumsan.
 relatedPosts: []
 ---
+{% heroSection
+   image={discriminant: "noco", value: "Mailbox"}
+   imageSide="left"
+   color="white"
+   imageBackgroundColor="green"
+   ignoreImageBorder=false %}
+# Custom Hero
+
+In a blog post
+
+{% tableOfContents /%}
+{% /heroSection %}
+
 {% bodySection
    centered=false
    fullWidth=false
@@ -34,8 +47,8 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
 {% /bodySection %}
 
 {% tocAnchor
-  slug={name:"Sub Heading One", slug:"item"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Sub Heading One", slug: "item"}
+   type={discriminant: "toc"} /%}
 
 {% bodySection
    centered=false
