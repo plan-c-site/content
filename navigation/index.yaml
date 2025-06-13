@@ -50,10 +50,7 @@ navBar:
             value:
               label: Search by state
               action:
-                discriminant: external
-                value:
-                  url: /
-                  showPopup: false
+                discriminant: internal
           - discriminant: link
             value:
               label: FAQ
