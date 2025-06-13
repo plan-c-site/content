@@ -18,10 +18,10 @@ clinicTypes:
     color: cyan
     icon: mousePointer
     labels:
-      - {}
-      - {}
-      - {}
-      - {}
+      - label: 'Price:'
+      - label: 'Delivery:'
+      - label: 'FDA-approved '
+      - label: Medical support
     howDoesThisWork: xyz-test-popup
   - label: International online clinics
     keyValue: International online clinic
