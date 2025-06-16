@@ -118,38 +118,13 @@ Download a condensed version of this page, formatted to print or share.
    grow=false
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% flexSection
-   direction="flex-row"
-   noWrap=false
-   noInnerBorders=false
-   grow=false
-   gap=0
-   itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
-{% resourceItem
-   resource="repro-legal-helpline-site-wide-support-block"
-   header={discriminant: "source"}
-   type={discriminant: "block", value: {icon: "chevronRight", iconColor: "pink"}} /%}
-
-{% resourceItem
-   resource="repro-legal-helpline-site-wide-support-block"
-   header={discriminant: "none"}
-   type={discriminant: "block", value: {icon: "chevronRight", iconColor: "pink"}} /%}
-{% /flexSection %}
-
-{% flexSection
-   direction="flex-row"
-   noWrap=false
-   noInnerBorders=false
-   grow=false
-   gap=2
-   itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
-{% resourceItem
-   resource="repro-legal-helpline-site-wide-support-block"
-   header={discriminant: "override", value: "New heading"}
-   type={discriminant: "block", value: {icon: "chevronRight", iconColor: "pink"}} /%}
-{% /flexSection %}
+{% resourceList
+   resources=[{resource: "repro-legal-helpline-support-page"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor=""
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
