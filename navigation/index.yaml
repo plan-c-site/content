@@ -51,31 +51,36 @@ navBar:
               label: Search by state
               action:
                 discriminant: internal
-                value: home
+                value:
+                  page: home
           - discriminant: link
             value:
               label: FAQ
               action:
                 discriminant: internal
-                value: guide-how-to-get-abortion-pills
+                value:
+                  page: guide-how-to-get-abortion-pills
           - discriminant: link
             value:
               label: Pills in advance
               action:
                 discriminant: internal
-                value: in-advance
+                value:
+                  page: in-advance
           - discriminant: link
             value:
               label: Abortion pill instructions
               action:
                 discriminant: internal
-                value: how-to-take-abortion-pills
+                value:
+                  page: how-to-take-abortion-pills
           - discriminant: link
             value:
               label: Support & resources
               action:
                 discriminant: internal
-                value: support-resources
+                value:
+                  page: support-resources
           - discriminant: link
             value:
               label: Blogs
@@ -92,19 +97,23 @@ navBar:
                 - label: Plan C Community
                   action:
                     discriminant: internal
-                    value: community
+                    value:
+                      page: community
                 - label: Stickers & flyers
                   action:
                     discriminant: internal
-                    value: stickers
+                    value:
+                      page: stickers
                 - label: Take action
                   action:
                     discriminant: internal
-                    value: community
+                    value:
+                      page: community
                 - label: Social media toolkit
                   action:
                     discriminant: internal
-                    value: social-media-toolkit
+                    value:
+                      page: social-media-toolkit
                 - label: Plan C merch
                   action:
                     discriminant: external
@@ -118,11 +127,13 @@ navBar:
                 - label: Partner with us
                   action:
                     discriminant: internal
-                    value: partnerships
+                    value:
+                      page: partnerships
                 - label: For medical professionals
                   action:
                     discriminant: internal
-                    value: medical-professional-abortion-services
+                    value:
+                      page: medical-professional-abortion-services
                 - label: Work with Plan C
                   action:
                     discriminant: internal
