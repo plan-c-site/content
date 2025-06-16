@@ -1,6 +1,6 @@
 homePage: home
 messageBar:
-  text: 'Stay safe:  Read our digital privacy tips >'
+  text: "Stay safe:  Read our digital privacy tips >"
   mainLink: /
   quickExitText: Quick Exit
   quickExitLink: https://weather.com
@@ -53,6 +53,7 @@ navBar:
                 discriminant: internal
                 value:
                   page: home
+                  anchor: ""
           - discriminant: link
             value:
               label: FAQ
@@ -60,6 +61,7 @@ navBar:
                 discriminant: internal
                 value:
                   page: guide-how-to-get-abortion-pills
+                  anchor: ""
           - discriminant: link
             value:
               label: Pills in advance
@@ -67,6 +69,7 @@ navBar:
                 discriminant: internal
                 value:
                   page: in-advance
+                  anchor: ""
           - discriminant: link
             value:
               label: Abortion pill instructions
@@ -74,6 +77,7 @@ navBar:
                 discriminant: internal
                 value:
                   page: how-to-take-abortion-pills
+                  anchor: ""
           - discriminant: link
             value:
               label: Support & resources
@@ -81,11 +85,12 @@ navBar:
                 discriminant: internal
                 value:
                   page: support-resources
+                  anchor: ""
           - discriminant: link
             value:
               label: Blogs
               action:
-                discriminant: internal
+                discriminant: ""
     - discriminant: section
       value:
         label: Get involved
@@ -99,21 +104,25 @@ navBar:
                     discriminant: internal
                     value:
                       page: community
+                      anchor: ""
                 - label: Stickers & flyers
                   action:
                     discriminant: internal
                     value:
                       page: stickers
+                      anchor: ""
                 - label: Take action
                   action:
                     discriminant: internal
                     value:
                       page: community
+                      anchor: ""
                 - label: Social media toolkit
                   action:
                     discriminant: internal
                     value:
                       page: social-media-toolkit
+                      anchor: ""
                 - label: Plan C merch
                   action:
                     discriminant: external
@@ -129,14 +138,16 @@ navBar:
                     discriminant: internal
                     value:
                       page: partnerships
+                      anchor: ""
                 - label: For medical professionals
                   action:
                     discriminant: internal
                     value:
                       page: medical-professional-abortion-services
+                      anchor: ""
                 - label: Work with Plan C
                   action:
-                    discriminant: internal
+                    discriminant: ""
     - discriminant: section
       value:
         label: About
@@ -145,7 +156,7 @@ navBar:
             value:
               label: About Plan C
               action:
-                discriminant: ''
+                discriminant: ""
               url: /
     - discriminant: link
       value:
