@@ -50,9 +50,8 @@ navBar:
             value:
               label: Search by state
               action:
-                discriminant: internal
-                value:
-                  page: home
+                discriminant: home
+                value: {}
           - discriminant: link
             value:
               label: FAQ
@@ -175,7 +174,7 @@ navBar:
               action:
                 discriminant: external
                 value:
-                  url: 2024-annual-report
+                  url: https://www.plancpills.org/2024-annual-report
                   showPopup: false
           - discriminant: link
             value:
