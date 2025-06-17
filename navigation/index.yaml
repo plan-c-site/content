@@ -90,53 +90,55 @@ navBar:
       value:
         label: Get involved
         children:
-          - discriminant: section
+          - discriminant: link
             value:
-              label: Spread the word
-              children:
-                - label: Plan C Community
-                  action:
-                    discriminant: internal
-                    value:
-                      page: community
-                - label: Stickers & flyers
-                  action:
-                    discriminant: internal
-                    value:
-                      page: stickers
-                - label: Take action
-                  action:
-                    discriminant: internal
-                    value:
-                      page: community
-                - label: Social media toolkit
-                  action:
-                    discriminant: internal
-                    value:
-                      page: social-media-toolkit
-                - label: Plan C merch
-                  action:
-                    discriminant: external
-                    value:
-                      url: /
-                      showPopup: false
-          - discriminant: section
+              label: Take action
+              action:
+                discriminant: internal
+                value:
+                  page: community
+          - discriminant: link
             value:
-              label: Connect with us
-              children:
-                - label: Partner with us
-                  action:
-                    discriminant: internal
-                    value:
-                      page: partnerships
-                - label: For medical professionals
-                  action:
-                    discriminant: internal
-                    value:
-                      page: medical-professional-abortion-services
-                - label: Work with Plan C
-                  action:
-                    discriminant: ''
+              label: Stickers & flyers
+              action:
+                discriminant: internal
+                value:
+                  page: stickers
+          - discriminant: link
+            value:
+              label: Social media toolkit
+              action:
+                discriminant: internal
+                value:
+                  page: social-media-toolkit
+          - discriminant: link
+            value:
+              label: Merch
+              action:
+                discriminant: external
+                value:
+                  url: https://plancpills.threadless.com/
+                  showPopup: false
+          - discriminant: link
+            value:
+              label: Partner with us
+              action:
+                discriminant: internal
+                value:
+                  page: partnerships
+          - discriminant: link
+            value:
+              label: For medical professionals
+              action:
+                discriminant: internal
+                value:
+                  page: medical-professional-abortion-services
+          - discriminant: link
+            value:
+              label: Work with Plan C
+              action:
+                discriminant: internal
+                value: {}
     - discriminant: section
       value:
         label: About
@@ -147,8 +149,47 @@ navBar:
               action:
                 discriminant: ''
               url: /
+          - discriminant: link
+            value:
+              label: Press
+              action:
+                discriminant: internal
+                value:
+                  page: press
+          - discriminant: link
+            value:
+              label: Research & learning
+              action:
+                discriminant: internal
+                value: {}
+          - discriminant: link
+            value:
+              label: 'Plan C: The documentary'
+              action:
+                discriminant: internal
+                value: {}
+          - discriminant: link
+            value:
+              label: 2024 Annual report
+              action:
+                discriminant: external
+                value:
+                  url: https://www.plancpills.org/2024-annual-report
+                  showPopup: false
+          - discriminant: link
+            value:
+              label: Contact us
+              action:
+                discriminant: internal
+                value: {}
+          - discriminant: link
+            value:
+              label: Media inquiries
+              action:
+                discriminant: internal
+                value: {}
     - discriminant: link
       value:
         label: Donate
-        url: /
+        url: donate
 footer: {}
