@@ -13,7 +13,7 @@ seo:
 # Testing Plan C Forms
 
 {% formWrapper
-   formType={discriminant: "link", value: {pattern: "/abortion-clinic/[:state:]"}}
+   formType={discriminant: "link", value: {pattern: "/abortion-pills/[:state:]"}}
    afterSubmit="nothing" %}
 {% formInput
    fields=[{label: {name: "Find Pills", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Choose a state", options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "black", altHoverBackground: ""}}}}}] /%}
