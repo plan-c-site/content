@@ -115,7 +115,7 @@ A growing collective of activists and advocates taking action in their own commu
    textSize="medium" %}
 ## Plan C is an information resource.
 
-{% textSize textSize="large" inline=true %}We do not give medical or legal advice. We do not sell abortion pills or provide care. &nbsp;This website is a&nbsp;research and education resource for learning about how people across the US are accessing abortion pills and safely managing their own abortions.{% /textSize %}&nbsp;
+We do not give medical or legal advice. We do not sell abortion pills or provide care. &nbsp;This website is a&nbsp;research and education resource for learning about how people across the US are accessing abortion pills and safely managing their own abortions.&nbsp;
 
 In this website when we use the term "Guide," we refer to a health information resource that aggregates publicly-available services, hotlines and data. Plan C reports on research but does not endorse any of the services listed in the Guide, nor is Plan C affiliated with any of the services. Any questions about paying for, delivery of, or how to order abortion pills from these services should be directed to the service.‍
 
@@ -156,4 +156,55 @@ Since 2016, our mission has been to conduct research on abortion pill access, sh
    leftIcon=false
    action={discriminant: "internal", value: {page: "about"}} /%}
 {% /sectionHeader %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=true %}
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=0
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="green"
+   textSize="medium" %}
+## Heading 2
+
+Grants and individual donations make this work possible
+
+{% inContentButton
+   label="Donate now"
+   icon=""
+   size="primary"
+   background="green"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: ""} /%}
+{% /bodySection %}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="cyan"
+   textSize="medium" %}
+## Heading 2
+
+Grants and individual donations make this work possible
+
+{% inContentButton
+   label="Donate now"
+   icon=""
+   size="primary"
+   background="green"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: ""} /%}
+{% /bodySection %}
+{% /flexSection %}
 {% /horizontalSplit %}
