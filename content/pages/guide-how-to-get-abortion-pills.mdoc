@@ -10,6 +10,8 @@ seo:
    color="beige"
    imageBackgroundColor="cyan"
    ignoreImageBorder=false %}
+{% formInput fields=[] /%}
+
 # How people get abortion pills online in every state
 
 Common questions about abortion pills and abortion pill access by mail.
@@ -18,8 +20,8 @@ Common questions about abortion pills and abortion pill access by mail.
 {% /heroSection %}
 
 {% tocAnchor
-  slug={name:"Search by state", slug:"search-by-state"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Search by state", slug: "search-by-state"}
+   type={discriminant: "toc"} /%}
 
 {% bodySection
    centered=false
@@ -34,114 +36,152 @@ Options for at-home abortion pill access will vary by location. Click below to f
    formType={discriminant: "link", value: {}}
    afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "State or territory", options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] /%}
 {% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
 
-{% tocAnchor
-  slug={name:"Finding abortion pills", slug:"finding-abortion-pills"}
-  type={discriminant: "toc", value: null } /%}
-
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Finding abortion pills" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="cyan" title="About abortion pills" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="Using abortion pills" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="Safety considerations" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="home_how-do-i-get-abortion-pills"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 {% /flexSection %}
 {% /horizontalSplit %}
