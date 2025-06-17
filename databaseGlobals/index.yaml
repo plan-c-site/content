@@ -15,6 +15,7 @@ clinicTypes:
   - label: Online Clinics
     keyValue: Online clinic
     singular: Online clinic
+    maxVisibleDefault: 4
     color: cyan
     icon: mousePointer
     labels:
@@ -26,6 +27,7 @@ clinicTypes:
   - label: International online clinics
     keyValue: International online clinic
     singular: International online clinic
+    maxVisibleDefault: 2
     color: blue
     icon: globe
     labels:
