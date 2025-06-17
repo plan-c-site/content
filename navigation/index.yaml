@@ -147,8 +147,9 @@ navBar:
             value:
               label: About Plan C
               action:
-                discriminant: ''
-              url: /
+                discriminant: internal
+                value:
+                  page: about
           - discriminant: link
             value:
               label: Press
