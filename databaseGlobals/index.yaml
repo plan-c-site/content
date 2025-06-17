@@ -114,7 +114,7 @@ filterFields:
       discriminant: false
 linkToStudies:
   color: beige
-  icon: info
+  icon: arrowUp
 medicaidText:
   color: yellow
   icon: info
