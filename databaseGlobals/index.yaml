@@ -37,6 +37,7 @@ clinicTypes:
   - label: Community networks
     keyValue: Community network
     singular: Community network
+    maxVisibleDefault: 1
     color: pink
     icon: heartHandshake
     labels:
@@ -48,6 +49,7 @@ clinicTypes:
   - label: Websites that sell pills
     keyValue: Website that sells pills
     singular: Website that sells pills
+    maxVisibleDefault: 2
     color: red
     icon: shoppingCart
     labels:
