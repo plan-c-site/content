@@ -9,7 +9,9 @@ seo:
    imageSide="right"
    color="beige"
    imageBackgroundColor="pink"
-   ignoreImageBorder=false %}
+   ignoreImageBorder=false
+   imageCover="bg-contain"
+   imageVertical="bg-center" %}
 # How people are getting abortion pills in advance
 
 Our research shows that many providers will send abortion pills in advance, to have on hand just in case.
@@ -18,8 +20,8 @@ Our research shows that many providers will send abortion pills in advance, to h
 {% /heroSection %}
 
 {% tocAnchor
-  slug={name:"What does it mean to get abortion pills in advance?", slug:"what-does-it-mean-to-get-abortion-pills-in-advance"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "What does it mean to get abortion pills in advance?", slug: "what-does-it-mean-to-get-abortion-pills-in-advance"}
+   type={discriminant: "toc"} /%}
 
 {% bodySection
    centered=false
@@ -32,8 +34,8 @@ Our research shows that many providers will send abortion pills in advance, to h
 - You don't need to be pregnant to get abortion pills.
 - Pills usually cost between $70 and $150. Some providers offer discounts, but they ask that you pay what you can, to help cover the cost of medication and shipping.
 - Abortion pills last for about two years when stored in a cool dry place. Providers recommend checking the expiration date before using them.
-- {% inlineLink action={discriminant: "external", value: { url: "https://www.sciencedirect.com/science/article/abs/pii/S0010782422002827", showPopup: false }} %}Research shows{% /inlineLink %} this has been happening for many years.
-- Depending on your location and situation, there may be legal risk. {% inlineLink action={discriminant: "external", value: { url: "https://www.plancpills.org/in-advance#can-i-get-in-trouble", showPopup: false }} %}Read our FAQ{% /inlineLink %} or contact the {% inlineLink action={discriminant: "external", value: { url: "https://www.reprolegalhelpline.org/", showPopup: false }} %}ReproLegalHelpline{% /inlineLink %} with questions.
+- {% inlineLink action={discriminant: "external", value: {url: "https://www.sciencedirect.com/science/article/abs/pii/S0010782422002827", showPopup: false}} %}Research shows{% /inlineLink %} this has been happening for many years.
+- Depending on your location and situation, there may be legal risk. {% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/in-advance#can-i-get-in-trouble", showPopup: false}} %}Read our FAQ{% /inlineLink %} or contact the {% inlineLink action={discriminant: "external", value: {url: "https://www.reprolegalhelpline.org/", showPopup: false}} %}ReproLegalHelpline{% /inlineLink %} with questions.
 {% /bodySection %}
 
 {% horizontalSplit noHeader=false %}
@@ -51,30 +53,40 @@ Our research shows that many providers will send abortion pills in advance, to h
 
 These telehealth services deliver pills in advance, in case of future need:
 
-- {% inlineLink action={discriminant: "external", value: { url: "https://www.abuzzhealth.com/", showPopup: false }} %}Abuzz Health{% /inlineLink %}, $90-$150 (all states except TX, GA, AL, MS)
-- {% inlineLink action={discriminant: "external", value: { url: "https://aidaccess.org/en/page/2880027/advance-provision", showPopup: false }} %}Aid Access{% /inlineLink %}, $150 (all states)
-- {% inlineLink action={discriminant: "external", value: { url: "https://asafechoicenetwork.com/", showPopup: false }} %}A Safe Choice{% /inlineLink %}, $150 (all states)
-- {% inlineLink action={discriminant: "external", value: { url: "https://carafem.org/online/", showPopup: false }} %}carafem{% /inlineLink %}, $299-$399 (in CO, CT, DE, IL, ME, MD, MA, MI, MN, NV, NJ, NM, NY, OR, RI, VT, VA, WA, and Washington, DC)
-- {% inlineLink action={discriminant: "external", value: { url: "https://www.cambridgereproductivehealthconsultants.org/map", showPopup: false }} %}The MAP,{% /inlineLink %} $250 (all states)
-- {% inlineLink action={discriminant: "external", value: { url: "https://wetakecareof.us/", showPopup: false }} %}We Take Care of Us{% /inlineLink %}, $150+ (all states)
-- {% inlineLink action={discriminant: "external", value: { url: "https://womenonweb.org/", showPopup: false }} %}Women on Web{% /inlineLink %}, $120 (all states)
+- {% inlineLink action={discriminant: "external", value: {url: "https://www.abuzzhealth.com/", showPopup: false}} %}Abuzz Health{% /inlineLink %}, $90-$150 (all states except TX, GA, AL, MS)
+- {% inlineLink action={discriminant: "external", value: {url: "https://aidaccess.org/en/page/2880027/advance-provision", showPopup: false}} %}Aid Access{% /inlineLink %}, $150 (all states)
+- {% inlineLink action={discriminant: "external", value: {url: "https://asafechoicenetwork.com/", showPopup: false}} %}A Safe Choice{% /inlineLink %}, $150 (all states)
+- {% inlineLink action={discriminant: "external", value: {url: "https://carafem.org/online/", showPopup: false}} %}carafem{% /inlineLink %}, $299-$399 (in CO, CT, DE, IL, ME, MD, MA, MI, MN, NV, NJ, NM, NY, OR, RI, VT, VA, WA, and Washington, DC)
+- {% inlineLink action={discriminant: "external", value: {url: "https://www.cambridgereproductivehealthconsultants.org/map", showPopup: false}} %}The MAP,{% /inlineLink %} $250 (all states)
+- {% inlineLink action={discriminant: "external", value: {url: "https://wetakecareof.us/", showPopup: false}} %}We Take Care of Us{% /inlineLink %}, $150+ (all states)
+- {% inlineLink action={discriminant: "external", value: {url: "https://womenonweb.org/", showPopup: false}} %}Women on Web{% /inlineLink %}, $120 (all states)
 
 If you decide to use pills later, the services will still help with instructions and follow up support.
 
 ### Other online vendors
 
-- See our list of {% inlineLink action={discriminant: "external", value: { url: "https://www.plancpills.org/websites-that-sell-pills", showPopup: false }} %}websites that sell pills{% /inlineLink %}. Research shows that current prices starts at $70.
-- These websites sell abortion pills but do not include any additional support. People can still get free medical support for abortions from the {% inlineLink action={discriminant: "external", value: { url: "https://mahotline.org/", showPopup: false }} %}M+A Hotline{% /inlineLink %}.
+- See our list of {% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/websites-that-sell-pills", showPopup: false}} %}websites that sell pills{% /inlineLink %}. Research shows that current prices starts at $70.
+- These websites sell abortion pills but do not include any additional support. People can still get free medical support for abortions from the {% inlineLink action={discriminant: "external", value: {url: "https://mahotline.org/", showPopup: false}} %}M+A Hotline{% /inlineLink %}.
 {% /bodySection %}
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="Resources & information" icon="" /%}
 
-{% flexSection direction="flex-row" noWrap=false %}
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% resourceList
-   resources=[{resource: "m-a-hotline-site-wide-support-block", header: ""}]
-   type={discriminant: "simple", value: 2} /%}
+   resources=[{resource: "m-a-hotline-site-wide-support-block"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor=""
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -91,15 +103,23 @@ Options for at-home abortion pill access will vary by location. Click below to f
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="red" title="Frequently asked questions" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% faqSection
    faq="how-does-the-abortion-pill-work"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 
 {% faqSection
    faq="how-does-the-abortion-pill-work"
    color="beige"
-   embedded=false /%}
+   embedded=false
+   anchor=false /%}
 {% /flexSection %}
 {% /horizontalSplit %}
