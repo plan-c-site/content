@@ -5,7 +5,8 @@ website: https://reprocare.com
 phone: (833) 226-7821
 summary: Free, confidential peer-based support for getting and using abortion pills.
 buttonText: Call or text
+resourceIcon: stethoscope
+iconColor: green
 buttonIcon: phone
 buttonUrl:
-  discriminant: url
-  value: sms:833-226-7821
+  discriminant: none
