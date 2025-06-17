@@ -1,14 +1,18 @@
 ---
 title: 'How to use abortion pills: Step by step instructions'
+seo:
+  image:
+    discriminant: ''
 ---
 {% heroSection
    image={discriminant: "one-off", value: {image: "/images/how-to-take-abortion-pills/abortion-pill-instructions.png", altText: "abortion pill instructions"}}
    imageSide="right"
    color="beige"
-   imageBackgroundColor="green" %}
+   imageBackgroundColor="green"
+   ignoreImageBorder=false %}
 # How to take abortion pills: step by step instructions
 
-Source: {% inlineLink action={discriminant: "home", value: null} %}Reproductive Health Access Project{% /inlineLink %} & {% inlineLink action={discriminant: "home", value: null} %}M+A Hotline{% /inlineLink %}
+Source: {% inlineLink action={discriminant: "home", value: {}} %}Reproductive Health Access Project{% /inlineLink %} & {% inlineLink action={discriminant: "home", value: {}} %}M+A Hotline{% /inlineLink %}
 
 There are two methods for using abortion pills to help stop a pregnancy. Both methods work well, are very safe, and are used by many people all around the world.
 
@@ -16,8 +20,8 @@ There are two methods for using abortion pills to help stop a pregnancy. Both me
 {% /heroSection %}
 
 {% tocAnchor
-  slug={name:"Method 1: Mifepristone & misoprostol", slug:"method-1-mifepristone-misoprostol"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Method 1: Mifepristone & misoprostol", slug: "method-1-mifepristone-and-misoprostol"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader
@@ -31,10 +35,16 @@ This method is 95% - 98% effective and is very safe. The Food and Drug Administr
    size="standard"
    background="blue"
    altHoverBackground=""
-   options=[{discriminant: "link", value: {label: "English", url: "/"}}, {discriminant: "link", value: {label: "Español", url: "/"}}] /%}
+   options=[{discriminant: "link", value: {label: "English", action: {discriminant: ""}, url: "/"}}, {discriminant: "link", value: {label: "Español", action: {discriminant: ""}, url: "/"}}] /%}
 {% /sectionHeader %}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% toDoSection
    color="beige"
    number=1
@@ -67,10 +77,16 @@ This method is also very safe and effective. The World Health Organization suppo
    size="standard"
    background="cyan"
    altHoverBackground=""
-   options=[{discriminant: "link", value: {label: "English", url: "/"}}, {discriminant: "link", value: {label: "Español", url: "/"}}] /%}
+   options=[{discriminant: "link", value: {label: "English", action: {discriminant: ""}, url: "/"}}, {discriminant: "link", value: {label: "Español", action: {discriminant: ""}, url: "/"}}] /%}
 {% /sectionHeader %}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% toDoSection
    color="beige"
    number=1
