@@ -15,7 +15,7 @@ clinicTypes:
   - label: Online Clinics
     keyValue: Online clinic
     singular: Online clinic
-    maxVisibleDefault: 4
+    maxVisibleDefault: 6
     color: cyan
     icon: mousePointer
     labels:
@@ -39,7 +39,7 @@ clinicTypes:
   - label: Community networks
     keyValue: Community network
     singular: Community network
-    maxVisibleDefault: 1
+    maxVisibleDefault: 2
     color: pink
     icon: heartHandshake
     labels:
@@ -51,7 +51,7 @@ clinicTypes:
   - label: Websites that sell pills
     keyValue: Website that sells pills
     singular: Website that sells pills
-    maxVisibleDefault: 2
+    maxVisibleDefault: 4
     color: red
     icon: shoppingCart
     labels:
