@@ -9,7 +9,9 @@ seo:
    imageSide="right"
    color="beige"
    imageBackgroundColor="cyan"
-   ignoreImageBorder=false %}
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center" %}
 # Join the movement for abortion access
 
 Plan C is more than just a resource—it's a community of activists, organizers, and advocates fighting for accessible, self-managed abortion care. By joining the movement you take a stand for reproductive freedom and ensure that safe, self-managed options remain available.
@@ -18,8 +20,8 @@ Plan C is more than just a resource—it's a community of activists, organizers,
 {% /heroSection %}
 
 {% tocAnchor
-  slug={name:"The basics", slug:"the-basics"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "The basics", slug: "the-basics"}
+   type={discriminant: "toc"} /%}
 
 {% bodySection
    centered=true
@@ -34,6 +36,7 @@ Plan C is more than just a resource—it's a community of activists, organizers,
    image={discriminant: "uploaded", value: "mailbox"}
    imageOnly=false
    title="Get free stickers"
+   action={discriminant: ""}
    link="/stickers" %}
 ‍Our stickers are available in English and Spanish, with a QR code that links directly to the Plan C website.
 {% /cardSection %}
@@ -42,6 +45,7 @@ Plan C is more than just a resource—it's a community of activists, organizers,
    image={discriminant: "uploaded", value: "mailbox"}
    imageOnly=false
    title="Attend a webinar"
+   action={discriminant: ""}
    link="/" %}
 Catch one of our monthly rotating topics: “Legal Eagles”, “Call the Midwife”, and “Takin’ it to the Streets.”
 {% /cardSection %}
@@ -50,6 +54,7 @@ Catch one of our monthly rotating topics: “Legal Eagles”, “Call the Midwif
    image={discriminant: "uploaded", value: "mailbox"}
    imageOnly=false
    title="Join our newsletter"
+   action={discriminant: ""}
    link="/stickers" %}
 The Plan C ICYMI newsletter will keep you updated on breaking developments in abortion access and opportunities to take action.
 {% /cardSection %}
@@ -64,25 +69,42 @@ The Plan C ICYMI newsletter will keep you updated on breaking developments in ab
 {% /bodySection %}
 
 {% resourceList
-   resources=[{resource: "community_join-our-discord-server", header: ""}, {resource: "community_subscribe-to-our-linktree", header: ""}, {resource: "community_get-our-newsletter", header: ""}]
-   type={discriminant: "carousel", value: {color: "green", title: "Stay connected", icon: ""}} /%}
+   resources=[{resource: "community_join-our-discord-server"}, {resource: "community_subscribe-to-our-linktree"}, {resource: "community_get-our-newsletter"}]
+   type={discriminant: "carousel", value: {color: "green", title: "Stay connected", text: "Here is a short description of what this section is all about", icon: ""}}
+   icon=""
+   iconColor=""
+   hideHeaders=false
+   appendStateField="" /%}
 
 {% resourceList
-   resources=[{resource: "community_join-our-discord-server", header: ""}, {resource: "community_subscribe-to-our-linktree", header: ""}, {resource: "community_get-our-newsletter", header: ""}]
-   type={discriminant: "carousel", value: {color: "cyan", title: "Materials & merch", icon: ""}} /%}
+   resources=[{resource: "community_join-our-discord-server"}, {resource: "community_subscribe-to-our-linktree"}, {resource: "community_get-our-newsletter"}]
+   type={discriminant: "carousel", value: {color: "cyan", title: "Materials & merch", icon: ""}}
+   icon=""
+   iconColor=""
+   hideHeaders=false
+   appendStateField="" /%}
 
 {% resourceList
-   resources=[{resource: "community_join-our-discord-server", header: ""}, {resource: "community_subscribe-to-our-linktree", header: ""}, {resource: "community_get-our-newsletter", header: ""}]
-   type={discriminant: "carousel", value: {color: "pink", title: "Education & events", icon: ""}} /%}
+   resources=[{resource: "community_join-our-discord-server"}, {resource: "community_subscribe-to-our-linktree"}, {resource: "community_get-our-newsletter"}]
+   type={discriminant: "carousel", value: {color: "pink", title: "Education & events", icon: ""}}
+   icon=""
+   iconColor=""
+   hideHeaders=false
+   appendStateField="" /%}
 
 {% resourceList
-   resources=[{resource: "community_join-our-discord-server", header: ""}, {resource: "community_subscribe-to-our-linktree", header: ""}, {resource: "community_get-our-newsletter", header: ""}]
-   type={discriminant: "carousel", value: {color: "blue", title: "DIY action", icon: ""}} /%}
+   resources=[{resource: "community_join-our-discord-server"}, {resource: "community_subscribe-to-our-linktree"}, {resource: "community_get-our-newsletter"}]
+   type={discriminant: "carousel", value: {color: "blue", title: "DIY action", icon: ""}}
+   icon=""
+   iconColor=""
+   hideHeaders=false
+   appendStateField="" /%}
 
 {% horizontalSplit noHeader=true %}
 {% inContentImage
    image={discriminant: "uploaded", value: "event-image-test"}
    maxWidth=100
+   action={discriminant: ""}
    newTab=false /%}
 
 {% sectionHeader color="cyan" title="Plan C community road trip" icon="" %}
@@ -95,7 +117,8 @@ The&nbsp;Plan C Community Road Trip&nbsp;is a nationwide journey from June 23rd 
    background="cyan"
    altHoverBackground=""
    smallShadow=false
-   leftIcon=false /%}
+   leftIcon=false
+   action={discriminant: ""} /%}
 {% /sectionHeader %}
 {% /horizontalSplit %}
 
@@ -113,7 +136,7 @@ The&nbsp;Plan C Community Road Trip&nbsp;is a nationwide journey from June 23rd 
 For breaking developments in abortion pill access and opportunities to take action.
 
 {% formInput
-   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "City", slug: "city"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "State", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Select state/territory", options: {discriminant: true}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Sign up", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "City", slug: "city"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "State", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Select state/territory", options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Sign up", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
 {% /bodySection %}
 {% /formSection %}
 {% /formWrapper %}
