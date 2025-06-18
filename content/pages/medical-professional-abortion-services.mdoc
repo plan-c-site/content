@@ -9,21 +9,23 @@ seo:
    imageSide="right"
    color="beige"
    imageBackgroundColor="cyan"
-   ignoreImageBorder=false %}
+   ignoreImageBorder=false
+   imageCover="bg-contain"
+   imageVertical="bg-bottom" %}
 # For medical professionals
 
-Over {% inlineLink action={discriminant: "external", value: { url: "https://www.guttmacher.org/2024/03/medication-abortion-accounted-63-all-us-abortions-2023-increase-53-2020", showPopup: false }} %}60%{% /inlineLink %} of abortions in the US are happening with abortion pills and approximately {% inlineLink action={discriminant: "external", value: { url: "https://societyfp.org/wp-content/uploads/2024/05/WeCount-report-6-May-2024-Dec-2023-data_Final.pdf", showPopup: false }} %}20%{% /inlineLink %} are via telehealth. &nbsp;As a healthcare provider, you may see patients who have self-managed an abortion, or are interested in accessing abortion pills by mail, and are looking for your care and support.
+Over {% inlineLink action={discriminant: "external", value: {url: "https://www.guttmacher.org/2024/03/medication-abortion-accounted-63-all-us-abortions-2023-increase-53-2020", showPopup: false}} %}60%{% /inlineLink %} of abortions in the US are happening with abortion pills and approximately {% inlineLink action={discriminant: "external", value: {url: "https://societyfp.org/wp-content/uploads/2024/05/WeCount-report-6-May-2024-Dec-2023-data_Final.pdf", showPopup: false}} %}20%{% /inlineLink %} are via telehealth. &nbsp;As a healthcare provider, you may see patients who have self-managed an abortion, or are interested in accessing abortion pills by mail, and are looking for your care and support.
 
 One of the most important things that abortion seekers need is accurate information. We have compiled this page to provide you with resources to offer your patients, information on how to begin offering abortion pills by mail, and links to additional provider resources.
 
-Plan C is a public health information campaign. We do not provide any medical services and are not hiring any clinicians, but we hope that this information will aid you in assisting your clients. If you currently have a telehealth service that offers abortion pills by mail that you would like to have considered for listing on the Plan C Guide, please fill out this {% inlineLink action={discriminant: "external", value: { url: "https://plancpills.org/request-listing", showPopup: false }} %}form{% /inlineLink %}.
+Plan C is a public health information campaign. We do not provide any medical services and are not hiring any clinicians, but we hope that this information will aid you in assisting your clients. If you currently have a telehealth service that offers abortion pills by mail that you would like to have considered for listing on the Plan C Guide, please fill out this {% inlineLink action={discriminant: "external", value: {url: "https://plancpills.org/request-listing", showPopup: false}} %}form{% /inlineLink %}.
 
 {% tableOfContents /%}
 {% /heroSection %}
 
 {% tocAnchor
-  slug={name:"Resources for your patients", slug:"resources-for-your-patients"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Resources for your patients", slug: "resources-for-your-patients"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader
@@ -31,7 +33,13 @@ Plan C is a public health information campaign. We do not provide any medical se
    title="Caring for patients who want abortions"
    icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% bodySection
    centered=false
    fullWidth=false
@@ -44,13 +52,13 @@ Below you will find resources that you can provide to your patients to assist th
 {% insetSection %}
 ### **Resources for your patients**
 
-- {% inlineLink action={discriminant: "external", value: { url: "https://www.plancpills.org/abortion-resources", showPopup: false }} %}Reliable abortion resources{% /inlineLink %} - *Including information on digital security, legal support, emotional support, and more*
-- Information on {% inlineLink action={discriminant: "external", value: { url: "https://www.plancpills.org/abortion-pills/how-to-take-abortion-pills", showPopup: false }} %}how to take abortion pills{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/abortion-resources", showPopup: false}} %}Reliable abortion resources{% /inlineLink %} - *Including information on digital security, legal support, emotional support, and more*
+- Information on {% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/abortion-pills/how-to-take-abortion-pills", showPopup: false}} %}how to take abortion pills{% /inlineLink %}
 - Information about how to access abortion:
-  - ‍{% inlineLink action={discriminant: "external", value: { url: "https://www.plancpills.org/", showPopup: false }} %}Plan C’s Guide{% /inlineLink %}{% inlineLink action={discriminant: "external", value: { url: "http://ineedana.com/", showPopup: false }} %}‍{% /inlineLink %}
-  - {% inlineLink action={discriminant: "external", value: { url: "http://ineedana.com/", showPopup: false }} %}Ineedana.com{% /inlineLink %}‍
-- Information on financial assistance: {% inlineLink action={discriminant: "external", value: { url: "https://abortionfunds.org/find-a-fund/", showPopup: false }} %}‍National Network of Abortion Funds{% /inlineLink %}{% inlineLink action={discriminant: "external", value: { url: "https://www.periodpills.org/", showPopup: false }} %}‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "external", value: { url: "https://www.periodpills.org/", showPopup: false }} %}Period Pills{% /inlineLink %}
+  - ‍{% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/", showPopup: false}} %}Plan C’s Guide{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "http://ineedana.com/", showPopup: false}} %}‍{% /inlineLink %}
+  - {% inlineLink action={discriminant: "external", value: {url: "http://ineedana.com/", showPopup: false}} %}Ineedana.com{% /inlineLink %}‍
+- Information on financial assistance: {% inlineLink action={discriminant: "external", value: {url: "https://abortionfunds.org/find-a-fund/", showPopup: false}} %}‍National Network of Abortion Funds{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://www.periodpills.org/", showPopup: false}} %}‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://www.periodpills.org/", showPopup: false}} %}Period Pills{% /inlineLink %}
 {% /insetSection %}
 
 You can help your patients understand that access to abortion pills by mail is available in all US states and territories through:
@@ -60,9 +68,9 @@ You can help your patients understand that access to abortion pills by mail is a
 - Online vendors ($70+)
 - Community networks (free)
 
-Learn more about these options on {% inlineLink action={discriminant: "external", value: { url: "https://www.plancpills.org/", showPopup: false }} %}Plan C’s Guide{% /inlineLink %} and {% inlineLink action={discriminant: "external", value: { url: "https://www.ineedana.com/", showPopup: false }} %}ineedana.com{% /inlineLink %}.
+Learn more about these options on {% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/", showPopup: false}} %}Plan C’s Guide{% /inlineLink %} and {% inlineLink action={discriminant: "external", value: {url: "https://www.ineedana.com/", showPopup: false}} %}ineedana.com{% /inlineLink %}.
 
-For more information about medical, legal, and emotional support resources for abortion seekers, visit our {% inlineLink action={discriminant: "external", value: { url: "/support-resources", showPopup: false }} %}Support & resources{% /inlineLink %} page.
+For more information about medical, legal, and emotional support resources for abortion seekers, visit our {% inlineLink action={discriminant: "external", value: {url: "/support-resources", showPopup: false}} %}Support & resources{% /inlineLink %} page.
 {% /bodySection %}
 {% /flexSection %}
 {% /horizontalSplit %}
@@ -70,7 +78,13 @@ For more information about medical, legal, and emotional support resources for a
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="cyan" title="Calling all providers" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% bodySection
    centered=false
    fullWidth=false
@@ -78,13 +92,13 @@ For more information about medical, legal, and emotional support resources for a
    textSize="medium" %}
 Recently, there has been a wave of advocacy and support for deregulating and demedicalizing access to abortion pills. Policy makers, clinicians, and advocates have all been eager to broaden access to abortion pills, a modern and effective technology that can be safely accessed and used outside of a clinic setting with no in-person visit required.
 
-Evidence-based "no-test” protocols with no requirement for an in-person visit, ultrasound, or blood work, have been widely adopted as a safe and effective method for increasing abortion access and are endorsed by the {% inlineLink action={discriminant: "external", value: { url: "https://prochoice.org/", showPopup: false }} %}National Abortion Federation{% /inlineLink %}, {% inlineLink action={discriminant: "external", value: { url: "https://www.plannedparenthood.org/", showPopup: false }} %}Planned Parenthood Federation of America{% /inlineLink %}, {% inlineLink action={discriminant: "external", value: { url: "https://www.reproductiveaccess.org/", showPopup: false }} %}Reproductive Health Access Project{% /inlineLink %}, and others.
+Evidence-based "no-test” protocols with no requirement for an in-person visit, ultrasound, or blood work, have been widely adopted as a safe and effective method for increasing abortion access and are endorsed by the {% inlineLink action={discriminant: "external", value: {url: "https://prochoice.org/", showPopup: false}} %}National Abortion Federation{% /inlineLink %}, {% inlineLink action={discriminant: "external", value: {url: "https://www.plannedparenthood.org/", showPopup: false}} %}Planned Parenthood Federation of America{% /inlineLink %}, {% inlineLink action={discriminant: "external", value: {url: "https://www.reproductiveaccess.org/", showPopup: false}} %}Reproductive Health Access Project{% /inlineLink %}, and others.
 
-These big shifts have opened up new opportunities for clinicians to offer a safe, modern, convenient model of care: a supported, at-home abortion, with medications delivered to one’s door. Services can be offered with a synchronous or asynchronous model of care to further reduce the burdens of abortion seekers. Additionally, a number of states have passed, and are passing, “{% inlineLink action={discriminant: "external", value: { url: "https://evidence.nejm.org/doi/full/10.1056/EVIDra2200280", showPopup: false }} %}shield laws{% /inlineLink %}” that protect clinicians who are licensed and living in that protected state and prescribing telehealth abortion pills into states with abortion bans and restrictions.
+These big shifts have opened up new opportunities for clinicians to offer a safe, modern, convenient model of care: a supported, at-home abortion, with medications delivered to one’s door. Services can be offered with a synchronous or asynchronous model of care to further reduce the burdens of abortion seekers. Additionally, a number of states have passed, and are passing, “{% inlineLink action={discriminant: "external", value: {url: "https://evidence.nejm.org/doi/full/10.1056/EVIDra2200280", showPopup: false}} %}shield laws{% /inlineLink %}” that protect clinicians who are licensed and living in that protected state and prescribing telehealth abortion pills into states with abortion bans and restrictions.
 
-Regardless of if you practice in a state that restricts access to abortion care or a state that is implementing abortion protections, people who have self-managed an abortion or obtained one out of state will welcome your compassionate care. How you document patient records is important to reduce the risk of unjust criminalization. Learn more from If/When/How {% inlineLink action={discriminant: "external", value: { url: "https://ifwhenhow.org/resources/mandatory-reporting-fact-sheet/", showPopup: false }} %}here {% /inlineLink %}and find more information on how healthcare providers can interrupt criminalization from Beyond Do No Harm {% inlineLink action={discriminant: "external", value: { url: "https://www.interruptingcriminalization.com/beyond-do-no-harm", showPopup: false }} %}here{% /inlineLink %}.
+Regardless of if you practice in a state that restricts access to abortion care or a state that is implementing abortion protections, people who have self-managed an abortion or obtained one out of state will welcome your compassionate care. How you document patient records is important to reduce the risk of unjust criminalization. Learn more from If/When/How {% inlineLink action={discriminant: "external", value: {url: "https://ifwhenhow.org/resources/mandatory-reporting-fact-sheet/", showPopup: false}} %}here {% /inlineLink %}and find more information on how healthcare providers can interrupt criminalization from Beyond Do No Harm {% inlineLink action={discriminant: "external", value: {url: "https://www.interruptingcriminalization.com/beyond-do-no-harm", showPopup: false}} %}here{% /inlineLink %}.
 
-‍**Read the American College of Obstetricians and Gynecologists' Committee on Advancing Equity in Obstetric and Gynecologic Health Care's statement on self-managed abortion {% inlineLink action={discriminant: "external", value: { url: "https://www.acog.org/clinical/clinical-guidance/committee-statement/articles/2024/12/self-managed-abortion", showPopup: false }} %}here{% /inlineLink %}.**
+‍**Read the American College of Obstetricians and Gynecologists' Committee on Advancing Equity in Obstetric and Gynecologic Health Care's statement on self-managed abortion {% inlineLink action={discriminant: "external", value: {url: "https://www.acog.org/clinical/clinical-guidance/committee-statement/articles/2024/12/self-managed-abortion", showPopup: false}} %}here{% /inlineLink %}.**
 
 At this moment in history, we have a unique opportunity to address the structural inequities of our healthcare system and serve those in need of affordable, accessible abortion care using telehealth and abortion pills by mail. For more information about how to get involved, check out the many resources below, including our Provider Toolkit.
 
@@ -94,35 +108,51 @@ At this moment in history, we have a unique opportunity to address the structura
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Resources for providers", slug:"resources-for-providers"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Resources for providers", slug: "resources-for-providers"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="Resources for providers" icon="" /%}
 
-{% flexSection direction="flex-row" noWrap=false %}
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% resourceList
-   resources=[{resource: "for-providers_beyond-do-no-harm", header: ""}, {resource: "for-providers_if-when-how", header: ""}, {resource: "for-providers_if-when-how", header: ""}, {resource: "for-providers_beyond-do-no-harm", header: ""}]
-   type={discriminant: "simple", value: 2} /%}
+   resources=[{resource: "for-providers_beyond-do-no-harm"}, {resource: "for-providers_if-when-how"}, {resource: "for-providers_if-when-how"}, {resource: "for-providers_beyond-do-no-harm"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor=""
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="Professional organizations" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% bodySection
    centered=false
    fullWidth=false
    color="beige"
    textSize="medium" %}
-- {% inlineLink action={discriminant: "external", value: { url: "https://prochoice.org/", showPopup: false }} %}National Abortion Federation{% /inlineLink %}
-  - {% inlineLink action={discriminant: "external", value: { url: "https://prochoice.org/providers/ciac/", showPopup: false }} %}Clinicians in Abortion Care{% /inlineLink %}{% inlineLink action={discriminant: "external", value: { url: "https://societyfp.org/", showPopup: false }} %}‍{% /inlineLink %}
-- ‍{% inlineLink action={discriminant: "external", value: { url: "https://societyfp.org/", showPopup: false }} %}Society for Family Planning{% /inlineLink %}{% inlineLink action={discriminant: "external", value: { url: "https://abortioncarenetwork.org/", showPopup: false }} %}‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "external", value: { url: "https://abortioncarenetwork.org/", showPopup: false }} %}Abortion Care Network{% /inlineLink %}{% inlineLink action={discriminant: "external", value: { url: "https://nsrh.org/", showPopup: false }} %}‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "external", value: { url: "https://nsrh.org/", showPopup: false }} %}Nurses for Sexual and Reproductive Health{% /inlineLink %}{% inlineLink action={discriminant: "external", value: { url: "https://msfc.org/", showPopup: false }} %}‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "external", value: { url: "https://msfc.org/", showPopup: false }} %}Medical Students for Choice{% /inlineLink %}{% inlineLink action={discriminant: "external", value: { url: "https://prh.org/", showPopup: false }} %}‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "external", value: { url: "https://prh.org/", showPopup: false }} %}Physicians for Reproductive Health{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://prochoice.org/", showPopup: false}} %}National Abortion Federation{% /inlineLink %}
+  - {% inlineLink action={discriminant: "external", value: {url: "https://prochoice.org/providers/ciac/", showPopup: false}} %}Clinicians in Abortion Care{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://societyfp.org/", showPopup: false}} %}‍{% /inlineLink %}
+- ‍{% inlineLink action={discriminant: "external", value: {url: "https://societyfp.org/", showPopup: false}} %}Society for Family Planning{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://abortioncarenetwork.org/", showPopup: false}} %}‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://abortioncarenetwork.org/", showPopup: false}} %}Abortion Care Network{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://nsrh.org/", showPopup: false}} %}‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://nsrh.org/", showPopup: false}} %}Nurses for Sexual and Reproductive Health{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://msfc.org/", showPopup: false}} %}‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://msfc.org/", showPopup: false}} %}Medical Students for Choice{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://prh.org/", showPopup: false}} %}‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://prh.org/", showPopup: false}} %}Physicians for Reproductive Health{% /inlineLink %}
 {% /bodySection %}
 {% /flexSection %}
 {% /horizontalSplit %}
@@ -131,7 +161,7 @@ At this moment in history, we have a unique opportunity to address the structura
    title="Access the provider toolkit"
    color="red"
    icon="text"
-   link={label: "Provider toolkit", target: "/"} %}
+   link={label: "Provider toolkit", click: {discriminant: ""}, target: "/"} %}
 The UW x Plan C Provider Toolkit offers a step-by-step guide for initiating a modern medication abortion service within your primary care practice.
 {% /actionBanner %}
 
@@ -142,7 +172,7 @@ The UW x Plan C Provider Toolkit offers a step-by-step guide for initiating a mo
    textSize="medium" %}
 ## Contact us
 
-If you currently have a telehealth service that offers abortion pills by mail that you would like to have considered for listing on the Plan C Guide, please fill out this {% inlineLink action={discriminant: "external", value: { url: "https://plancpills.org/request-listing", showPopup: false }} %}form{% /inlineLink %}.
+If you currently have a telehealth service that offers abortion pills by mail that you would like to have considered for listing on the Plan C Guide, please fill out this {% inlineLink action={discriminant: "external", value: {url: "https://plancpills.org/request-listing", showPopup: false}} %}form{% /inlineLink %}.
 
 If you have questions related to offering abortion pills by mail or how best to support your patients, submit the contact form below.
 
