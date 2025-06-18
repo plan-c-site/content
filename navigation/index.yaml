@@ -72,7 +72,7 @@ navBar:
               action:
                 discriminant: internal
                 value:
-                  page: how-to-take-abortion-pills
+                  page: protocol
           - discriminant: link
             value:
               label: Support & resources
