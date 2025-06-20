@@ -8,7 +8,7 @@ externalLink:
   title: You are leaving the Plan C website.
   dontShowAgainText: Don’t show this again
   continueText: Continue to provider
-  continueIcon: arrowUp
+  continueIcon: logOut
 social:
   - action:
       discriminant: external
