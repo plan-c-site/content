@@ -16,7 +16,7 @@
    ignoreImageBorder=true
    imageCover="bg-contain"
    imageVertical="bg-center" %}
-# Where people get abortion pills online in
+# Where people get abortion pills online in {% dbText source="Name" %}State{% /dbText %}
 
 {% dbMarkdoc source="Summary" /%}
 
@@ -41,17 +41,23 @@
 {% dbClinic /%}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Frequently Asked Questions" icon="" %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="pink"
+   textSize="medium" %}
+## Frequently asked questions
+
 {% inContentButton
    label="View all FAQs"
    icon=""
-   size="standard"
+   size="primary"
    background="pink"
    altHoverBackground=""
    smallShadow=false
    leftIcon=false
-   action={discriminant: ""} /%}
-{% /sectionHeader %}
+   action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} /%}
+{% /bodySection %}
 
 {% flexSection
    direction="flex-col"
@@ -84,17 +90,23 @@
 {% /narrowBanner %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="Get support" icon="" %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="green"
+   textSize="medium" %}
+## Get support
+
 {% inContentButton
    label="View all support"
    icon=""
-   size="standard"
+   size="primary"
    background="green"
    altHoverBackground=""
    smallShadow=false
    leftIcon=false
-   action={discriminant: ""} /%}
-{% /sectionHeader %}
+   action={discriminant: "internal", value: {page: "support-resources"}} /%}
+{% /bodySection %}
 
 {% flexSection
    direction="flex-col"
@@ -117,9 +129,15 @@
 {% conditionalSection
    condition={discriminant: "stateFieldTruthy", value: "Additional In Person Clinic Resources"} %}
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="grey" title="In-person clinics" icon="" %}
-Clinics offer abortion pill pickup and other in-person abortion care options. Find the nearest clinic to  using this search tool.
-{% /sectionHeader %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="black"
+   textSize="medium" %}
+## In person clinics
+
+Clinics offer abortion pill pickup and other in-person abortion care options. To find the nearest clinic to {% dbText source="Name" %}STATE{% /dbText %}, use this search tool.
+{% /bodySection %}
 
 {% flexSection
    direction="flex-col"
@@ -133,7 +151,7 @@ Clinics offer abortion pill pickup and other in-person abortion care options. Fi
    resources=[]
    type={discriminant: "simple", value: 2}
    icon=""
-   iconColor="grey"
+   iconColor=""
    hideHeaders=false
    appendStateField="Additional In Person Clinic Resources" /%}
 {% /flexSection %}
