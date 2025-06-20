@@ -16,11 +16,13 @@
    ignoreImageBorder=true
    imageCover="bg-contain"
    imageVertical="bg-center"
-   imageHorizontal="left"
-   largeLeftColumn=true %}
+   imageHorizontal="center"
+   largeLeftColumn=false %}
 # Where people get abortion pills online in {% dbText source="Name" %}State{% /dbText %}
 
 {% dbMarkdoc source="Summary" /%}
+
+{% tableOfContents /%}
 
 {% conditionalSection
    condition={discriminant: "stateFieldTruthy", value: "Link to studies (in languages)"} %}
@@ -32,8 +34,6 @@
 {% textSize textSize="small" inline=false %}If you live in this state and are seeking an abortion, you may qualify to participate in a paid research study about abortion access.&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "in-advance"}} %}Click here to learn more{% /inlineLink %}.{% /textSize %}
 {% /narrowBanner %}
 {% /conditionalSection %}
-
-{% tableOfContents /%}
 {% /heroSection %}
 
 {% tocAnchor
