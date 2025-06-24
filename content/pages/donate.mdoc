@@ -4,33 +4,70 @@ seo:
   image:
     discriminant: ''
 ---
-{% tocAnchor
-  slug={name:"top", slug:"top"}
-  type={discriminant: "anchor", value: null } /%}
+{% tocAnchor slug={name: "top", slug: "top"} type={discriminant: "anchor"} /%}
 
 {% heroSection
    image={discriminant: "uploaded"}
    imageSide="right"
    color="beige"
-   imageBackgroundColor="cyan" %}
+   imageBackgroundColor="cyan"
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false %}
 # Donate
 
 We are a small but mighty team of public health experts, researchers and digital strategists dedicated to changing the landscape of abortion in the US. Your generous donations make our work possible.&nbsp;‍
 
-Plan C&nbsp;is a nonprofit 501(c)3 initiative. Donations are tax-deductible to the extent of the law. Our new fiscal sponsor is&nbsp;{% inlineLink action={discriminant: "external", value: { url: "http://possibilitylabs.org/", showPopup: false }} %}Possibility Labs{% /inlineLink %}, EIN&nbsp;85-3989363.&nbsp;
+Plan C&nbsp;is a nonprofit 501(c)3 initiative. Donations are tax-deductible to the extent of the law. Our new fiscal sponsor is&nbsp;{% inlineLink action={discriminant: "external", value: {url: "http://possibilitylabs.org/", showPopup: false}} %}Possibility Labs{% /inlineLink %}, EIN&nbsp;85-3989363.&nbsp;
 
-To contact us directly, email us at&nbsp;{% inlineLink action={discriminant: "external", value: { url: "mailto:support@plancpills.org", showPopup: false }} %}support@plancpills.org{% /inlineLink %}.
+To contact us directly, email us at&nbsp;{% inlineLink action={discriminant: "external", value: {url: "mailto:support@plancpills.org", showPopup: false}} %}support@plancpills.org{% /inlineLink %}.
 
 {% tableOfContents /%}
 {% /heroSection %}
 
-{% actionBanner title="Please note" color="red" icon="alertCircle" link={} %}
+{% horizontalSplit noHeader=true %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+# Donate
+
+{% textSize textSize="large" inline=false %}We are a small but mighty team of public health experts, researchers and digital strategists dedicated to changing the landscape of abortion in the US. Your generous donations make our work possible.&nbsp;‍{% /textSize %}
+
+{% textSize textSize="large" inline=false %}Plan C&nbsp;is a nonprofit 501(c)3 initiative. Donations are tax-deductible to the extent of the law. Our new fiscal sponsor is&nbsp;{% inlineLink action={discriminant: "external", value: {url: "http://possibilitylabs.org/", showPopup: false}} %}Possibility Labs{% /inlineLink %}, EIN&nbsp;85-3989363.&nbsp;{% /textSize %}
+
+{% textSize textSize="large" inline=false %}To contact us directly, email us at&nbsp;{% inlineLink action={discriminant: "external", value: {url: "mailto:support@plancpills.org", showPopup: false}} %}support@plancpills.org{% /inlineLink %}.{% /textSize %}
+
+{% tableOfContents /%}
+{% /bodySection %}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="blue"
+   textSize="medium" %}
+{% rawHtml
+   html="<div class=\"raisely-donate\" data-campaign-path=\"plan-c\" data-profile=\"\" data-width=\"100%\" data-height=\"800\"><script src=\"https://cdn.raisely.com/v3/public/embed.js\"></script></div>"
+   height="610px" /%}
+{% /bodySection %}
+{% /horizontalSplit %}
+
+{% actionBanner
+   title="Please note"
+   color="red"
+   icon="alertCircle"
+   link={click: {discriminant: ""}} %}
 We have a new 501c3 fiscal sponsor, Possibility Labs (EIN 85-3989363).&nbsp;See below&nbsp;for updated information on how to give tax-deductible gifts to Plan C through their organization.
 {% /actionBanner %}
 
 {% tocAnchor
-  slug={name:"How to donate", slug:"how-to-donate"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "How to donate", slug: "how-to-donate"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=true %}
 {% sectionHeader color="green" title="Give online" icon="" %}
@@ -43,7 +80,8 @@ Make a monthly recurring gift or a one-time donation.
    background="green"
    altHoverBackground=""
    smallShadow=false
-   leftIcon=false /%}
+   leftIcon=false
+   action={discriminant: ""} /%}
 {% /sectionHeader %}
 
 {% sectionHeader color="cyan" title="Give by check" icon="" %}
@@ -68,13 +106,13 @@ Choose "Possibility Labs" with EIN 85-3989363 and include  "Plan C" in the memo 
    color="blue"
    title="Give by wire transfer, stocks or endowment"
    icon="" %}
-Email&nbsp;{% inlineLink action={discriminant: "external", value: { url: "mailto:support@plancpills.org", showPopup: false }} %}support@plancpills.org{% /inlineLink %}for help.
+Email&nbsp;{% inlineLink action={discriminant: "external", value: {url: "mailto:support@plancpills.org", showPopup: false}} %}support@plancpills.org{% /inlineLink %}for help.
 {% /sectionHeader %}
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Where do donations go?", slug:"where-do-donations-go"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Where do donations go?", slug: "where-do-donations-go"}
+   type={discriminant: "toc"} /%}
 
 {% bodySection
    centered=false
@@ -93,8 +131,8 @@ All of our work fits into two main goals:&nbsp;that People Know (about pills)&nb
 {% /bodySection %}
 
 {% tocAnchor
-  slug={name:"Donor testimonials", slug:"donor-testimonials"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Donor testimonials", slug: "donor-testimonials"}
+   type={discriminant: "toc"} /%}
 
 {% cardLayoutSection color="blue" minColumnWidth=34 %}
 {% testimonialSection
@@ -111,8 +149,8 @@ All of our work fits into two main goals:&nbsp;that People Know (about pills)&nb
 {% /cardLayoutSection %}
 
 {% tocAnchor
-  slug={name:"Past funders", slug:"past-funders"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Past funders", slug: "past-funders"}
+   type={discriminant: "toc"} /%}
 
 {% logoBanner
    title="Past funders include"
