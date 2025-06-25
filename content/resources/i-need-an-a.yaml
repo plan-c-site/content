@@ -1,0 +1,12 @@
+title: I Need an A
+author: I Need an A
+website: https://ineedana.com
+summary: >-
+  A comprehensive, regularly updated, and personalized resource for abortion
+  seekers in the US.
+buttonText: Visit website
+resourceIcon: mapPin
+iconColor: green
+buttonIcon: ''
+buttonUrl:
+  discriminant: url
