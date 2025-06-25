@@ -191,5 +191,8 @@ navBar:
     - discriminant: link
       value:
         label: Donate
-        url: donate
+        action:
+          discriminant: internal
+          value:
+            page: donate
 footer: {}
