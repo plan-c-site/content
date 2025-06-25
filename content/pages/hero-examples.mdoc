@@ -1,0 +1,102 @@
+---
+title: Hero examples
+seo:
+  image:
+    discriminant: ''
+---
+{% heroSection
+   image={discriminant: "uploaded", value: "event-image-test"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="beige"
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false %}
+# Example 1
+
+Image-cover
+
+Default border
+{% /heroSection %}
+
+{% heroSection
+   image={discriminant: "uploaded", value: "event-image-test"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="beige"
+   ignoreImageBorder=false
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false %}
+# Example 2
+
+Image-contain
+
+Default border
+{% /heroSection %}
+
+{% heroSection
+   image={discriminant: "uploaded", value: "event-image-test"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="beige"
+   ignoreImageBorder=true
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false %}
+# Example 3
+
+Image-cover
+
+Ignore image border
+{% /heroSection %}
+
+{% heroSection
+   image={discriminant: "uploaded", value: "event-image-test"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="beige"
+   ignoreImageBorder=true
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false %}
+# Example 4
+
+Image-contain
+
+Ignore image border
+{% /heroSection %}
+
+{% heroSection
+   image={discriminant: "uploaded", value: "event-image-test"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="beige"
+   ignoreImageBorder=true
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="left"
+   largeLeftColumn=false %}
+# Example 5
+
+Image-contain
+
+Ignore image border
+
+Align left mobile
+{% /heroSection %}
