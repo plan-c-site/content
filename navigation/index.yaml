@@ -161,13 +161,15 @@ navBar:
               label: Research & learning
               action:
                 discriminant: internal
-                value: {}
+                value:
+                  page: research-and-learning
           - discriminant: link
             value:
               label: 'Plan C: The documentary'
               action:
                 discriminant: internal
-                value: {}
+                value:
+                  page: documentary
           - discriminant: link
             value:
               label: 2024 Annual report
@@ -181,7 +183,8 @@ navBar:
               label: Contact us
               action:
                 discriminant: internal
-                value: {}
+                value:
+                  page: contact
           - discriminant: link
             value:
               label: Media inquiries
