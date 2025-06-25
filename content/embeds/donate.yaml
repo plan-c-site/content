@@ -1,0 +1,5 @@
+title: donate
+html: >-
+  <div class="raisely-donate" data-campaign-path="plan-c" data-profile=""
+  data-width="100%" data-height="800"><script
+  src="https://cdn.raisely.com/v3/public/embed.js"></script></div>
