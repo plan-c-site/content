@@ -23,7 +23,7 @@ clinicTypes:
       - label: 'Delivery:'
       - label: 'FDA-approved '
       - label: Medical support
-    howDoesThisWork: xyz-test-popup
+    howDoesThisWork: how-does-this-work-online-clinics
   - label: International online clinics
     keyValue: International online clinic
     singular: International online clinic
