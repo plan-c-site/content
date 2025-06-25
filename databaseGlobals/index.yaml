@@ -31,11 +31,11 @@ clinicTypes:
     color: blue
     icon: globe
     labels:
-      - {}
-      - {}
-      - {}
-      - {}
-    howDoesThisWork: xyz-test-popup
+      - label: 'Price:'
+      - label: 'Delivery:'
+      - label: FDA-approved
+      - label: Medical support
+    howDoesThisWork: how-does-this-work-international-online-clinics
   - label: Community networks
     keyValue: Community network
     singular: Community network
@@ -43,11 +43,11 @@ clinicTypes:
     color: pink
     icon: heartHandshake
     labels:
-      - {}
-      - {}
-      - {}
-      - {}
-    howDoesThisWork: xyz-test-popup
+      - label: 'Price:'
+      - label: 'Delivery:'
+      - label: Generic
+      - label: Peer support
+    howDoesThisWork: how-does-this-work-community-networks
   - label: Websites that sell pills
     keyValue: Website that sells pills
     singular: Website that sells pills
@@ -55,11 +55,11 @@ clinicTypes:
     color: red
     icon: shoppingCart
     labels:
-      - {}
-      - {}
-      - {}
-      - {}
-    howDoesThisWork: xyz-test-popup
+      - label: 'Price:'
+      - label: 'Delivery:'
+      - label: Generic
+      - label: No support
+    howDoesThisWork: how-does-this-work-websites-that-sell-pills
 filterFields:
   - field: Financial aid
     label: Financial Assistance
