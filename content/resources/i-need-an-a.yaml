@@ -9,4 +9,4 @@ resourceIcon: mapPin
 iconColor: green
 buttonIcon: ''
 buttonUrl:
-  discriminant: url
+  discriminant: none
