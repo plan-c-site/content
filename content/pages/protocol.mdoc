@@ -11,7 +11,11 @@ seo:
    imageBackgroundColor="green"
    ignoreImageBorder=false
    imageCover="bg-contain"
-   imageVertical="bg-center" %}
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false %}
 # How to take abortion pills: step by step instructions
 
 Source: {% inlineLink action={discriminant: "home", value: {}} %}Reproductive Health Access Project{% /inlineLink %} & {% inlineLink action={discriminant: "home", value: {}} %}M+A Hotline{% /inlineLink %}
@@ -62,10 +66,12 @@ Use a calendar or a gestational age calculator. Measure from the first day of yo
    numberBackgroundColor="blue"
    title="(Optional) Take a pregnancy test"
    image={discriminant: "one-off", value: {image: "/images/protocol/02-make-sure-you-are-pregnant.png", altText: "pregnancy test"}} %}
-You may already know you are pregnant from your symptoms.&nbsp;
+You may {% textSize textSize="small" inline=true %}already know{% /textSize %} you are pregnant from your symptoms.&nbsp;
 
-- You can take a pregnancy test.
-- You can choose not to confirm a pregnancy and still take pills.
+- You can *take* a pregnancy test.
+- You can **choose not** to confirm a pregnancy and still take pills.
+
+{% inlineLink action={discriminant: "internal", value: {page: "home"}} %}Test a link{% /inlineLink %}
 {% /toDoSection %}
 {% /flexSection %}
 {% /horizontalSplit %}
