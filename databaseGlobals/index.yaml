@@ -112,6 +112,63 @@ filterFields:
           - 18
     helpPopup:
       discriminant: false
+  - field: Languages
+    label: Language
+    selectType:
+      discriminant: single
+      value:
+        - value: English
+          invert: false
+        - value: Spanish
+          invert: false
+        - value: Hindi
+          invert: false
+        - value: Hmong-Mien
+          invert: false
+        - value: Punjabi
+          invert: false
+        - value: Portuguese
+          invert: false
+    helpPopup:
+      discriminant: false
+  - field: Provider identity
+    label: Provider identity
+    selectType:
+      discriminant: single
+      value:
+        - value: Women
+          invert: false
+        - value: BIPOC
+          invert: false
+        - value: LGBTQ+
+          invert: false
+        - value: Veteran
+          invert: false
+        - value: Indigenous
+          invert: false
+        - value: Disabled
+          invert: false
+    helpPopup:
+      discriminant: false
+  - field: Gestational age limit
+    label: Weeks of pregnancy
+    selectType:
+      discriminant: number
+      value:
+        direction: gte
+        zeroIsAny: true
+        emptyIsAny: true
+        numberLabel: '%% weeks or less'
+        options:
+          - 8
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+    helpPopup:
+      discriminant: false
 linkToStudies:
   color: beige
   icon: arrowUp
