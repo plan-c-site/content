@@ -7,7 +7,7 @@ support:
 supportLink: support-resources
 inPersonClinicResources:
   - reprocare-healthline
-medicallySafe: xyz-test-popup
+medicallySafe: medically-safe-possible-legal-risk
 medicallySafeLabel: Medically very safe, possible legal risk
 howManyPillsPopup: xyz-test-popup
 howManyPillsLabel: How many pills are needed?
