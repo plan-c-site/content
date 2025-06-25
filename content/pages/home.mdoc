@@ -25,7 +25,7 @@ Plan C provides up-to-date information on how people in the U.S. are accessing a
    afterSubmit="nothing" %}
 {% formSection type="waiting" %}
 {% formInput
-   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Select a state or territory", options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "black", altHoverBackground: "", autoSubmit: true}}}}}] /%}
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Select a state or territory", options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
 {% /formSection %}
 {% /formWrapper %}
 
