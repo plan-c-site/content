@@ -1,12 +1,6 @@
-faqs:
-  - home_how-do-i-get-abortion-pills
-faqLink: guide-how-to-get-abortion-pills
-support:
-  - m-a-hotline-site-wide-support-block
-  - reprocare-healthline
-supportLink: support-resources
-inPersonClinicResources:
-  - reprocare-healthline
+faqs: []
+support: []
+inPersonClinicResources: []
 medicallySafe: medically-safe-possible-legal-risk
 medicallySafeLabel: Medically very safe, possible legal risk
 howManyPillsPopup: how-many-pills-are-needed
