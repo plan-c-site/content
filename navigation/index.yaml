@@ -84,7 +84,9 @@ navBar:
             value:
               label: Blogs
               action:
-                discriminant: ''
+                discriminant: internal
+                value:
+                  page: blogs
     - discriminant: section
       value:
         label: Get involved
@@ -137,7 +139,8 @@ navBar:
               label: Work with Plan C
               action:
                 discriminant: internal
-                value: {}
+                value:
+                  page: jobs
     - discriminant: section
       value:
         label: About
@@ -190,7 +193,8 @@ navBar:
               label: Media inquiries
               action:
                 discriminant: internal
-                value: {}
+                value:
+                  page: media-inquiries
     - discriminant: link
       value:
         label: Donate
