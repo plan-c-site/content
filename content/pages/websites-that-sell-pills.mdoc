@@ -4,8 +4,37 @@ seo:
   image:
     discriminant: ''
 ---
+{% heroSection
+   image={discriminant: ""}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="cyan"
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false %}
+# Websites that sell pills
+
+Our research has shown that these websites sell abortion pills but do not include any additional support. Anyone can get free medical support for their abortion from the {% inlineLink action={discriminant: ""} %}M+A Hotline{% /inlineLink %}.
+
+{% inlineLink action={discriminant: ""} %}Read the FAQs{% /inlineLink %} below for more information on how these sites work.
+
+{% tableOfContents /%}
+{% /heroSection %}
+
+{% narrowBanner
+   icon="triangleAlert"
+   color="red"
+   iconAlign="items-center"
+   fullWidth=true %}
+**These websites may not follow strict digital security protocols.** Read our {% inlineLink action={discriminant: ""} %}digital privacy tips{% /inlineLink %} to learn how to protect yourself when ordering or searching for abortion pills online.
+{% /narrowBanner %}
+
 {% filteredListings
    title="Websites that sell pills"
-   color="beige"
-   maxVisibleDefault=2
-   listings={discriminant: "field", value: {field: "Display Name", value: "Metro Area Modern Reproductive Care"}} /%}
+   color="red"
+   maxVisibleDefault=6
+   listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}} /%}
