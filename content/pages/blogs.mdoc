@@ -1,0 +1,32 @@
+---
+title: Blogs
+seo:
+  image:
+    discriminant: ''
+---
+{% heroSection
+   image={discriminant: ""}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="beige"
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false %}
+# Blogs
+{% /heroSection %}
+
+{% horizontalSplit noHeader=false %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" /%}
+
+{% postList
+   type={discriminant: "simple"}
+   filtering={discriminant: "category", value: {category: "blogs"}} /%}
+{% /horizontalSplit %}
