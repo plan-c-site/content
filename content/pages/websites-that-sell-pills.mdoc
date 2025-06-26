@@ -38,3 +38,29 @@ Our research has shown that these websites sell abortion pills but do not includ
    color="red"
    maxVisibleDefault=6
    listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}} /%}
+
+{% horizontalSplit noHeader=false %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="pink"
+   textSize="medium" %}
+# Frequently asked questions
+
+{% inContentButton
+   label="View all FAQs"
+   icon=""
+   size="primary"
+   background="pink"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} /%}
+{% /bodySection %}
+
+{% faqList
+   faqs=["guide_websites-that-sell-pills_what-are-websites-that-sell-pills", "guide_websites-that-sell-pills_are-these-websites-legit", "guide_websites-that-sell-pills_what-if-i-have-medical-questions", "guide_websites-that-sell-pills_how-many-pills-do-i-need"]
+   color="beige"
+   appendStateField=""
+   anchor=false /%}
+{% /horizontalSplit %}
