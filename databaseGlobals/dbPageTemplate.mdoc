@@ -149,13 +149,10 @@ Clinics offer abortion pill pickup and other in-person abortion care options. To
    gap=2
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% resourceList
-   resources=[{resource: "i-need-an-a", header: "Find your nearest clinic"}]
-   type={discriminant: "simple", value: 2}
-   icon=""
-   iconColor="grey"
-   hideHeaders=false
-   appendStateField="" /%}
+{% resourceItem
+   resource="i-need-an-a"
+   header={discriminant: "source"}
+   type={discriminant: "block", value: {icon: "", iconColor: ""}} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
