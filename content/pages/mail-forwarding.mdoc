@@ -46,6 +46,31 @@ Below you can read examples of how this has worked, then search for an abortion 
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="green"
+   textSize="medium" %}
+## Examples of how this has worked:
+{% /bodySection %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% faqSection
+   faq="home_how-do-i-get-abortion-pills"
+   color="beige"
+   embedded=false
+   anchor=false /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
 {% sectionHeader
    color="green"
    title="Examples of how this has worked"
