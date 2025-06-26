@@ -130,8 +130,6 @@
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% conditionalSection
-   condition={discriminant: "stateFieldTruthy", value: "Additional In Person Clinic Resources"} %}
 {% horizontalSplit noHeader=false %}
 {% bodySection
    centered=false
@@ -160,7 +158,12 @@ Clinics offer abortion pill pickup and other in-person abortion care options. To
    appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
-{% /conditionalSection %}
+
+{% actionBanner
+   title="Have feedback about Plan C or a provider?"
+   color="red"
+   icon=""
+   link={label: "Let us know", click: {discriminant: "internal", value: {page: "contact"}}} /%}
 
 {% tocAnchor
    slug={name: "Pregnancy Calculator", slug: "pregnancy-calculator"}
