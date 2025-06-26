@@ -33,10 +33,23 @@ Below you can read examples of how this has worked, then search for an abortion 
 {% bodySection
    centered=false
    fullWidth=false
-   color="beige"
+   color="green"
    textSize="medium" %}
 ## Examples of how this has worked:
 {% /bodySection %}
+
+{% faqList
+   faqs=["where-someone-lives-makes-a-difference"]
+   color="beige"
+   appendStateField=""
+   anchor=false /%}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader
+   color="green"
+   title="Examples of how this has worked"
+   icon="" /%}
 
 {% faqList
    faqs=["where-someone-lives-makes-a-difference"]
