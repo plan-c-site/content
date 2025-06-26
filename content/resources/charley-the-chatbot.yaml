@@ -1,5 +1,4 @@
 title: Charley the Chatbot
-heading: Automated support
 author: Charley the Chatbot
 website: https://chatwithcharley.org
 summary: >-
@@ -7,7 +6,7 @@ summary: >-
   different abortion care methods, nearby clinics, accessing abortion pills, and
   referrals to support services.
 buttonText: Visit website
-resourceIcon: stethoscope
+resourceIcon: messagesSquare
 iconColor: green
 buttonIcon: arrowRight
 buttonUrl:

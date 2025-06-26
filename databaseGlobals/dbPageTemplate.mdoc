@@ -33,7 +33,7 @@
    color="beige"
    iconAlign="items-start"
    fullWidth=false %}
-{% textSize textSize="small" inline=false %}If you live in this state and are seeking an abortion, you may qualify to participate in a paid research study about abortion access.&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "in-advance"}} %}Click here to learn more{% /inlineLink %}.{% /textSize %}
+{% textSize textSize="small" inline=false %}If you live in this state and are seeking an abortion, you may qualify to participate in a paid research study about abortion access.&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "research-and-learning"}} %}Click here to learn more{% /inlineLink %}.{% /textSize %}
 {% /narrowBanner %}
 {% /conditionalSection %}
 {% /heroSection %}
@@ -72,13 +72,13 @@
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
 {% faqSection
-   faq="home_how-do-i-get-abortion-pills"
+   faq="guide_how-do-people-choose-a-provider"
    color="beige"
    embedded=false
-   anchor=false /%}
+   anchor=true /%}
 
 {% faqSection
-   faq="how-does-the-abortion-pill-work"
+   faq="can-i-get-in-trouble-for-using-abortion-pills"
    color="beige"
    embedded=false
    anchor=true /%}
@@ -121,17 +121,15 @@
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
 {% resourceList
-   resources=[{resource: "abortion-access-legal-defense-fund"}]
+   resources=[{resource: "m-a-hotline-site-wide-support-block", header: "Medical questions"}, {resource: "reprocare-healthline", header: "Logistical and emotional support"}, {resource: "repro-legal-helpline-site-wide-support-block", header: "Legal questions"}, {resource: "charley-the-chatbot", header: "Automated support"}]
    type={discriminant: "simple", value: 2}
    icon=""
-   iconColor=""
+   iconColor="green"
    hideHeaders=false
-   appendStateField="Additional Support Resources" /%}
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% conditionalSection
-   condition={discriminant: "stateFieldTruthy", value: "Additional In Person Clinic Resources"} %}
 {% horizontalSplit noHeader=false %}
 {% bodySection
    centered=false
@@ -151,16 +149,18 @@ Clinics offer abortion pill pickup and other in-person abortion care options. To
    gap=2
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% resourceList
-   resources=[{resource: "charley-the-chatbot"}]
-   type={discriminant: "simple", value: 2}
-   icon=""
-   iconColor="grey"
-   hideHeaders=false
-   appendStateField="Additional In Person Clinic Resources" /%}
+{% resourceItem
+   resource="i-need-an-a"
+   header={discriminant: "override", value: "Find your nearest clinic"}
+   type={discriminant: "block", value: {icon: "", iconColor: "grey"}} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
-{% /conditionalSection %}
+
+{% actionBanner
+   title="Have feedback about Plan C or a provider?"
+   color="red"
+   icon=""
+   link={label: "Let us know", click: {discriminant: "internal", value: {page: "contact"}}} /%}
 
 {% tocAnchor
    slug={name: "Pregnancy Calculator", slug: "pregnancy-calculator"}

@@ -84,7 +84,9 @@ navBar:
             value:
               label: Blogs
               action:
-                discriminant: ''
+                discriminant: internal
+                value:
+                  page: blogs
     - discriminant: section
       value:
         label: Get involved
@@ -137,7 +139,8 @@ navBar:
               label: Work with Plan C
               action:
                 discriminant: internal
-                value: {}
+                value:
+                  page: jobs
     - discriminant: section
       value:
         label: About
@@ -161,13 +164,15 @@ navBar:
               label: Research & learning
               action:
                 discriminant: internal
-                value: {}
+                value:
+                  page: research-and-learning
           - discriminant: link
             value:
               label: 'Plan C: The documentary'
               action:
                 discriminant: internal
-                value: {}
+                value:
+                  page: documentary
           - discriminant: link
             value:
               label: 2024 Annual report
@@ -181,13 +186,15 @@ navBar:
               label: Contact us
               action:
                 discriminant: internal
-                value: {}
+                value:
+                  page: contact
           - discriminant: link
             value:
               label: Media inquiries
               action:
                 discriminant: internal
-                value: {}
+                value:
+                  page: media-inquiries
     - discriminant: link
       value:
         label: Donate

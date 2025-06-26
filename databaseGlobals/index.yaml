@@ -1,15 +1,9 @@
-faqs:
-  - home_how-do-i-get-abortion-pills
-faqLink: guide-how-to-get-abortion-pills
-support:
-  - m-a-hotline-site-wide-support-block
-  - reprocare-healthline
-supportLink: support-resources
-inPersonClinicResources:
-  - reprocare-healthline
-medicallySafe: xyz-test-popup
+faqs: []
+support: []
+inPersonClinicResources: []
+medicallySafe: medically-safe-possible-legal-risk
 medicallySafeLabel: Medically very safe, possible legal risk
-howManyPillsPopup: xyz-test-popup
+howManyPillsPopup: how-many-pills-are-needed
 howManyPillsLabel: How many pills are needed?
 clinicTypes:
   - label: Online Clinics
@@ -23,7 +17,7 @@ clinicTypes:
       - label: 'Delivery:'
       - label: 'FDA-approved '
       - label: Medical support
-    howDoesThisWork: xyz-test-popup
+    howDoesThisWork: how-does-this-work-online-clinics
   - label: International online clinics
     keyValue: International online clinic
     singular: International online clinic
@@ -31,11 +25,11 @@ clinicTypes:
     color: blue
     icon: globe
     labels:
-      - {}
-      - {}
-      - {}
-      - {}
-    howDoesThisWork: xyz-test-popup
+      - label: 'Price:'
+      - label: 'Delivery:'
+      - label: FDA-approved
+      - label: Medical support
+    howDoesThisWork: how-does-this-work-international-online-clinics
   - label: Community networks
     keyValue: Community network
     singular: Community network
@@ -43,11 +37,11 @@ clinicTypes:
     color: pink
     icon: heartHandshake
     labels:
-      - {}
-      - {}
-      - {}
-      - {}
-    howDoesThisWork: xyz-test-popup
+      - label: 'Price:'
+      - label: 'Delivery:'
+      - label: Generic
+      - label: Peer support
+    howDoesThisWork: how-does-this-work-community-networks
   - label: Websites that sell pills
     keyValue: Website that sells pills
     singular: Website that sells pills
@@ -55,11 +49,11 @@ clinicTypes:
     color: red
     icon: shoppingCart
     labels:
-      - {}
-      - {}
-      - {}
-      - {}
-    howDoesThisWork: xyz-test-popup
+      - label: 'Price:'
+      - label: 'Delivery:'
+      - label: Generic
+      - label: No support
+    howDoesThisWork: how-does-this-work-websites-that-sell-pills
 filterFields:
   - field: Financial aid
     label: Financial Assistance
@@ -110,6 +104,63 @@ filterFields:
           - 16
           - 17
           - 18
+    helpPopup:
+      discriminant: false
+  - field: Languages
+    label: Language
+    selectType:
+      discriminant: single
+      value:
+        - value: English
+          invert: false
+        - value: Spanish
+          invert: false
+        - value: Hindi
+          invert: false
+        - value: Hmong-Mien
+          invert: false
+        - value: Punjabi
+          invert: false
+        - value: Portuguese
+          invert: false
+    helpPopup:
+      discriminant: false
+  - field: Provider identity
+    label: Provider identity
+    selectType:
+      discriminant: single
+      value:
+        - value: Women
+          invert: false
+        - value: BIPOC
+          invert: false
+        - value: LGBTQ+
+          invert: false
+        - value: Veteran
+          invert: false
+        - value: Indigenous
+          invert: false
+        - value: Disabled
+          invert: false
+    helpPopup:
+      discriminant: false
+  - field: Gestational age limit
+    label: Weeks of pregnancy
+    selectType:
+      discriminant: number
+      value:
+        direction: gte
+        zeroIsAny: true
+        emptyIsAny: true
+        numberLabel: '%% weeks or less'
+        options:
+          - 8
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
     helpPopup:
       discriminant: false
 linkToStudies:
