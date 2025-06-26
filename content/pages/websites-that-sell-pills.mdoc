@@ -33,11 +33,19 @@ Our research has shown that these websites sell abortion pills but do not includ
 {% textSize textSize="small" inline=false %}**These websites may not follow strict digital security protocols.** Read our {% inlineLink action={discriminant: ""} %}digital privacy tips{% /inlineLink %} to learn how to protect yourself when ordering or searching for abortion pills online.{% /textSize %}
 {% /narrowBanner %}
 
+{% tocAnchor
+   slug={name: "List of providers", slug: "list-of-providers"}
+   type={discriminant: "toc"} /%}
+
 {% filteredListings
    title="Websites that sell pills"
    color="red"
    maxVisibleDefault=6
    listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}} /%}
+
+{% tocAnchor
+   slug={name: "Frequently asked questions", slug: "frequently-asked-questions"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% bodySection
