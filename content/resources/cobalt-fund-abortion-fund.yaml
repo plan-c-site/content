@@ -6,6 +6,8 @@ summary: >-
   providers who offer sliding scale. Donations to Cobalt Fund are
   tax-deductible.
 buttonText: Donate here
+resourceIcon: handCoins
+iconColor: green
 buttonIcon: arrowRight
 buttonUrl:
   discriminant: url
