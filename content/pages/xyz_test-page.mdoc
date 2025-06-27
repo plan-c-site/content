@@ -15,7 +15,8 @@ seo:
    imageHorizontal="center"
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
-   largeLeftColumn=false %}
+   largeLeftColumn=false
+   reverseOnMobile=false %}
 # {% ignoreHeaderStyle /%}Abortion pills by mail in every state
 
 Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.
@@ -77,8 +78,7 @@ to go over in height
    color="yellow"
    textSize="medium" %}
 {% rawHtml
-   html="<div class=\"raisely-donate\" data-campaign-path=\"plan-c\" data-profile=\"\" data-width=\"100%\" data-height=\"600\"><script src=\"https://cdn.raisely.com/v3/public/embed.js\"></script></div>"
-   /%}
+   html="<div class=\"raisely-donate\" data-campaign-path=\"plan-c\" data-profile=\"\" data-width=\"100%\" data-height=\"600\"><script src=\"https://cdn.raisely.com/v3/public/embed.js\"></script></div>" /%}
 {% /bodySection %}
 
 {% tocAnchor
@@ -220,6 +220,16 @@ As a provider, you may see patients who need:
 - Post-abortion care
 - Miscarriage treatment
 - Post-abortion contraception
+
+{% inContentButton
+   label="test"
+   icon=""
+   size="standard"
+   background="beige"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} /%}
 
 \
 Access to abortion pills still exists in all states through:
