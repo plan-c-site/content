@@ -38,9 +38,15 @@ Submitted
 {% bodySection
    centered=false
    fullWidth=false
-   color="red"
+   color="blue"
    textSize="medium" %}
-Error
+{% narrowBanner
+   icon="triangleAlert"
+   color="red"
+   iconAlign="items-center"
+   fullWidth=false %}
+There was an error submitting the form.
+{% /narrowBanner %}
 {% /bodySection %}
 {% /formSection %}
 {% /formWrapper %}
