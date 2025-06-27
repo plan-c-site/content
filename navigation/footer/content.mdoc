@@ -23,9 +23,27 @@
 {% formInput
    fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
 {% /formSection %}
-{% /formWrapper %}
 
-{% socialButtons /%}
+{% formSection type="submitted" %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+Submitted
+{% /bodySection %}
+{% /formSection %}
+
+{% formSection type="error" %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="red"
+   textSize="medium" %}
+Error
+{% /bodySection %}
+{% /formSection %}
+{% /formWrapper %}
 {% /flexSection %}
 
 {% flexSection
