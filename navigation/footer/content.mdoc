@@ -17,10 +17,10 @@
 ## Get the Plan C newsletter
 
 {% formWrapper
-   formType={discriminant: "custom", value: {code: "alert(\"GOT\\n\" + JSON.stringify(inputs))"}}
+   formType={discriminant: "hubspot", value: {formId: "4ea4d330-d054-4777-8f07-8b3a99297a91", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}}
    afterSubmit="show-screens" %}
 {% formInput
-   fields=[{label: {name: "Email", slug: "email"}, required: false, type: {discriminant: "text", value: {placeholder: "Email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: ""}}}}}] /%}
+   fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
 {% /formWrapper %}
 
 {% socialButtons /%}
