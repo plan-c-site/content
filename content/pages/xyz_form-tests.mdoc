@@ -16,21 +16,21 @@ seo:
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:state:]"}}
    afterSubmit="nothing" %}
 {% formInput
-   fields=[{label: {name: "Find Pills", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Choose a state", options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "black", altHoverBackground: ""}}}}}] /%}
+   fields=[{label: {name: "Find Pills", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Choose a state", options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "black", altHoverBackground: ""}}}}}] /%}
 {% /formWrapper %}
 
 {% formWrapper
    formType={discriminant: "custom", value: {code: "alert(`Got: ${inputs.email}`)"}}
    afterSubmit="nothing" %}
 {% formInput
-   fields=[{label: {name: "Sign up to newsletter", slug: "email"}, required: false, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "check", background: "green", altHoverBackground: "red"}}}}}] /%}
+   fields=[{label: {name: "Sign up to newsletter", slug: "email"}, required: false, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "green", altHoverBackground: "red"}}}}}] /%}
 {% /formWrapper %}
 
 {% formWrapper
    formType={discriminant: "multiStep", value: [{discriminant: "custom", value: {code: "alert(`Got: ${inputs.feedback}`)\nreturn\"success\""}}, {discriminant: "custom", value: {code: "alert(`Second Step: ${inputs.feedback}`)\nreturn \"error\""}}]}
    afterSubmit="reset" %}
 {% formInput
-   fields=[{label: {name: "Give us feedback", slug: "feedback"}, required: true, type: {discriminant: "text", value: {placeholder: "Feedback", multiline: true, embedSubmitButton: {discriminant: true, value: {icon: "quote", background: "blue", altHoverBackground: "blue"}}}}}] /%}
+   fields=[{label: {name: "Give us feedback", slug: "feedback"}, required: true, type: {discriminant: "text", value: {placeholder: "Feedback", multiline: true, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "blue", altHoverBackground: "blue"}}}}}] /%}
 {% /formWrapper %}
 
 {% inContentButton
@@ -112,7 +112,7 @@ Form submission failed
    imageBackgroundColor="green"
    ignoreImageBorder=false %}
 {% formInput
-   fields=[{label: {name: "email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "check", background: "black", altHoverBackground: "green"}}}}}] /%}
+   fields=[{label: {name: "email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "black", altHoverBackground: "green"}}}}}] /%}
 {% /heroSection %}
 {% /formSection %}
 {% /formWrapper %}
@@ -122,7 +122,7 @@ Form submission failed
    afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="red" title="Testing a Custom Form" icon="warning" %}
+{% sectionHeader color="red" title="Testing a Custom Form" icon="x" %}
 These should only be used if **Absolutely Necessary**
 {% /sectionHeader %}
 
