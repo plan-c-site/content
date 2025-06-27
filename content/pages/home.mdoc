@@ -4,8 +4,10 @@ seo:
   image:
     discriminant: ''
 ---
+{% tocAnchor slug={name: "Top", slug: "top"} type={discriminant: "anchor"} /%}
+
 {% heroSection
-   image={discriminant: "one-off", value: {image: "/images/home/mailbox-padding-1.png", altText: "Mailbox with package containing abortion pills"}}
+   image={discriminant: "one-off", value: {image: "/images/home/mailbox-padding-1.png"}}
    imageSide="right"
    color="blue"
    imageBackgroundColor="blue"
@@ -26,7 +28,7 @@ Plan C provides up-to-date information on how people in the U.S. are accessing a
    afterSubmit="nothing" %}
 {% formSection type="waiting" %}
 {% formInput
-   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Select a state or territory", options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "", background: "beige", altHoverBackground: ""}}}}}] /%}
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "", background: "beige", altHoverBackground: ""}}}}}] /%}
 {% /formSection %}
 {% /formWrapper %}
 
@@ -42,7 +44,17 @@ Plan C provides up-to-date information on how people in the U.S. are accessing a
 {% /narrowBanner %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Frequently asked questions" icon="" /%}
+{% sectionHeader color="pink" title="Frequently asked questions" icon="" %}
+{% inContentButton
+   label="View all FAQs"
+   icon=""
+   size="standard"
+   background="pink"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} /%}
+{% /sectionHeader %}
 
 {% flexSection
    direction="flex-col"
@@ -52,23 +64,27 @@ Plan C provides up-to-date information on how people in the U.S. are accessing a
    gap=0
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% faqSection
-   faq="home_what-is-the-abortion-pill"
+{% faqList
+   faqs=["home_what-is-the-abortion-pill", "home_how-do-i-get-abortion-pills", "can-i-get-in-trouble-for-using-abortion-pills", "what-s-the-difference-between-plan-b-and-plan-c"]
    color="beige"
-   embedded=false
-   anchor=false /%}
-
-{% faqSection
-   faq="can-i-get-in-trouble-for-using-abortion-pills"
-   color="beige"
-   embedded=false
-   anchor=false /%}
+   appendStateField=""
+   anchor=true /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Support" icon="" %}
-Get Live Phone & Text Support from experts who care.
+Get live phone & text support from experts who care.
+
+{% inContentButton
+   label="View all support"
+   icon=""
+   size="standard"
+   background="green"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "internal", value: {page: "support-resources"}} /%}
 {% /sectionHeader %}
 
 {% flexSection
@@ -80,7 +96,7 @@ Get Live Phone & Text Support from experts who care.
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
 {% resourceList
-   resources=[{resource: "m-a-hotline-site-wide-support-block"}, {resource: "reprocare-healthline", header: "Hi"}, {resource: "repro-legal-helpline-site-wide-support-block"}, {resource: "charley-the-chatbot"}]
+   resources=[{resource: "m-a-hotline-site-wide-support-block"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline-site-wide-support-block"}, {resource: "charley-the-chatbot"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="green"
@@ -91,7 +107,7 @@ Get Live Phone & Text Support from experts who care.
 
 {% cardLayoutSection color="beige" %}
 {% cardSection
-   image={discriminant: "noco", value: "Mailbox"}
+   image={discriminant: "one-off", value: {image: "/images/home/truck_card-wide.png"}}
    imageOnly=false
    title="Pills in advance"
    action={discriminant: "internal", value: {page: "in-advance"}} %}
@@ -99,7 +115,7 @@ Many providers send abortion pills in advance, in case of future need.
 {% /cardSection %}
 
 {% cardSection
-   image={discriminant: "uploaded", value: "mailbox"}
+   image={discriminant: "one-off", value: {image: "/images/home/stickers_card-wide.png"}}
    imageOnly=false
    title="Get free stickers"
    action={discriminant: "internal", value: {page: "stickers"}} %}
@@ -107,7 +123,7 @@ Our QR code stickers link directly to the Plan C Guide.  Order a pack for free a
 {% /cardSection %}
 
 {% cardSection
-   image={discriminant: "uploaded", value: "mailbox"}
+   image={discriminant: "one-off", value: {image: "/images/home/megaphone_card-wide.png"}}
    imageOnly=false
    title="Join the community"
    action={discriminant: "internal", value: {page: "community"}} %}
@@ -132,7 +148,7 @@ In this website when we use the term "Guide," we refer to a health information r
 {% horizontalSplit noHeader=true %}
 {% sectionHeader
    color="green"
-   title="Plan C is a nonprofit 501c3 initiative."
+   title="We are a nonprofit 501c3 initiative."
    icon="" %}
 Grants and individual donations make this work possible.
 
@@ -163,35 +179,4 @@ Since 2016, our mission has been to conduct research on abortion pill access, sh
    leftIcon=false
    action={discriminant: "internal", value: {page: "about"}} /%}
 {% /sectionHeader %}
-{% /horizontalSplit %}
-
-{% horizontalSplit noHeader=false %}
-{% bodySection
-   centered=false
-   fullWidth=false
-   color="green"
-   textSize="medium" %}
-{% flexSection
-   direction="flex-col"
-   noWrap=false
-   noInnerBorders=true
-   grow=false
-   gap=0.5
-   itemsAlign="items-start"
-   justiftContent="justify-center" %}
-## Plan C is a nonprofit 501c3 initiative.
-
-Grants and individual donations make this work possible.
-
-{% inContentButton
-   label="Donate now"
-   icon=""
-   size="primary"
-   background="green"
-   altHoverBackground=""
-   smallShadow=false
-   leftIcon=false
-   action={discriminant: "internal", value: {page: "donate"}} /%}
-{% /flexSection %}
-{% /bodySection %}
 {% /horizontalSplit %}
