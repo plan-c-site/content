@@ -30,6 +30,26 @@ Plan C provides up-to-date information on how people in the U.S. are accessing a
 {% formInput
    fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
 {% /formSection %}
+
+{% formSection type="submitted" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Submitted
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="success" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Success
+{% /narrowBanner %}
+{% /formSection %}
 {% /formWrapper %}
 
 {% textSize textSize="small" inline=false %}We do not collect or store personal data.{% /textSize %}
