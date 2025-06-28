@@ -33,8 +33,9 @@ You can also print your own stickers, mini-flyers and protest posters using our 
    type={discriminant: "toc"} /%}
 
 {% formWrapper
-   formType={discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236791013599", input: "qr_sticker__dark_blue_white_"}, {id: "46236994830559", input: "qr_sticker_spanish"}]}}
-   afterSubmit="show-screens" %}
+   formType={discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236791013599", input: "id_eng"}, {id: "46236994830559", input: "id_spa"}]}}
+   afterSubmit="show-screens"
+   customValidation="let atLeast1 = false\nif (inputs.id_eng && inputs.id_eng !== '0') {\natLeast1 = true \n}\nif (inputs.id_spa && inputs.id_spa !== '0') {\natLeast1 = true \n}\nif (!atLeast1) {\n   return {\n  id_eng: \"Please select at least one type of sticker\",\nid_spa: \"Please select at least one item\"\n}\n}\nreturn true" %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="QR Code Stickers" icon="" %}
@@ -55,7 +56,7 @@ You can also print your own stickers, mini-flyers and protest posters using our 
 {% textSize textSize="large" inline=true %}**How many stickers do you need?**{% /textSize %}
 
 {% formInput
-   fields=[{label: {name: "English", slug: "english"}, required: false, type: {discriminant: "select", value: {placeholder: "Quantity", autoSubmit: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Spanish", slug: "spanish"}, required: false, type: {discriminant: "select", value: {placeholder: "Quantity", autoSubmit: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
+   fields=[{label: {name: "English", slug: "id_eng"}, required: false, type: {discriminant: "select", value: {placeholder: "Quantity", autoSubmit: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Spanish", slug: "id_spa"}, required: false, type: {discriminant: "select", value: {placeholder: "Quantity", autoSubmit: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
 
 {% insetSection %}
 {% textSize textSize="large" inline=true %}**Need more materials? We’ve got you covered!**{% /textSize %}
