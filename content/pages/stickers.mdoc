@@ -85,7 +85,10 @@ Materials will be delivered in unbranded packaging material. It will not say Pla
 {% /insetSection %}
 
 {% formInput
-   fields=[{label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Continue to checkout", slug: "continue-to-checkout"}, required: false, type: {discriminant: "submit", value: {icon: "arrowRight", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: true}}}] /%}
+   fields=[{label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}] /%}
+
+{% formInput
+   fields=[{label: {name: "Continue to checkout", slug: "continue-to-checkout"}, required: false, type: {discriminant: "submit", value: {icon: "arrowRight", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: true}}}] /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
