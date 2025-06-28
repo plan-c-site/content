@@ -9,7 +9,14 @@ seo:
    imageSide="right"
    color="beige"
    imageBackgroundColor="cyan"
-   ignoreImageBorder=false %}
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
 # Partnerships
 
 We work with other nonprofit and community organizations, campuses, student groups, artists and brands to spread the word about abortion pills and share information on how people are accessing them online for medically safe home abortion.
@@ -18,8 +25,8 @@ We work with other nonprofit and community organizations, campuses, student grou
 {% /heroSection %}
 
 {% tocAnchor
-  slug={name:"What does it mean to partner with us?", slug:"what-does-it-mean-to-partner-with-us"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "What does it mean to partner with us?", slug: "what-does-it-mean-to-partner-with-us"}
+   type={discriminant: "toc"} /%}
 
 {% bodySection
    centered=false
@@ -39,8 +46,14 @@ We work with other nonprofit and community organizations, campuses, student grou
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Partnership FAQs" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
-{% faqSection color="beige" embedded=false /%}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% faqSection color="beige" embedded=false anchor=false /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -76,7 +89,7 @@ A near future where this safe and effective method is in the hands of anyone tha
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
 
 {% formWrapper
-   formType={discriminant: "hubspot", value: {formId: "b4570ae3-3568-4f50-be01-5d68e3865dac", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Advocacy or Partnership"}}]}}
+   formType={discriminant: "hubspot", value: {formId: "66da9a64-c807-4fb2-83fa-49791c2759d6", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Advocacy or Partnership"}}]}}
    afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
 {% formInput
