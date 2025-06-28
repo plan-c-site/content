@@ -147,23 +147,6 @@ In this website when we use the term "Guide," we refer to a health information r
 
 {% horizontalSplit noHeader=true %}
 {% sectionHeader
-   color="green"
-   title="We are a nonprofit 501c3 initiative."
-   icon="" %}
-Grants and individual donations make this work possible.
-
-{% inContentButton
-   label="Donate now"
-   icon=""
-   size="primary"
-   background="green"
-   altHoverBackground=""
-   smallShadow=false
-   leftIcon=false
-   action={discriminant: "internal", value: {page: "donate"}} /%}
-{% /sectionHeader %}
-
-{% sectionHeader
    color="cyan"
    title="Our research makes change happen."
    icon="" %}
@@ -178,5 +161,22 @@ Since 2016, our mission has been to conduct research on abortion pill access, sh
    smallShadow=false
    leftIcon=false
    action={discriminant: "internal", value: {page: "about"}} /%}
+{% /sectionHeader %}
+
+{% sectionHeader
+   color="green"
+   title="Your donations make our work possible."
+   icon="" %}
+We are a nonprofit 501c3 initiative.
+
+{% inContentButton
+   label="Donate now"
+   icon=""
+   size="primary"
+   background="green"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "internal", value: {page: "donate"}} /%}
 {% /sectionHeader %}
 {% /horizontalSplit %}
