@@ -15,10 +15,30 @@ seo:
    imageHorizontal="center"
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
-   largeLeftColumn=false %}
+   largeLeftColumn=false
+   reverseOnMobile=false %}
 # Media inquiries
 
 This page includes background on our work + our team, along with recent articles and press releases.
 
 {% tableOfContents /%}
 {% /heroSection %}
+
+{% bodySection
+   centered=true
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+## Request an interview
+
+After you’ve read the tips above, fill out this form to reach our team.
+
+{% formWrapper
+   formType={discriminant: "hubspot", value: {formId: "fe96c04a-12aa-4729-a96f-a368502da649", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Press or Public Relations"}}]}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Phone", slug: "phone"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organization", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Message", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Send me future press releases from the Plan C media team", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}
