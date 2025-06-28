@@ -9,7 +9,14 @@ seo:
    imageSide="right"
    color="beige"
    imageBackgroundColor="cyan"
-   ignoreImageBorder=false %}
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
 # Stickers
 
 Thank you for your interest in spreading the word about Plan C. To order stickers, please fill out the secure form below and click Submit.
@@ -35,10 +42,13 @@ You can also print your own stickers, mini-flyers and protest posters using our 
    textSize="medium" %}
 {% textSize textSize="large" inline=true %}**How many stickers do you need?**{% /textSize %}
 
+{% formInput
+   fields=[{label: {name: "English", slug: "english"}, required: false, type: {discriminant: "select", value: {placeholder: "Quantity", autoSubmit: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Spanish", slug: "spanish"}, required: false, type: {discriminant: "select", value: {placeholder: "Quantity", autoSubmit: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
+
 {% insetSection %}
 {% textSize textSize="large" inline=true %}**Need more materials? We’ve got you covered!**{% /textSize %}
 
-Email us at {% inlineLink action={discriminant: "external", value: { url: "mailto:community@plancpills.org", showPopup: false }} %}community@plancpills.org{% /inlineLink %} with your outreach details and needs, and we’ll get back to you ASAP to discuss.
+Email us at {% inlineLink action={discriminant: "external", value: {url: "mailto:community@plancpills.org", showPopup: false}} %}community@plancpills.org{% /inlineLink %} with your outreach details and needs, and we’ll get back to you ASAP to discuss.
 {% /insetSection %}
 {% /bodySection %}
 {% /horizontalSplit %}
@@ -53,7 +63,10 @@ You will be directed to a secure platform to collect your shipping address.
    fullWidth=false
    color="beige"
    textSize="medium" %}
-{% textSize textSize="large" inline=true %}**How many stickers do you need?**{% /textSize %}
+{% textSize textSize="large" inline=true %}**Your information**{% /textSize %}
+
+{% formInput
+   fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "How did you hear about the Plan C QR code stickers?", slug: "how_did_you_hear_about_plan_c__dropdown_"}, required: false, type: {discriminant: "select", value: {placeholder: "Select one...", autoSubmit: false, options: {discriminant: false, value: [{label: "Google search"}, {label: "Social media post"}, {label: "Radio"}, {label: "Billboard"}, {label: "Sticker"}, {label: "Local organization or event"}, {label: "Word of mouth"}, {label: "Other"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Are you connected with any groups in the reproductive health community? (Student groups, reproductive health orgs, healthcare providers, etc.)", slug: "are_you_connected_with_any_repro_groups_"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Please share any additional information about your affiliations, activism journey or feedback:", slug: "additional_notes"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to recive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}] /%}
 
 {% insetSection %}
 {% textSize textSize="large" inline=true %}**Pay What You Can / Pay it Forward**{% /textSize %}
@@ -65,6 +78,8 @@ Thanks for your support!
 Materials will be delivered in unbranded packaging material. It will not say Plan C or "abortion" on the outside of the package or envelope.
 {% /insetSection %}
 
+{% formInput
+   fields=[{label: {name: "Continue to checkout", slug: "continue-to-checkout"}, required: false, type: {discriminant: "submit", value: {icon: "arrowRight", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: true}}}] /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
@@ -74,6 +89,6 @@ Materials will be delivered in unbranded packaging material. It will not say Pla
    title="Print your own stickers & flyers"
    color="red"
    icon="text"
-   link={label: "DIY stickers & flyers", target: "/"} %}
+   link={label: "DIY stickers & flyers", click: {discriminant: ""}, target: "/"} %}
 Check out our DIY templates for stickers, mini-flyers and protest posters.
 {% /actionBanner %}
