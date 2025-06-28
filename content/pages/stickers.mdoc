@@ -24,7 +24,13 @@ Thank you for your interest in spreading the word about Plan C. To order sticker
 Our stickers are available in English and Spanish, with a QR code that links directly to the Plan C website.
 
 You can also print your own stickers, mini-flyers and protest posters using our DIY sticker & flyer templates.
+
+{% tableOfContents /%}
 {% /heroSection %}
+
+{% tocAnchor
+   slug={name: "Order stickers", slug: "order-stickers"}
+   type={discriminant: "toc"} /%}
 
 {% formWrapper
    formType={discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236791013599", input: "qr_sticker__dark_blue_white_"}, {id: "46236994830559", input: "qr_sticker_spanish"}]}}
@@ -74,6 +80,10 @@ You will be directed to a secure platform to collect your shipping address.
 {% formInput
    fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "How did you hear about the Plan C QR code stickers?", slug: "how_did_you_hear_about_plan_c__dropdown_"}, required: false, type: {discriminant: "select", value: {placeholder: "Select one...", autoSubmit: false, options: {discriminant: false, value: [{label: "Google search"}, {label: "Social media post"}, {label: "Radio"}, {label: "Billboard"}, {label: "Sticker"}, {label: "Local organization or event"}, {label: "Word of mouth"}, {label: "Other"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Are you connected with any groups in the reproductive health community? (Student groups, reproductive health orgs, healthcare providers, etc.)", slug: "are_you_connected_with_any_repro_groups_"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Please share any additional information about your affiliations, activism journey or feedback:", slug: "additional_notes"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}] /%}
 
+{% tocAnchor
+   slug={name: "Order stickers", slug: "order-stickers"}
+   type={discriminant: "toc"} /%}
+
 {% insetSection %}
 {% textSize textSize="large" inline=true %}**Pay What You Can / Pay it Forward**{% /textSize %}
 
@@ -93,6 +103,10 @@ Materials will be delivered in unbranded packaging material. It will not say Pla
 {% /horizontalSplit %}
 {% /formSection %}
 {% /formWrapper %}
+
+{% tocAnchor
+   slug={name: "Print your own stickers & flyers", slug: "print-your-own-stickers-and-flyers"}
+   type={discriminant: "toc"} /%}
 
 {% actionBanner
    title="Print your own stickers & flyers"
