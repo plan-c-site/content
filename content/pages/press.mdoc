@@ -10,7 +10,14 @@ seo:
    imageSide="right"
    color="beige"
    imageBackgroundColor="cyan"
-   ignoreImageBorder=false %}
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
 # Plan C in the news
 
 Plan C is a public health creative campaign on abortion pill access, started in 2015 by a small team of veteran public health advocates, researchers, social justice activists.
@@ -26,8 +33,8 @@ Plan C is a public health creative campaign on abortion pill access, started in 
    maxItemHeight=0 /%}
 
 {% tocAnchor
-  slug={name:"Recent Plan C press", slug:"recent-plan-c-press"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Recent Plan C press", slug: "recent-plan-c-press"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Recent Plan C press" icon="" %}
@@ -40,19 +47,28 @@ Read the latest press coverage featuring the work of Plan C.
    background="green"
    altHoverBackground=""
    smallShadow=false
-   leftIcon=false /%}
+   leftIcon=false
+   action={discriminant: ""} /%}
 {% /sectionHeader %}
 
-{% flexSection direction="flex-col" noWrap=false %}
-{% articleList
-   pagination=4
-   filtering={discriminant: "category", value: {category: "plan-c"}} /%}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Other abortion news", slug:"other_abortion_news"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Other abortion news", slug: "other_abortion_news"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="cyan" title="Other abortion news" icon="" %}
@@ -65,19 +81,28 @@ Articles covering the latest news, legal battles, policy changes, and key discus
    background="cyan"
    altHoverBackground=""
    smallShadow=false
-   leftIcon=false /%}
+   leftIcon=false
+   action={discriminant: ""} /%}
 {% /sectionHeader %}
 
-{% flexSection direction="flex-col" noWrap=false %}
-{% articleList
-   pagination=3
-   filtering={discriminant: "category", value: {category: "abortion-news"}} /%}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"About Plan C", slug:"about_plan_c"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "About Plan C", slug: "about_plan_c"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="About Plan C" icon="" %}
@@ -88,10 +113,17 @@ Articles covering the latest news, legal battles, policy changes, and key discus
    background="pink"
    altHoverBackground=""
    smallShadow=false
-   leftIcon=false /%}
+   leftIcon=false
+   action={discriminant: ""} /%}
 {% /sectionHeader %}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% bodySection
    centered=false
    fullWidth=false
@@ -101,7 +133,7 @@ Plan C is a public health creative campaign on abortion pill access, started in 
 
 Plan C works to transform access to abortion in the US by normalizing the self-directed option of abortion pills by mail.‍Our Vision:&nbsp;A near future in which the ability to end an early pregnancy is directly in the hands of anyone who seeks it.
 
-Read more about our work in the&nbsp;{% inlineLink action={discriminant: "external", value: { url: "/2024-annual-report", showPopup: false }} %}2024 Annual Report{% /inlineLink %}.
+Read more about our work in the&nbsp;{% inlineLink action={discriminant: "external", value: {url: "/2024-annual-report", showPopup: false}} %}2024 Annual Report{% /inlineLink %}.
 {% /bodySection %}
 {% /flexSection %}
 {% /horizontalSplit %}
