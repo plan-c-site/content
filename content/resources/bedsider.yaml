@@ -1,0 +1,9 @@
+title: Bedsider
+author: Bedsider
+website: https://bedsider.org
+summary: For Birth Control resources.
+resourceIcon: pill
+iconColor: green
+buttonIcon: ''
+buttonUrl:
+  discriminant: url
