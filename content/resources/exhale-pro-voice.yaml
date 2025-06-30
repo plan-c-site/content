@@ -1,5 +1,4 @@
 title: Exhale Pro-Voice
-heading: Test heading
 author: Exhale Pro-Voice
 website: exhaleprovoice.org
 phone: (617) 749-2948
@@ -9,5 +8,4 @@ resourceIcon: stethoscope
 iconColor: green
 buttonIcon: phone
 buttonUrl:
-  discriminant: phone
-  value: (617) 749-2948
+  discriminant: none
