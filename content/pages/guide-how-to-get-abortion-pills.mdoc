@@ -43,6 +43,35 @@ Options for at-home abortion pill access will vary by location. Click below to f
 {% /formWrapper %}
 {% /bodySection %}
 
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="blue"
+   textSize="medium" %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   maxWidth="40rem"
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+## Find an abortion pill provider
+
+Options for at-home abortion pill access will vary by location. Click below to find options by state or territory.
+
+{% formWrapper
+   formType={discriminant: "link", value: {}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "State or territory", autoSubmit: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] /%}
+{% /formSection %}
+{% /formWrapper %}
+{% /flexSection %}
+{% /bodySection %}
+
 {% tocAnchor
    slug={name: "Finding abortion pills", slug: "finding-abortion-pills"}
    type={discriminant: "toc"} /%}
