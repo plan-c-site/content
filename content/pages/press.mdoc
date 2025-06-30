@@ -58,11 +58,9 @@ Read the latest press coverage featuring the work of Plan C.
    grow=false
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% bodySection
-   centered=false
-   fullWidth=false
-   color="beige"
-   textSize="medium" /%}
+{% articleList
+   pagination=10
+   filtering={discriminant: "category", value: {category: "plan-c"}} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
