@@ -11,7 +11,12 @@ seo:
    imageBackgroundColor="cyan"
    ignoreImageBorder=false
    imageCover="bg-contain"
-   imageVertical="bg-bottom" %}
+   imageVertical="bg-bottom"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
 # For medical professionals
 
 Over {% inlineLink action={discriminant: "external", value: {url: "https://www.guttmacher.org/2024/03/medication-abortion-accounted-63-all-us-abortions-2023-increase-53-2020", showPopup: false}} %}60%{% /inlineLink %} of abortions in the US are happening with abortion pills and approximately {% inlineLink action={discriminant: "external", value: {url: "https://societyfp.org/wp-content/uploads/2024/05/WeCount-report-6-May-2024-Dec-2023-data_Final.pdf", showPopup: false}} %}20%{% /inlineLink %} are via telehealth. &nbsp;As a healthcare provider, you may see patients who have self-managed an abortion, or are interested in accessing abortion pills by mail, and are looking for your care and support.
@@ -125,7 +130,7 @@ At this moment in history, we have a unique opportunity to address the structura
    resources=[{resource: "for-providers_beyond-do-no-harm"}, {resource: "for-providers_if-when-how"}, {resource: "for-providers_if-when-how"}, {resource: "for-providers_beyond-do-no-harm"}]
    type={discriminant: "simple", value: 2}
    icon=""
-   iconColor=""
+   iconColor="pink"
    hideHeaders=false
    appendStateField="" /%}
 {% /flexSection %}
@@ -177,7 +182,7 @@ If you currently have a telehealth service that offers abortion pills by mail th
 If you have questions related to offering abortion pills by mail or how best to support your patients, submit the contact form below.
 
 {% formWrapper
-   formType={discriminant: "hubspot", value: {formId: "0f9391ab-74f6-4d84-b100-8f4cae800143", invisibleFields: [{id: "webform_subject", value: {discriminant: "text", value: "I am a medical provider"}}, {id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: false}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}}
+   formType={discriminant: "hubspot", value: {formId: "d6755f59-be99-4001-a5e3-0f638f84421e", invisibleFields: [{id: "webform_subject", value: {discriminant: "text", value: "I am a medical provider"}}, {id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: false}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}}
    afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
 {% formInput
