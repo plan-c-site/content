@@ -4,6 +4,6 @@ website: https://plancpills.org/protocol
 summary: Step-by-step instructions for how people use abortion pills.
 resourceIcon: stethoscope
 iconColor: green
-buttonIcon: ''
+buttonIcon: tableOfContents
 buttonUrl:
   discriminant: url
