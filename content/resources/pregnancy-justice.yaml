@@ -1,5 +1,4 @@
 title: Pregnancy Justice
-heading: For individuals
 author: Pregnancy Justice
 website: pregnancyjusticeus.org
 summary: >-
@@ -7,7 +6,8 @@ summary: >-
   charged with crimes because they were pregnant and had (or tried to have) an
   abortion.
 buttonText: Visit website
+resourceIcon: stethoscope
+iconColor: green
 buttonIcon: arrowRight
 buttonUrl:
-  discriminant: url
-  value: https://www.pregnancyjusticeus.org/
+  discriminant: none
