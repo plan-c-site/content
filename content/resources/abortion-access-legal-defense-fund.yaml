@@ -1,5 +1,4 @@
 title: Abortion Access Legal Defense Fund
-heading: For individuals
 author: Abortion Access Legal Defense Fund
 website: nwlc.org/abortion-access-legal-defense-fund
 summary: >-
@@ -7,7 +6,8 @@ summary: >-
   because they have sought an abortion or helped someone obtain an abortion or
   information about abortion care.
 buttonText: Visit website
+resourceIcon: stethoscope
+iconColor: green
 buttonIcon: arrowRight
 buttonUrl:
-  discriminant: url
-  value: https://nwlc.org/abortion-access-legal-defense-fund/
+  discriminant: none
