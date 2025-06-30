@@ -8,5 +8,4 @@ resourceIcon: rainbow
 iconColor: green
 buttonIcon: phone
 buttonUrl:
-  discriminant: url
-  value: sms:888-493-0092
+  discriminant: none
