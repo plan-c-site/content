@@ -1,0 +1,9 @@
+title: Planned Parenthood
+author: Planned Parenthood
+website: https://plannedparenthooddirect.org
+summary: Birth control at Planned Parenthood
+resourceIcon: stethoscope
+iconColor: green
+buttonIcon: ''
+buttonUrl:
+  discriminant: url
