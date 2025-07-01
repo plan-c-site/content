@@ -1,7 +1,7 @@
 homePage: home
 messageBar:
   text: 'Stay safe:  Read our digital privacy tips'
-  mainLink: /
+  mainLink: /digital-security
   quickExitText: Quick Exit
   quickExitLink: https://weather.com
 externalLink:
