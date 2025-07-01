@@ -71,7 +71,8 @@ You can also print your own stickers, mini-flyers and protest posters using our 
    color="beige"
    iconAlign="items-start"
    fullWidth=false %}
-**Need more materials? We’ve got you covered!** \
+**Need more materials? We’ve got you covered!**
+
 Email us at [community@plancpills.org](mailto:community@plancpills.org) with your outreach details and needs, and we’ll get back to you ASAP to discuss.
 {% /narrowBanner %}
 {% /flexSection %}
@@ -90,18 +91,29 @@ You will be directed to a secure platform to collect your shipping address.
    textSize="medium" %}
 {% textSize textSize="large" inline=true %}**Your information**{% /textSize %}
 
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=1.5
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% formInput
    fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "How did you hear about the Plan C QR code stickers?", slug: "how_did_you_hear_about_plan_c__dropdown_"}, required: false, type: {discriminant: "select", value: {placeholder: "Select one...", autoSubmit: false, options: {discriminant: false, value: [{label: "Google search"}, {label: "Social media post"}, {label: "Radio"}, {label: "Billboard"}, {label: "Sticker"}, {label: "Local organization or event"}, {label: "Word of mouth"}, {label: "Other"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Are you connected with any groups in the reproductive health community? (Student groups, reproductive health orgs, healthcare providers, etc.)", slug: "are_you_connected_with_any_repro_groups_"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Please share any additional information about your affiliations, activism journey or feedback:", slug: "additional_notes"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}] /%}
 
-{% insetSection %}
-{% textSize textSize="large" inline=true %}**Pay what you can / Pay it forward**{% /textSize %}
+{% narrowBanner
+   icon="handCoins"
+   color="beige"
+   iconAlign="items-start"
+   fullWidth=false %}
+**Pay what you can / Pay it forward**
 
 Stickers cost us a minimum of $10 per package to fulfill. After checkout you will have the option to donate to Plan C. If you are able, please give what you can to cover these costs or pay it forward. **Donation is not required.**
 
-Thanks for your support!
-
-Materials will be delivered in unbranded packaging material. It will not say Plan C or "abortion" on the outside of the package or envelope.
-{% /insetSection %}
+*Materials will be delivered in unbranded packaging material. It will not say Plan C or "abortion" on the outside of the package or envelope.*
+{% /narrowBanner %}
+{% /flexSection %}
 
 {% formInput
    fields=[{label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}] /%}
