@@ -2,7 +2,9 @@ title: Subscribe to our Linktree
 heading: Subscribe to our Linktree
 summary: One of the easiest ways to stay connected to the Plan C community.
 buttonText: Plan C Linktree
-buttonIcon: arrowRight
+resourceIcon: stethoscope
+iconColor: green
+buttonIcon: arrowUpRight
 buttonUrl:
   discriminant: url
-  value: /
+  value: https://linktr.ee/planc_community
