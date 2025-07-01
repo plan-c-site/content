@@ -1,0 +1,11 @@
+title: Zine library
+heading: Zine library
+summary: >-
+  Zines are a great way to share information about abortion in your community. 
+  Check out our collection of mini zines.
+buttonText: Zine library
+resourceIcon: fileText
+iconColor: green
+buttonIcon: ''
+buttonUrl:
+  discriminant: url
