@@ -4,7 +4,7 @@ summary: "With our\_Social Media Toolkit\_you can construct stories and posts to
 buttonText: Social media toolkit
 resourceIcon: instagram
 iconColor: green
-buttonIcon: ''
+buttonIcon: arrowUpRight
 buttonUrl:
   discriminant: url
   value: /social-media-toolkit
