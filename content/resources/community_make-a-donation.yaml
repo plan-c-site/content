@@ -1,0 +1,12 @@
+title: Make a donation
+heading: Make a donation
+summary: >-
+  All donations directly support our research, pilot projects and communications
+  campaigns to change the landscape of abortion access in the U.S.
+buttonText: Donate now
+resourceIcon: handCoins
+iconColor: green
+buttonIcon: ''
+buttonUrl:
+  discriminant: url
+  value: /donate
