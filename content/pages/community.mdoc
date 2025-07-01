@@ -137,45 +137,33 @@ The&nbsp;Plan C Community Road Trip&nbsp;is a nationwide journey from June 23rd 
    slug={name: "Join the newsletter", slug: "join-the-newsletter"}
    type={discriminant: "toc"} /%}
 
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+## **Join the community newsletter**
+
+For breaking developments in abortion pill access and opportunities to take action.
+
 {% formWrapper
    formType={discriminant: "hubspot", value: {formId: "acc4fb61-786a-4a96-9af5-e3d0dbb3cabb", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}}
    afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
-{% bodySection
-   centered=true
-   fullWidth=false
-   color="beige"
-   textSize="medium" %}
-## Join the community newsletter
-
-For breaking developments in abortion pill access and opportunities to take action.
-
 {% formInput
    fields=[{label: {name: "First name", slug: "firstname"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "City", slug: "city"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "State", slug: "state"}, required: true, type: {discriminant: "select", value: {placeholder: "Select state/territory", autoSubmit: false, options: {discriminant: true, value: {valueType: "abbreviation"}}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Sign up", slug: "submit"}, required: true, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
-{% /bodySection %}
 {% /formSection %}
 
 {% formSection type="success" %}
-{% bodySection
-   centered=true
-   fullWidth=false
-   color="beige"
-   textSize="medium" %}
 {% insetSection %}
 Thanks! Your information has been received.
 {% /insetSection %}
-{% /bodySection %}
 {% /formSection %}
 
 {% formSection type="submitted" %}
-{% bodySection
-   centered=true
-   fullWidth=false
-   color="beige"
-   textSize="medium" %}
 {% insetSection %}
 Submitting...
 {% /insetSection %}
-{% /bodySection %}
 {% /formSection %}
 {% /formWrapper %}
+{% /bodySection %}
