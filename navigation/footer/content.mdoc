@@ -24,16 +24,6 @@
    fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
 {% /formSection %}
 
-{% formSection type="submitted" %}
-{% bodySection
-   centered=false
-   fullWidth=false
-   color="beige"
-   textSize="medium" %}
-Submitted
-{% /bodySection %}
-{% /formSection %}
-
 {% formSection type="error" %}
 {% narrowBanner
    icon="triangleAlert"
@@ -41,6 +31,16 @@ Submitted
    iconAlign="items-center"
    fullWidth=false %}
 There was an error submitting the form.  Please {% inlineLink action={discriminant: "internal", value: {page: "contact"}} %}let us know{% /inlineLink %}.
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="success" %}
+{% narrowBanner
+   icon="check"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Thanks! Your information has been received.
 {% /narrowBanner %}
 {% /formSection %}
 {% /formWrapper %}
