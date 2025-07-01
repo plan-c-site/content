@@ -154,4 +154,14 @@ For breaking developments in abortion pill access and opportunities to take acti
    fields=[{label: {name: "First name", slug: "firstname"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "City", slug: "city"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "State", slug: "state"}, required: true, type: {discriminant: "select", value: {placeholder: "Select state/territory", autoSubmit: false, options: {discriminant: true, value: {valueType: "abbreviation"}}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Sign up", slug: "submit"}, required: true, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
 {% /bodySection %}
 {% /formSection %}
+
+{% formSection type="success" %}
+{% narrowBanner
+   icon="check"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Thanks! Your information has been received.
+{% /narrowBanner %}
+{% /formSection %}
 {% /formWrapper %}
