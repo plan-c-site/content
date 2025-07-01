@@ -2,6 +2,9 @@ title: Join our Discord server
 heading: Join our Discord server
 summary: The Plan C Community Discord is the home for all of our community action.
 buttonText: Join our discord
+resourceIcon: messagesSquare
+iconColor: green
 buttonIcon: arrowRight
 buttonUrl:
   discriminant: url
+  value: http://bit.ly/PLANCDISCORD
