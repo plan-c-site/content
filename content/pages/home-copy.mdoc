@@ -28,7 +28,7 @@ Plan C provides information on how people in the US are accessing abortion pills
    afterSubmit="nothing" %}
 {% formSection type="waiting" %}
 {% formInput
-   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "beige", altHoverBackground: ""}}}}}] /%}
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
 {% /formSection %}
 
 {% formSection type="submitted" %}
