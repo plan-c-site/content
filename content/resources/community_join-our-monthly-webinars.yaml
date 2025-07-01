@@ -1,0 +1,12 @@
+title: Join our monthly webinars
+heading: Join our monthly webinars
+summary: >-
+  Learn the ABCs of SMA.  Catch one of our monthly rotating topics: Legal
+  Eagles, Call the Midwife, and Takin’ it to the Streets.
+buttonText: RSVP here
+resourceIcon: user
+iconColor: green
+buttonIcon: ''
+buttonUrl:
+  discriminant: url
+  value: https://us06web.zoom.us/webinar/register/WN_alDU5lRCSyeDejK05QBvbg
