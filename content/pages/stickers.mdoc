@@ -58,11 +58,15 @@ You can also print your own stickers, mini-flyers and protest posters using our 
 {% formInput
    fields=[{label: {name: "English", slug: "id_eng"}, required: false, type: {discriminant: "select", value: {placeholder: "Quantity", autoSubmit: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Spanish", slug: "id_spa"}, required: false, type: {discriminant: "select", value: {placeholder: "Quantity", autoSubmit: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
 
-{% insetSection %}
-{% textSize textSize="large" inline=true %}**Need more materials? We’ve got you covered!**{% /textSize %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+**Need more materials? We’ve got you covered!**
 
-Email us at {% inlineLink action={discriminant: "external", value: {url: "mailto:community@plancpills.org", showPopup: false}} %}community@plancpills.org{% /inlineLink %} with your outreach details and needs, and we’ll get back to you ASAP to discuss.
-{% /insetSection %}
+Email us at [community@plancpills.org](mailto:community@plancpills.org) with your outreach details and needs, and we’ll get back to you ASAP to discuss.
+{% /narrowBanner %}
 {% /bodySection %}
 {% /horizontalSplit %}
 
