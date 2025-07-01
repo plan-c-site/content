@@ -1,0 +1,41 @@
+---
+title: Zine library
+seo:
+  image:
+    discriminant: ''
+---
+{% heroSection
+   image={discriminant: ""}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="beige"
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# Zine library
+{% /heroSection %}
+
+{% cardLayoutSection color="beige" minColumnWidth=23 %}
+{% cardSection
+   image={discriminant: "uploaded", value: "event-image-test"}
+   imageOnly=true
+   label="Zine title (PDF)"
+   action={discriminant: "external", value: {url: "test-pdf.pdf", showPopup: false}} /%}
+
+{% cardSection
+   image={discriminant: "uploaded", value: "event-image-test"}
+   imageOnly=true
+   label="Zine title (PDF)"
+   action={discriminant: "external", value: {url: "test-pdf.pdf", showPopup: false}} /%}
+
+{% cardSection
+   image={discriminant: "uploaded", value: "event-image-test"}
+   imageOnly=true
+   label="Zine title (PDF)"
+   action={discriminant: "external", value: {url: "test-pdf.pdf", showPopup: false}} /%}
+{% /cardLayoutSection %}
