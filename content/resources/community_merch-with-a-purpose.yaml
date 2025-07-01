@@ -1,0 +1,13 @@
+title: Merch with a purpose
+heading: Merch with a purpose
+summary: >-
+  100% of the profits from our Threadless merch store goes to WRRAP, a
+  non-partisan, non-profit organization assisting those who are financially
+  unable to pay for abortions or emergency contraception.
+buttonText: Visit our Threadless store
+resourceIcon: shirt
+iconColor: green
+buttonIcon: arrowUpRight
+buttonUrl:
+  discriminant: url
+  value: https://plancpills.threadless.com/
