@@ -156,6 +156,11 @@ For breaking developments in abortion pill access and opportunities to take acti
 {% /formSection %}
 
 {% formSection type="success" %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
 {% narrowBanner
    icon="check"
    color="beige"
@@ -163,5 +168,22 @@ For breaking developments in abortion pill access and opportunities to take acti
    fullWidth=false %}
 Thanks! Your information has been received.
 {% /narrowBanner %}
+{% /bodySection %}
+{% /formSection %}
+
+{% formSection type="submitted" %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Submitting...
+{% /narrowBanner %}
+{% /bodySection %}
 {% /formSection %}
 {% /formWrapper %}
