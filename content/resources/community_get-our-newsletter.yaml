@@ -4,7 +4,9 @@ summary: >-
   The Plan C ICYMI newsletter will keep you updated on breaking developments in
   abortion access and opportunities to take action.
 buttonText: Sign up
+resourceIcon: stethoscope
+iconColor: green
 buttonIcon: arrowRight
 buttonUrl:
   discriminant: url
-  value: /
+  value: '#join-the-newsletter'
