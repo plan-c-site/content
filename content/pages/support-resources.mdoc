@@ -119,7 +119,7 @@ Download a condensed version of this page, formatted to print or share.
 {% sectionHeader color="blue" title="Financial support" icon="" /%}
 
 {% flexSection
-   direction="flex-col"
+   direction="flex-row"
    noWrap=false
    noInnerBorders=false
    grow=false
@@ -224,13 +224,11 @@ Download a condensed version of this page, formatted to print or share.
    grow=false
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% resourceList
-   resources=[{resource: "bedsider"}, {resource: "planned-parenthood"}]
-   type={discriminant: "simple", value: 2}
-   icon=""
-   iconColor="pink"
-   hideHeaders=true
-   appendStateField="" /%}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -248,12 +246,10 @@ Download a condensed version of this page, formatted to print or share.
    grow=false
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% resourceList
-   resources=[{resource: "women-on-web"}]
-   type={discriminant: "simple", value: 2}
-   icon=""
-   iconColor="blue"
-   hideHeaders=true
-   appendStateField="" /%}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
