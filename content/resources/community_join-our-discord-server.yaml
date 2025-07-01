@@ -4,7 +4,7 @@ summary: The Plan C Community Discord is the home for all of our community actio
 buttonText: Join our discord
 resourceIcon: messagesSquare
 iconColor: green
-buttonIcon: arrowRight
+buttonIcon: arrowUpRight
 buttonUrl:
   discriminant: url
-  value: http://bit.ly/PLANCDISCORD
+  value: https://bit.ly/PLANCDISCORD
