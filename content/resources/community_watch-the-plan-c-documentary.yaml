@@ -1,0 +1,10 @@
+title: Watch the Plan C documentary
+heading: Watch the Plan C documentary
+summary: "Watch on Apple TV, Amazon Prime, and other digital platforms. Visit the\_PLAN C documentary website\_to find ways to get involved, support the film, host a screening and more."
+buttonText: Plan C documentary
+resourceIcon: speech
+iconColor: green
+buttonIcon: ''
+buttonUrl:
+  discriminant: url
+  value: https://plancmovie.com/watch
