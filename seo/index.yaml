@@ -136,6 +136,6 @@ customSchema: >-
 defaultDomain: https://www.plancpills.org/
 languageDomains:
   - language: en
-    domain: https://en.plancpills.org
+    domain: https://www.plancpills.org
   - language: es
     domain: https://es.plancpills.org
