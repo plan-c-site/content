@@ -147,7 +147,11 @@ Research on abortion pills informs how the method is described in press and medi
    gap=2
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% faqList faqs=[] color="beige" appendStateField="" anchor=false /%}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -175,3 +179,13 @@ Research on abortion pills informs how the method is described in press and medi
 {% tocAnchor
    slug={name: "Participate in research", slug: "participate-in-research"}
    type={discriminant: "toc"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Participate in research" icon="" /%}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" /%}
+{% /horizontalSplit %}
