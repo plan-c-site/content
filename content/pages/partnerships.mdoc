@@ -177,6 +177,26 @@ Spreading information takes time and resources, and we’re committed to support
    fullWidth=false
    color="beige"
    textSize="medium" %}
+{% formWrapper
+   formType={discriminant: "hubspot", value: {formId: "66da9a64-c807-4fb2-83fa-49791c2759d6", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Advocacy or Partnership"}}]}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=0
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 ## Partnership inquiry
 
 Enter your information below along with a paragraph about how you can share the Plan C website, Guide, and information about access to abortion pills by mail, and our team will be in touch.
@@ -184,13 +204,14 @@ Enter your information below along with a paragraph about how you can share the 
 - If you are an individual seeking help for other questions, do not use this form. Please visit our&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "contact"}} %}contact{% /inlineLink %}&nbsp;page for the appropriate contact link.
 - If you have press, podcast, video or speaking inquiries, please use our&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "media"}} %}media inquiry form{% /inlineLink %}.
 - If you are a for-profit brand/company looking to partner with Plan C, please email:&nbsp;{% inlineLink action={discriminant: ""} %}digital@plancpills.org{% /inlineLink %}.
+{% /flexSection %}
 
-{% formWrapper
-   formType={discriminant: "hubspot", value: {formId: "66da9a64-c807-4fb2-83fa-49791c2759d6", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Advocacy or Partnership"}}]}}
-   afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
 {% formInput
-   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organization", slug: "organization"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Message", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organization", slug: "organization"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Message", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}] /%}
+
+{% formInput
+   fields=[{label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+{% /flexSection %}
 {% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
