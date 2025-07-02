@@ -4,9 +4,17 @@ question: Something else
 {% flexSection
    direction="flex-col"
    noWrap=false
-   noInnerBorders=false
+   noInnerBorders=true
    grow=false
-   gap=2
+   gap=1
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=0.25
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
 {% textSize textSize="large" inline=false %}**Before you email us:**{% /textSize %}
@@ -19,9 +27,9 @@ question: Something else
 {% flexSection
    direction="flex-col"
    noWrap=false
-   noInnerBorders=false
+   noInnerBorders=true
    grow=false
-   gap=2
+   gap=0.25
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
 {% textSize textSize="large" inline=false %}**Most questions can be answered by following the links below:**{% /textSize %}
@@ -34,6 +42,7 @@ question: Something else
 - If you are able, please consider supporting us in the movement by&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "donate"}} %}donating here{% /inlineLink %}.
 
 For anything else, email&nbsp;{% inlineLink action={discriminant: ""} %}infoplanc@proton.me{% /inlineLink %}.&nbsp;**Plan C does not sell pills or provide support.**
+{% /flexSection %}
 {% /flexSection %}
 
 {% textSize textSize="large" inline=false %}**Before you email us:**{% /textSize %}
