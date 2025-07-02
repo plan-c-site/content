@@ -5,7 +5,7 @@ seo:
     discriminant: ''
 ---
 {% heroSection
-   image={discriminant: ""}
+   image={discriminant: "one-off", value: {image: "/images/documentary/documentary-hero.png"}}
    imageSide="right"
    color="beige"
    imageBackgroundColor="beige"
@@ -15,10 +15,56 @@ seo:
    imageHorizontal="center"
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
-   largeLeftColumn=false %}
+   largeLeftColumn=false
+   reverseOnMobile=false %}
 # Plan C: The documentary
 
 Shot by award-winning filmmaker Tracy Droz Tragos, PLAN C is a documentary capturing the work of the Plan C campaign and the work of activists and providers who began to mail abortion pills, during the pandemic, and in the face of crumbling reproductive rights and access across the US.
 
 {% tableOfContents /%}
 {% /heroSection %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="blue" title="Watch the trailer" icon="" /%}
+
+{% youtubeEmbed videoId="PpWvZ1KWqf4" startAt=0 /%}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="How to host a screening" icon="" /%}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% toDoSection
+   color="beige"
+   number=1
+   numberBackgroundColor="green"
+   title="Choose an audience"
+   image={discriminant: ""} %}
+Gather a group of people you want to engage in conversation and potential action around abortion access.  This can include:
+
+- Friends
+- Family members
+- Colleagues
+- Members of your community
+{% /toDoSection %}
+
+{% toDoSection
+   color="beige"
+   number=2
+   numberBackgroundColor="green"
+   title="Choose a viewing experience"
+   image={discriminant: ""} %}
+You can host an in-person or virtual screening. Tailor the event to fit your comfort and accessibility needs.
+
+- Find a streaming service here: https://plancmovie.com/watch
+- For a broader audience you can host a screening at a local theater or on your campus.  Read this helpful guide if you are considering a larger event.
+{% /toDoSection %}
+{% /flexSection %}
+{% /horizontalSplit %}
