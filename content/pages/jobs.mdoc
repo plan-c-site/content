@@ -1,24 +1,148 @@
 ---
 title: Jobs
 seo:
+  title: Jobs | Plan C
+  description: >-
+    Join a team of strategists, activists and researchers who are working to
+    share information on abortion pills and safe self-managed abortion in the
+    US.
   image:
     discriminant: ''
+  customSchema: >-
+    {"@context":"https://schema.org",
+
+    "@graph":[
+
+    {
+
+    "@type":"WebPage",
+
+    "@id":"https://www.plancpills.org/jobs#webpage",
+
+    "url":"https://www.plancpills.org/jobs",
+
+    "name":"Jobs | Plan C",
+
+    "description":"Join a team of strategists, activists and researchers who are
+    working to share information on abortion pills and safe self-managed
+    abortion in the US.",
+
+    "inLanguage":"en-US",
+
+    "isPartOf":"https://www.plancpills.org/",
+
+    "potentialAction":{
+      "@type":"ReadAction",
+      "target":{
+        "@type":"EntryPoint",
+        "urlTemplate":"https://www.plancpills.org/jobs"
+        }
+      },
+    "publisher": {
+      "@type":"Organization",
+      "@id":"https://www.plancpills.org/#organization",
+      "url":"https://www.plancpills.org/",
+      "name":"Plan C",
+      "description":"Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.",
+      "foundingDate":"2015",
+      "brand":{"@type":"Brand","Name":"Plan C"},
+      "publishingPrinciples":"https://www.plancpills.org/about",
+      "logo":{"@type":"ImageObject","url":"https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/62df6a9a57f10071595acfc3_PLAN%20C_logo_mixed.svg"},
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Plan_C",
+        "https://www.facebook.com/plancpills",
+        "https://www.instagram.com/plancpills/",
+        "https://twitter.com/Plancpills",
+        "https://www.tiktok.com/@plancpills",
+        "https://www.linkedin.com/company/plancpills"
+        ]
+      },
+    "breadcrumb": {
+      "@type":"BreadcrumbList",
+      "@id":"https://www.plancpills.org/jobs#breadcrumb",
+      "name":"Breadcrumb for https://www.plancpills.org/jobs",
+      "itemListElement":[
+      {
+      "@type":"ListItem",
+      "position":1,
+      "item":"https://www.plancpills.org/",
+      "name":"Home"
+      },
+      {
+      "@type":"ListItem",
+      "position":2,
+      "item":"https://www.plancpills.org/jobs",
+      "name":"Jobs | Plan C"
+      }
+      ]
+      }
+    }
+
+    ]
+
+    }
 ---
 {% heroSection
-   image={discriminant: ""}
+   image={discriminant: "one-off", value: {image: "/images/jobs/megaphone-hero.png"}}
    imageSide="right"
    color="beige"
-   imageBackgroundColor="beige"
+   imageBackgroundColor="cyan"
    ignoreImageBorder=false
-   imageCover="bg-cover"
-   imageVertical="bg-center"
+   imageCover="bg-contain"
+   imageVertical="bg-bottom"
    imageHorizontal="center"
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
-   largeLeftColumn=false %}
+   largeLeftColumn=false
+   reverseOnMobile=false %}
 # Work with Plan C
 
 Are you ready to shape the future of abortion care with us?
 
 {% tableOfContents /%}
 {% /heroSection %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Current job opportunities" icon="" %}
+Possibility Labs & Plan C are equal opportunity employers: BIPOC, LBGTQ+ folks, immigrants, and people with exceptionalities are strongly encouraged to apply.
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% faqList faqs=[] color="beige" appendStateField="" anchor=false /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="cyan" title="Volunteer & community work" icon="" /%}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+### We have specific community needs in the following areas:
+
+- Graphic design
+- Web design
+- Social media: drafting posts, collecting news and treating imagery
+- Writing & copyediting
+- Partnerships outreach & coalition-building
+
+{% inContentButton
+   label="Join our community"
+   icon="arrowRight"
+   size="standard"
+   background="beige"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "internal", value: {page: "community"}} /%}
+{% /bodySection %}
+{% /horizontalSplit %}
