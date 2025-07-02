@@ -1,23 +1,29 @@
 ---
 question: Something else
 ---
-{% bodySection
-   centered=false
-   fullWidth=false
-   color="beige"
-   textSize="medium" %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% textSize textSize="large" inline=false %}**Before you email us:**{% /textSize %}
 
 - We recommend setting up a free, secure&nbsp;{% inlineLink action={discriminant: "external", value: {url: "https://proton.me/", showPopup: false}} %}Proton Mail{% /inlineLink %}&nbsp;account anytime you are communicating about abortion pills.
 - Read our full list of&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "digital-security"}} %}digital privacy tips{% /inlineLink %}&nbsp;here.
-- **Remember, we do not sell pills or provide support.**
-{% /bodySection %}
+- **Remember, we do not sell pills or provide support**
+{% /flexSection %}
 
-{% bodySection
-   centered=false
-   fullWidth=false
-   color="beige"
-   textSize="medium" %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% textSize textSize="large" inline=false %}**Most questions can be answered by following the links below:**{% /textSize %}
 
 - To learn about self-managed abortion with pills, visit the&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}FAQ{% /inlineLink %}.
@@ -28,7 +34,7 @@ question: Something else
 - If you are able, please consider supporting us in the movement by&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "donate"}} %}donating here{% /inlineLink %}.
 
 For anything else, email&nbsp;{% inlineLink action={discriminant: ""} %}infoplanc@proton.me{% /inlineLink %}.&nbsp;**Plan C does not sell pills or provide support.**
-{% /bodySection %}
+{% /flexSection %}
 
 {% textSize textSize="large" inline=false %}**Before you email us:**{% /textSize %}
 
