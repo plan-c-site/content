@@ -126,6 +126,10 @@ If you’re here, you’re already thinking about this issue, and we know you ha
 Over the past ten years we’ve partnered with a wide variety of artists and creators, companies and brands, nonprofit organizations and events.
 {% /bodySection %}
 
+{% postList
+   type={discriminant: "headlines", value: {color: "cyan", buttonLabel: "Read more and see photos", pagination: 10}}
+   filtering={discriminant: "category", value: {category: "partnerships"}} /%}
+
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Partnership FAQs" icon="" /%}
 
