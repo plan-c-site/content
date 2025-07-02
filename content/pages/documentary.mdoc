@@ -24,11 +24,19 @@ Shot by award-winning filmmaker Tracy Droz Tragos, PLAN C is a documentary captu
 {% tableOfContents /%}
 {% /heroSection %}
 
+{% tocAnchor
+   slug={name: "Watch the trailer", slug: "watch-the-trailer"}
+   type={discriminant: "toc"} /%}
+
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="Watch the trailer" icon="" /%}
 
 {% youtubeEmbed videoId="PpWvZ1KWqf4" startAt=0 /%}
 {% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "How to host a screening", slug: "how-to-host-a-screening"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="How to host a screening" icon="" /%}
@@ -68,6 +76,18 @@ You can host an in-person or virtual screening. Tailor the event to fit your com
 {% /toDoSection %}
 {% /flexSection %}
 {% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "Official website", slug: "official-website"}
+   type={discriminant: "action", value: {discriminant: "external", value: {showPopup: false}}} /%}
+
+{% tocAnchor
+   slug={name: "Current screenings", slug: "current-screenings"}
+   type={discriminant: "action", value: {discriminant: "external", value: {showPopup: false}}} /%}
+
+{% tocAnchor
+   slug={name: "Get free stickers", slug: "get-free-stickers"}
+   type={discriminant: "action", value: {discriminant: "internal", value: {page: "stickers"}}} /%}
 
 {% cardLayoutSection color="beige" minColumnWidth=23 %}
 {% cardSection
