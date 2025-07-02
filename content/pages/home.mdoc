@@ -21,64 +21,6 @@ seo:
    reverseOnMobile=true %}
 # Abortion pills by mail in every state.
 
-{% flexSection
-   direction="flex-col"
-   noWrap=false
-   noInnerBorders=true
-   grow=false
-   gap=0.5
-   itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
-Plan C provides information on how people in the US are accessing abortion pills online for safe home abortion.
-
-{% formWrapper
-   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
-   afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
-{% formInput
-   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "chevronDown", background: "beige", altHoverBackground: ""}}}}}] /%}
-{% /formSection %}
-
-{% formSection type="submitted" %}
-{% narrowBanner
-   icon=""
-   color="beige"
-   iconAlign="items-center"
-   fullWidth=false %}
-Please wait...
-{% /narrowBanner %}
-{% /formSection %}
-
-{% formSection type="success" %}
-{% narrowBanner
-   icon=""
-   color="beige"
-   iconAlign="items-center"
-   fullWidth=false %}
-Please wait...
-{% /narrowBanner %}
-{% /formSection %}
-{% /formWrapper %}
-
-{% textSize textSize="small" inline=false %}We do not collect or store personal data.{% /textSize %}
-{% /flexSection %}
-{% /heroSection %}
-
-{% heroSection
-   image={discriminant: "one-off", value: {image: "/images/home/mailbox-padding-2.png", altText: "Mailbox with package"}}
-   imageSide="right"
-   color="blue"
-   imageBackgroundColor="blue"
-   ignoreImageBorder=true
-   imageCover="bg-contain"
-   imageVertical="bg-bottom"
-   imageHorizontal="center"
-   mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop"
-   largeLeftColumn=false
-   reverseOnMobile=true %}
-# Abortion pills by mail in every state.
-
 Plan C provides information on how people in the US are accessing abortion pills online for safe home abortion.
 
 {% formWrapper
