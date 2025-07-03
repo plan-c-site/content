@@ -48,10 +48,11 @@ navBar:
         children:
           - discriminant: link
             value:
-              label: Search by state
+              label: Abortion pills by state
               action:
                 discriminant: home
-                value: {}
+                value:
+                  anchor: search-by-state
           - discriminant: link
             value:
               label: FAQ
