@@ -139,11 +139,18 @@ seo:
     }
 ---
 {% heroSection
-   image={discriminant: "noco", value: "Mailbox - Hero"}
+   image={discriminant: "noco", value: "Medicine cabinet - Hero"}
    imageSide="right"
    color="beige"
    imageBackgroundColor="cyan"
-   ignoreImageBorder=false %}
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
 # Test
 
 Next line is fine
@@ -155,7 +162,7 @@ Next line is fine
    title="Did you know?"
    color="red"
    icon="text"
-   link={label: "Download long", target: "/"} %}
+   link={label: "Download long", click: {discriminant: ""}, target: "/"} %}
 ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
 {% /actionBanner %}
 
@@ -166,7 +173,13 @@ ever since the 1500s, when an unknown printer took a galley of type and scramble
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="How to" icon="" /%}
 
-{% flexSection direction="flex-col" noWrap=false %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% toDoSection
    color="beige"
    number=1
@@ -188,8 +201,8 @@ Check your dates today
 {% /horizontalSplit %}
 
 {% tocAnchor
-  slug={name:"Best ways to make pasta", slug:"Best ways to make pasta"}
-  type={discriminant: "toc", value: null } /%}
+   slug={name: "Best ways to make pasta", slug: "Best ways to make pasta"}
+   type={discriminant: "toc"} /%}
 
 {% logoBanner
    color="beige"
@@ -205,6 +218,7 @@ Check your dates today
 {% inContentImage
    image={discriminant: "one-off", value: {image: "/images/xyz_andy-test/how-do-you-take-abortion-pills.png"}}
    maxWidth=100
+   action={discriminant: ""}
    newTab=false /%}
 
 ## ever since the 1500s, when an unknown
@@ -226,5 +240,6 @@ ever since the 1500s, when an unknown printer took a galley of type and scramble
    background="beige"
    altHoverBackground=""
    smallShadow=false
-   leftIcon=false /%}
+   leftIcon=false
+   action={discriminant: ""} /%}
 {% /bodySection %}
