@@ -50,9 +50,10 @@ navBar:
             value:
               label: Abortion pills by state
               action:
-                discriminant: home
+                discriminant: internal
                 value:
-                  anchor: top
+                  page: community
+                  anchor: get-more-involved
           - discriminant: link
             value:
               label: FAQ
