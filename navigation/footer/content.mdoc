@@ -24,13 +24,13 @@
    fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
 {% /formSection %}
 
-{% formSection type="error" %}
+{% formSection type="submitted" %}
 {% narrowBanner
-   icon="triangleAlert"
-   color="red"
+   icon=""
+   color="beige"
    iconAlign="items-center"
    fullWidth=false %}
-There was an error submitting the form.  Please {% inlineLink action={discriminant: "internal", value: {page: "contact"}} %}let us know{% /inlineLink %}.
+Please wait...
 {% /narrowBanner %}
 {% /formSection %}
 
