@@ -35,7 +35,7 @@ You can also print your own stickers, mini-flyers and protest posters using our 
 {% formWrapper
    formType={discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236994830559", input: "id_spa"}, {id: "46236791013599", input: "id_eng"}]}}
    afterSubmit="show-screens"
-   customValidation="let atLeast1 = false\nif (inputs.id_eng && inputs.id_eng !== '0') {\natLeast1 = true \n}\nif (inputs.id_spa && inputs.id_spa !== '0') {\natLeast1 = true \n}\nif (!atLeast1) {\n   return {\n  id_eng: \"Please select at least one type of sticker\",\nid_spa: \"Please select at least one item\",\nsubmit: \"Please select at least one type of sticker\"\n}\n}\nreturn true" %}
+   customValidation="let atLeast1 = false\nif (inputs.id_eng && inputs.id_eng !== '0') {\natLeast1 = true \n}\nif (inputs.id_spa && inputs.id_spa !== '0') {\natLeast1 = true \n}\nif (!atLeast1) {\n   return {\n  id_eng: \"Please select at least one type of sticker\",\nid_spa: \"Please select at least one item\"\n}\n}\nreturn true" %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="QR Code Stickers" icon="" %}
