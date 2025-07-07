@@ -130,10 +130,34 @@ Stickers cost us a minimum of $10 per package to fulfill. After checkout you wil
 There was an error submitting your form.  Please {% inlineLink action={discriminant: "internal", value: {page: "contact"}} %}let us know{% /inlineLink %}.
 {% /narrowBanner %}
 {% /formSection %}
+
+{% formSection type="submitted" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Submitting...
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="success" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Thanks, your information was received.  You will be redirected to the checkout page.
+{% /narrowBanner %}
+{% /formSection %}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
 {% /formWrapper %}
+
+{% tocAnchor
+   slug={name: "Print your own stickers & flyers", slug: "print-your-own-stickers-and-flyers"}
+   type={discriminant: "toc"} /%}
 
 {% actionBanner
    title="Print your own stickers & flyers"
