@@ -172,7 +172,7 @@ medicaidText:
 seo:
   title: Where People Get Abortion Pills Online in %Name%
   description: >-
-    Learn how to get an abortion pill in %Thumbnail%. Compare online providers,
+    Learn how to get an abortion pill in %Name%. Compare online providers,
     prices and delivery times for abortion pills by mail in this Plan C Guide.
   image:
     discriminant: noco
@@ -216,7 +216,7 @@ seo:
       "foundingDate":"2015",
       "brand":{"@type":"Brand","Name":"Plan C"},
       "publishingPrinciples":"https://www.plancpills.org/about",
-      "logo":{"@type":"ImageObject","url":"https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/62df6a9a57f10071595acfc3_PLAN%20C_logo_mixed.svg"},
+      "logo":{"@type":"ImageObject","url":"https://www.plancpills.org/cached/logo.svg"},
       "sameAs": [
         "https://en.wikipedia.org/wiki/Plan_C",
         "https://www.facebook.com/plancpills",
@@ -228,8 +228,8 @@ seo:
       },
     "primaryImageOfPage": {
       "@type":"ImageObject",
-      "@id":"https://www.plancpills.org/abortion-pill/%slug%#primaryimage",
-      "contentUrl":"%Thumbnail%",
+      "@id":"https://www.plancpills.org/%slug%#primaryimage",
+      "contentUrl":"https://www.plancpills.org%Thumbnail%",
       "name":"Abortion pill %Name%",
       "description":"Image of abortion pills by mail in %Name%",
       "width":800,
