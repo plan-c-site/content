@@ -175,8 +175,7 @@ seo:
     Learn how to get an abortion pill in %Name%. Compare online providers,
     prices and delivery times for abortion pills by mail in this Plan C Guide.
   image:
-    discriminant: noco
-    value: Mailbox - Hero
+    discriminant: ''
   customSchema: >-
     {"@context":"https://schema.org",
 
