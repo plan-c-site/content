@@ -27,6 +27,13 @@ seo:
 {% /formWrapper %}
 
 {% formWrapper
+   formType={discriminant: "custom", value: {code: "alert(JSON.stringify(inputs))"}}
+   afterSubmit="nothing" %}
+{% formInput
+   fields=[{label: {name: "Find Pills", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Choose a state", autoSubmit: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "black", altHoverBackground: ""}}}}}] /%}
+{% /formWrapper %}
+
+{% formWrapper
    formType={discriminant: "custom", value: {code: "alert(`Got: ${inputs.email}`)"}}
    afterSubmit="nothing" %}
 {% formInput
