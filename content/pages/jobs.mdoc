@@ -102,6 +102,10 @@ Are you ready to shape the future of abortion care with us?
 {% tableOfContents /%}
 {% /heroSection %}
 
+{% tocAnchor
+   slug={name: "Current job opportunities", slug: "current-job-opportunities"}
+   type={discriminant: "toc"} /%}
+
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Current job opportunities" icon="" %}
 Possibility Labs & Plan C are equal opportunity employers: BIPOC, LBGTQ+ folks, immigrants, and people with exceptionalities are strongly encouraged to apply.
@@ -116,8 +120,20 @@ Possibility Labs & Plan C are equal opportunity employers: BIPOC, LBGTQ+ folks, 
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
 {% faqList faqs=[] color="beige" appendStateField="" anchor=false /%}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+No current openings. Resumes are always welcome at {% inlineLink action={discriminant: ""} %}jobs@plancpills.org{% /inlineLink %}.
+{% /bodySection %}
 {% /flexSection %}
 {% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "Volunteer & community work", slug: "volunteer-and-community-work"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="cyan" title="Volunteer & community work" icon="" /%}
