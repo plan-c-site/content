@@ -5,17 +5,18 @@ seo:
     discriminant: ''
 ---
 {% heroSection
-   image={discriminant: "noco", value: "Mailbox - Hero"}
+   image={discriminant: "one-off", value: {image: "/images/mail-forwarding/pobox-tiny.png"}}
    imageSide="right"
    color="beige"
    imageBackgroundColor="cyan"
    ignoreImageBorder=false
-   imageCover="bg-cover"
+   imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
-   largeLeftColumn=false %}
+   largeLeftColumn=false
+   reverseOnMobile=false %}
 # Mail forwarding and other options
 
 {% insetSection %}
@@ -50,10 +51,10 @@ Below you can read examples of how this has worked, then search for an abortion 
    gap=2
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% faqSection
-   faq="home_how-do-i-get-abortion-pills"
+{% faqList
+   faqs=["mail-forwarding_mail-forwarding-virtual-mailbox", "mail-forwarding_pick-up-in-a-neighboring-state-that-has-telehealth-abortion", "mail-forwarding_general-delivery-in-a-neighboring-state-that-has-telehealth-abortion"]
    color="beige"
-   embedded=false
+   appendStateField=""
    anchor=false /%}
 {% /flexSection %}
 {% /horizontalSplit %}
