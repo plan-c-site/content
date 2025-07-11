@@ -1,0 +1,14 @@
+title: AccessMA
+heading: AccessMA
+website: https://www.redstateaccess.org/
+summary: >-
+  AccessMA is a national provider of abortion pills by mail in over twenty
+  states and territories with bans or restrictions. Entirely volunteer-run, 100%
+  of your donation supports clients. Donations are tax-deductible.
+buttonText: Donate here
+resourceIcon: handCoins
+iconColor: green
+buttonIcon: arrowRight
+buttonUrl:
+  discriminant: url
+  value: https://www.redstateaccess.org/donate
