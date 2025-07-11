@@ -1,0 +1,13 @@
+title: Idaho Access
+heading: Idaho Access
+summary: >-
+  Idaho Abortion Rights is an abortion access mutual aid serving Idaho, North
+  Dakota, South Dakota, and Nebraska. They help people pay for their abortion
+  medications and other practical support needs. Donations are tax-deductible.
+buttonText: Donate here
+resourceIcon: handCoins
+iconColor: green
+buttonIcon: arrowRight
+buttonUrl:
+  discriminant: url
+  value: https://secure.actblue.com/donate/idahoabortionrights
