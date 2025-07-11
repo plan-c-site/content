@@ -1,0 +1,15 @@
+title: Healthcare Across Borders
+heading: Healthcare Across Borders
+website: https://healthcareacrossborders.org/
+summary: >-
+  In 2023 Healthcare Across Borders (HCAB) launched the Abortion Pill
+  Sustainability Fund, to reimburse clinicians who are offering sliding-scale
+  costs to thousands of patients a month, ensuring they get the abortion pills
+  and care they need regardless of their ability to pay.
+buttonText: Donate here
+resourceIcon: handCoins
+iconColor: green
+buttonIcon: arrowRight
+buttonUrl:
+  discriminant: url
+  value: https://secure.actblue.com/donate/abpillsustainabilityfund
