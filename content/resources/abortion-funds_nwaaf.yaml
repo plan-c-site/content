@@ -1,0 +1,15 @@
+title: NWAAF
+heading: NWAAF
+website: https://nwaafund.org/
+summary: >-
+  The Northwest Abortion Access Fund is an abortion fund serving Washington,
+  Oregon, Idaho, and Alaska. Trained, compassionate volunteer advocates run
+  their toll-free helpline. They help people pay for their abortion care by
+  sending funding directly to the provider. Donations are tax-deductible.
+buttonText: Donate here
+resourceIcon: handCoins
+iconColor: green
+buttonIcon: arrowRight
+buttonUrl:
+  discriminant: url
+  value: https://nwaafund.org/donate/
