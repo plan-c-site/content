@@ -357,22 +357,3 @@ Since 2016, our mission has been to research abortion pill access and normalize 
    action={discriminant: "internal", value: {page: "about"}} /%}
 {% /bodySection %}
 {% /horizontalSplit %}
-
-{% bodySection
-   centered=false
-   fullWidth=false
-   color="pink"
-   textSize="medium" %}
-## **Want to stay updated on abortion pill news?**
-
-Sign up for our newsletter to get the latest updates and opportunities to take action, delivered straight to your inbox.
-
-{% formWrapper
-   formType={discriminant: "hubspot", value: {invisibleFields: []}}
-   afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
-{% formInput
-   fields=[{label: {name: "Your email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
-{% /formSection %}
-{% /formWrapper %}
-{% /bodySection %}
