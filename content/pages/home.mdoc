@@ -32,7 +32,7 @@ seo:
 
     "publishingPrinciples":"https://www.plancpills.org/about",
 
-    "logo":{"@type":"ImageObject","@id":"https://www.plancpills.org/#logo","inLanguage":"en-US","url":"https://global-uploads.webflow.com/5f7e0692875fa8243cac6673/62df6a9a57f10071595acfc3_PLAN%20C_logo_mixed.svg","width":1380,"height":293,"caption":"Plan
+    "logo":{"@type":"ImageObject","@id":"https://www.plancpills.org/#logo","inLanguage":"en-US","url":"https://www.ineedaplanc.org","width":1380,"height":293,"caption":"Plan
     C logo"},  
 
     "image":{"@id":"https://www.plancpills.org/#logo"},
@@ -176,7 +176,7 @@ Plan C provides information on how people in the US are accessing abortion pills
    afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
 {% formInput
-   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] /%}
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, noSearch: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] /%}
 {% /formSection %}
 
 {% formSection type="submitted" %}
@@ -357,3 +357,19 @@ Since 2016, our mission has been to research abortion pill access and normalize 
    action={discriminant: "internal", value: {page: "about"}} /%}
 {% /bodySection %}
 {% /horizontalSplit %}
+
+{% sectionHeader
+   color="pink"
+   title="Want to stay updated on abortion pill news?"
+   icon="mailbox" %}
+Sign up for our newsletter to get the latest updates and opportunities to take action, delivered straight to your inbox.
+
+{% formWrapper
+   formType={discriminant: "hubspot", value: {invisibleFields: []}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Your email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
+{% /formSection %}
+{% /formWrapper %}
+{% /sectionHeader %}
