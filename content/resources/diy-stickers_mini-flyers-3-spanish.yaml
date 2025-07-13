@@ -1,0 +1,10 @@
+title: Mini flyers (3", Spanish)
+author: Full page template
+summary: Prints 9 per page, front and back.
+buttonText: Download PDF
+resourceIcon: printer
+iconColor: green
+buttonIcon: arrowDown
+buttonUrl:
+  discriminant: url
+  value: /
