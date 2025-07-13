@@ -168,6 +168,38 @@ Thank you for your interest in spreading the word about Plan C. Use the template
 {% /flexSection %}
 {% /horizontalSplit %}
 
+{% horizontalSplit noHeader=false %}
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="pink"
+   textSize="medium" %}
+## {% textSize textSize="h3" inline=false %}Mini-flyers (3" Spanish){% /textSize %}
+
+{% inContentImage
+   image={discriminant: "one-off", value: {image: "/images/diy-stickers/flyers-spanish_hero.png", altText: "Mini-flyers spanish"}}
+   maxWidth=100
+   action={discriminant: ""}
+   newTab=false /%}
+{% /bodySection %}
+
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% resourceList
+   resources=[{resource: "diy-stickers_mini-flyers-3-spanish-full-page"}, {resource: "diy-stickers_mini-flyers-3-spanish-single-flyer"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="pink"
+   hideHeaders=false
+   appendStateField="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
 {% tocAnchor
    slug={name: "Order printed stickers", slug: "order-printed-stickers"}
    type={discriminant: "toc"} /%}
