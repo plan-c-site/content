@@ -1,0 +1,13 @@
+title: Mini flyers (3", Spanish, single flyer)
+author: Single flyer template
+summary: >-
+  Use this template to have flyers made by a professional printer. For best
+  results, request for the mini-flyers to be printed on 3" square business
+  cards.
+buttonText: Download PDF
+resourceIcon: wallpaper
+iconColor: green
+buttonIcon: arrowDown
+buttonUrl:
+  discriminant: url
+  value: /
