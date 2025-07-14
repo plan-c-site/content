@@ -1,0 +1,17 @@
+title: University of California San Francisco
+heading: University of California San Francisco
+website: https://www.ucsfreproductivehealthstudy.org
+summary: >-
+  For residents of Alabama, Georgia, Louisiana, and Mississippi who could
+  possibly become pregnant. This study is not limited to folks actively seeking
+  abortion care.
+
+
+  Earn $5 for completing an anonymous 10-minute survey online.
+buttonText: Visit website
+resourceIcon: tableOfContents
+iconColor: green
+buttonIcon: arrowUpRight
+buttonUrl:
+  discriminant: url
+  value: https://www.ucsfreproductivehealthstudy.org/
