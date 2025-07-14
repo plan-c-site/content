@@ -1,0 +1,16 @@
+title: Indiana University
+heading: Indiana University
+summary: >-
+  For residents of CA, TX, FL, NY, IL, NJ, AZ, GA, NC, NV who were born in a
+  Latin American or Caribbean country.
+
+
+  Earn $100 gift card for completing a phone interview (40-50 minutes in
+  Spanish).
+buttonText: Visit website
+resourceIcon: tableOfContents
+iconColor: green
+buttonIcon: arrowUpRight
+buttonUrl:
+  discriminant: url
+  value: https://www.iusmap.org/
