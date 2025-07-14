@@ -93,6 +93,13 @@ navBar:
         children:
           - discriminant: link
             value:
+              label: Plan C Community
+              action:
+                discriminant: internal
+                value:
+                  page: community
+          - discriminant: link
+            value:
               label: Take action
               action:
                 discriminant: internal
