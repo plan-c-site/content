@@ -1,0 +1,17 @@
+title: University of Pittsburgh
+heading: University of Pittsburgh
+website: https://intrepidstudy.pitt.edu
+summary: >-
+  For residents of New York, Ohio, Pennsylvania, and West Virginia.
+
+
+  Complete up to 5 confidential surveys online over the next 4 years. $50 for
+  completing the first survey and another $50 for completing a follow-up in 6
+  weeks.
+buttonText: Visit website
+resourceIcon: tableOfContents
+iconColor: green
+buttonIcon: arrowUpRight
+buttonUrl:
+  discriminant: url
+  value: https://intrepidstudy.pitt.edu/
