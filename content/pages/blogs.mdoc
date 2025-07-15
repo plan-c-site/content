@@ -5,6 +5,7 @@ seo:
   image:
     discriminant: ''
 ---
+{% horizontalSplit noHeader=false %}
 {% bodySection
    centered=false
    fullWidth=true
@@ -13,18 +14,16 @@ seo:
 # Blogs
 {% /bodySection %}
 
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% postList
    type={discriminant: "simple"}
-   filtering={discriminant: "manual", value: ["how-does-the-abortion-pill-work"]} /%}
-
-{% postList
-   type={discriminant: "simple"}
-   filtering={discriminant: "manual", value: ["how-does-the-abortion-pill-work"]} /%}
-
-{% postList
-   type={discriminant: "simple"}
-   filtering={discriminant: "manual", value: ["press-release-abortion-access-campaign-plan-c-will-not-let-ruling-against-the-fda-halt-access-to-pills"]} /%}
-
-{% postList
-   type={discriminant: "simple"}
-   filtering={discriminant: "manual", value: ["plan-c-x-feminist-narrative-feature-series-priscila-barbosa"]} /%}
+   filtering={discriminant: "category", value: {category: "press-releases"}} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
