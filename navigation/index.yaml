@@ -51,8 +51,7 @@ navBar:
               label: Search by state
               action:
                 discriminant: home
-                value:
-                  anchor: test
+                value: {}
           - discriminant: link
             value:
               label: FAQ
@@ -88,6 +87,13 @@ navBar:
                 discriminant: internal
                 value:
                   page: blogs
+          - discriminant: link
+            value:
+              label: Test
+              action:
+                discriminant: home
+                value:
+                  anchor: test
     - discriminant: section
       value:
         label: Get involved
