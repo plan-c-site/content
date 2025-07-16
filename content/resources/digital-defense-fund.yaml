@@ -4,7 +4,7 @@ website: https://digitaldefensefund.org
 summary: >-
   Provides digital security resources and training for organizations focused on
   liberation and autonomy.
-resourceIcon: stethoscope
+resourceIcon: lockKeyhole
 iconColor: green
 buttonIcon: ''
 buttonUrl:
