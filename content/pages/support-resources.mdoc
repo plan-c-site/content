@@ -282,7 +282,7 @@ Download a condensed version of this page, formatted to print or share.
 {% horizontalSplit noHeader=false %}
 {% sectionHeader
    color="cyan"
-   title="Other options for getting an abortion"
+   title="Find clinics, pills, & other support resources "
    icon="" /%}
 
 {% flexSection
@@ -293,7 +293,7 @@ Download a condensed version of this page, formatted to print or share.
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
 {% resourceList
-   resources=[{resource: "all-options"}]
+   resources=[{resource: "i-need-an-a"}, {resource: "you-always-have-options"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="cyan"
@@ -316,11 +316,13 @@ Download a condensed version of this page, formatted to print or share.
    grow=false
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% bodySection
-   centered=false
-   fullWidth=false
-   color="beige"
-   textSize="medium" /%}
+{% resourceList
+   resources=[{resource: "bedsider"}, {resource: "birth-control-planned-parenthood"}, {resource: "three-for-freedom"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="pink"
+   hideHeaders=false
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -338,10 +340,87 @@ Download a condensed version of this page, formatted to print or share.
    grow=false
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% bodySection
-   centered=false
-   fullWidth=false
-   color="beige"
-   textSize="medium" /%}
+{% resourceList
+   resources=[{resource: "women-on-web"}, {resource: "manodiversa"}, {resource: "safe2-choose"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="blue"
+   hideHeaders=false
+   appendStateField="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "Later gestation info & support", slug: "later-gestation-info-and-support"}
+   type={discriminant: "toc"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader
+   color="red"
+   title="Later gestation info & support"
+   icon="" /%}
+
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% resourceList
+   resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "abortion-with-pills-after-12-weeks"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="red"
+   hideHeaders=true
+   appendStateField="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "Digital security & privacy", slug: "digital-security-and-privacy"}
+   type={discriminant: "toc"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Digital security & privacy" icon="" /%}
+
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% resourceList
+   resources=[{resource: "digital-defense-fund"}, {resource: "i-need-an-a-practical-guide-to-online-privacy"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="green"
+   hideHeaders=true
+   appendStateField="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "Find an abortion doula", slug: "find-an-abortion-doula"}
+   type={discriminant: "toc"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="cyan" title="Find an abortion doula" icon="" /%}
+
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% resourceList
+   resources=[{resource: "dopo-co-op"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="cyan"
+   hideHeaders=true
+   appendStateField="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
