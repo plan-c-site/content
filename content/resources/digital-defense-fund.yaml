@@ -1,0 +1,11 @@
+title: 'Digital defense fund '
+author: Digital defense fund
+website: https://digitaldefensefund.org
+summary: >-
+  Provides digital security resources and training for organizations focused on
+  liberation and autonomy.
+resourceIcon: stethoscope
+iconColor: green
+buttonIcon: ''
+buttonUrl:
+  discriminant: url
