@@ -8,6 +8,8 @@ buttonText: Contact us
 resourceIcon: graduationCap
 iconColor: green
 buttonIcon: ''
+buttonAction:
+  discriminant: mailto
+  value: community@plancpills.org
 buttonUrl:
   discriminant: url
-  value: mailto:community@plancpills.org
