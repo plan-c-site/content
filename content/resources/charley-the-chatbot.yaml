@@ -6,7 +6,7 @@ summary: >-
   A free, secure chatbot that helps identify nearby local clinics, online
   providers and support services.
 buttonText: Visit website
-resourceIcon: messagesSquare
+resourceIcon: messageSquareMore
 iconColor: green
 buttonIcon: arrowRight
 buttonUrl:
