@@ -8,7 +8,7 @@ summary: >-
 buttonText: Contact us
 resourceIcon: speech
 iconColor: green
-buttonIcon: ''
+buttonIcon: mail
 buttonAction:
   discriminant: mailto
   value: partners@plancpills.org
