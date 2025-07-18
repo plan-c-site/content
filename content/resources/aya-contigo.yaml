@@ -5,8 +5,10 @@ website: https://www.hola.ayacontigo.org/aya-us
 summary: >-
   Free, secure app offering live chat with peer counselors for abortion and
   contraception.
-resourceIcon: ayaContigo
+resourceIcon: messageCircleHeart
 iconColor: green
 buttonIcon: ''
+buttonAction:
+  discriminant: ''
 buttonUrl:
   discriminant: url
