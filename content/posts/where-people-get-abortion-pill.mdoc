@@ -33,11 +33,13 @@ Thousands of people across the U.S. order abortion pills by mail each day. Plan 
    slug={name: "The Plan C abortion pill directory", slug: "the-plan-c-abortion-pill-directory"}
    type={discriminant: "toc"} /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader
+{% bodySection
+   centered=false
+   fullWidth=false
    color="blue"
-   title="The Plan C Abortion Pill Directory"
-   icon="" /%}
+   textSize="medium" %}
+## The Plan C Abortion Pill Directory
+{% /bodySection %}
 
 {% bodySection
    centered=false
@@ -77,7 +79,6 @@ Please wait...
 {% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
-{% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Where people get abortion pills in all 50 states", slug: "where-people-get-abortion-pills-in-all-50-states"}
