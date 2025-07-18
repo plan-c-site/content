@@ -12,3 +12,65 @@ headerImage:
   discriminant: ''
 relatedPosts: []
 ---
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" %}
+# Where people get abortion pills online
+
+Thousands of people across the U.S. order abortion pills by mail each day. Plan C's&nbsp;research and information includes where people are getting an abortion pill online in our comprehensive state-by-state directory. Some providers accept insurance or offer discounts, making abortion pills lower cost or even free in some cases.
+
+‍Updated Mar 24, 2025
+
+{% tableOfContents /%}
+{% /bodySection %}
+
+{% tocAnchor slug={name: "", slug: ""} type={discriminant: "toc"} /%}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="blue"
+   textSize="medium" %}
+## The Plan C Abortion Pill Directory
+
+### Search for abortion pills by state
+
+Options for at-home abortion pill access will vary by location. Click below to find options by state or territory.
+
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
+{% /formSection %}
+
+{% formSection type="submitted" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Submitting...
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="success" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Please wait...
+{% /narrowBanner %}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}
+
+{% bodySection
+   centered=false
+   fullWidth=false
+   color="beige"
+   textSize="medium" /%}
