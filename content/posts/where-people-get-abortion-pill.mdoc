@@ -49,7 +49,7 @@ Options for at-home abortion pill access will vary by location. Click below to f
    afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
 {% formInput
-   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] /%}
 {% /formSection %}
 
 {% formSection type="submitted" %}
@@ -84,9 +84,9 @@ Please wait...
    color="beige"
    textSize="medium" %}
 {% inContentImage
-   image={discriminant: ""}
-   maxWidth=100
-   action={discriminant: ""}
+   image={discriminant: "noco", value: "Infographic - Ways people get an abortion pill"}
+   maxWidth=75
+   action={discriminant: "external", value: {showPopup: false}}
    newTab=false /%}
 
 ## Where people get abortion pills in all 50 states
