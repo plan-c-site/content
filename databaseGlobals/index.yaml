@@ -113,14 +113,17 @@ filterFields:
         - value: English
           invert: false
         - value: Spanish
+          label: Español
           invert: false
         - value: Hindi
+          label: हिन्दी
           invert: false
         - value: Hmong-Mien
           invert: false
         - value: Punjabi
           invert: false
         - value: Portuguese
+          label: Português
           invert: false
     helpPopup:
       discriminant: false

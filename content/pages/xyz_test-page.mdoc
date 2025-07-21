@@ -46,7 +46,12 @@ see {% inlineLink action={discriminant: "external", value: {url: "#testimonials"
    imageOnly=false
    title="Some Title"
    label="A label below the card"
-   action={discriminant: ""} %}
+   action={discriminant: ""}
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
 Othe**r content and stuff**
 
 I think we can add content...
@@ -57,7 +62,12 @@ I think we can add content...
    imageOnly=false
    title="Some Title"
    label="A label below the card"
-   action={discriminant: ""} %}
+   action={discriminant: ""}
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="right"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
 Othe**r content and stuff**
 
 I think we can add content...
@@ -71,7 +81,31 @@ to go over in height
    image={discriminant: "one-off", value: {image: "/images/xyz_test-page/c879ca67f1ee53b2051f025346a64a38.png"}}
    imageOnly=true
    label="A label below the card"
-   action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} %}
+   action={discriminant: "external", value: {url: "https://google.com", showPopup: false}}
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
+Othe**r content and stuff**
+
+I think we can add content...
+
+we need some more
+
+to go over in height
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "noco", value: "Stickers - Card - Wide"}
+   imageOnly=true
+   label="A label below the card"
+   action={discriminant: "external", value: {url: "https://google.com", showPopup: false}}
+   imageCover="bg-contain"
+   imageVertical="bg-bottom"
+   imageHorizontal="right"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
 Othe**r content and stuff**
 
 I think we can add content...
