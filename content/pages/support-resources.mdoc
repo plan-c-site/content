@@ -113,14 +113,7 @@ seo:
 
 No matter where you live, there is free confidential support available for using abortion pills.
 
-{% formWrapper
-   formType={discriminant: "link", value: {pattern: "#[:anchor:]"}}
-   afterSubmit="nothing" %}
-{% formSection type="waiting" %}
-{% formInput
-   fields=[{label: {name: "What kind of support do you need?", slug: "anchor"}, required: false, type: {discriminant: "select", value: {placeholder: "Select one", autoSubmit: true, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Medical support", value: "medical-support"}, {label: "Logistical & emotional support", value: "logistical-emotional-support"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
-{% /formSection %}
-{% /formWrapper %}
+{% tableOfContents /%}
 {% /heroSection %}
 
 {% tocAnchor
