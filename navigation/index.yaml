@@ -19,7 +19,7 @@ social:
   - action:
       discriminant: external
       value:
-        url: https://twitter.com/Plancpills
+        url: https://bsky.app/profile/plancpills.bsky.social
         showPopup: false
     icon: xTwitter
   - action:
