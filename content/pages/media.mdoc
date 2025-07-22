@@ -198,9 +198,9 @@ Read the latest press coverage featuring the work of Plan C.
    gap=2
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% articleList
-   pagination=5
-   filtering={discriminant: "category", value: {category: "plan-c"}} /%}
+{% postList
+   type={discriminant: "postList", value: {pagination: 3}}
+   filtering={discriminant: "category", value: {category: "press-releases"}} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -214,7 +214,12 @@ Read the latest press coverage featuring the work of Plan C.
    image={discriminant: "one-off", value: {image: "/images/media/megaphone_card-wide.png"}}
    imageOnly=false
    title="Plan C logos"
-   action={discriminant: "internal", value: {}} %}
+   action={discriminant: "internal", value: {}}
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
 Logos and other digital assets.
 {% /cardSection %}
 
@@ -222,7 +227,12 @@ Logos and other digital assets.
    image={discriminant: "one-off", value: {image: "/images/media/plan-c-squiggle.png"}}
    imageOnly=false
    title="Plan C photos"
-   action={discriminant: "internal", value: {}} %}
+   action={discriminant: "internal", value: {}}
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
 Photos from campaigns and events.
 {% /cardSection %}
 {% /cardLayoutSection %}
