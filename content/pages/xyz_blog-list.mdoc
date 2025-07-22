@@ -9,9 +9,20 @@ seo:
    imageSide="right"
    color="green"
    imageBackgroundColor="beige"
-   ignoreImageBorder=false %}
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
 # Blog Example
 {% /heroSection %}
+
+{% postList
+   type={discriminant: "simple"}
+   filtering={discriminant: "manual", value: ["a-blog-post", "a-partnership-post"]} /%}
 
 {% postList
    type={discriminant: "simple"}
