@@ -25,8 +25,8 @@ seo:
    filtering={discriminant: "manual", value: ["a-blog-post", "a-partnership-post"]} /%}
 
 {% postList
-   type={discriminant: "simple"}
-   filtering={discriminant: "manual", value: ["a-blog-post", "a-partnership-post"]} /%}
+   type={discriminant: "postList", value: {pagination: 3}}
+   filtering={discriminant: "category", value: {category: "press-releases"}} /%}
 
 {% postList
    type={discriminant: "headlines", value: {color: "green", buttonLabel: "Link to blog post", pagination: 2}}
