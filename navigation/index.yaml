@@ -21,7 +21,7 @@ social:
       value:
         url: https://bsky.app/profile/plancpills.bsky.social
         showPopup: false
-    icon: xTwitter
+    icon: blueSky
   - action:
       discriminant: external
       value:
