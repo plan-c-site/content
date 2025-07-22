@@ -91,9 +91,10 @@ navBar:
             value:
               label: Test
               action:
-                discriminant: home
+                discriminant: internal
                 value:
-                  anchor: test
+                  page: community
+                  anchor: the-basics
     - discriminant: section
       value:
         label: Get involved
