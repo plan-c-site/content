@@ -1,6 +1,6 @@
 title: GooseChase the NC vote
-city: Mobile
-state: AL
+city: Raleigh
+state: NC
 date: 2024-10-18
 description: >-
   Are you a fan of The Amazing Race or a good Scavenger Hunt? We bet you will
@@ -10,7 +10,9 @@ description: >-
   feed. This election, Relentless is organizing their own GooseChase to post
   flyers in four cities in North Carolina to help spread the word about voting!
 organizationUrl: https://turnoutteam.com
-details: https://turnoutteam.com
+details: >-
+  https://www.eventbrite.com/e/goosechase-the-nc-vote-tickets-1039202601957?aff=oddtdtcreator
 image:
-  discriminant: uploaded
-  value: event-image-test
+  discriminant: one-off
+  value:
+    image: /images/goose-chase-the-nc-vote/image/value/image.jpg
