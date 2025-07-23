@@ -9,8 +9,6 @@ seo:
   image:
     discriminant: ''
 ---
-{% sectionHeader color="green" title="Road trip stops" icon="" /%}
-
 {% heroSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/6801875653a6b260f8109f34_Map%20Template.png"}
    imageSide="right"
@@ -34,5 +32,7 @@ Follow our state-by-state guide to find your stop—and if you’ve got an event
 
 If you missed our 2024 tour, catch up on every highlight {% inlineLink action={discriminant: "internal", value: {page: "road-trip-2024"}} %}here{% /inlineLink %}.
 {% /heroSection %}
+
+{% sectionHeader color="green" title="Road trip stops" icon="" /%}
 
 {% roadtripList startDate="2025-01-01" pageLength=6 /%}
