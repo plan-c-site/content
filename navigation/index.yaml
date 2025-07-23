@@ -217,4 +217,12 @@ navBar:
           discriminant: internal
           value:
             page: donate
+    - discriminant: link
+      value:
+        label: anchor - test page - pre filtered
+        action:
+          discriminant: internal
+          value:
+            page: xyz_test-page
+            anchor: faq
 footer: {}
