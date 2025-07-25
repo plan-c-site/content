@@ -39,6 +39,15 @@ If you missed our 2024 tour, catch up on every highlight {% inlineLink action={d
    color="green"
    textSize="medium" %}
 ## Road trip stops
+
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "#[:state:]"}}
+   afterSubmit="nothing" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Find events in", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "California", value: "california"}, {label: "Virtual events", value: "virtual-events"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
+{% /formSection %}
+{% /formWrapper %}
 {% /bodySection %}
 
 {% roadtripList startDate="2025-01-01" pageLength=6 /%}
