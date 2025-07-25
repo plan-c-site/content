@@ -128,26 +128,8 @@ Articles covering the latest news, legal battles, policy changes, and key discus
 {% /horizontalSplit %}
 
 {% tocAnchor
-   slug={name: "Other abortion news", slug: "other_abortion_news"}
+   slug={name: "About Plan C", slug: "about-plan-c"}
    type={discriminant: "toc"} /%}
-
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="cyan" title="Other abortion news" icon="" %}
-Articles covering the latest news, legal battles, policy changes, and key discussions on abortion.
-{% /sectionHeader %}
-
-{% flexSection
-   direction="flex-col"
-   noWrap=false
-   noInnerBorders=false
-   grow=false
-   itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
-{% articleList
-   pagination=4
-   filtering={discriminant: "category", value: {category: "plan-c"}} /%}
-{% /flexSection %}
-{% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="About Plan C" icon="" %}
