@@ -6,7 +6,7 @@ resourceIcon: wallpaper
 iconColor: green
 buttonIcon: arrowDown
 buttonAction:
-  discriminant: ''
+  discriminant: download
+  value: QR-Pro-StickerSheet-English
 buttonUrl:
   discriminant: url
-  value: /
