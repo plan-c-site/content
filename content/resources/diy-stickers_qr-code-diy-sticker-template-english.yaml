@@ -6,7 +6,6 @@ resourceIcon: printer
 iconColor: green
 buttonIcon: arrowDown
 buttonAction:
-  discriminant: download
-  value: QR-DIY-StickerSheet-Spanish
+  discriminant: ''
 buttonUrl:
   discriminant: url
