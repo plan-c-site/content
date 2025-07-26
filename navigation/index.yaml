@@ -185,10 +185,8 @@ navBar:
             value:
               label: 2024 Annual report
               action:
-                discriminant: external
-                value:
-                  url: https://www.plancpills.org/2024-annual-report
-                  showPopup: false
+                discriminant: download
+                value: Plan_C_Annual_Report_2024
           - discriminant: link
             value:
               label: Contact us
