@@ -244,16 +244,6 @@ A few common questions about abortion pills
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="green" title="Live support" icon="" %}
 Get live phone and text support from caring experts who can help.
-
-{% inContentButton
-   label="See all support"
-   icon=""
-   size="standard"
-   background="green"
-   altHoverBackground=""
-   smallShadow=false
-   leftIcon=false
-   action={discriminant: "internal", value: {page: "support-resources"}} /%}
 {% /sectionHeader %}
 
 {% flexSection
@@ -271,6 +261,14 @@ Get live phone and text support from caring experts who can help.
    iconColor="green"
    hideHeaders=false
    appendStateField="" /%}
+
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% inlineLink action={discriminant: ""} %}**See all support**{% /inlineLink %}
+{% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
