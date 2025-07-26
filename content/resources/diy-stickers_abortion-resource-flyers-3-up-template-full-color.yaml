@@ -7,6 +7,8 @@ buttonText: Download PDF
 resourceIcon: printer
 iconColor: green
 buttonIcon: arrowDown
+buttonAction:
+  discriminant: download
+  value: ResourceList-3up-color
 buttonUrl:
   discriminant: url
-  value: /
