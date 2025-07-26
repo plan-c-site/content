@@ -7,7 +7,12 @@ summary: >-
 buttonText: Browse templates
 resourceIcon: wallpaper
 iconColor: green
-buttonIcon: arrowDown
+buttonIcon: arrowUpRight
+buttonAction:
+  discriminant: external
+  value:
+    url: >-
+      https://drive.google.com/drive/folders/1Fqkr9N_rnvvVV6DXi52E6yYW5tB8wTad?usp=sharing
+    showPopup: false
 buttonUrl:
   discriminant: url
-  value: /
