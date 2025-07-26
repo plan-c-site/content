@@ -8,6 +8,8 @@ buttonText: Download PDF
 resourceIcon: wallpaper
 iconColor: green
 buttonIcon: arrowDown
+buttonAction:
+  discriminant: download
+  value: Mini-Flyer-Pro-Spanish
 buttonUrl:
   discriminant: url
-  value: /
