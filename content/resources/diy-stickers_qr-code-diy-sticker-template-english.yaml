@@ -7,6 +7,6 @@ iconColor: green
 buttonIcon: arrowDown
 buttonAction:
   discriminant: download
-  value: QR_DIY_StickerSheet_English
+  value: HowToTakeAbortionPills_MifeMiso
 buttonUrl:
   discriminant: url
