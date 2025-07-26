@@ -105,6 +105,32 @@ Thank you for your interest in spreading the word about Plan C. Use the template
    type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="QR code stickers" icon="" %}
+{% inContentImage
+   image={discriminant: "noco", value: ""}
+   maxWidth=100
+   action={discriminant: ""}
+   newTab=false /%}
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% resourceList
+   resources=[{resource: "diy-stickers_qr-code-diy-sticker-template"}, {resource: "diy-stickers_qr-code-pro-sticker-template"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="green"
+   hideHeaders=false
+   appendStateField="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
 {% bodySection
    centered=false
    fullWidth=false
