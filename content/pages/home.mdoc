@@ -215,16 +215,6 @@ Please wait...
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="Frequently asked questions" icon="" %}
 A few common questions about abortion pills
-
-{% inContentButton
-   label="See all FAQs"
-   icon=""
-   size="standard"
-   background="pink"
-   altHoverBackground=""
-   smallShadow=false
-   leftIcon=false
-   action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} /%}
 {% /sectionHeader %}
 
 {% flexSection
@@ -240,6 +230,14 @@ A few common questions about abortion pills
    color="beige"
    appendStateField=""
    anchor=true /%}
+
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% inlineLink action={discriminant: ""} %}**See all FAQs**{% /inlineLink %}
+{% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
