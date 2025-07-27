@@ -11,6 +11,6 @@ iconColor: green
 buttonIcon: arrowDown
 buttonAction:
   discriminant: download
-  value: ' Circle-2x2-Spanish'
+  value: Circle-2x2-Spanish
 buttonUrl:
   discriminant: url
