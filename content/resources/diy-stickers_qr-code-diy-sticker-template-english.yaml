@@ -7,6 +7,6 @@ iconColor: green
 buttonIcon: arrowDown
 buttonAction:
   discriminant: download
-  value: QR-DIY-StickerSheet-Spanish
+  value: QR_DIY_StickerSheet_English
 buttonUrl:
   discriminant: url
