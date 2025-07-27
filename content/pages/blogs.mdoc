@@ -23,7 +23,7 @@ seo:
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
 {% postList
-   type={discriminant: "simple"}
+   type={discriminant: "postList", value: {pagination: 10}}
    filtering={discriminant: "category", value: {category: "blogs"}} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
