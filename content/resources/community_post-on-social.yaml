@@ -5,6 +5,9 @@ buttonText: Social media toolkit
 resourceIcon: messageCircleHeart
 iconColor: green
 buttonIcon: arrowUpRight
+buttonAction:
+  discriminant: internal
+  value:
+    page: social-media-toolkit
 buttonUrl:
   discriminant: url
-  value: /social-media-toolkit
