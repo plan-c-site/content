@@ -7,6 +7,10 @@ buttonText: Donate now
 resourceIcon: handCoins
 iconColor: green
 buttonIcon: ''
+buttonAction:
+  discriminant: internal
+  value:
+    page: donate
 buttonUrl:
   discriminant: url
   value: /donate
