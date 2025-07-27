@@ -115,6 +115,13 @@ navBar:
                   page: stickers
           - discriminant: link
             value:
+              label: Plan C Road Trip
+              action:
+                discriminant: internal
+                value:
+                  page: road-trip
+          - discriminant: link
+            value:
               label: Social media toolkit
               action:
                 discriminant: internal
