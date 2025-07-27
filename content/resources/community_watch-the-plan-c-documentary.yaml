@@ -5,6 +5,10 @@ buttonText: Plan C documentary
 resourceIcon: film
 iconColor: green
 buttonIcon: ''
+buttonAction:
+  discriminant: external
+  value:
+    url: https://plancmovie.com/watch
+    showPopup: false
 buttonUrl:
-  discriminant: url
-  value: https://plancmovie.com/watch
+  discriminant: none
