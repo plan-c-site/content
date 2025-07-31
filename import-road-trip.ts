@@ -1,12 +1,12 @@
-import internal from "./internal.json" with { type: "json" };
+import roadTrips from "./road-trips.json" with { type: "json" };
 import TurndownService from "npm:turndown";
 
 const service = new TurndownService();
 
 async function convert() {
   await Promise.all(
-    internal.map(async (v) => {
-      const md = service.turndown(v.Content);
+    roadTrips.map(async (v) => {
+      const md = service.turndown(v.Description);
       const mdoc = `---
 category: partnerships
 title: "${v.Name}"
