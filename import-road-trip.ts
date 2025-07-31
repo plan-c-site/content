@@ -8,23 +8,13 @@ async function convert() {
     roadTrips.map(async (v) => {
       const md = service.turndown(v.Description);
       const mdoc = `---
-category: partnerships
 title: "${v.Name}"
-seo:
-  image:
-    discriminant: ''
-headerImage:
-  discriminant: uploaded
-  value: mailbox
-relatedPosts: []
+city: "${v.City}"
+state: "${v.State}"
+
 ---
-{% bodySection
-   centered=false
-   width="default"
-   color="beige"
-   textSize="medium" %}
-   ${md}
-{% /bodySection %}`;
+
+${md}`;
 
       const slug = v.Slug;
 
