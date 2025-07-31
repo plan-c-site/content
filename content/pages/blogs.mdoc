@@ -6,11 +6,7 @@ seo:
     discriminant: ''
 ---
 {% horizontalSplit noHeader=false %}
-{% bodySection
-   centered=false
-   width="full"
-   color="beige"
-   textSize="medium" %}
+{% bodySection centered=false width="full" color="beige" textSize="medium" %}
 # Blogs
 {% /bodySection %}
 
@@ -27,3 +23,19 @@ seo:
    filtering={discriminant: "category", value: {category: "blogs"}} /%}
 {% /flexSection %}
 {% /horizontalSplit %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+## H2 first element
+{% /bodySection %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+{% textSize textSize="h2" inline=false %}P with H2 styling, first element{% /textSize %}
+{% /bodySection %}
