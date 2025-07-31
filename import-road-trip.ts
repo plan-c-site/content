@@ -12,9 +12,9 @@ async function convert() {
       const formattedDate = dateToString("yyyy-MM-dd", date);
       const mdoc = `---
 title: "${v.Name.replaceAll(`"`, `\\"`)}"
-city: "${v.City}"
-state: "${v.State}"
-date: "${formattedDate}"
+city: ${v.City}
+state: ${v.State}
+date: ${formattedDate}
 organizationUrl: "${v["Organization URL"]}"
 details: "${v["Event details URL"]}"
 ---
