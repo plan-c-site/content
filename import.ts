@@ -1,12 +1,13 @@
-import internal from "./internal.json" with { type: "json" }
-import TurndownService from 'npm:turndown'
+import internal from "./internal.json" with { type: "json" };
+import TurndownService from "npm:turndown";
 
-const service = new TurndownService()
+const service = new TurndownService();
 
 async function convert() {
-    await Promise.all(internal.map(async (v) => {
-        const md = service.turndown(v.Content)
-        const mdoc = `---
+  await Promise.all(
+    internal.map(async (v) => {
+      const md = service.turndown(v.Content);
+      const mdoc = `---
 category: partnerships
 title: "${v.Name}"
 seo:
@@ -19,17 +20,17 @@ relatedPosts: []
 ---
 {% bodySection
    centered=false
-   fullWidth=false
+   width="default"
    color="beige"
    textSize="medium" %}
    ${md}
-{% /bodySection %}`
-        
-        const slug = v.Slug
-        
-        await Deno.writeTextFile(`./import/${slug}.mdoc`, mdoc);
-    }))
+{% /bodySection %}`;
+
+      const slug = v.Slug;
+
+      await Deno.writeTextFile(`./import/${slug}.mdoc`, mdoc);
+    })
+  );
 }
 
-convert()
-
+convert();
