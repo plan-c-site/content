@@ -11,7 +11,7 @@ async function convert() {
       const date = new Date(v["Date + Time"]);
       const formattedDate = dateToString("yyyy-MM-dd", date);
       const mdoc = `---
-title: "${v.Name}"
+title: "${v.Name.replaceAll(`"`, `\\"`)}"
 city: "${v.City}"
 state: "${v.State}"
 date: "${formattedDate}"
