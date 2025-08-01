@@ -211,6 +211,14 @@ Did you know? People are finding up-to-date information about abortion pills by 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="Medical safety" icon="" /%}
 
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% cardLayoutSection color="beige" minColumnWidth=22 %}
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
@@ -234,6 +242,7 @@ Did you know? People are finding up-to-date information about abortion pills by 
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop" /%}
 {% /cardLayoutSection %}
+{% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
