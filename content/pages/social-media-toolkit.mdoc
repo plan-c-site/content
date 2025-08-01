@@ -231,14 +231,25 @@ Did you know? People are finding up-to-date information about abortion pills by 
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Medical safety" icon="" /%}
+{% sectionHeader color="cyan" title="Medical safety" icon="" /%}
 
 {% cardLayoutSection color="beige" minColumnWidth=22 %}
 {% cardSection
-   image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/did-you-know-safe-effective.jpg"}}
    imageOnly=true
-   action={discriminant: ""}
-   link="/"
+   label="Abortion pills are just as safe and effective as going to a clinic"
+   action={discriminant: "external", value: {showPopup: false}}
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" /%}
+
+{% cardSection
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-pills-are-safe-effective.jpg"}}
+   imageOnly=true
+   label="Abortion pills are safe, effective, common, and for everyone"
+   action={discriminant: "external", value: {showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
@@ -246,11 +257,50 @@ Did you know? People are finding up-to-date information about abortion pills by 
    mobileImageHorizontal="desktop" /%}
 
 {% cardSection
-   image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-pills-are-hand-pills.png"}}
    imageOnly=true
-   action={discriminant: ""}
-   link="/"
+   label="Abortion pills are safe, effective, and available online"
+   action={discriminant: "external", value: {showPopup: false}}
    imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" /%}
+{% /cardLayoutSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="pink" title="Pills in advance" icon="" /%}
+
+{% cardLayoutSection color="beige" minColumnWidth=22 %}
+{% cardSection
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/get-abortion-pills-now-just-in-case.jpg"}}
+   imageOnly=true
+   label="Get abortion pills now, just in case"
+   action={discriminant: "external", value: {showPopup: false}}
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" /%}
+
+{% cardSection
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/consigue-pastillas-abortivas-ahora.jpg"}}
+   imageOnly=true
+   label="Consigue pastillas abortivas ahora, por si acaso"
+   action={discriminant: "external", value: {showPopup: false}}
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" /%}
+
+{% cardSection
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/get-abortion-pills-now-pink.jpg"}}
+   imageOnly=true
+   label="Get abortion pills now just in case"
+   action={discriminant: "external", value: {showPopup: false}}
+   imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
