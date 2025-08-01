@@ -2,12 +2,13 @@ title: Abortion Access Legal Defense Fund
 author: Abortion Access Legal Defense Fund
 website: nwlc.org/abortion-access-legal-defense-fund
 summary: >-
-  Helps people pay for expenses related to legal consequences they are facing
-  because they have sought an abortion or helped someone obtain an abortion or
-  information about abortion care.
+  Helps people pay for expenses related to legal consequences of seeking an
+  abortion or helping someone access abortion care.
 buttonText: Visit website
 resourceIcon: handCoins
 iconColor: green
 buttonIcon: arrowRight
+buttonAction:
+  discriminant: ''
 buttonUrl:
   discriminant: none
