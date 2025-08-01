@@ -1,13 +1,15 @@
 title: Navigating abortion laws & judicial bypass
 author: Navigating abortion laws & judicial bypass
-website: /blogs/navigating-abortion-laws-and-judicial-bypass
 summary: >-
   Some states require that parents be notified or give consent for a  minor to
   get an abortion.  Read our blog for more information.
+buttonText: Read blog
 resourceIcon: scale
 iconColor: green
-buttonIcon: ''
+buttonIcon: arrowRight
 buttonAction:
-  discriminant: ''
+  discriminant: blog
+  value:
+    page: navigating-abortion-laws-and-judicial-bypass
 buttonUrl:
   discriminant: url
