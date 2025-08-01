@@ -1,0 +1,13 @@
+title: National Network of Abortion Funds
+author: National Network of Abortion Funds
+website: https://abortionfunds.org/need-an-abortion
+summary: >-
+  The National Network of Abortion Funds (NNAF) helps individuals remove
+  financial and logistical barriers to abortion access across the US.
+resourceIcon: handCoins
+iconColor: green
+buttonIcon: ''
+buttonAction:
+  discriminant: ''
+buttonUrl:
+  discriminant: url
