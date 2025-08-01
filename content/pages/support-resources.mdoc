@@ -228,10 +228,13 @@ Our research shows that many telehealth abortion providers offer flexible pricin
 Local abortion funds may also have resources to help; find one using the directory linked here.
 {% /bodySection %}
 
-{% resourceItem
-   resource="national-network-of-abortion-funds"
-   header={discriminant: "none"}
-   type={discriminant: "block", value: {icon: "", iconColor: "blue"}} /%}
+{% resourceList
+   resources=[{resource: "national-network-of-abortion-funds"}]
+   type={discriminant: "simple", value: 1}
+   icon=""
+   iconColor="blue"
+   hideHeaders=false
+   appendStateField="" /%}
 {% /horizontalSplit %}
 
 {% tocAnchor
@@ -356,7 +359,7 @@ Resources for self-managed abortion outside of the US.
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
 {% resourceList
-   resources=[{resource: "women-on-web"}, {resource: "safe2-choose"}, {resource: "safe2-choose"}]
+   resources=[{resource: "women-on-web"}, {resource: "safe2-choose"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="blue"
