@@ -109,7 +109,98 @@ seo:
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Medical safety" icon="" /%}
+{% sectionHeader
+   color="pink"
+   title="Card grid inside flex-vertical"
+   icon="" /%}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=0.5
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% cardLayoutSection color="beige" minColumnWidth=22 %}
+{% cardSection
+   image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
+   imageOnly=true
+   action={discriminant: ""}
+   link="/"
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" /%}
+
+{% cardSection
+   image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
+   imageOnly=true
+   action={discriminant: ""}
+   link="/"
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" /%}
+{% /cardLayoutSection %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader
+   color="pink"
+   title="Card grid inside flex-vertical with faq"
+   icon="" /%}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=0.25
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+### Title
+{% /bodySection %}
+
+{% cardLayoutSection color="beige" minColumnWidth=22 %}
+{% cardSection
+   image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
+   imageOnly=true
+   action={discriminant: ""}
+   link="/"
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" /%}
+
+{% cardSection
+   image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
+   imageOnly=true
+   action={discriminant: ""}
+   link="/"
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" /%}
+{% /cardLayoutSection %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader
+   color="pink"
+   title="Card grid inside flex-vertical with faq"
+   icon="" /%}
 
 {% flexSection
    direction="flex-col"
