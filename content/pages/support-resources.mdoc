@@ -216,6 +216,14 @@ Groups that can help you understand your rights and answer questions about the l
 Organizations offering funding to people seeking abortions
 {% /sectionHeader %}
 
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
 {% bodySection
    centered=false
    width="default"
@@ -228,13 +236,11 @@ Our research shows that many telehealth abortion providers offer flexible pricin
 Local abortion funds may also have resources to help; find one using the directory linked here.
 {% /bodySection %}
 
-{% resourceList
-   resources=[{resource: "national-network-of-abortion-funds"}]
-   type={discriminant: "simple", value: 1}
-   icon=""
-   iconColor="blue"
-   hideHeaders=false
-   appendStateField="" /%}
+{% resourceItem
+   resource="national-network-of-abortion-funds"
+   header={discriminant: "none"}
+   type={discriminant: "block", value: {icon: "", iconColor: "blue"}} /%}
+{% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
