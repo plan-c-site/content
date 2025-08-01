@@ -237,40 +237,6 @@ Local abortion funds may also have resources to help; find one using the directo
    appendStateField="" /%}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Financial support" icon="" %}
-Organizations offering funding to people seeking abortions
-{% /sectionHeader %}
-
-{% flexSection
-   direction="flex-row"
-   noWrap=false
-   noInnerBorders=false
-   grow=false
-   itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
-{% bodySection
-   centered=false
-   width="default"
-   color="beige"
-   textSize="medium" %}
-Our research shows that many telehealth abortion providers offer flexible pricing or will help patients connect with outside financial support.
-
-{% inlineLink action={discriminant: "home", value: {anchor: "search-by-state"}} %}The guide{% /inlineLink %} shows whether financial assistance may be available from each provider. If you're in need of financial support, you can ask the provider for help or guidance.
-
-Local abortion funds may also have resources to help; find one using the directory linked below.
-{% /bodySection %}
-
-{% resourceList
-   resources=[{resource: "national-network-of-abortion-funds"}]
-   type={discriminant: "simple", value: 1}
-   icon=""
-   iconColor="blue"
-   hideHeaders=false
-   appendStateField="" /%}
-{% /flexSection %}
-{% /horizontalSplit %}
-
 {% tocAnchor
    slug={name: "Learn about abortion pills", slug: "learn-about-abortion-pills"}
    type={discriminant: "toc"} /%}
