@@ -188,7 +188,9 @@ We’ve partnered with several organizations dedicated to supporting folks havin
    type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Legal support" icon="" /%}
+{% sectionHeader color="pink" title="Legal support" icon="" %}
+Groups that can help you understand your rights and answer questions about the legal landscape of self-managed abortion in the U.S.
+{% /sectionHeader %}
 
 {% flexSection
    direction="flex-row"
@@ -212,7 +214,21 @@ We’ve partnered with several organizations dedicated to supporting folks havin
    type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Financial support" icon="" /%}
+{% sectionHeader color="blue" title="Financial support" icon="" %}
+Organizations offering funding to people seeking abortions
+
+{% narrowBanner
+   icon=""
+   color="blue"
+   iconAlign="items-center"
+   fullWidth=false %}
+**A note about financial support:**
+
+Many telehealth abortion providers offer flexible pricing or will help patients connect with outside financial support. {% inlineLink action={discriminant: "home", value: {anchor: "search-by-state"}} %}Our guide{% /inlineLink %} shows whether financial assistance may be available from each provider. If you're in need of financial help, ask your provider if they can help you directly or if they can refer you to an abortion fund.
+
+Local abortion funds may also have resources to help you. Find your local fund using the directories linked below.
+{% /narrowBanner %}
+{% /sectionHeader %}
 
 {% flexSection
    direction="flex-row"
