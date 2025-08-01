@@ -229,47 +229,6 @@ The Plan C Community Road Trip is a nationwide journey from June 23rd to Novembe
 
 {% bodySection
    centered=true
-   width="default"
-   color="beige"
-   textSize="medium" %}
-## **Join the community newsletter**
-
-For breaking developments in abortion pill access and opportunities to take action.
-
-{% flexSection
-   direction="flex-col"
-   noWrap=false
-   noInnerBorders=true
-   grow=false
-   gap=0.25
-   maxWidth="27rem"
-   itemsAlign="items-center"
-   justiftContent="justify-center" %}
-{% formWrapper
-   formType={discriminant: "hubspot", value: {formId: "acc4fb61-786a-4a96-9af5-e3d0dbb3cabb", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}}
-   afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
-{% formInput
-   fields=[{label: {name: "First name", slug: "firstname"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "City", slug: "city"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "State", slug: "state"}, required: true, type: {discriminant: "select", value: {placeholder: "Select state/territory", autoSubmit: false, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "abbreviation"}}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Sign up", slug: "submit"}, required: true, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
-{% /formSection %}
-
-{% formSection type="success" %}
-{% insetSection %}
-Thanks! Your information has been received.
-{% /insetSection %}
-{% /formSection %}
-
-{% formSection type="submitted" %}
-{% insetSection %}
-Submitting...
-{% /insetSection %}
-{% /formSection %}
-{% /formWrapper %}
-{% /flexSection %}
-{% /bodySection %}
-
-{% bodySection
-   centered=true
    width="narrow"
    color="beige"
    textSize="medium" %}
