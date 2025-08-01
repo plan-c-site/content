@@ -2,11 +2,13 @@ title: DOPO Co-op
 author: DOPO Co-op
 website: https://wearedopo.com
 summary: >-
-  International collective of individuals on a mission to provide holistic,
-  stigma-free abortion care and education in our communities and advocate for
-  Reproductive Justice worldwide.
+  International collective of doulas and educators on a mission to provide
+  holistic, stigma-free abortion care and education in communities and advocate
+  for reproductive justice. 
 resourceIcon: heartHandshake
 iconColor: green
 buttonIcon: ''
+buttonAction:
+  discriminant: ''
 buttonUrl:
   discriminant: url
