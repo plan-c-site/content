@@ -52,16 +52,6 @@
    color="pink"
    textSize="medium" %}
 ## Frequently asked questions
-
-{% inContentButton
-   label="See all FAQs"
-   icon=""
-   size="standard"
-   background="pink"
-   altHoverBackground=""
-   smallShadow=false
-   leftIcon=false
-   action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} /%}
 {% /bodySection %}
 
 {% flexSection
@@ -83,6 +73,14 @@
    color="beige"
    embedded=false
    anchor=true /%}
+
+{% narrowBanner
+   icon="arrowRight"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}See all FAQs{% /inlineLink %}
+{% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -101,16 +99,6 @@
    color="green"
    textSize="medium" %}
 ## Get support
-
-{% inContentButton
-   label="See all support"
-   icon=""
-   size="standard"
-   background="green"
-   altHoverBackground=""
-   smallShadow=false
-   leftIcon=false
-   action={discriminant: "internal", value: {page: "support-resources"}} /%}
 {% /bodySection %}
 
 {% flexSection
@@ -128,6 +116,14 @@
    iconColor="green"
    hideHeaders=false
    appendStateField="" /%}
+
+{% narrowBanner
+   icon="arrowRight"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} %}See all support{% /inlineLink %}
+{% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
