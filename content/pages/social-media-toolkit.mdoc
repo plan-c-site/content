@@ -214,29 +214,16 @@ Did you know? People are finding up-to-date information about abortion pills by 
 {% flexSection
    direction="flex-col"
    noWrap=false
-   noInnerBorders=true
+   noInnerBorders=false
    grow=false
    gap=0.25
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% bodySection
-   centered=false
-   width="default"
-   color="beige"
-   textSize="medium" %}
-{% faqSection
-   faq="suggested-caption_medical-safety"
-   color="beige"
-   embedded=true
-   anchor=false /%}
-{% /bodySection %}
-
 {% cardLayoutSection color="beige" minColumnWidth=22 %}
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
    imageOnly=true
    action={discriminant: ""}
-   link="/"
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
@@ -247,13 +234,18 @@ Did you know? People are finding up-to-date information about abortion pills by 
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
    imageOnly=true
    action={discriminant: ""}
-   link="/"
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop" /%}
 {% /cardLayoutSection %}
+
+{% faqSection
+   faq="suggested-caption_medical-safety"
+   color="beige"
+   embedded=false
+   anchor=false /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
