@@ -14,36 +14,7 @@
    maxWidth="22.5rem"
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-## Get the Plan C newsletter
-
-{% formWrapper
-   formType={discriminant: "hubspot", value: {formId: "4ea4d330-d054-4777-8f07-8b3a99297a91", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}}
-   afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
-{% formInput
-   fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
-{% /formSection %}
-
-{% formSection type="submitted" %}
-{% narrowBanner
-   icon=""
-   color="beige"
-   iconAlign="items-center"
-   fullWidth=false %}
-Please wait...
-{% /narrowBanner %}
-{% /formSection %}
-
-{% formSection type="success" %}
-{% narrowBanner
-   icon="check"
-   color="beige"
-   iconAlign="items-center"
-   fullWidth=false %}
-Thanks! Your information has been received.
-{% /narrowBanner %}
-{% /formSection %}
-{% /formWrapper %}
+## Follow @plancpills
 
 {% socialButtons /%}
 {% /flexSection %}
