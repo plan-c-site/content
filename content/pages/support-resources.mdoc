@@ -216,18 +216,6 @@ Groups that can help you understand your rights and answer questions about the l
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="Financial support" icon="" %}
 Organizations offering funding to people seeking abortions
-
-{% narrowBanner
-   icon=""
-   color="blue"
-   iconAlign="items-center"
-   fullWidth=false %}
-**A note about financial support:**
-
-Many telehealth abortion providers offer flexible pricing or will help patients connect with outside financial support. {% inlineLink action={discriminant: "home", value: {anchor: "search-by-state"}} %}Our guide{% /inlineLink %} shows whether financial assistance may be available from each provider. If you're in need of financial help, ask your provider if they can help you directly or if they can refer you to an abortion fund.
-
-Local abortion funds may also have resources to help you. Find your local fund using the directories linked below.
-{% /narrowBanner %}
 {% /sectionHeader %}
 
 {% flexSection
@@ -241,7 +229,19 @@ Local abortion funds may also have resources to help you. Find your local fund u
    centered=false
    width="default"
    color="beige"
-   textSize="medium" /%}
+   textSize="medium" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+**A note about financial support:**
+
+Many telehealth abortion providers offer flexible pricing or will help patients connect with outside financial support. {% inlineLink action={discriminant: "home", value: {anchor: "search-by-state"}} %}Our guide{% /inlineLink %} shows whether financial assistance may be available from each provider. If you're in need of financial help, ask your provider if they can help you directly or if they can refer you to an abortion fund.
+
+Local abortion funds may also have resources to help you. Find your local fund using the directories linked below.
+{% /narrowBanner %}
+{% /bodySection %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
