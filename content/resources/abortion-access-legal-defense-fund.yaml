@@ -7,7 +7,7 @@ summary: >-
 buttonText: Visit website
 resourceIcon: handCoins
 iconColor: green
-buttonIcon: arrowRight
+buttonIcon: arrowUpRight
 buttonAction:
   discriminant: ''
 buttonUrl:
