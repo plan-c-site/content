@@ -62,17 +62,17 @@
    gap=2
    itemsAlign="items-stretch"
    justiftContent="justify-stretch" %}
-{% faqSection
-   faq="guide_how-do-people-choose-a-provider"
+{% faqList
+   faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills"]
    color="beige"
-   embedded=false
+   appendStateField=""
    anchor=true /%}
 
-{% faqSection
-   faq="can-i-get-in-trouble-for-using-abortion-pills"
+{% faqList
+   faqs=[]
    color="beige"
-   embedded=false
-   anchor=true /%}
+   appendStateField="Additional FAQs"
+   anchor=false /%}
 
 {% narrowBanner
    icon="arrowRight"
