@@ -7,7 +7,9 @@ summary: >-
 buttonText: Donate here
 resourceIcon: handCoins
 iconColor: green
-buttonIcon: arrowRight
+buttonIcon: arrowUpRight
+buttonAction:
+  discriminant: ''
 buttonUrl:
   discriminant: url
   value: https://reprohub.org/support/
