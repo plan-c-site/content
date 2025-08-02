@@ -126,7 +126,7 @@ Invite your guests to take their involvement to the next level:
 
 {% tocAnchor
    slug={name: "Official website", slug: "official-website"}
-   type={discriminant: "action", value: {discriminant: "external", value: {showPopup: false}}} /%}
+   type={discriminant: "action", value: {discriminant: "external", value: {url: "https://plancmovie.com/", showPopup: false}}} /%}
 
 {% tocAnchor
    slug={name: "Current screenings", slug: "current-screenings"}
@@ -135,6 +135,10 @@ Invite your guests to take their involvement to the next level:
 {% tocAnchor
    slug={name: "Get free stickers", slug: "get-free-stickers"}
    type={discriminant: "action", value: {discriminant: "internal", value: {page: "stickers"}}} /%}
+
+{% tocAnchor
+   slug={name: "External links", slug: "external-links"}
+   type={discriminant: "anchor"} /%}
 
 {% cardLayoutSection color="beige" minColumnWidth=23 %}
 {% cardSection
@@ -151,11 +155,11 @@ Learn more about the PLAN C documentary released in 2023, find the film on strea
 {% /cardSection %}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/documentary/megaphone_card-wide.png"}}
+   image={discriminant: "noco", value: "Megaphone - Hero"}
    imageOnly=false
    title="Current screenings"
    action={discriminant: "external", value: {url: "https://plancmovie.com/screenings", showPopup: false}}
-   imageCover="bg-cover"
+   imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
@@ -164,11 +168,11 @@ Learn more about screening the film in classroom or nonprofit settings, or strea
 {% /cardSection %}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/documentary/stickers_card-wide.png"}}
+   image={discriminant: "noco", value: "Stickers - Hero"}
    imageOnly=false
    title="Get free stickers"
    action={discriminant: "internal", value: {page: "stickers"}}
-   imageCover="bg-cover"
+   imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
