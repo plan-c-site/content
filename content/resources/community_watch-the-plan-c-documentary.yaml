@@ -4,7 +4,7 @@ summary: "Watch on Apple TV, Amazon Prime, and other digital platforms. Visit th
 buttonText: Plan C documentary
 resourceIcon: film
 iconColor: green
-buttonIcon: ''
+buttonIcon: arrowUpRight
 buttonAction:
   discriminant: external
   value:
