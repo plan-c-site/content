@@ -4,7 +4,7 @@ summary: 1 per page, print on 8.5 x 11" on paper or cardstock.
 buttonText: Download PDF
 resourceIcon: printer
 iconColor: green
-buttonIcon: arrowDown
+buttonIcon: fileDown
 buttonAction:
   discriminant: download
   value: ResourceList-fullpage-color
