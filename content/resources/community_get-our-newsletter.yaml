@@ -7,6 +7,8 @@ buttonText: Sign up
 resourceIcon: mail
 iconColor: green
 buttonIcon: ''
+buttonAction:
+  discriminant: anchor
+  value: join-the-newsletter
 buttonUrl:
   discriminant: url
-  value: '#join-the-newsletter'
