@@ -4,7 +4,7 @@ summary: Use this template to print & cut at home using sticker paper.
 buttonText: Download PDF
 resourceIcon: printer
 iconColor: green
-buttonIcon: arrowDown
+buttonIcon: fileText
 buttonAction:
   discriminant: download
   value: QR_DIY_StickerSheet_English
