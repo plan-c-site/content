@@ -6,7 +6,9 @@ summary: >-
 buttonText: RSVP here
 resourceIcon: presentation
 iconColor: green
-buttonIcon: ''
+buttonIcon: arrowUpRight
+buttonAction:
+  discriminant: ''
 buttonUrl:
   discriminant: url
   value: https://us06web.zoom.us/webinar/register/WN_alDU5lRCSyeDejK05QBvbg
