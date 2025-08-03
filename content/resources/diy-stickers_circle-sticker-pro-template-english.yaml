@@ -8,7 +8,7 @@ summary: >-
 buttonText: Download PDF
 resourceIcon: wallpaper
 iconColor: green
-buttonIcon: arrowDown
+buttonIcon: fileDown
 buttonAction:
   discriminant: download
   value: Circle-2x2-English
