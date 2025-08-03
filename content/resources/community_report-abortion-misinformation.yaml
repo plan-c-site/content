@@ -6,7 +6,7 @@ summary: >-
 buttonText: Download PDF
 resourceIcon: megaphone
 iconColor: green
-buttonIcon: fileText
+buttonIcon: download
 buttonAction:
   discriminant: ''
 buttonUrl:
