@@ -47,9 +47,16 @@ Follow our state-by-state guide to find your stop—and if you’ve got an event
    color="green"
    textSize="medium" %}
 ## Find your stop
-{% /bodySection %}
 
-{% roadtripList startDate="2025-01-01" pageLength=100 /%}
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "#[:location:]"}}
+   afterSubmit="nothing" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: false, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "California", value: "california"}, {label: "Florida", value: "florida"}, {label: "New York", value: "new-york"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}
 
 {% narrowBanner
    icon="arrowUp"
