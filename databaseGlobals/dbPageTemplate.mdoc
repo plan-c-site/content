@@ -22,10 +22,10 @@
    largeLeftColumn=true
    reverseOnMobile=false %}
 {% formWrapper
-   formType={discriminant: "hubspot", value: {invisibleFields: []}}
+   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
    afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
-# Where people get abortion pills online in
+# Where people get abortion pills online in {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}state{% /dbText %}{% /inlineForm %}
 {% /formSection %}
 
 {% formSection type="submitted" %}
