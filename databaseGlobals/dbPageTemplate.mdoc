@@ -27,14 +27,6 @@
 {% formSection type="waiting" %}
 # Where people get abortion pills online in {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}state{% /dbText %}{% /inlineForm %}
 {% /formSection %}
-
-{% formSection type="submitted" %}
-# Loading
-{% /formSection %}
-
-{% formSection type="success" %}
-# Loading
-{% /formSection %}
 {% /formWrapper %}
 
 {% dbMarkdoc source="Summary" /%}
