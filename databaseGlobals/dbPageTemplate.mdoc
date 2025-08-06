@@ -21,6 +21,34 @@
    mobileImageHorizontal="left"
    largeLeftColumn=true
    reverseOnMobile=false %}
+{% formWrapper
+   formType={discriminant: "hubspot", value: {invisibleFields: []}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+# Where people get abortion pills online in
+{% /formSection %}
+
+{% formSection type="submitted" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Submitting...
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="success" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Please wait...
+{% /narrowBanner %}
+{% /formSection %}
+{% /formWrapper %}
+
 # Where people get abortion pills online in {% dbText source="Name" %}State{% /dbText %}
 
 {% dbMarkdoc source="Summary" /%}
