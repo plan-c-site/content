@@ -5,7 +5,7 @@ seo:
     discriminant: ''
 ---
 {% heroSection
-   image={discriminant: "one-off", value: {image: "/images/road-trip-2024/road-trip-2024-svg.svg"}}
+   image={discriminant: "noco", value: "Road trip 2024 svg"}
    imageSide="right"
    color="beige"
    imageBackgroundColor="pink"
@@ -38,10 +38,20 @@ If you’ve got an event or idea that belongs on the map, reach out to us at&nbs
 
 {% bodySection
    centered=true
-   width="default"
+   width="medium"
    color="green"
    textSize="medium" %}
 ## Events archive
+
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "#[:location:]"}}
+   afterSubmit="nothing"
+   customValidation="if (!document.getElementById(inputs.location)) {\n  return {\n  location: \"There are no events scheduled in this state.\"\n  }\n}" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: false, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, noSearch: false, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
+{% /formSection %}
+{% /formWrapper %}
 {% /bodySection %}
 
 {% roadtripList endDate="2024-12-31" pageLength=100 /%}
