@@ -50,7 +50,8 @@ Follow our state-by-state guide to find your stop—and if you’ve got an event
 
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "#[:location:]"}}
-   afterSubmit="nothing" %}
+   afterSubmit="nothing"
+   customValidation="let state = inputs.location;\nlet aCheck = document.getElementById(state);\n    if (aCheck) {\n        return true;\n    } else {\n        return `Error: Element with ID \"${id}\" does not exist on this page.`;\n    }" %}
 {% formSection type="waiting" %}
 {% formInput
    fields=[{label: {name: "Location", slug: "location"}, required: false, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "California", value: "california"}, {label: "Florida", value: "florida"}, {label: "New York", value: "new-york"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
