@@ -54,7 +54,7 @@ Follow our state-by-state guide to find your stop—and if you’ve got an event
    customValidation="if (!document.getElementById(inputs.location)) {\n  return {\n  location: \"There are no events scheduled in this state.\"\n  }\n}" %}
 {% formSection type="waiting" %}
 {% formInput
-   fields=[{label: {name: "Location", slug: "location"}, required: false, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "California", value: "california"}, {label: "Florida", value: "florida"}, {label: "New York", value: "new-york"}, {label: "Test", value: "no-test"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
+   fields=[{label: {name: "Location", slug: "location"}, required: false, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, noSearch: false, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
 {% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
