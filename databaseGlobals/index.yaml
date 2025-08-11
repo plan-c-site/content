@@ -18,7 +18,7 @@ clinicTypes:
       - label: 'FDA-approved '
       - label: Medical support
     howDoesThisWork: how-does-this-work-online-clinics
-  - label: International online clinics that mail pills
+  - label: International clinics that mail pills
     keyValue: International online clinic
     singular: International online clinic
     maxVisibleDefault: 2
