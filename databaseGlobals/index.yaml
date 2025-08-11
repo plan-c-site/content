@@ -6,7 +6,7 @@ medicallySafeLabel: Medically very safe, possible legal risk
 howManyPillsPopup: how-many-pills-are-needed
 howManyPillsLabel: How many pills are needed?
 clinicTypes:
-  - label: Online Clinics that mail pills
+  - label: Online clinics that mail pills
     keyValue: Online clinic
     singular: Online clinic
     maxVisibleDefault: 6
@@ -18,7 +18,7 @@ clinicTypes:
       - label: 'FDA-approved '
       - label: Medical support
     howDoesThisWork: how-does-this-work-online-clinics
-  - label: International online clinics
+  - label: International online clinics that mail pills
     keyValue: International online clinic
     singular: International online clinic
     maxVisibleDefault: 2
