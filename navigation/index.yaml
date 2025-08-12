@@ -151,7 +151,7 @@ navBar:
                   page: medical-professional-abortion-services
           - discriminant: link
             value:
-              label: Work with Plan C
+              label: Jobs with Plan C
               action:
                 discriminant: internal
                 value:
