@@ -133,15 +133,7 @@ Articles covering the latest news, legal battles, policy changes, and key discus
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="About Plan C" icon="" %}
-{% inContentButton
-   label="Our history"
-   icon=""
-   size="standard"
-   background="pink"
-   altHoverBackground=""
-   smallShadow=false
-   leftIcon=false
-   action={discriminant: "internal", value: {page: "about", anchor: "our-history"}} /%}
+\
 {% /sectionHeader %}
 
 {% flexSection
@@ -164,5 +156,13 @@ Our vision:&nbsp;A near future in which the ability to end an early pregnancy is
 
 Read more about our work in the&nbsp;{% inlineLink action={discriminant: "external", value: {url: "/2024-annual-report", showPopup: false}} %}2024 Annual Report{% /inlineLink %}.
 {% /bodySection %}
+
+{% narrowBanner
+   icon="arrowRight"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% inlineLink action={discriminant: "internal", value: {page: "about", anchor: "our-history"}} %}Our history{% /inlineLink %}
+{% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
