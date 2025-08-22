@@ -115,7 +115,7 @@ seo:
 
 {% horizontalSplit noHeader=true %}
 {% sectionHeader color="green" title="Give online" icon="" %}
-Make a monthly recurring gift or a one-time donation using the form at the top of this page.
+Make a monthly recurring gift or a one-time donation using the {% inlineLink action={discriminant: "anchor", value: "give-online"} %}form{% /inlineLink %} at the top of this page.
 {% /sectionHeader %}
 
 {% flexSection
@@ -142,17 +142,31 @@ San Francisco, CA 94109
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=true %}
-{% sectionHeader color="green" title="Give online" icon="" %}
-Make a monthly recurring gift or a one-time donation using the form at the top of this page.
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=0
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% tocAnchor
+   slug={name: "Give via DAF", slug: "give-via-daf"}
+   type={discriminant: "toc"} /%}
+
+{% sectionHeader
+   color="pink"
+   title="Give via DAF, employee match or another online giving portal"
+   icon="" %}
+Choose "Possibility Labs" with EIN 85-3989363 and include  "Plan C" in the memo or notes.
 {% /sectionHeader %}
+{% /flexSection %}
 
-{% sectionHeader color="cyan" title="Give by check" icon="" %}
-Please always include our name "Plan C" in the memo line.
-
-Mail to: \
-Plan C c/o Possibility Labs\
-1410 Franklin St #135\
-San Francisco, CA 94109
+{% sectionHeader
+   color="blue"
+   title="Give by wire transfer, stocks or endowment"
+   icon="" %}
+Email&nbsp;{% inlineLink action={discriminant: "mailto", value: "support@plancpills.org"} %}support@plancpills.org{% /inlineLink %} for help.
 {% /sectionHeader %}
 {% /horizontalSplit %}
 
