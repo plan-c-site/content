@@ -114,6 +114,47 @@ seo:
    type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=true %}
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=0
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% tocAnchor
+   slug={name: "Give online", slug: "give-online"}
+   type={discriminant: "toc"} /%}
+
+{% sectionHeader color="green" title="Give online" icon="" %}
+Make a monthly recurring gift or a one-time donation using the form at the top of this page.
+{% /sectionHeader %}
+{% /flexSection %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=0
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% tocAnchor
+   slug={name: "Give by check", slug: "give-by-check"}
+   type={discriminant: "toc"} /%}
+
+{% sectionHeader color="cyan" title="Give by check" icon="" %}
+Please always include our name "Plan C" in the memo line.
+
+Mail to: \
+Plan C c/o Possibility Labs\
+1410 Franklin St #135\
+San Francisco, CA 94109
+{% /sectionHeader %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=true %}
 {% sectionHeader color="green" title="Give online" icon="" %}
 Make a monthly recurring gift or a one-time donation using the form at the top of this page.
 {% /sectionHeader %}
