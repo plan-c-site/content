@@ -3,7 +3,7 @@ support: []
 inPersonClinicResources: []
 medicallySafe: medically-safe-possible-legal-risk
 medicallySafeLabel: Medically very safe, possible legal risk
-howManyPillsPopup: how-many-pills-are-needed
+howManyPillsPopup: pill-examples-online-clinics
 howManyPillsLabel: How many pills are needed?
 clinicTypes:
   - label: Online clinics
