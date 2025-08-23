@@ -29,6 +29,14 @@
 {% /formSection %}
 {% /formWrapper %}
 
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
+   afterSubmit="nothing" %}
+{% formSection type="waiting" %}
+# {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}State{% /dbText %}{% /inlineForm %} abortion pill providers
+{% /formSection %}
+{% /formWrapper %}
+
 {% dbMarkdoc source="Summary" /%}
 
 {% tableOfContents /%}
