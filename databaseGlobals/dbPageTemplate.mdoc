@@ -25,14 +25,6 @@
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
    afterSubmit="nothing" %}
 {% formSection type="waiting" %}
-# Abortion pill providers in{% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}state{% /dbText %}{% /inlineForm %}
-{% /formSection %}
-{% /formWrapper %}
-
-{% formWrapper
-   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
-   afterSubmit="nothing" %}
-{% formSection type="waiting" %}
 # {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}State{% /dbText %}{% /inlineForm %} abortion pill providers
 {% /formSection %}
 {% /formWrapper %}
