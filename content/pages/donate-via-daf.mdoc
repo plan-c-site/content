@@ -92,11 +92,22 @@ seo:
 
 {% textSize textSize="large" inline=false %}Give to Plan C via your Donor Advised Fund. {% /textSize %}
 
-{% textSize textSize="large" inline=false %}Select Possibility Labs as recipient (our Fiscal Sponsor), and add "Plan C: in the memo or notes. Alternatively, use the widget here to connect with your DAF giving platform and complete the transaction.{% /textSize %}
+- {% textSize textSize="large" inline=false %}Select Possibility Labs as recipient (our Fiscal Sponsor), and add "Plan C" in the memo or notes. {% /textSize %}
+- {% textSize textSize="large" inline=false %}Alternatively, use the widget here to connect with your DAF giving platform and complete the transaction.{% /textSize %}
 
 {% textSize textSize="large" inline=false %}Plan C&nbsp;is a nonprofit 501(c)3 initiative. Donations are tax-deductible to the extent of the law. Our fiscal sponsor is&nbsp;{% inlineLink action={discriminant: "external", value: {url: "http://possibilitylabs.org/", showPopup: false}} %}Possibility Labs{% /inlineLink %}, EIN&nbsp;85-3989363.&nbsp;{% /textSize %}
 
-{% textSize textSize="large" inline=false %}To contact us directly, email us at&nbsp;{% inlineLink action={discriminant: "mailto", value: "support@plancpills.org"} %}support@plancpills.org{% /inlineLink %}. To return to the Donate page, {% inlineLink action={discriminant: "internal", value: {page: "donate"}} %}click here{% /inlineLink %}.{% /textSize %}
+{% textSize textSize="large" inline=false %}To contact us directly, email us at&nbsp;{% inlineLink action={discriminant: "mailto", value: "support@plancpills.org"} %}support@plancpills.org{% /inlineLink %}.{% /textSize %}
+
+{% inContentButton
+   label="Go back"
+   icon="arrowLeft"
+   size="standard"
+   background="beige"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=true
+   action={discriminant: "internal", value: {page: "donate"}} /%}
 {% /bodySection %}
 
 {% bodySection
