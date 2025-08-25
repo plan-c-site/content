@@ -3,7 +3,7 @@ import path from "node:path";
 import fs from "node:fs/promises";
 
 async function Translate() {
-  const test = path.join(__dirname, "./.content/test-file");
+  const test = path.join(__dirname, "./test-file");
   await fs.writeFile(test, `Currently: ${new Date().toISOString()}`);
 }
 
