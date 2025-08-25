@@ -10,6 +10,8 @@ jobs:
   translate:
     runs-on: ubuntu-latest
 
+    if: !startsWith(github.event.head_commit.message , "(translate)")
+
     env:
       WEGLOT_API_KEY: ${{secrets.WEGLOT_API_KEY}}
 
