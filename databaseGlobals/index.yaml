@@ -6,9 +6,9 @@ medicallySafeLabel: Medically very safe, possible legal risk
 howManyPillsPopup: pill-examples-online-clinics
 howManyPillsLabel: How many pills are needed?
 clinicTypes:
-  - label: Online clinics
+  - label: U.S. online clinics
     keyValue: Online clinic
-    singular: Online clinic
+    singular: U.S. online clinic
     maxVisibleDefault: 6
     color: cyan
     icon: mousePointer
