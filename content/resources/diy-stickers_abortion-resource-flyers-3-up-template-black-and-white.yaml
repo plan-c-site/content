@@ -12,3 +12,10 @@ buttonAction:
   value: ResourceList-3up-bw
 buttonUrl:
   discriminant: url
+es:
+  summary: >-
+    3 por página, imprimir en papel de 8,5 x 11" o cartulina y recortar a 3,66 x
+    8,5" (en 3 columnas)
+  __summary: byclMiJ6NJpS4dIqgb87BztqdPoM452qPW5rurYvObw=
+  buttonText: Descargar PDF
+  __buttonText: YYO+CIPSqJxx7oZWl2fbplzXSU6K99Js7z145rqUPZY=

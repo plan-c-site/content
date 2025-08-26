@@ -14,3 +14,14 @@ buttonIcon: phone
 buttonUrl:
   discriminant: url
   value: https://api.whatsapp.com/send?phone=18332212559
+es:
+  summary: >-
+    Ally es un chatbot de aborto seguro accesible 24/7 a través de WhatsApp. Las
+    usuarias pueden acceder instantáneamente a protocolos de aborto médico,
+    consideraciones de atención pre y postaborto, enlaces a anticonceptivos y
+    recursos personalizados específicos de cada país para autogestionar su
+    aborto de forma segura. Ally también conecta a las usuarias con apoyo
+    psicológico en línea.
+  __summary: bppdwStOhSEBQ414NX7mIEv/8PnzJnn9bh0JUjCqaM0=
+  buttonText: WhatsApp
+  __buttonText: akDt8fyHop8kOn7v2+1X0Zv+FqsuA5164aRMCXKX4vM=

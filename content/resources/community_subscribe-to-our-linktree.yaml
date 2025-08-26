@@ -8,3 +8,12 @@ buttonIcon: arrowUpRight
 buttonUrl:
   discriminant: url
   value: https://linktr.ee/planc_community
+es:
+  heading: Suscríbase a nuestro Linktree
+  __heading: 8YXx+6EIOiQoaSlAGLQLXS6ZKBh8mwOR1zIDt6TCWsY=
+  summary: >-
+    Una de las formas más sencillas de mantenerse en contacto con la comunidad
+    Plan C.
+  __summary: S27aJbePBsN7XxliLI/7t1V4sS615MyOe1O0Q6ngzEw=
+  buttonText: Plan C Linktree
+  __buttonText: FPjVB92I7VVvAuiSf7ExeI5PZ2crLIa3G2l9a9JsGak=

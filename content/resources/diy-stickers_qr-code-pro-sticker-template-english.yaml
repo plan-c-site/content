@@ -10,3 +10,8 @@ buttonAction:
   value: QR-Pro-StickerSheet-English
 buttonUrl:
   discriminant: url
+es:
+  summary: Utiliza esta plantilla para encargar pegatinas a un impresor profesional.
+  __summary: AEWp8/E3CS7w9HEQ+fADj6wKafvHBNCxpDBew6PCYSI=
+  buttonText: Descargar PDF
+  __buttonText: YYO+CIPSqJxx7oZWl2fbplzXSU6K99Js7z145rqUPZY=

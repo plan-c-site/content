@@ -10,3 +10,8 @@ buttonAction:
   value: ResourceList-fullpage-color
 buttonUrl:
   discriminant: url
+es:
+  summary: 1 por página, imprimir en 8,5 x 11" en papel o cartulina.
+  __summary: G20/nnIo0TYa3PhOge2VhpFF42XaS/JZmaR3j1apWZM=
+  buttonText: Descargar PDF
+  __buttonText: YYO+CIPSqJxx7oZWl2fbplzXSU6K99Js7z145rqUPZY=
