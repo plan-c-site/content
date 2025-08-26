@@ -25,7 +25,7 @@
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
    afterSubmit="nothing" %}
 {% formSection type="waiting" %}
-# Where people get abortion pills in {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}State{% /dbText %}{% /inlineForm %}
+# Abortion pill providers in {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}State{% /dbText %}{% /inlineForm %}
 {% /formSection %}
 {% /formWrapper %}
 
