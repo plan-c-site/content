@@ -12,7 +12,7 @@ async function Translate() {
   await translateAllYaml(
     path.join(__dirname, "../content/resources"),
     ["heading", "summary", "buttonText"],
-    { url: "/articles" }
+    { url: "/resources" }
   );
 }
 
