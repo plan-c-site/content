@@ -123,6 +123,11 @@ export async function translateAllYaml<KEYS extends string>(
       }))
     ),
   };
+  if (body.words.length === 0) {
+    console.log(`No new translations in ${url}`);
+    return;
+  }
+  console.log(`Translating ${body.words.length} values`);
   const result = await fetch(WEGLOT_URL, {
     headers: {
       "Content-Type": "application/json",
