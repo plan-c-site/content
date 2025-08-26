@@ -104,20 +104,24 @@ seo:
    width="default"
    color="blue"
    textSize="medium" %}
+{% tocAnchor
+   slug={name: "Give online", slug: "give-online"}
+   type={discriminant: "toc"} /%}
+
 {% rawHtml
    html="<script \n    src=\"https://cdn.virtuoussoftware.com/virtuous.embed.min.js\" \n    data-vform=\"6C1D0B07-D9E3-4406-90FE-62D2BB06A9E4\" \n    data-orgId=\"7580\" \n    data-isGiving=\"true\"\n    data-merchantType=\"StripeUnified\"\n    data-dependencies=\"[]\">\n</script>" /%}
 {% /bodySection %}
 {% /horizontalSplit %}
-
-{% tocAnchor
-   slug={name: "How to donate", slug: "how-to-donate"}
-   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=true %}
 {% sectionHeader color="green" title="Give online" icon="" %}
 Make a monthly recurring gift or a one-time donation using the form at the top of this page. You will receive a tax receipt in your email inbox (or by mail,if
 
 If you need to make changes to your monthly gift, email us at {% inlineLink action={discriminant: "mailto", value: "support@plancpills.org"} %}support@plancpills.org{% /inlineLink %}.
+
+{% tocAnchor
+   slug={name: "Give by check", slug: "give-by-check"}
+   type={discriminant: "toc"} /%}
 {% /sectionHeader %}
 
 {% sectionHeader color="cyan" title="Give by check" icon="" %}
@@ -131,6 +135,14 @@ San Francisco, CA 94109
 A note that checks may take 3-4 weeks to process. Contact us at {% inlineLink action={discriminant: "mailto", value: "support@plancpills.org"} %}support@plancpills.org{% /inlineLink %} to check on the status of your donation check.
 {% /sectionHeader %}
 {% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "Give via DAF", slug: "give-via-daf"}
+   type={discriminant: "toc"} /%}
+
+{% tocAnchor
+   slug={name: "Give by wire transfer, stocks or endowment", slug: "give-by-wire-transfer-stocks-or-endowment"}
+   type={discriminant: "toc"} /%}
 
 {% horizontalSplit noHeader=true %}
 {% sectionHeader
@@ -172,10 +184,6 @@ Over the past decade, we have reached tens of millions of people with informatio
 All of our work fits into two main goals:&nbsp;that People Know (about pills)&nbsp;and that People Have Access (to pills). View our 2024 Annual Report here.
 {% /bodySection %}
 
-{% tocAnchor
-   slug={name: "Donor testimonials", slug: "donor-testimonials"}
-   type={discriminant: "toc"} /%}
-
 {% cardLayoutSection color="blue" minColumnWidth=24 %}
 {% testimonialSection
    testimonial="access-is-everything-thank-you-this-can-change-lives-for-the-better" /%}
@@ -189,10 +197,6 @@ All of our work fits into two main goals:&nbsp;that People Know (about pills)&nb
 {% testimonialSection
    testimonial="your-approach-is-evidence-based-and-innovative-and-your-organization-small-and-bold-the-kind-of-organization-where-a-small-family-fund-donation-can-make-a-big-difference" /%}
 {% /cardLayoutSection %}
-
-{% tocAnchor
-   slug={name: "Past funders", slug: "past-funders"}
-   type={discriminant: "toc"} /%}
 
 {% logoBanner
    title="Past funders include"
