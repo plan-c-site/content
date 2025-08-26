@@ -9,6 +9,11 @@ async function Translate() {
     ["title", "summary"],
     { url: "/articles" }
   );
+  await translateAllYaml(
+    path.join(__dirname, "../content/resources"),
+    ["heading", "summary", "buttonText"],
+    { url: "/articles" }
+  );
 }
 
 Translate().then(() => console.log("Finished Translation"));
