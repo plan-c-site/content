@@ -11,3 +11,12 @@ iconColor: green
 buttonIcon: arrowRight
 buttonUrl:
   discriminant: none
+es:
+  heading: Asistencia automatizada
+  __heading: GRNC59fAIjCJMsqW8M9mOYoUNRFbYQzksbxA8kLlsD8=
+  summary: >-
+    Un chatbot gratuito y seguro que ayuda a identificar clínicas locales
+    cercanas, proveedores en línea y servicios de apoyo.
+  __summary: irDci3dR2f4hFdSg/2Cu7paizuKFkZS/eew1PeeyUpU=
+  buttonText: Visitar el sitio web
+  __buttonText: Fb90cmxrQBdf8K+GmHofdZaxaELvJgF9w0rVabdJWpU=

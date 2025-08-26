@@ -10,3 +10,8 @@ buttonAction:
   value: QR_DIY_StickerSheet_English
 buttonUrl:
   discriminant: url
+es:
+  summary: Utiliza esta plantilla para imprimir y recortar en casa con papel adhesivo.
+  __summary: pvZzUEiO20q4qfVIaKAt7+WezTSR+c/+gblOId3T7vg=
+  buttonText: Descargar PDF
+  __buttonText: YYO+CIPSqJxx7oZWl2fbplzXSU6K99Js7z145rqUPZY=

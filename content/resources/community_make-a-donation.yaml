@@ -14,3 +14,13 @@ buttonAction:
 buttonUrl:
   discriminant: url
   value: /donate
+es:
+  heading: Hacer un donativo
+  __heading: 0EpCL4i0++bZ7RyyJEB+2oGwAE4ZKsbjmbyXJZ+tmCA=
+  summary: >-
+    Todas las donaciones apoyan directamente nuestras investigaciones, proyectos
+    piloto y campañas de comunicación para cambiar el panorama del acceso al
+    aborto en Estados Unidos.
+  __summary: 7FvQpeCOi18HkLzfnDgitmauq//AmJhJUUShWznunpY=
+  buttonText: Donar ahora
+  __buttonText: U7UGhfclCkanSzkZn5NU00JycqSXOr5CALHCmgtHG6c=
