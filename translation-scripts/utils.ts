@@ -92,12 +92,12 @@ export async function translateAllYaml<KEYS extends string>(
             .createHash("sha256")
             .update(parsed[key])
             .digest("base64");
-          if (parsed.es && parsed.es[key] && parsed.es["__" + key] === hash) {
-            es[key] = parsed.es[key];
-            es["__" + key] = parsed.es["__" + key];
-          } else {
-            toTranslate.push({ path, key, english: parsed[key], hash });
-          }
+          //   if (parsed.es && parsed.es[key] && parsed.es["__" + key] === hash) {
+          //     es[key] = parsed.es[key];
+          //     es["__" + key] = parsed.es["__" + key];
+          //   } else {
+          toTranslate.push({ path, key, english: parsed[key], hash });
+          //   }
         }
       }
       return {
@@ -118,7 +118,7 @@ export async function translateAllYaml<KEYS extends string>(
     request_url: u,
     words: files.flatMap((w) =>
       w.toTranslate.map((k) => ({
-        w: k,
+        w: k.english,
         t,
       }))
     ),
