@@ -18,9 +18,9 @@ clinicTypes:
       - label: 'FDA-approved '
       - label: Medical support
     howDoesThisWork: how-does-this-work-online-clinics
-  - label: International online clinics
+  - label: Other online clinics
     keyValue: International online clinic
-    singular: International online clinic
+    singular: Other online clinic
     maxVisibleDefault: 2
     color: blue
     icon: globe
