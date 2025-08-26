@@ -1,10 +1,14 @@
 import "dotenv/config";
 import path from "node:path";
-import fs from "node:fs/promises";
+import { translateAllYaml } from "./utils";
 
 async function Translate() {
-  const test = path.join(__dirname, "./test-file");
-  await fs.writeFile(test, `Currently: ${new Date().toISOString()}`);
+  console.log("Translating Articles");
+  await translateAllYaml(
+    path.join(__dirname, "../content/articles"),
+    ["title", "summary"],
+    { url: "/articles" }
+  );
 }
 
 Translate().then(() => console.log("Finished Translation"));
