@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import { glob } from "glob";
 import yaml from "js-yaml";
 import crypto from "node:crypto";
 
@@ -71,10 +72,7 @@ export async function translateAllYaml<KEYS extends string>(
   keys: KEYS[],
   { url, type }: { url?: string; type?: keyof typeof textTypes }
 ) {
-  const filePaths: string[] = [];
-  for await (const p of fs.glob(folder + "/*.yaml")) {
-    filePaths.push(p);
-  }
+  const filePaths: string[] = await glob(folder + "/*.yaml");
   const files = await Promise.all(
     filePaths.map(async (path) => {
       const content = await fs.readFile(path, { encoding: "utf-8" });
