@@ -36,9 +36,16 @@ function extractObjectValuesForTranslation<T extends object>(
     return keys.flatMap((key) => {
       if ("container" in key && typeof value[key.key] === "object") {
         if (key.container === "object") {
-          return extractObjectValuesForTranslation([value[key.key]], key.keys);
+          const v = extractObjectValuesForTranslation(
+            [value[key.key]],
+            key.keys
+          );
+          console.log("Extracted for object", v);
+          return v;
         } else if (key.container === "array" && Array.isArray(value[key.key])) {
-          return extractObjectValuesForTranslation(value[key.key], key.keys);
+          const v = extractObjectValuesForTranslation(value[key.key], key.keys);
+          console.log("Extracted for array", v);
+          return v;
         }
         return extractObjectValuesForTranslation(
           Object.keys(value[key.key]).map((v) => value[key.key][v]),
