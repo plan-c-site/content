@@ -6,23 +6,23 @@ async function Translate() {
   console.log("Translating Articles");
   await translateAllYaml(
     path.join(__dirname, "../content/articles"),
-    ["title", "summary"],
+    [{ key: "title" }, { key: "summary" }],
     { url: "/articles" }
   );
   await translateAllYaml(
     path.join(__dirname, "../content/resources"),
-    ["heading", "summary", "buttonText"],
+    [{ key: "heading" }, { key: "summary" }, { key: "buttonText" }],
     { url: "/resources" }
   );
   await translateAllYaml(
     path.join(__dirname, "../content/testimonials"),
-    ["testimonial", "source"],
+    [{ key: "testimonial" }, { key: "source" }],
     { url: "/testimonials" }
   );
 
   await translateAllYaml(
     path.join(__dirname, "../databaseGlobals"),
-    ["medicallySafeLabel", "howManyPillsLabel"],
+    [{ key: "medicallySafeLabel" }, { key: "howManyPillsLabel" }],
     { url: "/databaseGlobals" }
   );
 }
