@@ -23,7 +23,7 @@ async function Translate() {
   await translateAllYaml(
     path.join(__dirname, "../content/databaseGlobals"),
     ["medicallySafeLabel", "howManyPillsLabel"],
-    { url: "/testimonials" }
+    { url: "/databaseGlobals" }
   );
 }
 
