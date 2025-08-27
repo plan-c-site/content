@@ -19,6 +19,12 @@ async function Translate() {
     ["testimonial", "source"],
     { url: "/testimonials" }
   );
+
+  await translateAllYaml(
+    path.join(__dirname, "../content/databaseGlobals"),
+    ["medicallySafeLabel", "howManyPillsLabel"],
+    { url: "/testimonials" }
+  );
 }
 
 Translate().then(() => console.log("Finished Translation"));
