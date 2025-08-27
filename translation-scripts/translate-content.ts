@@ -22,7 +22,15 @@ async function Translate() {
 
   await translateAllYaml(
     path.join(__dirname, "../databaseGlobals"),
-    [{ key: "medicallySafeLabel" }, { key: "howManyPillsLabel" }],
+    [
+      { key: "medicallySafeLabel" },
+      { key: "howManyPillsLabel" },
+      {
+        key: "clinicTypes",
+        keys: [{ key: "label" }, { key: "singular" }],
+        container: "array",
+      },
+    ],
     { url: "/databaseGlobals" }
   );
 }
