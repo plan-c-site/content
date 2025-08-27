@@ -21,7 +21,7 @@ async function Translate() {
   );
 
   await translateAllYaml(
-    path.join(__dirname, "../content/databaseGlobals"),
+    path.join(__dirname, "../databaseGlobals"),
     ["medicallySafeLabel", "howManyPillsLabel"],
     { url: "/databaseGlobals" }
   );
