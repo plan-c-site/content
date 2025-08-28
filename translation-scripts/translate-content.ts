@@ -27,8 +27,17 @@ async function Translate() {
       { key: "howManyPillsLabel" },
       {
         key: "clinicTypes",
-        keys: [{ key: "label" }, { key: "singular" }],
+        keys: [
+          { key: "label" },
+          { key: "singular" },
+          { key: "labels", container: "array", keys: [{ key: "label" }] },
+        ],
         container: "array",
+      },
+      {
+        key: "filterFields",
+        container: "array",
+        keys: [{ key: "label" }],
       },
     ],
     { url: "/databaseGlobals" }
