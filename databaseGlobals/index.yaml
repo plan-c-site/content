@@ -14,9 +14,21 @@ clinicTypes:
     icon: mousePointer
     labels:
       - label: 'Price:'
+        es:
+          label: 'Precio:'
+          __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
       - label: 'Delivery:'
+        es:
+          label: 'Entrega:'
+          __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: 'FDA-approved '
+        es:
+          label: 'Aprobado por la FDA '
+          __label: 4eN9tF1jbkqja/C8ijo06GDOO+8VpyB6WWA+/5PfbMs=
       - label: Medical support
+        es:
+          label: Asistencia médica
+          __label: //U8H6EehYV7ubJvO6O3yhyHiEOnM34LbHqyfD5HP0I=
     howDoesThisWork: how-does-this-work-online-clinics
     es:
       label: Clínicas en línea
@@ -31,9 +43,21 @@ clinicTypes:
     icon: globe
     labels:
       - label: 'Price:'
+        es:
+          label: 'Precio:'
+          __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
       - label: 'Delivery:'
+        es:
+          label: 'Entrega:'
+          __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: FDA-approved
+        es:
+          label: Aprobado por la FDA
+          __label: CYBqONC2yqBTl2hmjxKWURS9Tq+hpw7y8z9OyikHB7I=
       - label: Medical support
+        es:
+          label: Asistencia médica
+          __label: //U8H6EehYV7ubJvO6O3yhyHiEOnM34LbHqyfD5HP0I=
     howDoesThisWork: how-does-this-work-international-online-clinics
     es:
       label: Otras clínicas en línea
@@ -48,9 +72,21 @@ clinicTypes:
     icon: heartHandshake
     labels:
       - label: 'Price:'
+        es:
+          label: 'Precio:'
+          __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
       - label: 'Delivery:'
+        es:
+          label: 'Entrega:'
+          __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
+        es:
+          label: Genérico
+          __label: AijG1I7PkrkAkpdEANvzkHtXrRrn245/0q4IUeO6gHk=
       - label: Peer support
+        es:
+          label: Apoyo entre iguales
+          __label: efajF1PZJh1IUHMAxpNluqcEQa1UbbeAN7tnPpIq/Yg=
     howDoesThisWork: how-does-this-work-community-networks
     es:
       label: Redes comunitarias
@@ -65,9 +101,21 @@ clinicTypes:
     icon: shoppingCart
     labels:
       - label: 'Price:'
+        es:
+          label: 'Precio:'
+          __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
       - label: 'Delivery:'
+        es:
+          label: 'Entrega:'
+          __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
+        es:
+          label: Genérico
+          __label: AijG1I7PkrkAkpdEANvzkHtXrRrn245/0q4IUeO6gHk=
       - label: No support
+        es:
+          label: Ninguna ayuda
+          __label: 4jEtwIbv71UkxIu0wSIeFTf2ePq8gzOlma4d/S6gDXk=
     howDoesThisWork: how-does-this-work-websites-that-sell-pills
     es:
       label: Sitios web que venden pastillas
@@ -91,6 +139,9 @@ filterFields:
           invert: false
     helpPopup:
       discriminant: false
+    es:
+      label: Asistencia financiera
+      __label: NNhCXeq24o/MaHCKtZ/KLsYfmGL+tP4YrrjNbq4TJ4g=
   - field: Services
     label: Service options
     selectType:
@@ -105,6 +156,9 @@ filterFields:
           overrideField: Provider Interaction
     helpPopup:
       discriminant: false
+    es:
+      label: Opciones de servicio
+      __label: oea+nl4av4ejmhIfxvsdqAnafLcoKXe1T6UAlZ37nYg=
   - field: Age minimum
     label: Ages served
     selectType:
@@ -122,6 +176,9 @@ filterFields:
           - 18
     helpPopup:
       discriminant: false
+    es:
+      label: Edades atendidas
+      __label: Jc5ro9QseSC1mn0cs6HM3VchrSSLn46Lev124/MhW5E=
   - field: Languages
     label: Language
     selectType:
@@ -144,6 +201,9 @@ filterFields:
           invert: false
     helpPopup:
       discriminant: false
+    es:
+      label: Idioma
+      __label: pP5lJk7327ONEEsegeszUPMULz0W8yvew5sdm0LBuNE=
   - field: Provider identity
     label: Provider identity
     selectType:
@@ -163,6 +223,9 @@ filterFields:
           invert: false
     helpPopup:
       discriminant: false
+    es:
+      label: Identidad del proveedor
+      __label: ZW7v2QuSNkbBwSlVyFLUGJkjzr2XGml0wjbNfQwDCI0=
   - field: Gestational age limit
     label: Weeks of pregnancy
     selectType:
@@ -182,6 +245,9 @@ filterFields:
           - 14
     helpPopup:
       discriminant: false
+    es:
+      label: Semanas de embarazo
+      __label: f3bw9iZtQnQygOGqWTfrU/kb55IJe7iM/V16JpMnO9k=
 linkToStudies:
   color: beige
   icon: arrowUp
