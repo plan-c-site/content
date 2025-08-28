@@ -40,22 +40,16 @@ function extractObjectValuesForTranslation<T extends object>(
             [value[key.key]],
             key.keys
           );
-          console.log("Extracted for object", v);
           return v;
         } else if (key.container === "array" && Array.isArray(value[key.key])) {
           const v = extractObjectValuesForTranslation(value[key.key], key.keys);
-          console.log("Extracted for array", v);
           return v;
         }
         return extractObjectValuesForTranslation(
           Object.keys(value[key.key]).map((v) => value[key.key][v]),
           key.keys
         );
-      } else if (
-        "type" in key &&
-        key.key in value &&
-        typeof value[key.key] === "string"
-      ) {
+      } else if (key.key in value && typeof value[key.key] === "string") {
         const hash = crypto
           .createHash("sha256")
           .update(value[key.key])
@@ -66,7 +60,7 @@ function extractObjectValuesForTranslation<T extends object>(
         return [
           {
             w: value[key.key],
-            t: textTypes[key.type || "text"],
+            t: textTypes[("type" in key && key.type) || "text"],
             hash,
           },
         ];
@@ -100,9 +94,12 @@ function setTranslatedValues<T extends object>(
   startAt: number
 ): { next: number; result: object[] } {
   let next = startAt;
-  const result = items.map((value) => {
+  const result = items.map((value, i) => {
     const oldEs: Record<string, string> =
-      "es" in value && value.es && typeof value.es === "object"
+      typeof value === "object" &&
+      "es" in value &&
+      value.es &&
+      typeof value.es === "object"
         ? (value.es as Record<string, string>)
         : {};
     const es: Record<string, string> = {};
@@ -110,50 +107,45 @@ function setTranslatedValues<T extends object>(
       ...value,
     };
     for (const key of keys) {
-      if ("container" in key && typeof value[key.key] === "object") {
+      const val = value[key.key];
+
+      console.log("KEY: ", i, key);
+      console.log("VAL: ", i, typeof val);
+      if ("container" in key && typeof val === "object") {
         if (key.container === "object") {
-          const v = setTranslatedValues(
-            [value[key.key]],
-            key.keys,
-            translations,
-            next
-          );
+          console.log("In Object", i);
+          const v = setTranslatedValues([val], key.keys, translations, next);
           next = v.next;
           nv[key.key] = v.result[0];
-        } else if (key.container === "array" && Array.isArray(value[key.key])) {
+        } else if (key.container === "array" && Array.isArray(val)) {
+          const v = setTranslatedValues(val, key.keys, translations, next);
+          next = v.next;
+          nv[key.key] = v.result;
+          console.log("ARRAY RESULTS", i);
+        } else {
+          console.log("In Record", i);
+          const children = Object.keys(val);
           const v = setTranslatedValues(
-            value[key.key],
+            children.map((v) => val[v]),
             key.keys,
             translations,
             next
           );
           next = v.next;
-          nv[key.key] = result;
+          const r = {};
+          for (const e of v.result.entries()) {
+            r[children[e[0]]] = e[1];
+          }
+          nv[key.key] = r;
         }
-        const children = Object.keys(value[key.key]);
-        const v = setTranslatedValues(
-          children.map((v) => value[key.key][v]),
-          key.keys,
-          translations,
-          next
-        );
-        next = v.next;
-        const r = {};
-        for (const e of v.result.entries()) {
-          r[children[e[0]]] = e[1];
-        }
-        nv[key.key] = r;
-      } else if (
-        "type" in key &&
-        key.key in value &&
-        typeof value[key.key] === "string"
-      ) {
+      } else if (key.key in value && typeof val === "string") {
+        console.log("Handling String", i);
         const translation = translations[next];
         next++;
         if (typeof translation === "string") {
           es[key.key] = oldEs[key.key];
           es["__" + key.key] = translation;
-        } else {
+        } else if (translation) {
           es[key.key] = translation.w;
           es["__" + key.key] = translation.hash;
         }

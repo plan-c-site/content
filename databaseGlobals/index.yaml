@@ -18,6 +18,11 @@ clinicTypes:
       - label: 'FDA-approved '
       - label: Medical support
     howDoesThisWork: how-does-this-work-online-clinics
+    es:
+      label: Clínicas en línea
+      __label: zw21zoV16il9nQh/Eyto227a/EHTFg9STosGyUkU9Dk=
+      singular: Clínica en línea
+      __singular: IGhrZsS0sozPE3QDM+b4Ve5BYLIb0Ex87SVXiSVpy2g=
   - label: Other online clinics
     keyValue: International online clinic
     singular: Other online clinic
@@ -30,6 +35,11 @@ clinicTypes:
       - label: FDA-approved
       - label: Medical support
     howDoesThisWork: how-does-this-work-international-online-clinics
+    es:
+      label: Otras clínicas en línea
+      __label: Jb00eFJ3DB1rWFd5LVhgbLEOAyoC9SGS1ANKOCM+5B4=
+      singular: Otra clínica en línea
+      __singular: 7FBG9GIt79OWigyBMNr9fBpNqhTQHk0MCeUqlkWrGfY=
   - label: Community networks
     keyValue: Community network
     singular: Community network
@@ -42,6 +52,11 @@ clinicTypes:
       - label: Generic
       - label: Peer support
     howDoesThisWork: how-does-this-work-community-networks
+    es:
+      label: Redes comunitarias
+      __label: GZU6raPLi0/RZ7mbWiaSDPLzQT10wn/jojUZGLRqKn4=
+      singular: Red comunitaria
+      __singular: 5Esdx5ft+qkCg+UE++XBP72O3KRgkbijB0j/GEhrZR8=
   - label: Websites that sell pills
     keyValue: Website that sells pills
     singular: Website that sells pills
@@ -54,6 +69,11 @@ clinicTypes:
       - label: Generic
       - label: No support
     howDoesThisWork: how-does-this-work-websites-that-sell-pills
+    es:
+      label: Sitios web que venden pastillas
+      __label: Jgjbu7xUoByUp2VC/amDZqKSLS9tNXbii5lbck05DBg=
+      singular: Sitio web que vende píldoras
+      __singular: 9LAC7LJ8gZTbznvVoouALLoq1hn95GHcPPqXpvQkjdw=
 filterFields:
   - field: Financial aid
     label: Financial Assistance
