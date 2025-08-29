@@ -13,17 +13,17 @@ clinicTypes:
     color: cyan
     icon: mousePointer
     labels:
-      - label: 'Price:'
+      - label: "Price:"
         es:
-          label: 'Precio:'
+          label: "Precio:"
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: 'Delivery:'
+      - label: "Delivery:"
         es:
-          label: 'Entrega:'
+          label: "Entrega:"
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
-      - label: 'FDA-approved '
+      - label: "FDA-approved "
         es:
-          label: 'Aprobado por la FDA '
+          label: "Aprobado por la FDA "
           __label: 4eN9tF1jbkqja/C8ijo06GDOO+8VpyB6WWA+/5PfbMs=
       - label: Medical support
         es:
@@ -42,13 +42,13 @@ clinicTypes:
     color: blue
     icon: globe
     labels:
-      - label: 'Price:'
+      - label: "Price:"
         es:
-          label: 'Precio:'
+          label: "Precio:"
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: 'Delivery:'
+      - label: "Delivery:"
         es:
-          label: 'Entrega:'
+          label: "Entrega:"
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: FDA-approved
         es:
@@ -71,13 +71,13 @@ clinicTypes:
     color: pink
     icon: heartHandshake
     labels:
-      - label: 'Price:'
+      - label: "Price:"
         es:
-          label: 'Precio:'
+          label: "Precio:"
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: 'Delivery:'
+      - label: "Delivery:"
         es:
-          label: 'Entrega:'
+          label: "Entrega:"
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
         es:
@@ -100,13 +100,13 @@ clinicTypes:
     color: red
     icon: shoppingCart
     labels:
-      - label: 'Price:'
+      - label: "Price:"
         es:
-          label: 'Precio:'
+          label: "Precio:"
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: 'Delivery:'
+      - label: "Delivery:"
         es:
-          label: 'Entrega:'
+          label: "Entrega:"
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
         es:
@@ -203,6 +203,7 @@ filterFields:
       discriminant: single
       value:
         - value: English
+          label: English
           invert: false
           es: {}
         - value: Spanish
@@ -218,9 +219,11 @@ filterFields:
             label: हिन्दी
             __label: ndsSr4RX1jXsFXc/kFyoWHdy72TV7L4k2apOqyei55s=
         - value: Hmong-Mien
+          label: Hmong-Mein
           invert: false
           es: {}
         - value: Punjabi
+          label: Punjabi
           invert: false
           es: {}
         - value: Portuguese
@@ -240,21 +243,27 @@ filterFields:
       discriminant: single
       value:
         - value: Women
+          label: Women
           invert: false
           es: {}
         - value: BIPOC
+          label: BIPOC
           invert: false
           es: {}
         - value: LGBTQ+
+          label: LGBTQ+
           invert: false
           es: {}
         - value: Veteran
+          label: Veteran
           invert: false
           es: {}
         - value: Indigenous
+          label: Indigenous
           invert: false
           es: {}
         - value: Disabled
+          label: Disabled
           invert: false
           es: {}
     helpPopup:
@@ -270,7 +279,7 @@ filterFields:
         direction: gte
         zeroIsAny: true
         emptyIsAny: true
-        numberLabel: '%% weeks or less'
+        numberLabel: "%% weeks or less"
         options:
           - 8
           - 9
@@ -280,7 +289,7 @@ filterFields:
           - 13
           - 14
         es:
-          numberLabel: '%% semanas o menos'
+          numberLabel: "%% semanas o menos"
           __numberLabel: EcY/7uk+lPaZKoCoAaVBosxKR8k0pmN7iPJmT2LLhxw=
     helpPopup:
       discriminant: false
@@ -299,7 +308,7 @@ seo:
     Learn how to get an abortion pill in %Name%. Compare online providers,
     prices and delivery times for abortion pills by mail in this Plan C Guide.
   image:
-    discriminant: ''
+    discriminant: ""
   customSchema: >-
     {"@context":"https://schema.org",
 
