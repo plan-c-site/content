@@ -189,6 +189,9 @@ filterFields:
           - 16
           - 17
           - 18
+        es:
+          numberLabel: Edades %%+
+          __numberLabel: bUeHPBxlA1by5bGujXpnKZo19JS0aTwx0y8DHTeIG7s=
     helpPopup:
       discriminant: false
     es:
@@ -276,6 +279,9 @@ filterFields:
           - 12
           - 13
           - 14
+        es:
+          numberLabel: '%% semanas o menos'
+          __numberLabel: EcY/7uk+lPaZKoCoAaVBosxKR8k0pmN7iPJmT2LLhxw=
     helpPopup:
       discriminant: false
     es:

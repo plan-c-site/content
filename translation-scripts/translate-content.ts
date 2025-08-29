@@ -55,6 +55,7 @@ async function Translate() {
             key: "selectType",
             condition: "number",
             keys: [{ key: "anyLabel" }, { key: "numberLabel" }],
+            container: "object",
           },
         ],
       },
