@@ -408,7 +408,12 @@ export async function translateMardown(
   });
 
   if (!result.ok) {
-    throw new Error("Failed to get translation");
+    throw new Error(
+      "Failed to get translation: " +
+        (await result.text()) +
+        " - " +
+        result.status
+    );
   }
   const parsed = (await result.json()) as { to_words: string[] };
   console.log("Translated - ", url);

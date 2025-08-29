@@ -173,6 +173,34 @@ async function Translate() {
     ],
     { url_base: "/pages" }
   );
+  await translateMarkdownRoots(
+    path.join(__dirname, "../content/faq"),
+    [{ key: "question" }],
+    { url_base: "/faq" }
+  );
+  await translateMarkdownRoots(
+    path.join(__dirname, "../content/popups"),
+    [{ key: "title" }],
+    { url_base: "/popups" }
+  );
+  await translateMarkdownRoots(
+    path.join(__dirname, "../content/posts"),
+    [
+      { key: "title" },
+      { key: "summary" },
+      {
+        key: "seo",
+        keys: SeoFields,
+        container: "object",
+      },
+    ],
+    { url_base: "/posts" }
+  );
+  await translateMarkdownRoots(
+    path.join(__dirname, "../content/roadTrip"),
+    [{ key: "title" }, { key: "city" }],
+    { url_base: "/roadTrip" }
+  );
 }
 
 Translate().then(() => console.log("Finished Translation"));
