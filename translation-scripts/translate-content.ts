@@ -163,7 +163,14 @@ async function Translate() {
 
   await translateMarkdownRoots(
     path.join(__dirname, "../content/pages"),
-    [{ key: "title" }],
+    [
+      { key: "title" },
+      {
+        key: "seo",
+        keys: SeoFields,
+        container: "object",
+      },
+    ],
     { url_base: "/pages" }
   );
 }
