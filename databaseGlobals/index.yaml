@@ -32,8 +32,8 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-online-clinics
     es:
       label: Clínicas en línea
-      __label: zw21zoV16il9nQh/Eyto227a/EHTFg9STosGyUkU9Dk=
       singular: Clínica en línea
+      __label: zw21zoV16il9nQh/Eyto227a/EHTFg9STosGyUkU9Dk=
       __singular: IGhrZsS0sozPE3QDM+b4Ve5BYLIb0Ex87SVXiSVpy2g=
   - label: Other online clinics
     keyValue: International online clinic
@@ -61,8 +61,8 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-international-online-clinics
     es:
       label: Otras clínicas en línea
-      __label: Jb00eFJ3DB1rWFd5LVhgbLEOAyoC9SGS1ANKOCM+5B4=
       singular: Otra clínica en línea
+      __label: Jb00eFJ3DB1rWFd5LVhgbLEOAyoC9SGS1ANKOCM+5B4=
       __singular: 7FBG9GIt79OWigyBMNr9fBpNqhTQHk0MCeUqlkWrGfY=
   - label: Community networks
     keyValue: Community network
@@ -90,8 +90,8 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-community-networks
     es:
       label: Redes comunitarias
-      __label: GZU6raPLi0/RZ7mbWiaSDPLzQT10wn/jojUZGLRqKn4=
       singular: Red comunitaria
+      __label: GZU6raPLi0/RZ7mbWiaSDPLzQT10wn/jojUZGLRqKn4=
       __singular: 5Esdx5ft+qkCg+UE++XBP72O3KRgkbijB0j/GEhrZR8=
   - label: Websites that sell pills
     keyValue: Website that sells pills
@@ -119,12 +119,15 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-websites-that-sell-pills
     es:
       label: Sitios web que venden pastillas
-      __label: Jgjbu7xUoByUp2VC/amDZqKSLS9tNXbii5lbck05DBg=
       singular: Sitio web que vende píldoras
+      __label: Jgjbu7xUoByUp2VC/amDZqKSLS9tNXbii5lbck05DBg=
       __singular: 9LAC7LJ8gZTbznvVoouALLoq1hn95GHcPPqXpvQkjdw=
 filterFields:
   - field: Financial aid
     label: Financial Assistance
+    es:
+      label: Asistencia financiera
+      __label: NNhCXeq24o/MaHCKtZ/KLsYfmGL+tP4YrrjNbq4TJ4g=
     selectType:
       discriminant: multi
       value:
@@ -148,11 +151,11 @@ filterFields:
             __label: l+u/mWOezhtTbAULtXd9BUMm63+mgKu6h9L/hktRYMY=
     helpPopup:
       discriminant: false
-    es:
-      label: Asistencia financiera
-      __label: NNhCXeq24o/MaHCKtZ/KLsYfmGL+tP4YrrjNbq4TJ4g=
   - field: Services
     label: Service options
+    es:
+      label: Opciones de servicio
+      __label: oea+nl4av4ejmhIfxvsdqAnafLcoKXe1T6UAlZ37nYg=
     selectType:
       discriminant: multi
       value:
@@ -171,11 +174,11 @@ filterFields:
             __label: 25CpaeKpnrWw4iW+41SvByNQhnGHlxUZNA9mC2/nar8=
     helpPopup:
       discriminant: false
-    es:
-      label: Opciones de servicio
-      __label: oea+nl4av4ejmhIfxvsdqAnafLcoKXe1T6UAlZ37nYg=
   - field: Age minimum
     label: Ages served
+    es:
+      label: Edades atendidas
+      __label: Jc5ro9QseSC1mn0cs6HM3VchrSSLn46Lev124/MhW5E=
     selectType:
       discriminant: number
       value:
@@ -183,22 +186,22 @@ filterFields:
         zeroIsAny: true
         emptyIsAny: true
         numberLabel: Serves ages %%+
+        es:
+          numberLabel: Edades %%+
+          __numberLabel: bUeHPBxlA1by5bGujXpnKZo19JS0aTwx0y8DHTeIG7s=
         options:
           - 14
           - 15
           - 16
           - 17
           - 18
-        es:
-          numberLabel: Edades %%+
-          __numberLabel: bUeHPBxlA1by5bGujXpnKZo19JS0aTwx0y8DHTeIG7s=
     helpPopup:
       discriminant: false
-    es:
-      label: Edades atendidas
-      __label: Jc5ro9QseSC1mn0cs6HM3VchrSSLn46Lev124/MhW5E=
   - field: Languages
     label: Language
+    es:
+      label: Idioma
+      __label: pP5lJk7327ONEEsegeszUPMULz0W8yvew5sdm0LBuNE=
     selectType:
       discriminant: single
       value:
@@ -240,11 +243,11 @@ filterFields:
             __label: 1K2o7CdkEaHXNCgRfqDX2OpIeJ6fB85rtpCMuFG1JEE=
     helpPopup:
       discriminant: false
-    es:
-      label: Idioma
-      __label: pP5lJk7327ONEEsegeszUPMULz0W8yvew5sdm0LBuNE=
   - field: Provider identity
     label: Provider identity
+    es:
+      label: Identidad del proveedor
+      __label: ZW7v2QuSNkbBwSlVyFLUGJkjzr2XGml0wjbNfQwDCI0=
     selectType:
       discriminant: single
       value:
@@ -286,11 +289,11 @@ filterFields:
             __label: dQgbWT0Vz25jGXG8Z2hyP1k7iLFyR35Arn02PkgpgW0=
     helpPopup:
       discriminant: false
-    es:
-      label: Identidad del proveedor
-      __label: ZW7v2QuSNkbBwSlVyFLUGJkjzr2XGml0wjbNfQwDCI0=
   - field: Gestational age limit
     label: Weeks of pregnancy
+    es:
+      label: Semanas de embarazo
+      __label: f3bw9iZtQnQygOGqWTfrU/kb55IJe7iM/V16JpMnO9k=
     selectType:
       discriminant: number
       value:
@@ -298,6 +301,9 @@ filterFields:
         zeroIsAny: true
         emptyIsAny: true
         numberLabel: '%% weeks or less'
+        es:
+          numberLabel: '%% semanas o menos'
+          __numberLabel: EcY/7uk+lPaZKoCoAaVBosxKR8k0pmN7iPJmT2LLhxw=
         options:
           - 8
           - 9
@@ -306,14 +312,8 @@ filterFields:
           - 12
           - 13
           - 14
-        es:
-          numberLabel: '%% semanas o menos'
-          __numberLabel: EcY/7uk+lPaZKoCoAaVBosxKR8k0pmN7iPJmT2LLhxw=
     helpPopup:
       discriminant: false
-    es:
-      label: Semanas de embarazo
-      __label: f3bw9iZtQnQygOGqWTfrU/kb55IJe7iM/V16JpMnO9k=
 linkToStudies:
   color: beige
   icon: arrowUp
@@ -423,14 +423,14 @@ seo:
     }
   es:
     title: Dónde se consiguen píldoras abortivas en línea en %Name%.
-    __title: HxjeI8FncRh6P7Ffi0GZJ701dD0RV6Bb+bPBshtWxP0=
     description: >-
       Sepa cómo conseguir una píldora abortiva en %Name%. Compara proveedores
       online, precios y plazos de entrega de píldoras abortivas por correo en
       esta Guía del Plan C.
+    __title: HxjeI8FncRh6P7Ffi0GZJ701dD0RV6Bb+bPBshtWxP0=
     __description: 7vIIT1HiM5hsNhTnhSYRrt2/aXSJP+ZFjj/GF5el4JE=
 es:
   medicallySafeLabel: Médicamente muy seguro, posible riesgo legal
-  __medicallySafeLabel: YRedroI0azDmN44tftefRVruytDQ4yTP5v80+6qDLbo=
   howManyPillsLabel: ¿Cuántas pastillas se necesitan?
+  __medicallySafeLabel: YRedroI0azDmN44tftefRVruytDQ4yTP5v80+6qDLbo=
   __howManyPillsLabel: TgtcpZTW98G3l8QWcTRTxJrd1vbj72YnPiR+JAhkzXk=
