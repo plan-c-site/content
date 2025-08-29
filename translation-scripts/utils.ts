@@ -19,7 +19,7 @@ export type TranslatedObject<T extends object, K extends keyof T> = T & {
   es?: Record<K, string>;
 };
 
-type TranslationKey =
+export type TranslationKey =
   | ({ key: string } & (
       | { type?: keyof typeof textTypes }
       | { keys: TranslationKey[]; container: "array" | "record" | "object" }

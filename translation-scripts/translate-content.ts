@@ -1,6 +1,13 @@
 import "dotenv/config";
 import path from "node:path";
-import { translateAllYaml } from "./utils";
+import { translateAllYaml, TranslationKey } from "./utils";
+
+const SeoFields: TranslationKey[] = [
+  {
+    key: "title",
+  },
+  { key: "description" },
+];
 
 async function Translate() {
   console.log("Translating Articles");
@@ -64,6 +71,11 @@ async function Translate() {
             keys: [{ key: "label" }],
           },
         ],
+      },
+      {
+        key: "seo",
+        keys: SeoFields,
+        container: "object",
       },
     ],
     { url: "/databaseGlobals" }
@@ -133,6 +145,10 @@ async function Translate() {
     ],
     { url: "/navigation" }
   );
+
+  await translateAllYaml(path.join(__dirname, "../seo"), SeoFields, {
+    url: "/seo-defaults",
+  });
 }
 
 Translate().then(() => console.log("Finished Translation"));
