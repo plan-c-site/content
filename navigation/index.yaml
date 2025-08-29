@@ -1,11 +1,11 @@
 homePage: home
 messageBar:
-  text: 'Stay safe:  Read our digital privacy tips'
+  text: "Stay safe:  Read our digital privacy tips"
   mainLink: /digital-security
   quickExitText: Quick Exit
   quickExitLink: https://weather.com
   es:
-    text: 'Manténgase seguro:  Lea nuestros consejos sobre privacidad digital'
+    text: "Manténgase seguro:  Lea nuestros consejos sobre privacidad digital"
     __text: D0c9SBFJCTWPzYr2XuWqJpXLCjT80gpZPKLRTc9TR6M=
     quickExitText: Salida rápida
     __quickExitText: RTSdxNpwJ+o0f3S7lsMKP80yQxJ1cN5vuZQkjYMoF+M=
@@ -255,13 +255,13 @@ navBar:
                 __label: tjGUWPk7NvPeuW3/q9HMRbjCN+3jaZXUa3Ve2PmL4a0=
           - discriminant: link
             value:
-              label: 'Plan C: The documentary'
+              label: "Plan C: The documentary"
               action:
                 discriminant: internal
                 value:
                   page: documentary
               es:
-                label: 'Plan C: El documental'
+                label: "Plan C: El documental"
                 __label: wh609W7evM+Pcv9/yZLGQrAISp8XgGPOguBLGOiA+nA=
           - discriminant: link
             value:
@@ -305,6 +305,4 @@ navBar:
         es:
           label: Donar
           __label: yR7g8nmd+RXvzBF7oGPZXgy/DV6ObspTczM7ubBsXxM=
-  es: {}
 footer: {}
-es: {}

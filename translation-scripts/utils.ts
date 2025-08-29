@@ -253,7 +253,10 @@ function setTranslatedValues<T extends object>(
         }
       }
     }
-    return { ...nv, es };
+    if (Object.keys(es).length > 0) {
+      return { ...nv, es };
+    }
+    return nv;
   });
   return { result, next };
 }
