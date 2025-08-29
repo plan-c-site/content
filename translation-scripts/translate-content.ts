@@ -1,6 +1,10 @@
 import "dotenv/config";
 import path from "node:path";
-import { translateAllYaml, TranslationKey } from "./utils";
+import {
+  translateAllYaml,
+  translateMarkdownValues,
+  TranslationKey,
+} from "./utils";
 
 const SeoFields: TranslationKey[] = [
   {
@@ -149,6 +153,12 @@ async function Translate() {
   await translateAllYaml(path.join(__dirname, "../seo"), SeoFields, {
     url: "/seo-defaults",
   });
+
+  await translateMarkdownValues(
+    path.join(__dirname, "../databaseGlobals"),
+    [],
+    { url_base: "/databaseGlobals/" }
+  );
 }
 
 Translate().then(() => console.log("Finished Translation"));

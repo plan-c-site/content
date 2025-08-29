@@ -2,6 +2,8 @@ import fs from "fs/promises";
 import { glob } from "glob";
 import yaml from "js-yaml";
 import crypto from "node:crypto";
+import path from "node:path";
+import markdoc from "@markdoc/markdoc";
 
 const API_KEY = process.env.WEGLOT_API_KEY || false;
 const WEGLOT_URL = API_KEY
@@ -42,7 +44,6 @@ function extractObjectValuesForTranslation<T extends object>(
       "es" in value && value.es && typeof value.es === "object" ? value.es : {};
     return keys.flatMap((key) => {
       if ("has_condition" in key) {
-        console.log("HAS CONDITION", key, value);
         if (
           "discriminant" in value &&
           "value" in value &&
@@ -56,7 +57,6 @@ function extractObjectValuesForTranslation<T extends object>(
         return [];
       }
       if (key.key == "links") {
-        console.log("GOT LINKS", key, value);
       }
       if ("container" in key && typeof value[key.key] === "object") {
         if ("condition" in key) {
@@ -163,7 +163,6 @@ function setTranslatedValues<T extends object>(
     };
     for (const key of keys) {
       if ("has_condition" in key) {
-        console.log("SET HAS CONDITION", key, value);
         if (
           "discriminant" in value &&
           "value" in value &&
@@ -318,5 +317,44 @@ export async function translateAllYaml(
       const text = yaml.dump(content);
       await fs.writeFile(path, text, { encoding: "utf-8" });
     })
+  );
+}
+
+export async function translateMarkdownValues(
+  folder: string,
+  keys: TranslationKey[],
+  { url_base }: { url_base?: string }
+) {
+  if (!WEGLOT_URL) throw new Error("No weglot url");
+  const filePaths: string[] = await glob(folder + "/**/*.mdoc");
+  await Promise.all(
+    filePaths.map(async (v) => {
+      if (v.includes("/es/")) {
+        return;
+      }
+      const url = url_base + v.replace(folder, "");
+      const dir = path.join(path.dirname(v), "./es/");
+      await fs.mkdir(dir, { recursive: true });
+      const newPath = path.join(dir, path.basename(v));
+      return translateMardown(v, newPath, keys, url);
+    })
+  );
+}
+
+export async function translateMardown(
+  file: string,
+  targetFile: string,
+  frontMatterKeys: TranslationKey[],
+  url: string
+) {
+  console.log("PROCESSING FILE", file, "TO TARGET", targetFile);
+  const raw = await fs.readFile(file, { encoding: "utf-8" });
+  const doc = markdoc.parse(raw);
+  const newRaw = markdoc.format(doc);
+  await fs.writeFile(
+    targetFile,
+    `# SPANISH VERSION
+${newRaw}`,
+    { encoding: "utf-8" }
   );
 }

@@ -1,7 +1,169 @@
+# SPANISH VERSION
+{% tocAnchor slug={name: "Top", slug: "top"} type={discriminant: "anchor"} /%}
+
+{% narrowBanner
+   icon="circleAlert"
+   color="red"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% textSize textSize="small" inline=false %}**Plan C does not sell pills or provide medical advice.** This guide lists results of our abortion pill research.{% /textSize %}
+{% /narrowBanner %}
+
+{% heroSection
+   image={discriminant: "state"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="beige"
+   ignoreImageBorder=true
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="left"
+   largeLeftColumn=true
+   reverseOnMobile=false %}
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
+   afterSubmit="nothing" %}
+{% formSection type="waiting" %}
+# Abortion pill providers in {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}State{% /dbText %}{% /inlineForm %}
+{% /formSection %}
+{% /formWrapper %}
+
+{% dbMarkdoc source="Summary" /%}
+
+{% tableOfContents /%}
+
+{% conditionalSection
+   condition={discriminant: "stateFieldTruthy", value: "Link to studies (in languages)"} %}
+{% narrowBanner
+   icon="alertCircle"
+   color="beige"
+   iconAlign="items-start"
+   fullWidth=false %}
+{% textSize textSize="small" inline=false %}If you live in this state and are seeking an abortion, you may qualify to participate in a paid research study about abortion access.&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} %}Click here to learn more{% /inlineLink %}.{% /textSize %}
+{% /narrowBanner %}
+{% /conditionalSection %}
+{% /heroSection %}
+
+{% tocAnchor
+   slug={name: "List of providers", slug: "list-of-providers"}
+   type={discriminant: "toc"} /%}
+
+{% dbClinic /%}
+
+{% horizontalSplit noHeader=false %}
 {% bodySection
    centered=false
    width="default"
-   color="beige"
+   color="pink"
    textSize="medium" %}
-TEST TRANSLATED SECTION
+## Frequently asked questions
 {% /bodySection %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=true
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% faqList
+   faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills"]
+   color="beige"
+   anchor=true /%}
+
+{% faqList
+   faqs=["can-people-buy-abortion-pills-now-to-use-later"]
+   color="beige"
+   appendStateField="Additional FAQs"
+   anchor=false /%}
+
+{% narrowBanner
+   icon="arrowRight"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}See all FAQs{% /inlineLink %}
+{% /narrowBanner %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% narrowBanner
+   icon="arrowUp"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% inlineLink action={discriminant: "anchor", value: "top"} %}Back to top{% /inlineLink %}
+{% /narrowBanner %}
+
+{% horizontalSplit noHeader=false %}
+{% bodySection
+   centered=false
+   width="default"
+   color="green"
+   textSize="medium" %}
+## Get support in {% dbText source="Name" %}STATE{% /dbText %}
+{% /bodySection %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% resourceList
+   resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="green"
+   hideHeaders=false /%}
+
+{% narrowBanner
+   icon="arrowRight"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} %}See all support{% /inlineLink %}
+{% /narrowBanner %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% bodySection
+   centered=false
+   width="default"
+   color="black"
+   textSize="medium" %}
+## In person clinics
+
+In-person abortion clinics usually offer both abortion pills&nbsp;and abortion procedures. To find the nearest clinic to {% dbText source="Name" %}STATE{% /dbText %}, use this search tool.
+{% /bodySection %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% resourceItem
+   resource="i-need-an-a"
+   header={discriminant: "override", value: "Find the nearest clinic"}
+   type={discriminant: "block", value: {icon: "", iconColor: "grey"}} /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% actionBanner
+   title="Have feedback about Plan C or a provider?"
+   color="cyan"
+   icon=""
+   link={label: "Let us know", click: {discriminant: "internal", value: {page: "contact"}}} /%}
+
+{% tocAnchor
+   slug={name: "Pregnancy calculator", slug: "pregnancy-calculator"}
+   type={discriminant: "action", value: {discriminant: "pregnancy"}} /%}
