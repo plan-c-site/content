@@ -13,17 +13,17 @@ clinicTypes:
     color: cyan
     icon: mousePointer
     labels:
-      - label: "Price:"
+      - label: 'Price:'
         es:
-          label: "Precio:"
+          label: 'Precio:'
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: "Delivery:"
+      - label: 'Delivery:'
         es:
-          label: "Entrega:"
+          label: 'Entrega:'
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
-      - label: "FDA-approved "
+      - label: 'FDA-approved '
         es:
-          label: "Aprobado por la FDA "
+          label: 'Aprobado por la FDA '
           __label: 4eN9tF1jbkqja/C8ijo06GDOO+8VpyB6WWA+/5PfbMs=
       - label: Medical support
         es:
@@ -42,13 +42,13 @@ clinicTypes:
     color: blue
     icon: globe
     labels:
-      - label: "Price:"
+      - label: 'Price:'
         es:
-          label: "Precio:"
+          label: 'Precio:'
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: "Delivery:"
+      - label: 'Delivery:'
         es:
-          label: "Entrega:"
+          label: 'Entrega:'
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: FDA-approved
         es:
@@ -71,13 +71,13 @@ clinicTypes:
     color: pink
     icon: heartHandshake
     labels:
-      - label: "Price:"
+      - label: 'Price:'
         es:
-          label: "Precio:"
+          label: 'Precio:'
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: "Delivery:"
+      - label: 'Delivery:'
         es:
-          label: "Entrega:"
+          label: 'Entrega:'
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
         es:
@@ -100,13 +100,13 @@ clinicTypes:
     color: red
     icon: shoppingCart
     labels:
-      - label: "Price:"
+      - label: 'Price:'
         es:
-          label: "Precio:"
+          label: 'Precio:'
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: "Delivery:"
+      - label: 'Delivery:'
         es:
-          label: "Entrega:"
+          label: 'Entrega:'
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
         es:
@@ -205,7 +205,9 @@ filterFields:
         - value: English
           label: English
           invert: false
-          es: {}
+          es:
+            label: Inglés
+            __label: uhGL9/ycGu3B7bKKCqhuC0O2gfIir2YW4TxDvoeBWwY=
         - value: Spanish
           label: Español
           invert: false
@@ -221,11 +223,15 @@ filterFields:
         - value: Hmong-Mien
           label: Hmong-Mein
           invert: false
-          es: {}
+          es:
+            label: Hmong-Mein
+            __label: pHh23YKG08qyffyRDM8W0PC2GYsp3kbia8piZiEVO5U=
         - value: Punjabi
           label: Punjabi
           invert: false
-          es: {}
+          es:
+            label: Punjabi
+            __label: nmH4xPvK50xODMo0cOcfBwMS4p9qt2vQPUAXeSZ+Yo0=
         - value: Portuguese
           label: Português
           invert: false
@@ -245,27 +251,39 @@ filterFields:
         - value: Women
           label: Women
           invert: false
-          es: {}
+          es:
+            label: Mujeres
+            __label: gcUR6/h8BA5MLVooMTh6lUpiLxJ75HX7QkRVXdLxuCc=
         - value: BIPOC
           label: BIPOC
           invert: false
-          es: {}
+          es:
+            label: BIPOC
+            __label: pUsOEBke+XpICx+oc/IVrmjC/Xnle6R3Q8YM4JTt4aU=
         - value: LGBTQ+
           label: LGBTQ+
           invert: false
-          es: {}
+          es:
+            label: LGBTQ+
+            __label: fGUX0jkV+OjJYCSxwPVbNQthW9umM9804ro3z591Ymk=
         - value: Veteran
           label: Veteran
           invert: false
-          es: {}
+          es:
+            label: Veterano
+            __label: q88PE2we0N3K9e8al3F+NrgfY7f2OdUMLBVPCHBg4ZE=
         - value: Indigenous
           label: Indigenous
           invert: false
-          es: {}
+          es:
+            label: Indígena
+            __label: CAO9KXCZLXxlDFkBkvhBq24+IENBVLDxxrhxnC2NS60=
         - value: Disabled
           label: Disabled
           invert: false
-          es: {}
+          es:
+            label: Discapacitados
+            __label: dQgbWT0Vz25jGXG8Z2hyP1k7iLFyR35Arn02PkgpgW0=
     helpPopup:
       discriminant: false
     es:
@@ -279,7 +297,7 @@ filterFields:
         direction: gte
         zeroIsAny: true
         emptyIsAny: true
-        numberLabel: "%% weeks or less"
+        numberLabel: '%% weeks or less'
         options:
           - 8
           - 9
@@ -289,7 +307,7 @@ filterFields:
           - 13
           - 14
         es:
-          numberLabel: "%% semanas o menos"
+          numberLabel: '%% semanas o menos'
           __numberLabel: EcY/7uk+lPaZKoCoAaVBosxKR8k0pmN7iPJmT2LLhxw=
     helpPopup:
       discriminant: false
@@ -308,7 +326,7 @@ seo:
     Learn how to get an abortion pill in %Name%. Compare online providers,
     prices and delivery times for abortion pills by mail in this Plan C Guide.
   image:
-    discriminant: ""
+    discriminant: ''
   customSchema: >-
     {"@context":"https://schema.org",
 
