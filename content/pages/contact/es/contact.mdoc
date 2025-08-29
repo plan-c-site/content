@@ -1,0 +1,72 @@
+# SPANISH VERSION
+{% heroSection
+   image={discriminant: "noco", value: "Plan C Squiggle Crop svg"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="blue"
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-bottom"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# Contact us
+
+**We do not respond to requests for pills.** We do not provide support via email, social media or phone. For other inquiries please use the links below.
+
+{% narrowBanner
+   icon="pill"
+   color="beige"
+   iconAlign="items-start"
+   fullWidth=false %}
+{% textSize textSize="medium" inline=false %}If you need information about abortion pills please read our {% inlineLink action={discriminant: "home", value: {}} %}Guide to Abortion Pills{% /inlineLink %}.{% /textSize %}
+{% /narrowBanner %}
+
+{% narrowBanner
+   icon="stethoscope"
+   color="beige"
+   iconAlign="items-start"
+   fullWidth=false %}
+{% textSize textSize="medium" inline=false %}If you need medical or legal support, visit our {% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} %}Support & Resources{% /inlineLink %} page.{% /textSize %}
+{% /narrowBanner %}
+{% /heroSection %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="red"
+   textSize="medium" %}
+## Please note:
+
+- **We do not provide pills or sell products.**
+- **We do not offer medical or legal advice.**
+- **We do not connect individuals with sources of pills.**
+
+Plan C is not affiliated with any of the services listed in our directory. For questions about ordering, paying for, or delivery of abortion pills from these services, please contact the service directly.
+
+If you have a question not answered by our site’s&nbsp;FAQ&nbsp;or internal pages, get in touch below.
+{% /bodySection %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader
+   color="green"
+   title="What are you contacting us about?"
+   icon="" /%}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% faqList
+   faqs=["contact_press-requests", "contact_advocacy-or-partnership", "contact_i-am-a-medical-provider", "contact_the-plan-c-community", "contact_a-donation-or-grant", "contact_i-need-medical-or-legal-support", "contact_i-have-a-complaint-about-a-pill-supplier", "contact_i-have-technical-feedback-about-this-website", "contact_something-else"]
+   color="beige"
+   appendStateField=""
+   anchor=false /%}
+{% /flexSection %}
+{% /horizontalSplit %}

@@ -1,0 +1,130 @@
+# SPANISH VERSION
+{% heroSection
+   image={discriminant: "noco", value: "Partnerships collage - Hero"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="red"
+   ignoreImageBorder=false
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# Partnerships
+
+We work with other nonprofit and community organizations, campuses, student groups, artists and brands to spread the word about abortion pills and share information on how people are accessing them online for medically safe home abortion.
+
+{% tableOfContents /%}
+{% /heroSection %}
+
+{% tocAnchor
+   slug={name: "What does it mean to partner with us?", slug: "what-does-it-mean-to-partner-with-us"}
+   type={discriminant: "toc"} /%}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="blue"
+   textSize="medium" %}
+## What does it mean to partner with us?
+
+At Plan C, we share our research and public health information on abortion pills as widely as we can - but we can’t reach everyone on our own. We know organizations and brands like yours are in touch with individuals who would benefit from facts on abortion pills. We also know that people want this info, and deserve this info - whether or not they need an abortion, they can become educated on their options and how pills work in safe self-managed settings.
+
+If you’re here, you’re already thinking about this issue, and we know you have the best insight into what type of information your community needs. Partnering with us means being committed to letting people know that abortion pills are safe, effective, and available by mail in ways that make sense for your organization’s unique identity and positionality.
+
+### Outcomes
+
+A near future in which your community, group or audience now understands safe and effective abortion pill options and can navigate resources confidently if and when they need to.
+
+### Strategy
+
+Spreading information takes time and resources, and we’re committed to supporting efforts to move agency over abortion back to the individual. Our partnership grants are designed to springboard creative ideas and provide the resources to get this information into local communities.
+{% /bodySection %}
+
+{% tocAnchor
+   slug={name: "Previous campaigns", slug: "previous-campaigns"}
+   type={discriminant: "toc"} /%}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+## Previous campaigns
+
+Over the past ten years we’ve partnered with a wide variety of artists and creators, companies and brands, nonprofit organizations and events.
+{% /bodySection %}
+
+{% postList
+   type={discriminant: "headlines", value: {color: "cyan", buttonLabel: "Read more and see photos", pagination: 10}}
+   filtering={discriminant: "manual", value: ["partnerships_plan-c-takes-miami-art-week", "partnerships_sync-periods-not-data", "partnerships_louisiana-abortion-fund-carechella", "partnerships_autumn-breon", "partnerships_feminist", "partnerships_plan-c-takes-sxsw", "partnerships_you-always-have-options"]} /%}
+
+{% tocAnchor
+   slug={name: "Frequently asked questions", slug: "frequently-asked-questions"}
+   type={discriminant: "toc"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Partnership FAQs" icon="" /%}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% faqList
+   faqs=["partnerships_what-does-partnering-with-plan-c-look-like", "partnerships_who-can-partner-with-us", "partnerships_how-do-i-request-funding-for-partnerships", "partnerships_what-are-the-reporting-requirements-for-partnership-funding"]
+   color="beige"
+   anchor=false /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "Partnership inquiry", slug: "partnership-inquiry"}
+   type={discriminant: "toc"} /%}
+
+{% bodySection
+   centered=false
+   width="medium"
+   color="beige"
+   textSize="medium" %}
+{% formWrapper
+   formType={discriminant: "hubspot", value: {formId: "66da9a64-c807-4fb2-83fa-49791c2759d6", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Advocacy or Partnership"}}]}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+## Partnership inquiry
+
+Enter your information below along with a paragraph about how you can share the Plan C website, Guide, and information about access to abortion pills by mail, and our team will be in touch.
+
+- If you are an individual seeking help for other questions, do not use this form. Please visit our&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "contact"}} %}contact{% /inlineLink %}&nbsp;page for the appropriate contact link.
+- If you have press, podcast, video or speaking inquiries, please use our&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "media"}} %}media inquiry form{% /inlineLink %}.
+- If you are a for-profit brand/company looking to partner with Plan C, please email:&nbsp;{% inlineLink action={discriminant: "mailto", value: "digital@plancpills.org"} %}digital@plancpills.org{% /inlineLink %}.
+
+{% formInput
+   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organization", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Message", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+{% /formSection %}
+
+{% formSection type="success" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Thanks, your information was received.
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="submitted" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Submitting...
+{% /narrowBanner %}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}

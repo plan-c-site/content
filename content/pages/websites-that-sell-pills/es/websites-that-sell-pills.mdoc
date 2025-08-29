@@ -1,0 +1,76 @@
+# SPANISH VERSION
+{% heroSection
+   image={discriminant: "noco", value: "Pill bottle box - Hero"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="cyan"
+   ignoreImageBorder=false
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# Websites that sell pills
+
+Our research has shown that these websites sell abortion pills but do not include any additional support. Anyone can get free medical support for their abortion from the {% inlineLink action={discriminant: ""} %}M+A Hotline{% /inlineLink %}.
+
+{% tableOfContents /%}
+
+{% narrowBanner
+   icon="triangleAlert"
+   color="red"
+   iconAlign="items-center"
+   fullWidth=false %}
+{% textSize textSize="small" inline=false %}**These websites may not follow strict digital security protocols.** Read our {% inlineLink action={discriminant: "internal", value: {page: "digital-security"}} %}digital privacy tips{% /inlineLink %} to learn how to protect yourself when ordering or searching for abortion pills online.{% /textSize %}
+{% /narrowBanner %}
+{% /heroSection %}
+
+{% tocAnchor
+   slug={name: "List of providers", slug: "list-of-providers"}
+   type={discriminant: "toc"} /%}
+
+{% filteredListings
+   title="Websites that sell pills"
+   color="red"
+   maxVisibleDefault=6
+   listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}} /%}
+
+{% tocAnchor
+   slug={name: "Frequently asked questions", slug: "frequently-asked-questions"}
+   type={discriminant: "toc"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% bodySection
+   centered=false
+   width="default"
+   color="pink"
+   textSize="medium" %}
+## Frequently asked questions
+
+{% inContentButton
+   label="View all FAQs"
+   icon=""
+   size="primary"
+   background="pink"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} /%}
+{% /bodySection %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% faqList
+   faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills", "guide_websites-that-sell-pills_what-are-websites-that-sell-pills", "guide_websites-that-sell-pills_are-these-websites-legit", "guide_websites-that-sell-pills_what-if-i-have-medical-questions", "guide_websites-that-sell-pills_how-many-pills-do-i-need"]
+   color="beige"
+   anchor=false /%}
+{% /flexSection %}
+{% /horizontalSplit %}

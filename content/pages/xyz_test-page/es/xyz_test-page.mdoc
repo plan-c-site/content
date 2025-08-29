@@ -1,0 +1,386 @@
+# SPANISH VERSION
+{% heroSection
+   image={discriminant: "noco", value: "Mailbox - Hero"}
+   imageSide="right"
+   color="blue"
+   imageBackgroundColor="cyan"
+   ignoreImageBorder=false
+   imageCover="bg-contain"
+   imageVertical="bg-top"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# {% ignoreHeaderStyle /%}Abortion pills by mail in every state
+
+Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.
+
+{% inlineLink action={discriminant: "pregnancy"} %}Pregnancy Calculator{% /inlineLink %} link
+
+{% inlineLink action={discriminant: "tel", value: "+1-555-555-5555"} %}Telephone{% /inlineLink %}
+
+{% inlineLink action={discriminant: "mailto", value: "test@example.com"} %}Email{% /inlineLink %}
+
+{% inlineLink action={discriminant: "sms", value: "+1-555-555-5555"} %}SMS{% /inlineLink %}
+
+{% inlineLink action={discriminant: "download", value: "Test-PDF"} %}DOWNLOAD{% /inlineLink %}
+
+{% inlineLink action={discriminant: "popup", value: "xyz-test-popup"} %}Popup?{% /inlineLink %}
+
+see {% inlineLink action={discriminant: "external", value: {url: "#testimonials", showPopup: false}} %}testimonials{% /inlineLink %} {% inContentIcon icon="heartHandshake" size="standard" background="" color="black" /%}
+
+{% inlineLink action={discriminant: "blog", value: {page: "a-creative-guide-to-abortion-pills-l33-x-fftx-plan-c"}} %}Link to a blog post{% /inlineLink %}
+
+{% tableOfContents /%}
+
+{% textSize textSize="small" inline=true %}We do not collect or store personal data.{% /textSize %}
+{% /heroSection %}
+
+{% cardLayoutSection color="green" %}
+{% cardSection
+   image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"}
+   imageOnly=false
+   title="Some Title"
+   label="A label below the card"
+   action={discriminant: ""}
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
+Othe**r content and stuff**
+
+I think we can add content...
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"}
+   imageOnly=false
+   title="Some Title"
+   label="A label below the card"
+   action={discriminant: ""}
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="right"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
+Othe**r content and stuff**
+
+I think we can add content...
+
+we need some more
+
+to go over in height
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "one-off", value: {image: "/images/xyz_test-page/c879ca67f1ee53b2051f025346a64a38.png"}}
+   imageOnly=true
+   label="A label below the card"
+   action={discriminant: "external", value: {url: "https://google.com", showPopup: false}}
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
+Othe**r content and stuff**
+
+I think we can add content...
+
+we need some more
+
+to go over in height
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "noco", value: "Stickers - Card - Wide"}
+   imageOnly=true
+   label="A label below the card"
+   action={discriminant: "external", value: {url: "https://google.com", showPopup: false}}
+   imageCover="bg-contain"
+   imageVertical="bg-bottom"
+   imageHorizontal="right"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
+Othe**r content and stuff**
+
+I think we can add content...
+
+we need some more
+
+to go over in height
+{% /cardSection %}
+{% /cardLayoutSection %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="yellow"
+   textSize="medium" %}
+{% rawHtml
+   html="<div class=\"raisely-donate\" data-campaign-path=\"plan-c\" data-profile=\"\" data-width=\"100%\" data-height=\"600\"><script src=\"https://cdn.raisely.com/v3/public/embed.js\"></script></div>" /%}
+{% /bodySection %}
+
+{% tocAnchor
+   slug={name: "Before Pre Filtered Suppliers", slug: "faq"}
+   type={discriminant: "toc"} /%}
+
+{% filteredListings
+   title="1 week or less"
+   color="red"
+   listings={discriminant: "field", value: {field: "Delivery", value: "1 week or less"}} /%}
+
+{% filteredListings
+   title="Websites that sell pills"
+   color="red"
+   listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="pink" title="A Section" icon="" %}
+{% inContentDropdown
+   label="Download"
+   size="standard"
+   background="beige"
+   altHoverBackground=""
+   options=[{discriminant: "label", value: "Languages"}, {discriminant: "separator"}, {discriminant: "link", value: {label: "English", action: {discriminant: ""}, url: "https://www.google.com"}}, {discriminant: "link", value: {label: "Spanish", action: {discriminant: ""}, url: "https://www.google.es"}}] /%}
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+Some text is here
+{% /bodySection %}
+
+{% faqSection
+   faq="where-someone-lives-makes-a-difference"
+   color="beige"
+   embedded=false
+   anchor=true /%}
+
+{% faqSection
+   faq="how-does-the-abortion-pill-work"
+   color="beige"
+   embedded=false
+   anchor=true /%}
+
+{% faqSection
+   faq="how-does-the-abortion-pill-work"
+   color="beige"
+   embedded=false
+   anchor=true /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="blue" title="A Section" icon="" %}
+**Test** {% inlineLink action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} %}some{% /inlineLink %} text
+
+{% inContentImage
+   image={discriminant: "uploaded", value: "mailbox"}
+   maxWidth=100
+   action={discriminant: ""}
+   newTab=false /%}
+
+{% inContentButton
+   label="A Button"
+   icon="arrowDown"
+   size="standard"
+   background="beige"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: ""} /%}
+
+{% inContentButton
+   label="PRIMARY button"
+   icon="plus"
+   size="primary"
+   background="green"
+   altHoverBackground="red"
+   smallShadow=false
+   leftIcon=true
+   action={discriminant: ""} /%}
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+Some text is here
+{% /bodySection %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+Some text is here
+{% /bodySection %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "Plan C is an Information Resource", slug: "information-resource"}
+   type={discriminant: "toc"} /%}
+
+{% bodySection centered=true width="default" color="red" textSize="medium" %}
+## Plan C is an information resource.
+
+We do not give medical or legal advice or sell abortion pills. &nbsp;This website is an educational resource for learning about how people in the US are accessing abortion pills and safely managing their own abortions. Plan C provides research-based information but does not endorse any of the services listed on our website. Plan C is not affiliated with any of the services listed in our directory. For questions about paying for, delivery of, or how to order abortion pills from these services, please contact the service directly.‍
+
+\
+‍A note on language:&nbsp;Abortion pills can be used by people who have a uterus and can get pregnant. This includes cisgender women and people who identify as trans, non-binary, gender-expansive, intersex, Two-Spirit, and more. By using a variety of terms on this website—including “women” and “people who are pregnant”—we aim to be inclusive of all pregnant people who need these services.
+{% /bodySection %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+As a provider, you may see patients who need:
+
+- Information about how to access abortion
+- Post-abortion care
+- Miscarriage treatment
+- Post-abortion contraception
+
+{% inContentButton
+   label="test"
+   icon=""
+   size="standard"
+   background="beige"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} /%}
+
+\
+Access to abortion pills still exists in all states through:
+
+- US Licensed telehealth services ($150 or less)
+- International telehealth providers ($90)
+- Online vendors (from $35)
+- Community networks (free)
+
+\
+Learn more about these options on&nbsp;Plan C’s Guide&nbsp;and&nbsp;ineedana.com.
+
+{% faqSection
+   faq="where-someone-lives-makes-a-difference"
+   color="beige"
+   embedded=true
+   anchor=true /%}
+{% /bodySection %}
+
+{% horizontalSplit noHeader=true %}
+{% sectionHeader color="beige" title="Left (50%)" icon="minus" /%}
+
+{% sectionHeader color="beige" title="Right 50%" icon="phone" /%}
+{% /horizontalSplit %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+# Testing Pasted Text
+
+The **peach** (*Prunus persica*) is a [deciduous](https://en.wikipedia.org/wiki/Deciduous) tree first [domesticated](https://en.wikipedia.org/wiki/Domesticated) and [cultivated](https://en.wikipedia.org/wiki/Agriculture) in [China](https://en.wikipedia.org/wiki/China). It bears edible juicy [fruits](https://en.wikipedia.org/wiki/Fruit) with various characteristics, most called **peaches** and the glossy-skinned, non-fuzzy varieties called **nectarines**. Peaches and [nectarines](https://en.wikipedia.org/wiki/Peach#Nectarines) are the same species, though they are regarded commercially as different fruits.
+{% /bodySection %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="green"
+   textSize="medium" %}
+## We have some text
+
+to check the gaps between elements in the body. So now I'll keep writing for a bit
+
+### And add another header here
+
+The **peach** (*Prunus persica*) is a [deciduous](https://en.wikipedia.org/wiki/Deciduous) tree first [domesticated](https://en.wikipedia.org/wiki/Domesticated) and [cultivated](https://en.wikipedia.org/wiki/Agriculture) in [China](https://en.wikipedia.org/wiki/China). It bears edible juicy [fruits](https://en.wikipedia.org/wiki/Fruit) with various characteristics, most called **peaches** and the glossy-skinned, non-fuzzy varieties called **nectarines**. Peaches and [nectarines](https://en.wikipedia.org/wiki/Peach#Nectarines) are the same species, though they are regarded commercially as different fruits.
+
+{% inContentImage
+   image={discriminant: "uploaded", value: "infographic-how-does-the-abortion-pill-work-en"}
+   maxWidth=100
+   action={discriminant: ""}
+   newTab=false /%}
+
+The **peach** (*Prunus persica*) is a [deciduous](https://en.wikipedia.org/wiki/Deciduous) tree first [domesticated](https://en.wikipedia.org/wiki/Domesticated) and [cultivated](https://en.wikipedia.org/wiki/Agriculture) in [China](https://en.wikipedia.org/wiki/China). It bears edible juicy [fruits](https://en.wikipedia.org/wiki/Fruit) with various characteristics, most called **peaches** and the glossy-skinned, non-fuzzy varieties called **nectarines**. Peaches and [nectarines](https://en.wikipedia.org/wiki/Peach#Nectarines) are the same species, though they are regarded commercially as different fruits.
+
+{% insetSection %}
+Some additional content here, so we can have more text and what not
+{% /insetSection %}
+
+And finally we end this section
+{% /bodySection %}
+
+{% horizontalSplit noHeader=true %}
+{% sectionHeader color="beige" title="Left (33%)" icon="minus" /%}
+
+{% sectionHeader color="beige" title="Middle (33%)" icon="arrowUp" /%}
+
+{% sectionHeader color="beige" title="Right 33%" icon="phone" /%}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "testimonials", slug: "testimonials"}
+   type={discriminant: "anchor"} /%}
+
+{% cardLayoutSection color="beige" minColumnWidth=32 %}
+{% testimonialSection
+   testimonial="n-honor-of-all-uteruses-may-you-be-free-to-do-as-you-please" /%}
+
+{% testimonialSection testimonial="this-site-has-a-lot-of-great-info" /%}
+{% /cardLayoutSection %}
+
+{% timelineSection title="1990" color="" %}
+In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Plan B, the “morning after pill,” over the counter – a long but successful journey catalyzing business, FDA and public goals. (Read From Secret to Shelf, 1999).
+{% /timelineSection %}
+
+{% timelineSection title="1990" color="" %}
+In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Plan B, the “morning after pill,” over the counter – a long but successful journey catalyzing business, FDA and public goals. (Read From Secret to Shelf, 1999).
+{% /timelineSection %}
+
+{% timelineSection title="1990" color="" %}
+In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Plan B, the “morning after pill,” over the counter – a long but successful journey catalyzing business, FDA and public goals. (Read From Secret to Shelf, 1999).
+{% /timelineSection %}
+
+{% timelineSection title="1990" color="" %}
+In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Plan B, the “morning after pill,” over the counter – a long but successful journey catalyzing business, FDA and public goals. (Read From Secret to Shelf, 1999).
+{% /timelineSection %}
+
+{% tocAnchor slug={name: "ToDo", slug: "todo"} type={discriminant: "toc"} /%}
+
+{% actionBanner
+   title="Quick Resource List"
+   color="red"
+   icon="text"
+   link={label: "Download PDF With Some Long Text", click: {discriminant: ""}} %}
+We have a new 501c3 fiscal sponsor, Possibility Labs (EIN 85-3989363).
+{% /actionBanner %}
+
+{% logoBanner
+   title="Our research and work has been featured in:"
+   color="blue"
+   logos=[{discriminant: "one-off", value: {image: "/images/xyz_test-page/0f5cca4cd4a6c2d02ede52647123bc81.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/22f1bdba5f74a78acbe13f1d01719598.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/93c5433751921a24c465e675e463d8ab.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/a33062e6303d6b0b8569c934214389e5.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/c32f68927ec12577bf3216a7345b5fce.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/da3968a42be039d7d138ded968241d87.jpg"}}]
+   maxItemHeight=4 /%}

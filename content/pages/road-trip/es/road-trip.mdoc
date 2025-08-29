@@ -1,0 +1,68 @@
+# SPANISH VERSION
+{% heroSection
+   image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/6801875653a6b260f8109f34_Map%20Template.png"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="cyan"
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-top"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# Plan C Community Road Trip
+
+**The Plan C Community Road Trip is back—louder, larger, and reaching every corner of the country.**
+
+This is a movement in motion, powered by collaboration, fueled by creativity, and rooted in the fight for reproductive freedom. We’re teaming up with grassroots organizers to spark connection in all 50 states—plus Guam and Puerto Rico—through pop-ups, panels, performances, and bold community activations centered on truth, agency, and access.
+
+Follow our state-by-state guide to find your stop—and if you’ve got an event or idea that belongs on the map, reach out to us at&nbsp;{% inlineLink action={discriminant: "mailto", value: "community@plancpills.org"} %}community@plancpills.org{% /inlineLink %}.
+
+{% tableOfContents /%}
+{% /heroSection %}
+
+{% tocAnchor
+   slug={name: "Find your stop", slug: "find-your-stop"}
+   type={discriminant: "toc"} /%}
+
+{% tocAnchor
+   slug={name: "Road trip archive", slug: "road-trip-archive"}
+   type={discriminant: "action", value: {discriminant: "internal", value: {page: "road-trip-2024"}}} /%}
+
+{% bodySection
+   centered=true
+   width="medium"
+   color="green"
+   textSize="medium" %}
+## Find your stop
+
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "#[:location:]"}}
+   afterSubmit="nothing"
+   customValidation="if (!document.getElementById(inputs.location)) {\n  return {\n  location: \"There are no events scheduled in this state.\"\n  }\n}" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: false, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, noSearch: false, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}
+
+{% roadtripList startDate="2025/01/01" pageLength=100 /%}
+
+{% narrowBanner
+   icon="arrowUp"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% inlineLink action={discriminant: "anchor", value: "find-your-stop"} %}Back to top{% /inlineLink %}
+{% /narrowBanner %}
+
+{% actionBanner
+   title="Bring the road trip to you"
+   color="red"
+   icon="mapPin"
+   link={label: "Email us", click: {discriminant: "mailto", value: "community@plancpills.org"}} %}
+If you’ve got an event or idea that belongs on the map, reach out to us at&nbsp;community@plancpills.org.
+{% /actionBanner %}

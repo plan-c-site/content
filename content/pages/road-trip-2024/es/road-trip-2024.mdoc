@@ -1,0 +1,68 @@
+# SPANISH VERSION
+{% heroSection
+   image={discriminant: "noco", value: "Road trip 2024 svg"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="pink"
+   ignoreImageBorder=false
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# Plan C Community Road trip archive
+
+The Plan C Community Road Trip traveled coast‑to‑coast from June 23 to November 5 2024, bringing together communities and organizers through dynamic, partner‑hosted events.
+
+After more than 70 stops, across 34 states we united abortion activists, local organizers, and supporters in meaningful conversations and raised awareness about safe, accessible abortion options. Scroll through to see where we went and relive every moment of this journey!
+
+If you’ve got an event or idea that belongs on the map, reach out to us at&nbsp;{% inlineLink action={discriminant: "mailto", value: "community@plancpills.org"} %}community@plancpills.org{% /inlineLink %}.
+
+{% tableOfContents /%}
+{% /heroSection %}
+
+{% tocAnchor
+   slug={name: "Events archive", slug: "events-archive"}
+   type={discriminant: "toc"} /%}
+
+{% tocAnchor
+   slug={name: "Road trip (2025)", slug: "road-trip-2025"}
+   type={discriminant: "action", value: {discriminant: "internal", value: {page: "road-trip"}}} /%}
+
+{% bodySection
+   centered=true
+   width="medium"
+   color="green"
+   textSize="medium" %}
+## Events archive
+
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "#[:location:]"}}
+   afterSubmit="nothing"
+   customValidation="if (!document.getElementById(inputs.location)) {\n  return {\n  location: \"There are no events scheduled in this state.\"\n  }\n}" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: false, type: {discriminant: "select", value: {placeholder: "Select a state or territory", autoSubmit: true, noSearch: false, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}
+
+{% roadtripList endDate="2024-12-31" pageLength=100 /%}
+
+{% narrowBanner
+   icon="arrowUp"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+{% inlineLink action={discriminant: "anchor", value: "events-archive"} %}Back to top{% /inlineLink %}
+{% /narrowBanner %}
+
+{% actionBanner
+   title="Bring the road trip to you"
+   color="red"
+   icon="mapPin"
+   link={label: "Email us", click: {discriminant: "mailto", value: "community@plancpills.org"}} %}
+If you’ve got an event or idea that belongs on the map, reach out to us at&nbsp;community@plancpills.org.
+{% /actionBanner %}

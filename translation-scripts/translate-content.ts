@@ -2,6 +2,7 @@ import "dotenv/config";
 import path from "node:path";
 import {
   translateAllYaml,
+  translateMarkdownRoots,
   translateMarkdownValues,
   TranslationKey,
 } from "./utils";
@@ -157,7 +158,13 @@ async function Translate() {
   await translateMarkdownValues(
     path.join(__dirname, "../databaseGlobals"),
     [],
-    { url_base: "/databaseGlobals/" }
+    { url_base: "/databaseGlobals" }
+  );
+
+  await translateMarkdownRoots(
+    path.join(__dirname, "../content/pages"),
+    [{ key: "title" }],
+    { url_base: "/pages" }
   );
 }
 

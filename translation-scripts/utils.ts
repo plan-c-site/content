@@ -341,15 +341,94 @@ export async function translateMarkdownValues(
   );
 }
 
+export async function translateMarkdownRoots(
+  folder: string,
+  keys: TranslationKey[],
+  { url_base }: { url_base?: string }
+) {
+  if (!WEGLOT_URL) throw new Error("No weglot url");
+  const filePaths: string[] = await glob(folder + "/**/*.mdoc");
+  await Promise.all(
+    filePaths.map(async (v) => {
+      if (v.includes("/es/")) {
+        return;
+      }
+      const url = url_base + v.replace(folder, "");
+      const dir = path.join(
+        path.dirname(v),
+        `./${path.basename(v).replace(path.extname(v), "")}/es/`
+      );
+      await fs.mkdir(dir, { recursive: true });
+      const newPath = path.join(dir, path.basename(v));
+      return translateMardown(v, newPath, keys, url);
+    })
+  );
+}
 export async function translateMardown(
   file: string,
   targetFile: string,
   frontMatterKeys: TranslationKey[],
   url: string
 ) {
+  if (!WEGLOT_URL) throw new Error("No weglot url");
   console.log("PROCESSING FILE", file, "TO TARGET", targetFile);
   const raw = await fs.readFile(file, { encoding: "utf-8" });
   const doc = markdoc.parse(raw);
+  const wordsToTranslate: WordForTranslation[] = [];
+  const frontmatter = doc.attributes.frontmatter
+    ? (yaml.load(doc.attributes.frontmatter) as object)
+    : false;
+  if (frontmatter) {
+    wordsToTranslate.push(
+      ...extractObjectValuesForTranslation([frontmatter], frontMatterKeys)
+    );
+  }
+
+  console.log("Translating - ", url);
+  const u = `${BASE_URL}/${url || ""}`;
+  const body = {
+    l_from: "en",
+    l_to: "es",
+    request_url: u,
+    words: wordsToTranslate
+      .filter((v) => typeof v === "object")
+      .map((v) => ({ w: v.w, t: v.t })),
+  };
+  if (body.words.length === 0) {
+    console.log(`No new translations in ${url}`);
+    return;
+  }
+  console.log(`Translating ${body.words.length} values`);
+  const result = await fetch(WEGLOT_URL, {
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body),
+    method: "POST",
+  });
+
+  if (!result.ok) {
+    throw new Error("Failed to get translation");
+  }
+  const parsed = (await result.json()) as { to_words: string[] };
+  console.log("Translated - ", url);
+
+  const translations = matchWordArrays(wordsToTranslate, parsed.to_words);
+  let startAt = 0;
+
+  if (frontmatter) {
+    const v = setTranslatedValues(
+      [frontmatter],
+      frontMatterKeys,
+      translations,
+      0
+    );
+    startAt = v.next;
+    doc.attributes.frontmatter = yaml.dump(v.result[0]);
+    const updateSource = markdoc.format(doc);
+    await fs.writeFile(file, updateSource, { encoding: "utf-8" });
+    doc.attributes.frontmatter = undefined;
+  }
   const newRaw = markdoc.format(doc);
   await fs.writeFile(
     targetFile,

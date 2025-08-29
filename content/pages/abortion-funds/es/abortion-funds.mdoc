@@ -1,0 +1,55 @@
+# SPANISH VERSION
+{% heroSection
+   image={discriminant: "one-off", value: {image: "/images/abortion-funds/us-map-hand-pills-green.png"}}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="green"
+   ignoreImageBorder=false
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# Help fund abortion pill access by mail
+
+One of the biggest barriers to abortion pills by mail continues to be cost.
+
+These abortion funds are directly offsetting the costs of telehealth and other online services, for folks accessing abortion pills by mail from restricted states and across the US.
+{% /heroSection %}
+
+{% horizontalSplit noHeader=false %}
+{% bodySection
+   centered=false
+   width="default"
+   color="green"
+   textSize="medium" %}
+## Abortion funds that need your support
+{% /bodySection %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% resourceList
+   resources=[{resource: "abortion-funds_abortion-freedom-fund"}, {resource: "abortion-funds_access-ma"}, {resource: "abortion-funds_cobalt-fund"}, {resource: "abortion-funds_healthcare-across-borders"}, {resource: "abortion-funds_idaho-access"}, {resource: "abortion-funds_nwaaf"}, {resource: "abortion-funds_repro-hub"}]
+   type={discriminant: "simple", value: 1}
+   icon=""
+   iconColor="green"
+   hideHeaders=false
+   appendStateField="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% actionBanner
+   title="Want to suggest a fund?"
+   color="red"
+   icon=""
+   link={label: "Email us", click: {discriminant: "mailto", value: "support@plancpills.org"}} %}
+If you know of an organization funding abortion pill access or shield law providers not mentioned here, let us know.
+{% /actionBanner %}

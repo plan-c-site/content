@@ -1,0 +1,81 @@
+# SPANISH VERSION
+{% heroSection
+   image={discriminant: "noco", value: "Plan C Squiggle Crop svg"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="cyan"
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-top"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# Jobs with Plan C
+
+Are you ready to shape the future of abortion care with us?
+
+{% tableOfContents /%}
+{% /heroSection %}
+
+{% tocAnchor
+   slug={name: "Current job opportunities", slug: "current-job-opportunities"}
+   type={discriminant: "toc"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Current job opportunities" icon="" %}
+Possibility Labs & Plan C are equal opportunity employers: BIPOC, LBGTQ+ folks, immigrants, and people with exceptionalities are strongly encouraged to apply.
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% faqList faqs=[] color="beige" appendStateField="" anchor=false /%}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+No current openings. Resumes are always welcome at {% inlineLink action={discriminant: ""} %}jobs@plancpills.org{% /inlineLink %}.
+{% /bodySection %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "Volunteer & community work", slug: "volunteer-and-community-work"}
+   type={discriminant: "toc"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="cyan" title="Volunteer & community work" icon="" /%}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+### We have specific community needs in the following areas:
+
+- Graphic design
+- Web design
+- Social media: drafting posts, collecting news and treating imagery
+- Writing & copyediting
+- Partnerships outreach & coalition-building
+
+{% inContentButton
+   label="Join our community"
+   icon="arrowRight"
+   size="standard"
+   background="beige"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "internal", value: {page: "community"}} /%}
+{% /bodySection %}
+{% /horizontalSplit %}

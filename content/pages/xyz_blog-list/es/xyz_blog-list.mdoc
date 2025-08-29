@@ -1,0 +1,37 @@
+# SPANISH VERSION
+{% heroSection
+   image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"}
+   imageSide="right"
+   color="green"
+   imageBackgroundColor="beige"
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# Blog Example
+{% /heroSection %}
+
+{% postList
+   type={discriminant: "simple"}
+   filtering={discriminant: "manual", value: ["everything-to-know-about-plan-c-pills-guide", "mife-miso-animated-series"]} /%}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% postList
+   type={discriminant: "postList", value: {pagination: 3}}
+   filtering={discriminant: "category", value: {category: "blogs"}} /%}
+{% /flexSection %}
+
+{% postList
+   type={discriminant: "headlines", value: {color: "green", buttonLabel: "Link to blog post", pagination: 2}}
+   filtering={discriminant: "category", value: {category: "blogs"}} /%}

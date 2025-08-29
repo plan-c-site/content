@@ -1,0 +1,151 @@
+# SPANISH VERSION
+{% heroSection
+   image={discriminant: "noco", value: "Stickers - Hero"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="cyan"
+   ignoreImageBorder=false
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# Stickers
+
+Thank you for your interest in spreading the word about Plan C. To order stickers, please fill out the secure form below and click Submit.
+
+Our stickers are available in English and Spanish, with a QR code that links directly to the Plan C website.
+
+You can also print your own stickers, mini-flyers and protest posters using our DIY sticker & flyer templates.
+
+{% tableOfContents /%}
+{% /heroSection %}
+
+{% tocAnchor
+   slug={name: "Order stickers", slug: "order-stickers"}
+   type={discriminant: "toc"} /%}
+
+{% formWrapper
+   formType={discriminant: "multiStep", value: [{discriminant: "hubspot", value: {formId: "b2d46224-0d6f-40e0-b2bb-cc977dc01eb2", invisibleFields: []}}, {discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236994830559", input: "id_spa"}, {id: "46236791013599", input: "id_eng"}]}}]}
+   afterSubmit="nothing"
+   customValidation="let atLeast1 = false\nif (inputs.id_eng && inputs.id_eng !== '0') {\natLeast1 = true \n}\nif (inputs.id_spa && inputs.id_spa !== '0') {\natLeast1 = true \n}\nif (!atLeast1) {\n   return {\n  id_eng: \"Please select at least one type of sticker\",\nid_spa: \"Please select at least one item\"\n}\n}\nreturn true" %}
+{% formSection type="waiting" %}
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="QR Code Stickers" icon="" %}
+2” stickers, available in English and Spanish, with a QR code that links directly to the Plan C website.
+
+{% inContentImage
+   image={discriminant: "noco", value: "Stickers - Hero"}
+   maxWidth=100
+   action={discriminant: ""}
+   newTab=false /%}
+{% /sectionHeader %}
+
+{% bodySection
+   centered=false
+   width="narrow"
+   color="beige"
+   textSize="medium" %}
+{% textSize textSize="large" inline=true %}**How many stickers do you need?**{% /textSize %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=1.5
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% formInput
+   fields=[{label: {name: "English", slug: "id_eng"}, required: false, type: {discriminant: "select", value: {placeholder: "Quantity", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Spanish", slug: "id_spa"}, required: false, type: {discriminant: "select", value: {placeholder: "Quantity", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
+
+{% narrowBanner
+   icon="asterisk"
+   color="beige"
+   iconAlign="items-start"
+   fullWidth=false %}
+**Need more materials? We’ve got you covered!**
+
+Email us at [community@plancpills.org](mailto:community@plancpills.org) with your outreach details and needs, and we’ll get back to you ASAP to discuss.
+{% /narrowBanner %}
+{% /flexSection %}
+{% /bodySection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="cyan" title="Checkout" icon="" %}
+You will be directed to a secure platform to collect your shipping address.
+{% /sectionHeader %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium" %}
+{% textSize textSize="large" inline=true %}**Your information**{% /textSize %}
+
+{% formInput
+   fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "How did you hear about the Plan C QR code stickers?", slug: "how_did_you_hear_about_plan_c__dropdown_"}, required: false, type: {discriminant: "select", value: {placeholder: "Select one...", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Google search"}, {label: "Social media post"}, {label: "Radio"}, {label: "Billboard"}, {label: "Sticker"}, {label: "Local organization or event"}, {label: "Word of mouth"}, {label: "Other"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Are you connected with any groups in the reproductive health community? (Student groups, reproductive health orgs, healthcare providers, etc.)", slug: "are_you_connected_with_any_repro_groups_"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Please share any additional information about your affiliations, activism journey or feedback:", slug: "additional_notes"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}] /%}
+
+{% narrowBanner
+   icon="handCoins"
+   color="beige"
+   iconAlign="items-start"
+   fullWidth=false %}
+**Pay what you can / Pay it forward**
+
+Stickers cost us a minimum of $10 per package to fulfill. After checkout you will have the option to donate to Plan C. If you are able, please give what you can to cover these costs or pay it forward. **Donation is not required.**
+
+*Materials will be delivered in unbranded packaging material. It will not say Plan C or "abortion" on the outside of the package or envelope.*
+{% /narrowBanner %}
+
+{% formInput
+   fields=[{label: {name: "Continue to checkout", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "arrowRight", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+
+{% formSection type="error" %}
+{% narrowBanner
+   icon="alertCircle"
+   color="red"
+   iconAlign="items-center"
+   fullWidth=false %}
+There was an error submitting your form.  Please {% inlineLink action={discriminant: "internal", value: {page: "contact"}} %}let us know{% /inlineLink %}.
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="submitted" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Submitting...
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="success" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Thanks, your information was received.  You will be redirected to the checkout page.
+{% /narrowBanner %}
+{% /formSection %}
+{% /bodySection %}
+{% /horizontalSplit %}
+{% /formSection %}
+{% /formWrapper %}
+
+{% tocAnchor
+   slug={name: "Print your own stickers & flyers", slug: "print-your-own-stickers-and-flyers"}
+   type={discriminant: "action", value: {discriminant: "internal", value: {page: "diy-stickers"}}} /%}
+
+{% actionBanner
+   title="Print your own stickers & flyers"
+   color="red"
+   icon="fileText"
+   link={label: "DIY stickers & flyers", click: {discriminant: "internal", value: {page: "diy-stickers"}}} %}
+Check out our DIY templates for stickers, mini-flyers and protest posters.
+{% /actionBanner %}

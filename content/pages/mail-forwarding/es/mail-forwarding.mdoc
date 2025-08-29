@@ -1,0 +1,98 @@
+# SPANISH VERSION
+{% heroSection
+   image={discriminant: "noco", value: "PO Box - Hero"}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="cyan"
+   ignoreImageBorder=false
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false %}
+# Mail forwarding and other options
+
+{% insetSection %}
+**Abortion pills are currently accessible from all 50 states without the need for these creative workarounds.  {% inlineLink action={discriminant: "home", value: {anchor: "search-by-state"}} %}Use our guide{% /inlineLink %} to find a provider in your state.**
+{% /insetSection %}
+
+People who live in states with restrictive laws are still accessing at-home abortion pills by using creative options like mail forwarding, driving across state borders, or using General Delivery addresses.
+
+Below you can read examples of how this has worked, then search for an abortion pill provider in one of your neighboring states.
+
+{% tableOfContents /%}
+{% /heroSection %}
+
+{% tocAnchor
+   slug={name: "Examples of how this has worked", slug: "examples-of-how-this-has-worked"}
+   type={discriminant: "toc"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% bodySection
+   centered=false
+   width="default"
+   color="green"
+   textSize="medium" %}
+## Examples of how this has worked:
+{% /bodySection %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% faqList
+   faqs=["mail-forwarding_mail-forwarding-virtual-mailbox", "mail-forwarding_pick-up-in-a-neighboring-state-that-has-telehealth-abortion", "mail-forwarding_general-delivery-in-a-neighboring-state-that-has-telehealth-abortion"]
+   color="beige"
+   appendStateField=""
+   anchor=false /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "Find an abortion pill provider", slug: "find-an-abortion-pill-provider"}
+   type={discriminant: "toc"} /%}
+
+{% bodySection
+   centered=false
+   width="medium"
+   color="blue"
+   textSize="medium" %}
+## Find an abortion pill provider
+
+Options for at-home abortion pill access will vary by location. Click below to find options by state or territory.
+
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] /%}
+{% /formSection %}
+
+{% formSection type="submitted" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Submitting...
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="success" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Please wait...
+{% /narrowBanner %}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}

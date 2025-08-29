@@ -1,0 +1,8 @@
+# SPANISH VERSION
+{% bodySection centered=false width="full" color="beige" textSize="medium" %}
+# Blogs
+{% /bodySection %}
+
+{% postList
+   type={discriminant: "headlines", value: {color: "beige", buttonLabel: "Read post", pagination: 10}}
+   filtering={discriminant: "category", value: {category: "blogs"}} /%}
