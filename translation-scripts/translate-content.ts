@@ -57,10 +57,81 @@ async function Translate() {
             keys: [{ key: "anyLabel" }, { key: "numberLabel" }],
             container: "object",
           },
+          {
+            key: "helpPopup",
+            condition: "true",
+            container: "object",
+            keys: [{ key: "label" }],
+          },
         ],
       },
     ],
     { url: "/databaseGlobals" }
+  );
+
+  await translateAllYaml(
+    path.join(__dirname, "../navigation"),
+    [
+      {
+        key: "messageBar",
+        container: "object",
+        keys: [
+          {
+            key: "text",
+          },
+          { key: "quickExitText" },
+        ],
+      },
+      {
+        key: "externalLink",
+        container: "object",
+        keys: [
+          {
+            key: "title",
+          },
+          { key: "dontShowAgainText" },
+          { key: "continueText" },
+        ],
+      },
+      {
+        key: "navBar",
+        container: "object",
+        keys: [
+          {
+            key: "links",
+            container: "array",
+            keys: [
+              {
+                has_condition: "section",
+                keys: [
+                  { key: "label" },
+                  {
+                    key: "children",
+                    container: "array",
+                    keys: [
+                      {
+                        has_condition: "section",
+                        keys: [
+                          { key: "label" },
+                          {
+                            key: "children",
+                            container: "array",
+                            keys: [{ key: "label" }],
+                          },
+                        ],
+                      },
+                      { has_condition: "link", keys: [{ key: "label" }] },
+                    ],
+                  },
+                ],
+              },
+              { has_condition: "link", keys: [{ key: "label" }] },
+            ],
+          },
+        ],
+      },
+    ],
+    { url: "/navigation" }
   );
 }
 

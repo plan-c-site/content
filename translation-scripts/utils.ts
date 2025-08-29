@@ -19,15 +19,17 @@ export type TranslatedObject<T extends object, K extends keyof T> = T & {
   es?: Record<K, string>;
 };
 
-type TranslationKey = { key: string } & (
-  | { type?: keyof typeof textTypes }
-  | { keys: TranslationKey[]; container: "array" | "record" | "object" }
-  | {
-      keys: TranslationKey[];
-      container: "array" | "record" | "object";
-      condition: string;
-    }
-);
+type TranslationKey =
+  | ({ key: string } & (
+      | { type?: keyof typeof textTypes }
+      | { keys: TranslationKey[]; container: "array" | "record" | "object" }
+      | {
+          keys: TranslationKey[];
+          container: "array" | "record" | "object";
+          condition: string;
+        }
+    ))
+  | { has_condition: string; keys: TranslationKey[] };
 type WordForTranslation = { w: string; t: number; hash: string } | string;
 type WordFromTranslation = { w: string; hash: string } | string;
 
@@ -39,6 +41,23 @@ function extractObjectValuesForTranslation<T extends object>(
     const es: object =
       "es" in value && value.es && typeof value.es === "object" ? value.es : {};
     return keys.flatMap((key) => {
+      if ("has_condition" in key) {
+        console.log("HAS CONDITION", key, value);
+        if (
+          "discriminant" in value &&
+          "value" in value &&
+          value.discriminant === key.has_condition
+        ) {
+          return extractObjectValuesForTranslation(
+            [value.value as object],
+            key.keys
+          );
+        }
+        return [];
+      }
+      if (key.key == "links") {
+        console.log("GOT LINKS", key, value);
+      }
       if ("container" in key && typeof value[key.key] === "object") {
         if ("condition" in key) {
           const val =
@@ -50,10 +69,8 @@ function extractObjectValuesForTranslation<T extends object>(
             false;
 
           if (dis !== key.condition || !val) {
-            console.log("CONDITION", key, dis, val);
             return [];
           }
-          console.log("SUCCES", key, val);
           if (key.container === "object") {
             const v = extractObjectValuesForTranslation([val], key.keys);
             return v;
@@ -145,10 +162,28 @@ function setTranslatedValues<T extends object>(
       ...value,
     };
     for (const key of keys) {
+      if ("has_condition" in key) {
+        console.log("SET HAS CONDITION", key, value);
+        if (
+          "discriminant" in value &&
+          "value" in value &&
+          value.discriminant === key.has_condition
+        ) {
+          const result = setTranslatedValues(
+            [value.value as object],
+            key.keys,
+            translations,
+            next
+          );
+          next = result.next;
+          nv["discriminant"] = value.discriminant;
+          nv["value"] = result.result[0];
+          return nv;
+        }
+        continue;
+      }
       const val = value[key.key];
 
-      console.log("KEY: ", i, key);
-      console.log("VAL: ", i, typeof val);
       if ("container" in key && typeof val === "object") {
         if ("condition" in key) {
           const va = ("value" in val && (val.value as object)) || false;
@@ -156,12 +191,9 @@ function setTranslatedValues<T extends object>(
             ("discriminant" in val && (val.discriminant as string)) || false;
 
           if (discriminant !== key.condition || !va) {
-            console.log("SET CONDITION", key, discriminant, va);
             continue;
           }
-          console.log("SET SUCCES", key, va);
           if (key.container === "object") {
-            console.log("In Object", i);
             const v = setTranslatedValues([va], key.keys, translations, next);
             next = v.next;
             nv[key.key] = { discriminant, value: v.result[0] };
@@ -169,9 +201,7 @@ function setTranslatedValues<T extends object>(
             const v = setTranslatedValues(va, key.keys, translations, next);
             next = v.next;
             nv[key.key] = { discriminant, value: v.result };
-            console.log("ARRAY RESULTS", i);
           } else {
-            console.log("In Record", i);
             const children = Object.keys(va);
             const v = setTranslatedValues(
               children.map((v) => va[v]),
@@ -188,7 +218,6 @@ function setTranslatedValues<T extends object>(
           }
         } else {
           if (key.container === "object") {
-            console.log("In Object", i);
             const v = setTranslatedValues([val], key.keys, translations, next);
             next = v.next;
             nv[key.key] = v.result[0];
@@ -196,9 +225,7 @@ function setTranslatedValues<T extends object>(
             const v = setTranslatedValues(val, key.keys, translations, next);
             next = v.next;
             nv[key.key] = v.result;
-            console.log("ARRAY RESULTS", i);
           } else {
-            console.log("In Record", i);
             const children = Object.keys(val);
             const v = setTranslatedValues(
               children.map((v) => val[v]),
@@ -215,7 +242,6 @@ function setTranslatedValues<T extends object>(
           }
         }
       } else if (key.key in value && typeof val === "string") {
-        console.log("Handling String", i);
         const translation = translations[next];
         next++;
         if (typeof translation === "string") {

@@ -4,11 +4,23 @@ messageBar:
   mainLink: /digital-security
   quickExitText: Quick Exit
   quickExitLink: https://weather.com
+  es:
+    text: 'Manténgase seguro:  Lea nuestros consejos sobre privacidad digital'
+    __text: D0c9SBFJCTWPzYr2XuWqJpXLCjT80gpZPKLRTc9TR6M=
+    quickExitText: Salida rápida
+    __quickExitText: RTSdxNpwJ+o0f3S7lsMKP80yQxJ1cN5vuZQkjYMoF+M=
 externalLink:
   title: You are leaving the Plan C website.
   dontShowAgainText: Don’t show this again
   continueText: Continue to provider
   continueIcon: arrowUpRight
+  es:
+    title: Está abandonando el sitio web de Plan C.
+    __title: 65NwupSXpbLX4bQh7yrKkmCJolV/hcHl2na7LNaPb1Y=
+    dontShowAgainText: No vuelvas a mostrar esto
+    __dontShowAgainText: LCPCHUcXjdBNQ1T4dRwSCle5e/aaPPi6o4w1hwcR0nA=
+    continueText: Continuar con el proveedor
+    __continueText: DIFLYPyl8BsrLC1Evc6nHnmwVgZ/7JHfwO//qqubSXc=
 social:
   - action:
       discriminant: external
@@ -53,6 +65,9 @@ navBar:
                 discriminant: home
                 value:
                   anchor: search-by-state
+              es:
+                label: Búsqueda por estado
+                __label: N04ByJV4PyY1yOzr9KkXR1Vsq2nwDzJqAScGzRqGLsk=
           - discriminant: link
             value:
               label: FAQ
@@ -60,6 +75,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: guide-how-to-get-abortion-pills
+              es:
+                label: PREGUNTAS FRECUENTES
+                __label: 28RooUtgHV2SQK63K5/NL4rtL04wkyh27fjRbsMThGs=
           - discriminant: link
             value:
               label: Pills in advance
@@ -67,6 +85,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: in-advance
+              es:
+                label: Pastillas por adelantado
+                __label: JeAz5CfbZ0IV5WZuhQCIx2Fqgf9jDSNTgCnMqTFCkps=
           - discriminant: link
             value:
               label: Abortion pill instructions
@@ -74,6 +95,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: protocol
+              es:
+                label: Instrucciones para píldoras abortivas
+                __label: Vn159vrGRnpG3WtmFnsZWSWcUNblxj4x0z8om5ZwfMU=
           - discriminant: link
             value:
               label: Support & resources
@@ -81,6 +105,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: support-resources
+              es:
+                label: Apoyo y recursos
+                __label: pKsz9CFmDrqU0pevsplyPwGGouoU97FgUEcfOyl7CPs=
           - discriminant: link
             value:
               label: Blogs
@@ -88,6 +115,12 @@ navBar:
                 discriminant: internal
                 value:
                   page: blogs
+              es:
+                label: Blogs
+                __label: 2RbufGGKVntFWsjk6vFingfLA339b2ntXylp4PfxPsU=
+        es:
+          label: Píldoras abortivas
+          __label: Zh6Rdu93OKBlBOzST0YCpN1f6yg7zSMcvrIIDP1rtYc=
     - discriminant: section
       value:
         label: Get involved
@@ -99,6 +132,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: community
+              es:
+                label: Comunidad del Plan C
+                __label: hc1sqHcmDjBoorH9TZJVWN/KJILm5dkKdWAz7fOlkQw=
           - discriminant: link
             value:
               label: Take action
@@ -106,6 +142,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: community
+              es:
+                label: Actúa
+                __label: AZDJu4GqOzWVxtZjgKGkbK26dk4itxcEVuTxiX59OF4=
           - discriminant: link
             value:
               label: Stickers & flyers
@@ -113,6 +152,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: stickers
+              es:
+                label: Pegatinas y folletos
+                __label: nrI7IOn40eCOftfpC+BVF/Zv2EuutWpSakeDTloZujg=
           - discriminant: link
             value:
               label: Plan C road trip
@@ -120,6 +162,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: road-trip
+              es:
+                label: Plan C de viaje por carretera
+                __label: jQ5zsuymSY5YQQm5/6Hd6Qb+cetMHNb8R0O6sePdsoQ=
           - discriminant: link
             value:
               label: Social media toolkit
@@ -127,6 +172,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: social-media-toolkit
+              es:
+                label: Herramientas para las redes sociales
+                __label: 2IHpUD7hcfcvputz/wvxGWefKcqDlH7e+ILSuWWj4R0=
           - discriminant: link
             value:
               label: Merch
@@ -135,6 +183,9 @@ navBar:
                 value:
                   url: https://plancpills.threadless.com/
                   showPopup: false
+              es:
+                label: Mercancía
+                __label: G5mfdxUY+cvNY3/lJqf66ZXHT8QPL6Y47mMdkKMM0Ec=
           - discriminant: link
             value:
               label: Partner with us
@@ -142,6 +193,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: partnerships
+              es:
+                label: Asóciese con nosotros
+                __label: 7e2JAvFckuS/Bk1hrpmfas4G8pQhJsVXnvyWtmvxDjg=
           - discriminant: link
             value:
               label: For medical professionals
@@ -149,6 +203,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: medical-professional-abortion-services
+              es:
+                label: Para profesionales médicos
+                __label: duKxhvkxKDiaNnVdtIgp9mI3NDn1wC5+7v17Dy6ki+E=
           - discriminant: link
             value:
               label: Jobs with Plan C
@@ -156,6 +213,12 @@ navBar:
                 discriminant: internal
                 value:
                   page: jobs
+              es:
+                label: Trabajos con Plan C
+                __label: XV3B/S5xVTdWt8MdroGX/vV4vlnAAn9dF9DlUcPXoW0=
+        es:
+          label: Participa
+          __label: LLpAwlQbPioEmROZV/i9uBCF7BTG+F6o01tQmxzGHG0=
     - discriminant: section
       value:
         label: About
@@ -167,6 +230,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: about
+              es:
+                label: Acerca del Plan C
+                __label: PKquUvT5PggPXJgCKs3b3Dc9pApRN68dt01FNOndcSo=
           - discriminant: link
             value:
               label: Press
@@ -174,6 +240,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: press
+              es:
+                label: Pulse
+                __label: ntEnPptaVXmfXpVKSCwE/C4Br1+gbb/3cGs1BnvgEpk=
           - discriminant: link
             value:
               label: Research & learning
@@ -181,6 +250,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: research-and-learning
+              es:
+                label: Investigación y aprendizaje
+                __label: tjGUWPk7NvPeuW3/q9HMRbjCN+3jaZXUa3Ve2PmL4a0=
           - discriminant: link
             value:
               label: 'Plan C: The documentary'
@@ -188,12 +260,18 @@ navBar:
                 discriminant: internal
                 value:
                   page: documentary
+              es:
+                label: 'Plan C: El documental'
+                __label: wh609W7evM+Pcv9/yZLGQrAISp8XgGPOguBLGOiA+nA=
           - discriminant: link
             value:
               label: 2024 Annual report
               action:
                 discriminant: download
                 value: Plan_C_Annual_Report_2024
+              es:
+                label: 2024 Informe anual
+                __label: s7ML3HbRdBWtEFBBIl2VEcj2gK9QGel5qUCq9t4Hf+M=
           - discriminant: link
             value:
               label: Contact us
@@ -201,6 +279,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: contact
+              es:
+                label: Póngase en contacto con nosotros
+                __label: R6rzG4PWv9cFuAvNW2JpvkyqPPVM+lRrCue8QHizmw8=
           - discriminant: link
             value:
               label: Media inquiries
@@ -208,6 +289,12 @@ navBar:
                 discriminant: internal
                 value:
                   page: media
+              es:
+                label: Consultas de los medios de comunicación
+                __label: DjWF2UT3COzweBhpmpvPucM5WWDQoEYgikPoTSr0678=
+        es:
+          label: Acerca de
+          __label: Tvyg0Qxf646bNesdmU8pBbtxcU5qJx9RHXE7U56l+qE=
     - discriminant: link
       value:
         label: Donate
@@ -215,4 +302,9 @@ navBar:
           discriminant: internal
           value:
             page: donate
+        es:
+          label: Donar
+          __label: yR7g8nmd+RXvzBF7oGPZXgy/DV6ObspTczM7ubBsXxM=
+  es: {}
 footer: {}
+es: {}
