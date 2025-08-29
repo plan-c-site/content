@@ -37,7 +37,26 @@ async function Translate() {
       {
         key: "filterFields",
         container: "array",
-        keys: [{ key: "label" }],
+        keys: [
+          { key: "label" },
+          {
+            key: "selectType",
+            condition: "single",
+            container: "array",
+            keys: [{ key: "label" }],
+          },
+          {
+            key: "selectType",
+            condition: "multi",
+            container: "array",
+            keys: [{ key: "label" }],
+          },
+          {
+            key: "selectType",
+            condition: "number",
+            keys: [{ key: "anyLabel" }, { key: "numberLabel" }],
+          },
+        ],
       },
     ],
     { url: "/databaseGlobals" }

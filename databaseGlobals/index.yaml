@@ -131,12 +131,21 @@ filterFields:
         - value: Discounts available
           label: Discounts available
           invert: false
+          es:
+            label: Descuentos disponibles
+            __label: moaN7bU5TIeu4EMDKsOZiaHXk7Mf/RlEgMBqC0aSz/c=
         - value: Accepts some insurance
           label: Accepts some insurance
           invert: false
+          es:
+            label: Acepta algunos seguros
+            __label: P5bMgRGRNPAsXxsVzL4Ku4FTxIvIJKAmQG798bdup2c=
         - value: Accepts medicaid
           label: Free with medicaid
           invert: false
+          es:
+            label: Gratuito con medicaid
+            __label: l+u/mWOezhtTbAULtXd9BUMm63+mgKu6h9L/hktRYMY=
     helpPopup:
       discriminant: false
     es:
@@ -150,10 +159,16 @@ filterFields:
         - value: Pills in advance
           label: Pills in advance
           invert: false
+          es:
+            label: Pastillas por adelantado
+            __label: JeAz5CfbZ0IV5WZuhQCIx2Fqgf9jDSNTgCnMqTFCkps=
         - value: Video visit required
           label: No video visit required
           invert: true
           overrideField: Provider Interaction
+          es:
+            label: No se requiere visita en vídeo
+            __label: 25CpaeKpnrWw4iW+41SvByNQhnGHlxUZNA9mC2/nar8=
     helpPopup:
       discriminant: false
     es:
@@ -186,19 +201,31 @@ filterFields:
       value:
         - value: English
           invert: false
+          es: {}
         - value: Spanish
           label: Español
           invert: false
+          es:
+            label: English
+            __label: lLOCthud3g/41FpEo0thlx2Y31vYEMgDo/M85bEV6ug=
         - value: Hindi
           label: हिन्दी
           invert: false
+          es:
+            label: हिन्दी
+            __label: ndsSr4RX1jXsFXc/kFyoWHdy72TV7L4k2apOqyei55s=
         - value: Hmong-Mien
           invert: false
+          es: {}
         - value: Punjabi
           invert: false
+          es: {}
         - value: Portuguese
           label: Português
           invert: false
+          es:
+            label: Português
+            __label: 1K2o7CdkEaHXNCgRfqDX2OpIeJ6fB85rtpCMuFG1JEE=
     helpPopup:
       discriminant: false
     es:
@@ -211,16 +238,22 @@ filterFields:
       value:
         - value: Women
           invert: false
+          es: {}
         - value: BIPOC
           invert: false
+          es: {}
         - value: LGBTQ+
           invert: false
+          es: {}
         - value: Veteran
           invert: false
+          es: {}
         - value: Indigenous
           invert: false
+          es: {}
         - value: Disabled
           invert: false
+          es: {}
     helpPopup:
       discriminant: false
     es:
