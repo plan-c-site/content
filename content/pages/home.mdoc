@@ -184,13 +184,13 @@ Plan C provides information on how people in the US are accessing abortion pills
 {% /flexSection %}
 {% /heroSection %}
 
-{% narrowBanner
-   icon="truckFast"
+{% actionBanner
+   title="Abortion pills in advance?"
    color="red"
-   iconAlign="items-center"
-   fullWidth=true %}
-{% textSize textSize="small" inline=false %}Some people order abortion pills ahead of time, just in case.  {% inlineLink action={discriminant: "internal", value: {page: "in-advance"}} %}**Learn more about pills in advance**{% /inlineLink %}.{% /textSize %}
-{% /narrowBanner %}
+   icon="truckFast"
+   link={label: "Learn more", click: {discriminant: "internal", value: {page: "in-advance"}}} %}
+Some people order abortion pills ahead of time, to have just in case.
+{% /actionBanner %}
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="pink" title="Frequently asked questions" icon="" %}
