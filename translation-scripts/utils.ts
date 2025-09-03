@@ -146,7 +146,8 @@ function setTranslatedValues<T extends object>(
   items: T[],
   keys: TranslationKey[],
   translations: WordFromTranslation[],
-  startAt: number
+  startAt: number,
+  override?: boolean
 ): { next: number; result: object[] } {
   let next = startAt;
   const result = items.map((value, i) => {
@@ -172,7 +173,8 @@ function setTranslatedValues<T extends object>(
             [value.value as object],
             key.keys,
             translations,
-            next
+            next,
+            override
           );
           next = result.next;
           nv["discriminant"] = value.discriminant;
@@ -193,11 +195,23 @@ function setTranslatedValues<T extends object>(
             continue;
           }
           if (key.container === "object") {
-            const v = setTranslatedValues([va], key.keys, translations, next);
+            const v = setTranslatedValues(
+              [va],
+              key.keys,
+              translations,
+              next,
+              override
+            );
             next = v.next;
             nv[key.key] = { discriminant, value: v.result[0] };
           } else if (key.container === "array" && Array.isArray(va)) {
-            const v = setTranslatedValues(va, key.keys, translations, next);
+            const v = setTranslatedValues(
+              va,
+              key.keys,
+              translations,
+              next,
+              override
+            );
             next = v.next;
             nv[key.key] = { discriminant, value: v.result };
           } else {
@@ -206,7 +220,8 @@ function setTranslatedValues<T extends object>(
               children.map((v) => va[v]),
               key.keys,
               translations,
-              next
+              next,
+              override
             );
             next = v.next;
             const r = {};
@@ -217,11 +232,23 @@ function setTranslatedValues<T extends object>(
           }
         } else {
           if (key.container === "object") {
-            const v = setTranslatedValues([val], key.keys, translations, next);
+            const v = setTranslatedValues(
+              [val],
+              key.keys,
+              translations,
+              next,
+              override
+            );
             next = v.next;
             nv[key.key] = v.result[0];
           } else if (key.container === "array" && Array.isArray(val)) {
-            const v = setTranslatedValues(val, key.keys, translations, next);
+            const v = setTranslatedValues(
+              val,
+              key.keys,
+              translations,
+              next,
+              override
+            );
             next = v.next;
             nv[key.key] = v.result;
           } else {
@@ -230,7 +257,8 @@ function setTranslatedValues<T extends object>(
               children.map((v) => val[v]),
               key.keys,
               translations,
-              next
+              next,
+              override
             );
             next = v.next;
             const r = {};
@@ -253,6 +281,16 @@ function setTranslatedValues<T extends object>(
       }
     }
     if (Object.keys(es).length > 0) {
+      if (override) {
+        const n = { ...nv };
+        for (const key of Object.keys(es)) {
+          if (key.startsWith("__")) {
+            continue;
+          }
+          n[key] = es[key];
+        }
+        return n;
+      }
       return { ...nv, es };
     }
     return nv;
@@ -368,6 +406,19 @@ export async function translateMarkdownRoots(
   );
 }
 
+const sectionTranslations: Record<string, TranslationKey[]> = {
+  actionBanner: [{ key: "title" }],
+  cardSection: [{ key: "title" }, { key: "label" }],
+  filteredListings: [{ key: "title" }],
+  formInput: [
+    {
+      key: "fields",
+      container: "array",
+      keys: [{ key: "label", container: "object", keys: [{ key: "name" }] }],
+    },
+  ],
+};
+
 function extractParagraphsFromMarkdown(node: Node): WordForTranslation[] {
   if (
     "content" in node.attributes &&
@@ -380,6 +431,19 @@ function extractParagraphsFromMarkdown(node: Node): WordForTranslation[] {
         hash: "",
       },
     ];
+  } else if (node.tag && sectionTranslations[node.tag]) {
+    const attrs = extractObjectValuesForTranslation(
+      [node.attributes],
+      sectionTranslations[node.tag]
+    );
+
+    if (node.tag === "actionBanner") {
+      console.log("EXTRACTED", attrs);
+    }
+    const children = node.children.flatMap((n) =>
+      extractParagraphsFromMarkdown(n)
+    );
+    return [...attrs, ...children];
   } else {
     return node.children.flatMap((n) => extractParagraphsFromMarkdown(n));
   }
@@ -411,20 +475,28 @@ function applyTranslationsToMarkdown(
       next: startAt + 1,
     };
   } else {
-    const children: Node[] = [];
+    let attributes = node.attributes;
     let i = startAt;
+    if (node.tag && sectionTranslations[node.tag]) {
+      const attrs = setTranslatedValues(
+        [attributes],
+        sectionTranslations[node.tag],
+        translations,
+        startAt,
+        true
+      );
+      attributes = attrs.result[0];
+      i = attrs.next;
+    }
+    const children: Node[] = [];
     for (const child of node.children) {
       const { n, next } = applyTranslationsToMarkdown(child, translations, i);
       i = next;
       children.push(n);
     }
 
-    if (node.tag === "inlineLink") {
-      console.log("INLINE LINK", node);
-      node.inline = true;
-    }
     return {
-      n: new Node(node.type, node.attributes, children, node.tag),
+      n: new Node(node.type, attributes, children, node.tag),
       next: i,
     };
   }
@@ -503,7 +575,6 @@ export async function translateMardown(
     doc.attributes.frontmatter = undefined;
   }
   const translated = applyTranslationsToMarkdown(doc, translations, startAt);
-  console.log("HERE FOR", file);
   const newRaw = markdoc.format(translated.n, {
     allowIndentation: false,
     maxTagOpeningWidth: 9999,

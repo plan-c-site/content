@@ -10,7 +10,7 @@ Plan C ofrece información sobre el acceso en línea a píldoras abortivas para 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=0.25 itemsAlign="items-stretch" justiftContent="justify-stretch" %}
 {% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}} afterSubmit="nothing" %}
 {% formSection type="waiting" %}
-{% formInput fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
+{% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
 {% /formSection %}
 {% /formWrapper %}
 
@@ -20,7 +20,7 @@ Plan C ofrece información sobre el acceso en línea a píldoras abortivas para 
 {% /flexSection %}
 {% /heroSection %}
 
-{% actionBanner title="Abortion pills in advance?" color="red" icon="truckFast" link={label: "Learn more", click: {discriminant: "internal", value: {page: "in-advance"}}} %}
+{% actionBanner title="¿Píldoras abortivas por adelantado?" color="red" icon="truckFast" link={label: "Learn more", click: {discriminant: "internal", value: {page: "in-advance"}}} %}
 Algunas personas encargan píldoras abortivas con antelación, por si acaso.
 {% /actionBanner %}
 
@@ -69,15 +69,15 @@ Cuando mencionamos "Guía", nos referimos a un recurso que enumera los servicios
 {% tocAnchor slug={name: "test", slug: "test"} type={discriminant: "toc"} /%}
 
 {% cardLayoutSection color="beige" %}
-{% cardSection image={discriminant: "one-off", value: {image: "/images/home/pill-packs.png"}} imageOnly=false title="Abortion pills in advance?" action={discriminant: "internal", value: {page: "in-advance"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
+{% cardSection image={discriminant: "one-off", value: {image: "/images/home/pill-packs.png"}} imageOnly=false title="¿Píldoras abortivas por adelantado?" action={discriminant: "internal", value: {page: "in-advance"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
 Algunas personas encargan píldoras abortivas con antelación, por si acaso.
 {% /cardSection %}
 
-{% cardSection image={discriminant: "noco", value: "Stickers - Hero"} imageOnly=false title="Get free stickers" action={discriminant: "internal", value: {page: "stickers"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
+{% cardSection image={discriminant: "noco", value: "Stickers - Hero"} imageOnly=false title="Consigue pegatinas gratis" action={discriminant: "internal", value: {page: "stickers"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
 Consigue gratis adhesivos con el código QR del Plan C y ayuda a difundir el acceso a la píldora abortiva
 {% /cardSection %}
 
-{% cardSection image={discriminant: "noco", value: "Megaphone - Hero"} imageOnly=false title="Join the Plan C Community" action={discriminant: "internal", value: {page: "community"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
+{% cardSection image={discriminant: "noco", value: "Megaphone - Hero"} imageOnly=false title="Únase a la Comunidad Plan C" action={discriminant: "internal", value: {page: "community"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
 Un grupo de activistas y defensores que actúan en sus comunidades.
 {% /cardSection %}
 {% /cardLayoutSection %}
@@ -109,7 +109,7 @@ Suscríbase a nuestro boletín para recibir directamente en su bandeja de entrad
 
 {% formWrapper formType={discriminant: "hubspot", value: {formId: "4ea4d330-d054-4777-8f07-8b3a99297a91", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}} afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
-{% formInput fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
+{% formInput fields=[{label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
 {% /formSection %}
 
 {% formSection type="submitted" %}
