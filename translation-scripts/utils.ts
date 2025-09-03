@@ -389,7 +389,11 @@ export async function translateMarkdownRoots(
   const filePaths: string[] = await glob(folder + "/**/*.mdoc");
   await Promise.all(
     filePaths.map(async (v) => {
-      if (!v.includes("/xyz_test-page.mdoc") && !v.includes("/home.mdoc"))
+      if (
+        !v.includes("/xyz_test-page.mdoc") &&
+        !v.includes("/xyz_form") &&
+        !v.includes("/home.mdoc")
+      )
         return;
       if (v.includes("/es/")) {
         return;
@@ -426,7 +430,15 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
           key: "type",
           container: "object",
           condition: "select",
-          keys: [{ key: "placeholder" }],
+          keys: [
+            { key: "placeholder" },
+            {
+              key: "options",
+              container: "array",
+              condition: "true",
+              keys: [{ key: "label" }],
+            },
+          ],
         },
       ],
     },
