@@ -414,7 +414,21 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
     {
       key: "fields",
       container: "array",
-      keys: [{ key: "label", container: "object", keys: [{ key: "name" }] }],
+      keys: [
+        { key: "label", container: "object", keys: [{ key: "name" }] },
+        {
+          key: "type",
+          container: "object",
+          condition: "text",
+          keys: [{ key: "placeholder" }],
+        },
+        {
+          key: "type",
+          container: "object",
+          condition: "select",
+          keys: [{ key: "placeholder" }],
+        },
+      ],
     },
   ],
 };

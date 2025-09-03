@@ -10,7 +10,7 @@ Plan C ofrece información sobre el acceso en línea a píldoras abortivas para 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=0.25 itemsAlign="items-stretch" justiftContent="justify-stretch" %}
 {% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}} afterSubmit="nothing" %}
 {% formSection type="waiting" %}
-{% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
+{% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Búsqueda por estado o territorio", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
 {% /formSection %}
 {% /formWrapper %}
 
@@ -109,7 +109,7 @@ Suscríbase a nuestro boletín para recibir directamente en su bandeja de entrad
 
 {% formWrapper formType={discriminant: "hubspot", value: {formId: "4ea4d330-d054-4777-8f07-8b3a99297a91", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}} afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
-{% formInput fields=[{label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
+{% formInput fields=[{label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Tu correo electrónico", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
 {% /formSection %}
 
 {% formSection type="submitted" %}
