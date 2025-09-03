@@ -130,20 +130,10 @@ navBar:
         children:
           - discriminant: link
             value:
-              label: Plan C Community
+              label: Community & actions
               es:
                 label: Comunidad del Plan C
                 __label: hc1sqHcmDjBoorH9TZJVWN/KJILm5dkKdWAz7fOlkQw=
-              action:
-                discriminant: internal
-                value:
-                  page: community
-          - discriminant: link
-            value:
-              label: Take action
-              es:
-                label: Actúa
-                __label: AZDJu4GqOzWVxtZjgKGkbK26dk4itxcEVuTxiX59OF4=
               action:
                 discriminant: internal
                 value:
