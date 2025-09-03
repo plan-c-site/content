@@ -159,8 +159,8 @@ filterFields:
     selectType:
       discriminant: multi
       value:
-        - value: Get pills in advance
-          label: Pills in advance
+        - value: Pills in advance
+          label: Offers pills in advance
           invert: false
           es:
             label: Pastillas por adelantado
