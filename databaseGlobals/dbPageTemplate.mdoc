@@ -46,8 +46,12 @@
 {% /heroSection %}
 
 {% tocAnchor
-   slug={name: "List of providers", slug: "list-of-providers"}
+   slug={name: "Online providers", slug: "online-providers"}
    type={discriminant: "toc"} /%}
+
+{% tocAnchor
+   slug={name: "In person clinics", slug: "in-person-clinics"}
+   type={discriminant: "action", value: {discriminant: "anchor", value: "in-person-clinics"}} /%}
 
 {% dbClinic /%}
 
@@ -130,6 +134,10 @@
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "In person clinics", slug: "in-person-clinics"}
+   type={discriminant: "anchor"} /%}
 
 {% horizontalSplit noHeader=false %}
 {% bodySection
