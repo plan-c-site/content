@@ -405,8 +405,9 @@ function applyTranslationsToMarkdown(
       ...node.attributes,
       content: val || "",
     };
+    const n = new Node(node.type, attributes, node.children, node.tag);
     return {
-      n: new Node(node.type, attributes, node.children, node.tag),
+      n,
       next: startAt + 1,
     };
   } else {
@@ -416,6 +417,11 @@ function applyTranslationsToMarkdown(
       const { n, next } = applyTranslationsToMarkdown(child, translations, i);
       i = next;
       children.push(n);
+    }
+
+    if (node.tag === "inlineLink") {
+      console.log("INLINE LINK", node);
+      node.inline = true;
     }
     return {
       n: new Node(node.type, node.attributes, children, node.tag),
@@ -498,6 +504,9 @@ export async function translateMardown(
   }
   const translated = applyTranslationsToMarkdown(doc, translations, startAt);
   console.log("HERE FOR", file);
-  const newRaw = markdoc.format(translated.n);
+  const newRaw = markdoc.format(translated.n, {
+    allowIndentation: false,
+    maxTagOpeningWidth: 9999,
+  });
   await fs.writeFile(targetFile, `${newRaw}`, { encoding: "utf-8" });
 }
