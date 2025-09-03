@@ -159,7 +159,7 @@ filterFields:
     selectType:
       discriminant: multi
       value:
-        - value: Pills in advance
+        - value: Get pills in advance
           label: Pills in advance
           invert: false
           es:
