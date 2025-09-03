@@ -50,7 +50,7 @@ clinicTypes:
         es:
           label: 'Entrega:'
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
-      - label: FDA-approved
+      - label: Generic
         es:
           label: Aprobado por la FDA
           __label: CYBqONC2yqBTl2hmjxKWURS9Tq+hpw7y8z9OyikHB7I=
