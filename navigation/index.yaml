@@ -130,7 +130,7 @@ navBar:
         children:
           - discriminant: link
             value:
-              label: Community & actions
+              label: Community action
               es:
                 label: Comunidad del Plan C
                 __label: hc1sqHcmDjBoorH9TZJVWN/KJILm5dkKdWAz7fOlkQw=
