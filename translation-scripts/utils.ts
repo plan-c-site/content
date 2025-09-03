@@ -3,7 +3,7 @@ import { glob } from "glob";
 import yaml from "js-yaml";
 import crypto from "node:crypto";
 import path from "node:path";
-import markdoc from "@markdoc/markdoc";
+import markdoc, { Node } from "@markdoc/markdoc";
 
 const API_KEY = process.env.WEGLOT_API_KEY || false;
 const WEGLOT_URL = API_KEY
@@ -364,12 +364,70 @@ export async function translateMarkdownRoots(
     })
   );
 }
+
+function extractParagraphsFromMarkdown(node: Node): WordForTranslation[] {
+  if (
+    "content" in node.attributes &&
+    typeof node.attributes.content === "string"
+  ) {
+    return [
+      {
+        w: node.attributes.content,
+        t: textTypes.text,
+        hash: "",
+      },
+    ];
+  } else {
+    return node.children.flatMap((n) => extractParagraphsFromMarkdown(n));
+  }
+}
+
+function applyTranslationsToMarkdown(
+  node: Node,
+  translations: WordFromTranslation[],
+  startAt: number
+) {
+  if (
+    "content" in node.attributes &&
+    typeof node.attributes.content === "string"
+  ) {
+    const translation = translations[startAt];
+
+    const val =
+      translation && typeof translation === "object"
+        ? translation.w
+        : translation;
+
+    const attributes = {
+      ...node.attributes,
+      content: val || "",
+    };
+    return {
+      n: new Node(node.type, attributes, node.children, node.tag),
+      next: startAt + 1,
+    };
+  } else {
+    const children: Node[] = [];
+    let i = startAt;
+    for (const child of node.children) {
+      const { n, next } = applyTranslationsToMarkdown(child, translations, i);
+      i = next;
+      children.push(n);
+    }
+    return {
+      n: new Node(node.type, node.attributes, children, node.tag),
+      next: i,
+    };
+  }
+}
+
 export async function translateMardown(
   file: string,
   targetFile: string,
   frontMatterKeys: TranslationKey[],
   url: string
 ) {
+  if (!file.includes("xyz_test-page") && !file.includes("home")) return;
   if (!WEGLOT_URL) throw new Error("No weglot url");
   console.log("PROCESSING FILE", file, "TO TARGET", targetFile);
   const raw = await fs.readFile(file, { encoding: "utf-8" });
@@ -383,6 +441,8 @@ export async function translateMardown(
       ...extractObjectValuesForTranslation([frontmatter], frontMatterKeys)
     );
   }
+
+  wordsToTranslate.push(...extractParagraphsFromMarkdown(doc));
 
   console.log("Translating - ", url);
   const u = `${BASE_URL}/${url || ""}`;
@@ -434,11 +494,8 @@ export async function translateMardown(
     await fs.writeFile(file, updateSource, { encoding: "utf-8" });
     doc.attributes.frontmatter = undefined;
   }
-  const newRaw = markdoc.format(doc);
-  await fs.writeFile(
-    targetFile,
-    `# SPANISH VERSION
-${newRaw}`,
-    { encoding: "utf-8" }
-  );
+  const translated = applyTranslationsToMarkdown(doc, translations, startAt);
+  console.log("HERE FOR", file);
+  const newRaw = markdoc.format(translated.n);
+  await fs.writeFile(targetFile, `${newRaw}`, { encoding: "utf-8" });
 }

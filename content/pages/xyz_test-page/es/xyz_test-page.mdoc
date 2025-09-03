@@ -1,4 +1,3 @@
-# SPANISH VERSION
 {% heroSection
    image={discriminant: "noco", value: "Mailbox - Hero"}
    imageSide="right"
@@ -12,29 +11,56 @@
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
    reverseOnMobile=false %}
-# {% ignoreHeaderStyle /%}Abortion pills by mail in every state
+# {% ignoreHeaderStyle /%}
+Píldoras abortivas por correo en todos los estados
 
-Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.
+Plan C ofrece información actualizada sobre el acceso en línea a opciones de píldoras abortivas en casa.
 
-{% inlineLink action={discriminant: "pregnancy"} %}Pregnancy Calculator{% /inlineLink %} link
 
-{% inlineLink action={discriminant: "tel", value: "+1-555-555-5555"} %}Telephone{% /inlineLink %}
+{% inlineLink action={discriminant: "pregnancy"} %}Calculadora de embarazo{% /inlineLink %}
+ enlace
 
-{% inlineLink action={discriminant: "mailto", value: "test@example.com"} %}Email{% /inlineLink %}
+
+{% inlineLink action={discriminant: "tel", value: "+1-555-555-5555"} %}Teléfono{% /inlineLink %}
+
+
+
+{% inlineLink action={discriminant: "mailto", value: "test@example.com"} %}Correo electrónico{% /inlineLink %}
+
+
 
 {% inlineLink action={discriminant: "sms", value: "+1-555-555-5555"} %}SMS{% /inlineLink %}
 
-{% inlineLink action={discriminant: "download", value: "Test-PDF"} %}DOWNLOAD{% /inlineLink %}
 
-{% inlineLink action={discriminant: "popup", value: "xyz-test-popup"} %}Popup?{% /inlineLink %}
 
-see {% inlineLink action={discriminant: "external", value: {url: "#testimonials", showPopup: false}} %}testimonials{% /inlineLink %} {% inContentIcon icon="heartHandshake" size="standard" background="" color="black" /%}
+{% inlineLink action={discriminant: "download", value: "Test-PDF"} %}DESCARGAR{% /inlineLink %}
 
-{% inlineLink action={discriminant: "blog", value: {page: "a-creative-guide-to-abortion-pills-l33-x-fftx-plan-c"}} %}Link to a blog post{% /inlineLink %}
+
+
+{% inlineLink action={discriminant: "popup", value: "xyz-test-popup"} %}¿Popup?{% /inlineLink %}
+
+
+véase 
+{% inlineLink
+   action={discriminant: "external", value: {url: "#testimonials", showPopup: false}} %}testimonios{% /inlineLink %}
+ 
+{% inContentIcon
+   icon="heartHandshake"
+   size="standard"
+   background=""
+   color="black" /%}
+
+
+
+{% inlineLink
+   action={discriminant: "blog", value: {page: "a-creative-guide-to-abortion-pills-l33-x-fftx-plan-c"}} %}Enlace a una entrada de blog{% /inlineLink %}
+
 
 {% tableOfContents /%}
 
-{% textSize textSize="small" inline=true %}We do not collect or store personal data.{% /textSize %}
+
+{% textSize textSize="small" inline=true %}No recogemos ni almacenamos datos personales.{% /textSize %}
+
 {% /heroSection %}
 
 {% cardLayoutSection color="green" %}
@@ -49,9 +75,9 @@ see {% inlineLink action={discriminant: "external", value: {url: "#testimonials"
    imageHorizontal="center"
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop" %}
-Othe**r content and stuff**
+Othe**r contenido y esas cosas**
 
-I think we can add content...
+Creo que podemos añadir contenido...
 {% /cardSection %}
 
 {% cardSection
@@ -65,13 +91,13 @@ I think we can add content...
    imageHorizontal="right"
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop" %}
-Othe**r content and stuff**
+Othe**r contenido y esas cosas**
 
-I think we can add content...
+Creo que podemos añadir contenido...
 
-we need some more
+necesitamos más
 
-to go over in height
+sobrepasar en altura
 {% /cardSection %}
 
 {% cardSection
@@ -84,13 +110,13 @@ to go over in height
    imageHorizontal="center"
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop" %}
-Othe**r content and stuff**
+Othe**r contenido y esas cosas**
 
-I think we can add content...
+Creo que podemos añadir contenido...
 
-we need some more
+necesitamos más
 
-to go over in height
+sobrepasar en altura
 {% /cardSection %}
 
 {% cardSection
@@ -103,13 +129,13 @@ to go over in height
    imageHorizontal="right"
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop" %}
-Othe**r content and stuff**
+Othe**r contenido y esas cosas**
 
-I think we can add content...
+Creo que podemos añadir contenido...
 
-we need some more
+necesitamos más
 
-to go over in height
+sobrepasar en altura
 {% /cardSection %}
 {% /cardLayoutSection %}
 
@@ -158,7 +184,7 @@ to go over in height
    width="default"
    color="beige"
    textSize="medium" %}
-Some text is here
+Algunos textos están aquí
 {% /bodySection %}
 
 {% faqSection
@@ -183,7 +209,10 @@ Some text is here
 
 {% horizontalSplit noHeader=false %}
 {% sectionHeader color="blue" title="A Section" icon="" %}
-**Test** {% inlineLink action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} %}some{% /inlineLink %} text
+**Prueba** 
+{% inlineLink
+   action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} %}algunos{% /inlineLink %}
+ texto
 
 {% inContentImage
    image={discriminant: "uploaded", value: "mailbox"}
@@ -224,7 +253,7 @@ Some text is here
    width="default"
    color="beige"
    textSize="medium" %}
-Some text is here
+Algunos textos están aquí
 {% /bodySection %}
 
 {% bodySection
@@ -232,7 +261,7 @@ Some text is here
    width="default"
    color="beige"
    textSize="medium" %}
-Some text is here
+Algunos textos están aquí
 {% /bodySection %}
 {% /flexSection %}
 {% /horizontalSplit %}
@@ -242,12 +271,12 @@ Some text is here
    type={discriminant: "toc"} /%}
 
 {% bodySection centered=true width="default" color="red" textSize="medium" %}
-## Plan C is an information resource.
+## El Plan C es un recurso de información.
 
-We do not give medical or legal advice or sell abortion pills. &nbsp;This website is an educational resource for learning about how people in the US are accessing abortion pills and safely managing their own abortions. Plan C provides research-based information but does not endorse any of the services listed on our website. Plan C is not affiliated with any of the services listed in our directory. For questions about paying for, delivery of, or how to order abortion pills from these services, please contact the service directly.‍
+No ofrecemos asesoramiento médico o jurídico ni vendemos píldoras abortivas.  Este sitio web es un recurso educativo para aprender cómo las personas en los EE.UU. tienen acceso a las píldoras abortivas y gestionan de forma segura sus propios abortos. Plan C proporciona información basada en la investigación, pero no respalda ninguno de los servicios que aparecen en nuestro sitio web. Plan C no está afiliado a ninguno de los servicios que figuran en nuestro directorio. Si tiene preguntas sobre el pago, la entrega o cómo solicitar píldoras abortivas a estos servicios, comuníquese directamente con el servicio.
 
 \
-‍A note on language:&nbsp;Abortion pills can be used by people who have a uterus and can get pregnant. This includes cisgender women and people who identify as trans, non-binary, gender-expansive, intersex, Two-Spirit, and more. By using a variety of terms on this website—including “women” and “people who are pregnant”—we aim to be inclusive of all pregnant people who need these services.
+Nota sobre el lenguaje: Las píldoras abortivas pueden ser utilizadas por personas que tienen útero y pueden quedarse embarazadas. Esto incluye a las mujeres cisgénero y a las personas que se identifican como trans, no binarias, de género expansivo, intersexuales, de dos espíritus, etc. Al utilizar diversos términos en este sitio web, como "mujeres" y "personas embarazadas", pretendemos incluir a todas las personas embarazadas que necesiten estos servicios.
 {% /bodySection %}
 
 {% bodySection
@@ -255,12 +284,12 @@ We do not give medical or legal advice or sell abortion pills. &nbsp;This websit
    width="default"
    color="beige"
    textSize="medium" %}
-As a provider, you may see patients who need:
+Como proveedor, puede ver pacientes que necesitan:
 
-- Information about how to access abortion
-- Post-abortion care
-- Miscarriage treatment
-- Post-abortion contraception
+- Información sobre cómo acceder al aborto
+- Atención postaborto
+- Tratamiento del aborto espontáneo
+- Anticoncepción post-aborto
 
 {% inContentButton
    label="test"
@@ -273,15 +302,15 @@ As a provider, you may see patients who need:
    action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} /%}
 
 \
-Access to abortion pills still exists in all states through:
+El acceso a las píldoras abortivas sigue existiendo en todos los estados a través:
 
-- US Licensed telehealth services ($150 or less)
-- International telehealth providers ($90)
-- Online vendors (from $35)
-- Community networks (free)
+- Servicios de telesalud autorizados en EE.UU. (150 $ o menos)
+- Proveedores internacionales de telesalud (90 $)
+- Vendedores en línea (a partir de 35 $)
+- Redes comunitarias (gratuitas)
 
 \
-Learn more about these options on&nbsp;Plan C’s Guide&nbsp;and&nbsp;ineedana.com.
+Obtenga más información sobre estas opciones en la Guía del Plan C y en ineedana.com.
 
 {% faqSection
    faq="where-someone-lives-makes-a-difference"
@@ -301,9 +330,9 @@ Learn more about these options on&nbsp;Plan C’s Guide&nbsp;and&nbsp;ineedana.c
    width="default"
    color="beige"
    textSize="medium" %}
-# Testing Pasted Text
+# Prueba de texto pegado
 
-The **peach** (*Prunus persica*) is a [deciduous](https://en.wikipedia.org/wiki/Deciduous) tree first [domesticated](https://en.wikipedia.org/wiki/Domesticated) and [cultivated](https://en.wikipedia.org/wiki/Agriculture) in [China](https://en.wikipedia.org/wiki/China). It bears edible juicy [fruits](https://en.wikipedia.org/wiki/Fruit) with various characteristics, most called **peaches** and the glossy-skinned, non-fuzzy varieties called **nectarines**. Peaches and [nectarines](https://en.wikipedia.org/wiki/Peach#Nectarines) are the same species, though they are regarded commercially as different fruits.
+En **melocotón** (*Prunus persica*) es una [caducifolio](https://en.wikipedia.org/wiki/Deciduous) árbol primero [domesticado](https://en.wikipedia.org/wiki/Domesticated) y [cultivado](https://en.wikipedia.org/wiki/Agriculture) en [China](https://en.wikipedia.org/wiki/China). Es jugosa y comestible [frutas](https://en.wikipedia.org/wiki/Fruit) con diversas características, la mayoría denominadas **melocotones** y las variedades de piel brillante y no peluda llamadas **nectarinas**. Melocotones y [nectarinas](https://en.wikipedia.org/wiki/Peach#Nectarines) son de la misma especie, aunque comercialmente se consideran frutos diferentes.
 {% /bodySection %}
 
 {% bodySection
@@ -311,13 +340,13 @@ The **peach** (*Prunus persica*) is a [deciduous](https://en.wikipedia.org/wiki/
    width="default"
    color="green"
    textSize="medium" %}
-## We have some text
+## Tenemos un texto
 
-to check the gaps between elements in the body. So now I'll keep writing for a bit
+para comprobar los huecos entre elementos del cuerpo. Así que ahora voy a seguir escribiendo un poco
 
-### And add another header here
+### Y añadir otro encabezado aquí
 
-The **peach** (*Prunus persica*) is a [deciduous](https://en.wikipedia.org/wiki/Deciduous) tree first [domesticated](https://en.wikipedia.org/wiki/Domesticated) and [cultivated](https://en.wikipedia.org/wiki/Agriculture) in [China](https://en.wikipedia.org/wiki/China). It bears edible juicy [fruits](https://en.wikipedia.org/wiki/Fruit) with various characteristics, most called **peaches** and the glossy-skinned, non-fuzzy varieties called **nectarines**. Peaches and [nectarines](https://en.wikipedia.org/wiki/Peach#Nectarines) are the same species, though they are regarded commercially as different fruits.
+En **melocotón** (*Prunus persica*) es una [caducifolio](https://en.wikipedia.org/wiki/Deciduous) árbol primero [domesticado](https://en.wikipedia.org/wiki/Domesticated) y [cultivado](https://en.wikipedia.org/wiki/Agriculture) en [China](https://en.wikipedia.org/wiki/China). Es jugosa y comestible [frutas](https://en.wikipedia.org/wiki/Fruit) con diversas características, la mayoría denominadas **melocotones** y las variedades de piel brillante y no peluda llamadas **nectarinas**. Melocotones y [nectarinas](https://en.wikipedia.org/wiki/Peach#Nectarines) son de la misma especie, aunque comercialmente se consideran frutos diferentes.
 
 {% inContentImage
    image={discriminant: "uploaded", value: "infographic-how-does-the-abortion-pill-work-en"}
@@ -325,13 +354,13 @@ The **peach** (*Prunus persica*) is a [deciduous](https://en.wikipedia.org/wiki/
    action={discriminant: ""}
    newTab=false /%}
 
-The **peach** (*Prunus persica*) is a [deciduous](https://en.wikipedia.org/wiki/Deciduous) tree first [domesticated](https://en.wikipedia.org/wiki/Domesticated) and [cultivated](https://en.wikipedia.org/wiki/Agriculture) in [China](https://en.wikipedia.org/wiki/China). It bears edible juicy [fruits](https://en.wikipedia.org/wiki/Fruit) with various characteristics, most called **peaches** and the glossy-skinned, non-fuzzy varieties called **nectarines**. Peaches and [nectarines](https://en.wikipedia.org/wiki/Peach#Nectarines) are the same species, though they are regarded commercially as different fruits.
+En **melocotón** (*Prunus persica*) es una [caducifolio](https://en.wikipedia.org/wiki/Deciduous) árbol primero [domesticado](https://en.wikipedia.org/wiki/Domesticated) y [cultivado](https://en.wikipedia.org/wiki/Agriculture) en [China](https://en.wikipedia.org/wiki/China). Es jugosa y comestible [frutas](https://en.wikipedia.org/wiki/Fruit) con diversas características, la mayoría denominadas **melocotones** y las variedades de piel brillante y no peluda llamadas **nectarinas**. Melocotones y [nectarinas](https://en.wikipedia.org/wiki/Peach#Nectarines) son de la misma especie, aunque comercialmente se consideran frutos diferentes.
 
 {% insetSection %}
-Some additional content here, so we can have more text and what not
+Un poco de contenido adicional aquí, así que podemos tener más texto y lo que no
 {% /insetSection %}
 
-And finally we end this section
+Y por último terminamos esta sección
 {% /bodySection %}
 
 {% horizontalSplit noHeader=true %}
@@ -354,19 +383,19 @@ And finally we end this section
 {% /cardLayoutSection %}
 
 {% timelineSection title="1990" color="" %}
-In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Plan B, the “morning after pill,” over the counter – a long but successful journey catalyzing business, FDA and public goals. (Read From Secret to Shelf, 1999).
+A mediados de los noventa, Elisa Wells y Francine Coeytaux formaron parte del equipo encargado de comercializar Plan B, la "píldora del día después", un largo pero fructífero viaje que catalizó objetivos empresariales, de la FDA y públicos. (Leer De secreto a estantería, 1999).
 {% /timelineSection %}
 
 {% timelineSection title="1990" color="" %}
-In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Plan B, the “morning after pill,” over the counter – a long but successful journey catalyzing business, FDA and public goals. (Read From Secret to Shelf, 1999).
+A mediados de los noventa, Elisa Wells y Francine Coeytaux formaron parte del equipo encargado de comercializar Plan B, la "píldora del día después", un largo pero fructífero viaje que catalizó objetivos empresariales, de la FDA y públicos. (Leer De secreto a estantería, 1999).
 {% /timelineSection %}
 
 {% timelineSection title="1990" color="" %}
-In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Plan B, the “morning after pill,” over the counter – a long but successful journey catalyzing business, FDA and public goals. (Read From Secret to Shelf, 1999).
+A mediados de los noventa, Elisa Wells y Francine Coeytaux formaron parte del equipo encargado de comercializar Plan B, la "píldora del día después", un largo pero fructífero viaje que catalizó objetivos empresariales, de la FDA y públicos. (Leer De secreto a estantería, 1999).
 {% /timelineSection %}
 
 {% timelineSection title="1990" color="" %}
-In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Plan B, the “morning after pill,” over the counter – a long but successful journey catalyzing business, FDA and public goals. (Read From Secret to Shelf, 1999).
+A mediados de los noventa, Elisa Wells y Francine Coeytaux formaron parte del equipo encargado de comercializar Plan B, la "píldora del día después", un largo pero fructífero viaje que catalizó objetivos empresariales, de la FDA y públicos. (Leer De secreto a estantería, 1999).
 {% /timelineSection %}
 
 {% tocAnchor slug={name: "ToDo", slug: "todo"} type={discriminant: "toc"} /%}
@@ -376,7 +405,7 @@ In the mid 1990s, Elisa Wells and Francine Coeytaux were on the team to bring Pl
    color="red"
    icon="text"
    link={label: "Download PDF With Some Long Text", click: {discriminant: ""}} %}
-We have a new 501c3 fiscal sponsor, Possibility Labs (EIN 85-3989363).
+Tenemos un nuevo patrocinador fiscal 501c3, Possibility Labs (EIN 85-3989363).
 {% /actionBanner %}
 
 {% logoBanner
