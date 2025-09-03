@@ -87,15 +87,15 @@ sobrepasar en altura
 {% rawHtml html="<div class=\"raisely-donate\" data-campaign-path=\"plan-c\" data-profile=\"\" data-width=\"100%\" data-height=\"600\"><script src=\"https://cdn.raisely.com/v3/public/embed.js\"></script></div>" /%}
 {% /bodySection %}
 
-{% tocAnchor slug={name: "Before Pre Filtered Suppliers", slug: "faq"} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "Antes de proveedores prefiltrados", slug: "faq"} type={discriminant: "toc"} /%}
 
 {% filteredListings title="1 semana o menos" color="red" listings={discriminant: "field", value: {field: "Delivery", value: "1 week or less"}} /%}
 
 {% filteredListings title="Sitios web que venden pastillas" color="red" listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}} /%}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="A Section" icon="" %}
-{% inContentDropdown label="Download" size="standard" background="beige" altHoverBackground="" options=[{discriminant: "label", value: "Languages"}, {discriminant: "separator"}, {discriminant: "link", value: {label: "English", action: {discriminant: ""}, url: "https://www.google.com"}}, {discriminant: "link", value: {label: "Spanish", action: {discriminant: ""}, url: "https://www.google.es"}}] /%}
+{% sectionHeader color="pink" title="Sección A" icon="" %}
+{% inContentDropdown label="Descargar" size="standard" background="beige" altHoverBackground="" options=[{discriminant: "label", value: "Languages"}, {discriminant: "separator"}, {discriminant: "link", value: {label: "Inglés", action: {discriminant: ""}, url: "https://www.google.com"}}, {discriminant: "link", value: {label: "Español", action: {discriminant: ""}, url: "https://www.google.es"}}] /%}
 {% /sectionHeader %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" %}
@@ -112,16 +112,16 @@ Algunos textos están aquí
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="A Section" icon="" %}
+{% sectionHeader color="blue" title="Sección A" icon="" %}
 **Prueba** 
 {% inlineLink action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} %}algunos{% /inlineLink %}
  texto
 
 {% inContentImage image={discriminant: "uploaded", value: "mailbox"} maxWidth=100 action={discriminant: ""} newTab=false /%}
 
-{% inContentButton label="A Button" icon="arrowDown" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: ""} /%}
+{% inContentButton label="Un Botón" icon="arrowDown" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: ""} /%}
 
-{% inContentButton label="PRIMARY button" icon="plus" size="primary" background="green" altHoverBackground="red" smallShadow=false leftIcon=true action={discriminant: ""} /%}
+{% inContentButton label="Botón PRIMARIO" icon="plus" size="primary" background="green" altHoverBackground="red" smallShadow=false leftIcon=true action={discriminant: ""} /%}
 {% /sectionHeader %}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" %}
@@ -135,7 +135,7 @@ Algunos textos están aquí
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% tocAnchor slug={name: "Plan C is an Information Resource", slug: "information-resource"} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "El Plan C es un recurso de información", slug: "information-resource"} type={discriminant: "toc"} /%}
 
 {% bodySection centered=true width="default" color="red" textSize="medium" %}
 ## El Plan C es un recurso de información.
@@ -154,7 +154,7 @@ Como proveedor, puede ver pacientes que necesitan:
 - Tratamiento del aborto espontáneo
 - Anticoncepción post-aborto
 
-{% inContentButton label="test" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} /%}
+{% inContentButton label="prueba" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} /%}
 
 \
 El acceso a las píldoras abortivas sigue existiendo en todos los estados a través:
@@ -171,9 +171,9 @@ Obtenga más información sobre estas opciones en la Guía del Plan C y en ineed
 {% /bodySection %}
 
 {% horizontalSplit noHeader=true %}
-{% sectionHeader color="beige" title="Left (50%)" icon="minus" /%}
+{% sectionHeader color="beige" title="Izquierda (50%)" icon="minus" /%}
 
-{% sectionHeader color="beige" title="Right 50%" icon="phone" /%}
+{% sectionHeader color="beige" title="Correcto 50%" icon="phone" /%}
 {% /horizontalSplit %}
 
 {% bodySection centered=false width="default" color="beige" textSize="medium" %}
@@ -203,14 +203,14 @@ Y por último terminamos esta sección
 {% /bodySection %}
 
 {% horizontalSplit noHeader=true %}
-{% sectionHeader color="beige" title="Left (33%)" icon="minus" /%}
+{% sectionHeader color="beige" title="Izquierda (33%)" icon="minus" /%}
 
-{% sectionHeader color="beige" title="Middle (33%)" icon="arrowUp" /%}
+{% sectionHeader color="beige" title="Medio (33%)" icon="arrowUp" /%}
 
-{% sectionHeader color="beige" title="Right 33%" icon="phone" /%}
+{% sectionHeader color="beige" title="Correcto 33%" icon="phone" /%}
 {% /horizontalSplit %}
 
-{% tocAnchor slug={name: "testimonials", slug: "testimonials"} type={discriminant: "anchor"} /%}
+{% tocAnchor slug={name: "testimonios", slug: "testimonials"} type={discriminant: "anchor"} /%}
 
 {% cardLayoutSection color="beige" minColumnWidth=32 %}
 {% testimonialSection testimonial="n-honor-of-all-uteruses-may-you-be-free-to-do-as-you-please" /%}
@@ -240,4 +240,4 @@ A mediados de los noventa, Elisa Wells y Francine Coeytaux formaron parte del eq
 Tenemos un nuevo patrocinador fiscal 501c3, Possibility Labs (EIN 85-3989363).
 {% /actionBanner %}
 
-{% logoBanner title="Our research and work has been featured in:" color="blue" logos=[{discriminant: "one-off", value: {image: "/images/xyz_test-page/0f5cca4cd4a6c2d02ede52647123bc81.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/22f1bdba5f74a78acbe13f1d01719598.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/93c5433751921a24c465e675e463d8ab.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/a33062e6303d6b0b8569c934214389e5.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/c32f68927ec12577bf3216a7345b5fce.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/da3968a42be039d7d138ded968241d87.jpg"}}] maxItemHeight=4 /%}
+{% logoBanner title="Nuestras investigaciones y trabajos han aparecido en:" color="blue" logos=[{discriminant: "one-off", value: {image: "/images/xyz_test-page/0f5cca4cd4a6c2d02ede52647123bc81.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/22f1bdba5f74a78acbe13f1d01719598.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/93c5433751921a24c465e675e463d8ab.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/a33062e6303d6b0b8569c934214389e5.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/c32f68927ec12577bf3216a7345b5fce.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/da3968a42be039d7d138ded968241d87.jpg"}}] maxItemHeight=4 /%}

@@ -17,13 +17,13 @@
 {% formInput fields=[{label: {name: "Danos tu opinión", slug: "feedback"}, required: true, type: {discriminant: "text", value: {placeholder: "Comentarios", multiline: true, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "blue", altHoverBackground: "blue", autoSubmit: false}}}}}] /%}
 {% /formWrapper %}
 
-{% inContentButton label="Popup Test" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: "popup", value: "xyz-test-popup"} /%}
+{% inContentButton label="Prueba Popup" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: "popup", value: "xyz-test-popup"} /%}
 {% /heroSection %}
 
 {% formWrapper formType={discriminant: "link", value: {pattern: "/[:lang:]/[:text:]"}} afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="Testing a Link Form?!" icon="" /%}
+{% sectionHeader color="green" title="¿Probando un formulario de enlace?" icon="" /%}
 
 {% bodySection centered=false width="default" color="beige" textSize="medium" %}
 {% formInput fields=[{label: {name: "Algunos textos", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Algo...", multiline: false, embedSubmitButton: {discriminant: false}}}}] /%}
@@ -69,7 +69,7 @@ Error en el envío del formulario
 {% formWrapper formType={discriminant: "custom", value: {code: "console.log(inputs);\nif (inputs.text.length > 2) {\nreturn \"success\";\n}\nreturn \"error\";"}} afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="red" title="Testing a Custom Form" icon="x" %}
+{% sectionHeader color="red" title="Probar un formulario personalizado" icon="x" %}
 Sólo deben utilizarse si **Absolutamente necesario**
 {% /sectionHeader %}
 
@@ -101,7 +101,7 @@ Error en el envío del formulario
 {% formWrapper formType={discriminant: "hubspot", value: {formId: "35d3f280-9c43-49e9-9a80-8a4d1a49214d", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}} afterSubmit="show-screens" %}
 {% formSection type="waiting" %}
 {% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Testing a HubSpot Form" icon="" /%}
+{% sectionHeader color="blue" title="Probar un formulario de HubSpot" icon="" /%}
 
 {% bodySection centered=false width="default" color="beige" textSize="medium" %}
 {% formInput fields=[{label: {name: "Nombre", slug: "firstname"}, required: true, type: {discriminant: "text", value: {placeholder: "Nombre...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Apellido", slug: "lastname"}, required: true, type: {discriminant: "text", value: {placeholder: "Apellido", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Se", slug: "se"}, required: false, type: {discriminant: "separator"}}, {label: {name: "correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "email@example.com", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "teléfono", slug: "phone"}, required: false, type: {discriminant: "text", value: {placeholder: "+1-555-555-5555", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "empresa", slug: "company"}, required: false, type: {discriminant: "text", value: {placeholder: "Empresa", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Prueba de la casilla de verificación", slug: "checkbox_test"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Mi mensaje se refiere a", slug: "webform_subject"}, required: true, type: {discriminant: "select", value: {placeholder: "Seleccione una opción", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "A Donation or a Grant", value: "A donation or grant"}, {label: "Advocacy or Partnership", value: "Advocacy or Partnership"}, {label: "Press or Public Relations", value: "Press or Public Relations"}, {label: "Ambassador Program", value: "Ambassador Program"}, {label: "I am a Medical Provider", value: "I am a medical provider"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "mensaje", slug: "message"}, required: false, type: {discriminant: "text", value: {placeholder: "Mensaje...", multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}

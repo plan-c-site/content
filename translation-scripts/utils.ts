@@ -443,6 +443,25 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
       ],
     },
   ],
+  inContentButton: [{ key: "label" }],
+  inContentDropdown: [
+    { key: "label" },
+    {
+      key: "options",
+      container: "array",
+      keys: [
+        {
+          has_condition: "link",
+          keys: [{ key: "label" }],
+        },
+      ],
+    },
+  ],
+  logoBanner: [{ key: "title" }],
+  sectionHeader: [{ key: "title" }],
+  timelineSection: [{ key: "title" }],
+  toDoSection: [{ key: "title" }],
+  tocAnchor: [{ key: "slug", container: "object", keys: [{ key: "name" }] }],
 };
 
 function extractParagraphsFromMarkdown(node: Node): WordForTranslation[] {

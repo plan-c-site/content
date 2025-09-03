@@ -163,8 +163,8 @@ filterFields:
           label: Offers pills in advance
           invert: false
           es:
-            label: Pastillas por adelantado
-            __label: JeAz5CfbZ0IV5WZuhQCIx2Fqgf9jDSNTgCnMqTFCkps=
+            label: Ofrece píldoras por adelantado
+            __label: B73Ca/5JSQuaT5mDadiSFdLvYP3JyVriGVjsYr2y1Io=
         - value: Video visit required
           label: No video visit required
           invert: true
