@@ -1,4 +1,3 @@
-# SPANISH VERSION
 {% tocAnchor slug={name: "Top", slug: "top"} type={discriminant: "anchor"} /%}
 
 {% narrowBanner
@@ -6,7 +5,9 @@
    color="red"
    iconAlign="items-center"
    fullWidth=true %}
-{% textSize textSize="small" inline=false %}**Plan C does not sell pills or provide medical advice.** This guide lists results of our abortion pill research.{% /textSize %}
+
+{% textSize textSize="small" inline=false %}**Plan C no vende pastillas ni ofrece asesoramiento médico.** Esta guía recoge los resultados de nuestra investigación sobre la píldora abortiva.{% /textSize %}
+
 {% /narrowBanner %}
 
 {% heroSection
@@ -26,7 +27,15 @@
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
    afterSubmit="nothing" %}
 {% formSection type="waiting" %}
-# Abortion pill providers in {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}State{% /dbText %}{% /inlineForm %}
+# Proveedores de píldoras abortivas en 
+{% inlineForm
+   slug="location"
+   required=false
+   autoSubmit=true
+   options={discriminant: true, value: {valueType: "slug"}} %}
+{% dbText source="Name" %}Estado{% /dbText %}
+{% /inlineForm %}
+
 {% /formSection %}
 {% /formWrapper %}
 
@@ -41,7 +50,12 @@
    color="beige"
    iconAlign="items-start"
    fullWidth=false %}
-{% textSize textSize="small" inline=false %}If you live in this state and are seeking an abortion, you may qualify to participate in a paid research study about abortion access.&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} %}Click here to learn more{% /inlineLink %}.{% /textSize %}
+
+{% textSize textSize="small" inline=false %}Si vives en este estado y quieres abortar, puedes participar en un estudio de investigación remunerado sobre el acceso al aborto.&nbsp;
+{% inlineLink
+   action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} %}Más información{% /inlineLink %}
+.{% /textSize %}
+
 {% /narrowBanner %}
 {% /conditionalSection %}
 {% /heroSection %}
@@ -58,7 +72,7 @@
    width="default"
    color="pink"
    textSize="medium" %}
-## Frequently asked questions
+## Preguntas más frecuentes
 {% /bodySection %}
 
 {% flexSection
@@ -85,7 +99,10 @@
    color="beige"
    iconAlign="items-center"
    fullWidth=true %}
-{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}See all FAQs{% /inlineLink %}
+
+{% inlineLink
+   action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}Ver todas las preguntas frecuentes{% /inlineLink %}
+
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
@@ -95,7 +112,9 @@
    color="beige"
    iconAlign="items-center"
    fullWidth=true %}
-{% inlineLink action={discriminant: "anchor", value: "top"} %}Back to top{% /inlineLink %}
+
+{% inlineLink action={discriminant: "anchor", value: "top"} %}Volver arriba{% /inlineLink %}
+
 {% /narrowBanner %}
 
 {% horizontalSplit noHeader=false %}
@@ -104,7 +123,9 @@
    width="default"
    color="green"
    textSize="medium" %}
-## Get support in {% dbText source="Name" %}STATE{% /dbText %}
+## Obtenga ayuda en 
+{% dbText source="Name" %}ESTADO{% /dbText %}
+
 {% /bodySection %}
 
 {% flexSection
@@ -127,7 +148,10 @@
    color="beige"
    iconAlign="items-center"
    fullWidth=true %}
-{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} %}See all support{% /inlineLink %}
+
+{% inlineLink
+   action={discriminant: "internal", value: {page: "support-resources"}} %}Ver todas las ayudas{% /inlineLink %}
+
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
@@ -138,9 +162,11 @@
    width="default"
    color="black"
    textSize="medium" %}
-## In person clinics
+## Clínicas presenciales
 
-In-person abortion clinics usually offer both abortion pills&nbsp;and abortion procedures. To find the nearest clinic to {% dbText source="Name" %}STATE{% /dbText %}, use this search tool.
+Las clínicas de aborto presenciales suelen ofrecer tanto píldoras abortivas como procedimientos abortivos. Para encontrar la clínica más cercana a 
+{% dbText source="Name" %}ESTADO{% /dbText %}
+utilice esta herramienta de búsqueda.
 {% /bodySection %}
 
 {% flexSection

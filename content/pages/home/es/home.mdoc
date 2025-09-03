@@ -1,0 +1,257 @@
+{% tocAnchor slug={name: "Top", slug: "top"} type={discriminant: "anchor"} /%}
+
+{% tocAnchor
+   slug={name: "Search by state", slug: "search-by-state"}
+   type={discriminant: "anchor"} /%}
+
+{% heroSection
+   image={discriminant: "noco", value: "Mailbox - Hero"}
+   imageSide="right"
+   color="blue"
+   imageBackgroundColor="blue"
+   ignoreImageBorder=true
+   imageCover="bg-contain"
+   imageVertical="bg-bottom"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=true %}
+# Píldoras abortivas por correo en todos los estados.
+
+Plan C ofrece información sobre el acceso en línea a píldoras abortivas para abortar en casa de forma segura.
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=0.25
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
+   afterSubmit="nothing" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
+{% /formSection %}
+{% /formWrapper %}
+
+
+{% textSize textSize="small" inline=false %}No recogemos ni almacenamos datos personales.{% /textSize %}
+
+{% /flexSection %}
+{% /heroSection %}
+
+{% actionBanner
+   title="Abortion pills in advance?"
+   color="red"
+   icon="truckFast"
+   link={label: "Learn more", click: {discriminant: "internal", value: {page: "in-advance"}}} %}
+Algunas personas encargan píldoras abortivas con antelación, por si acaso.
+{% /actionBanner %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="pink" title="Frequently asked questions" icon="" %}
+Preguntas frecuentes sobre las píldoras abortivas.
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=0
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% faqList
+   faqs=["home_what-is-the-abortion-pill", "home_where-can-someone-get-abortion-pills", "is-the-abortion-pill-the-same-as-plan-b-the-morning-after-pill", "can-i-get-in-trouble-for-using-abortion-pills"]
+   color="beige"
+   anchor=true /%}
+
+{% narrowBanner
+   icon="arrowRight"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+
+{% inlineLink
+   action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}Ver todas las preguntas frecuentes{% /inlineLink %}
+
+{% /narrowBanner %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false %}
+{% sectionHeader color="green" title="Live support" icon="" %}
+Obtenga asistencia telefónica y por SMS de expertos que pueden ayudarle.
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch" %}
+{% resourceList
+   resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="green"
+   hideHeaders=false /%}
+
+{% narrowBanner
+   icon="arrowRight"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true %}
+
+{% inlineLink
+   action={discriminant: "internal", value: {page: "support-resources"}} %}Ver todas las ayudas{% /inlineLink %}
+
+{% /narrowBanner %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="red"
+   textSize="medium" %}
+## El Plan C es un recurso de información.
+
+No damos consejos médicos ni legales, no vendemos píldoras abortivas ni ofrecemos atención médica. Este sitio web es un recurso de investigación y aprendizaje sobre cómo las personas en los EE.UU. acceden a las píldoras abortivas y gestionan de forma segura sus propios abortos.
+
+Cuando mencionamos "Guía", nos referimos a un recurso que enumera los servicios, líneas directas y datos disponibles. Plan C comparte la investigación pero no respalda ninguno de los servicios mencionados en la Guía y no está afiliado a ellos. Las preguntas sobre cómo solicitar o recibir píldoras abortivas deben dirigirse a los servicios.
+
+**Nota sobre el idioma:** Las píldoras abortivas pueden ser utilizadas por personas con útero que pueden quedarse embarazadas, incluidas las mujeres cisgénero y las que se identifican como trans, no binarias, de género expansivo, intersexuales, de dos espíritus, etc. Cuando cambiamos entre términos como "mujeres" y "personas embarazadas", pretendemos incluir a todas las personas embarazadas.
+{% /bodySection %}
+
+{% tocAnchor slug={name: "test", slug: "test"} type={discriminant: "toc"} /%}
+
+{% cardLayoutSection color="beige" %}
+{% cardSection
+   image={discriminant: "one-off", value: {image: "/images/home/pill-packs.png"}}
+   imageOnly=false
+   title="Abortion pills in advance?"
+   action={discriminant: "internal", value: {page: "in-advance"}}
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
+Algunas personas encargan píldoras abortivas con antelación, por si acaso.
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "noco", value: "Stickers - Hero"}
+   imageOnly=false
+   title="Get free stickers"
+   action={discriminant: "internal", value: {page: "stickers"}}
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
+Consigue gratis adhesivos con el código QR del Plan C y ayuda a difundir el acceso a la píldora abortiva
+{% /cardSection %}
+
+{% cardSection
+   image={discriminant: "noco", value: "Megaphone - Hero"}
+   imageOnly=false
+   title="Join the Plan C Community"
+   action={discriminant: "internal", value: {page: "community"}}
+   imageCover="bg-contain"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop" %}
+Un grupo de activistas y defensores que actúan en sus comunidades.
+{% /cardSection %}
+{% /cardLayoutSection %}
+
+{% horizontalSplit noHeader=true %}
+{% bodySection
+   centered=false
+   width="default"
+   color="green"
+   textSize="medium" %}
+### {% textSize textSize="h2" inline=false %}**El Plan C es una iniciativa sin ánimo de lucro 501c3.**{% /textSize %}
+
+
+Subvenciones y donaciones individuales hacen posible esta labor.
+
+{% inContentButton
+   label="Make a donation"
+   icon=""
+   size="primary"
+   background="green"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "internal", value: {page: "donate"}} /%}
+{% /bodySection %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="cyan"
+   textSize="medium" %}
+### {% textSize textSize="h2" inline=false %}**Investigamos y compartimos información.**{% /textSize %}
+
+
+Desde 2016, nuestra misión ha sido investigar el acceso a la píldora abortiva y normalizar los métodos modernos de aborto virtual y autogestionado en Estados Unidos.
+
+{% inContentButton
+   label="About Plan C"
+   icon=""
+   size="primary"
+   background="cyan"
+   altHoverBackground=""
+   smallShadow=false
+   leftIcon=false
+   action={discriminant: "internal", value: {page: "about"}} /%}
+{% /bodySection %}
+{% /horizontalSplit %}
+
+{% bodySection
+   centered=false
+   width="narrow"
+   color="pink"
+   textSize="medium" %}
+## ¿Quieres estar al día de las noticias sobre la píldora abortiva?
+
+Suscríbase a nuestro boletín para recibir directamente en su bandeja de entrada las últimas actualizaciones y oportunidades para pasar a la acción.
+
+{% formWrapper
+   formType={discriminant: "hubspot", value: {formId: "4ea4d330-d054-4777-8f07-8b3a99297a91", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}}
+   afterSubmit="show-screens" %}
+{% formSection type="waiting" %}
+{% formInput
+   fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] /%}
+{% /formSection %}
+
+{% formSection type="submitted" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Por favor, espere...
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="success" %}
+{% narrowBanner
+   icon="check"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false %}
+Gracias. Su información ha sido recibida.
+{% /narrowBanner %}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}

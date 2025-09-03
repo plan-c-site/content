@@ -1,4 +1,3 @@
-# SPANISH VERSION
 {% heroSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/6801875653a6b260f8109f34_Map%20Template.png"}
    imageSide="right"
@@ -12,13 +11,16 @@
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
    reverseOnMobile=false %}
-# Plan C Community Road Trip
+# Viaje por carretera de la Comunidad del Plan C
 
-**The Plan C Community Road Trip is back—louder, larger, and reaching every corner of the country.**
+**El Plan C Community Road Trip ha vuelto: más fuerte, más grande y llegando a todos los rincones del país.**
 
-This is a movement in motion, powered by collaboration, fueled by creativity, and rooted in the fight for reproductive freedom. We’re teaming up with grassroots organizers to spark connection in all 50 states—plus Guam and Puerto Rico—through pop-ups, panels, performances, and bold community activations centered on truth, agency, and access.
+Este es un movimiento en movimiento, impulsado por la colaboración, alimentado por la creatividad y arraigado en la lucha por la libertad reproductiva. Nos estamos asociando con organizadores de base para provocar la conexión en los 50 estados, además de Guam y Puerto Rico, a través de pop-ups, paneles, actuaciones y activaciones comunitarias audaces centradas en la verdad, la agencia y el acceso.
 
-Follow our state-by-state guide to find your stop—and if you’ve got an event or idea that belongs on the map, reach out to us at&nbsp;{% inlineLink action={discriminant: "mailto", value: "community@plancpills.org"} %}community@plancpills.org{% /inlineLink %}.
+Siga nuestra guía por estados para encontrar su parada, y si tiene algún evento o idea que deba figurar en el mapa, póngase en contacto con nosotros en&nbsp;
+{% inlineLink
+   action={discriminant: "mailto", value: "community@plancpills.org"} %}community@plancpills.org{% /inlineLink %}
+.
 
 {% tableOfContents /%}
 {% /heroSection %}
@@ -36,7 +38,7 @@ Follow our state-by-state guide to find your stop—and if you’ve got an event
    width="medium"
    color="green"
    textSize="medium" %}
-## Find your stop
+## Encuentre su parada
 
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "#[:location:]"}}
@@ -56,7 +58,9 @@ Follow our state-by-state guide to find your stop—and if you’ve got an event
    color="beige"
    iconAlign="items-center"
    fullWidth=true %}
-{% inlineLink action={discriminant: "anchor", value: "find-your-stop"} %}Back to top{% /inlineLink %}
+
+{% inlineLink action={discriminant: "anchor", value: "find-your-stop"} %}Volver arriba{% /inlineLink %}
+
 {% /narrowBanner %}
 
 {% actionBanner
@@ -64,5 +68,5 @@ Follow our state-by-state guide to find your stop—and if you’ve got an event
    color="red"
    icon="mapPin"
    link={label: "Email us", click: {discriminant: "mailto", value: "community@plancpills.org"}} %}
-If you’ve got an event or idea that belongs on the map, reach out to us at&nbsp;community@plancpills.org.
+Si tienes un evento o una idea que debe figurar en el mapa, ponte en contacto con nosotros en community@plancpills.org.
 {% /actionBanner %}
