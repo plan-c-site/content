@@ -171,16 +171,19 @@ async function Translate() {
         container: "object",
       },
     ],
+    "content",
     { url_base: "/pages" }
   );
   await translateMarkdownRoots(
     path.join(__dirname, "../content/faq"),
     [{ key: "question" }],
+    "answer",
     { url_base: "/faq" }
   );
   await translateMarkdownRoots(
     path.join(__dirname, "../content/popups"),
     [{ key: "title" }],
+    "answer",
     { url_base: "/popups" }
   );
   await translateMarkdownRoots(
@@ -194,11 +197,13 @@ async function Translate() {
         container: "object",
       },
     ],
+    "answer",
     { url_base: "/posts" }
   );
   await translateMarkdownRoots(
     path.join(__dirname, "../content/roadTrip"),
     [{ key: "title" }, { key: "city" }],
+    "description",
     { url_base: "/roadTrip" }
   );
 }

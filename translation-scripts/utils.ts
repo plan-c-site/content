@@ -344,12 +344,15 @@ export async function translateMarkdownValues(
 export async function translateMarkdownRoots(
   folder: string,
   keys: TranslationKey[],
+  keyName: string,
   { url_base }: { url_base?: string }
 ) {
   if (!WEGLOT_URL) throw new Error("No weglot url");
   const filePaths: string[] = await glob(folder + "/**/*.mdoc");
   await Promise.all(
     filePaths.map(async (v) => {
+      if (!v.includes("/xyz_test-page.mdoc") && !v.includes("/home.mdoc"))
+        return;
       if (v.includes("/es/")) {
         return;
       }
@@ -359,7 +362,7 @@ export async function translateMarkdownRoots(
         `./${path.basename(v).replace(path.extname(v), "")}/es/`
       );
       await fs.mkdir(dir, { recursive: true });
-      const newPath = path.join(dir, path.basename(v));
+      const newPath = path.join(dir, keyName + ".mdoc");
       return translateMardown(v, newPath, keys, url);
     })
   );
@@ -427,7 +430,6 @@ export async function translateMardown(
   frontMatterKeys: TranslationKey[],
   url: string
 ) {
-  if (!file.includes("xyz_test-page") && !file.includes("home")) return;
   if (!WEGLOT_URL) throw new Error("No weglot url");
   console.log("PROCESSING FILE", file, "TO TARGET", targetFile);
   const raw = await fs.readFile(file, { encoding: "utf-8" });
