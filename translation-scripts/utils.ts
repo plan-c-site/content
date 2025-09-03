@@ -411,7 +411,10 @@ export async function translateMarkdownRoots(
 }
 
 const sectionTranslations: Record<string, TranslationKey[]> = {
-  actionBanner: [{ key: "title" }],
+  actionBanner: [
+    { key: "title" },
+    { key: "link", container: "object", keys: [{ key: "label" }] },
+  ],
   cardSection: [{ key: "title" }, { key: "label" }],
   filteredListings: [{ key: "title" }],
   formInput: [
