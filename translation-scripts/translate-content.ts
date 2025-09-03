@@ -155,11 +155,11 @@ async function Translate() {
     url: "/seo-defaults",
   });
 
-  await translateMarkdownValues(
-    path.join(__dirname, "../databaseGlobals"),
-    [],
-    { url_base: "/databaseGlobals" }
-  );
+  // await translateMarkdownValues(
+  //   path.join(__dirname, "../databaseGlobals"),
+  //   [],
+  //   { url_base: "/databaseGlobals" }
+  // );
 
   await translateMarkdownRoots(
     path.join(__dirname, "../content/pages"),
@@ -174,38 +174,38 @@ async function Translate() {
     "content",
     { url_base: "/pages" }
   );
-  await translateMarkdownRoots(
-    path.join(__dirname, "../content/faq"),
-    [{ key: "question" }],
-    "answer",
-    { url_base: "/faq" }
-  );
-  await translateMarkdownRoots(
-    path.join(__dirname, "../content/popups"),
-    [{ key: "title" }],
-    "answer",
-    { url_base: "/popups" }
-  );
-  await translateMarkdownRoots(
-    path.join(__dirname, "../content/posts"),
-    [
-      { key: "title" },
-      { key: "summary" },
-      {
-        key: "seo",
-        keys: SeoFields,
-        container: "object",
-      },
-    ],
-    "answer",
-    { url_base: "/posts" }
-  );
-  await translateMarkdownRoots(
-    path.join(__dirname, "../content/roadTrip"),
-    [{ key: "title" }, { key: "city" }],
-    "description",
-    { url_base: "/roadTrip" }
-  );
+  // await translateMarkdownRoots(
+  //   path.join(__dirname, "../content/faq"),
+  //   [{ key: "question" }],
+  //   "answer",
+  //   { url_base: "/faq" }
+  // );
+  // await translateMarkdownRoots(
+  //   path.join(__dirname, "../content/popups"),
+  //   [{ key: "title" }],
+  //   "answer",
+  //   { url_base: "/popups" }
+  // );
+  // await translateMarkdownRoots(
+  //   path.join(__dirname, "../content/posts"),
+  //   [
+  //     { key: "title" },
+  //     { key: "summary" },
+  //     {
+  //       key: "seo",
+  //       keys: SeoFields,
+  //       container: "object",
+  //     },
+  //   ],
+  //   "answer",
+  //   { url_base: "/posts" }
+  // );
+  // await translateMarkdownRoots(
+  //   path.join(__dirname, "../content/roadTrip"),
+  //   [{ key: "title" }, { key: "city" }],
+  //   "description",
+  //   { url_base: "/roadTrip" }
+  // );
 }
 
 Translate().then(() => console.log("Finished Translation"));
