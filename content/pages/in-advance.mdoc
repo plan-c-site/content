@@ -17,9 +17,7 @@ seo:
 es:
   title: Pastillas por adelantado
   __title: JeAz5CfbZ0IV5WZuhQCIx2Fqgf9jDSNTgCnMqTFCkps=
-
 ---
-
 {% heroSection
    image={discriminant: "noco", value: "Medicine cabinet - Hero"}
    imageSide="right"
@@ -113,8 +111,7 @@ If you decide to use the pills later, these services will offer instructions and
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="pink"
-   hideHeaders=false
-   appendStateField="" /%}
+   hideHeaders=false /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -133,30 +130,10 @@ Options for at-home abortion pill access will vary by location. Click below to f
 
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]?Services=Pills in advance"}}
-   afterSubmit="show-screens" %}
+   afterSubmit="nothing" %}
 {% formSection type="waiting" %}
 {% formInput
    fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] /%}
-{% /formSection %}
-
-{% formSection type="submitted" %}
-{% narrowBanner
-   icon=""
-   color="beige"
-   iconAlign="items-center"
-   fullWidth=false %}
-Submitting...
-{% /narrowBanner %}
-{% /formSection %}
-
-{% formSection type="success" %}
-{% narrowBanner
-   icon=""
-   color="beige"
-   iconAlign="items-center"
-   fullWidth=false %}
-Please wait...
-{% /narrowBanner %}
 {% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
@@ -178,7 +155,6 @@ Please wait...
 {% faqList
    faqs=["in-advance_what-support-is-available-to-someone-who-purchased-pills-in-advance", "in-advance_are-abortion-pills-available-in-advance-in-every-state", "how-long-are-abortion-pills-good-for", "can-i-get-in-trouble-for-using-abortion-pills", "in-advance_what-other-resources-are-available"]
    color="beige"
-   appendStateField=""
    anchor=false /%}
 
 {% narrowBanner
