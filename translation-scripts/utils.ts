@@ -15,6 +15,10 @@ const textTypes = {
   text: 1,
   title: 9,
   value: 2,
+  placeholder: 3,
+  meta: 4,
+  img_alt: 7,
+  external: 10,
 };
 
 export type TranslatedObject<T extends object, K extends keyof T> = T & {
@@ -436,12 +440,31 @@ export async function translateMarkdownRoots(
   );
 }
 
+export const clickEventTranslation: (key: string) => TranslationKey[] = (
+  key: string
+) => [
+  {
+    key,
+    container: "object",
+    condition: "external",
+    keys: [{ key: "url", type: "external" }],
+  },
+];
+
 const sectionTranslations: Record<string, TranslationKey[]> = {
   actionBanner: [
     { key: "title" },
-    { key: "link", container: "object", keys: [{ key: "label" }] },
+    {
+      key: "link",
+      container: "object",
+      keys: [{ key: "label" }, ...clickEventTranslation("click")],
+    },
   ],
-  cardSection: [{ key: "title" }, { key: "label" }],
+  cardSection: [
+    { key: "title" },
+    { key: "label" },
+    ...clickEventTranslation("action"),
+  ],
   filteredListings: [{ key: "title" }],
   formInput: [
     {
@@ -472,7 +495,7 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
       ],
     },
   ],
-  inContentButton: [{ key: "label" }],
+  inContentButton: [{ key: "label" }, ...clickEventTranslation("action")],
   inContentDropdown: [
     { key: "label" },
     {
@@ -481,7 +504,7 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
       keys: [
         {
           has_condition: "link",
-          keys: [{ key: "label" }],
+          keys: [{ key: "label" }, ...clickEventTranslation("action")],
         },
         {
           has_condition: "label",
@@ -490,11 +513,21 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
       ],
     },
   ],
+  inContentImage: [...clickEventTranslation("action")],
+  inlineLink: [...clickEventTranslation("action")],
   logoBanner: [{ key: "title" }],
   sectionHeader: [{ key: "title" }],
   timelineSection: [{ key: "title" }],
   toDoSection: [{ key: "title" }],
-  tocAnchor: [{ key: "slug", container: "object", keys: [{ key: "name" }] }],
+  tocAnchor: [
+    { key: "slug", container: "object", keys: [{ key: "name" }] },
+    {
+      key: "type",
+      container: "object",
+      condition: "action",
+      keys: [{ has_condition: "external", isString: true, type: "external" }],
+    },
+  ],
   resourceItem: [
     {
       key: "header",

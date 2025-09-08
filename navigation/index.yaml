@@ -27,30 +27,45 @@ social:
       value:
         url: https://www.instagram.com/plancpills/
         showPopup: false
+        es:
+          url: https://www.instagram.com/plancpills/
+          __url: xD2PSjiElY+DQbHNKiNCCcPRBORton/GJGgI+GgatDM=
     icon: instagram
   - action:
       discriminant: external
       value:
         url: https://bsky.app/profile/plancpills.bsky.social
         showPopup: false
+        es:
+          url: https://bsky.app/profile/plancpills.bsky.social
+          __url: Iav4CgUukmVBruEZrMHleHvE3rKA9Y2zSFU7MYFgTtg=
     icon: blueSky
   - action:
       discriminant: external
       value:
         url: https://www.facebook.com/plancpills
         showPopup: false
+        es:
+          url: https://www.facebook.com/plancpills
+          __url: 6Nh9ar5L07d20s0nb+B7gIsqG6OfWEMjkqgwrkFTYBo=
     icon: facebook
   - action:
       discriminant: external
       value:
         url: https://ng.linkedin.com/company/plancpills
         showPopup: false
+        es:
+          url: https://ng.linkedin.com/company/plancpills
+          __url: z8kWjnUicgZizWXcW12ZDrx8WJ6oyc7fmXjjgPYVM9U=
     icon: linkedin
   - action:
       discriminant: external
       value:
         url: https://www.tiktok.com/@plancpills
         showPopup: false
+        es:
+          url: https://www.tiktok.com/@plancpills
+          __url: +DkOJVOUAFcCkaAFuFrlZEPzse2xy7OCfUQifbnvCRQ=
     icon: tiktok
 navBar:
   links:
@@ -179,6 +194,9 @@ navBar:
                 value:
                   url: https://plancpills.threadless.com/
                   showPopup: false
+                  es:
+                    url: https://plancpills.threadless.com/
+                    __url: j0MB1KhFbae5aENYP7nPGXj0MQ++yrSpmxPNUFYGwTs=
           - discriminant: link
             value:
               label: Partner with us

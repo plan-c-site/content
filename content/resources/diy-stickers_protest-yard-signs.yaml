@@ -14,6 +14,10 @@ buttonAction:
     url: >-
       https://drive.google.com/drive/folders/1Fqkr9N_rnvvVV6DXi52E6yYW5tB8wTad?usp=sharing
     showPopup: false
+    es:
+      url: >-
+        https://drive.google.com/drive/folders/1Fqkr9N_rnvvVV6DXi52E6yYW5tB8wTad?usp=sharing
+      __url: wt3jAUOAhVMRTR0fg7QLZGVxR98HJjvL41pyjaa7mGg=
 buttonUrl:
   discriminant: url
 es:

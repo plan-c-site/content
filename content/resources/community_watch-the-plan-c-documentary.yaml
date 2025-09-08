@@ -10,6 +10,9 @@ buttonAction:
   value:
     url: https://plancmovie.com/watch
     showPopup: false
+    es:
+      url: https://plancmovie.com/watch
+      __url: XoebtAxsVNoJiXKqT49yi/bDL2fjXeu142rLmkh93Os=
 buttonUrl:
   discriminant: none
 es:

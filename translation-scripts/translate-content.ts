@@ -1,6 +1,7 @@
 import "dotenv/config";
 import path from "node:path";
 import {
+  clickEventTranslation,
   translateAllYaml,
   translateMarkdownRoots,
   translateMarkdownValues,
@@ -23,7 +24,12 @@ async function Translate() {
   );
   await translateAllYaml(
     path.join(__dirname, "../content/resources"),
-    [{ key: "heading" }, { key: "summary" }, { key: "buttonText" }],
+    [
+      { key: "heading" },
+      { key: "summary" },
+      { key: "buttonText" },
+      ...clickEventTranslation("buttonAction"),
+    ],
     { url: "/resources" }
   );
   await translateAllYaml(
@@ -111,6 +117,11 @@ async function Translate() {
         ],
       },
       {
+        key: "social",
+        container: "array",
+        keys: [...clickEventTranslation("action")],
+      },
+      {
         key: "navBar",
         container: "object",
         keys: [
@@ -133,16 +144,28 @@ async function Translate() {
                           {
                             key: "children",
                             container: "array",
-                            keys: [{ key: "label" }],
+                            keys: [
+                              { key: "label" },
+                              ...clickEventTranslation("action"),
+                            ],
                           },
                         ],
                       },
-                      { has_condition: "link", keys: [{ key: "label" }] },
+                      {
+                        has_condition: "link",
+                        keys: [
+                          { key: "label" },
+                          ...clickEventTranslation("action"),
+                        ],
+                      },
                     ],
                   },
                 ],
               },
-              { has_condition: "link", keys: [{ key: "label" }] },
+              {
+                has_condition: "link",
+                keys: [{ key: "label" }, ...clickEventTranslation("action")],
+              },
             ],
           },
         ],
