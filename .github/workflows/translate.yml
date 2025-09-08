@@ -16,17 +16,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      # - name: Install dependencies
-      #   run: |
-      #     cd ./translation-scripts
-      #     npm install -g pnpm && pnpm install
-      # - run: |
-      #     cd ./translation-scripts
-      #     npm run translate
-      # - name: Commit changes
-      #   uses: EndBug/add-and-commit@v7
-      #   with:
-      #     author_name: translate-bot
-      #     author_email: mail@example.com
-      #     message: "(translate)"
-      #     add: "."
+      - name: Install dependencies
+        run: |
+          cd ./translation-scripts
+          npm install -g pnpm && pnpm install
+      - run: |
+          cd ./translation-scripts
+          npm run translate
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: translate-bot
+          author_email: mail@example.com
+          message: "(translate)"
+          add: "."
