@@ -438,7 +438,7 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
             {
               key: "options",
               container: "array",
-              condition: "true",
+              condition: "false",
               keys: [{ key: "label" }],
             },
           ],

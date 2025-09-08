@@ -132,8 +132,8 @@ navBar:
             value:
               label: Community action
               es:
-                label: Comunidad del Plan C
-                __label: hc1sqHcmDjBoorH9TZJVWN/KJILm5dkKdWAz7fOlkQw=
+                label: Acción comunitaria
+                __label: W6VBaVM+Joc7dBOr0VbBYGwe1kbIslWcNxIyPy5LdjE=
               action:
                 discriminant: internal
                 value:
