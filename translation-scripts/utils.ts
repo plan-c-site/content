@@ -31,7 +31,8 @@ export type TranslationKey =
           condition: string | boolean;
         }
     ))
-  | { has_condition: string | boolean; keys: TranslationKey[] };
+  | { has_condition: string | boolean; keys: TranslationKey[] }
+  | { has_condition: string | boolean; isString: true };
 type WordForTranslation = { w: string; t: number; hash: string } | string;
 type WordFromTranslation = { w: string; hash: string } | string;
 
@@ -49,10 +50,17 @@ function extractObjectValuesForTranslation<T extends object>(
           "value" in value &&
           value.discriminant === key.has_condition
         ) {
-          return extractObjectValuesForTranslation(
-            [value.value as object],
-            key.keys
-          );
+          if ("isString" in key) {
+            return extractObjectValuesForTranslation(
+              [value as object],
+              [{ key: "value" }]
+            );
+          } else {
+            return extractObjectValuesForTranslation(
+              [value.value as object],
+              key.keys
+            );
+          }
         }
         return [];
       }
@@ -169,17 +177,31 @@ function setTranslatedValues<T extends object>(
           "value" in value &&
           value.discriminant === key.has_condition
         ) {
-          const result = setTranslatedValues(
-            [value.value as object],
-            key.keys,
-            translations,
-            next,
-            override
-          );
-          next = result.next;
-          nv["discriminant"] = value.discriminant;
-          nv["value"] = result.result[0];
-          return nv;
+          if ("isString" in key) {
+            const result = setTranslatedValues(
+              [{ value: value.value as string }],
+              [{ key: "value" }],
+              translations,
+              next,
+              override
+            );
+            next = result.next;
+            nv["discriminant"] = value.discriminant;
+            nv["value"] = result.result[0]["value"];
+            return nv;
+          } else {
+            const result = setTranslatedValues(
+              [value.value as object],
+              key.keys,
+              translations,
+              next,
+              override
+            );
+            next = result.next;
+            nv["discriminant"] = value.discriminant;
+            nv["value"] = result.result[0];
+            return nv;
+          }
         }
         continue;
       }
@@ -456,6 +478,10 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
         {
           has_condition: "link",
           keys: [{ key: "label" }],
+        },
+        {
+          has_condition: "label",
+          isString: true,
         },
       ],
     },
