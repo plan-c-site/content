@@ -1,0 +1,35 @@
+{% heroSection image={discriminant: "noco", value: "Pill bottle box - Hero"} imageSide="right" color="beige" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false %}
+# Sitios web que venden pastillas
+
+Nuestra investigación ha demostrado que estos sitios web venden píldoras abortivas pero no incluyen ninguna ayuda adicional. Cualquier persona puede obtener apoyo médico gratuito para su aborto en la 
+{% inlineLink action={discriminant: ""} %}Línea directa M+A{% /inlineLink %}
+.
+
+{% tableOfContents /%}
+
+{% narrowBanner icon="triangleAlert" color="red" iconAlign="items-center" fullWidth=false %}
+
+{% textSize textSize="small" inline=false %}**Es posible que estos sitios web no sigan protocolos estrictos de seguridad digital.** Lea nuestro 
+{% inlineLink action={discriminant: "internal", value: {page: "digital-security"}} %}consejos sobre privacidad digital{% /inlineLink %}
+ para saber cómo protegerse al pedir o buscar píldoras abortivas en Internet.{% /textSize %}
+
+{% /narrowBanner %}
+{% /heroSection %}
+
+{% tocAnchor slug={name: "Lista de proveedores", slug: "list-of-providers"} type={discriminant: "toc"} /%}
+
+{% filteredListings title="Sitios web que venden pastillas" color="red" maxVisibleDefault=6 listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}} /%}
+
+{% tocAnchor slug={name: "Preguntas más frecuentes", slug: "frequently-asked-questions"} type={discriminant: "toc"} /%}
+
+{% horizontalSplit noHeader=false %}
+{% bodySection centered=false width="default" color="pink" textSize="medium" %}
+## Preguntas más frecuentes
+
+{% inContentButton label="Ver todas las preguntas frecuentes" icon="" size="primary" background="pink" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} /%}
+{% /bodySection %}
+
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" %}
+{% faqList faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills", "guide_websites-that-sell-pills_what-are-websites-that-sell-pills", "guide_websites-that-sell-pills_are-these-websites-legit", "guide_websites-that-sell-pills_what-if-i-have-medical-questions", "guide_websites-that-sell-pills_how-many-pills-do-i-need"] color="beige" anchor=false /%}
+{% /flexSection %}
+{% /horizontalSplit %}
