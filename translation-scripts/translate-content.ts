@@ -11,8 +11,9 @@ import {
 const SeoFields: TranslationKey[] = [
   {
     key: "title",
+    type: "meta",
   },
-  { key: "description" },
+  { key: "description", type: "meta" },
 ];
 
 async function Translate() {
