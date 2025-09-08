@@ -28,10 +28,10 @@ export type TranslationKey =
       | {
           keys: TranslationKey[];
           container: "array" | "record" | "object";
-          condition: string;
+          condition: string | boolean;
         }
     ))
-  | { has_condition: string; keys: TranslationKey[] };
+  | { has_condition: string | boolean; keys: TranslationKey[] };
 type WordForTranslation = { w: string; t: number; hash: string } | string;
 type WordFromTranslation = { w: string; hash: string } | string;
 
@@ -65,7 +65,7 @@ function extractObjectValuesForTranslation<T extends object>(
             false;
           const dis =
             ("discriminant" in value[key.key] &&
-              (value[key.key].discriminant as string)) ||
+              (value[key.key].discriminant as string | boolean)) ||
             false;
 
           if (dis !== key.condition || !val) {
@@ -438,7 +438,7 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
             {
               key: "options",
               container: "array",
-              condition: "false",
+              condition: false,
               keys: [{ key: "label" }],
             },
           ],
