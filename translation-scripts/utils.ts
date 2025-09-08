@@ -32,7 +32,11 @@ export type TranslationKey =
         }
     ))
   | { has_condition: string | boolean; keys: TranslationKey[] }
-  | { has_condition: string | boolean; isString: true };
+  | {
+      has_condition: string | boolean;
+      isString: true;
+      type?: keyof typeof textTypes;
+    };
 type WordForTranslation = { w: string; t: number; hash: string } | string;
 type WordFromTranslation = { w: string; hash: string } | string;
 
@@ -491,6 +495,13 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
   timelineSection: [{ key: "title" }],
   toDoSection: [{ key: "title" }],
   tocAnchor: [{ key: "slug", container: "object", keys: [{ key: "name" }] }],
+  resourceItem: [
+    {
+      key: "header",
+      container: "object",
+      keys: [{ has_condition: "override", isString: true }],
+    },
+  ],
 };
 
 function extractParagraphsFromMarkdown(node: Node): WordForTranslation[] {
