@@ -668,6 +668,7 @@ export async function translateMardown(
       const hashFile = await fs.readFile(file + ".hash", { encoding: "utf-8" });
       if (hashFile === hash) {
         console.log("File unchanged - ", file);
+        return;
       }
     } catch {}
   }
