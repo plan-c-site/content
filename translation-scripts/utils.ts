@@ -10,7 +10,7 @@ const WEGLOT_URL = API_KEY
   ? `https://api.weglot.com/translate?api_key=${API_KEY}`
   : false;
 const BASE_URL = process.env.BASE_URL || "https://www.ineedaplanc.org";
-const FORCE_TRANSLATE = process.env.FORCETRANSLATE === "true";
+const FORCE_TRANSLATE = process.env.FORCE_TRANSLATE === "true";
 
 const textTypes = {
   text: 1,
@@ -44,6 +44,35 @@ export type TranslationKey =
     };
 type WordForTranslation = { w: string; t: number; hash: string } | string;
 type WordFromTranslation = { w: string; hash: string } | string;
+
+async function weglotRequest(body: {
+  l_from: string;
+  l_to: string;
+  request_url: string;
+  words: { w: string; t: number }[];
+}) {
+  if (!WEGLOT_URL) throw new Error("No weglot url");
+  const result = await fetch(WEGLOT_URL, {
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body),
+    method: "POST",
+  });
+
+  if (!result.ok) {
+    if (result.status === 429) {
+      return await new Promise<{ to_words: string[] }>((resolve, reject) => {
+        setTimeout(() => {
+          weglotRequest(body).then(resolve).catch(reject);
+        }, 5000);
+      });
+    }
+    throw new Error("Failed to get translation");
+  }
+  const parsed = (await result.json()) as { to_words: string[] };
+  return parsed;
+}
 
 function extractObjectValuesForTranslation<T extends object>(
   items: T[],
@@ -364,18 +393,8 @@ export async function translateAllYaml(
     return;
   }
   console.log(`Translating ${body.words.length} values`);
-  const result = await fetch(WEGLOT_URL, {
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(body),
-    method: "POST",
-  });
 
-  if (!result.ok) {
-    throw new Error("Failed to get translation");
-  }
-  const parsed = (await result.json()) as { to_words: string[] };
+  const parsed = await weglotRequest(body);
   console.log("Translated - ", url);
 
   const translations = matchWordArrays(wordsToTranslate, parsed.to_words);
@@ -661,23 +680,7 @@ export async function translateMardown(
     return;
   }
   console.log(`Translating ${body.words.length} values`);
-  const result = await fetch(WEGLOT_URL, {
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(body),
-    method: "POST",
-  });
-
-  if (!result.ok) {
-    throw new Error(
-      "Failed to get translation: " +
-        (await result.text()) +
-        " - " +
-        result.status
-    );
-  }
-  const parsed = (await result.json()) as { to_words: string[] };
+  const parsed = await weglotRequest(body);
   console.log("Translated - ", url);
 
   const translations = matchWordArrays(wordsToTranslate, parsed.to_words);
