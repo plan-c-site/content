@@ -555,6 +555,13 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
 
 function extractParagraphsFromMarkdown(node: Node): WordForTranslation[] {
   if (
+    "_language" in node.attributes &&
+    typeof node.attributes._language === "string" &&
+    node.attributes._language !== ""
+  ) {
+    return [];
+  }
+  if (
     "content" in node.attributes &&
     typeof node.attributes.content === "string"
   ) {
@@ -588,6 +595,16 @@ function applyTranslationsToMarkdown(
   translations: WordFromTranslation[],
   startAt: number
 ) {
+  if (
+    "_language" in node.attributes &&
+    typeof node.attributes._language === "string" &&
+    node.attributes._language !== ""
+  ) {
+    return {
+      n: node,
+      next: startAt,
+    };
+  }
   if (
     "content" in node.attributes &&
     typeof node.attributes.content === "string"
