@@ -623,6 +623,13 @@ export async function translateMardown(
   if (!WEGLOT_URL) throw new Error("No weglot url");
   console.log("PROCESSING FILE", file, "TO TARGET", targetFile);
   const raw = await fs.readFile(file, { encoding: "utf-8" });
+  const hash = crypto.createHash("sha256").update(raw).digest("base64");
+  try {
+    const hashFile = await fs.readFile(file + ".hash", { encoding: "utf-8" });
+    if (hashFile === hash) {
+      console.log("File unchanged - ", file);
+    }
+  } catch {}
   const doc = markdoc.parse(raw);
   const wordsToTranslate: WordForTranslation[] = [];
   const frontmatter = doc.attributes.frontmatter
@@ -692,4 +699,5 @@ export async function translateMardown(
     maxTagOpeningWidth: 9999,
   });
   await fs.writeFile(targetFile, `${newRaw}`, { encoding: "utf-8" });
+  await fs.writeFile(file + ".hash", hash, { encoding: "utf-8" });
 }
