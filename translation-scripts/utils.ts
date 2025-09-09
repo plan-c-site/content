@@ -10,6 +10,7 @@ const WEGLOT_URL = API_KEY
   ? `https://api.weglot.com/translate?api_key=${API_KEY}`
   : false;
 const BASE_URL = process.env.BASE_URL || "https://www.ineedaplanc.org";
+const FORCE_TRANSLATE = process.env.FORCETRANSLATE === "true";
 
 const textTypes = {
   text: 1,
@@ -125,7 +126,7 @@ function extractObjectValuesForTranslation<T extends object>(
           .createHash("sha256")
           .update(value[key.key])
           .digest("base64");
-        if (es["__" + key.key] === hash) {
+        if (!FORCE_TRANSLATE && es["__" + key.key] === hash) {
           return [hash];
         }
         return [
@@ -624,12 +625,14 @@ export async function translateMardown(
   console.log("PROCESSING FILE", file, "TO TARGET", targetFile);
   const raw = await fs.readFile(file, { encoding: "utf-8" });
   const hash = crypto.createHash("sha256").update(raw).digest("base64");
-  try {
-    const hashFile = await fs.readFile(file + ".hash", { encoding: "utf-8" });
-    if (hashFile === hash) {
-      console.log("File unchanged - ", file);
-    }
-  } catch {}
+  if (!FORCE_TRANSLATE) {
+    try {
+      const hashFile = await fs.readFile(file + ".hash", { encoding: "utf-8" });
+      if (hashFile === hash) {
+        console.log("File unchanged - ", file);
+      }
+    } catch {}
+  }
   const doc = markdoc.parse(raw);
   const wordsToTranslate: WordForTranslation[] = [];
   const frontmatter = doc.attributes.frontmatter
