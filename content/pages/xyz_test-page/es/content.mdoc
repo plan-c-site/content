@@ -1,58 +1,70 @@
-{% heroSection image={discriminant: "noco", value: "Mailbox - Hero"} imageSide="right" color="blue" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-top" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false %}
+{% heroSection image={discriminant: "noco", value: "Mailbox - Hero"} imageSide="right" color="blue" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-top" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
 # {% ignoreHeaderStyle /%}
 Píldoras abortivas por correo en todos los estados
 
 Plan C ofrece información actualizada sobre el acceso en línea a opciones de píldoras abortivas en casa.
 
 
-{% inlineLink action={discriminant: "pregnancy"} %}Calculadora de embarazo{% /inlineLink %}
+{% inlineLink action={discriminant: "pregnancy"} _language="" %}Calculadora de embarazo{% /inlineLink %}
  enlace
 
 
-{% inlineLink action={discriminant: "tel", value: "+1-555-555-5555"} %}Teléfono{% /inlineLink %}
+{% inlineLink action={discriminant: "tel", value: "+1-555-555-5555"} _language="" %}Teléfono{% /inlineLink %}
 
 
 
-{% inlineLink action={discriminant: "mailto", value: "test@example.com"} %}Correo electrónico{% /inlineLink %}
+{% inlineLink action={discriminant: "mailto", value: "test@example.com"} _language="" %}Correo electrónico{% /inlineLink %}
 
 
 
-{% inlineLink action={discriminant: "sms", value: "+1-555-555-5555"} %}SMS{% /inlineLink %}
+{% inlineLink action={discriminant: "sms", value: "+1-555-555-5555"} _language="" %}SMS{% /inlineLink %}
 
 
 
-{% inlineLink action={discriminant: "download", value: "Test-PDF"} %}DESCARGAR{% /inlineLink %}
+{% inlineLink action={discriminant: "download", value: "Test-PDF"} _language="" %}DESCARGAR{% /inlineLink %}
 
 
 
-{% inlineLink action={discriminant: "popup", value: "xyz-test-popup"} %}¿Popup?{% /inlineLink %}
+{% inlineLink action={discriminant: "popup", value: "xyz-test-popup"} _language="" %}¿Popup?{% /inlineLink %}
 
 
 véase 
-{% inlineLink action={discriminant: "external", value: {url: "#testimonials", showPopup: false}} %}testimonios{% /inlineLink %}
+{% inlineLink action={discriminant: "external", value: {url: "#testimonials", showPopup: false}} _language="" %}testimonios{% /inlineLink %}
  
-{% inContentIcon icon="heartHandshake" size="standard" background="" color="black" /%}
+{% inContentIcon icon="heartHandshake" size="standard" background="" color="black" _language="" /%}
 
 
 
-{% inlineLink action={discriminant: "blog", value: {page: "a-creative-guide-to-abortion-pills-l33-x-fftx-plan-c"}} %}Enlace a una entrada de blog{% /inlineLink %}
+{% inlineLink action={discriminant: "blog", value: {page: "a-creative-guide-to-abortion-pills-l33-x-fftx-plan-c"}} _language="" %}Enlace a una entrada de blog{% /inlineLink %}
 
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 
 
-{% textSize textSize="small" inline=true %}No recogemos ni almacenamos datos personales.{% /textSize %}
+{% textSize textSize="small" inline=true _language="" %}No recogemos ni almacenamos datos personales.{% /textSize %}
 
 {% /heroSection %}
 
-{% cardLayoutSection color="green" %}
-{% cardSection image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"} imageOnly=false title="Algunos títulos" label="Una etiqueta debajo de la tarjeta" action={discriminant: ""} imageCover="bg-cover" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="en" %}
+THIS IS ONLY VISIBLE IN ENGLISH
+{% /bodySection %}
+
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="es" %}
+THIS IS ONLY VISIBLE IN SPANISH
+{% /bodySection %}
+
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
+THIS IS VISIBLE IN ALL LANGUAGES
+{% /bodySection %}
+
+{% cardLayoutSection color="green" _language="" %}
+{% cardSection image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"} imageOnly=false title="Algunos títulos" label="Una etiqueta debajo de la tarjeta" action={discriminant: ""} imageCover="bg-cover" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
 Othe**r contenido y esas cosas**
 
 Creo que podemos añadir contenido...
 {% /cardSection %}
 
-{% cardSection image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"} imageOnly=false title="Algunos títulos" label="Una etiqueta debajo de la tarjeta" action={discriminant: ""} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="right" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
+{% cardSection image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"} imageOnly=false title="Algunos títulos" label="Una etiqueta debajo de la tarjeta" action={discriminant: ""} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="right" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
 Othe**r contenido y esas cosas**
 
 Creo que podemos añadir contenido...
@@ -62,7 +74,7 @@ necesitamos más
 sobrepasar en altura
 {% /cardSection %}
 
-{% cardSection image={discriminant: "one-off", value: {image: "/images/xyz_test-page/c879ca67f1ee53b2051f025346a64a38.png"}} imageOnly=true label="Una etiqueta debajo de la tarjeta" action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} imageCover="bg-cover" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
+{% cardSection image={discriminant: "one-off", value: {image: "/images/xyz_test-page/c879ca67f1ee53b2051f025346a64a38.png"}} imageOnly=true label="Una etiqueta debajo de la tarjeta" action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} imageCover="bg-cover" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
 Othe**r contenido y esas cosas**
 
 Creo que podemos añadir contenido...
@@ -72,7 +84,7 @@ necesitamos más
 sobrepasar en altura
 {% /cardSection %}
 
-{% cardSection image={discriminant: "noco", value: "Stickers - Card - Wide"} imageOnly=true label="Una etiqueta debajo de la tarjeta" action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} imageCover="bg-contain" imageVertical="bg-bottom" imageHorizontal="right" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
+{% cardSection image={discriminant: "noco", value: "Stickers - Card - Wide"} imageOnly=true label="Una etiqueta debajo de la tarjeta" action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} imageCover="bg-contain" imageVertical="bg-bottom" imageHorizontal="right" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
 Othe**r contenido y esas cosas**
 
 Creo que podemos añadir contenido...
@@ -83,63 +95,63 @@ sobrepasar en altura
 {% /cardSection %}
 {% /cardLayoutSection %}
 
-{% bodySection centered=false width="default" color="yellow" textSize="medium" %}
-{% resourceItem resource="abortion-with-pills-after-12-weeks" header={discriminant: "override", value: "Anulación del encabezamiento"} type={discriminant: "block", value: {icon: "", iconColor: ""}} /%}
+{% bodySection centered=false width="default" color="yellow" textSize="medium" _language="" %}
+{% resourceItem resource="abortion-with-pills-after-12-weeks" header={discriminant: "override", value: "Anulación del encabezamiento"} type={discriminant: "block", value: {icon: "", iconColor: ""}} _language="" /%}
 
-{% rawHtml html="<div class=\"raisely-donate\" data-campaign-path=\"plan-c\" data-profile=\"\" data-width=\"100%\" data-height=\"600\"><script src=\"https://cdn.raisely.com/v3/public/embed.js\"></script></div>" /%}
+{% rawHtml html="<div class=\"raisely-donate\" data-campaign-path=\"plan-c\" data-profile=\"\" data-width=\"100%\" data-height=\"600\"><script src=\"https://cdn.raisely.com/v3/public/embed.js\"></script></div>" _language="" /%}
 {% /bodySection %}
 
-{% tocAnchor slug={name: "Antes de proveedores prefiltrados", slug: "faq"} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "Antes de proveedores prefiltrados", slug: "faq"} type={discriminant: "toc"} _language="" /%}
 
-{% filteredListings title="1 semana o menos" color="red" listings={discriminant: "field", value: {field: "Delivery", value: "1 week or less"}} /%}
+{% filteredListings title="1 semana o menos" color="red" listings={discriminant: "field", value: {field: "Delivery", value: "1 week or less"}} _language="" /%}
 
-{% filteredListings title="Sitios web que venden pastillas" color="red" listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}} /%}
+{% filteredListings title="Sitios web que venden pastillas" color="red" listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}} _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Sección A" icon="" %}
-{% inContentDropdown label="Descargar" size="standard" background="beige" altHoverBackground="" options=[{discriminant: "label", value: "Idiomas"}, {discriminant: "separator"}, {discriminant: "link", value: {label: "Inglés", action: {discriminant: ""}, url: "https://www.google.com"}}, {discriminant: "link", value: {label: "Español", action: {discriminant: ""}, url: "https://www.google.es"}}] /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="pink" title="Sección A" icon="" _language="" %}
+{% inContentDropdown label="Descargar" size="standard" background="beige" altHoverBackground="" options=[{discriminant: "label", value: "Idiomas"}, {discriminant: "separator"}, {discriminant: "link", value: {label: "Inglés", action: {discriminant: ""}, url: "https://www.google.com"}}, {discriminant: "link", value: {label: "Español", action: {discriminant: ""}, url: "https://www.google.es"}}] _language="" /%}
 {% /sectionHeader %}
 
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" %}
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 Algunos textos están aquí
 {% /bodySection %}
 
-{% faqSection faq="where-someone-lives-makes-a-difference" color="beige" embedded=false anchor=true /%}
+{% faqSection faq="where-someone-lives-makes-a-difference" color="beige" embedded=false anchor=true _language="" /%}
 
-{% faqSection faq="how-does-the-abortion-pill-work" color="beige" embedded=false anchor=true /%}
+{% faqSection faq="how-does-the-abortion-pill-work" color="beige" embedded=false anchor=true _language="" /%}
 
-{% faqSection faq="how-does-the-abortion-pill-work" color="beige" embedded=false anchor=true /%}
+{% faqSection faq="how-does-the-abortion-pill-work" color="beige" embedded=false anchor=true _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Sección A" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="blue" title="Sección A" icon="" _language="" %}
 **Prueba** 
-{% inlineLink action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} %}algunos{% /inlineLink %}
+{% inlineLink action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} _language="" %}algunos{% /inlineLink %}
  texto
 
-{% inContentImage image={discriminant: "uploaded", value: "mailbox"} maxWidth=100 action={discriminant: ""} newTab=false /%}
+{% inContentImage image={discriminant: "uploaded", value: "mailbox"} maxWidth=100 action={discriminant: ""} newTab=false _language="" /%}
 
-{% inContentButton label="Un Botón" icon="arrowDown" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: ""} /%}
+{% inContentButton label="Un Botón" icon="arrowDown" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: ""} _language="" /%}
 
-{% inContentButton label="Botón PRIMARIO" icon="plus" size="primary" background="green" altHoverBackground="red" smallShadow=false leftIcon=true action={discriminant: ""} /%}
+{% inContentButton label="Botón PRIMARIO" icon="plus" size="primary" background="green" altHoverBackground="red" smallShadow=false leftIcon=true action={discriminant: ""} _language="" /%}
 {% /sectionHeader %}
 
-{% flexSection direction="flex-row" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" %}
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
+{% flexSection direction="flex-row" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 Algunos textos están aquí
 {% /bodySection %}
 
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 Algunos textos están aquí
 {% /bodySection %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% tocAnchor slug={name: "El Plan C es un recurso de información", slug: "information-resource"} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "El Plan C es un recurso de información", slug: "information-resource"} type={discriminant: "toc"} _language="" /%}
 
-{% bodySection centered=true width="default" color="red" textSize="medium" %}
+{% bodySection centered=true width="default" color="red" textSize="medium" _language="" %}
 ## El Plan C es un recurso de información.
 
 No ofrecemos asesoramiento médico o jurídico ni vendemos píldoras abortivas.  Este sitio web es un recurso educativo para aprender cómo las personas en los EE.UU. tienen acceso a las píldoras abortivas y gestionan de forma segura sus propios abortos. Plan C proporciona información basada en la investigación, pero no respalda ninguno de los servicios que aparecen en nuestro sitio web. Plan C no está afiliado a ninguno de los servicios que figuran en nuestro directorio. Si tiene preguntas sobre el pago, la entrega o cómo solicitar píldoras abortivas a estos servicios, comuníquese directamente con el servicio.
@@ -148,7 +160,7 @@ No ofrecemos asesoramiento médico o jurídico ni vendemos píldoras abortivas. 
 Nota sobre el lenguaje: Las píldoras abortivas pueden ser utilizadas por personas que tienen útero y pueden quedarse embarazadas. Esto incluye a las mujeres cisgénero y a las personas que se identifican como trans, no binarias, de género expansivo, intersexuales, de dos espíritus, etc. Al utilizar diversos términos en este sitio web, como "mujeres" y "personas embarazadas", pretendemos incluir a todas las personas embarazadas que necesiten estos servicios.
 {% /bodySection %}
 
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 Como proveedor, puede ver pacientes que necesitan:
 
 - Información sobre cómo acceder al aborto
@@ -156,7 +168,7 @@ Como proveedor, puede ver pacientes que necesitan:
 - Tratamiento del aborto espontáneo
 - Anticoncepción post-aborto
 
-{% inContentButton label="prueba" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} /%}
+{% inContentButton label="prueba" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} _language="" /%}
 
 \
 El acceso a las píldoras abortivas sigue existiendo en todos los estados a través:
@@ -169,22 +181,22 @@ El acceso a las píldoras abortivas sigue existiendo en todos los estados a trav
 \
 Obtenga más información sobre estas opciones en la Guía del Plan C y en ineedana.com.
 
-{% faqSection faq="where-someone-lives-makes-a-difference" color="beige" embedded=true anchor=true /%}
+{% faqSection faq="where-someone-lives-makes-a-difference" color="beige" embedded=true anchor=true _language="" /%}
 {% /bodySection %}
 
-{% horizontalSplit noHeader=true %}
-{% sectionHeader color="beige" title="Izquierda (50%)" icon="minus" /%}
+{% horizontalSplit noHeader=true _language="" %}
+{% sectionHeader color="beige" title="Izquierda (50%)" icon="minus" _language="" /%}
 
-{% sectionHeader color="beige" title="Correcto 50%" icon="phone" /%}
+{% sectionHeader color="beige" title="Correcto 50%" icon="phone" _language="" /%}
 {% /horizontalSplit %}
 
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 # Prueba de texto pegado
 
 En **melocotón** (*Prunus persica*) es una [caducifolio](https://en.wikipedia.org/wiki/Deciduous) árbol primero [domesticado](https://en.wikipedia.org/wiki/Domesticated) y [cultivado](https://en.wikipedia.org/wiki/Agriculture) en [China](https://en.wikipedia.org/wiki/China). Es jugosa y comestible [frutas](https://en.wikipedia.org/wiki/Fruit) con diversas características, la mayoría denominadas **melocotones** y las variedades de piel brillante y no peluda llamadas **nectarinas**. Melocotones y [nectarinas](https://en.wikipedia.org/wiki/Peach#Nectarines) son de la misma especie, aunque comercialmente se consideran frutos diferentes.
 {% /bodySection %}
 
-{% bodySection centered=false width="default" color="green" textSize="medium" %}
+{% bodySection centered=false width="default" color="green" textSize="medium" _language="" %}
 ## Tenemos un texto
 
 para comprobar los huecos entre elementos del cuerpo. Así que ahora voy a seguir escribiendo un poco
@@ -193,53 +205,53 @@ para comprobar los huecos entre elementos del cuerpo. Así que ahora voy a segui
 
 En **melocotón** (*Prunus persica*) es una [caducifolio](https://en.wikipedia.org/wiki/Deciduous) árbol primero [domesticado](https://en.wikipedia.org/wiki/Domesticated) y [cultivado](https://en.wikipedia.org/wiki/Agriculture) en [China](https://en.wikipedia.org/wiki/China). Es jugosa y comestible [frutas](https://en.wikipedia.org/wiki/Fruit) con diversas características, la mayoría denominadas **melocotones** y las variedades de piel brillante y no peluda llamadas **nectarinas**. Melocotones y [nectarinas](https://en.wikipedia.org/wiki/Peach#Nectarines) son de la misma especie, aunque comercialmente se consideran frutos diferentes.
 
-{% inContentImage image={discriminant: "uploaded", value: "infographic-how-does-the-abortion-pill-work-en"} maxWidth=100 action={discriminant: ""} newTab=false /%}
+{% inContentImage image={discriminant: "uploaded", value: "infographic-how-does-the-abortion-pill-work-en"} maxWidth=100 action={discriminant: ""} newTab=false _language="" /%}
 
 En **melocotón** (*Prunus persica*) es una [caducifolio](https://en.wikipedia.org/wiki/Deciduous) árbol primero [domesticado](https://en.wikipedia.org/wiki/Domesticated) y [cultivado](https://en.wikipedia.org/wiki/Agriculture) en [China](https://en.wikipedia.org/wiki/China). Es jugosa y comestible [frutas](https://en.wikipedia.org/wiki/Fruit) con diversas características, la mayoría denominadas **melocotones** y las variedades de piel brillante y no peluda llamadas **nectarinas**. Melocotones y [nectarinas](https://en.wikipedia.org/wiki/Peach#Nectarines) son de la misma especie, aunque comercialmente se consideran frutos diferentes.
 
-{% insetSection %}
+{% insetSection _language="" %}
 Un poco de contenido adicional aquí, así que podemos tener más texto y lo que no
 {% /insetSection %}
 
 Y por último terminamos esta sección
 {% /bodySection %}
 
-{% horizontalSplit noHeader=true %}
-{% sectionHeader color="beige" title="Izquierda (33%)" icon="minus" /%}
+{% horizontalSplit noHeader=true _language="" %}
+{% sectionHeader color="beige" title="Izquierda (33%)" icon="minus" _language="" /%}
 
-{% sectionHeader color="beige" title="Medio (33%)" icon="arrowUp" /%}
+{% sectionHeader color="beige" title="Medio (33%)" icon="arrowUp" _language="" /%}
 
-{% sectionHeader color="beige" title="Correcto 33%" icon="phone" /%}
+{% sectionHeader color="beige" title="Correcto 33%" icon="phone" _language="" /%}
 {% /horizontalSplit %}
 
-{% tocAnchor slug={name: "testimonios", slug: "testimonials"} type={discriminant: "anchor"} /%}
+{% tocAnchor slug={name: "testimonios", slug: "testimonials"} type={discriminant: "anchor"} _language="" /%}
 
-{% cardLayoutSection color="beige" minColumnWidth=32 %}
-{% testimonialSection testimonial="in-honor-of-all-uteruses-may-you-be-free-to-do-as-you-please" /%}
+{% cardLayoutSection color="beige" minColumnWidth=32 _language="" %}
+{% testimonialSection testimonial="in-honor-of-all-uteruses-may-you-be-free-to-do-as-you-please" _language="" /%}
 
-{% testimonialSection testimonial="research-learning_i-couldn-t-afford-a-surgical-or-medical-abortion-from-the-clinic-telehealth-care-is-half-the-price-of-abortions-where-i-live" /%}
+{% testimonialSection testimonial="research-learning_i-couldn-t-afford-a-surgical-or-medical-abortion-from-the-clinic-telehealth-care-is-half-the-price-of-abortions-where-i-live" _language="" /%}
 {% /cardLayoutSection %}
 
-{% timelineSection title="1990" color="" %}
+{% timelineSection title="1990" color="" _language="" %}
 A mediados de los noventa, Elisa Wells y Francine Coeytaux formaron parte del equipo encargado de comercializar Plan B, la "píldora del día después", un largo pero fructífero viaje que catalizó objetivos empresariales, de la FDA y públicos. (Lea De secreto a estantería, 1999).
 {% /timelineSection %}
 
-{% timelineSection title="1990" color="" %}
+{% timelineSection title="1990" color="" _language="" %}
 A mediados de los noventa, Elisa Wells y Francine Coeytaux formaron parte del equipo encargado de comercializar Plan B, la "píldora del día después", un largo pero fructífero viaje que catalizó objetivos empresariales, de la FDA y públicos. (Lea De secreto a estantería, 1999).
 {% /timelineSection %}
 
-{% timelineSection title="1990" color="" %}
+{% timelineSection title="1990" color="" _language="" %}
 A mediados de los noventa, Elisa Wells y Francine Coeytaux formaron parte del equipo encargado de comercializar Plan B, la "píldora del día después", un largo pero fructífero viaje que catalizó objetivos empresariales, de la FDA y públicos. (Lea De secreto a estantería, 1999).
 {% /timelineSection %}
 
-{% timelineSection title="1990" color="" %}
+{% timelineSection title="1990" color="" _language="" %}
 A mediados de los noventa, Elisa Wells y Francine Coeytaux formaron parte del equipo encargado de comercializar Plan B, la "píldora del día después", un largo pero fructífero viaje que catalizó objetivos empresariales, de la FDA y públicos. (Lea De secreto a estantería, 1999).
 {% /timelineSection %}
 
-{% tocAnchor slug={name: "ToDo", slug: "todo"} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "ToDo", slug: "todo"} type={discriminant: "toc"} _language="" /%}
 
-{% actionBanner title="Lista rápida de recursos" color="red" icon="text" link={label: "Descargar PDF con texto largo", click: {discriminant: ""}} %}
+{% actionBanner title="Lista rápida de recursos" color="red" icon="text" link={label: "Descargar PDF con texto largo", click: {discriminant: ""}} _language="" %}
 Tenemos un nuevo patrocinador fiscal 501c3, Possibility Labs (EIN 85-3989363).
 {% /actionBanner %}
 
-{% logoBanner title="Nuestras investigaciones y trabajos han aparecido en:" color="blue" logos=[{discriminant: "one-off", value: {image: "/images/xyz_test-page/0f5cca4cd4a6c2d02ede52647123bc81.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/22f1bdba5f74a78acbe13f1d01719598.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/93c5433751921a24c465e675e463d8ab.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/a33062e6303d6b0b8569c934214389e5.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/c32f68927ec12577bf3216a7345b5fce.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/da3968a42be039d7d138ded968241d87.jpg"}}] maxItemHeight=4 /%}
+{% logoBanner title="Nuestras investigaciones y trabajos han aparecido en:" color="blue" logos=[{discriminant: "one-off", value: {image: "/images/xyz_test-page/0f5cca4cd4a6c2d02ede52647123bc81.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/22f1bdba5f74a78acbe13f1d01719598.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/93c5433751921a24c465e675e463d8ab.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/a33062e6303d6b0b8569c934214389e5.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/c32f68927ec12577bf3216a7345b5fce.png"}}, {discriminant: "one-off", value: {image: "/images/xyz_test-page/da3968a42be039d7d138ded968241d87.jpg"}}] maxItemHeight=4 _language="" /%}
