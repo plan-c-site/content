@@ -62,8 +62,10 @@ async function weglotRequest(body: {
 
   if (!result.ok) {
     if (result.status === 429) {
+      console.warn("TOO MANY WEGLOT REQUESTS - DELAYING", body.request_url);
       return await new Promise<{ to_words: string[] }>((resolve, reject) => {
         setTimeout(() => {
+          console.log("RESUMING WEGLOT REQUESTS", body.request_url);
           weglotRequest(body).then(resolve).catch(reject);
         }, 5000);
       });
