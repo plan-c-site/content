@@ -210,7 +210,7 @@ async function Translate() {
   await translateMarkdownRoots(
     path.join(__dirname, "../content/popups"),
     [{ key: "title" }],
-    "answer",
+    "content",
     { url_base: "/popups" }
   );
   await translateMarkdownRoots(
@@ -224,7 +224,7 @@ async function Translate() {
         container: "object",
       },
     ],
-    "answer",
+    "content",
     { url_base: "/posts" }
   );
   await translateMarkdownRoots(
