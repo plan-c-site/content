@@ -558,6 +558,14 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
       keys: [{ key: "header", type: "text" }],
     },
   ],
+  postList: [
+    {
+      key: "type",
+      container: "object",
+      condition: "headlines",
+      keys: [{ key: "buttonLabel" }],
+    },
+  ],
 };
 
 function extractParagraphsFromMarkdown(node: Node): WordForTranslation[] {
