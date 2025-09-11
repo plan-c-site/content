@@ -52,7 +52,7 @@ Error en el envío del formulario
 {% /formSection %}
 {% /formWrapper %}
 
-{% formWrapper formType={discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236791013599", input: "id_eng"}, {id: "46236994830559", input: "id_spa"}]}} afterSubmit="show-screens" customValidation="let atLeast1 = false\nif (inputs.id_eng && inputs.id_eng !== '0') {\natLeast1 = true \n}\nif (inputs.id_spa && inputs.id_spa !== '0') {\natLeast1 = true \n}\nif (!atLeast1) {\n   return {\n  id_eng: t(\"PleaseSelectOneItem\"), id_spa: t(\"PleaseSelectOneItem\")\n}\n}\nreturn true" _language="" %}
+{% formWrapper formType={discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236791013599", input: "id_eng"}, {id: "46236994830559", input: "id_spa"}]}} afterSubmit="show-screens" customValidation="let atLeast1 = false\nif (inputs.id_eng && inputs.id_eng !== '0') {\natLeast1 = true \n}\nif (inputs.id_spa && inputs.id_spa !== '0') {\natLeast1 = true \n}\nif (!atLeast1) {\n   return {\n  id_eng: t(\"forms.PleaseSelectOneItem\"), id_spa: t(\"forms.PleaseSelectOneItem\")\n}\n}\nreturn true" _language="" %}
 {% formSection type="waiting" _language="" %}
 {% bodySection centered=true width="default" color="green" textSize="medium" _language="" %}
 # Prueba Shopify
