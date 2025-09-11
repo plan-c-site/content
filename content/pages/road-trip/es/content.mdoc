@@ -1,4 +1,4 @@
-{% heroSection image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/6801875653a6b260f8109f34_Map%20Template.png"} imageSide="right" color="beige" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-cover" imageVertical="bg-top" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false %}
+{% heroSection image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/6801875653a6b260f8109f34_Map%20Template.png"} imageSide="right" color="beige" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-cover" imageVertical="bg-top" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
 # Viaje por carretera de la Comunidad del Plan C
 
 **El Plan C Community Road Trip ha vuelto: más fuerte, más grande y llegando a todos los rincones del país.**
@@ -6,34 +6,34 @@
 Este es un movimiento en movimiento, impulsado por la colaboración, alimentado por la creatividad y arraigado en la lucha por la libertad reproductiva. Nos estamos asociando con organizadores de base para provocar la conexión en los 50 estados, además de Guam y Puerto Rico, a través de pop-ups, paneles, actuaciones y activaciones comunitarias audaces centradas en la verdad, la agencia y el acceso.
 
 Siga nuestra guía por estados para encontrar su parada, y si tiene algún evento o idea que deba figurar en el mapa, póngase en contacto con nosotros en&nbsp;
-{% inlineLink action={discriminant: "mailto", value: "community@plancpills.org"} %}community@plancpills.org{% /inlineLink %}
+{% inlineLink action={discriminant: "mailto", value: "community@plancpills.org"} _language="" %}community@plancpills.org{% /inlineLink %}
 .
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 {% /heroSection %}
 
-{% tocAnchor slug={name: "Encuentre su parada", slug: "find-your-stop"} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "Encuentre su parada", slug: "find-your-stop"} type={discriminant: "toc"} _language="" /%}
 
-{% tocAnchor slug={name: "Archivo de viajes por carretera", slug: "road-trip-archive"} type={discriminant: "action", value: {discriminant: "internal", value: {page: "road-trip-2024"}}} /%}
+{% tocAnchor slug={name: "Archivo de viajes por carretera", slug: "road-trip-archive"} type={discriminant: "action", value: {discriminant: "internal", value: {page: "road-trip-2024"}}} _language="" /%}
 
-{% bodySection centered=true width="medium" color="green" textSize="medium" %}
+{% bodySection centered=true width="narrow" color="green" textSize="medium" _language="" %}
 ## Encuentre su parada
 
-{% formWrapper formType={discriminant: "link", value: {pattern: "#[:location:]"}} afterSubmit="nothing" customValidation="if (!document.getElementById(inputs.location)) {\n  return {\n  location: \"There are no events scheduled in this state.\"\n  }\n}" %}
-{% formSection type="waiting" %}
-{% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: false, type: {discriminant: "select", value: {placeholder: "Seleccione un estado o territorio", autoSubmit: true, noSearch: false, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] /%}
+{% formWrapper formType={discriminant: "link", value: {pattern: "#[:location:]"}} afterSubmit="nothing" customValidation="if (!document.getElementById(inputs.location)) {\n  return {\n  location: \"There are no events scheduled in this state.\"\n  }\n}" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: false, type: {discriminant: "select", value: {placeholder: "Seleccione un estado o territorio", autoSubmit: true, noSearch: false, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] _language="" /%}
 {% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
 
-{% roadtripList startDate="2025/01/01" pageLength=100 /%}
+{% roadtripList startDate="2025/01/01" pageLength=100 _language="" /%}
 
-{% narrowBanner icon="arrowUp" color="beige" iconAlign="items-center" fullWidth=true %}
+{% narrowBanner icon="arrowUp" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
 
-{% inlineLink action={discriminant: "anchor", value: "find-your-stop"} %}Volver arriba{% /inlineLink %}
+{% inlineLink action={discriminant: "anchor", value: "find-your-stop"} _language="" %}Volver arriba{% /inlineLink %}
 
 {% /narrowBanner %}
 
-{% actionBanner title="Lleva el viaje por carretera hasta ti" color="red" icon="mapPin" link={label: "Envíenos un correo electrónico", click: {discriminant: "mailto", value: "community@plancpills.org"}} %}
+{% actionBanner title="Lleva el viaje por carretera hasta ti" color="red" icon="mapPin" link={label: "Envíenos un correo electrónico", click: {discriminant: "mailto", value: "community@plancpills.org"}} _language="" %}
 Si tienes un evento o una idea que debe figurar en el mapa, ponte en contacto con nosotros en community@plancpills.org.
 {% /actionBanner %}
