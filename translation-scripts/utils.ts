@@ -551,6 +551,13 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
       keys: [{ has_condition: "override", isString: true }],
     },
   ],
+  resourceList: [
+    {
+      key: "resources",
+      container: "array",
+      keys: [{ key: "header", type: "text" }],
+    },
+  ],
 };
 
 function extractParagraphsFromMarkdown(node: Node): WordForTranslation[] {
