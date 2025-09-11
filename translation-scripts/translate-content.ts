@@ -29,6 +29,8 @@ async function Translate() {
       { key: "heading" },
       { key: "summary" },
       { key: "buttonText" },
+      { key: "author" },
+      { key: "website", type: "external" },
       ...clickEventTranslation("buttonAction"),
     ],
     { url: "/resources" }
