@@ -5,10 +5,12 @@
     "dotenv": "^17.2.1",
     "glob": "^11.0.3",
     "js-yaml": "^4.1.0",
+    "jsdom": "^26.1.0",
     "turndown": "^7.2.1"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
+    "@types/jsdom": "^21.1.7",
     "tsx": "^4.20.5"
   },
   "scripts": {

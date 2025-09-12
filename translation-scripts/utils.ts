@@ -4,6 +4,7 @@ import yaml from "js-yaml";
 import crypto from "node:crypto";
 import path from "node:path";
 import markdoc, { Node } from "@markdoc/markdoc";
+import { JSDOM } from "jsdom";
 
 const API_KEY = process.env.WEGLOT_API_KEY || false;
 const WEGLOT_URL = API_KEY
@@ -568,6 +569,51 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
   ],
 };
 
+function processInlineMarkdown(
+  node: Node,
+  soFar: number
+): { internalString: string; soFar: number; attributes: WordForTranslation[] } {
+  let innerSoFar = soFar;
+  let internalString = "";
+  let attributes: WordForTranslation[] = [];
+  if (
+    "content" in node.attributes &&
+    typeof node.attributes.content === "string"
+  ) {
+    innerSoFar++;
+    internalString = `<span wg-${innerSoFar}>${node.attributes.content}</span>`;
+    return { internalString, soFar: innerSoFar, attributes };
+  } else if (node.tag && sectionTranslations[node.tag]) {
+    attributes = extractObjectValuesForTranslation(
+      [node.attributes],
+      sectionTranslations[node.tag]
+    );
+  }
+
+  innerSoFar++;
+  internalString = `<span wg-${innerSoFar}>`;
+  for (const n of node.children) {
+    const result = processInlineMarkdown(n, innerSoFar);
+    internalString += result.internalString;
+    (innerSoFar = result.soFar), attributes.push(...result.attributes);
+  }
+  internalString += `</span>`;
+  return { internalString, soFar: innerSoFar, attributes };
+}
+
+function processParagraphFromMarkdown(node: Node): WordForTranslation[] {
+  let interiorString = "";
+  let soFar = 1;
+  let words: WordForTranslation[] = [];
+  for (const n of node.children) {
+    const r = processInlineMarkdown(n, soFar);
+    interiorString += r.internalString;
+    soFar = r.soFar;
+    words.push(...r.attributes);
+  }
+  return [{ w: `${interiorString}`, t: textTypes.text, hash: "" }, ...words];
+}
+
 function extractParagraphsFromMarkdown(node: Node): WordForTranslation[] {
   if (
     "_language" in node.attributes &&
@@ -575,6 +621,9 @@ function extractParagraphsFromMarkdown(node: Node): WordForTranslation[] {
     node.attributes._language !== ""
   ) {
     return [];
+  }
+  if (node.type === "inline") {
+    return processParagraphFromMarkdown(node);
   }
   if (
     "content" in node.attributes &&
@@ -605,11 +654,87 @@ function extractParagraphsFromMarkdown(node: Node): WordForTranslation[] {
   }
 }
 
+function applyInlineTranslations(
+  node: Node,
+  translations: WordFromTranslation[],
+  startAt: number,
+  html: HTMLElement
+): { n: Node; next: number } {
+  if (
+    "content" in node.attributes &&
+    typeof node.attributes.content === "string"
+  ) {
+    return {
+      next: startAt,
+      n: new Node(node.type, { content: html.textContent }, [], node.tag),
+    };
+  }
+  let attributes = node.attributes;
+  let i = startAt;
+  if (node.tag && sectionTranslations[node.tag]) {
+    const attrs = setTranslatedValues(
+      [attributes],
+      sectionTranslations[node.tag],
+      translations,
+      startAt,
+      true
+    );
+    attributes = attrs.result[0];
+    i = attrs.next;
+  }
+  const children: Node[] = [];
+  for (let t = 0; t < node.children.length; t++) {
+    const el = html.children[t] as HTMLElement;
+    const n = node.children[t];
+    if (el) {
+      const result = applyInlineTranslations(n, translations, i, el);
+      i = result.next;
+      children.push(result.n);
+    } else {
+      throw new Error(
+        `MISMATCH, ${t}
+        ${html.outerHTML}
+        ${JSON.stringify(node, null, 2)}`
+      );
+    }
+  }
+
+  return {
+    n: new Node(node.type, attributes, children, node.tag),
+    next: i,
+  };
+}
+
+function applyTranslationsToParagraph(
+  node: Node,
+  translations: WordFromTranslation[],
+  startAt: number
+): { n: Node; next: number } {
+  const html = translations[startAt] as { w: string };
+  let next = startAt + 1;
+  const parsed = new JSDOM(`<html><body>${html.w}</body></html>`);
+  const body = parsed.window.document.body;
+
+  const children: Node[] = [];
+
+  for (let i = 0; i < node.children.length; i++) {
+    const el = body.children[i] as HTMLElement;
+    const n = node.children[i];
+    if (el) {
+      const result = applyInlineTranslations(n, translations, next, el);
+      next = result.next;
+      children.push(result.n);
+    }
+  }
+
+  return { n: new Node("inline", {}, children), next };
+}
+
 function applyTranslationsToMarkdown(
   node: Node,
   translations: WordFromTranslation[],
   startAt: number
-) {
+): { n: Node; next: number } {
   if (
     "_language" in node.attributes &&
     typeof node.attributes._language === "string" &&
@@ -619,6 +744,10 @@ function applyTranslationsToMarkdown(
       n: node,
       next: startAt,
     };
+  }
+  if (node.type === "inline") {
+    const result = applyTranslationsToParagraph(node, translations, startAt);
+    return result;
   }
   if (
     "content" in node.attributes &&
@@ -640,32 +769,31 @@ function applyTranslationsToMarkdown(
       n,
       next: startAt + 1,
     };
-  } else {
-    let attributes = node.attributes;
-    let i = startAt;
-    if (node.tag && sectionTranslations[node.tag]) {
-      const attrs = setTranslatedValues(
-        [attributes],
-        sectionTranslations[node.tag],
-        translations,
-        startAt,
-        true
-      );
-      attributes = attrs.result[0];
-      i = attrs.next;
-    }
-    const children: Node[] = [];
-    for (const child of node.children) {
-      const { n, next } = applyTranslationsToMarkdown(child, translations, i);
-      i = next;
-      children.push(n);
-    }
-
-    return {
-      n: new Node(node.type, attributes, children, node.tag),
-      next: i,
-    };
   }
+  let attributes = node.attributes;
+  let i = startAt;
+  if (node.tag && sectionTranslations[node.tag]) {
+    const attrs = setTranslatedValues(
+      [attributes],
+      sectionTranslations[node.tag],
+      translations,
+      startAt,
+      true
+    );
+    attributes = attrs.result[0];
+    i = attrs.next;
+  }
+  const children: Node[] = [];
+  for (const child of node.children) {
+    const { n, next } = applyTranslationsToMarkdown(child, translations, i);
+    i = next;
+    children.push(n);
+  }
+
+  return {
+    n: new Node(node.type, attributes, children, node.tag),
+    next: i,
+  };
 }
 
 export async function translateMardown(
@@ -740,5 +868,5 @@ export async function translateMardown(
     maxTagOpeningWidth: 9999,
   });
   await fs.writeFile(targetFile, `${newRaw}`, { encoding: "utf-8" });
-  await fs.writeFile(file + ".hash", hash, { encoding: "utf-8" });
+  //await fs.writeFile(file + ".hash", hash, { encoding: "utf-8" });
 }
