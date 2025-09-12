@@ -1,17 +1,11 @@
 {% narrowBanner icon="circleAlert" color="red" iconAlign="items-center" fullWidth=true %}
-
 {% textSize textSize="small" inline=false %}**Plan C no vende píldoras ni ofrece asesoramiento médico.** Esta guía recoge los resultados de nuestra investigación sobre píldoras abortivas.{% /textSize %}
-
 {% /narrowBanner %}
 
 {% heroSection image={discriminant: "state"} imageSide="right" color="beige" imageBackgroundColor="beige" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="left" largeLeftColumn=true reverseOnMobile=false %}
 {% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}} afterSubmit="nothing" %}
 {% formSection type="waiting" %}
-# Proveedores de píldoras abortivas en 
-{% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}
-{% dbText source="Name" %}Estado{% /dbText %}
-{% /inlineForm %}
-
+# Proveedores de píldoras abortivas en {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}Estado{% /dbText %}{% /inlineForm %}
 {% /formSection %}
 {% /formWrapper %}
 
@@ -21,11 +15,7 @@
 
 {% conditionalSection condition={discriminant: "stateFieldTruthy", value: "Link to studies (in languages)"} %}
 {% narrowBanner icon="alertCircle" color="beige" iconAlign="items-start" fullWidth=false %}
-
-{% textSize textSize="small" inline=false %}Si vive en este estado y desea abortar, puede participar en un estudio de investigación remunerado sobre el acceso al aborto. 
-{% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} %}Haga clic aquí para obtener más información{% /inlineLink %}
-.{% /textSize %}
-
+{% textSize textSize="small" inline=false %}Si vive en este estado y desea abortar, puede participar en un estudio de investigación remunerado sobre el acceso al aborto. {% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} %}Haga clic aquí para obtener más información{% /inlineLink %}.{% /textSize %}
 {% /narrowBanner %}
 {% /conditionalSection %}
 {% /heroSection %}
@@ -40,9 +30,7 @@
 {% bodySection centered=false width="default" color="black" textSize="medium" %}
 ## Clínicas presenciales
 
-Las clínicas de aborto presenciales suelen ofrecer tanto píldoras abortivas como procedimientos abortivos. Para encontrar la clínica más cercana a 
-{% dbText source="Name" %}ESTADO{% /dbText %}
-utilice esta herramienta de búsqueda.
+Las clínicas de aborto presenciales suelen ofrecer tanto píldoras abortivas como procedimientos abortivos. Para encontrar la clínica más cercana a {% dbText source="Name" %}ESTADO{% /dbText %}utilice esta herramienta de búsqueda.
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" %}
@@ -51,9 +39,7 @@ utilice esta herramienta de búsqueda.
 {% /horizontalSplit %}
 
 {% narrowBanner icon="arrowUp" color="beige" iconAlign="items-center" fullWidth=true %}
-
 {% inlineLink action={discriminant: "anchor", value: "top"} %}Volver arriba{% /inlineLink %}
-
 {% /narrowBanner %}
 
 {% horizontalSplit noHeader=false %}
@@ -67,27 +53,21 @@ utilice esta herramienta de búsqueda.
 {% faqList faqs=["can-people-buy-abortion-pills-now-to-use-later"] color="beige" appendStateField="Additional FAQs" anchor=false /%}
 
 {% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true %}
-
 {% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}Ver todas las preguntas frecuentes{% /inlineLink %}
-
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false %}
 {% bodySection centered=false width="default" color="green" textSize="medium" %}
-## Obtenga ayuda en 
-{% dbText source="Name" %}ESTADO{% /dbText %}
-
+## Obtenga ayuda en {% dbText source="Name" %}ESTADO{% /dbText %}
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" %}
 {% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=false /%}
 
 {% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true %}
-
 {% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} %}Ver todas las ayudas{% /inlineLink %}
-
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}

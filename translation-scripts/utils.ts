@@ -698,9 +698,10 @@ function applyInlineTranslations(
       );
     }
   }
-
+  const n = new Node(node.type, attributes, children, node.tag);
+  n.inline = node.inline;
   return {
-    n: new Node(node.type, attributes, children, node.tag),
+    n,
     next: i,
   };
 }
@@ -727,7 +728,10 @@ function applyTranslationsToParagraph(
     }
   }
 
-  return { n: new Node("inline", {}, children), next };
+  const n = new Node("inline", {}, children);
+  n.inline = node.inline;
+
+  return { n, next };
 }
 
 function applyTranslationsToMarkdown(
@@ -865,7 +869,7 @@ export async function translateMardown(
   const translated = applyTranslationsToMarkdown(doc, translations, startAt);
   const newRaw = markdoc.format(translated.n, {
     allowIndentation: false,
-    maxTagOpeningWidth: 9999,
+    maxTagOpeningWidth: 9999999,
   });
   await fs.writeFile(targetFile, `${newRaw}`, { encoding: "utf-8" });
   //await fs.writeFile(file + ".hash", hash, { encoding: "utf-8" });

@@ -22,9 +22,7 @@ Pegatinas de 2", disponibles en inglés y español, con un código QR que enlaza
 {% /sectionHeader %}
 
 {% bodySection centered=false width="narrow" color="beige" textSize="medium" %}
-
 {% textSize textSize="large" inline=true %}**¿Cuántas pegatinas necesita?**{% /textSize %}
-
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=1.5 itemsAlign="items-stretch" justiftContent="justify-stretch" %}
 {% formInput fields=[{label: {name: "Inglés", slug: "id_eng"}, required: false, type: {discriminant: "select", value: {placeholder: "Cantidad", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Español", slug: "id_spa"}, required: false, type: {discriminant: "select", value: {placeholder: "Cantidad", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
@@ -44,9 +42,7 @@ Será dirigido a una plataforma segura para recoger su dirección de envío.
 {% /sectionHeader %}
 
 {% bodySection centered=false width="default" color="beige" textSize="medium" %}
-
 {% textSize textSize="large" inline=true %}**Tus datos**{% /textSize %}
-
 
 {% formInput fields=[{label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Tu correo electrónico", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "¿Cómo ha conocido los adhesivos con código QR de Plan C?", slug: "how_did_you_hear_about_plan_c__dropdown_"}, required: false, type: {discriminant: "select", value: {placeholder: "Seleccione una...", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Búsqueda en Google"}, {label: "Publicaciones en redes sociales"}, {label: "Radio"}, {label: "Cartelera"}, {label: "Pegatina"}, {label: "Organización o acontecimiento local"}, {label: "De boca en boca"}, {label: "Otros"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "¿Tienes relación con algún grupo de la comunidad de salud reproductiva? (Grupos de estudiantes, organizaciones de salud reproductiva, profesionales sanitarios, etc.)", slug: "are_you_connected_with_any_repro_groups_"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Por favor, comparta cualquier información adicional sobre sus afiliaciones, trayectoria de activismo o comentarios:", slug: "additional_notes"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Me gustaría recibir actualizaciones y acciones del Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}] /%}
 
@@ -62,9 +58,7 @@ Las pegatinas nos cuestan un mínimo de 10 dólares por paquete. Después de pag
 
 {% formSection type="error" %}
 {% narrowBanner icon="alertCircle" color="red" iconAlign="items-center" fullWidth=false %}
-Se ha producido un error al enviar el formulario.  Por favor 
-{% inlineLink action={discriminant: "internal", value: {page: "contact"}} %}háganoslo saber{% /inlineLink %}
-.
+Se ha producido un error al enviar el formulario.  Por favor {% inlineLink action={discriminant: "internal", value: {page: "contact"}} %}háganoslo saber{% /inlineLink %}.
 {% /narrowBanner %}
 {% /formSection %}
 
