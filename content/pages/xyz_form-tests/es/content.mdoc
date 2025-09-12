@@ -1,128 +1,128 @@
-{% heroSection image={discriminant: "uploaded", value: "mailbox"} imageSide="right" color="green" imageBackgroundColor="pink" ignoreImageBorder=false imageCover="bg-cover" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false %}
+{% heroSection image={discriminant: "uploaded", value: "mailbox"} imageSide="right" color="green" imageBackgroundColor="pink" ignoreImageBorder=false imageCover="bg-cover" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
 # Formularios del Plan C de Pruebas
 
-{% formWrapper formType={discriminant: "custom", value: {code: "alert(JSON.stringify(inputs))"}} afterSubmit="nothing" %}
-{% formInput fields=[{label: {name: "Buscar pastillas", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Elija un Estado", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "black", altHoverBackground: ""}}}}}] /%}
+{% formWrapper formType={discriminant: "custom", value: {code: "alert(JSON.stringify(inputs))"}} afterSubmit="nothing" _language="" %}
+{% formInput fields=[{label: {name: "Buscar pastillas", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Elija un Estado", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "black", altHoverBackground: ""}}}}}] _language="" /%}
 {% /formWrapper %}
 
-{% formWrapper formType={discriminant: "custom", value: {code: "alert(JSON.stringify(inputs))"}} afterSubmit="nothing" %}
-{% formInput fields=[{label: {name: "Buscar pastillas sin búsqueda", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Elija un Estado", autoSubmit: false, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "black", altHoverBackground: ""}}}}}] /%}
+{% formWrapper formType={discriminant: "custom", value: {code: "alert(JSON.stringify(inputs))"}} afterSubmit="nothing" _language="" %}
+{% formInput fields=[{label: {name: "Buscar pastillas sin búsqueda", slug: "state"}, required: false, type: {discriminant: "select", value: {placeholder: "Elija un Estado", autoSubmit: false, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "black", altHoverBackground: ""}}}}}] _language="" /%}
 {% /formWrapper %}
 
-{% formWrapper formType={discriminant: "custom", value: {code: "alert(`Got: ${inputs.email}`)"}} afterSubmit="nothing" %}
-{% formInput fields=[{label: {name: "Suscribirse al boletín de noticias", slug: "email"}, required: false, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "green", altHoverBackground: "red", autoSubmit: false}}}}}] /%}
+{% formWrapper formType={discriminant: "custom", value: {code: "alert(`Got: ${inputs.email}`)"}} afterSubmit="nothing" _language="" %}
+{% formInput fields=[{label: {name: "Suscribirse al boletín de noticias", slug: "email"}, required: false, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "green", altHoverBackground: "red", autoSubmit: false}}}}}] _language="" /%}
 {% /formWrapper %}
 
-{% formWrapper formType={discriminant: "multiStep", value: [{discriminant: "custom", value: {code: "alert(`Got: ${inputs.feedback}`)\nreturn\"success\""}}, {discriminant: "custom", value: {code: "alert(`Second Step: ${inputs.feedback}`)\nreturn \"error\""}}]} afterSubmit="reset" %}
-{% formInput fields=[{label: {name: "Danos tu opinión", slug: "feedback"}, required: true, type: {discriminant: "text", value: {placeholder: "Comentarios", multiline: true, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "blue", altHoverBackground: "blue", autoSubmit: false}}}}}] /%}
+{% formWrapper formType={discriminant: "multiStep", value: [{discriminant: "custom", value: {code: "alert(`Got: ${inputs.feedback}`)\nreturn\"success\""}}, {discriminant: "custom", value: {code: "alert(`Second Step: ${inputs.feedback}`)\nreturn \"error\""}}]} afterSubmit="reset" _language="" %}
+{% formInput fields=[{label: {name: "Danos tu opinión", slug: "feedback"}, required: true, type: {discriminant: "text", value: {placeholder: "Comentarios", multiline: true, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "blue", altHoverBackground: "blue", autoSubmit: false}}}}}] _language="" /%}
 {% /formWrapper %}
 
-{% inContentButton label="Prueba Popup" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: "popup", value: "xyz-test-popup"} /%}
+{% inContentButton label="Prueba Popup" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false leftIcon=false action={discriminant: "popup", value: "xyz-test-popup"} _language="" /%}
 {% /heroSection %}
 
-{% formWrapper formType={discriminant: "link", value: {pattern: "/[:lang:]/[:text:]"}} afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="¿Probando un formulario de enlace?" icon="" /%}
+{% formWrapper formType={discriminant: "link", value: {pattern: "/[:lang:]/[:text:]"}} afterSubmit="show-screens" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="green" title="¿Probando un formulario de enlace?" icon="" _language="" /%}
 
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
-{% formInput fields=[{label: {name: "Algunos textos", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Algo...", multiline: false, embedSubmitButton: {discriminant: false}}}}] /%}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
+{% formInput fields=[{label: {name: "Algunos textos", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Algo...", multiline: false, embedSubmitButton: {discriminant: false}}}}] _language="" /%}
 
-{% formInput fields=[{label: {name: "Algunos textos", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Algo...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Idioma", slug: "lang"}, required: true, type: {discriminant: "select", value: {autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Inglés", value: "en"}, {label: "Español", value: "es"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+{% formInput fields=[{label: {name: "Algunos textos", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Algo...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Idioma", slug: "lang"}, required: true, type: {discriminant: "select", value: {autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Inglés", value: "en"}, {label: "Español", value: "es"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] _language="" /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
 
-{% formSection type="submitted" %}
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
+{% formSection type="submitted" _language="" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 Enviado....
 {% /bodySection %}
 {% /formSection %}
 
-{% formSection type="success" %}
-{% bodySection centered=true width="default" color="green" textSize="large" %}
+{% formSection type="success" _language="" %}
+{% bodySection centered=true width="default" color="green" textSize="large" _language="" %}
 ¡Éxito!
 {% /bodySection %}
 {% /formSection %}
 
-{% formSection type="error" %}
-{% bodySection centered=true width="default" color="red" textSize="large" %}
+{% formSection type="error" _language="" %}
+{% bodySection centered=true width="default" color="red" textSize="large" _language="" %}
 Error en el envío del formulario
 {% /bodySection %}
 {% /formSection %}
 {% /formWrapper %}
 
-{% formWrapper formType={discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236791013599", input: "id_eng"}, {id: "46236994830559", input: "id_spa"}]}} afterSubmit="show-screens" customValidation="let atLeast1 = false\nif (inputs.id_eng && inputs.id_eng !== '0') {\natLeast1 = true \n}\nif (inputs.id_spa && inputs.id_spa !== '0') {\natLeast1 = true \n}\nif (!atLeast1) {\n   return {\n  id_eng: \"Please select at least one item\", id_spa: \"Please select at least one item\"\n}\n}\nreturn true" %}
-{% formSection type="waiting" %}
-{% bodySection centered=true width="default" color="green" textSize="medium" %}
+{% formWrapper formType={discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236791013599", input: "id_eng"}, {id: "46236994830559", input: "id_spa"}]}} afterSubmit="show-screens" customValidation="let atLeast1 = false\nif (inputs.id_eng && inputs.id_eng !== '0') {\natLeast1 = true \n}\nif (inputs.id_spa && inputs.id_spa !== '0') {\natLeast1 = true \n}\nif (!atLeast1) {\n   return {\n  id_eng: t(\"forms.PleaseSelectOneItem\"), id_spa: t(\"forms.PleaseSelectOneItem\")\n}\n}\nreturn true" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% bodySection centered=true width="default" color="green" textSize="medium" _language="" %}
 # Prueba Shopify
 
-{% formInput fields=[{label: {name: "Inglés", slug: "id_eng"}, required: false, type: {discriminant: "select", value: {autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "1", value: "1"}, {label: "2", value: "2"}, {label: "3", value: "3"}, {label: "4", value: "4"}, {label: "5", value: "5"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Español", slug: "id_spa"}, required: false, type: {discriminant: "select", value: {autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "1", value: "1"}, {label: "2", value: "2"}, {label: "3", value: "3"}, {label: "4", value: "4"}, {label: "5", value: "5"}, {label: "6", value: "6"}]}, embedSubmitButton: {discriminant: false}}}}] /%}
+{% formInput fields=[{label: {name: "Inglés", slug: "id_eng"}, required: false, type: {discriminant: "select", value: {autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "1", value: "1"}, {label: "2", value: "2"}, {label: "3", value: "3"}, {label: "4", value: "4"}, {label: "5", value: "5"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Español", slug: "id_spa"}, required: false, type: {discriminant: "select", value: {autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "1", value: "1"}, {label: "2", value: "2"}, {label: "3", value: "3"}, {label: "4", value: "4"}, {label: "5", value: "5"}, {label: "6", value: "6"}]}, embedSubmitButton: {discriminant: false}}}}] _language="" /%}
 {% /bodySection %}
 
-{% heroSection image={discriminant: "uploaded", value: "mailbox"} imageSide="left" color="beige" imageBackgroundColor="green" ignoreImageBorder=false imageCover="bg-cover" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false %}
-{% formInput fields=[{label: {name: "correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "black", altHoverBackground: "green", autoSubmit: false}}}}}] /%}
+{% heroSection image={discriminant: "uploaded", value: "mailbox"} imageSide="left" color="beige" imageBackgroundColor="green" ignoreImageBorder=false imageCover="bg-cover" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
+{% formInput fields=[{label: {name: "correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "your@email.com", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "black", altHoverBackground: "green", autoSubmit: false}}}}}] _language="" /%}
 {% /heroSection %}
 {% /formSection %}
 {% /formWrapper %}
 
-{% formWrapper formType={discriminant: "custom", value: {code: "console.log(inputs);\nif (inputs.text.length > 2) {\nreturn \"success\";\n}\nreturn \"error\";"}} afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="red" title="Probar un formulario personalizado" icon="x" %}
+{% formWrapper formType={discriminant: "custom", value: {code: "console.log(inputs);\nif (inputs.text.length > 2) {\nreturn \"success\";\n}\nreturn \"error\";"}} afterSubmit="show-screens" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="red" title="Probar un formulario personalizado" icon="x" _language="" %}
 Sólo deben utilizarse si **son absolutamente necesarios**
 {% /sectionHeader %}
 
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
-{% formInput fields=[{label: {name: "Algún texto (debe tener más de 2 caracteres)", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Algo...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Idioma", slug: "lang"}, required: true, type: {discriminant: "select", value: {autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Inglés", value: "en"}, {label: "Español", value: "es"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
+{% formInput fields=[{label: {name: "Algún texto (debe tener más de 2 caracteres)", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Algo...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Idioma", slug: "lang"}, required: true, type: {discriminant: "select", value: {autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Inglés", value: "en"}, {label: "Español", value: "es"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] _language="" /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
 
-{% formSection type="submitted" %}
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
+{% formSection type="submitted" _language="" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 Enviado....
 {% /bodySection %}
 {% /formSection %}
 
-{% formSection type="success" %}
-{% bodySection centered=true width="default" color="green" textSize="large" %}
+{% formSection type="success" _language="" %}
+{% bodySection centered=true width="default" color="green" textSize="large" _language="" %}
 ¡Éxito!
 {% /bodySection %}
 {% /formSection %}
 
-{% formSection type="error" %}
-{% bodySection centered=true width="default" color="red" textSize="large" %}
+{% formSection type="error" _language="" %}
+{% bodySection centered=true width="default" color="red" textSize="large" _language="" %}
 Error en el envío del formulario
 {% /bodySection %}
 {% /formSection %}
 {% /formWrapper %}
 
-{% formWrapper formType={discriminant: "hubspot", value: {formId: "35d3f280-9c43-49e9-9a80-8a4d1a49214d", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}} afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Probar un formulario de HubSpot" icon="" /%}
+{% formWrapper formType={discriminant: "hubspot", value: {formId: "35d3f280-9c43-49e9-9a80-8a4d1a49214d", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}} afterSubmit="show-screens" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="blue" title="Probar un formulario de HubSpot" icon="" _language="" /%}
 
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
-{% formInput fields=[{label: {name: "Nombre", slug: "firstname"}, required: true, type: {discriminant: "text", value: {placeholder: "Nombre...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Apellido", slug: "lastname"}, required: true, type: {discriminant: "text", value: {placeholder: "Apellido", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Se", slug: "se"}, required: false, type: {discriminant: "separator"}}, {label: {name: "correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "email@example.com", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "teléfono", slug: "phone"}, required: false, type: {discriminant: "text", value: {placeholder: "+1-555-555-5555", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "empresa", slug: "company"}, required: false, type: {discriminant: "text", value: {placeholder: "Empresa", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Prueba de la casilla de verificación", slug: "checkbox_test"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Mi mensaje se refiere a", slug: "webform_subject"}, required: true, type: {discriminant: "select", value: {placeholder: "Seleccione una opción", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Donación o subvención", value: "A donation or grant"}, {label: "Defensa o asociación", value: "Advocacy or Partnership"}, {label: "Prensa o relaciones públicas", value: "Press or Public Relations"}, {label: "Programa de embajadores", value: "Ambassador Program"}, {label: "Soy proveedor médico", value: "I am a medical provider"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "mensaje", slug: "message"}, required: false, type: {discriminant: "text", value: {placeholder: "Mensaje...", multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] /%}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
+{% formInput fields=[{label: {name: "Nombre", slug: "firstname"}, required: true, type: {discriminant: "text", value: {placeholder: "Nombre...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Apellido", slug: "lastname"}, required: true, type: {discriminant: "text", value: {placeholder: "Apellido", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Se", slug: "se"}, required: false, type: {discriminant: "separator"}}, {label: {name: "correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "email@example.com", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "teléfono", slug: "phone"}, required: false, type: {discriminant: "text", value: {placeholder: "+1-555-555-5555", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "empresa", slug: "company"}, required: false, type: {discriminant: "text", value: {placeholder: "Empresa", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Prueba de la casilla de verificación", slug: "checkbox_test"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Mi mensaje se refiere a", slug: "webform_subject"}, required: true, type: {discriminant: "select", value: {placeholder: "Seleccione una opción", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Donación o subvención", value: "A donation or grant"}, {label: "Defensa o asociación", value: "Advocacy or Partnership"}, {label: "Prensa o relaciones públicas", value: "Press or Public Relations"}, {label: "Programa de embajadores", value: "Ambassador Program"}, {label: "Soy proveedor médico", value: "I am a medical provider"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "mensaje", slug: "message"}, required: false, type: {discriminant: "text", value: {placeholder: "Mensaje...", multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, leftIcon: false}}}] _language="" /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
 
-{% formSection type="submitted" %}
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
+{% formSection type="submitted" _language="" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 Enviado....
 {% /bodySection %}
 {% /formSection %}
 
-{% formSection type="success" %}
-{% bodySection centered=true width="default" color="green" textSize="large" %}
+{% formSection type="success" _language="" %}
+{% bodySection centered=true width="default" color="green" textSize="large" _language="" %}
 ¡Éxito!
 {% /bodySection %}
 {% /formSection %}
 
-{% formSection type="error" %}
-{% bodySection centered=true width="default" color="red" textSize="large" %}
+{% formSection type="error" _language="" %}
+{% bodySection centered=true width="default" color="red" textSize="large" _language="" %}
 Error en el envío del formulario
 {% /bodySection %}
 {% /formSection %}
