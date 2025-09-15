@@ -93,10 +93,14 @@ es:
 
 ---
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="Card grid normal" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="Card grid normal"
+   icon=""
+   _language="" /%}
 
-{% cardLayoutSection color="beige" minColumnWidth=20 %}
+{% cardLayoutSection color="beige" minColumnWidth=20 _language="" %}
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
    imageOnly=true
@@ -106,7 +110,8 @@ es:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
@@ -117,15 +122,19 @@ es:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader
    color="pink"
    title="Card grid inside flex-vertical"
-   icon="" /%}
+   icon=""
+   _language="" %}
+Extra whitespace between rows (desktop only)
+{% /sectionHeader %}
 
 {% flexSection
    direction="flex-col"
@@ -134,8 +143,9 @@ es:
    grow=false
    gap=0
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
-{% cardLayoutSection color="beige" minColumnWidth=22 %}
+   justiftContent="justify-stretch"
+   _language="" %}
+{% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
    imageOnly=true
@@ -145,7 +155,8 @@ es:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
@@ -156,7 +167,8 @@ es:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
@@ -167,7 +179,8 @@ es:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
@@ -178,16 +191,20 @@ es:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader
    color="cyan"
    title="Card grid inside flex-vertical with body + title"
-   icon="" /%}
+   icon=""
+   _language="" %}
+Extra whitespace between rows (desktop only).  Would like to minimize space between the body section with title and the card section, but the body has it's included padding.  Perhaps we can add a "title" field to the card grid layout section?  Or have an option to remove top-padding on the card grid layout section.
+{% /sectionHeader %}
 
 {% flexSection
    direction="flex-col"
@@ -196,16 +213,18 @@ es:
    grow=false
    gap=0.25
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% bodySection
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ### Title
 {% /bodySection %}
 
-{% cardLayoutSection color="beige" minColumnWidth=22 %}
+{% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
    imageOnly=true
@@ -215,7 +234,8 @@ es:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
@@ -226,16 +246,20 @@ es:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader
    color="blue"
    title="Card grid inside flex-vertical with faq"
-   icon="" /%}
+   icon=""
+   _language="" %}
+This is the primary use case, just need to remove that extra whitespace below a card row (on desktop)
+{% /sectionHeader %}
 
 {% flexSection
    direction="flex-col"
@@ -244,14 +268,16 @@ es:
    grow=false
    gap=0.5
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% faqSection
    faq="suggested-caption_medical-safety"
    color="beige"
    embedded=false
-   anchor=false /%}
+   anchor=false
+   _language="" /%}
 
-{% cardLayoutSection color="beige" minColumnWidth=22 %}
+{% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
    imageOnly=true
@@ -261,7 +287,8 @@ es:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
    image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
@@ -272,24 +299,27 @@ es:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Other ways to help", slug: "other-ways-to-help"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
 {% bodySection
    centered=true
    width="default"
    color="cyan"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## Other ways to help
 {% /bodySection %}
 
-{% cardLayoutSection color="beige" minColumnWidth=23 %}
+{% cardLayoutSection color="beige" minColumnWidth=23 _language="" %}
 {% cardSection
    image={discriminant: "one-off", value: {image: "/images/xyz-card-grid-test/megaphone_card-wide.png"}}
    imageOnly=false
@@ -299,7 +329,8 @@ es:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" %}
+   mobileImageHorizontal="desktop"
+   _language="" %}
 Many providers will send you abortion pills before you need them, to have on hand just in case.
 {% /cardSection %}
 
@@ -312,7 +343,8 @@ Many providers will send you abortion pills before you need them, to have on han
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" %}
+   mobileImageHorizontal="desktop"
+   _language="" %}
 Many providers will send you abortion pills before you need them, to have on hand just in case.
 {% /cardSection %}
 
@@ -326,7 +358,8 @@ Many providers will send you abortion pills before you need them, to have on han
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" %}
+   mobileImageHorizontal="desktop"
+   _language="" %}
 Many providers will send you abortion pills before you need them, to have on hand just in case.
 {% /cardSection %}
 {% /cardLayoutSection %}
