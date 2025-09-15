@@ -25,7 +25,7 @@ Más información sobre las píldoras menstruales en [periodpills.org](http://pe
 
 Las opciones de píldoras para la falta del periodo varían según el lugar. Haga clic a continuación para encontrar opciones por estado o territorio.
 
-{% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]Services=Period pills"}} afterSubmit="nothing" _language="" %}
+{% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]?Services=Period pills"}} afterSubmit="nothing" _language="" %}
 {% formSection type="waiting" _language="" %}
 {% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Búsqueda por estado o territorio", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] _language="" /%}
 {% /formSection %}
