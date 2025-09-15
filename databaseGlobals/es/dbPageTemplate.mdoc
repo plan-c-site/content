@@ -1,77 +1,77 @@
-{% narrowBanner icon="circleAlert" color="red" iconAlign="items-center" fullWidth=true %}
-{% textSize textSize="small" inline=false %}**Plan C no vende píldoras ni ofrece asesoramiento médico.** Esta guía recoge los resultados de nuestra investigación sobre píldoras abortivas.{% /textSize %}
+{% narrowBanner icon="circleAlert" color="red" iconAlign="items-center" fullWidth=true _language="" %}
+{% textSize textSize="small" inline=false _language="" %}**Plan C no vende píldoras ni ofrece asesoramiento médico.** Esta guía recoge los resultados de nuestra investigación sobre píldoras abortivas.{% /textSize %}
 {% /narrowBanner %}
 
-{% heroSection image={discriminant: "state"} imageSide="right" color="beige" imageBackgroundColor="beige" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="left" largeLeftColumn=true reverseOnMobile=false %}
-{% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}} afterSubmit="nothing" %}
-{% formSection type="waiting" %}
-# Proveedores de píldoras abortivas en {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}Estado{% /dbText %}{% /inlineForm %}
+{% heroSection image={discriminant: "state"} imageSide="right" color="beige" imageBackgroundColor="beige" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="left" largeLeftColumn=true reverseOnMobile=false _language="" %}
+{% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}} afterSubmit="nothing" _language="" %}
+{% formSection type="waiting" _language="" %}
+# Proveedores de píldoras abortivas en {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} _language="" %}{% dbText source="Name" _language="" %}Estado{% /dbText %}{% /inlineForm %}
 {% /formSection %}
 {% /formWrapper %}
 
-{% dbMarkdoc source="Summary" /%}
+{% dbMarkdoc source="Summary" _language="" /%}
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 
-{% conditionalSection condition={discriminant: "stateFieldTruthy", value: "Link to studies (in languages)"} %}
-{% narrowBanner icon="alertCircle" color="beige" iconAlign="items-start" fullWidth=false %}
-{% textSize textSize="small" inline=false %}Si vive en este estado y desea abortar, puede participar en un estudio de investigación remunerado sobre el acceso al aborto. {% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} %}Haga clic aquí para obtener más información{% /inlineLink %}.{% /textSize %}
+{% conditionalSection condition={discriminant: "stateFieldTruthy", value: "Link to studies (in languages)"} _language="" %}
+{% narrowBanner icon="alertCircle" color="beige" iconAlign="items-start" fullWidth=false _language="" %}
+{% textSize textSize="small" inline=false _language="" %}Si vive en este estado y desea abortar, puede participar en un estudio de investigación remunerado sobre el acceso al aborto. {% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} _language="" %}Haga clic aquí para obtener más información{% /inlineLink %}.{% /textSize %}
 {% /narrowBanner %}
 {% /conditionalSection %}
 {% /heroSection %}
 
-{% tocAnchor slug={name: "Lista de proveedores", slug: "list-of-providers"} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "Lista de proveedores", slug: "list-of-providers"} type={discriminant: "toc"} _language="" /%}
 
-{% dbClinic /%}
+{% dbClinic _language="" /%}
 
-{% tocAnchor slug={name: "Clínicas presenciales", slug: "in-person-clinics"} type={discriminant: "anchor"} /%}
+{% tocAnchor slug={name: "Clínicas presenciales", slug: "in-person-clinics"} type={discriminant: "anchor"} _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% bodySection centered=false width="default" color="black" textSize="medium" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% bodySection centered=false width="default" color="black" textSize="medium" _language="" %}
 ## Clínicas presenciales
 
-Las clínicas de aborto presenciales suelen ofrecer tanto píldoras abortivas como procedimientos abortivos. Para encontrar la clínica más cercana a {% dbText source="Name" %}ESTADO{% /dbText %}utilice esta herramienta de búsqueda.
+Las clínicas de aborto presenciales suelen ofrecer tanto píldoras abortivas como procedimientos abortivos. Para encontrar la clínica más cercana a {% dbText source="Name" _language="" %}ESTADO{% /dbText %}utilice esta herramienta de búsqueda.
 {% /bodySection %}
 
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" %}
-{% resourceItem resource="i-need-an-a" header={discriminant: "override", value: "Encontrar la clínica más cercana"} type={discriminant: "block", value: {icon: "", iconColor: "grey"}} /%}
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% resourceItem resource="i-need-an-a" header={discriminant: "override", value: "Encontrar la clínica más cercana"} type={discriminant: "block", value: {icon: "", iconColor: "grey"}} _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% narrowBanner icon="arrowUp" color="beige" iconAlign="items-center" fullWidth=true %}
-{% inlineLink action={discriminant: "anchor", value: "top"} %}Volver arriba{% /inlineLink %}
+{% narrowBanner icon="arrowUp" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
+{% inlineLink action={discriminant: "anchor", value: "top"} _language="" %}Volver arriba{% /inlineLink %}
 {% /narrowBanner %}
 
-{% horizontalSplit noHeader=false %}
-{% bodySection centered=false width="default" color="pink" textSize="medium" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% bodySection centered=false width="default" color="pink" textSize="medium" _language="" %}
 ## Preguntas más frecuentes
 {% /bodySection %}
 
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=true gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" %}
-{% faqList faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills"] color="beige" anchor=true /%}
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=true gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% faqList faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills"] color="beige" anchor=true _language="" /%}
 
-{% faqList faqs=["can-people-buy-abortion-pills-now-to-use-later"] color="beige" appendStateField="Additional FAQs" anchor=false /%}
+{% faqList faqs=["can-people-buy-abortion-pills-now-to-use-later"] color="beige" appendStateField="Additional FAQs" anchor=false _language="" /%}
 
-{% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true %}
-{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}Ver todas las preguntas frecuentes{% /inlineLink %}
+{% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}Ver todas las preguntas frecuentes{% /inlineLink %}
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% bodySection centered=false width="default" color="green" textSize="medium" %}
-## Obtenga ayuda en {% dbText source="Name" %}ESTADO{% /dbText %}
+{% horizontalSplit noHeader=false _language="" %}
+{% bodySection centered=false width="default" color="green" textSize="medium" _language="" %}
+## Obtenga ayuda en {% dbText source="Name" _language="" %}ESTADO{% /dbText %}
 {% /bodySection %}
 
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" %}
-{% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=false /%}
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=false _language="" /%}
 
-{% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true %}
-{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} %}Ver todas las ayudas{% /inlineLink %}
+{% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}Ver todas las ayudas{% /inlineLink %}
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% actionBanner title="¿Tiene alguna opinión sobre el Plan C o un proveedor?" color="cyan" icon="" link={label: "Háganoslo saber", click: {discriminant: "internal", value: {page: "contact"}}} /%}
+{% actionBanner title="¿Tiene alguna opinión sobre el Plan C o un proveedor?" color="cyan" icon="" link={label: "Háganoslo saber", click: {discriminant: "internal", value: {page: "contact"}}} _language="" /%}
 
-{% tocAnchor slug={name: "Calculadora de embarazo", slug: "pregnancy-calculator"} type={discriminant: "action", value: {discriminant: "pregnancy"}} /%}
+{% tocAnchor slug={name: "Calculadora de embarazo", slug: "pregnancy-calculator"} type={discriminant: "action", value: {discriminant: "pregnancy"}} _language="" /%}
