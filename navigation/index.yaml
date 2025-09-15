@@ -91,7 +91,7 @@ navBar:
             value:
               label: FAQ
               es:
-                label: PREGUNTAS FRECUENTES
+                label: Preguntas frecuentes
                 __label: 28RooUtgHV2SQK63K5/NL4rtL04wkyh27fjRbsMThGs=
               action:
                 discriminant: internal
