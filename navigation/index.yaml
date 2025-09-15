@@ -33,6 +33,9 @@ social:
           __url: xD2PSjiElY+DQbHNKiNCCcPRBORton/GJGgI+GgatDM=
     icon: instagram
     altText: Instagram
+    es:
+      altText: Instagram
+      __altText: utV+94N8jmv5nCpZNcydb+UySlPYh0StVVHbDkawPNY=
   - action:
       discriminant: external
       value:
@@ -43,6 +46,9 @@ social:
           __url: Iav4CgUukmVBruEZrMHleHvE3rKA9Y2zSFU7MYFgTtg=
     icon: blueSky
     altText: Bluesky
+    es:
+      altText: Bluesky
+      __altText: TtSFxxQBGGBxGK2a1harnAJr7176CwIYy/MSGIlZ1FE=
   - action:
       discriminant: external
       value:
@@ -53,6 +59,9 @@ social:
           __url: 6Nh9ar5L07d20s0nb+B7gIsqG6OfWEMjkqgwrkFTYBo=
     icon: facebook
     altText: Facebook
+    es:
+      altText: Facebook
+      __altText: 1B9bSXfuBca2GztfBUeEYo9c0cvgaoKlSE0ebebu/oU=
   - action:
       discriminant: external
       value:
@@ -63,6 +72,9 @@ social:
           __url: z8kWjnUicgZizWXcW12ZDrx8WJ6oyc7fmXjjgPYVM9U=
     icon: linkedin
     altText: Linked in
+    es:
+      altText: Enlazados
+      __altText: hdYJfLAOs1Vzq39UYV9iC1Dws6p8zV/e8dyqEbYbU9A=
   - action:
       discriminant: external
       value:
@@ -73,6 +85,9 @@ social:
           __url: +DkOJVOUAFcCkaAFuFrlZEPzse2xy7OCfUQifbnvCRQ=
     icon: tiktok
     altText: TikTok
+    es:
+      altText: TikTok
+      __altText: G7b8+/E2insnptsEgC4nVqniCesk8YnD41voVC9Dmiw=
 navBar:
   links:
     - discriminant: section
