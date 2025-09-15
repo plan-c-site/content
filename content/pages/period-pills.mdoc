@@ -6,9 +6,7 @@ seo:
 es:
   title: Píldoras menstruales
   __title: 8tiiIcz3wbFeHh84ZIDlL+jRlwsDuCzl62N3jdUoO/Q=
-
 ---
-
 {% heroSection
    image={discriminant: "noco", value: "Pill bottle box - Hero"}
    imageSide="right"
@@ -51,6 +49,26 @@ Learn more about period pills at [periodpills.org](http://periodpills.org).
    slug={name: "List of providers", slug: "list-of-providers"}
    type={discriminant: "toc"}
    _language="" /%}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium"
+   _language="" %}
+## Find a period pills provider
+
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
+   afterSubmit="nothing"
+   _language="" %}
+{% formSection type="waiting" _language="" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}]
+   _language="" /%}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}
 
 {% tocAnchor
    slug={name: "Frequently asked questions", slug: "frequently-asked-questions"}
