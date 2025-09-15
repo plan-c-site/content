@@ -122,7 +122,7 @@ async function Translate() {
       {
         key: "social",
         container: "array",
-        keys: [...clickEventTranslation("action")],
+        keys: [{ key: "altText" }, ...clickEventTranslation("action")],
       },
       {
         key: "navBar",

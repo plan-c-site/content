@@ -468,6 +468,24 @@ export const clickEventTranslation: (key: string) => TranslationKey[] = (
   },
 ];
 
+export const imageReferenceTranslation: (key: string) => TranslationKey[] = (
+  key: string
+) => [
+  {
+    key,
+    condition: "noco-with-alt",
+    container: "object",
+    keys: [{ key: "altText" }],
+  },
+  {
+    key,
+    condition: "one-off",
+    container: "object",
+    keys: [{ key: "altText" }],
+  },
+  { key, condition: "state", container: "object", keys: [{ key: "altText" }] },
+];
+
 const sectionTranslations: Record<string, TranslationKey[]> = {
   actionBanner: [
     { key: "title" },
