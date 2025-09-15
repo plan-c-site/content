@@ -44,7 +44,7 @@ export type TranslationKey =
       type?: keyof typeof textTypes;
     };
 type WordForTranslation = { w: string; t: number; hash: string } | string;
-type WordFromTranslation = { w: string; hash: string } | string;
+type WordFromTranslation = { w: string; hash: string } | string | { w: string };
 
 async function weglotRequest(body: {
   l_from: string;
@@ -339,7 +339,7 @@ function setTranslatedValues<T extends object>(
           es["__" + key.key] = translation;
         } else if (translation) {
           es[key.key] = translation.w;
-          es["__" + key.key] = translation.hash;
+          es["__" + key.key] = "hash" in translation ? translation.hash : "";
         }
       }
     }
@@ -603,7 +603,7 @@ function processInlineMarkdown(
 
 function processParagraphFromMarkdown(node: Node): WordForTranslation[] {
   let interiorString = "";
-  let soFar = 1;
+  let soFar = 0;
   let words: WordForTranslation[] = [];
   for (const n of node.children) {
     const r = processInlineMarkdown(n, soFar);
