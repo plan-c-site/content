@@ -32,6 +32,7 @@ social:
           url: https://www.instagram.com/plancpills/
           __url: xD2PSjiElY+DQbHNKiNCCcPRBORton/GJGgI+GgatDM=
     icon: instagram
+    altText: Instagram
   - action:
       discriminant: external
       value:
@@ -41,6 +42,7 @@ social:
           url: https://bsky.app/profile/plancpills.bsky.social
           __url: Iav4CgUukmVBruEZrMHleHvE3rKA9Y2zSFU7MYFgTtg=
     icon: blueSky
+    altText: Bluesky
   - action:
       discriminant: external
       value:
@@ -50,6 +52,7 @@ social:
           url: https://www.facebook.com/plancpills
           __url: 6Nh9ar5L07d20s0nb+B7gIsqG6OfWEMjkqgwrkFTYBo=
     icon: facebook
+    altText: Facebook
   - action:
       discriminant: external
       value:
@@ -59,6 +62,7 @@ social:
           url: https://ng.linkedin.com/company/plancpills
           __url: z8kWjnUicgZizWXcW12ZDrx8WJ6oyc7fmXjjgPYVM9U=
     icon: linkedin
+    altText: Linked in
   - action:
       discriminant: external
       value:
@@ -68,6 +72,7 @@ social:
           url: https://www.tiktok.com/@plancpills
           __url: +DkOJVOUAFcCkaAFuFrlZEPzse2xy7OCfUQifbnvCRQ=
     icon: tiktok
+    altText: TikTok
 navBar:
   links:
     - discriminant: section
