@@ -7,9 +7,9 @@ medicallySafeLabel: Medically very safe, possible legal risk
 howManyPillsPopup: pill-examples-online-clinics
 howManyPillsLabel: How many pills are needed?
 clinicTypes:
-  - label: Online clinics
+  - label: US-based online clinics
     keyValue: Online clinic
-    singular: Online clinic
+    singular: US-based online clinic
     maxVisibleDefault: 6
     color: cyan
     icon: mousePointer
@@ -173,6 +173,9 @@ filterFields:
           es:
             label: No se requiere visita en vídeo
             __label: 25CpaeKpnrWw4iW+41SvByNQhnGHlxUZNA9mC2/nar8=
+        - value: Period pills
+          label: Period pills / Menstrual regulation
+          invert: false
     helpPopup:
       discriminant: false
   - field: Age minimum

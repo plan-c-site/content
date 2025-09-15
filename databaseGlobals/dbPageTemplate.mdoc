@@ -2,8 +2,9 @@
    icon="circleAlert"
    color="red"
    iconAlign="items-center"
-   fullWidth=true %}
-{% textSize textSize="small" inline=false %}**Plan C does not sell pills or provide medical advice.** This guide lists results of our abortion pill research.{% /textSize %}
+   fullWidth=true
+   _language="" %}
+{% textSize textSize="small" inline=false _language="" %}**Plan C does not sell pills or provide medical advice.** This guide lists results of our abortion pill research.{% /textSize %}
 {% /narrowBanner %}
 
 {% heroSection
@@ -18,50 +19,57 @@
    mobileImageVertical="desktop"
    mobileImageHorizontal="left"
    largeLeftColumn=true
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
-   afterSubmit="nothing" %}
-{% formSection type="waiting" %}
-# Abortion pill providers in {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} %}{% dbText source="Name" %}State{% /dbText %}{% /inlineForm %}
+   afterSubmit="nothing"
+   _language="" %}
+{% formSection type="waiting" _language="" %}
+# Abortion pill providers in {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} _language="" %}{% dbText source="Name" _language="" %}State{% /dbText %}{% /inlineForm %}
 {% /formSection %}
 {% /formWrapper %}
 
-{% dbMarkdoc source="Summary" /%}
+{% dbMarkdoc source="Summary" _language="" /%}
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 
 {% conditionalSection
-   condition={discriminant: "stateFieldTruthy", value: "Link to studies (in languages)"} %}
+   condition={discriminant: "stateFieldTruthy", value: "Link to studies (in languages)"}
+   _language="" %}
 {% narrowBanner
    icon="alertCircle"
    color="beige"
    iconAlign="items-start"
-   fullWidth=false %}
-{% textSize textSize="small" inline=false %}If you live in this state and are seeking an abortion, you may qualify to participate in a paid research study about abortion access.&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} %}Click here to learn more{% /inlineLink %}.{% /textSize %}
+   fullWidth=false
+   _language="" %}
+{% textSize textSize="small" inline=false _language="" %}If you live in this state and are seeking an abortion, you may qualify to participate in a paid research study about abortion access.&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} _language="" %}Click here to learn more{% /inlineLink %}.{% /textSize %}
 {% /narrowBanner %}
 {% /conditionalSection %}
 {% /heroSection %}
 
 {% tocAnchor
    slug={name: "List of providers", slug: "list-of-providers"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% dbClinic /%}
+{% dbClinic _language="" /%}
 
 {% tocAnchor
    slug={name: "In person clinics", slug: "in-person-clinics"}
-   type={discriminant: "anchor"} /%}
+   type={discriminant: "anchor"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% bodySection
    centered=false
    width="default"
    color="black"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## In person clinics
 
-In-person abortion clinics usually offer both abortion pills&nbsp;and abortion procedures. To find the nearest clinic to {% dbText source="Name" %}STATE{% /dbText %}, use this search tool.
+In-person abortion clinics usually offer both abortion pills&nbsp;and abortion procedures. To find the nearest clinic to {% dbText source="Name" _language="" %}STATE{% /dbText %}, use this search tool.
 {% /bodySection %}
 
 {% flexSection
@@ -71,11 +79,13 @@ In-person abortion clinics usually offer both abortion pills&nbsp;and abortion p
    grow=false
    gap=2
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceItem
    resource="i-need-an-a"
    header={discriminant: "override", value: "Find the nearest clinic"}
-   type={discriminant: "block", value: {icon: "", iconColor: "grey"}} /%}
+   type={discriminant: "block", value: {icon: "", iconColor: "grey"}}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -83,16 +93,18 @@ In-person abortion clinics usually offer both abortion pills&nbsp;and abortion p
    icon="arrowUp"
    color="beige"
    iconAlign="items-center"
-   fullWidth=true %}
-{% inlineLink action={discriminant: "anchor", value: "top"} %}Back to top{% /inlineLink %}
+   fullWidth=true
+   _language="" %}
+{% inlineLink action={discriminant: "anchor", value: "top"} _language="" %}Back to top{% /inlineLink %}
 {% /narrowBanner %}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% bodySection
    centered=false
    width="default"
    color="pink"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## Frequently asked questions
 {% /bodySection %}
 
@@ -103,35 +115,40 @@ In-person abortion clinics usually offer both abortion pills&nbsp;and abortion p
    grow=true
    gap=2
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% faqList
    faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills"]
    color="beige"
-   anchor=true /%}
+   anchor=true
+   _language="" /%}
 
 {% faqList
    faqs=["can-people-buy-abortion-pills-now-to-use-later"]
    color="beige"
    appendStateField="Additional FAQs"
-   anchor=false /%}
+   anchor=false
+   _language="" /%}
 
 {% narrowBanner
    icon="arrowRight"
    color="beige"
    iconAlign="items-center"
-   fullWidth=true %}
-{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}See all FAQs{% /inlineLink %}
+   fullWidth=true
+   _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}See all FAQs{% /inlineLink %}
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% bodySection
    centered=false
    width="default"
    color="green"
-   textSize="medium" %}
-## Get support in {% dbText source="Name" %}STATE{% /dbText %}
+   textSize="medium"
+   _language="" %}
+## Get support in {% dbText source="Name" _language="" %}STATE{% /dbText %}
 {% /bodySection %}
 
 {% flexSection
@@ -141,20 +158,23 @@ In-person abortion clinics usually offer both abortion pills&nbsp;and abortion p
    grow=false
    gap=2
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="green"
-   hideHeaders=false /%}
+   hideHeaders=false
+   _language="" /%}
 
 {% narrowBanner
    icon="arrowRight"
    color="beige"
    iconAlign="items-center"
-   fullWidth=true %}
-{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} %}See all support{% /inlineLink %}
+   fullWidth=true
+   _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}See all support{% /inlineLink %}
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
@@ -163,8 +183,10 @@ In-person abortion clinics usually offer both abortion pills&nbsp;and abortion p
    title="Have feedback about Plan C or a provider?"
    color="cyan"
    icon=""
-   link={label: "Let us know", click: {discriminant: "internal", value: {page: "contact"}}} /%}
+   link={label: "Let us know", click: {discriminant: "internal", value: {page: "contact"}}}
+   _language="" /%}
 
 {% tocAnchor
    slug={name: "Pregnancy calculator", slug: "pregnancy-calculator"}
-   type={discriminant: "action", value: {discriminant: "pregnancy"}} /%}
+   type={discriminant: "action", value: {discriminant: "pregnancy"}}
+   _language="" /%}
