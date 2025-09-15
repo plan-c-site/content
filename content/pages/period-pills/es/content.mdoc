@@ -20,6 +20,16 @@ Más información sobre las píldoras menstruales en [periodpills.org](http://pe
 
 {% tocAnchor slug={name: "Lista de proveedores", slug: "list-of-providers"} type={discriminant: "toc"} _language="" /%}
 
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
+## Encontrar un proveedor de píldoras menstruales
+
+{% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}} afterSubmit="nothing" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Búsqueda por estado o territorio", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] _language="" /%}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}
+
 {% tocAnchor slug={name: "Preguntas más frecuentes", slug: "frequently-asked-questions"} type={discriminant: "toc"} _language="" /%}
 
 {% horizontalSplit noHeader=false _language="" %}
