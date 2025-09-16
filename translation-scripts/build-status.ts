@@ -18,7 +18,7 @@ async function triggerUpdate() {
   );
 
   const r = await fetch(url, {
-    method: "POST",
+    method: "PATCH",
     headers: {
       "xc-token": clientConfig.auth,
     },
@@ -31,7 +31,7 @@ async function triggerUpdate() {
     "Done updating status in nocodb",
     `
     ${r.status}
-    ${r.text()}`
+    ${await r.text()}`
   );
 }
 
