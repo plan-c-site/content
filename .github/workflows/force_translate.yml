@@ -21,6 +21,10 @@ jobs:
         run: |
           cd ./translation-scripts
           npm install -g pnpm && pnpm install
+      - name: Update Started
+        run: |
+          cd ./translation-scripts
+          NOCODB_TOKEN=${{secrets.NOCODB_TOKEN}} NOCODB_SERVER=${{secrets.NOCODB_SERVER}} BUILD_CONTROLLER_ID=4 BUILD_CONTROLLER_STATUS="Starting Translation" npx tsx ./build-status.ts
       - run: |
           cd ./translation-scripts
           FORCE_TRANSLATE=true npm run translate
@@ -31,3 +35,14 @@ jobs:
           author_email: mail@example.com
           message: "(translate)"
           add: "."
+
+      - name: Update Complete
+        if: success()
+        run: |
+          cd ./translation-scripts
+          NOCODB_TOKEN=${{secrets.NOCODB_TOKEN}} NOCODB_SERVER=${{secrets.NOCODB_SERVER}} BUILD_CONTROLLER_ID=4 BUILD_CONTROLLER_STATUS="Translation Successful" npx tsx ./build-status.ts
+      - name: Update Complete
+        if: failure()
+        run: |
+          cd ./translation-scripts
+          NOCODB_TOKEN=${{secrets.NOCODB_TOKEN}} NOCODB_SERVER=${{secrets.NOCODB_SERVER}} BUILD_CONTROLLER_ID=4 BUILD_CONTROLLER_STATUS="Translation Failed" npx tsx ./build-status.ts
