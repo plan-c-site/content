@@ -26,7 +26,7 @@ jobs:
       - name: Update Started
         run: |
           cd ./translation-scripts
-          NOCODB_TOKEN=${{secrets.NOCODB_TOKEN}} NOCODB_SERVER=${{secrets.NOCODB_SERVER}} BUILD_CONTROLLER_ID=5 BUILD_CONTROLLER_STATUS="Starting Translation" npx tsx ./build-status.ts
+          NOCODB_TOKEN=${{secrets.NOCODB_TOKEN}} NOCODB_SERVER=${{secrets.NOCODB_SERVER}} BUILD_CONTROLLER_ID=6 BUILD_CONTROLLER_STATUS="Starting Translation" npx tsx ./build-status.ts
       - run: |
           cd ./translation-scripts
           npm run translate
@@ -42,9 +42,9 @@ jobs:
         if: success()
         run: |
           cd ./translation-scripts
-          NOCODB_TOKEN=${{secrets.NOCODB_TOKEN}} NOCODB_SERVER=${{secrets.NOCODB_SERVER}} BUILD_CONTROLLER_ID=5 BUILD_CONTROLLER_STATUS="Translation Successful" npx tsx ./build-status.ts
+          NOCODB_TOKEN=${{secrets.NOCODB_TOKEN}} NOCODB_SERVER=${{secrets.NOCODB_SERVER}} BUILD_CONTROLLER_ID=6 BUILD_CONTROLLER_STATUS="Translation Successful" npx tsx ./build-status.ts
       - name: Update Complete
         if: failure()
         run: |
           cd ./translation-scripts
-          NOCODB_TOKEN=${{secrets.NOCODB_TOKEN}} NOCODB_SERVER=${{secrets.NOCODB_SERVER}} BUILD_CONTROLLER_ID=5 BUILD_CONTROLLER_STATUS="Translation Failed" npx tsx ./build-status.ts
+          NOCODB_TOKEN=${{secrets.NOCODB_TOKEN}} NOCODB_SERVER=${{secrets.NOCODB_SERVER}} BUILD_CONTROLLER_ID=6 BUILD_CONTROLLER_STATUS="Translation Failed" npx tsx ./build-status.ts
