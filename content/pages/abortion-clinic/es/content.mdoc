@@ -2,35 +2,25 @@
 {% textSize textSize="small" inline=false _language="" %}**Plan C no vende píldoras ni ofrece asesoramiento médico.** Esta guía recoge los resultados de nuestra investigación sobre píldoras abortivas.{% /textSize %}
 {% /narrowBanner %}
 
-{% heroSection image={discriminant: "state", value: {altText: "Abortion pill %0%"}} imageSide="right" color="beige" imageBackgroundColor="beige" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="left" largeLeftColumn=true reverseOnMobile=false _language="" %}
-{% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}} afterSubmit="nothing" _language="" %}
-{% formSection type="waiting" _language="" %}
-# Proveedores de píldoras abortivas en {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} _language="" %}{% dbText source="Name" _language="" %}Estado{% /dbText %}{% /inlineForm %}
-{% /formSection %}
-{% /formWrapper %}
-
-{% dbMarkdoc source="Summary" _language="" /%}
+{% heroSection image={discriminant: "uploaded", value: "mailbox"} imageSide="right" color="beige" imageBackgroundColor="beige" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="left" largeLeftColumn=true reverseOnMobile=false _language="" %}
+# Clínicas abortistas en el ESTADO
 
 {% tableOfContents _language="" /%}
 
-{% conditionalSection condition={discriminant: "stateFieldTruthy", value: "Link to studies (in languages)"} _language="" %}
 {% narrowBanner icon="alertCircle" color="beige" iconAlign="items-start" fullWidth=false _language="" %}
 {% textSize textSize="small" inline=false _language="" %}Si vive en este estado y desea abortar, puede participar en un estudio de investigación remunerado sobre el acceso al aborto. {% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} _language="" %}Haga clic aquí para obtener más información{% /inlineLink %}.{% /textSize %}
 {% /narrowBanner %}
-{% /conditionalSection %}
 {% /heroSection %}
 
 {% tocAnchor slug={name: "Lista de proveedores", slug: "list-of-providers"} type={discriminant: "toc"} _language="" /%}
 
-{% dbClinic _language="" /%}
-
-{% tocAnchor slug={name: "Clínicas presenciales", slug: "in-person-clinics"} type={discriminant: "anchor"} _language="" /%}
+{% filteredListings title="Clínicas" color="grey" maxVisibleDefault=6 listings={discriminant: "field", value: {field: "States", value: "California"}} _language="" /%}
 
 {% horizontalSplit noHeader=false _language="" %}
 {% bodySection centered=false width="default" color="black" textSize="medium" _language="" %}
 ## Clínicas presenciales
 
-Las clínicas de aborto presenciales suelen ofrecer tanto píldoras abortivas como procedimientos abortivos. Para encontrar la clínica más cercana a {% dbText source="Name" _language="" %}ESTADO{% /dbText %}utilice esta herramienta de búsqueda.
+Las clínicas de aborto presenciales suelen ofrecer tanto píldoras abortivas como procedimientos abortivos. Para encontrar la clínica más cercana a ESTADO, utilice esta herramienta de búsqueda.
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
@@ -60,7 +50,7 @@ Las clínicas de aborto presenciales suelen ofrecer tanto píldoras abortivas co
 
 {% horizontalSplit noHeader=false _language="" %}
 {% bodySection centered=false width="default" color="green" textSize="medium" _language="" %}
-## Obtenga ayuda en {% dbText source="Name" _language="" %}ESTADO{% /dbText %}
+## Obtenga ayuda en ESTADO
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
