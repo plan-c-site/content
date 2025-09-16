@@ -17,7 +17,7 @@ async function triggerUpdate() {
     "Updating status in nocodb for controller " + Id + " To " + Status
   );
 
-  await fetch(url, {
+  const r = await fetch(url, {
     method: "POST",
     headers: {
       "xc-token": clientConfig.auth,
@@ -27,7 +27,12 @@ async function triggerUpdate() {
       Status: `${Status} - ${new Date().toISOString()}`,
     }),
   });
-  console.log("Done updating status in nocodb");
+  console.log(
+    "Done updating status in nocodb",
+    `
+    ${r.status}
+    ${r.text()}`
+  );
 }
 
 triggerUpdate();
