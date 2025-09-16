@@ -1,3 +1,10 @@
+---
+title: abortion-clinic
+seo:
+  title: Plan C | Abortion clinics
+  image:
+    discriminant: ''
+---
 {% narrowBanner
    icon="circleAlert"
    color="red"
@@ -8,7 +15,7 @@
 {% /narrowBanner %}
 
 {% heroSection
-   image={discriminant: "state", value: {altText: "Abortion pill %0%"}}
+   image={discriminant: "uploaded", value: "mailbox"}
    imageSide="right"
    color="beige"
    imageBackgroundColor="beige"
@@ -21,22 +28,10 @@
    largeLeftColumn=true
    reverseOnMobile=false
    _language="" %}
-{% formWrapper
-   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
-   afterSubmit="nothing"
-   _language="" %}
-{% formSection type="waiting" _language="" %}
-# Abortion pill providers in {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} _language="" %}{% dbText source="Name" _language="" %}State{% /dbText %}{% /inlineForm %}
-{% /formSection %}
-{% /formWrapper %}
-
-{% dbMarkdoc source="Summary" _language="" /%}
+# Abortion clinics in STATE
 
 {% tableOfContents _language="" /%}
 
-{% conditionalSection
-   condition={discriminant: "stateFieldTruthy", value: "Link to studies (in languages)"}
-   _language="" %}
 {% narrowBanner
    icon="alertCircle"
    color="beige"
@@ -45,7 +40,6 @@
    _language="" %}
 {% textSize textSize="small" inline=false _language="" %}If you live in this state and are seeking an abortion, you may qualify to participate in a paid research study about abortion access.&nbsp;{% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} _language="" %}Click here to learn more{% /inlineLink %}.{% /textSize %}
 {% /narrowBanner %}
-{% /conditionalSection %}
 {% /heroSection %}
 
 {% tocAnchor
@@ -53,11 +47,11 @@
    type={discriminant: "toc"}
    _language="" /%}
 
-{% dbClinic _language="" /%}
-
-{% tocAnchor
-   slug={name: "In person clinics", slug: "in-person-clinics"}
-   type={discriminant: "anchor"}
+{% filteredListings
+   title="Clinics"
+   color="grey"
+   maxVisibleDefault=6
+   listings={discriminant: "field", value: {field: "States", value: "California"}}
    _language="" /%}
 
 {% horizontalSplit noHeader=false _language="" %}
@@ -69,7 +63,7 @@
    _language="" %}
 ## In person clinics
 
-In-person abortion clinics usually offer both abortion pills&nbsp;and abortion procedures. To find the nearest clinic to {% dbText source="Name" _language="" %}STATE{% /dbText %}, use this search tool.
+In-person abortion clinics usually offer both abortion pills&nbsp;and abortion procedures. To find the nearest clinic to STATE, use this search tool.
 {% /bodySection %}
 
 {% flexSection
@@ -148,7 +142,7 @@ In-person abortion clinics usually offer both abortion pills&nbsp;and abortion p
    color="green"
    textSize="medium"
    _language="" %}
-## Get support in {% dbText source="Name" _language="" %}STATE{% /dbText %}
+## Get support in STATE
 {% /bodySection %}
 
 {% flexSection
