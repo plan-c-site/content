@@ -3,11 +3,15 @@ heading: Legal questions
 author: Repro Legal Helpline
 website: https://www.reprolegalhelpline.org
 phone: (844) 868-2812
-summary: Free, confidential legal information from expert lawyers.
+summary: >-
+  Free, confidential legal information from expert lawyers. They also connect
+  people to legal defense funds.
 buttonText: Call or text
 resourceIcon: scale
 iconColor: green
 buttonIcon: phone
+buttonAction:
+  discriminant: ''
 buttonUrl:
   discriminant: none
 es:
