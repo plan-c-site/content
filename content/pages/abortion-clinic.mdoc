@@ -46,6 +46,13 @@ seo:
    type={discriminant: "toc"}
    _language="" /%}
 
+{% filteredListings
+   title="Clinics"
+   color="grey"
+   maxVisibleDefault=6
+   listings={discriminant: "field", value: {field: "States", value: "California"}}
+   _language="" /%}
+
 {% horizontalSplit noHeader=false _language="" %}
 {% bodySection
    centered=false
