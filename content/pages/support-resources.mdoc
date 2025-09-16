@@ -106,9 +106,7 @@ seo:
 es:
   title: Apoyo y recursos
   __title: kFi1o64E1bZbHa+9caXoI7r7bqH7cwD0cqZj8GyO9jk=
-
 ---
-
 {% heroSection
    image={discriminant: "noco", value: "Counselor with red dots - Hero"}
    imageSide="right"
@@ -121,32 +119,40 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 # Support & resources
 
 No matter where you live, there is free confidential support available for using abortion pills.
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 {% /heroSection %}
 
 {% tocAnchor
    slug={name: "Quick resource list", slug: "quick-resource-list"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
 {% actionBanner
    title="Quick Resource List"
    color="red"
    icon="text"
-   link={label: "Download PDF", click: {discriminant: ""}, target: "/"} %}
+   link={label: "Download PDF", click: {discriminant: ""}, target: "/"}
+   _language="" %}
 Download a condensed version of this page, formatted to print or share.
 {% /actionBanner %}
 
 {% tocAnchor
    slug={name: "Medical support", slug: "medical-support"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="Free medical support" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="Free medical support"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-row"
@@ -154,26 +160,29 @@ Download a condensed version of this page, formatted to print or share.
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "m-a-hotline"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="green"
    hideHeaders=true
-   appendStateField="" /%}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Logistical & emotional support", slug: "logistical-emotional-support"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader
    color="cyan"
    title="Logistical and emotional support"
-   icon="" %}
+   icon=""
+   _language="" %}
 We’ve partnered with several organizations dedicated to supporting folks having abortions and miscarriages.
 {% /sectionHeader %}
 
@@ -183,23 +192,25 @@ We’ve partnered with several organizations dedicated to supporting folks havin
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
-   resources=[{resource: "reprocare-healthline"}, {resource: "all-options"}, {resource: "exhale-pro-voice"}, {resource: "apiary-collective"}]
+   resources=[{resource: "reprocare-healthline"}, {resource: "all-options"}, {resource: "exhale-pro-voice"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="cyan"
    hideHeaders=true
-   appendStateField="" /%}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Legal support", slug: "legal-support"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Legal support" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="pink" title="Legal support" icon="" _language="" %}
 Groups that can help you understand your rights and answer questions about the legal landscape of self-managed abortion in the U.S.
 {% /sectionHeader %}
 
@@ -209,23 +220,29 @@ Groups that can help you understand your rights and answer questions about the l
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "repro-legal-helpline", header: "For individuals:"}, {resource: "abortion-access-legal-defense-fund", header: "For individuals:"}, {resource: "pregnancy-justice", header: "For individuals:"}, {resource: "navigating-abortion-laws-and-judicial-bypass", header: "For minors:"}, {resource: "aclu-abortion-criminal-defense-initiative", header: "For providers & organizations:"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="pink"
    hideHeaders=false
-   appendStateField="" /%}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Financial support", slug: "financial-support"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Financial support" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="blue"
+   title="Financial support"
+   icon=""
+   _language="" %}
 Organizations offering funding to people seeking abortions
 {% /sectionHeader %}
 
@@ -233,15 +250,17 @@ Organizations offering funding to people seeking abortions
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 {% narrowBanner
    icon=""
    color="beige"
    iconAlign="items-center"
-   fullWidth=false %}
+   fullWidth=false
+   _language="" %}
 Our research shows that many telehealth abortion providers offer flexible pricing or will help patients connect with outside financial support.
 
-{% inlineLink action={discriminant: "home", value: {anchor: "search-by-state"}} %}The guide{% /inlineLink %} shows whether financial assistance may be available from each provider. If you're in need of financial support, you can ask the provider for help or guidance.
+{% inlineLink action={discriminant: "home", value: {anchor: "search-by-state"}} _language="" %}The guide{% /inlineLink %} shows whether financial assistance may be available from each provider. If you're in need of financial support, you can ask the provider for help or guidance.
 
 Local abortion funds may also have resources to help; find one using the directory linked here.
 {% /narrowBanner %}
@@ -253,15 +272,20 @@ Local abortion funds may also have resources to help; find one using the directo
    icon=""
    iconColor="blue"
    hideHeaders=false
-   appendStateField="" /%}
+   _language="" /%}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Learn about abortion pills", slug: "learn-about-abortion-pills"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="red" title="Learn about abortion pills" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="red"
+   title="Learn about abortion pills"
+   icon=""
+   _language="" %}
 Educational resources to answer your questions about abortion pills and the self-managed abortion process. &nbsp;If you have additional questions you can get free text and phone support.
 {% /sectionHeader %}
 
@@ -271,23 +295,29 @@ Educational resources to answer your questions about abortion pills and the self
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "plan-c-faq"}, {resource: "how-to-take-abortion-pills-step-by-step-instructions"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="red"
    hideHeaders=true
-   appendStateField="" /%}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Apps on abortion", slug: "apps-on-abortion"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="Apps on abortion" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="Apps on abortion"
+   icon=""
+   _language="" %}
 Mobile resources to answer your questions about obtaining and using abortion pills.
 {% /sectionHeader %}
 
@@ -297,26 +327,29 @@ Mobile resources to answer your questions about obtaining and using abortion pil
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "charley-the-chatbot"}, {resource: "aya-contigo"}, {resource: "safe-abortion-app"}, {resource: "abortion-subreddit"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="green"
    hideHeaders=true
-   appendStateField="" /%}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Find clinics, pills, & support", slug: "find-clinics-pills-and-support"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader
    color="cyan"
    title="Find clinics, pills, & support"
-   icon="" /%}
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-row"
@@ -324,23 +357,29 @@ Mobile resources to answer your questions about obtaining and using abortion pil
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "i-need-an-a"}, {resource: "you-always-have-options"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="cyan"
    hideHeaders=true
-   appendStateField="" /%}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Birth control resources", slug: "birth-control-resources"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Birth control resources" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="pink"
+   title="Birth control resources"
+   icon=""
+   _language="" %}
 Birth control is "Plan A." Emergency contraception is "Plan B." &nbsp;Abortion pills are "Plan C." Below are a few resources for learning about and accessing birth control and emergency contraception in the U.S.
 {% /sectionHeader %}
 
@@ -350,23 +389,25 @@ Birth control is "Plan A." Emergency contraception is "Plan B." &nbsp;Abortion p
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "bedsider"}, {resource: "birth-control-planned-parenthood"}, {resource: "three-for-freedom"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="pink"
    hideHeaders=false
-   appendStateField="" /%}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "International", slug: "international"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="International" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="blue" title="International" icon="" _language="" %}
 Resources for self-managed abortion outside of the US.
 {% /sectionHeader %}
 
@@ -376,26 +417,29 @@ Resources for self-managed abortion outside of the US.
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "women-on-web"}, {resource: "safe2-choose"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="blue"
    hideHeaders=false
-   appendStateField="" /%}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Later gestation info & support", slug: "later-gestation-info-and-support"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader
    color="red"
    title="Later gestation info & support"
-   icon="" /%}
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-row"
@@ -403,23 +447,29 @@ Resources for self-managed abortion outside of the US.
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "abortion-with-pills-after-12-weeks"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="red"
    hideHeaders=true
-   appendStateField="" /%}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Digital security & privacy", slug: "digital-security-and-privacy"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="Digital security & privacy" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="Digital security & privacy"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-row"
@@ -427,23 +477,29 @@ Resources for self-managed abortion outside of the US.
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "digital-defense-fund"}, {resource: "i-need-an-a-practical-guide-to-online-privacy"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="green"
    hideHeaders=true
-   appendStateField="" /%}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Find an abortion doula", slug: "find-an-abortion-doula"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="cyan" title="Find an abortion doula" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="cyan"
+   title="Find an abortion doula"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-row"
@@ -451,13 +507,14 @@ Resources for self-managed abortion outside of the US.
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "dopo-co-op"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="cyan"
    hideHeaders=true
-   appendStateField="" /%}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
