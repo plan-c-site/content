@@ -14,6 +14,7 @@
     "tsx": "^4.20.5"
   },
   "scripts": {
-    "translate": "tsx ./translate-content.ts"
+    "translate": "tsx ./translate-content.ts",
+    "build-status": "tsx ./build-status.ts"
   }
 }

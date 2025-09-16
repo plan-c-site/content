@@ -21,11 +21,14 @@ async function triggerUpdate() {
     method: "PATCH",
     headers: {
       "xc-token": clientConfig.auth,
+      "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      Id: Number.parseInt(Id),
-      Status: `${Status} - ${new Date().toISOString()}`,
-    }),
+    body: JSON.stringify([
+      {
+        Id: Number.parseInt(Id),
+        Status: `${Status} - ${new Date().toISOString()}`,
+      },
+    ]),
   });
   console.log(
     "Done updating status in nocodb",
