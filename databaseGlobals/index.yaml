@@ -32,13 +32,7 @@ clinicTypes:
     isLink:
       discriminant: false
     howManyPills:
-      discriminant: true
-      value:
-        howManyPillsPopup: pill-examples-online-clinics
-        howManyPillsLabel: How many pills are needed?
-        es:
-          howManyPillsLabel: ¿Cuántas pastillas se necesitan?
-          __howManyPillsLabel: TgtcpZTW98G3l8QWcTRTxJrd1vbj72YnPiR+JAhkzXk=
+      discriminant: false
     es:
       label: Clínicas en línea con sede en EE.UU.
       __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
@@ -71,13 +65,7 @@ clinicTypes:
     isLink:
       discriminant: false
     howManyPills:
-      discriminant: true
-      value:
-        howManyPillsPopup: pill-examples-online-clinics
-        howManyPillsLabel: How many pills are needed?
-        es:
-          howManyPillsLabel: ¿Cuántas pastillas se necesitan?
-          __howManyPillsLabel: TgtcpZTW98G3l8QWcTRTxJrd1vbj72YnPiR+JAhkzXk=
+      discriminant: false
     es:
       label: Otras clínicas en línea
       __label: Jb00eFJ3DB1rWFd5LVhgbLEOAyoC9SGS1ANKOCM+5B4=
@@ -110,13 +98,7 @@ clinicTypes:
     isLink:
       discriminant: false
     howManyPills:
-      discriminant: true
-      value:
-        howManyPillsPopup: pill-examples-online-clinics
-        howManyPillsLabel: How many pills are needed?
-        es:
-          howManyPillsLabel: ¿Cuántas pastillas se necesitan?
-          __howManyPillsLabel: TgtcpZTW98G3l8QWcTRTxJrd1vbj72YnPiR+JAhkzXk=
+      discriminant: false
     es:
       label: Redes comunitarias
       __label: GZU6raPLi0/RZ7mbWiaSDPLzQT10wn/jojUZGLRqKn4=
@@ -149,13 +131,7 @@ clinicTypes:
     isLink:
       discriminant: false
     howManyPills:
-      discriminant: true
-      value:
-        howManyPillsPopup: pill-examples-online-clinics
-        howManyPillsLabel: How many pills are needed?
-        es:
-          howManyPillsLabel: ¿Cuántas pastillas se necesitan?
-          __howManyPillsLabel: TgtcpZTW98G3l8QWcTRTxJrd1vbj72YnPiR+JAhkzXk=
+      discriminant: false
     es:
       label: Sitios web que venden pastillas
       __label: Jgjbu7xUoByUp2VC/amDZqKSLS9tNXbii5lbck05DBg=
@@ -172,11 +148,7 @@ clinicTypes:
       - label: FDA-approved
       - label: Medical support
     isLink:
-      discriminant: true
-      value:
-        action:
-          discriminant: anchor
-          value: in-person-clinics
+      discriminant: false
     howManyPills:
       discriminant: false
     es:
@@ -239,10 +211,7 @@ filterFields:
             label: Ofertas píldoras período
             __label: 2DYKPe83jCHJXV5BU1M57GfvysfeummaKlPQLcAn0eM=
     helpPopup:
-      discriminant: true
-      value:
-        label: What is this?
-        popup: pill-examples-online-clinics
+      discriminant: false
   - field: Age minimum
     label: Ages served
     es:
@@ -265,10 +234,7 @@ filterFields:
           - 17
           - 18
     helpPopup:
-      discriminant: true
-      value:
-        label: What is this?
-        popup: pill-examples-online-clinics
+      discriminant: false
   - field: Languages
     label: Language
     es:
