@@ -208,7 +208,7 @@ filterFields:
     helpPopup:
       discriminant: true
       value:
-        label: Help field text
+        label: What is this?
         popup: pill-examples-online-clinics
   - field: Languages
     label: Language
