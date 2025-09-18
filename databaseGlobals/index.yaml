@@ -11,14 +11,6 @@ clinicTypes:
     maxVisibleDefault: 6
     color: cyan
     icon: mousePointer
-    howManyPills:
-      discriminant: true
-      value:
-        howManyPillsPopup: pill-examples-online-clinics
-        howManyPillsLabel: How many pills are needed?
-        es:
-          howManyPillsLabel: ¿Cuántas pastillas se necesitan?
-          __howManyPillsLabel: TgtcpZTW98G3l8QWcTRTxJrd1vbj72YnPiR+JAhkzXk=
     labels:
       - label: 'Price:'
         es:
@@ -39,14 +31,6 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-online-clinics
     isLink:
       discriminant: false
-    es:
-      label: Clínicas en línea con sede en EE.UU.
-      __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
-      singular: Clínica en línea con sede en EE.UU.
-      __singular: pJuYPhDXCYHqTBIeiocCyDn+VcTPGwhPc4cXIbWY/OI=
-  - label: Other online clinics
-    keyValue: International online clinic
-    singular: Other online clinic
     howManyPills:
       discriminant: true
       value:
@@ -55,6 +39,14 @@ clinicTypes:
         es:
           howManyPillsLabel: ¿Cuántas pastillas se necesitan?
           __howManyPillsLabel: TgtcpZTW98G3l8QWcTRTxJrd1vbj72YnPiR+JAhkzXk=
+    es:
+      label: Clínicas en línea con sede en EE.UU.
+      __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
+      singular: Clínica en línea con sede en EE.UU.
+      __singular: pJuYPhDXCYHqTBIeiocCyDn+VcTPGwhPc4cXIbWY/OI=
+  - label: Other online clinics
+    keyValue: International online clinic
+    singular: Other online clinic
     maxVisibleDefault: 2
     color: blue
     icon: globe
@@ -78,14 +70,6 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-international-online-clinics
     isLink:
       discriminant: false
-    es:
-      label: Otras clínicas en línea
-      __label: Jb00eFJ3DB1rWFd5LVhgbLEOAyoC9SGS1ANKOCM+5B4=
-      singular: Otra clínica en línea
-      __singular: 7FBG9GIt79OWigyBMNr9fBpNqhTQHk0MCeUqlkWrGfY=
-  - label: Community networks
-    keyValue: Community network
-    singular: Community network
     howManyPills:
       discriminant: true
       value:
@@ -94,6 +78,14 @@ clinicTypes:
         es:
           howManyPillsLabel: ¿Cuántas pastillas se necesitan?
           __howManyPillsLabel: TgtcpZTW98G3l8QWcTRTxJrd1vbj72YnPiR+JAhkzXk=
+    es:
+      label: Otras clínicas en línea
+      __label: Jb00eFJ3DB1rWFd5LVhgbLEOAyoC9SGS1ANKOCM+5B4=
+      singular: Otra clínica en línea
+      __singular: 7FBG9GIt79OWigyBMNr9fBpNqhTQHk0MCeUqlkWrGfY=
+  - label: Community networks
+    keyValue: Community network
+    singular: Community network
     maxVisibleDefault: 2
     color: pink
     icon: heartHandshake
@@ -117,14 +109,6 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-community-networks
     isLink:
       discriminant: false
-    es:
-      label: Redes comunitarias
-      __label: GZU6raPLi0/RZ7mbWiaSDPLzQT10wn/jojUZGLRqKn4=
-      singular: Red comunitaria
-      __singular: 5Esdx5ft+qkCg+UE++XBP72O3KRgkbijB0j/GEhrZR8=
-  - label: Websites that sell pills
-    keyValue: Website that sells pills
-    singular: Website that sells pills
     howManyPills:
       discriminant: true
       value:
@@ -133,6 +117,14 @@ clinicTypes:
         es:
           howManyPillsLabel: ¿Cuántas pastillas se necesitan?
           __howManyPillsLabel: TgtcpZTW98G3l8QWcTRTxJrd1vbj72YnPiR+JAhkzXk=
+    es:
+      label: Redes comunitarias
+      __label: GZU6raPLi0/RZ7mbWiaSDPLzQT10wn/jojUZGLRqKn4=
+      singular: Red comunitaria
+      __singular: 5Esdx5ft+qkCg+UE++XBP72O3KRgkbijB0j/GEhrZR8=
+  - label: Websites that sell pills
+    keyValue: Website that sells pills
+    singular: Website that sells pills
     maxVisibleDefault: 4
     color: red
     icon: shoppingCart
@@ -156,22 +148,37 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-websites-that-sell-pills
     isLink:
       discriminant: false
+    howManyPills:
+      discriminant: true
+      value:
+        howManyPillsPopup: pill-examples-online-clinics
+        howManyPillsLabel: How many pills are needed?
+        es:
+          howManyPillsLabel: ¿Cuántas pastillas se necesitan?
+          __howManyPillsLabel: TgtcpZTW98G3l8QWcTRTxJrd1vbj72YnPiR+JAhkzXk=
     es:
       label: Sitios web que venden pastillas
       __label: Jgjbu7xUoByUp2VC/amDZqKSLS9tNXbii5lbck05DBg=
       singular: Sitio web que vende píldoras
       __singular: 9LAC7LJ8gZTbznvVoouALLoq1hn95GHcPPqXpvQkjdw=
-  - label: In Person Clinics
+  - label: In person clinics
+    singular: In person clinic
     maxVisibleDefault: 3
     color: grey
     icon: hospital
-    labels: []
+    labels:
+      - label: Pricing varies
+      - label: Pick-up
+      - label: FDA-approved
+      - label: Medical support
     isLink:
       discriminant: true
       value:
         action:
           discriminant: anchor
           value: in-person-clinics
+    howManyPills:
+      discriminant: false
     es:
       label: Clínicas presenciales
       __label: STBwPfn7HrFoyoTBiSIYHUl6ZOI1+y+hwTdrC7r0DrA=
