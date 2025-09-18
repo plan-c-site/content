@@ -4,8 +4,6 @@ support: []
 inPersonClinicResources: []
 medicallySafe: medically-safe-possible-legal-risk
 medicallySafeLabel: Medically very safe, possible legal risk
-howManyPillsPopup: pill-examples-online-clinics
-howManyPillsLabel: How many pills are needed?
 clinicTypes:
   - label: US-based online clinics
     keyValue: Online clinic
@@ -13,18 +11,23 @@ clinicTypes:
     maxVisibleDefault: 6
     color: cyan
     icon: mousePointer
+    howManyPills:
+      discriminant: true
+      value:
+        howManyPillsPopup: pill-examples-online-clinics
+        howManyPillsLabel: How many pills are needed?
     labels:
-      - label: 'Price:'
+      - label: "Price:"
         es:
-          label: 'Precio:'
+          label: "Precio:"
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: 'Delivery:'
+      - label: "Delivery:"
         es:
-          label: 'Entrega:'
+          label: "Entrega:"
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
-      - label: 'FDA-approved '
+      - label: "FDA-approved "
         es:
-          label: 'Aprobado por la FDA '
+          label: "Aprobado por la FDA "
           __label: 4eN9tF1jbkqja/C8ijo06GDOO+8VpyB6WWA+/5PfbMs=
       - label: Medical support
         es:
@@ -39,17 +42,22 @@ clinicTypes:
   - label: Other online clinics
     keyValue: International online clinic
     singular: Other online clinic
+    howManyPills:
+      discriminant: true
+      value:
+        howManyPillsPopup: pill-examples-online-clinics
+        howManyPillsLabel: How many pills are needed?
     maxVisibleDefault: 2
     color: blue
     icon: globe
     labels:
-      - label: 'Price:'
+      - label: "Price:"
         es:
-          label: 'Precio:'
+          label: "Precio:"
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: 'Delivery:'
+      - label: "Delivery:"
         es:
-          label: 'Entrega:'
+          label: "Entrega:"
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
         es:
@@ -68,17 +76,22 @@ clinicTypes:
   - label: Community networks
     keyValue: Community network
     singular: Community network
+    howManyPills:
+      discriminant: true
+      value:
+        howManyPillsPopup: pill-examples-online-clinics
+        howManyPillsLabel: How many pills are needed?
     maxVisibleDefault: 2
     color: pink
     icon: heartHandshake
     labels:
-      - label: 'Price:'
+      - label: "Price:"
         es:
-          label: 'Precio:'
+          label: "Precio:"
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: 'Delivery:'
+      - label: "Delivery:"
         es:
-          label: 'Entrega:'
+          label: "Entrega:"
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
         es:
@@ -97,17 +110,22 @@ clinicTypes:
   - label: Websites that sell pills
     keyValue: Website that sells pills
     singular: Website that sells pills
+    howManyPills:
+      discriminant: true
+      value:
+        howManyPillsPopup: pill-examples-online-clinics
+        howManyPillsLabel: How many pills are needed?
     maxVisibleDefault: 4
     color: red
     icon: shoppingCart
     labels:
-      - label: 'Price:'
+      - label: "Price:"
         es:
-          label: 'Precio:'
+          label: "Precio:"
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: 'Delivery:'
+      - label: "Delivery:"
         es:
-          label: 'Entrega:'
+          label: "Entrega:"
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
         es:
@@ -313,9 +331,9 @@ filterFields:
         direction: gte
         zeroIsAny: true
         emptyIsAny: true
-        numberLabel: '%% weeks or less'
+        numberLabel: "%% weeks or less"
         es:
-          numberLabel: '%% semanas o menos'
+          numberLabel: "%% semanas o menos"
           __numberLabel: EcY/7uk+lPaZKoCoAaVBosxKR8k0pmN7iPJmT2LLhxw=
         options:
           - 8
@@ -339,7 +357,7 @@ seo:
     Learn how to get an abortion pill in %Name%. Compare online providers,
     prices and delivery times for abortion pills by mail in this Plan C Guide.
   image:
-    discriminant: ''
+    discriminant: ""
   customSchema: >-
     {"@context":"https://schema.org",
 

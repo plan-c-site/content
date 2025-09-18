@@ -1,4 +1,5 @@
 import "dotenv/config";
+import process from "node:process";
 const clientConfig = {
   auth: process.env.NOCODB_TOKEN || "",
   baseUrl: process.env.NOCODB_SERVER || "",
@@ -14,7 +15,7 @@ async function triggerUpdate() {
     return;
   }
   console.log(
-    "Updating status in nocodb for controller " + Id + " To " + Status
+    "Updating status in nocodb for controller " + Id + " To " + Status,
   );
 
   const r = await fetch(url, {
@@ -34,7 +35,7 @@ async function triggerUpdate() {
     "Done updating status in nocodb",
     `
     ${r.status}
-    ${await r.text()}`
+    ${await r.text()}`,
   );
 }
 

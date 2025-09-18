@@ -45,13 +45,24 @@ async function Translate() {
     path.join(__dirname, "../databaseGlobals"),
     [
       { key: "medicallySafeLabel" },
-      { key: "howManyPillsLabel" },
       {
         key: "clinicTypes",
         keys: [
           { key: "label" },
           { key: "singular" },
           { key: "labels", container: "array", keys: [{ key: "label" }] },
+          {
+            key: "isLink",
+            container: "object",
+            condition: true,
+            keys: [...clickEventTranslation("action")],
+          },
+          {
+            key: "howManyPills",
+            container: "object",
+            condition: true,
+            keys: [{ key: "howManyPillsLabel" }],
+          },
         ],
         container: "array",
       },
