@@ -31,6 +31,8 @@ clinicTypes:
           label: Asistencia médica
           __label: //U8H6EehYV7ubJvO6O3yhyHiEOnM34LbHqyfD5HP0I=
     howDoesThisWork: how-does-this-work-online-clinics
+    isLink:
+      discriminant: false
     es:
       label: Clínicas en línea con sede en EE.UU.
       __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
@@ -60,6 +62,8 @@ clinicTypes:
           label: Asistencia médica
           __label: //U8H6EehYV7ubJvO6O3yhyHiEOnM34LbHqyfD5HP0I=
     howDoesThisWork: how-does-this-work-international-online-clinics
+    isLink:
+      discriminant: false
     es:
       label: Otras clínicas en línea
       __label: Jb00eFJ3DB1rWFd5LVhgbLEOAyoC9SGS1ANKOCM+5B4=
@@ -89,6 +93,8 @@ clinicTypes:
           label: Apoyo entre iguales
           __label: efajF1PZJh1IUHMAxpNluqcEQa1UbbeAN7tnPpIq/Yg=
     howDoesThisWork: how-does-this-work-community-networks
+    isLink:
+      discriminant: false
     es:
       label: Redes comunitarias
       __label: GZU6raPLi0/RZ7mbWiaSDPLzQT10wn/jojUZGLRqKn4=
@@ -118,11 +124,24 @@ clinicTypes:
           label: Ninguna ayuda
           __label: 4jEtwIbv71UkxIu0wSIeFTf2ePq8gzOlma4d/S6gDXk=
     howDoesThisWork: how-does-this-work-websites-that-sell-pills
+    isLink:
+      discriminant: false
     es:
       label: Sitios web que venden pastillas
       __label: Jgjbu7xUoByUp2VC/amDZqKSLS9tNXbii5lbck05DBg=
       singular: Sitio web que vende píldoras
       __singular: 9LAC7LJ8gZTbznvVoouALLoq1hn95GHcPPqXpvQkjdw=
+  - label: In Person Clinics
+    maxVisibleDefault: 3
+    color: grey
+    icon: hospital
+    labels: []
+    isLink:
+      discriminant: true
+      value:
+        action:
+          discriminant: anchor
+          value: in-person-clinics
 filterFields:
   - field: Financial aid
     label: Financial Assistance
