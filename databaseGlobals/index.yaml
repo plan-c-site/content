@@ -161,27 +161,6 @@ clinicTypes:
       __label: Jgjbu7xUoByUp2VC/amDZqKSLS9tNXbii5lbck05DBg=
       singular: Sitio web que vende píldoras
       __singular: 9LAC7LJ8gZTbznvVoouALLoq1hn95GHcPPqXpvQkjdw=
-  - label: In person clinics
-    singular: In person clinic
-    maxVisibleDefault: 3
-    color: grey
-    icon: hospital
-    labels:
-      - label: Pricing varies
-      - label: Pick-up
-      - label: FDA-approved
-      - label: Medical support
-    isLink:
-      discriminant: true
-      value:
-        action:
-          discriminant: anchor
-          value: in-person-clinics
-    howManyPills:
-      discriminant: false
-    es:
-      label: Clínicas presenciales
-      __label: STBwPfn7HrFoyoTBiSIYHUl6ZOI1+y+hwTdrC7r0DrA=
 filterFields:
   - field: Financial aid
     label: Financial Assistance
