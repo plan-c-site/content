@@ -148,7 +148,11 @@ clinicTypes:
       - label: FDA-approved
       - label: Medical support
     isLink:
-      discriminant: false
+      discriminant: true
+      value:
+        action:
+          discriminant: anchor
+          value: in-person-clinics
     howManyPills:
       discriminant: false
     es:
