@@ -530,7 +530,11 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
       ],
     },
   ],
-  inContentButton: [{ key: "label" }, ...clickEventTranslation("action")],
+  inContentButton: [
+    { key: "label" },
+    { key: "ariaLabel" },
+    ...clickEventTranslation("action"),
+  ],
   inContentDropdown: [
     { key: "label" },
     {
