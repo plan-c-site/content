@@ -289,7 +289,7 @@ This is the primary use case, just need to remove that extra whitespace below a 
 {% flexSection
    direction="flex-col"
    noWrap=false
-   noInnerBorders=true
+   noInnerBorders=false
    grow=false
    gap=0.5
    itemsAlign="items-stretch"
@@ -301,6 +301,17 @@ This is the primary use case, just need to remove that extra whitespace below a 
    embedded=false
    anchor=false
    _language="" /%}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=0
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch"
+   _language="" %}
+{% spacerComponent spacing="1rem" _language="" /%}
 
 {% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
@@ -341,6 +352,7 @@ This is the primary use case, just need to remove that extra whitespace below a 
 {% /cardLayoutSection %}
 
 {% spacerComponent spacing="1rem" _language="" /%}
+{% /flexSection %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
