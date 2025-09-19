@@ -90,9 +90,7 @@ seo:
 es:
   title: Prueba de rejilla de tarjetas
   __title: UPDPskOkhLW66DsE7gX/9g0nnaEwdM+LIPmI0oKNgBE=
-
 ---
-
 {% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader
    color="green"
@@ -124,6 +122,19 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    _language="" /%}
+
+{% cardSection
+   image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
+   imageOnly=true
+   title="test"
+   label="test"
+   action={discriminant: ""}
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
 {% /horizontalSplit %}
 
@@ -143,7 +154,7 @@ Extra whitespace between rows (desktop only)
    grow=false
    gap=0
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch"
+   justiftContent="justify-start"
    _language="" %}
 {% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
@@ -248,7 +259,21 @@ Extra whitespace between rows (desktop only).  Would like to minimize space betw
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    _language="" /%}
+
+{% cardSection
+   image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
+   imageOnly=true
+   action={discriminant: ""}
+   link="/"
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
+
+{% spacerComponent spacing="1rem" _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -264,7 +289,7 @@ This is the primary use case, just need to remove that extra whitespace below a 
 {% flexSection
    direction="flex-col"
    noWrap=false
-   noInnerBorders=false
+   noInnerBorders=true
    grow=false
    gap=0.5
    itemsAlign="items-stretch"
@@ -276,6 +301,8 @@ This is the primary use case, just need to remove that extra whitespace below a 
    embedded=false
    anchor=false
    _language="" /%}
+
+{% spacerComponent spacing="1rem" _language="" /%}
 
 {% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
@@ -301,7 +328,21 @@ This is the primary use case, just need to remove that extra whitespace below a 
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    _language="" /%}
+
+{% cardSection
+   image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/66ba8c0c414f02aa1de94e2d_abortion-pills-by-mail-en.png"}
+   imageOnly=true
+   action={discriminant: ""}
+   link="/"
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
+
+{% spacerComponent spacing="1rem" _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -321,7 +362,7 @@ This is the primary use case, just need to remove that extra whitespace below a 
 
 {% cardLayoutSection color="beige" minColumnWidth=23 _language="" %}
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/xyz-card-grid-test/megaphone_card-wide.png"}}
+   image={discriminant: "one-off", value: {image: "/images/xyz-card-grid-test/megaphone_card-wide.png", highPriority: false}}
    imageOnly=false
    title="Join our community"
    action={discriminant: "internal", value: {page: "community"}}
@@ -349,7 +390,7 @@ Many providers will send you abortion pills before you need them, to have on han
 {% /cardSection %}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/xyz-card-grid-test/community-pattern.png"}}
+   image={discriminant: "one-off", value: {image: "/images/xyz-card-grid-test/community-pattern.png", highPriority: false}}
    imageOnly=false
    title="Take action"
    action={discriminant: "internal", value: {page: "community"}}
