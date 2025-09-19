@@ -90,9 +90,7 @@ seo:
 es:
   title: Prueba de rejilla de tarjetas
   __title: UPDPskOkhLW66DsE7gX/9g0nnaEwdM+LIPmI0oKNgBE=
-
 ---
-
 {% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader
    color="green"
@@ -143,7 +141,7 @@ Extra whitespace between rows (desktop only)
    grow=false
    gap=0
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch"
+   justiftContent="justify-start"
    _language="" %}
 {% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
@@ -321,7 +319,7 @@ This is the primary use case, just need to remove that extra whitespace below a 
 
 {% cardLayoutSection color="beige" minColumnWidth=23 _language="" %}
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/xyz-card-grid-test/megaphone_card-wide.png"}}
+   image={discriminant: "one-off", value: {image: "/images/xyz-card-grid-test/megaphone_card-wide.png", highPriority: false}}
    imageOnly=false
    title="Join our community"
    action={discriminant: "internal", value: {page: "community"}}
@@ -349,7 +347,7 @@ Many providers will send you abortion pills before you need them, to have on han
 {% /cardSection %}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/xyz-card-grid-test/community-pattern.png"}}
+   image={discriminant: "one-off", value: {image: "/images/xyz-card-grid-test/community-pattern.png", highPriority: false}}
    imageOnly=false
    title="Take action"
    action={discriminant: "internal", value: {page: "community"}}
