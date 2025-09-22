@@ -4,6 +4,7 @@ seo:
   image:
     discriminant: ''
   seoSchemas: []
+status: published
 ---
 {% bodySection
    centered=true
@@ -12,4 +13,6 @@ seo:
    textSize="medium"
    _language="" %}
 # This page could not be found.
+
+{% inlineLink action={discriminant: "home", value: {}} _language="" %}Return to the homepage.{% /inlineLink %}
 {% /bodySection %}
