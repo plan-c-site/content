@@ -7,7 +7,11 @@ seo:
     by mail. FAQs: What is Mifepristone? How does Plan C work? Is at-home
     abortion safe?
   image:
-    discriminant: ''
+    discriminant: noco-with-alt
+    value:
+      image: Woman pink shirt with phone and braids - Hero
+      highPriority: false
+  seoSchemas: []
   customSchema: >-
     {"@context":"https://schema.org",
 
@@ -107,9 +111,7 @@ seo:
 es:
   title: Preguntas frecuentes
   __title: 28RooUtgHV2SQK63K5/NL4rtL04wkyh27fjRbsMThGs=
-
 ---
-
 {% heroSection
    image={discriminant: "noco", value: "Woman pink shirt with phone and braids - Hero"}
    imageSide="right"
@@ -122,39 +124,48 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 # How people get abortion pills online in every state
 
 **Frequently asked questions** about abortion pills and abortion pill access by mail.
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 {% /heroSection %}
 
 {% bodySection
    centered=false
    width="medium"
    color="blue"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## Where people get abortion pills
 
 Options for at-home abortion pill access will vary by location. Click below to find options by state or territory.
 
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
-   afterSubmit="nothing" %}
-{% formSection type="waiting" %}
+   afterSubmit="nothing"
+   _language="" %}
+{% formSection type="waiting" _language="" %}
 {% formInput
-   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] /%}
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}]
+   _language="" /%}
 {% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
 
 {% tocAnchor
    slug={name: "Finding abortion pills", slug: "finding-abortion-pills"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="Finding abortion pills" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="Finding abortion pills"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-col"
@@ -162,20 +173,27 @@ Options for at-home abortion pill access will vary by location. Click below to f
    noInnerBorders=false
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% faqList
    faqs=["where-can-people-find-abortion-pills", "can-people-still-get-abortion-pills-by-mail-if-their-state-bans-abortion", "do-people-need-to-get-any-medical-tests", "can-people-buy-abortion-pills-now-to-use-later", "how-long-are-abortion-pills-good-for", "do-insurance-or-medicaid-cover-abortion-pills", "can-people-buy-abortion-pills-from-amazon", "what-are-online-pharmacies-or-websites-that-sell-abortion-pills-and-how-can-people-order-pills-from-them", "what-does-sliding-scale-mean", "period-pills-i-ve-heard-about-period-pills-are-they-different-from-abortion-pills"]
    color="beige"
-   anchor=false /%}
+   anchor=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "About abortion pills", slug: "about-abortion-pills"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="cyan" title="About abortion pills" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="cyan"
+   title="About abortion pills"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-col"
@@ -183,20 +201,27 @@ Options for at-home abortion pill access will vary by location. Click below to f
    noInnerBorders=false
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% faqList
    faqs=["what-is-abortion-with-pills-or-a-medication-abortion-how-do-the-pills-work", "do-people-need-a-prescription-for-abortion-pills", "how-far-into-a-pregnancy-can-a-person-take-abortion-pills", "how-much-do-abortion-pills-cost", "is-the-abortion-pill-the-same-as-plan-b-the-morning-after-pill"]
    color="beige"
-   anchor=false /%}
+   anchor=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Using abortion pills", slug: "using-abortion-pills"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Using abortion pills" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="pink"
+   title="Using abortion pills"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-col"
@@ -204,20 +229,27 @@ Options for at-home abortion pill access will vary by location. Click below to f
    noInnerBorders=false
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% faqList
    faqs=["where-can-people-find-instructions-for-using-the-pills", "what-can-a-person-expect-after-taking-abortion-pills", "what-is-the-difference-between-getting-pills-from-a-medical-service-or-getting-them-from-alternative-suppliers", "what-kind-of-real-time-support-is-available"]
    color="beige"
-   anchor=false /%}
+   anchor=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Safety considerations", slug: "safety-considerations"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Safety considerations" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="blue"
+   title="Safety considerations"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-col"
@@ -225,10 +257,12 @@ Options for at-home abortion pill access will vary by location. Click below to f
    noInnerBorders=false
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% faqList
    faqs=["can-i-get-in-trouble-for-using-abortion-pills", "are-abortion-pills-safe-what-are-the-health-risks", "what-options-do-minors-have-if-their-state-requires-parental-notification-or-consent-for-an-abortion", "how-can-someone-avoid-false-information-or-abortion-scams"]
    color="beige"
-   anchor=false /%}
+   anchor=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
