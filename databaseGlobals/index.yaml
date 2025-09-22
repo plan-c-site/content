@@ -369,6 +369,9 @@ seo:
     prices and delivery times for abortion pills by mail in this Plan C Guide.
   image:
     discriminant: ''
+  seoSchemas:
+    - basic-pages
+    - state-page-breadcrumb
   customSchema: >-
     {"@context":"https://schema.org",
 
