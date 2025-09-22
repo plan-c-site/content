@@ -8,6 +8,8 @@ template: |-
         "@id": "{{ pageUrl }}#webpage",
         "url": "{{ pageUrl }}",
         "name": "{{ pageTitle }}",
+        "breadcrumb": {
+          "@id": "{{ pageUrl }}#breadcrumb"},
         "description": "{{ pageDescription }}",
         "inLanguage": "en-US",
         "publisher": {
