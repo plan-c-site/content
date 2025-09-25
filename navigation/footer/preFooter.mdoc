@@ -1,8 +1,43 @@
 {% bodySection
-   centered=true
-   width="default"
-   color="red"
+   centered=false
+   width="narrow"
+   color="pink"
    textSize="medium"
    _language="" %}
-PRE-FOOTER CONTENT
+## Want to stay updated on abortion pill news?
+
+Sign up for our newsletter to get the latest updates and opportunities to take action, delivered straight to your inbox.
+
+{% formWrapper
+   formType={discriminant: "hubspot", value: {formId: "4ea4d330-d054-4777-8f07-8b3a99297a91", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}}
+   afterSubmit="show-screens"
+   _language="" %}
+{% formSection type="waiting" _language="" %}
+{% formInput
+   fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}]
+   _language="" /%}
+{% /formSection %}
+
+{% formSection type="submitted" _language="" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false
+   _language="" %}
+Please wait...
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="success" _language="" %}
+{% narrowBanner
+   icon="check"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false
+   _language="" %}
+Thanks! Your information has been received.
+{% /narrowBanner %}
+{% /formSection %}
+{% /formWrapper %}
 {% /bodySection %}
