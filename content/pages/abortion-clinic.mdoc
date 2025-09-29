@@ -4,15 +4,15 @@ seo:
   title: Plan C | Abortion clinics
   image:
     discriminant: ''
+  seoSchemas: []
   es:
     title: Plan C | Clínicas abortistas
     __title: kDdIRn2UUdAomjwU5msaWQ6ZwkGODd6GPq4Pr/ooR3Y=
+status: draft
 es:
   title: aborto-clínica
   __title: SXsjwku1t5OwoOlNjQMaqPKXMOuCrDt2u/emJZlaBIs=
-
 ---
-
 {% narrowBanner
    icon="circleAlert"
    color="red"
@@ -86,7 +86,9 @@ In-person abortion clinics usually offer both abortion pills&nbsp;and abortion p
 {% resourceItem
    resource="i-need-an-a"
    header={discriminant: "override", value: "Find the nearest clinic"}
-   type={discriminant: "block", value: {icon: "", iconColor: "grey"}}
+   type={discriminant: "block", value: {icon: "", iconColor: "grey", buttonIconRight: false}}
+   overrideWebsite={discriminant: ""}
+   overrideAction={discriminant: false}
    _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
@@ -168,6 +170,7 @@ In-person abortion clinics usually offer both abortion pills&nbsp;and abortion p
    icon=""
    iconColor="green"
    hideHeaders=false
+   buttonIconRight=false
    _language="" /%}
 
 {% narrowBanner

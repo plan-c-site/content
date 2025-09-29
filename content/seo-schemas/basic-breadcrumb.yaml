@@ -1,0 +1,53 @@
+title: basic breadcrumb
+template: |-
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "@id": "{{ pageUrl}}#breadcrumb",
+        "name": "Breadcrumb for {{ pageUrl }}",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": "https://www.plancpills.org/",
+            "name": "Home"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": "{{ pageUrl }}",
+            "name": "{{ pageTitle }}"
+          }
+        ]
+      }
+    ]
+  }
+es:
+  template: |-
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "@id": "{{ pageUrl}}#breadcrumb",
+          "name": "Breadcrumb for {{ pageUrl }}",
+          "isPartOf": { "@id": "{{ pageUrl }}#webpage" },
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": "https://www.plancpills.org/",
+              "name": "Home"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": "{{ pageUrl }}",
+              "name": "{{ pageTitle }}"
+            }
+          ]
+        }
+      ]
+    }

@@ -1,0 +1,94 @@
+title: basic pages
+template: |-
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "{{ pageUrl }}#webpage",
+        "url": "{{ pageUrl }}",
+        "name": "{{ pageTitle }}",
+        "breadcrumb": {
+          "@id": "{{ pageUrl }}#breadcrumb"},
+        "description": "{{ pageDescription }}",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://www.plancpills.org/#organization",
+          "name": "Plan C"},
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://www.plancpills.org/#website"
+        },
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "{{ pageUrl }}"
+          }
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "{{ pageUrl }}#primaryimage",
+          "contentUrl": "{{ image.url }}",
+          "name": "{{ image.name }}",
+          "description": "Image of {{ image.name }}",
+          "width": {{ image.width }},
+          "height": {{ image.height }},
+          "caption": "{{ image.name }}",
+          "license": "https://www.plancpills.org/privacy-terms",
+          "acquireLicensePage": "https://www.plancpills.org/privacy-terms",
+          "copyrightNotice": "© 2025 Plan C",
+          "creditText": "© 2025 Plan C",
+          "creator": { "@id": "https://www.plancpills.org/#organization" },
+          "isPartOf": {"@id": "{{ pageUrl }}#webpage"}
+        }
+      }
+    ]
+  }
+es:
+  template: |-
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "{{ pageUrl }}#webpage",
+          "url": "{{ pageUrl }}",
+          "name": "{{ pageTitle }}",
+          "description": "{{ pageDescription }}",
+          "inLanguage": "en-US",
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://www.plancpills.org/#organization",
+            "name": "Plan C"},
+          "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://www.plancpills.org/#website"
+          },
+          "potentialAction": {
+            "@type": "ReadAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "{{ pageUrl }}"
+            }
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "@id": "{{ pageUrl }}#primaryimage",
+            "contentUrl": "{{ image.url }}",
+            "name": "{{ image.name }}",
+            "description": "Image of {{ image.name }}",
+            "width": {{ image.width }},
+            "height": {{ image.height }},
+            "caption": "{{ image.name }}",
+            "license": "https://www.plancpills.org/privacy-terms",
+            "acquireLicensePage": "https://www.plancpills.org/privacy-terms",
+            "copyrightNotice": "© 2025 Plan C",
+            "creditText": "© 2025 Plan C",
+            "creator": { "@id": "https://www.plancpills.org/#organization" },
+            "isPartOf": {"@id": "{{ pageUrl }}#webpage"}
+          }
+        }
+      ]
+    }

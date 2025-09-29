@@ -1,0 +1,402 @@
+title: homepage
+template: |-
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.plancpills.org/#organization",
+        "url": "https://www.plancpills.org/",
+        "name": "Plan C",
+        "description": "{{ pageDescription }}",
+        "foundingDate": "2015",
+        "brand": {"@type": "Brand", "name": "Plan C"},
+        "publishingPrinciples": "https://www.plancpills.org/about",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://www.plancpills.org/#logo",
+          "inLanguage": "en-US",
+          "contentUrl": "https://www.plancpills.org/logo.svg",
+          "name": "Plan C logo",
+          "description": "Image of Plan C logo",
+          "width": 606,
+          "height": 137,
+          "caption": "Plan C logo",
+          "license": "https://www.plancpills.org/privacy-terms",
+          "acquireLicensePage": "https://www.plancpills.org/privacy-terms",
+          "copyrightNotice": "© 2025 Plan C",
+          "creditText": "© 2025 Plan C",
+          "creator": {"@id": "https://www.plancpills.org/#organization"}
+        },
+        "image": {"@id": "https://www.plancpills.org/#logo"},
+        "knowsAbout": [
+          "Abortion Pill Online Access",
+          "Abortion Pills by Mail",
+          "Medication Abortion"
+        ],
+        "sameAs": "https://en.wikipedia.org/wiki/Plan_C"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.plancpills.org/#website",
+        "url": "https://www.plancpills.org/",
+        "name": "PLAN C: {{ pageTitle }}",
+        "description": "{{ pageDescription }}",
+        "inLanguage": "en-US",
+        "image": {"@id": "https://www.plancpills.org/#logo"},
+        "publisher": {"@id": "https://www.plancpills.org/#organization"},
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.plancpills.org/"
+          }
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.plancpills.org/#webpage",
+        "url": "https://www.plancpills.org/",
+        "name": "{{ pageTitle }}",
+        "description": "{{ pageDescription }}",
+        "inLanguage": "en-US",
+        "publisher": {"@id": "https://www.plancpills.org/#organization"},
+        "isPartOf": {"@id": "https://www.plancpills.org/#website"},
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.plancpills.org/"
+          }
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.plancpills.org/#breadcrumb",
+          "name": "Breadcrumb for https://www.plancpills.org/",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": "https://www.plancpills.org/",
+              "name": "Home"
+            }
+          ]
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "https://www.plancpills.org/#primaryimage",
+          "contentUrl": "{{ image.url }}",
+          "name": "{{ image.name }}",
+          "description": "Image of {{ image.name }}",
+          "width": {{ image.width }},
+          "height": {{ image.height }},
+          "caption": "{{ image.name }}",
+          "license": "https://www.plancpills.org/privacy-terms",
+          "acquireLicensePage": "https://www.plancpills.org/privacy-terms",
+          "copyrightNotice": "© 2025 Plan C",
+          "creditText": "© 2025 Plan C",
+          "creator": { "@id": "https://www.plancpills.org/#organization" },
+          "isPartOf": {"@id": "https://www.plancpills.org/#webpage"}
+        }
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "@id": "https://www.plancpills.org/#navigation",
+        "name": "Main Navigation",
+        "isPartOf": {"@id": "https://www.plancpills.org/#website"},
+        "hasPart": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Abortion Pills",
+            "hasPart": [
+              { "@type": "WebPage", "name": "Search by State", "url": "https://www.plancpills.org/#search-by-state" },
+              { "@type": "WebPage", "name": "FAQ", "url": "https://www.plancpills.org/guide-how-to-get-abortion-pills" },
+              { "@type": "WebPage", "name": "Pills in Advance", "url": "https://www.plancpills.org/in-advance" },
+              { "@type": "WebPage", "name": "Support & Resources", "url": "https://www.plancpills.org/support-resources" },
+              { "@type": "WebPage", "name": "Abortion Pill Instructions", "url": "https://www.plancpills.org/protocol" },
+              { "@type": "WebPage", "name": "Blogs", "url": "https://www.plancpills.org/blogs" }
+            ]
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Get Involved",
+            "hasPart": [
+              { "@type": "WebPage", "name": "Plan C Community", "url": "https://www.plancpills.org/community" },
+              { "@type": "WebPage", "name": "Take Action", "url": "https://www.plancpills.org/support-abortion" },
+              { "@type": "WebPage", "name": "Stickers + Flyers", "url": "https://www.plancpills.org/stickers" },
+              { "@type": "WebPage", "name": "Plan C Road Trip", "url": "https://www.plancpills.org/road-trip" },
+              { "@type": "WebPage", "name": "Social Media Toolkit", "url": "https://www.plancpills.org/social-media-toolkit" },
+              { "@type": "WebPage", "name": "Plan C Merch", "url": "https://plancpills.threadless.com/" },
+              { "@type": "WebPage", "name": "Partner With Us", "url": "https://www.plancpills.org/partnerships" },
+              { "@type": "WebPage", "name": "For Medical Professionals", "url": "https://www.plancpills.org/medical-professional-abortion-services" },
+              { "@type": "WebPage", "name": "Work With Plan C", "url": "https://www.plancpills.org/jobs" }
+            ]
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "About",
+            "hasPart": [
+              { "@type": "WebPage", "name": "About Plan C", "url": "https://www.plancpills.org/about" },
+              { "@type": "WebPage", "name": "Press", "url": "https://www.plancpills.org/press" },
+              { "@type": "WebPage", "name": "Research & Learning", "url": "https://www.plancpills.org/resource-library" },
+              { "@type": "WebPage", "name": "PLAN C: The Documentary", "url": "https://www.plancpills.org/documentary" },
+              { "@type": "WebPage", "name": "2024 Annual Report", "url": "https://www.plancpills.org/2024-annual-report" },
+              { "@type": "WebPage", "name": "Contact Us", "url": "https://www.plancpills.org/contact" },
+              { "@type": "WebPage", "name": "Media Inquiries", "url": "https://www.plancpills.org/media" }
+            ]
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Donate",
+            "url": "https://www.plancpills.org/donate"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Español",
+            "url": "https://es.plancpills.org/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.plancpills.org/#frequently-asked-questions",
+        "isPartOf": { "@id": "https://www.plancpills.org/#webpage" },
+        "about": { "@type": "Thing", "name": "Common questions about abortion pills." },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the abortion pill?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The abortion pill is a combination of two medications: Mifepristone and Misoprostol. These medications stop a pregnancy from growing and cause cramping and bleeding to empty the uterus, similar to a miscarriage. This is also called 'medication abortion'."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can someone get abortion pills?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Abortion pills are available in every state through various sources: Online clinics that mail pills, in-person clinics (only in some states), websites that sell pills, and community networks that mail pills. Accessing abortion pills online may come with legal risks depending on your location."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the abortion pill the same as Plan B, the morning-after pill?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, the abortion pill is not the same as Plan B. Plan B is emergency contraception that can be taken up to 5 days after unprotected sex to prevent pregnancy. Plan C refers to abortion pills (Mifepristone + Misoprostol) that can be taken after a missed period, recommended up to 13 weeks of pregnancy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can someone get in trouble for using abortion pills?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While research shows that hundreds of thousands of people have received and used pills by mail without legal issues, in rare cases, individuals have faced legal consequences. Legal risks can depend on your location, identity, and how far along you are in pregnancy. The Repro Legal Helpline provides free, confidential information that can help people better understand legal risk."
+            }
+          }
+        ]
+      }
+    ]
+  }
+es:
+  template: |-
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.plancpills.org/#organization",
+          "url": "https://www.plancpills.org/",
+          "name": "Plan C",
+          "description": "{{ pageDescription }}",
+          "foundingDate": "2015",
+          "brand": {"@type": "Brand", "name": "Plan C"},
+          "publishingPrinciples": "https://www.plancpills.org/about",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://www.plancpills.org/#logo",
+            "inLanguage": "en-US",
+            "contentUrl": "https://www.plancpills.org/logo.svg,
+            "name": "Plan C logo",
+            "description": "Image of Plan C logo",
+            "width": 606,
+            "height": 137,
+            "caption": "Plan C logo",
+            "license": "https://www.plancpills.org/privacy-terms",
+            "acquireLicensePage": "https://www.plancpills.org/privacy-terms",
+            "copyrightNotice": "© 2025 Plan C",
+            "creditText": "© 2025 Plan C",
+            "creator": {"@id": "https://www.plancpills.org/#organization"}
+          },
+          "image": {"@id": "https://www.plancpills.org/#logo"},
+          "knowsAbout": [
+            "Abortion Pill Online Access",
+            "Abortion Pills by Mail",
+            "Medication Abortion"
+          ],
+          "sameAs": "https://en.wikipedia.org/wiki/Plan_C"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.plancpills.org/#website",
+          "url": "https://www.plancpills.org/",
+          "name": "PLAN C: {{ pageTitle }}",
+          "description": "{{ pageDescription }}",
+          "inLanguage": "en-US",
+          "image": {"@id": "https://www.plancpills.org/#logo"},
+          "publisher": {"@id": "https://www.plancpills.org/#organization"},
+          "potentialAction": {
+            "@type": "ReadAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.plancpills.org/"
+            }
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.plancpills.org/#webpage",
+          "url": "https://www.plancpills.org/",
+          "name": "{{ pageTitle }}",
+          "description": "{{ pageDescription }}",
+          "inLanguage": "en-US",
+          "publisher": {"@id": "https://www.plancpills.org/#organization"},
+          "isPartOf": {"@id": "https://www.plancpills.org/#website"},
+          "potentialAction": {
+            "@type": "ReadAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.plancpills.org/"
+            }
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.plancpills.org/#breadcrumb",
+            "name": "Breadcrumb for https://www.plancpills.org/",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": "https://www.plancpills.org/",
+                "name": "Home"
+              }
+            ]
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "@id": "https://www.plancpills.org/#primaryimage",
+            "contentUrl": "{{ image.url }}",
+            "name": "{{ image.name }}",
+            "description": "Image of {{ image.name }}",
+            "width": {{ image.width }},
+            "height": {{ image.height }},
+            "caption": "{{ image.name }}",
+            "license": "https://www.plancpills.org/privacy-terms",
+            "acquireLicensePage": "https://www.plancpills.org/privacy-terms",
+            "copyrightNotice": "© 2025 Plan C",
+            "creditText": "© 2025 Plan C",
+            "creator": { "@id": "https://www.plancpills.org/#organization" },
+            "isPartOf": {"@id": "https://www.plancpills.org/#webpage"}
+          }
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://www.plancpills.org/#navigation",
+          "name": "Main Navigation",
+          "isPartOf": {"@id": "https://www.plancpills.org/#website"},
+          "hasPart": [
+            {
+              "@type": "SiteNavigationElement",
+              "name": "Abortion Pills",
+              "hasPart": [
+                { "@type": "WebPage", "name": "Search by State", "url": "https://www.plancpills.org/#search-by-state" },
+                { "@type": "WebPage", "name": "FAQ", "url": "https://www.plancpills.org/guide-how-to-get-abortion-pills" },
+                { "@type": "WebPage", "name": "Pills in Advance", "url": "https://www.plancpills.org/in-advance" },
+                { "@type": "WebPage", "name": "Support & Resources", "url": "https://www.plancpills.org/support-resources" },
+                { "@type": "WebPage", "name": "Abortion Pill Instructions", "url": "https://www.plancpills.org/protocol" },
+                { "@type": "WebPage", "name": "Blogs", "url": "https://www.plancpills.org/blogs" }
+              ]
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "name": "Get Involved",
+              "hasPart": [
+                { "@type": "WebPage", "name": "Plan C Community", "url": "https://www.plancpills.org/community" },
+                { "@type": "WebPage", "name": "Take Action", "url": "https://www.plancpills.org/support-abortion" },
+                { "@type": "WebPage", "name": "Stickers + Flyers", "url": "https://www.plancpills.org/stickers" },
+                { "@type": "WebPage", "name": "Plan C Road Trip", "url": "https://www.plancpills.org/road-trip" },
+                { "@type": "WebPage", "name": "Social Media Toolkit", "url": "https://www.plancpills.org/social-media-toolkit" },
+                { "@type": "WebPage", "name": "Plan C Merch", "url": "https://plancpills.threadless.com/" },
+                { "@type": "WebPage", "name": "Partner With Us", "url": "https://www.plancpills.org/partnerships" },
+                { "@type": "WebPage", "name": "For Medical Professionals", "url": "https://www.plancpills.org/medical-professional-abortion-services" },
+                { "@type": "WebPage", "name": "Work With Plan C", "url": "https://www.plancpills.org/jobs" }
+              ]
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "name": "About",
+              "hasPart": [
+                { "@type": "WebPage", "name": "About Plan C", "url": "https://www.plancpills.org/about" },
+                { "@type": "WebPage", "name": "Press", "url": "https://www.plancpills.org/press" },
+                { "@type": "WebPage", "name": "Research & Learning", "url": "https://www.plancpills.org/resource-library" },
+                { "@type": "WebPage", "name": "PLAN C: The Documentary", "url": "https://www.plancpills.org/documentary" },
+                { "@type": "WebPage", "name": "2024 Annual Report", "url": "https://www.plancpills.org/2024-annual-report" },
+                { "@type": "WebPage", "name": "Contact Us", "url": "https://www.plancpills.org/contact" },
+                { "@type": "WebPage", "name": "Media Inquiries", "url": "https://www.plancpills.org/media" }
+              ]
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "name": "Donate",
+              "url": "https://www.plancpills.org/donate"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "name": "Español",
+              "url": "https://es.plancpills.org/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.plancpills.org/#frequently-asked-questions",
+          "isPartOf": { "@id": "https://www.plancpills.org/#webpage" },
+          "about": { "@type": "Thing", "name": "Common questions about abortion pills." },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the abortion pill?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The abortion pill is a combination of two medications: Mifepristone and Misoprostol. These medications stop a pregnancy from growing and cause cramping and bleeding to empty the uterus, similar to a miscarriage. This is also called 'medication abortion'."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can someone get abortion pills?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Abortion pills are available in every state through various sources: Online clinics that mail pills, in-person clinics (only in some states), websites that sell pills, and community networks that mail pills. Accessing abortion pills online may come with legal risks depending on your location."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the abortion pill the same as Plan B, the morning-after pill?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, the abortion pill is not the same as Plan B. Plan B is emergency contraception that can be taken up to 5 days after unprotected sex to prevent pregnancy. Plan C refers to abortion pills (Mifepristone + Misoprostol) that can be taken after a missed period, recommended up to 13 weeks of pregnancy."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can someone get in trouble for using abortion pills?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While research shows that hundreds of thousands of people have received and used pills by mail without legal issues, in rare cases, individuals have faced legal consequences. Legal risks can depend on your location, identity, and how far along you are in pregnancy. The Repro Legal Helpline provides free, confidential information that can help people better understand legal risk."
+              }
+            }
+          ]
+        }
+      ]
+    }
