@@ -7,6 +7,7 @@ seo:
     outreach materials for Instagram, Twitter, email, and more.
   image:
     discriminant: ''
+  seoSchemas: []
   customSchema: >-
     {"@context":"https://schema.org",
 
@@ -87,12 +88,11 @@ seo:
       Descarga material de difusión para Instagram, Twitter, correo electrónico
       y más.
     __description: UjX6IXpCBYAxbEZabozFJi4Kfr4nTssM83dMr5UPVEc=
+status: published
 es:
   title: Herramientas para las redes sociales
   __title: 2IHpUD7hcfcvputz/wvxGWefKcqDlH7e+ILSuWWj4R0=
-
 ---
-
 {% heroSection
    image={discriminant: "noco", value: "Social media - Hero"}
    imageSide="right"
@@ -105,25 +105,28 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 # Social media
 
 Sharing information is one of the best ways to help normalize and destigmatize abortion pill access in the US.
 
 Use the images and captions below to spread the word about Plan C. Be sure to follow @plancpills for the latest posts and updates.
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 {% /heroSection %}
 
 {% tocAnchor
    slug={name: "Follow @plancpills", slug: "follow-plancpills"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
 {% bodySection
    centered=false
    width="default"
    color="red"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## Follow @plancpills
 
 {% flexSection
@@ -133,7 +136,8 @@ Use the images and captions below to spread the word about Plan C. Be sure to fo
    grow=false
    gap=1
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% flexSection
    direction="flex-col"
    noWrap=false
@@ -141,8 +145,9 @@ Use the images and captions below to spread the word about Plan C. Be sure to fo
    grow=false
    gap=0.25
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
-{% socialButtons /%}
+   justiftContent="justify-stretch"
+   _language="" %}
+{% socialButtons _language="" /%}
 {% /flexSection %}
 
 {% flexSection
@@ -152,7 +157,8 @@ Use the images and captions below to spread the word about Plan C. Be sure to fo
    grow=false
    gap=0.25
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 **If you choose to post about pills, please consider:**
 
 - Use hashtags #plancpills #abortionpills #abortionpillsareheretostay #abortionpillsforever to help us show up in searches about abortion pills.
@@ -165,265 +171,305 @@ Use the images and captions below to spread the word about Plan C. Be sure to fo
 
 {% tocAnchor
    slug={name: "Images and captions", slug: "images-and-captions"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="General awareness" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="General awareness"
+   icon=""
+   _language="" %}
 **Suggested caption:**
 
 Did you know? People are finding up-to-date information about abortion pills by mail in the US + how people are using them at home with resources and support at plancpills.org.
 {% /sectionHeader %}
 
-{% cardLayoutSection color="beige" minColumnWidth=20 %}
+{% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-pills-by-mail.png", altText: "Abortion pills by mail"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-pills-by-mail.png", altText: "Abortion pills by mail", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/abortion-pills-by-mail.png", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/need-to-be-unpregnant.png", altText: "Need to be un-pregnant?"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/need-to-be-unpregnant.png", altText: "Need to be un-pregnant?", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/need-to-be-unpregnant.png", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/reminder-no-such-thing.jpg", altText: "There's no such thing as a \"moderate\" abortion ban"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/reminder-no-such-thing.jpg", altText: "There's no such thing as a \"moderate\" abortion ban", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/reminder-no-such-thing.jpg", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-forever-no-matter-what.jpg", altText: "Abortion forever, no matter what"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-forever-no-matter-what.jpg", altText: "Abortion forever, no matter what", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/abortion-forever-no-matter-what.jpg", showPopup: false}}
    imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/no-matter-you-have-options.jpg", altText: "You have options"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/no-matter-you-have-options.jpg", altText: "You have options", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/no-matter-you-have-options.jpg", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-resource-flyer.jpg", altText: "Abortion resources flyer"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-resource-flyer.jpg", altText: "Abortion resources flyer", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/abortion-resource-flyer.jpg", showPopup: false}}
    imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="cyan" title="Medical safety" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="cyan" title="Medical safety" icon="" _language="" /%}
 
-{% cardLayoutSection color="beige" minColumnWidth=22 %}
+{% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/did-you-know-safe-effective.jpg", altText: "Abortion pills are just as safe and effective as going to a clinic"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/did-you-know-safe-effective.jpg", altText: "Abortion pills are just as safe and effective as going to a clinic", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/did-you-know-safe-effective.jpg", showPopup: false}}
    imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-pills-are-safe-effective.jpg", altText: "Abortion pills are safe, effective, common, and for everyone"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-pills-are-safe-effective.jpg", altText: "Abortion pills are safe, effective, common, and for everyone", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/abortion-pills-are-safe-effective.jpg", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-pills-are-hand-pills.png", altText: "Abortion pills are safe, effective, and available online"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/abortion-pills-are-hand-pills.png", altText: "Abortion pills are safe, effective, and available online", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/abortion-pills-are-hand-pills.png", showPopup: false}}
    imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Pills in advance" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="pink"
+   title="Pills in advance"
+   icon=""
+   _language="" /%}
 
-{% cardLayoutSection color="beige" minColumnWidth=22 %}
+{% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/get-abortion-pills-now-just-in-case.jpg", altText: "Get abortion pills now, just in case"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/get-abortion-pills-now-just-in-case.jpg", altText: "Get abortion pills now, just in case", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/get-abortion-pills-now-just-in-case.jpg", showPopup: false}}
    imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/consigue-pastillas-abortivas-ahora.jpg", altText: "Consigue pastillas abortivas ahora, por si acaso"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/consigue-pastillas-abortivas-ahora.jpg", altText: "Consigue pastillas abortivas ahora, por si acaso", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/consigue-pastillas-abortivas-ahora.jpg", showPopup: false}}
    imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/get-abortion-pills-now-pink.jpg", altText: "Get abortion pills now just in case"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/get-abortion-pills-now-pink.jpg", altText: "Get abortion pills now just in case", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/get-abortion-pills-now-pink.jpg", showPopup: false}}
    imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Artists for abortion pills" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="blue"
+   title="Artists for abortion pills"
+   icon=""
+   _language="" /%}
 
-{% cardLayoutSection color="beige" minColumnWidth=22 %}
+{% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/brave-heart.jpg", altText: "Brave heart"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/brave-heart.jpg", altText: "Brave heart", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/brave-heart.jpg", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/not-a-cissue.jpg", altText: "Abortion is not a cissue"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/not-a-cissue.jpg", altText: "Abortion is not a cissue", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/not-a-cissue.jpg", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/you-have-options-butterfly.png", altText: "You have options, xoxo Plan C"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/you-have-options-butterfly.png", altText: "You have options, xoxo Plan C", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/you-have-options-butterfly.png", showPopup: false}}
    imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/know-your-plan-c-banner.jpg", altText: "Know your Plan C"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/know-your-plan-c-banner.jpg", altText: "Know your Plan C", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/know-your-plan-c-banner.jpg", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/conoce-tu-plan-c.jpg", altText: "Conoce tu Plan C"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/conoce-tu-plan-c.jpg", altText: "Conoce tu Plan C", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/conoce-tu-plan-c.jpg", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/are-available-50-states-computer.png", altText: "Abortion pills are available in all 50 states"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/are-available-50-states-computer.png", altText: "Abortion pills are available in all 50 states", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/are-available-50-states-computer.png", showPopup: false}}
    imageCover="bg-contain"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="You always have options" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="You always have options"
+   icon=""
+   _language="" /%}
 
-{% cardLayoutSection color="beige" minColumnWidth=22 %}
+{% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/yaho-50-states-pink.png", altText: "States where you can get abortion pills by mail"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/yaho-50-states-pink.png", altText: "States where you can get abortion pills by mail", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/yaho-50-states-pink.png", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/yaho-es.png", altText: "Dile a todos, SiempreTienesOpciones.com"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/yaho-es.png", altText: "Dile a todos, SiempreTienesOpciones.com", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/yaho-es.png", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/yaho-en.png", altText: "Tell everyone, YouHaveOptions.com"}}
+   image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/yaho-en.png", altText: "Tell everyone, YouHaveOptions.com", highPriority: false}}
    imageOnly=true
    action={discriminant: "external", value: {url: "https://plan-c-site.b-cdn.net/images/social-media-toolkit/yaho-en.png", showPopup: false}}
    imageCover="bg-cover"
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" /%}
+   mobileImageHorizontal="desktop"
+   _language="" /%}
 {% /cardLayoutSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Other ways to help", slug: "other-ways-to-help"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
 {% bodySection
    centered=true
    width="default"
    color="cyan"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## Other ways to help
 {% /bodySection %}
 
-{% cardLayoutSection color="beige" minColumnWidth=23 %}
+{% cardLayoutSection color="beige" minColumnWidth=23 _language="" %}
 {% cardSection
    image={discriminant: "noco", value: "Community - Hero"}
    imageOnly=false
@@ -433,7 +479,8 @@ Did you know? People are finding up-to-date information about abortion pills by 
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" %}
+   mobileImageHorizontal="desktop"
+   _language="" %}
 Many providers will send you abortion pills before you need them, to have on hand just in case.
 {% /cardSection %}
 
@@ -446,7 +493,8 @@ Many providers will send you abortion pills before you need them, to have on han
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" %}
+   mobileImageHorizontal="desktop"
+   _language="" %}
 Many providers will send you abortion pills before you need them, to have on hand just in case.
 {% /cardSection %}
 
@@ -459,7 +507,8 @@ Many providers will send you abortion pills before you need them, to have on han
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" %}
+   mobileImageHorizontal="desktop"
+   _language="" %}
 Many providers will send you abortion pills before you need them, to have on hand just in case.
 {% /cardSection %}
 {% /cardLayoutSection %}
