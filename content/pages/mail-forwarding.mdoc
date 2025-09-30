@@ -106,27 +106,5 @@ Options for at-home abortion pill access will vary by location. Click below to f
    fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}]
    _language="" /%}
 {% /formSection %}
-
-{% formSection type="submitted" _language="" %}
-{% narrowBanner
-   icon=""
-   color="beige"
-   iconAlign="items-center"
-   fullWidth=false
-   _language="" %}
-Submitting...
-{% /narrowBanner %}
-{% /formSection %}
-
-{% formSection type="success" _language="" %}
-{% narrowBanner
-   icon=""
-   color="beige"
-   iconAlign="items-center"
-   fullWidth=false
-   _language="" %}
-Please wait...
-{% /narrowBanner %}
-{% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
