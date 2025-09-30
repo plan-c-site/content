@@ -1,0 +1,11 @@
+title: Who Not When
+author: Who Not When
+website: https://whonotwhen.com
+summary: A people-centered resource for understanding abortions later in pregnancy.
+resourceIcon: calendarClock
+iconColor: green
+buttonIcon: ''
+buttonAction:
+  discriminant: ''
+buttonUrl:
+  discriminant: url
