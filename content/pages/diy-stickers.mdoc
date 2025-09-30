@@ -6,79 +6,13 @@ seo:
     Spread information on abortion pill access by mail by printing and handing
     out Plan C, stickers, flyers, protest signs and more.
   image:
-    discriminant: ''
-  customSchema: >-
-    {"@context":"https://schema.org",
-
-    "@graph":[
-
-    {
-
-    "@type":"WebPage",
-
-    "@id":"https://www.plancpills.org/diy-stickers-flyers#webpage",
-
-    "url":"https://www.plancpills.org/diy-stickers-flyers",
-
-    "name":"DIY Print Your Own Stickers & Flyers | Plan C",
-
-    "description":"Spread information on abortion pill access by mail by
-    printing and handing out Plan C, stickers, flyers, protest signs and more.",
-
-    "inLanguage":"en-US",
-
-    "isPartOf":"https://www.plancpills.org/",
-
-    "potentialAction":{
-      "@type":"ReadAction",
-      "target":{
-        "@type":"EntryPoint",
-        "urlTemplate":"https://www.plancpills.org/diy-stickers-flyers"
-        }
-      },
-    "publisher": {
-      "@type":"Organization",
-      "@id":"https://www.plancpills.org/#organization",
-      "url":"https://www.plancpills.org/",
-      "name":"Plan C",
-      "description":"Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.",
-      "foundingDate":"2015",
-      "brand":{"@type":"Brand","Name":"Plan C"},
-      "publishingPrinciples":"https://www.plancpills.org/about",
-      "logo":{"@type":"ImageObject","url":"https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/62df6a9a57f10071595acfc3_PLAN%20C_logo_mixed.svg"},
-      "sameAs": [
-        "https://en.wikipedia.org/wiki/Plan_C",
-        "https://www.facebook.com/plancpills",
-        "https://www.instagram.com/plancpills/",
-        "https://twitter.com/Plancpills",
-        "https://www.tiktok.com/@plancpills",
-        "https://www.linkedin.com/company/plancpills"
-        ]
-      },
-    "breadcrumb": {
-      "@type":"BreadcrumbList",
-      "@id":"https://www.plancpills.org/diy-stickers-flyers#breadcrumb",
-      "name":"Breadcrumb for https://www.plancpills.org/diy-stickers-flyers",
-      "itemListElement":[
-      {
-      "@type":"ListItem",
-      "position":1,
-      "item":"https://www.plancpills.org/",
-      "name":"Home"
-      },
-      {
-      "@type":"ListItem",
-      "position":2,
-      "item":"https://www.plancpills.org/diy-stickers-flyers",
-      "name":"DIY Print Your Own Stickers & Flyers | Plan C"
-      }
-      ]
-      }
-    }
-
-    ]
-
-    }
+    discriminant: noco-with-alt
+    value:
+      image: Stickers - Hero
+      highPriority: false
+  seoSchemas:
+    - basic-pages
+    - basic-breadcrumb
   es:
     title: DIY Imprime tus propios adhesivos y folletos | Plan C
     __title: Znf8lPldFRugcCkAlv8w8c91a6LxplD8kMTDesqLbqQ=
@@ -87,14 +21,13 @@ seo:
       imprimiendo y repartiendo Plan C, pegatinas, octavillas, carteles de
       protesta y mucho más.
     __description: 12vxYGshSUfBkMWcoCPCNN5qLNiVX2Xhzau27cw6RGI=
+status: published
 es:
   title: DIY Pegatinas y folletos
   __title: vz3Bvt5FoYSUY8KGcipPVn6smVcwfr1B7lHUjhEbacM=
-
 ---
-
 {% heroSection
-   image={discriminant: "noco", value: "Stickers - Hero"}
+   image={discriminant: "noco-with-alt", value: {image: "Stickers - Hero", highPriority: false}}
    imageSide="right"
    color="beige"
    imageBackgroundColor="cyan"
@@ -105,25 +38,32 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 # DIY stickers & flyers
 
 Thank you for your interest in spreading the word about Plan C. Use the templates below to print your own Plan C stickers, flyers, and yard signs.
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 {% /heroSection %}
 
 {% tocAnchor
    slug={name: "DIY templates", slug: "diy-templates"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="QR code stickers" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="QR code stickers"
+   icon=""
+   _language="" %}
 {% inContentImage
    image={discriminant: "noco", value: "Stickers - Hero"}
    maxWidth=100
    action={discriminant: ""}
-   newTab=false /%}
+   newTab=false
+   _language="" /%}
 {% /sectionHeader %}
 
 {% flexSection
@@ -132,24 +72,27 @@ Thank you for your interest in spreading the word about Plan C. Use the template
    noInnerBorders=false
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "diy-stickers_qr-code-diy-sticker-template-english"}, {resource: "diy-stickers_qr-code-diy-sticker-template-spanish"}, {resource: "diy-stickers_qr-code-pro-sticker-template-english"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="green"
    hideHeaders=false
-   appendStateField="" /%}
+   buttonIconRight=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="cyan" title="Circle stickers" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="cyan" title="Circle stickers" icon="" _language="" %}
 {% inContentImage
-   image={discriminant: "one-off", value: {image: "/images/diy-stickers/stickers-circle_hero.png", altText: "\"Need to be un-pregnant?\" QR code stickers"}}
+   image={discriminant: "one-off", value: {image: "/images/diy-stickers/stickers-circle_hero.png", altText: "\"Need to be un-pregnant?\" QR code stickers", highPriority: false}}
    maxWidth=100
    action={discriminant: ""}
-   newTab=false /%}
+   newTab=false
+   _language="" /%}
 {% /sectionHeader %}
 
 {% flexSection
@@ -158,24 +101,31 @@ Thank you for your interest in spreading the word about Plan C. Use the template
    noInnerBorders=false
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "diy-stickers_circle-sticker-pro-template-spanish"}, {resource: "diy-stickers_circle-sticker-pro-template-english"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="cyan"
    hideHeaders=false
-   appendStateField="" /%}
+   buttonIconRight=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Mini-flyers (3\" Spanish)" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="pink"
+   title="Mini-flyers (3\" Spanish)"
+   icon=""
+   _language="" %}
 {% inContentImage
-   image={discriminant: "one-off", value: {image: "/images/diy-stickers/flyers-spanish_hero.png", altText: "Mini-flyers spanish"}}
+   image={discriminant: "one-off", value: {image: "/images/diy-stickers/flyers-spanish_hero.png", altText: "Mini-flyers spanish", highPriority: false}}
    maxWidth=100
    action={discriminant: ""}
-   newTab=false /%}
+   newTab=false
+   _language="" /%}
 {% /sectionHeader %}
 
 {% flexSection
@@ -184,24 +134,31 @@ Thank you for your interest in spreading the word about Plan C. Use the template
    noInnerBorders=false
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "diy-stickers_mini-flyers-3-spanish-full-page"}, {resource: "diy-stickers_mini-flyers-3-spanish-single-flyer"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="pink"
    hideHeaders=false
-   appendStateField="" /%}
+   buttonIconRight=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Mini-flyers (3\" English)" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="blue"
+   title="Mini-flyers (3\" English)"
+   icon=""
+   _language="" %}
 {% inContentImage
-   image={discriminant: "one-off", value: {image: "/images/diy-stickers/flyers-english_hero.png", altText: "Mini-flyers english"}}
+   image={discriminant: "one-off", value: {image: "/images/diy-stickers/flyers-english_hero.png", altText: "Mini-flyers english", highPriority: false}}
    maxWidth=100
    action={discriminant: ""}
-   newTab=false /%}
+   newTab=false
+   _language="" /%}
 {% /sectionHeader %}
 
 {% flexSection
@@ -210,24 +167,31 @@ Thank you for your interest in spreading the word about Plan C. Use the template
    noInnerBorders=false
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "diy-stickers_mini-flyers-3-english-full-page"}, {resource: "diy-stickers_mini-flyers-3-english-single-flyer"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="blue"
    hideHeaders=false
-   appendStateField="" /%}
+   buttonIconRight=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="Protest / yard signs" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="Protest / yard signs"
+   icon=""
+   _language="" %}
 {% inContentImage
-   image={discriminant: "one-off", value: {image: "/images/diy-stickers/yard-signs.png", altText: "Yard signs"}}
+   image={discriminant: "one-off", value: {image: "/images/diy-stickers/yard-signs.png", altText: "Yard signs", highPriority: false}}
    maxWidth=100
    action={discriminant: ""}
-   newTab=false /%}
+   newTab=false
+   _language="" /%}
 {% /sectionHeader %}
 
 {% flexSection
@@ -236,24 +200,31 @@ Thank you for your interest in spreading the word about Plan C. Use the template
    noInnerBorders=false
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "diy-stickers_protest-yard-signs"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="green"
    hideHeaders=false
-   appendStateField="" /%}
+   buttonIconRight=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="cyan" title="Abortion resource flyers" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="cyan"
+   title="Abortion resource flyers"
+   icon=""
+   _language="" %}
 {% inContentImage
-   image={discriminant: "one-off", value: {image: "/images/diy-stickers/resource-flyer.png", altText: "Abortion resource flyers"}}
+   image={discriminant: "one-off", value: {image: "/images/diy-stickers/resource-flyer.png", altText: "Abortion resource flyers", highPriority: false}}
    maxWidth=100
    action={discriminant: ""}
-   newTab=false /%}
+   newTab=false
+   _language="" /%}
 {% /sectionHeader %}
 
 {% flexSection
@@ -262,25 +233,29 @@ Thank you for your interest in spreading the word about Plan C. Use the template
    noInnerBorders=false
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "diy-stickers_abortion-resource-flyers-3-up-template-full-color"}, {resource: "diy-stickers_abortion-resource-flyers-3-up-template-black-and-white"}, {resource: "diy-stickers_abortion-resource-flyers-full-page-template-full-color"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="cyan"
    hideHeaders=false
-   appendStateField="" /%}
+   buttonIconRight=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Order printed stickers", slug: "order-printed-stickers"}
-   type={discriminant: "action", value: {discriminant: "internal", value: {page: "stickers"}}} /%}
+   type={discriminant: "action", value: {discriminant: "internal", value: {page: "stickers"}}}
+   _language="" /%}
 
 {% actionBanner
    title="Order printed stickers here"
    color="red"
    icon="text"
-   link={label: "Order stickers", click: {discriminant: "internal", value: {page: "stickers"}}} %}
+   link={label: "Order stickers", click: {discriminant: "internal", value: {page: "stickers"}}}
+   _language="" %}
 Request free Plan C stickers to spread the word in your community.
 {% /actionBanner %}
