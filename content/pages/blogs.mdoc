@@ -1,22 +1,33 @@
 ---
 title: Blogs
 seo:
-  title: Plan C | Blogs
+  title: Plan C | Blog
+  description: >-
+    Learn about abortion pills, safe self-managed care, and reproductive rights
+    with trusted guidance and resources.
   image:
     discriminant: ''
+  seoSchemas:
+    - basic-pages
+    - basic-breadcrumb
   es:
     title: Plan C | Blogs
     __title: hY2tOtPDd9lB9h5HZhROpKz7ZOAxE5o1s8NB8dr9nGA=
+status: published
 es:
   title: Blogs
   __title: 2RbufGGKVntFWsjk6vFingfLA339b2ntXylp4PfxPsU=
-
 ---
-
-{% bodySection centered=false width="full" color="beige" textSize="medium" %}
+{% bodySection
+   centered=false
+   width="full"
+   color="beige"
+   textSize="medium"
+   _language="" %}
 # Blogs
 {% /bodySection %}
 
 {% postList
    type={discriminant: "headlines", value: {color: "beige", buttonLabel: "Read post", pagination: 10}}
-   filtering={discriminant: "category", value: {category: "blogs"}} /%}
+   filtering={discriminant: "category", value: {category: "blogs"}}
+   _language="" /%}
