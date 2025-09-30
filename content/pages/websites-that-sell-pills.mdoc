@@ -95,17 +95,6 @@ Websites that sell pills are e-commerce websites that sell and ship abortion pil
    textSize="medium"
    _language="" %}
 ## Frequently asked questions
-
-{% inContentButton
-   label="View all FAQs"
-   icon=""
-   size="primary"
-   background="pink"
-   altHoverBackground=""
-   smallShadow=false
-   rightIcon=true
-   action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}}
-   _language="" /%}
 {% /bodySection %}
 
 {% flexSection
@@ -122,5 +111,14 @@ Websites that sell pills are e-commerce websites that sell and ship abortion pil
    color="beige"
    anchor=false
    _language="" /%}
+
+{% narrowBanner
+   icon="arrowRight"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true
+   _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}See all FAQs{% /inlineLink %}
+{% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
