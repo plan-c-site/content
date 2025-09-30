@@ -6,94 +6,13 @@ seo:
     Alternative strategies for accessing abortion pills by mail from states with
     restrictive abortion laws.
   image:
-    discriminant: ''
-  customSchema: >-
-    {"@context":"https://schema.org",
-
-    "@graph":[
-
-    {
-
-    "@type":"WebPage",
-
-    "@id":"https://www.plancpills.org/mail-forwarding#webpage",
-
-    "url":"https://www.plancpills.org/mail-forwarding",
-
-    "name":"Mail Forwarding and Other Options | Plan C",
-
-    "description":"Alternative strategies for accessing abortion pills by mail
-    from states with restrictive abortion laws.",
-
-    "inLanguage":"en-US",
-
-    "isPartOf":"https://www.plancpills.org/",
-
-    "potentialAction":{
-      "@type":"ReadAction",
-      "target":{
-        "@type":"EntryPoint",
-        "urlTemplate":"https://www.plancpills.org/mail-forwarding"
-        }
-      },
-    "publisher": {
-      "@type":"Organization",
-      "@id":"https://www.plancpills.org/#organization",
-      "url":"https://www.plancpills.org/",
-      "name":"Plan C",
-      "description":"Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.",
-      "foundingDate":"2015",
-      "brand":{"@type":"Brand","Name":"Plan C"},
-      "publishingPrinciples":"https://www.plancpills.org/about",
-      "logo":{"@type":"ImageObject","url":"https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/62df6a9a57f10071595acfc3_PLAN%20C_logo_mixed.svg"},
-      "sameAs": [
-        "https://en.wikipedia.org/wiki/Plan_C",
-        "https://www.facebook.com/plancpills",
-        "https://www.instagram.com/plancpills/",
-        "https://twitter.com/Plancpills",
-        "https://www.tiktok.com/@plancpills",
-        "https://www.linkedin.com/company/plancpills"
-        ]
-      },
-    "primaryImageOfPage": {
-      "@type":"ImageObject",
-      "@id":"https://www.plancpills.org/mail-forwarding#primaryimage",
-      "contentUrl":"https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/62b6005b9dc4f0f8b3fd95cf_pobox-tiny.png",
-      "name":"Row of virtual mailboxes used to receive abortion pills by mail though mail forwarding.",
-      "description":"Image of Row of virtual mailboxes used to receive abortion pills by mail though mail forwarding.",
-      "width":960,
-      "height":960,
-      "caption":"Row of virtual mailboxes used to receive abortion pills by mail though mail forwarding.",
-      "license":"https://www.plancpills.org/privacy-terms",
-      "acquireLicensePage":"https://www.plancpills.org/privacy-terms",
-      "copyrightNotice":"© 2024 Plan C",
-      "creditText":"© 2024 Plan C",
-      "creator":{"@id":"https://www.plancpills.org/#organization"}
-      },
-    "breadcrumb": {
-      "@type":"BreadcrumbList",
-      "@id":"https://www.plancpills.org/mail-forwarding#breadcrumb",
-      "name":"Breadcrumb for https://www.plancpills.org/mail-forwarding",
-      "itemListElement":[
-      {
-      "@type":"ListItem",
-      "position":1,
-      "item":"https://www.plancpills.org/",
-      "name":"Home"
-      },
-      {
-      "@type":"ListItem",
-      "position":2,
-      "item":"https://www.plancpills.org/mail-forwarding",
-      "name":"Mail Forwarding and Other Options | Plan C"
-      }
-      ]
-      }
-    }
-
-    ]
-
-    }
+    discriminant: noco-with-alt
+    value:
+      image: PO Box - Hero
+      highPriority: false
+  seoSchemas:
+    - basic-pages
+    - basic-breadcrumb
   es:
     title: Reenvío de correo y otras opciones | Plan C
     __title: XQ9pwurhvobypR9a+NzgqzkyieJLRasKEapk8f1LgOA=
@@ -101,14 +20,13 @@ seo:
       Estrategias alternativas para acceder a píldoras abortivas por correo
       desde estados con leyes restrictivas del aborto.
     __description: hIvpsMBGTT3SDlG56X+FuCGdcLd9T5kR0zVHg+V3HjE=
+status: published
 es:
   title: Reenvío de correo
   __title: upA03tPNzvX5ru0l+9fiNBgvZ1gkeSvS3L5WR3Ebojg=
-
 ---
-
 {% heroSection
-   image={discriminant: "noco", value: "PO Box - Hero"}
+   image={discriminant: "noco-with-alt", value: {image: "PO Box - Hero", highPriority: false}}
    imageSide="right"
    color="beige"
    imageBackgroundColor="cyan"
@@ -119,30 +37,33 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 # Mail forwarding and other options
 
-{% insetSection %}
-**Abortion pills are currently accessible from all 50 states without the need for these creative workarounds.  {% inlineLink action={discriminant: "home", value: {anchor: "search-by-state"}} %}Use our guide{% /inlineLink %} to find a provider in your state.**
+{% insetSection _language="" %}
+**Abortion pills are currently accessible from all 50 states without the need for these creative workarounds.  {% inlineLink action={discriminant: "home", value: {anchor: "search-by-state"}} _language="" %}Use our guide{% /inlineLink %} to find a provider in your state.**
 {% /insetSection %}
 
 People who live in states with restrictive laws are still accessing at-home abortion pills by using creative options like mail forwarding, driving across state borders, or using General Delivery addresses.
 
 Below you can read examples of how this has worked, then search for an abortion pill provider in one of your neighboring states.
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 {% /heroSection %}
 
 {% tocAnchor
    slug={name: "Examples of how this has worked", slug: "examples-of-how-this-has-worked"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% bodySection
    centered=false
    width="default"
    color="green"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## Examples of how this has worked:
 {% /bodySection %}
 
@@ -153,52 +74,59 @@ Below you can read examples of how this has worked, then search for an abortion 
    grow=false
    gap=2
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% faqList
    faqs=["mail-forwarding_mail-forwarding-virtual-mailbox", "mail-forwarding_pick-up-in-a-neighboring-state-that-has-telehealth-abortion", "mail-forwarding_general-delivery-in-a-neighboring-state-that-has-telehealth-abortion"]
    color="beige"
-   appendStateField=""
-   anchor=false /%}
+   anchor=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Find an abortion pill provider", slug: "find-an-abortion-pill-provider"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
 {% bodySection
    centered=false
    width="medium"
    color="blue"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## Find an abortion pill provider
 
 Options for at-home abortion pill access will vary by location. Click below to find options by state or territory.
 
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
-   afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
+   afterSubmit="show-screens"
+   _language="" %}
+{% formSection type="waiting" _language="" %}
 {% formInput
-   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] /%}
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}]
+   _language="" /%}
 {% /formSection %}
 
-{% formSection type="submitted" %}
+{% formSection type="submitted" _language="" %}
 {% narrowBanner
    icon=""
    color="beige"
    iconAlign="items-center"
-   fullWidth=false %}
+   fullWidth=false
+   _language="" %}
 Submitting...
 {% /narrowBanner %}
 {% /formSection %}
 
-{% formSection type="success" %}
+{% formSection type="success" _language="" %}
 {% narrowBanner
    icon=""
    color="beige"
    iconAlign="items-center"
-   fullWidth=false %}
+   fullWidth=false
+   _language="" %}
 Please wait...
 {% /narrowBanner %}
 {% /formSection %}
