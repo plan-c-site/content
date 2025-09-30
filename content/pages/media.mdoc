@@ -5,79 +5,9 @@ seo:
   description: "Request an interview with Plan C.  This page includes background on our work +\_our team, along with recent articles and press releases."
   image:
     discriminant: ''
-  customSchema: >-
-    {"@context":"https://schema.org",
-
-    "@graph":[
-
-    {
-
-    "@type":"WebPage",
-
-    "@id":"https://www.plancpills.org/media#webpage",
-
-    "url":"https://www.plancpills.org/media",
-
-    "name":"Media Inquiries | Plan C",
-
-    "description":"Request an interview with Plan C. This page includes
-    background on our work + our team, along with recent articles and press
-    releases.",
-
-    "inLanguage":"en-US",
-
-    "isPartOf":"https://www.plancpills.org/",
-
-    "potentialAction":{
-      "@type":"ReadAction",
-      "target":{
-        "@type":"EntryPoint",
-        "urlTemplate":"https://www.plancpills.org/media"
-        }
-      },
-    "publisher": {
-      "@type":"Organization",
-      "@id":"https://www.plancpills.org/#organization",
-      "url":"https://www.plancpills.org/",
-      "name":"Plan C",
-      "description":"Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.",
-      "foundingDate":"2015",
-      "brand":{"@type":"Brand","Name":"Plan C"},
-      "publishingPrinciples":"https://www.plancpills.org/about",
-      "logo":{"@type":"ImageObject","url":"https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/62df6a9a57f10071595acfc3_PLAN%20C_logo_mixed.svg"},
-      "sameAs": [
-        "https://en.wikipedia.org/wiki/Plan_C",
-        "https://www.facebook.com/plancpills",
-        "https://www.instagram.com/plancpills/",
-        "https://twitter.com/Plancpills",
-        "https://www.tiktok.com/@plancpills",
-        "https://www.linkedin.com/company/plancpills"
-        ]
-      },
-    "breadcrumb": {
-      "@type":"BreadcrumbList",
-      "@id":"https://www.plancpills.org/media#breadcrumb",
-      "name":"Breadcrumb for https://www.plancpills.org/media",
-      "itemListElement":[
-      {
-      "@type":"ListItem",
-      "position":1,
-      "item":"https://www.plancpills.org/",
-      "name":"Home"
-      },
-      {
-      "@type":"ListItem",
-      "position":2,
-      "item":"https://www.plancpills.org/media",
-      "name":"Media Inquiries | Plan C"
-      }
-      ]
-      }
-    }
-
-    ]
-
-    }
+  seoSchemas:
+    - basic-pages
+    - basic-breadcrumb
   es:
     title: Consultas de los medios de comunicación | Plan C
     __title: zffu53OWtSj7wvoWe25igkhl/JcrB+DU6PgLYmSu120=
@@ -86,12 +16,11 @@ seo:
       nuestro trabajo y nuestro equipo, así como artículos y comunicados de
       prensa recientes.
     __description: ZHoJfnqpDqLJrNhJEFxswNwzy4+7NCJLzoXFaZPLwD0=
+status: published
 es:
   title: Consultas de los medios de comunicación
   __title: DjWF2UT3COzweBhpmpvPucM5WWDQoEYgikPoTSr0678=
-
 ---
-
 {% heroSection
    image={discriminant: "noco", value: "Megaphone squiggle - Hero"}
    imageSide="right"
@@ -104,44 +33,56 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 # Media inquiries
 
 This page includes background on our work + our team, along with recent articles and press releases.
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 {% /heroSection %}
 
 {% tocAnchor
    slug={name: "What is Plan C?", slug: "what-is-plan-c"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="What is Plan C?" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="What is Plan C?"
+   icon=""
+   _language="" /%}
 
 {% bodySection
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 Plan C is an information campaign spreading awareness about abortion pills and self-managed abortion. Abortion pills are a medically safe and effective method for ending an early pregnancy, up to 11 weeks. They are now available online through telehealth providers and online pharmacies. This is a powerful option for people without easy access to a clinic or abortion provider.
 
 Use these links to learn more about our work:
 
-- {% inlineLink action={discriminant: "internal", value: {page: "about"}} %}About Plan C{% /inlineLink %}
-- {% inlineLink action={discriminant: "home", value: {}} %}The Plan C guide to abortion pills‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}Frequently asked questions‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "internal", value: {page: "community"}} %}Plan C Community{% /inlineLink %}
-- {% inlineLink action={discriminant: "internal", value: {page: "partnerships"}} %}Partnerships{% /inlineLink %}
+- {% inlineLink action={discriminant: "internal", value: {page: "about"}} _language="" %}About Plan C{% /inlineLink %}
+- {% inlineLink action={discriminant: "home", value: {}} _language="" %}The Plan C guide to abortion pills‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}Frequently asked questions‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "internal", value: {page: "community"}} _language="" %}Plan C Community{% /inlineLink %}
+- {% inlineLink action={discriminant: "internal", value: {page: "partnerships"}} _language="" %}Partnerships{% /inlineLink %}
 {% /bodySection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Request an interview", slug: "request-an-interview"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="cyan" title="Request an interview" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="cyan"
+   title="Request an interview"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-col"
@@ -150,12 +91,14 @@ Use these links to learn more about our work:
    grow=false
    gap=2
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% bodySection
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ### Pre-interview prep:
 
 **Please educate yourself about Plan C before we speak.**&nbsp;This will help us better answer your specific questions:&nbsp;
@@ -177,17 +120,20 @@ Use these links to learn more about our work:
    centered=false
    width="narrow"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ### Request an interview
 
 After you’ve read the tips above, fill out this form to reach our team.
 
 {% formWrapper
    formType={discriminant: "hubspot", value: {formId: "fe96c04a-12aa-4729-a96f-a368502da649", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Press or Public Relations"}}]}}
-   afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
+   afterSubmit="show-screens"
+   _language="" %}
+{% formSection type="waiting" _language="" %}
 {% formInput
-   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Phone", slug: "phone"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organization", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Message", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Send me future press releases from the Plan C media team", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] /%}
+   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Phone", slug: "phone"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organization", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Message", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Send me future press releases from the Plan C media team", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}]
+   _language="" /%}
 {% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
@@ -196,10 +142,15 @@ After you’ve read the tips above, fill out this form to reach our team.
 
 {% tocAnchor
    slug={name: "Recent press releases", slug: "recent-press-releases"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Recent press releases" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="pink"
+   title="Recent press releases"
+   icon=""
+   _language="" %}
 Read the latest press coverage featuring the work of Plan C.
 {% /sectionHeader %}
 
@@ -210,21 +161,26 @@ Read the latest press coverage featuring the work of Plan C.
    grow=false
    gap=2
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% postList
    type={discriminant: "postList", value: {pagination: 3}}
-   filtering={discriminant: "category", value: {category: "press-releases"}} /%}
+   filtering={discriminant: "category", value: {category: "press-releases"}}
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% tocAnchor slug={name: "", slug: ""} type={discriminant: "toc"} /%}
+{% tocAnchor
+   slug={name: "", slug: ""}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Files & assets" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="blue" title="Files & assets" icon="" _language="" /%}
 
-{% cardLayoutSection color="beige" minColumnWidth=22.5 %}
+{% cardLayoutSection color="beige" minColumnWidth=22.5 _language="" %}
 {% cardSection
-   image={discriminant: "noco", value: "Megaphone - Hero"}
+   image={discriminant: "one-off", value: {image: "/images/media/logo.svg", altText: "Plan C logo", highPriority: false}}
    imageOnly=false
    title="Plan C logos"
    action={discriminant: "external", value: {url: "https://drive.google.com/drive/folders/11xts-fG3SoKH_czDIKe-yUL97lbGUnn4?usp=sharing", showPopup: false}}
@@ -232,12 +188,13 @@ Read the latest press coverage featuring the work of Plan C.
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" %}
+   mobileImageHorizontal="desktop"
+   _language="" %}
 Logos and other digital assets.
 {% /cardSection %}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/media/plan-c-squiggle.png"}}
+   image={discriminant: "one-off", value: {image: "/images/media/plan-c-squiggle.png", highPriority: false}}
    imageOnly=false
    title="Plan C photos"
    action={discriminant: "external", value: {url: "https://www.flickr.com/photos/195848501@N02/albums/72177720299845150", showPopup: false}}
@@ -245,7 +202,8 @@ Logos and other digital assets.
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" %}
+   mobileImageHorizontal="desktop"
+   _language="" %}
 Photos from campaigns and events.
 {% /cardSection %}
 {% /cardLayoutSection %}
