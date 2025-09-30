@@ -1,86 +1,19 @@
 ---
 title: Abortion funds
 seo:
-  title: Abortion Funds
+  title: Abortion Funds | Plan C
   description: >-
     You can help fund abortion pill access by mail for those who can’t afford
     it. One of the biggest barriers to abortion pills by mail continues to be
     cost.
   image:
-    discriminant: ''
-  customSchema: >-
-    {"@context":"https://schema.org",
-
-    "@graph":[
-
-    {
-
-    "@type":"WebPage",
-
-    "@id":"https://www.plancpills.org/fund-pills#webpage",
-
-    "url":"https://www.plancpills.org/fund-pills",
-
-    "name":"Abortion Funds",
-
-    "description":"You can help fund abortion pill access by mail for those who
-    can’t afford it. One of the biggest barriers to abortion pills by mail
-    continues to be cost.",
-
-    "inLanguage":"en-US",
-
-    "isPartOf":"https://www.plancpills.org/",
-
-    "potentialAction":{
-      "@type":"ReadAction",
-      "target":{
-        "@type":"EntryPoint",
-        "urlTemplate":"https://www.plancpills.org/fund-pills"
-        }
-      },
-    "publisher": {
-      "@type":"Organization",
-      "@id":"https://www.plancpills.org/#organization",
-      "url":"https://www.plancpills.org/",
-      "name":"Plan C",
-      "description":"Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.",
-      "foundingDate":"2015",
-      "brand":{"@type":"Brand","Name":"Plan C"},
-      "publishingPrinciples":"https://www.plancpills.org/about",
-      "logo":{"@type":"ImageObject","url":"https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/62df6a9a57f10071595acfc3_PLAN%20C_logo_mixed.svg"},
-      "sameAs": [
-        "https://en.wikipedia.org/wiki/Plan_C",
-        "https://www.facebook.com/plancpills",
-        "https://www.instagram.com/plancpills/",
-        "https://twitter.com/Plancpills",
-        "https://www.tiktok.com/@plancpills",
-        "https://www.linkedin.com/company/plancpills"
-        ]
-      },
-    "breadcrumb": {
-      "@type":"BreadcrumbList",
-      "@id":"https://www.plancpills.org/fund-pills#breadcrumb",
-      "name":"Breadcrumb for https://www.plancpills.org/fund-pills",
-      "itemListElement":[
-      {
-      "@type":"ListItem",
-      "position":1,
-      "item":"https://www.plancpills.org/",
-      "name":"Home"
-      },
-      {
-      "@type":"ListItem",
-      "position":2,
-      "item":"https://www.plancpills.org/fund-pills",
-      "name":"Abortion Funds"
-      }
-      ]
-      }
-    }
-
-    ]
-
-    }
+    discriminant: noco-with-alt
+    value:
+      image: US map hand pills green - Hero
+      highPriority: false
+  seoSchemas:
+    - basic-pages
+    - basic-breadcrumb
   es:
     title: Fondos para el aborto
     __title: lK+LDzlZkDgFdICNqtt16NB7loARjLZfH/DfajhSNio=
@@ -89,14 +22,13 @@ seo:
       quienes no pueden permitírselo. Una de las mayores barreras para el acceso
       a las píldoras abortivas por correo sigue siendo el coste.
     __description: Gap/eGidXZWADPlcORzvFxic6Kq3UWBiXPpGdz988h8=
+status: published
 es:
   title: Fondos para el aborto
   __title: h9J0bq954+yaOCnFfpGe2KqHLGXqEW0q3D0R07vlKiU=
-
 ---
-
 {% heroSection
-   image={discriminant: "one-off", value: {image: "/images/abortion-funds/us-map-hand-pills-green.png"}}
+   image={discriminant: "noco-with-alt", value: {image: "US map hand pills green - Hero", highPriority: false}}
    imageSide="right"
    color="beige"
    imageBackgroundColor="green"
@@ -107,7 +39,8 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 # Help fund abortion pill access by mail
 
 One of the biggest barriers to abortion pills by mail continues to be cost.
@@ -115,12 +48,13 @@ One of the biggest barriers to abortion pills by mail continues to be cost.
 These abortion funds are directly offsetting the costs of telehealth and other online services, for folks accessing abortion pills by mail from restricted states and across the US.
 {% /heroSection %}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% bodySection
    centered=false
    width="default"
    color="green"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## Abortion funds that need your support
 {% /bodySection %}
 
@@ -131,14 +65,16 @@ These abortion funds are directly offsetting the costs of telehealth and other o
    grow=false
    gap=2
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "abortion-funds_abortion-freedom-fund"}, {resource: "abortion-funds_access-ma"}, {resource: "abortion-funds_cobalt-fund"}, {resource: "abortion-funds_healthcare-across-borders"}, {resource: "abortion-funds_idaho-access"}, {resource: "abortion-funds_nwaaf"}, {resource: "abortion-funds_repro-hub"}]
    type={discriminant: "simple", value: 1}
    icon=""
    iconColor="green"
    hideHeaders=false
-   appendStateField="" /%}
+   buttonIconRight=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -146,6 +82,7 @@ These abortion funds are directly offsetting the costs of telehealth and other o
    title="Want to suggest a fund?"
    color="red"
    icon=""
-   link={label: "Email us", click: {discriminant: "mailto", value: "support@plancpills.org"}} %}
+   link={label: "Email us", click: {discriminant: "mailto", value: "support@plancpills.org"}}
+   _language="" %}
 If you know of an organization funding abortion pill access or shield law providers not mentioned here, let us know.
 {% /actionBanner %}
