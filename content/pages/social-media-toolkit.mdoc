@@ -214,6 +214,33 @@ Use the images and captions below to spread the word about Plan C. Be sure to fo
 {% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader color="cyan" title="Medical safety" icon="" _language="" /%}
 
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=0
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch"
+   _language="" %}
+{% faqSection
+   faq="suggested-caption_medical-safety"
+   color="beige"
+   embedded=false
+   anchor=false
+   _language="" /%}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=1
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch"
+   _language="" %}
+{% spacerComponent spacing="1rem" _language="" /%}
+
 {% cardLayoutSection color="beige" minColumnWidth=22 _language="" %}
 {% cardSection
    image={discriminant: "one-off", value: {image: "/images/social-media-toolkit/did-you-know-safe-effective.jpg", altText: "Abortion pills are just as safe and effective as going to a clinic", highPriority: false}}
@@ -248,6 +275,10 @@ Use the images and captions below to spread the word about Plan C. Be sure to fo
    mobileImageHorizontal="desktop"
    _language="" /%}
 {% /cardLayoutSection %}
+
+{% spacerComponent spacing="1rem" _language="" /%}
+{% /flexSection %}
+{% /flexSection %}
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false _language="" %}
