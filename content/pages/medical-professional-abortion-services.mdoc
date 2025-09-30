@@ -6,79 +6,13 @@ seo:
     Are you a medical professional? You can help provide at-home abortion pill
     access using our toolkit.
   image:
-    discriminant: ''
-  customSchema: >-
-    {"@context":"https://schema.org",
-
-    "@graph":[
-
-    {
-
-    "@type":"WebPage",
-
-    "@id":"https://www.plancpills.org/medical-professional-abortion-services#webpage",
-
-    "url":"https://www.plancpills.org/medical-professional-abortion-services",
-
-    "name":"Medical Professional | At-Home Abortion Services | Plan C",
-
-    "description":"Are you a medical professional? You can help provide at-home
-    abortion pill access using our toolkit.",
-
-    "inLanguage":"en-US",
-
-    "isPartOf":"https://www.plancpills.org/",
-
-    "potentialAction":{
-      "@type":"ReadAction",
-      "target":{
-        "@type":"EntryPoint",
-        "urlTemplate":"https://www.plancpills.org/medical-professional-abortion-services"
-        }
-      },
-    "publisher": {
-      "@type":"Organization",
-      "@id":"https://www.plancpills.org/#organization",
-      "url":"https://www.plancpills.org/",
-      "name":"Plan C",
-      "description":"Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.",
-      "foundingDate":"2015",
-      "brand":{"@type":"Brand","Name":"Plan C"},
-      "publishingPrinciples":"https://www.plancpills.org/about",
-      "logo":{"@type":"ImageObject","url":"https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/62df6a9a57f10071595acfc3_PLAN%20C_logo_mixed.svg"},
-      "sameAs": [
-        "https://en.wikipedia.org/wiki/Plan_C",
-        "https://www.facebook.com/plancpills",
-        "https://www.instagram.com/plancpills/",
-        "https://twitter.com/Plancpills",
-        "https://www.tiktok.com/@plancpills",
-        "https://www.linkedin.com/company/plancpills"
-        ]
-      },
-    "breadcrumb": {
-      "@type":"BreadcrumbList",
-      "@id":"https://www.plancpills.org/medical-professional-abortion-services#breadcrumb",
-      "name":"Breadcrumb for https://www.plancpills.org/medical-professional-abortion-services",
-      "itemListElement":[
-      {
-      "@type":"ListItem",
-      "position":1,
-      "item":"https://www.plancpills.org/",
-      "name":"Home"
-      },
-      {
-      "@type":"ListItem",
-      "position":2,
-      "item":"https://www.plancpills.org/medical-professional-abortion-services",
-      "name":"Medical Professional | At-Home Abortion Services | Plan C"
-      }
-      ]
-      }
-    }
-
-    ]
-
-    }
+    discriminant: noco-with-alt
+    value:
+      image: Doctor - Hero
+      highPriority: false
+  seoSchemas:
+    - basic-pages
+    - basic-breadcrumb
   es:
     title: Profesional médico | Servicios de aborto a domicilio | Plan C
     __title: TKOBm7ZDXgIUSGczKZZAeKjOXkNjyZtz9ZYg5fQF5Wk=
@@ -86,14 +20,13 @@ seo:
       ¿Es usted profesional de la medicina? Puedes ayudar a facilitar el acceso
       a la píldora abortiva en casa utilizando nuestro kit de herramientas.
     __description: x8Z/EqRF5sDegFQCp3hSYMbFZ0RlKHeIipjGmIUjylU=
+status: published
 es:
   title: Para los proveedores
   __title: EelzCR/xYGW4WfC6hW8BjMnRrqy0npFNiTLAScFGyJU=
-
 ---
-
 {% heroSection
-   image={discriminant: "url", value: "https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/5fae2b4887959b34f147b7df_doctor-hero.png"}
+   image={discriminant: "noco-with-alt", value: {image: "Doctor - Hero", highPriority: false}}
    imageSide="right"
    color="beige"
    imageBackgroundColor="cyan"
@@ -104,24 +37,30 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 # For medical professionals
 
-{% textSize textSize="medium" inline=false %}Over {% inlineLink action={discriminant: "external", value: {url: "https://www.guttmacher.org/2024/03/medication-abortion-accounted-63-all-us-abortions-2023-increase-53-2020", showPopup: false}} %}60%{% /inlineLink %} of abortions in the US are happening with abortion pills and approximately {% inlineLink action={discriminant: "external", value: {url: "https://societyfp.org/wp-content/uploads/2024/05/WeCount-report-6-May-2024-Dec-2023-data_Final.pdf", showPopup: false}} %}20%{% /inlineLink %} are via telehealth. &nbsp;As a healthcare provider, you may see patients who have self-managed an abortion, or are interested in accessing abortion pills by mail, and are looking for your care and support.{% /textSize %}
+{% textSize textSize="medium" inline=false _language="" %}Over {% inlineLink action={discriminant: "external", value: {url: "https://www.guttmacher.org/2024/03/medication-abortion-accounted-63-all-us-abortions-2023-increase-53-2020", showPopup: false}} _language="" %}60%{% /inlineLink %} of abortions in the US are happening with abortion pills and approximately {% inlineLink action={discriminant: "external", value: {url: "https://societyfp.org/wp-content/uploads/2024/05/WeCount-report-6-May-2024-Dec-2023-data_Final.pdf", showPopup: false}} _language="" %}20%{% /inlineLink %} are via telehealth. &nbsp;As a healthcare provider, you may see patients who have self-managed an abortion, or are interested in accessing abortion pills by mail, and are looking for your care and support.{% /textSize %}
 
-{% textSize textSize="medium" inline=false %}One of the most important things that abortion seekers need is accurate information. We have compiled this page to provide you with resources to offer your patients, information on how to begin offering abortion pills by mail, and links to additional provider resources.{% /textSize %}
+{% textSize textSize="medium" inline=false _language="" %}One of the most important things that abortion seekers need is accurate information. We have compiled this page to provide you with resources to offer your patients, information on how to begin offering abortion pills by mail, and links to additional provider resources.{% /textSize %}
 
-{% textSize textSize="medium" inline=false %}Plan C is a public health information campaign. We do not provide any medical services and are not hiring any clinicians, but we hope that this information will aid you in assisting your clients. If you currently have a telehealth service that offers abortion pills by mail that you would like to have considered for listing on the Plan C Guide, please fill out this {% inlineLink action={discriminant: "external", value: {url: "https://plancpills.org/request-listing", showPopup: false}} %}form{% /inlineLink %}.{% /textSize %}
+{% textSize textSize="medium" inline=false _language="" %}Plan C is a public health information campaign. We do not provide any medical services and are not hiring any clinicians, but we hope that this information will aid you in assisting your clients. If you currently have a telehealth service that offers abortion pills by mail that you would like to have considered for listing on the Plan C Guide, please fill out this {% inlineLink action={discriminant: "external", value: {url: "https://plancpills.org/request-listing", showPopup: false}} _language="" %}form{% /inlineLink %}.{% /textSize %}
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 {% /heroSection %}
 
 {% tocAnchor
    slug={name: "About telehealth abortion", slug: "about-telehealth-abortion"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="cyan" title="About teleheath abortion" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="cyan"
+   title="About teleheath abortion"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-col"
@@ -129,12 +68,14 @@ es:
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% bodySection
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 **If ever there was an opportunity for clinicians to help guarantee the basic human right to abortion, this is it.**&nbsp;
 
 Recently, there has been a wave of advocacy and support for deregulating and demedicalizing access to abortion pills. Policy makers, clinicians, and advocates have all been eager to broaden access to abortion pills, a modern and effective technology that can be safely accessed and used outside of a clinic setting with no in-person visit required.&nbsp;
@@ -156,10 +97,15 @@ Plan C collaborated with the University of Washington to develop a [Provider Too
 
 {% tocAnchor
    slug={name: "Resources for your patients", slug: "resources-for-your-patients"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="Resources for your patients" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="Resources for your patients"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-col"
@@ -167,24 +113,26 @@ Plan C collaborated with the University of Washington to develop a [Provider Too
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% bodySection
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 As a provider, you may see patients who need information on how to access abortion care, find resources like funding, legal, or emotional support, need pre- or post abortion care, or miscarriage treatment. Our duty as providers is to provide our patients with accurate information, respect, and support.
 
 Below you will find resources that you can provide to your patients to assist them in getting the care they need.
 
-{% insetSection %}
-- A printable sheet of {% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/abortion-resources", showPopup: false}} %}**reliable abortion resources**{% /inlineLink %}, including information on digital security, legal support, emotional support, and more
-- **Information on {% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/abortion-pills/how-to-take-abortion-pills", showPopup: false}} %}how to take abortion pills{% /inlineLink %}**
+{% insetSection _language="" %}
+- A printable sheet of {% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/abortion-resources", showPopup: false}} _language="" %}**reliable abortion resources**{% /inlineLink %}, including information on digital security, legal support, emotional support, and more
+- **Information on {% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/abortion-pills/how-to-take-abortion-pills", showPopup: false}} _language="" %}how to take abortion pills{% /inlineLink %}**
 - **Information about how to access abortion:**
-  - ‍{% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/", showPopup: false}} %}Plan C’s Guide{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "http://ineedana.com/", showPopup: false}} %}‍{% /inlineLink %}
-  - {% inlineLink action={discriminant: "external", value: {url: "http://ineedana.com/", showPopup: false}} %}Ineedana.com{% /inlineLink %}‍
-- **Information on financial assistance:** {% inlineLink action={discriminant: "external", value: {url: "https://abortionfunds.org/find-a-fund/", showPopup: false}} %}‍National Network of Abortion Funds{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://www.periodpills.org/", showPopup: false}} %}‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "external", value: {url: "https://www.periodpills.org/", showPopup: false}} %}**Period Pills**{% /inlineLink %}
+  - ‍{% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/", showPopup: false}} _language="" %}Plan C’s Guide{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "http://ineedana.com/", showPopup: false}} _language="" %}‍{% /inlineLink %}
+  - {% inlineLink action={discriminant: "external", value: {url: "http://ineedana.com/", showPopup: false}} _language="" %}Ineedana.com{% /inlineLink %}‍
+- **Information on financial assistance:** {% inlineLink action={discriminant: "external", value: {url: "https://abortionfunds.org/find-a-fund/", showPopup: false}} _language="" %}‍National Network of Abortion Funds{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://www.periodpills.org/", showPopup: false}} _language="" %}‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://www.periodpills.org/", showPopup: false}} _language="" %}**Period Pills**{% /inlineLink %}
 {% /insetSection %}
 
 You can help your patients understand that access to abortion pills by mail is available in all US states and territories through:
@@ -194,19 +142,24 @@ You can help your patients understand that access to abortion pills by mail is a
 - Online vendors ($70+)
 - Community networks (free)
 
-Learn more about these options on {% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/", showPopup: false}} %}Plan C’s Guide{% /inlineLink %} and {% inlineLink action={discriminant: "external", value: {url: "https://www.ineedana.com/", showPopup: false}} %}ineedana.com{% /inlineLink %}.
+Learn more about these options on {% inlineLink action={discriminant: "external", value: {url: "https://www.plancpills.org/", showPopup: false}} _language="" %}Plan C’s Guide{% /inlineLink %} and {% inlineLink action={discriminant: "external", value: {url: "https://www.ineedana.com/", showPopup: false}} _language="" %}ineedana.com{% /inlineLink %}.
 
-For more information about medical, legal, and emotional support resources for abortion seekers, visit our {% inlineLink action={discriminant: "external", value: {url: "/support-resources", showPopup: false}} %}Support & resources{% /inlineLink %} page.
+For more information about medical, legal, and emotional support resources for abortion seekers, visit our {% inlineLink action={discriminant: "external", value: {url: "/support-resources", showPopup: false}} _language="" %}Support & resources{% /inlineLink %} page.
 {% /bodySection %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Resources for providers", slug: "resources-for-providers"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Resources for providers" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="pink"
+   title="Resources for providers"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-col"
@@ -215,28 +168,31 @@ For more information about medical, legal, and emotional support resources for a
    grow=false
    gap=0.25
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% bodySection
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ### Professional organizations
 
-- {% inlineLink action={discriminant: "external", value: {url: "https://prochoice.org/", showPopup: false}} %}National Abortion Federation{% /inlineLink %}
-  - {% inlineLink action={discriminant: "external", value: {url: "https://prochoice.org/providers/ciac/", showPopup: false}} %}Clinicians in Abortion Care{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://societyfp.org/", showPopup: false}} %}‍{% /inlineLink %}
-- ‍{% inlineLink action={discriminant: "external", value: {url: "https://societyfp.org/", showPopup: false}} %}Society for Family Planning{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://abortioncarenetwork.org/", showPopup: false}} %}‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "external", value: {url: "https://abortioncarenetwork.org/", showPopup: false}} %}Abortion Care Network{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://nsrh.org/", showPopup: false}} %}‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "external", value: {url: "https://nsrh.org/", showPopup: false}} %}Nurses for Sexual and Reproductive Health{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://msfc.org/", showPopup: false}} %}‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "external", value: {url: "https://msfc.org/", showPopup: false}} %}Medical Students for Choice{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://prh.org/", showPopup: false}} %}‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "external", value: {url: "https://prh.org/", showPopup: false}} %}Physicians for Reproductive Health{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://prochoice.org/", showPopup: false}} _language="" %}National Abortion Federation{% /inlineLink %}
+  - {% inlineLink action={discriminant: "external", value: {url: "https://prochoice.org/providers/ciac/", showPopup: false}} _language="" %}Clinicians in Abortion Care{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://societyfp.org/", showPopup: false}} _language="" %}‍{% /inlineLink %}
+- ‍{% inlineLink action={discriminant: "external", value: {url: "https://societyfp.org/", showPopup: false}} _language="" %}Society for Family Planning{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://abortioncarenetwork.org/", showPopup: false}} _language="" %}‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://abortioncarenetwork.org/", showPopup: false}} _language="" %}Abortion Care Network{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://nsrh.org/", showPopup: false}} _language="" %}‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://nsrh.org/", showPopup: false}} _language="" %}Nurses for Sexual and Reproductive Health{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://msfc.org/", showPopup: false}} _language="" %}‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://msfc.org/", showPopup: false}} _language="" %}Medical Students for Choice{% /inlineLink %}{% inlineLink action={discriminant: "external", value: {url: "https://prh.org/", showPopup: false}} _language="" %}‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "external", value: {url: "https://prh.org/", showPopup: false}} _language="" %}Physicians for Reproductive Health{% /inlineLink %}
 {% /bodySection %}
 
 {% bodySection
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ### **Education and training opportunities**
 
 - [Abortion Provider Toolkit](https://aptoolkit.org/)
@@ -256,7 +212,8 @@ For more information about medical, legal, and emotional support resources for a
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ### **Information and advocacy**
 
 - [Abortion Coalition for Telemedicine](https://www.theactgroup.org/)
@@ -273,7 +230,8 @@ For more information about medical, legal, and emotional support resources for a
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ### **Research**
 
 - [Advancing New Standards In Reproductive Health (ANSIRH)](https://www.ansirh.org/)
@@ -286,7 +244,8 @@ For more information about medical, legal, and emotional support resources for a
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ### **Legal**
 
 - [Abortion Defense Network](https://abortiondefensenetwork.org/)
@@ -302,7 +261,8 @@ For more information about medical, legal, and emotional support resources for a
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ### **Job opportunities**
 
 - [Clinical Abortion Staffing Solutions](https://prochoice.org/providers/cass/)
@@ -313,16 +273,22 @@ For more information about medical, legal, and emotional support resources for a
 
 {% tocAnchor
    slug={name: "Important articles", slug: "important-articles"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Important articles" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="blue"
+   title="Important articles"
+   icon=""
+   _language="" /%}
 
 {% bodySection
    centered=false
    width="default"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 - [Effectiveness of self-managed medication abortion with accompaniment support in Argentina and Nigeria (SAFE): a prospective, observational cohort study and non-inferiority analysis with historical controls](https://www.thelancet.com/journals/langlo/article/PIIS2214-109X\(21\)00461-7/fulltext)
 - [Effectiveness and safety of telehealth medication abortion in the USA](https://www.nature.com/articles/s41591-024-02834-w)
 - [Factors associated with successful implementation of telehealth abortion in 4 United States clinical practice settings](https://pubmed.ncbi.nlm.nih.gov/33932401/)
@@ -341,13 +307,15 @@ For more information about medical, legal, and emotional support resources for a
 
 {% tocAnchor
    slug={name: "Contact us", slug: "contact-us"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
 {% bodySection
    centered=false
    width="medium"
    color="beige"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## Contact us
 
 If you have questions related to offering abortion pills by mail or how best to support your patients, submit the contact form below.
@@ -356,34 +324,39 @@ If you have questions related to offering abortion pills by mail or how best to 
    icon="circleAlert"
    color="beige"
    iconAlign="items-start"
-   fullWidth=false %}
-If you currently have a telehealth service that offers abortion pills by mail that you would like to have considered for listing on the Plan C Guide, please {% inlineLink action={discriminant: "external", value: {url: "https://share.hsforms.com/1YdjE_bD3SFiuT56GuQglNA585xn", showPopup: false}} %}request a listing{% /inlineLink %} instead.
+   fullWidth=false
+   _language="" %}
+If you currently have a telehealth service that offers abortion pills by mail that you would like to have considered for listing on the Plan C Guide, please {% inlineLink action={discriminant: "external", value: {url: "https://share.hsforms.com/1YdjE_bD3SFiuT56GuQglNA585xn", showPopup: false}} _language="" %}request a listing{% /inlineLink %} instead.
 {% /narrowBanner %}
 
 {% formWrapper
    formType={discriminant: "hubspot", value: {formId: "d6755f59-be99-4001-a5e3-0f638f84421e", invisibleFields: [{id: "webform_subject", value: {discriminant: "text", value: "I am a medical provider"}}, {id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: false}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}}
-   afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
+   afterSubmit="show-screens"
+   _language="" %}
+{% formSection type="waiting" _language="" %}
 {% formInput
-   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organization", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Message", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] /%}
+   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organization", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Message", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}]
+   _language="" /%}
 {% /formSection %}
 
-{% formSection type="success" %}
+{% formSection type="success" _language="" %}
 {% narrowBanner
    icon=""
    color="beige"
    iconAlign="items-center"
-   fullWidth=false %}
+   fullWidth=false
+   _language="" %}
 Thanks, your information was received.
 {% /narrowBanner %}
 {% /formSection %}
 
-{% formSection type="submitted" %}
+{% formSection type="submitted" _language="" %}
 {% narrowBanner
    icon=""
    color="beige"
    iconAlign="items-center"
-   fullWidth=false %}
+   fullWidth=false
+   _language="" %}
 Submitting...
 {% /narrowBanner %}
 {% /formSection %}
