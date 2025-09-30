@@ -1,0 +1,23 @@
+{% bodySection centered=false width="narrow" color="pink" textSize="medium" _language="" %}
+## ¿Quieres estar al día de las noticias sobre la píldora abortiva?
+
+Suscríbase a nuestro boletín para recibir directamente en su bandeja de entrada las últimas actualizaciones y oportunidades para pasar a la acción.
+
+{% formWrapper formType={discriminant: "hubspot", value: {formId: "4ea4d330-d054-4777-8f07-8b3a99297a91", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}} afterSubmit="show-screens" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% formInput fields=[{label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Tu correo electrónico", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] _language="" /%}
+{% /formSection %}
+
+{% formSection type="submitted" _language="" %}
+{% narrowBanner icon="" color="beige" iconAlign="items-center" fullWidth=false _language="" %}
+Por favor, espere...
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="success" _language="" %}
+{% narrowBanner icon="check" color="beige" iconAlign="items-center" fullWidth=false _language="" %}
+Gracias. Su información ha sido recibida.
+{% /narrowBanner %}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}

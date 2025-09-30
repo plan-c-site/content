@@ -36,6 +36,9 @@ clinicTypes:
       value:
         howManyPillsPopup: pill-examples-online-clinics
         howManyPillsLabel: What do the pills look like?
+        es:
+          howManyPillsLabel: ¿Qué aspecto tienen las pastillas?
+          __howManyPillsLabel: pg9VAICunqM3q7eszCDzVOrAKGgz62ALc6N8pGRnH5Y=
     es:
       label: Clínicas en línea con sede en EE.UU.
       __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
@@ -147,9 +150,21 @@ clinicTypes:
     icon: hospital
     labels:
       - label: Pricing varies
+        es:
+          label: Los precios varían
+          __label: QSva/7KZG6mPHtQ80cwGzAoQ2fx9Ctq4IsqKW3mtuJo=
       - label: Pick-up
+        es:
+          label: Recogida
+          __label: UyZZYP3tyd6z2s8pp4xssEKOHWBTFBsarJ/WJsqLPdQ=
       - label: FDA-approved
+        es:
+          label: Aprobado por la FDA
+          __label: CYBqONC2yqBTl2hmjxKWURS9Tq+hpw7y8z9OyikHB7I=
       - label: Medical support
+        es:
+          label: Asistencia médica
+          __label: //U8H6EehYV7ubJvO6O3yhyHiEOnM34LbHqyfD5HP0I=
     isLink:
       discriminant: true
       value:
@@ -160,7 +175,9 @@ clinicTypes:
       discriminant: false
     es:
       label: Clínicas presenciales
-      __label: STBwPfn7HrFoyoTBiSIYHUl6ZOI1+y+hwTdrC7r0DrA=
+      __label: 09YiIvToz5OzuolzkhimOqY9vPaaikrV3waOa2r6jhQ=
+      singular: Clínica presencial
+      __singular: MHa1yMjUFGF7MFjAuIb36stfLihNnMbIWYSsJ+20C5o=
 filterFields:
   - field: Financial aid
     label: Financial Assistance

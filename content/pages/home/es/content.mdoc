@@ -2,7 +2,7 @@
 
 {% tocAnchor slug={name: "Búsqueda por estado", slug: "search-by-state"} type={discriminant: "anchor"} _language="" /%}
 
-{% heroSection image={discriminant: "noco-with-alt", value: {image: "Mailbox - Hero", altText: "Override"}} imageSide="right" color="blue" imageBackgroundColor="blue" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-bottom" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=true _language="" %}
+{% heroSection image={discriminant: "noco-with-alt", value: {image: "Mailbox - Hero", altText: "Override", highPriority: true}} imageSide="right" color="blue" imageBackgroundColor="blue" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-bottom" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=true _language="" %}
 # Píldoras abortivas por correo en todos los estados.
 
 Plan C ofrece información sobre el acceso en línea a píldoras abortivas para abortar en casa de forma segura.
@@ -42,7 +42,7 @@ Obtenga asistencia telefónica y por SMS de expertos que pueden ayudarle.
 {% /sectionHeader %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=false _language="" /%}
+{% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=false buttonIconRight=false _language="" /%}
 
 {% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
 {% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}Ver todas las ayudas{% /inlineLink %}
@@ -63,15 +63,15 @@ Cuando mencionamos "Guía", nos referimos a un recurso que enumera los servicios
 {% tocAnchor slug={name: "prueba", slug: "test"} type={discriminant: "toc"} _language="" /%}
 
 {% cardLayoutSection color="beige" _language="" %}
-{% cardSection image={discriminant: "one-off", value: {image: "/images/home/pill-packs.png"}} imageOnly=false title="¿Píldoras abortivas por adelantado?" action={discriminant: "internal", value: {page: "in-advance"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
+{% cardSection image={discriminant: "one-off", value: {image: "/images/home/pill-packs.png", highPriority: false}} imageOnly=false title="¿Píldoras abortivas por adelantado?" action={discriminant: "internal", value: {page: "in-advance"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
 Algunas personas encargan píldoras abortivas con antelación, por si acaso.
 {% /cardSection %}
 
-{% cardSection image={discriminant: "noco-with-alt", value: {image: "Stickers - Hero"}} imageOnly=false title="Consigue pegatinas gratis" action={discriminant: "internal", value: {page: "stickers"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
+{% cardSection image={discriminant: "noco-with-alt", value: {image: "Stickers - Hero", highPriority: false}} imageOnly=false title="Consigue pegatinas gratis" action={discriminant: "internal", value: {page: "stickers"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
 Consigue gratis adhesivos con el código QR del Plan C y ayuda a difundir el acceso a la píldora abortiva
 {% /cardSection %}
 
-{% cardSection image={discriminant: "noco-with-alt", value: {image: "Megaphone - Hero"}} imageOnly=false title="Únase a la Comunidad Plan C" action={discriminant: "internal", value: {page: "community"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
+{% cardSection image={discriminant: "noco-with-alt", value: {image: "Megaphone - Hero", highPriority: false}} imageOnly=false title="Únase a la Comunidad Plan C" action={discriminant: "internal", value: {page: "community"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
 Un grupo de activistas y defensores que actúan en sus comunidades.
 {% /cardSection %}
 {% /cardLayoutSection %}
@@ -93,27 +93,3 @@ Desde 2016, nuestra misión ha sido investigar el acceso a la píldora abortiva 
 {% inContentButton label="Acerca del Plan C" icon="" size="primary" background="cyan" altHoverBackground="" smallShadow=false rightIcon=true action={discriminant: "internal", value: {page: "about"}} _language="" /%}
 {% /bodySection %}
 {% /horizontalSplit %}
-
-{% bodySection centered=false width="narrow" color="pink" textSize="medium" _language="" %}
-## ¿Quieres estar al día de las noticias sobre la píldora abortiva?
-
-Suscríbase a nuestro boletín para recibir directamente en su bandeja de entrada las últimas actualizaciones y oportunidades para pasar a la acción.
-
-{% formWrapper formType={discriminant: "hubspot", value: {formId: "4ea4d330-d054-4777-8f07-8b3a99297a91", invisibleFields: [{id: "add_me_to_the_newsletter_list", value: {discriminant: "checkbox", value: true}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}} afterSubmit="show-screens" _language="" %}
-{% formSection type="waiting" _language="" %}
-{% formInput fields=[{label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Tu correo electrónico", multiline: false, embedSubmitButton: {discriminant: true, value: {icon: "arrowRight", background: "slate", altHoverBackground: "", autoSubmit: false}}}}}] _language="" /%}
-{% /formSection %}
-
-{% formSection type="submitted" _language="" %}
-{% narrowBanner icon="" color="beige" iconAlign="items-center" fullWidth=false _language="" %}
-Por favor, espere...
-{% /narrowBanner %}
-{% /formSection %}
-
-{% formSection type="success" _language="" %}
-{% narrowBanner icon="check" color="beige" iconAlign="items-center" fullWidth=false _language="" %}
-Gracias. Su información ha sido recibida.
-{% /narrowBanner %}
-{% /formSection %}
-{% /formWrapper %}
-{% /bodySection %}

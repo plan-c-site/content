@@ -24,7 +24,7 @@ Las clínicas de aborto presenciales suelen ofrecer tanto píldoras abortivas co
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceItem resource="i-need-an-a" header={discriminant: "override", value: "Encontrar la clínica más cercana"} type={discriminant: "block", value: {icon: "", iconColor: "grey"}} _language="" /%}
+{% resourceItem resource="i-need-an-a" header={discriminant: "override", value: "Encontrar la clínica más cercana"} type={discriminant: "block", value: {icon: "", iconColor: "grey", buttonIconRight: false}} overrideWebsite={discriminant: ""} overrideAction={discriminant: false} _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -54,7 +54,7 @@ Las clínicas de aborto presenciales suelen ofrecer tanto píldoras abortivas co
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=false _language="" /%}
+{% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=false buttonIconRight=false _language="" /%}
 
 {% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
 {% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}Ver todas las ayudas{% /inlineLink %}
