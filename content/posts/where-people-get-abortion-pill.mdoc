@@ -360,3 +360,41 @@ AccessMA asks that for the individual’s safety and the providers' safety, the 
    anchor=false
    _language="" /%}
 {% /bodySection %}
+
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="Hotlines & support"
+   icon=""
+   _language="" %}
+Get live phone and text support from caring experts who can help.
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch"
+   _language="" %}
+{% resourceList
+   resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="green"
+   hideHeaders=false
+   buttonIconRight=false
+   _language="" /%}
+
+{% narrowBanner
+   icon="arrowRight"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true
+   _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}See all support{% /inlineLink %}
+{% /narrowBanner %}
+{% /flexSection %}
+{% /horizontalSplit %}
