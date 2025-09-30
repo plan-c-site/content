@@ -6,7 +6,13 @@ seo:
     Information about the film "PLAN C", a documentary about abortion pill
     access in the U.S., premiering at the 2023 Sundance FIlm Festival and SXSW.
   image:
-    discriminant: ''
+    discriminant: noco-with-alt
+    value:
+      image: Documentary - Hero
+      highPriority: false
+  seoSchemas:
+    - basic-pages
+    - basic-breadcrumb
   es:
     title: Plan C | Un documental de Tracy Droz Tragos
     __title: oCFdPvwA4Ttw1rKotsKmFy1gdr5H9seY5L+FSTYrZAI=
@@ -15,14 +21,13 @@ seo:
       píldora abortiva en Estados Unidos, que se estrenará en el Festival de
       Cine de Sundance 2023 y en SXSW.
     __description: tz2B7eOJYtrlY8KyMFZEPyJxx9V5FzR8R9b46F4fjmg=
+status: published
 es:
   title: Documental
   __title: Q/H8I5CkQHgf/BNZ4U7Lg4m/qvgxm74J8pGjhy6km7k=
-
 ---
-
 {% heroSection
-   image={discriminant: "noco", value: "Documentary - Hero"}
+   image={discriminant: "noco-with-alt", value: {image: "Documentary - Hero", highPriority: false}}
    imageSide="right"
    color="beige"
    imageBackgroundColor="beige"
@@ -33,30 +38,41 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 # Plan C: The documentary
 
 Shot by award-winning filmmaker Tracy Droz Tragos, PLAN C is a documentary capturing the work of the Plan C campaign and the work of activists and providers who began to mail abortion pills, during the pandemic, and in the face of crumbling reproductive rights and access across the US.
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 {% /heroSection %}
 
 {% tocAnchor
    slug={name: "Watch the trailer", slug: "watch-the-trailer"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Watch the trailer" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="blue"
+   title="Watch the trailer"
+   icon=""
+   _language="" /%}
 
-{% youtubeEmbed videoId="PpWvZ1KWqf4" startAt=0 /%}
+{% youtubeEmbed videoId="PpWvZ1KWqf4" startAt=0 _language="" /%}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "How to host a screening", slug: "how-to-host-a-screening"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="How to host a screening" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="How to host a screening"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-col"
@@ -65,13 +81,15 @@ Shot by award-winning filmmaker Tracy Droz Tragos, PLAN C is a documentary captu
    grow=false
    gap=2
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% toDoSection
    color="beige"
    number=1
    numberBackgroundColor="green"
    title="Choose an audience"
-   image={discriminant: ""} %}
+   image={discriminant: ""}
+   _language="" %}
 Gather a group of people you want to engage in conversation and potential action around abortion access.  This can include:
 
 - Friends
@@ -85,10 +103,11 @@ Gather a group of people you want to engage in conversation and potential action
    number=2
    numberBackgroundColor="blue"
    title="Choose a viewing experience"
-   image={discriminant: ""} %}
+   image={discriminant: ""}
+   _language="" %}
 You can host an in-person or virtual screening. Tailor the event to fit your comfort and accessibility needs.
 
-- Find a streaming service here: {% inlineLink action={discriminant: "external", value: {url: "https://plancmovie.com/watch", showPopup: false}} %}https://plancmovie.com/watch{% /inlineLink %}
+- Find a streaming service here: {% inlineLink action={discriminant: "external", value: {url: "https://plancmovie.com/watch", showPopup: false}} _language="" %}https://plancmovie.com/watch{% /inlineLink %}
 - For a broader audience you can host a screening at a local theater or on your campus. Read this helpful guide if you are considering a larger event.
 {% /toDoSection %}
 
@@ -97,13 +116,14 @@ You can host an in-person or virtual screening. Tailor the event to fit your com
    number=3
    numberBackgroundColor="cyan"
    title="Send invitations"
-   image={discriminant: ""} %}
+   image={discriminant: ""}
+   _language="" %}
 Ask for RSVPs so you know how many people to expect. You can use one of our email templates and make it your own.
 
 **Email templates:**
 
-- {% inlineLink action={discriminant: ""} %}House screening invitation{% /inlineLink %}
-- {% inlineLink action={discriminant: ""} %}Community / campus invitation{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}House screening invitation{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}Community / campus invitation{% /inlineLink %}
 {% /toDoSection %}
 
 {% toDoSection
@@ -111,14 +131,15 @@ Ask for RSVPs so you know how many people to expect. You can use one of our emai
    number=4
    numberBackgroundColor="red"
    title="Prepare discussion materials"
-   image={discriminant: ""} %}
-Download the PLAN C documentary {% inlineLink action={discriminant: ""} %}discussion guide{% /inlineLink %} to support your group’s conversation. You can also review the {% inlineLink action={discriminant: ""} %}Plan C FAQs{% /inlineLink %}, and these abortion access resources:
+   image={discriminant: ""}
+   _language="" %}
+Download the PLAN C documentary {% inlineLink action={discriminant: ""} _language="" %}discussion guide{% /inlineLink %} to support your group’s conversation. You can also review the {% inlineLink action={discriminant: ""} _language="" %}Plan C FAQs{% /inlineLink %}, and these abortion access resources:
 
-- {% inlineLink action={discriminant: ""} %}M+A Hotline{% /inlineLink %}
-- {% inlineLink action={discriminant: ""} %}Repro Legal Helpline{% /inlineLink %}
-- {% inlineLink action={discriminant: ""} %}I Need An A{% /inlineLink %}
-- {% inlineLink action={discriminant: ""} %}Reprocare{% /inlineLink %}
-- {% inlineLink action={discriminant: ""} %}Shout Your Abortion{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}M+A Hotline{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}Repro Legal Helpline{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}I Need An A{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}Reprocare{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}Shout Your Abortion{% /inlineLink %}
 {% /toDoSection %}
 
 {% toDoSection
@@ -126,34 +147,39 @@ Download the PLAN C documentary {% inlineLink action={discriminant: ""} %}discus
    number=5
    numberBackgroundColor="pink"
    title="Join the movement"
-   image={discriminant: ""} %}
+   image={discriminant: ""}
+   _language="" %}
 Invite your guests to take their involvement to the next level:
 
-- {% inlineLink action={discriminant: ""} %}Learn about the Plan C Community{% /inlineLink %}
-- {% inlineLink action={discriminant: ""} %}Join the Plan C Community Discord channel{% /inlineLink %}
-- {% inlineLink action={discriminant: ""} %}Get free Plan C stickers{% /inlineLink %}
-- {% inlineLink action={discriminant: ""} %}More ways to take action{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}Learn about the Plan C Community{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}Join the Plan C Community Discord channel{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}Get free Plan C stickers{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}More ways to take action{% /inlineLink %}
 {% /toDoSection %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Official website", slug: "official-website"}
-   type={discriminant: "action", value: {discriminant: "external", value: {url: "https://plancmovie.com/", showPopup: false}}} /%}
+   type={discriminant: "action", value: {discriminant: "external", value: {url: "https://plancmovie.com/", showPopup: false}}}
+   _language="" /%}
 
 {% tocAnchor
    slug={name: "Current screenings", slug: "current-screenings"}
-   type={discriminant: "action", value: {discriminant: "external", value: {showPopup: false}}} /%}
+   type={discriminant: "action", value: {discriminant: "external", value: {showPopup: false}}}
+   _language="" /%}
 
 {% tocAnchor
    slug={name: "Get free stickers", slug: "get-free-stickers"}
-   type={discriminant: "action", value: {discriminant: "internal", value: {page: "stickers"}}} /%}
+   type={discriminant: "action", value: {discriminant: "internal", value: {page: "stickers"}}}
+   _language="" /%}
 
 {% tocAnchor
    slug={name: "External links", slug: "external-links"}
-   type={discriminant: "anchor"} /%}
+   type={discriminant: "anchor"}
+   _language="" /%}
 
-{% cardLayoutSection color="beige" minColumnWidth=23 %}
+{% cardLayoutSection color="beige" minColumnWidth=23 _language="" %}
 {% cardSection
    image={discriminant: "noco", value: "Documentary - Hero"}
    imageOnly=false
@@ -163,12 +189,13 @@ Invite your guests to take their involvement to the next level:
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" %}
+   mobileImageHorizontal="desktop"
+   _language="" %}
 Learn more about the PLAN C documentary released in 2023, find the film on streaming platforms and download a toolkit.
 {% /cardSection %}
 
 {% cardSection
-   image={discriminant: "one-off", value: {image: "/images/documentary/documentary-screenings.jpg"}}
+   image={discriminant: "one-off", value: {image: "/images/documentary/documentary-screenings.jpg", highPriority: false}}
    imageOnly=false
    title="Current screenings"
    action={discriminant: "external", value: {url: "https://plancmovie.com/screenings", showPopup: false}}
@@ -176,7 +203,8 @@ Learn more about the PLAN C documentary released in 2023, find the film on strea
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" %}
+   mobileImageHorizontal="desktop"
+   _language="" %}
 Learn more about screening the film in classroom or nonprofit settings, or stream the film online.
 {% /cardSection %}
 
@@ -189,7 +217,8 @@ Learn more about screening the film in classroom or nonprofit settings, or strea
    imageVertical="bg-center"
    imageHorizontal="center"
    mobileImageVertical="desktop"
-   mobileImageHorizontal="desktop" %}
+   mobileImageHorizontal="desktop"
+   _language="" %}
 Ready to take action? Order stickers and share information in your community.
 {% /cardSection %}
 {% /cardLayoutSection %}
