@@ -6,79 +6,13 @@ seo:
     If you have any questions that are not answered on our website, please reach
     out. Get free text + phone support.
   image:
-    discriminant: ''
-  customSchema: >-
-    {"@context":"https://schema.org",
-
-    "@graph":[
-
-    {
-
-    "@type":"WebPage",
-
-    "@id":"https://www.plancpills.org/contact#webpage",
-
-    "url":"https://www.plancpills.org/contact",
-
-    "name":"Contact Us | Plan C",
-
-    "description":"If you have any questions that are not answered on our
-    website, please reach out. Get free text + phone support.",
-
-    "inLanguage":"en-US",
-
-    "isPartOf":"https://www.plancpills.org/",
-
-    "potentialAction":{
-      "@type":"ReadAction",
-      "target":{
-        "@type":"EntryPoint",
-        "urlTemplate":"https://www.plancpills.org/contact"
-        }
-      },
-    "publisher": {
-      "@type":"Organization",
-      "@id":"https://www.plancpills.org/#organization",
-      "url":"https://www.plancpills.org/",
-      "name":"Plan C",
-      "description":"Plan C provides up-to-date information on how people in the U.S. are accessing at-home abortion pill options online.",
-      "foundingDate":"2015",
-      "brand":{"@type":"Brand","Name":"Plan C"},
-      "publishingPrinciples":"https://www.plancpills.org/about",
-      "logo":{"@type":"ImageObject","url":"https://cdn.prod.website-files.com/5f7e0692875fa8243cac6673/62df6a9a57f10071595acfc3_PLAN%20C_logo_mixed.svg"},
-      "sameAs": [
-        "https://en.wikipedia.org/wiki/Plan_C",
-        "https://www.facebook.com/plancpills",
-        "https://www.instagram.com/plancpills/",
-        "https://twitter.com/Plancpills",
-        "https://www.tiktok.com/@plancpills",
-        "https://www.linkedin.com/company/plancpills"
-        ]
-      },
-    "breadcrumb": {
-      "@type":"BreadcrumbList",
-      "@id":"https://www.plancpills.org/contact#breadcrumb",
-      "name":"Breadcrumb for https://www.plancpills.org/contact",
-      "itemListElement":[
-      {
-      "@type":"ListItem",
-      "position":1,
-      "item":"https://www.plancpills.org/",
-      "name":"Home"
-      },
-      {
-      "@type":"ListItem",
-      "position":2,
-      "item":"https://www.plancpills.org/contact",
-      "name":"Contact Us | Plan C"
-      }
-      ]
-      }
-    }
-
-    ]
-
-    }
+    discriminant: noco-with-alt
+    value:
+      image: Plan C Squiggle Crop svg
+      highPriority: false
+  seoSchemas:
+    - basic-pages
+    - basic-breadcrumb
   es:
     title: Contacto | Plan C
     __title: 8ciejDOD1Zyln19yS2B7zRPdZmgBPKtAXt4hNEr4Pzo=
@@ -86,14 +20,13 @@ seo:
       Si tiene alguna pregunta que no se responda en nuestro sitio web, póngase
       en contacto con nosotros. Obtén asistencia gratuita por teléfono y SMS.
     __description: n0VQRBSnT3ENb8cQKiL2GC6eL2W03qtbRrWC1xsVXRQ=
+status: published
 es:
   title: Póngase en contacto con
   __title: K1w9JnIa6cNQzzAJMYtibw/IqQtKKsDKgJnAWqhJKC4=
-
 ---
-
 {% heroSection
-   image={discriminant: "noco", value: "Plan C Squiggle Crop svg"}
+   image={discriminant: "noco-with-alt", value: {image: "Plan C Squiggle Crop svg", highPriority: false}}
    imageSide="right"
    color="beige"
    imageBackgroundColor="blue"
@@ -104,7 +37,8 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 # Contact us
 
 **We do not respond to requests for pills.** We do not provide support via email, social media or phone. For other inquiries please use the links below.
@@ -113,16 +47,18 @@ es:
    icon="pill"
    color="beige"
    iconAlign="items-start"
-   fullWidth=false %}
-{% textSize textSize="medium" inline=false %}If you need information about abortion pills please read our {% inlineLink action={discriminant: "home", value: {}} %}Guide to Abortion Pills{% /inlineLink %}.{% /textSize %}
+   fullWidth=false
+   _language="" %}
+{% textSize textSize="medium" inline=false _language="" %}If you need information about abortion pills please read our {% inlineLink action={discriminant: "home", value: {}} _language="" %}Guide to Abortion Pills{% /inlineLink %}.{% /textSize %}
 {% /narrowBanner %}
 
 {% narrowBanner
    icon="stethoscope"
    color="beige"
    iconAlign="items-start"
-   fullWidth=false %}
-{% textSize textSize="medium" inline=false %}If you need medical or legal support, visit our {% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} %}Support & Resources{% /inlineLink %} page.{% /textSize %}
+   fullWidth=false
+   _language="" %}
+{% textSize textSize="medium" inline=false _language="" %}If you need medical or legal support, visit our {% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}Support & Resources{% /inlineLink %} page.{% /textSize %}
 {% /narrowBanner %}
 {% /heroSection %}
 
@@ -130,7 +66,8 @@ es:
    centered=false
    width="default"
    color="red"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## Please note:
 
 - **We do not provide pills or sell products.**
@@ -142,11 +79,12 @@ Plan C is not affiliated with any of the services listed in our directory. For q
 If you have a question not answered by our site’s&nbsp;FAQ&nbsp;or internal pages, get in touch below.
 {% /bodySection %}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader
    color="green"
    title="What are you contacting us about?"
-   icon="" /%}
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-col"
@@ -155,11 +93,12 @@ If you have a question not answered by our site’s&nbsp;FAQ&nbsp;or internal pa
    grow=false
    gap=2
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% faqList
    faqs=["contact_press-requests", "contact_advocacy-or-partnership", "contact_i-am-a-medical-provider", "contact_the-plan-c-community", "contact_a-donation-or-grant", "contact_i-need-medical-or-legal-support", "contact_i-have-a-complaint-about-a-pill-supplier", "contact_i-have-technical-feedback-about-this-website", "contact_something-else"]
    color="beige"
-   appendStateField=""
-   anchor=false /%}
+   anchor=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
