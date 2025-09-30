@@ -7,6 +7,9 @@ seo:
     case.
   image:
     discriminant: ''
+  seoSchemas:
+    - basic-pages
+    - basic-breadcrumb
   es:
     title: Plan C | Consiga pastillas por adelantado
     __title: oQy/eXVQz4cG6mDEYGPzHDNl7OhIcqSomt+QCBZLRgA=
@@ -14,14 +17,13 @@ seo:
       Aprenda a conseguir píldoras abortivas por correo con antelación, para
       tenerlas a mano por si acaso.
     __description: tWZxxgI6X3dNABGN9uamdeu88+/swBFFCmAy6IEB5+k=
+status: published
 es:
   title: Pastillas por adelantado
   __title: JeAz5CfbZ0IV5WZuhQCIx2Fqgf9jDSNTgCnMqTFCkps=
-
 ---
-
 {% heroSection
-   image={discriminant: "noco", value: "Medicine cabinet - Hero"}
+   image={discriminant: "noco-with-alt", value: {image: "Medicine cabinet - Hero", highPriority: false}}
    imageSide="right"
    color="beige"
    imageBackgroundColor="pink"
@@ -32,23 +34,26 @@ es:
    mobileImageVertical="desktop"
    mobileImageHorizontal="desktop"
    largeLeftColumn=false
-   reverseOnMobile=false %}
+   reverseOnMobile=false
+   _language="" %}
 # How people are getting abortion pills in advance
 
 Our research shows that many providers will send abortion pills in advance, to have on hand just in case.
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 {% /heroSection %}
 
 {% tocAnchor
    slug={name: "What does it mean to get abortion pills in advance?", slug: "what-does-it-mean-to-get-abortion-pills-in-advance"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
 {% bodySection
    centered=false
    width="default"
    color="blue"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## What does it mean to get abortion pills in advance, in case of future need?
 
 Many providers will send abortion pills to patients before they’re pregnant, to have on hand just in case.&nbsp;
@@ -58,48 +63,60 @@ Here's what to know:
 - **Availability:** Providers are mailing pills in advance to all US states and territories.
 - **Cost:** Pills typically cost between $70 and $150. Some providers offer discounts, but they ask that you pay what you can, to help cover the cost of medication and shipping.
 - **Shelf life:** Abortion pills last for about two years when stored in a cool, dry place. Check expiration dates before use.
-- {% inlineLink action={discriminant: "external", value: {url: "https://www.sciencedirect.com/science/article/abs/pii/S0010782422002827", showPopup: false}} %}**Research shows**{% /inlineLink %} that this practice has been happening for many years.
-- **Legal considerations:** Depending on where someone lives and other factors, accessing pills in advance may come with legal risk. {% inlineLink action={discriminant: "anchor", value: "can-i-get-in-trouble-for-using-abortion-pills"} %}Read our FAQ{% /inlineLink %} or contact the {% inlineLink action={discriminant: "external", value: {url: "https://reprolegalhelpline.org/", showPopup: false}} %}ReproLegal Helpline{% /inlineLink %} with questions.
+- {% inlineLink action={discriminant: "external", value: {url: "https://www.sciencedirect.com/science/article/abs/pii/S0010782422002827", showPopup: false}} _language="" %}**Research shows**{% /inlineLink %} that this practice has been happening for many years.
+- **Legal considerations:** Depending on where someone lives and other factors, accessing pills in advance may come with legal risk. {% inlineLink action={discriminant: "anchor", value: "can-i-get-in-trouble-for-using-abortion-pills"} _language="" %}Read our FAQ{% /inlineLink %} or contact the {% inlineLink action={discriminant: "external", value: {url: "https://reprolegalhelpline.org/", showPopup: false}} _language="" %}ReproLegal Helpline{% /inlineLink %} with questions.
 {% /bodySection %}
 
 {% tocAnchor
    slug={name: "Where people get pills in advance", slug: "where-people-get-pills-in-advance"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
+{% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader
    color="cyan"
    title="Where people get pills in advance"
-   icon="" /%}
+   icon=""
+   _language="" /%}
 
-{% bodySection centered=false width="full" color="beige" textSize="medium" %}
+{% bodySection
+   centered=false
+   width="full"
+   color="beige"
+   textSize="medium"
+   _language="" %}
 ### Telehealth services
 
 These telehealth services send abortion pills for future use:
 
-- {% inlineLink action={discriminant: "external", value: {url: "https://www.abuzzhealth.com/", showPopup: false}} %}Abuzz Health{% /inlineLink %}, $90-$150 (all states except TX, GA, AL, MS)
-- {% inlineLink action={discriminant: "external", value: {url: "https://aidaccess.org/en/page/2880027/advance-provision", showPopup: false}} %}Aid Access{% /inlineLink %}, $150 (all states)
-- {% inlineLink action={discriminant: "external", value: {url: "https://asafechoicenetwork.com/", showPopup: false}} %}A Safe Choice{% /inlineLink %}, $150 (all states)
-- {% inlineLink action={discriminant: "external", value: {url: "https://carafem.org/online/", showPopup: false}} %}carafem{% /inlineLink %}, $299-$399 (in CO, CT, DE, IL, ME, MD, MA, MI, MN, NV, NJ, NM, NY, OR, RI, VT, VA, WA, and Washington, DC)
-- {% inlineLink action={discriminant: "external", value: {url: "https://www.cambridgereproductivehealthconsultants.org/map", showPopup: false}} %}The MAP,{% /inlineLink %} $250 (all states)
-- {% inlineLink action={discriminant: "external", value: {url: "https://wetakecareof.us/", showPopup: false}} %}We Take Care of Us{% /inlineLink %}, $150+ (all states)
-- {% inlineLink action={discriminant: "external", value: {url: "https://womenonweb.org/", showPopup: false}} %}Women on Web{% /inlineLink %}, $120 (all states)
+- {% inlineLink action={discriminant: "external", value: {url: "https://www.abuzzhealth.com/", showPopup: false}} _language="" %}Abuzz Health{% /inlineLink %}, $90-$150 (all states except TX, GA, AL, MS)
+- {% inlineLink action={discriminant: "external", value: {url: "https://aidaccess.org/en/page/2880027/advance-provision", showPopup: false}} _language="" %}Aid Access{% /inlineLink %}, $150 (all states)
+- {% inlineLink action={discriminant: "external", value: {url: "https://asafechoicenetwork.com/", showPopup: false}} _language="" %}A Safe Choice{% /inlineLink %}, $150 (all states)
+- {% inlineLink action={discriminant: "external", value: {url: "https://carafem.org/online/", showPopup: false}} _language="" %}carafem{% /inlineLink %}, $299-$399 (in CO, CT, DE, IL, ME, MD, MA, MI, MN, NV, NJ, NM, NY, OR, RI, VT, VA, WA, and Washington, DC)
+- {% inlineLink action={discriminant: "external", value: {url: "https://www.cambridgereproductivehealthconsultants.org/map", showPopup: false}} _language="" %}The MAP,{% /inlineLink %} $250 (all states)
+- {% inlineLink action={discriminant: "external", value: {url: "https://wetakecareof.us/", showPopup: false}} _language="" %}We Take Care of Us{% /inlineLink %}, $150+ (all states)
+- {% inlineLink action={discriminant: "external", value: {url: "https://womenonweb.org/", showPopup: false}} _language="" %}Women on Web{% /inlineLink %}, $120 (all states)
 
 If you decide to use the pills later, these services will offer instructions and follow-up support.
 
 ### Other online vendors also send abortion pills in advance
 
-- Here's a list of {% inlineLink action={discriminant: "internal", value: {page: "websites-that-sell-pills"}} %}websites that sell pills{% /inlineLink %}. Research shows that current prices starts at $65.
-- These websites sell abortion pills but do not offer any additional support. Free support is available from {% inlineLink action={discriminant: "external", value: {url: "https://mahotline.org/", showPopup: false}} %}M+A Hotline{% /inlineLink %} and {% inlineLink action={discriminant: "external", value: {url: "https://Reprocare.com", showPopup: false}} %}Reprocare{% /inlineLink %}.
+- Here's a list of {% inlineLink action={discriminant: "internal", value: {page: "websites-that-sell-pills"}} _language="" %}websites that sell pills{% /inlineLink %}. Research shows that current prices starts at $65.
+- These websites sell abortion pills but do not offer any additional support. Free support is available from {% inlineLink action={discriminant: "external", value: {url: "https://mahotline.org/", showPopup: false}} _language="" %}M+A Hotline{% /inlineLink %} and {% inlineLink action={discriminant: "external", value: {url: "https://Reprocare.com", showPopup: false}} _language="" %}Reprocare{% /inlineLink %}.
 {% /bodySection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Resources & information", slug: "resources-and-information"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Resources & information" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="pink"
+   title="Resources & information"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-row"
@@ -107,45 +124,57 @@ If you decide to use the pills later, these services will offer instructions and
    noInnerBorders=true
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% resourceList
    resources=[{resource: "m-a-hotline"}, {resource: "how-to-take-abortion-pills-step-by-step-instructions", header: "Abortion pill instructions"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="pink"
-   hideHeaders=false /%}
+   hideHeaders=false
+   buttonIconRight=false
+   _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
    slug={name: "Find an abortion pill provider", slug: "find-an-abortion-pill-provider"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
 {% bodySection
    centered=false
    width="medium"
    color="blue"
-   textSize="medium" %}
+   textSize="medium"
+   _language="" %}
 ## Find pills in advance, by state
 
 Options for at-home abortion pill access will vary by location. Click below to find options by state or territory.
 
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]?Services=Pills in advance"}}
-   afterSubmit="nothing" %}
-{% formSection type="waiting" %}
+   afterSubmit="nothing"
+   _language="" %}
+{% formSection type="waiting" _language="" %}
 {% formInput
-   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] /%}
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}]
+   _language="" /%}
 {% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
 
 {% tocAnchor
    slug={name: "Frequently asked questions", slug: "frequently-asked-questions"}
-   type={discriminant: "toc"} /%}
+   type={discriminant: "toc"}
+   _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="red" title="Frequently asked questions" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="red"
+   title="Frequently asked questions"
+   icon=""
+   _language="" /%}
 
 {% flexSection
    direction="flex-col"
@@ -153,18 +182,21 @@ Options for at-home abortion pill access will vary by location. Click below to f
    noInnerBorders=false
    grow=false
    itemsAlign="items-stretch"
-   justiftContent="justify-stretch" %}
+   justiftContent="justify-stretch"
+   _language="" %}
 {% faqList
    faqs=["in-advance_what-support-is-available-to-someone-who-purchased-pills-in-advance", "in-advance_are-abortion-pills-available-in-advance-in-every-state", "how-long-are-abortion-pills-good-for", "can-i-get-in-trouble-for-using-abortion-pills", "in-advance_what-other-resources-are-available"]
    color="beige"
-   anchor=false /%}
+   anchor=false
+   _language="" /%}
 
 {% narrowBanner
    icon="arrowRight"
    color="beige"
    iconAlign="items-center"
-   fullWidth=true %}
-{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}See all FAQs{% /inlineLink %}
+   fullWidth=true
+   _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}See all FAQs{% /inlineLink %}
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
