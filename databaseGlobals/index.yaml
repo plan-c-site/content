@@ -40,9 +40,9 @@ clinicTypes:
           howManyPillsLabel: ¿Qué aspecto tienen las pastillas?
           __howManyPillsLabel: pg9VAICunqM3q7eszCDzVOrAKGgz62ALc6N8pGRnH5Y=
     es:
-      label: Clínicas en línea con sede en EE.UU.
+      label: Clínicas en línea de EE.UU.
       __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
-      singular: Clínica en línea con sede en EE.UU.
+      singular: Clínica en línea de EE.UU.
       __singular: pJuYPhDXCYHqTBIeiocCyDn+VcTPGwhPc4cXIbWY/OI=
   - label: Other online clinics
     keyValue: International online clinic
