@@ -1,14 +1,7 @@
-{% heroSection image={discriminant: "noco", value: "Pill bottle box - Hero"} imageSide="right" color="beige" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
+{% heroSection image={discriminant: "noco-with-alt", value: {image: "Pill bottle box - Hero", highPriority: false}} imageSide="right" color="beige" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
 # Sitios web donde se compran píldoras abortivas
 
-Nuestra investigación ha demostrado que estos sitios web venden píldoras abortivas pero no incluyen ninguna ayuda adicional. Cualquier persona puede obtener apoyo médico gratuito para su aborto en la {% inlineLink action={discriminant: ""} _language="" %}Línea directa M+A{% /inlineLink %}.
-
-Nuestra investigación ha demostrado que estos sitios web permiten comprar píldoras abortivas (a menudo llamadas kits MTP), pero no incluyen ninguna ayuda adicional. Cualquier persona puede obtener apoyo médico gratuito para su aborto en la [Línea directa M+A](https://mahotline.org/).
-
-\
-**¿Qué son los sitios web que venden pastillas?**
-
-Los sitios web que venden píldoras son sitios web de comercio electrónico que venden y envían píldoras abortivas a direcciones de todos los estados de Estados Unidos. No exigen receta médica para los medicamentos, no requieren que el comprador cargue un documento de identidad y no ofrecen consulta médica ni ningún tipo de asistencia. Las pastillas suelen llegar por el Servicio Postal de Estados Unidos. No suelen requerir firma.
+Nuestra investigación ha demostrado que estos sitios web permiten comprar píldoras abortivas (a menudo llamadas kits MTP), pero no incluyen ninguna ayuda adicional. Cualquier persona puede obtener apoyo médico gratuito para su aborto en la {% inlineLink action={discriminant: "external", value: {url: "https://mahotline.org", showPopup: false}} _language="" %}Línea directa M+A{% /inlineLink %}.
 
 {% tableOfContents _language="" /%}
 
@@ -16,6 +9,14 @@ Los sitios web que venden píldoras son sitios web de comercio electrónico que 
 {% textSize textSize="small" inline=false _language="" %}**Es posible que estos sitios web no sigan protocolos estrictos de seguridad digital.** Lea nuestros {% inlineLink action={discriminant: "internal", value: {page: "digital-security"}} _language="" %}consejos sobre privacidad digital{% /inlineLink %} para saber cómo protegerse cuando pida o busque píldoras abortivas en Internet.{% /textSize %}
 {% /narrowBanner %}
 {% /heroSection %}
+
+{% tocAnchor slug={name: "¿Qué son los sitios web que venden pastillas?", slug: "what-are-websites-that-sell-pills"} type={discriminant: "toc"} _language="" /%}
+
+{% bodySection centered=false width="default" color="blue" textSize="medium" _language="" %}
+## ¿Qué son los sitios web que venden pastillas?
+
+Los sitios web que venden píldoras son sitios web de comercio electrónico que venden y envían píldoras abortivas a direcciones de todos los estados de Estados Unidos. No exigen receta médica para los medicamentos, no requieren que el comprador cargue un documento de identidad y no ofrecen consulta médica ni ningún tipo de asistencia. Las pastillas suelen llegar por el Servicio Postal de Estados Unidos. No suelen requerir firma.
+{% /bodySection %}
 
 {% tocAnchor slug={name: "Lista de proveedores", slug: "list-of-providers"} type={discriminant: "toc"} _language="" /%}
 
@@ -26,11 +27,29 @@ Los sitios web que venden píldoras son sitios web de comercio electrónico que 
 {% horizontalSplit noHeader=false _language="" %}
 {% bodySection centered=false width="default" color="pink" textSize="medium" _language="" %}
 ## Preguntas más frecuentes
-
-{% inContentButton label="Ver todas las preguntas frecuentes" icon="" size="primary" background="pink" altHoverBackground="" smallShadow=false rightIcon=true action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" /%}
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% faqList faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills", "guide_websites-that-sell-pills_are-these-websites-legit", "guide_websites-that-sell-pills_what-if-i-have-medical-questions", "guide_websites-that-sell-pills_how-many-pills-do-i-need"] color="beige" anchor=false _language="" /%}
+{% faqList faqs=["guide_websites-that-sell-pills_are-these-websites-legit", "guide_websites-that-sell-pills_how-many-pills-do-i-need", "guide_websites-that-sell-pills_what-if-i-have-medical-questions", "guide_websites-that-sell-pills_what-kind-of-kit-do-people-order", "can-i-get-in-trouble-for-using-abortion-pills"] color="beige" anchor=false _language="" /%}
+
+{% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}Ver todas las preguntas frecuentes{% /inlineLink %}
+{% /narrowBanner %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor slug={name: "Líneas directas y asistencia", slug: "hotlines-and-support"} type={discriminant: "toc"} _language="" /%}
+
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="green" title="Líneas directas y asistencia" icon="" _language="" %}
+Obtenga asistencia telefónica y por SMS de expertos que pueden ayudarle.
+{% /sectionHeader %}
+
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=false buttonIconRight=false _language="" /%}
+
+{% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}Ver todas las ayudas{% /inlineLink %}
+{% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}

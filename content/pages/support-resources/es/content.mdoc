@@ -1,4 +1,4 @@
-{% heroSection image={discriminant: "noco", value: "Counselor with red dots - Hero"} imageSide="right" color="beige" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-bottom" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
+{% heroSection image={discriminant: "noco-with-alt", value: {image: "Counselor with red dots - Hero", highPriority: false}} imageSide="right" color="beige" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-bottom" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
 # Apoyo y recursos
 
 Vivas donde vivas, dispones de apoyo confidencial gratuito para el uso de píldoras abortivas.
@@ -18,7 +18,7 @@ Descargue una versión resumida de esta página, con formato para imprimir o com
 {% sectionHeader color="green" title="Asistencia médica gratuita" icon="" _language="" /%}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=true grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "m-a-hotline"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=true _language="" /%}
+{% resourceList resources=[{resource: "m-a-hotline"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=true buttonIconRight=false _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -30,7 +30,7 @@ Nos hemos asociado con varias organizaciones dedicadas a apoyar a las personas q
 {% /sectionHeader %}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=true grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "reprocare-healthline"}, {resource: "all-options"}, {resource: "exhale-pro-voice"}] type={discriminant: "simple", value: 2} icon="" iconColor="cyan" hideHeaders=true _language="" /%}
+{% resourceList resources=[{resource: "reprocare-healthline"}, {resource: "all-options"}, {resource: "exhale-pro-voice"}] type={discriminant: "simple", value: 2} icon="" iconColor="cyan" hideHeaders=true buttonIconRight=false _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -42,7 +42,7 @@ Grupos que pueden ayudarte a conocer tus derechos y responder a tus preguntas so
 {% /sectionHeader %}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=true grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "repro-legal-helpline", header: "Para particulares:"}, {resource: "pregnancy-justice", header: "Para particulares:"}, {resource: "navigating-abortion-laws-and-judicial-bypass", header: "Para los menores:"}, {resource: "aclu-abortion-criminal-defense-initiative", header: "Para proveedores y organizaciones:"}] type={discriminant: "simple", value: 2} icon="" iconColor="pink" hideHeaders=false _language="" /%}
+{% resourceList resources=[{resource: "repro-legal-helpline", header: "Para particulares:"}, {resource: "pregnancy-justice", header: "Para particulares:"}, {resource: "navigating-abortion-laws-and-judicial-bypass", header: "Para los menores:"}, {resource: "aclu-abortion-criminal-defense-initiative", header: "Para proveedores y organizaciones:"}] type={discriminant: "simple", value: 2} icon="" iconColor="pink" hideHeaders=false buttonIconRight=false _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -53,6 +53,7 @@ Grupos que pueden ayudarte a conocer tus derechos y responder a tus preguntas so
 Organizaciones que ofrecen financiación a personas que desean abortar
 {% /sectionHeader %}
 
+{% flexSection direction="flex-row" noWrap=false noInnerBorders=false grow=false gap=0 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
 {% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 {% narrowBanner icon="" color="beige" iconAlign="items-center" fullWidth=false _language="" %}
 Nuestra investigación muestra que muchos proveedores de servicios de aborto a distancia ofrecen precios flexibles o ayudan a las pacientes a encontrar ayuda financiera externa.
@@ -63,7 +64,8 @@ Los fondos locales para abortos también pueden tener recursos para ayudar; busq
 {% /narrowBanner %}
 {% /bodySection %}
 
-{% resourceList resources=[{resource: "national-network-of-abortion-funds"}] type={discriminant: "simple", value: 1} icon="" iconColor="blue" hideHeaders=false _language="" /%}
+{% resourceList resources=[{resource: "national-network-of-abortion-funds"}] type={discriminant: "simple", value: 1} icon="" iconColor="blue" hideHeaders=false buttonIconRight=false _language="" /%}
+{% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor slug={name: "Más información sobre las píldoras abortivas", slug: "learn-about-abortion-pills"} type={discriminant: "toc"} _language="" /%}
@@ -74,7 +76,7 @@ Recursos educativos para responder a tus preguntas sobre las píldoras abortivas
 {% /sectionHeader %}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=true grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "plan-c-faq"}, {resource: "how-to-take-abortion-pills-step-by-step-instructions"}] type={discriminant: "simple", value: 2} icon="" iconColor="red" hideHeaders=true _language="" /%}
+{% resourceList resources=[{resource: "plan-c-faq"}, {resource: "how-to-take-abortion-pills-step-by-step-instructions"}] type={discriminant: "simple", value: 2} icon="" iconColor="red" hideHeaders=true buttonIconRight=false _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -86,7 +88,7 @@ Recursos móviles para responder a preguntas sobre la obtención y el uso de pí
 {% /sectionHeader %}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=true grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "charley-the-chatbot"}, {resource: "aya-contigo"}, {resource: "safe-abortion-app"}, {resource: "abortion-subreddit"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=true _language="" /%}
+{% resourceList resources=[{resource: "charley-the-chatbot"}, {resource: "aya-contigo"}, {resource: "safe-abortion-app"}, {resource: "abortion-subreddit"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=true buttonIconRight=false _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -96,7 +98,7 @@ Recursos móviles para responder a preguntas sobre la obtención y el uso de pí
 {% sectionHeader color="cyan" title="Encontrar clínicas, pastillas y apoyo" icon="" _language="" /%}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=true grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "i-need-an-a"}, {resource: "you-always-have-options"}] type={discriminant: "simple", value: 2} icon="" iconColor="cyan" hideHeaders=true _language="" /%}
+{% resourceList resources=[{resource: "i-need-an-a"}, {resource: "you-always-have-options"}] type={discriminant: "simple", value: 2} icon="" iconColor="cyan" hideHeaders=true buttonIconRight=false _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -108,7 +110,7 @@ La anticoncepción es el "Plan A". La anticoncepción de emergencia es el "Plan 
 {% /sectionHeader %}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=true grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "bedsider"}, {resource: "birth-control-planned-parenthood"}] type={discriminant: "simple", value: 2} icon="" iconColor="pink" hideHeaders=false _language="" /%}
+{% resourceList resources=[{resource: "bedsider"}, {resource: "birth-control-planned-parenthood"}] type={discriminant: "simple", value: 2} icon="" iconColor="pink" hideHeaders=false buttonIconRight=false _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -120,7 +122,7 @@ Recursos para el aborto autogestionado fuera de EE.UU.
 {% /sectionHeader %}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=true grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "women-on-web"}, {resource: "safe2-choose"}] type={discriminant: "simple", value: 2} icon="" iconColor="blue" hideHeaders=false _language="" /%}
+{% resourceList resources=[{resource: "women-on-web"}, {resource: "safe2-choose"}] type={discriminant: "simple", value: 2} icon="" iconColor="blue" hideHeaders=false buttonIconRight=false _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -130,7 +132,7 @@ Recursos para el aborto autogestionado fuera de EE.UU.
 {% sectionHeader color="red" title="Información y apoyo sobre la gestación tardía" icon="" _language="" /%}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=true grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "abortion-with-pills-after-12-weeks"}] type={discriminant: "simple", value: 2} icon="" iconColor="red" hideHeaders=true _language="" /%}
+{% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "abortion-with-pills-after-12-weeks"}, {resource: "who-not-when"}] type={discriminant: "simple", value: 2} icon="" iconColor="red" hideHeaders=true buttonIconRight=false _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -140,7 +142,7 @@ Recursos para el aborto autogestionado fuera de EE.UU.
 {% sectionHeader color="green" title="Seguridad y privacidad digitales" icon="" _language="" /%}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=true grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "digital-defense-fund"}, {resource: "i-need-an-a-practical-guide-to-online-privacy"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=true _language="" /%}
+{% resourceList resources=[{resource: "digital-defense-fund"}, {resource: "i-need-an-a-practical-guide-to-online-privacy"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=true buttonIconRight=false _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -150,6 +152,6 @@ Recursos para el aborto autogestionado fuera de EE.UU.
 {% sectionHeader color="cyan" title="Encontrar una doula abortista" icon="" _language="" /%}
 
 {% flexSection direction="flex-row" noWrap=false noInnerBorders=true grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceList resources=[{resource: "dopo-co-op"}] type={discriminant: "simple", value: 2} icon="" iconColor="cyan" hideHeaders=true _language="" /%}
+{% resourceList resources=[{resource: "dopo-co-op"}] type={discriminant: "simple", value: 2} icon="" iconColor="cyan" hideHeaders=true buttonIconRight=false _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}

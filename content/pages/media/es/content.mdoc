@@ -1,36 +1,36 @@
-{% heroSection image={discriminant: "noco", value: "Megaphone squiggle - Hero"} imageSide="right" color="beige" imageBackgroundColor="blue" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-bottom" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false %}
+{% heroSection image={discriminant: "noco-with-alt", value: {image: "Megaphone squiggle - Hero", highPriority: false}} imageSide="right" color="beige" imageBackgroundColor="blue" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-bottom" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
 # Consultas de los medios de comunicación
 
 Esta página incluye información sobre nuestro trabajo y nuestro equipo, así como artículos y comunicados de prensa recientes.
 
-{% tableOfContents /%}
+{% tableOfContents _language="" /%}
 {% /heroSection %}
 
-{% tocAnchor slug={name: "¿Qué es el Plan C?", slug: "what-is-plan-c"} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "¿Qué es el Plan C?", slug: "what-is-plan-c"} type={discriminant: "toc"} _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="green" title="¿Qué es el Plan C?" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="green" title="¿Qué es el Plan C?" icon="" _language="" /%}
 
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 Plan C es una campaña informativa de concienciación sobre las píldoras abortivas y el aborto autogestionado. Las píldoras abortivas son un método médicamente seguro y eficaz para interrumpir un embarazo precoz, de hasta 11 semanas. Ahora están disponibles en línea a través de proveedores de telesalud y farmacias en línea. Se trata de una poderosa opción para las personas que no tienen fácil acceso a una clínica o a un proveedor de abortos.
 
 Utilice estos enlaces para saber más sobre nuestro trabajo:
 
-- {% inlineLink action={discriminant: "internal", value: {page: "about"}} %}Acerca del Plan C{% /inlineLink %}
-- {% inlineLink action={discriminant: "home", value: {}} %}La guía de píldoras abortivas de Plan C‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} %}Preguntas más frecuentes‍{% /inlineLink %}
-- {% inlineLink action={discriminant: "internal", value: {page: "community"}} %}Comunidad del Plan C{% /inlineLink %}
-- {% inlineLink action={discriminant: "internal", value: {page: "partnerships"}} %}Asociaciones{% /inlineLink %}
+- {% inlineLink action={discriminant: "internal", value: {page: "about"}} _language="" %}Acerca del Plan C{% /inlineLink %}
+- {% inlineLink action={discriminant: "home", value: {}} _language="" %}La guía de píldoras abortivas de Plan C‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}Preguntas más frecuentes‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "internal", value: {page: "community"}} _language="" %}Comunidad del Plan C{% /inlineLink %}
+- {% inlineLink action={discriminant: "internal", value: {page: "partnerships"}} _language="" %}Asociaciones{% /inlineLink %}
 {% /bodySection %}
 {% /horizontalSplit %}
 
-{% tocAnchor slug={name: "Solicitar una entrevista", slug: "request-an-interview"} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "Solicitar una entrevista", slug: "request-an-interview"} type={discriminant: "toc"} _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="cyan" title="Solicitar una entrevista" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="cyan" title="Solicitar una entrevista" icon="" _language="" /%}
 
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" %}
-{% bodySection centered=false width="default" color="beige" textSize="medium" %}
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 ### Preparación previa a la entrevista:
 
 **Infórmese sobre el Plan C antes de que hablemos.** Así podremos responder mejor a sus preguntas concretas: 
@@ -48,43 +48,43 @@ Utilice estos enlaces para saber más sobre nuestro trabajo:
 - **No nos pida que le pongamos en contacto con alguien que vaya a abortar o haya abortado.**
 {% /bodySection %}
 
-{% bodySection centered=false width="narrow" color="beige" textSize="medium" %}
+{% bodySection centered=false width="narrow" color="beige" textSize="medium" _language="" %}
 ### Solicitar una entrevista
 
 Después de leer los consejos anteriores, rellene este formulario para ponerse en contacto con nuestro equipo.
 
-{% formWrapper formType={discriminant: "hubspot", value: {formId: "fe96c04a-12aa-4729-a96f-a368502da649", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Press or Public Relations"}}]}} afterSubmit="show-screens" %}
-{% formSection type="waiting" %}
-{% formInput fields=[{label: {name: "Nombre", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Apellido", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Teléfono", slug: "phone"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organización", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Mensaje", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Envíenme futuros comunicados de prensa del equipo de medios de Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] /%}
+{% formWrapper formType={discriminant: "hubspot", value: {formId: "fe96c04a-12aa-4729-a96f-a368502da649", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Press or Public Relations"}}]}} afterSubmit="show-screens" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% formInput fields=[{label: {name: "Nombre", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Apellido", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Teléfono", slug: "phone"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organización", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Mensaje", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Envíenme futuros comunicados de prensa del equipo de medios de Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] _language="" /%}
 {% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% tocAnchor slug={name: "Comunicados de prensa recientes", slug: "recent-press-releases"} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "Comunicados de prensa recientes", slug: "recent-press-releases"} type={discriminant: "toc"} _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="pink" title="Comunicados de prensa recientes" icon="" %}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="pink" title="Comunicados de prensa recientes" icon="" _language="" %}
 Lea la última cobertura de prensa sobre el trabajo de Plan C.
 {% /sectionHeader %}
 
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" %}
-{% postList type={discriminant: "postList", value: {pagination: 3}} filtering={discriminant: "category", value: {category: "press-releases"}} /%}
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% postList type={discriminant: "postList", value: {pagination: 3}} filtering={discriminant: "category", value: {category: "press-releases"}} _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% tocAnchor slug={name: "", slug: ""} type={discriminant: "toc"} /%}
+{% tocAnchor slug={name: "", slug: ""} type={discriminant: "toc"} _language="" /%}
 
-{% horizontalSplit noHeader=false %}
-{% sectionHeader color="blue" title="Archivos y activos" icon="" /%}
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="blue" title="Archivos y activos" icon="" _language="" /%}
 
-{% cardLayoutSection color="beige" minColumnWidth=22.5 %}
-{% cardSection image={discriminant: "noco", value: "Megaphone - Hero"} imageOnly=false title="Logotipos del Plan C" action={discriminant: "external", value: {url: "https://drive.google.com/drive/folders/11xts-fG3SoKH_czDIKe-yUL97lbGUnn4?usp=sharing", showPopup: false}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
+{% cardLayoutSection color="beige" minColumnWidth=22.5 _language="" %}
+{% cardSection image={discriminant: "one-off", value: {image: "/images/media/logo.svg", altText: "Plan C logo", highPriority: false}} imageOnly=false title="Logotipos del Plan C" action={discriminant: "external", value: {url: "https://drive.google.com/drive/folders/11xts-fG3SoKH_czDIKe-yUL97lbGUnn4?usp=sharing", showPopup: false}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
 Logotipos y otros activos digitales.
 {% /cardSection %}
 
-{% cardSection image={discriminant: "one-off", value: {image: "/images/media/plan-c-squiggle.png"}} imageOnly=false title="Fotos del Plan C" action={discriminant: "external", value: {url: "https://www.flickr.com/photos/195848501@N02/albums/72177720299845150", showPopup: false}} imageCover="bg-cover" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" %}
+{% cardSection image={discriminant: "noco-with-alt", value: {image: "Partnerships collage - Hero", highPriority: false}} imageOnly=false title="Fotos del Plan C" action={discriminant: "external", value: {url: "https://www.flickr.com/photos/195848501@N02/albums/72177720299845150", showPopup: false}} imageCover="bg-cover" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
 Fotos de campañas y actos.
 {% /cardSection %}
 {% /cardLayoutSection %}
