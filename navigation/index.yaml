@@ -73,7 +73,7 @@ social:
     icon: linkedin
     altText: Linked in
     es:
-      altText: Enlazados
+      altText: Linked in
       __altText: hdYJfLAOs1Vzq39UYV9iC1Dws6p8zV/e8dyqEbYbU9A=
   - action:
       discriminant: external
@@ -94,14 +94,14 @@ navBar:
       value:
         label: Abortion pills
         es:
-          label: pastillas abortivas
+          label: Pastillas abortivas
           __label: Zh6Rdu93OKBlBOzST0YCpN1f6yg7zSMcvrIIDP1rtYc=
         children:
           - discriminant: link
             value:
               label: Search by state
               es:
-                label: Búsqueda por estado
+                label: Buscar por estado
                 __label: N04ByJV4PyY1yOzr9KkXR1Vsq2nwDzJqAScGzRqGLsk=
               action:
                 discriminant: home
@@ -131,7 +131,7 @@ navBar:
             value:
               label: Abortion pill instructions
               es:
-                label: Pastilla abortiva instrucciones
+                label: Pastillas abortivas instrucciones
                 __label: Vn159vrGRnpG3WtmFnsZWSWcUNblxj4x0z8om5ZwfMU=
               action:
                 discriminant: internal
@@ -188,7 +188,7 @@ navBar:
             value:
               label: Plan C Road Trip
               es:
-                label: Plan C de viaje por carretera
+                label: Plan C viaje por carretera
                 __label: VtKSRcWhBic5zdG2ZgzUZJKbl1gmVGoOyqPcfFdy4w8=
               action:
                 discriminant: internal
@@ -232,7 +232,7 @@ navBar:
             value:
               label: For medical professionals
               es:
-                label: Para profesionales médicos
+                label: Para profesionales de la salud
                 __label: duKxhvkxKDiaNnVdtIgp9mI3NDn1wC5+7v17Dy6ki+E=
               action:
                 discriminant: internal
@@ -242,7 +242,7 @@ navBar:
             value:
               label: Jobs with Plan C
               es:
-                label: Trabajos con Plan C
+                label: Trabaja con Plan C
                 __label: XV3B/S5xVTdWt8MdroGX/vV4vlnAAn9dF9DlUcPXoW0=
               action:
                 discriminant: internal
@@ -269,7 +269,7 @@ navBar:
             value:
               label: Press
               es:
-                label: Pulse
+                label: Prensa
                 __label: ntEnPptaVXmfXpVKSCwE/C4Br1+gbb/3cGs1BnvgEpk=
               action:
                 discriminant: internal
@@ -279,7 +279,7 @@ navBar:
             value:
               label: Research & learning
               es:
-                label: Investigación y aprendizaje
+                label: Investigación y formación
                 __label: tjGUWPk7NvPeuW3/q9HMRbjCN+3jaZXUa3Ve2PmL4a0=
               action:
                 discriminant: internal
@@ -313,7 +313,7 @@ navBar:
             value:
               label: Contact us
               es:
-                label: Póngase en contacto con nosotros
+                label: Contáctanos
                 __label: R6rzG4PWv9cFuAvNW2JpvkyqPPVM+lRrCue8QHizmw8=
               action:
                 discriminant: internal
@@ -323,7 +323,7 @@ navBar:
             value:
               label: Media inquiries
               es:
-                label: Consultas de los medios de comunicación
+                label: Para los medios de comunicación
                 __label: DjWF2UT3COzweBhpmpvPucM5WWDQoEYgikPoTSr0678=
               action:
                 discriminant: internal
@@ -333,7 +333,7 @@ navBar:
       value:
         label: Donate
         es:
-          label: Donar
+          label: Dona
           __label: yR7g8nmd+RXvzBF7oGPZXgy/DV6ObspTczM7ubBsXxM=
         action:
           discriminant: internal
