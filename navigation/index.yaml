@@ -306,6 +306,9 @@ navBar:
                 value:
                   url: /2024-annual-report
                   showPopup: false
+                  es:
+                    url: /2024-annual-report
+                    __url: uLl+Taj8qXlhzSkuOVgxM3Vz7nf+onyll9SrK5pt/bA=
           - discriminant: link
             value:
               label: Contact us
