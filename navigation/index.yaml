@@ -94,7 +94,7 @@ navBar:
       value:
         label: Abortion pills
         es:
-          label: Píldoras abortivas
+          label: pastillas abortivas
           __label: Zh6Rdu93OKBlBOzST0YCpN1f6yg7zSMcvrIIDP1rtYc=
         children:
           - discriminant: link
@@ -131,7 +131,7 @@ navBar:
             value:
               label: Abortion pill instructions
               es:
-                label: Instrucciones para píldoras abortivas
+                label: pastilla abortiva instrucciones
                 __label: Vn159vrGRnpG3WtmFnsZWSWcUNblxj4x0z8om5ZwfMU=
               action:
                 discriminant: internal
