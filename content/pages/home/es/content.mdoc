@@ -10,7 +10,7 @@ Plan C ofrece información sobre cómo las personas en los Estados Unidos están
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=0.25 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
 {% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}} afterSubmit="nothing" _language="" %}
 {% formSection type="waiting" _language="" %}
-{% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Búsqueda por estado o territorio", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] _language="" /%}
+{% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Buscar por estado o territorio", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] _language="" /%}
 {% /formSection %}
 {% /formWrapper %}
 
@@ -45,7 +45,7 @@ Obtén soporte en vivo por teléfono y mensaje de texto de personas expertas que
 {% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=false buttonIconRight=false _language="" /%}
 
 {% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
-{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}Ver todas las ayudas{% /inlineLink %}
+{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}Ver todas las opciones de asistencia{% /inlineLink %}
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
@@ -57,7 +57,7 @@ No ofrecemos asesoramiento médico o legal, no vendemos pastillas abortivas ni o
 
 Cuando mencionamos "Guía," nos referimos a un recurso que incluye los servicios, líneas de ayuda y datos disponibles. Plan C comparte investigaciones, pero no respalda ningún servicio mencionado en la Guía y no está afiliado a ninguno de ellos. Las preguntas sobre pedir o recibir pastillas abortivas deben dirigirse a esos servicios.
 
-**Nota sobre el lenguaje:** Las Pastillas abortivas pueden ser utilizadas por personas con útero que pueden quedarse embarazadas, incluidas las mujeres cisgénero y las que se identifican como trans, no binarias, de género expansivo, intersexuales, de dos espíritus, etc. Cuando cambiamos entre términos como "mujeres" y "personas que están embarazadas", pretendemos ser inclusivos con todas las personas embarazadas.
+**Nota sobre el lenguaje:** Las pastillas abortivas pueden ser usadas por personas con útero que pueden quedar embarazadas, incluyendo mujeres cisgénero y aquellos que se identifican como trans, no binarios, de género expansivo, intersexuales, Two-Spirit, y más. Cuando pasamos de un término a otro, como “mujeres” y “personas que están embarazadas”, buscamos incluir a todas las personas embarazadas.
 {% /bodySection %}
 
 {% tocAnchor slug={name: "prueba", slug: "test"} type={discriminant: "toc"} _language="" /%}
