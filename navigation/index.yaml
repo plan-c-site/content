@@ -186,7 +186,7 @@ navBar:
                   page: stickers
           - discriminant: link
             value:
-              label: Plan C road trip
+              label: Plan C Road Trip
               es:
                 label: Plan C de viaje por carretera
                 __label: jQ5zsuymSY5YQQm5/6Hd6Qb+cetMHNb8R0O6sePdsoQ=
@@ -259,7 +259,7 @@ navBar:
             value:
               label: About Plan C
               es:
-                label: Acerca de Plan C
+                label: Acerca del Plan C
                 __label: PKquUvT5PggPXJgCKs3b3Dc9pApRN68dt01FNOndcSo=
               action:
                 discriminant: internal
@@ -287,7 +287,7 @@ navBar:
                   page: research-and-learning
           - discriminant: link
             value:
-              label: 'Plan C: The documentary'
+              label: 'PLAN C: The documentary'
               es:
                 label: 'Plan C: El documental'
                 __label: wh609W7evM+Pcv9/yZLGQrAISp8XgGPOguBLGOiA+nA=
