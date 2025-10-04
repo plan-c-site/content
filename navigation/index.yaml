@@ -156,7 +156,7 @@ navBar:
               action:
                 discriminant: internal
                 value:
-                  page: blogs
+                  page: abortion-pills
     - discriminant: section
       value:
         label: Get involved
