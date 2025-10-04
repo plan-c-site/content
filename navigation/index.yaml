@@ -131,7 +131,7 @@ navBar:
             value:
               label: Abortion pill instructions
               es:
-                label: pastilla abortiva instrucciones
+                label: Pastilla abortiva instrucciones
                 __label: Vn159vrGRnpG3WtmFnsZWSWcUNblxj4x0z8om5ZwfMU=
               action:
                 discriminant: internal
