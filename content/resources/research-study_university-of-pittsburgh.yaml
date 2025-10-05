@@ -1,6 +1,5 @@
 title: University of Pittsburgh
 heading: University of Pittsburgh
-website: https://intrepidstudy.pitt.edu
 summary: >-
   For residents of New York, Ohio, Pennsylvania, and West Virginia.
 
@@ -12,6 +11,8 @@ buttonText: Visit website
 resourceIcon: tableOfContents
 iconColor: green
 buttonIcon: arrowUpRight
+buttonAction:
+  discriminant: ''
 buttonUrl:
   discriminant: url
   value: https://intrepidstudy.pitt.edu/
