@@ -39,7 +39,6 @@ es:
           "@type": "BreadcrumbList",
           "@id": "{{ pageUrl }}#breadcrumb",
           "name": "Breadcrumb for {{ pageUrl }}",
-          "isPartOf": { "@id": "{{ pageUrl }}#webpage" },
           "itemListElement": [
             {
               "@type": "ListItem",
