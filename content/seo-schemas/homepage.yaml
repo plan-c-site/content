@@ -217,7 +217,7 @@ es:
             "@type": "ImageObject",
             "@id": "https://www.plancpills.org/#logo",
             "inLanguage": "en-US",
-            "contentUrl": "https://www.plancpills.org/logo.svg,
+            "contentUrl": "https://www.plancpills.org/logo.svg",
             "name": "Plan C logo",
             "description": "Image of Plan C logo",
             "width": 606,
