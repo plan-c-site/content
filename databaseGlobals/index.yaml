@@ -32,13 +32,7 @@ clinicTypes:
     isLink:
       discriminant: false
     howManyPills:
-      discriminant: true
-      value:
-        howManyPillsPopup: pill-examples-online-clinics
-        howManyPillsLabel: What do the pills look like?
-        es:
-          howManyPillsLabel: ¿Qué aspecto tienen las pastillas?
-          __howManyPillsLabel: pg9VAICunqM3q7eszCDzVOrAKGgz62ALc6N8pGRnH5Y=
+      discriminant: false
     es:
       label: Clínicas en línea de EE.UU.
       __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
