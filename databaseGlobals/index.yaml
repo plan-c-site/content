@@ -280,7 +280,7 @@ filterFields:
             label: हिन्दी
             __label: ndsSr4RX1jXsFXc/kFyoWHdy72TV7L4k2apOqyei55s=
         - value: Hmong-Mien
-          label: Hmong-Mein
+          label: Hmong-Mien
           invert: false
           es:
             label: Hmong-Mein
