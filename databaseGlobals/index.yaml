@@ -137,8 +137,8 @@ clinicTypes:
       __label: Jgjbu7xUoByUp2VC/amDZqKSLS9tNXbii5lbck05DBg=
       singular: Sitio web que vende pastillas
       __singular: 9LAC7LJ8gZTbznvVoouALLoq1hn95GHcPPqXpvQkjdw=
-  - label: In person clinics
-    singular: In person clinic
+  - label: In-person clinics
+    singular: In-person clinic
     maxVisibleDefault: 3
     color: grey
     icon: hospital
