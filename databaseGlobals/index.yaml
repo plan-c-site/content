@@ -168,9 +168,9 @@ clinicTypes:
     howManyPills:
       discriminant: false
     es:
-      label: Clínicas presenciales
+      label: Clínicas en persona
       __label: SE5NPQar1ez72fqPZPsruSRVpIKKZFg9WnsqpHhytGc=
-      singular: Clínica presencial
+      singular: Clínicas en persona
       __singular: UQyDC1Rd2TpAFhxU3Lq8TdphNuKjVJ/oSSi0ldqqjsA=
 filterFields:
   - field: Financial aid
