@@ -336,7 +336,10 @@ seo:
     Abortion pills are available by mail in %Name%. Compare providers by price,
     delivery time, and financial aid in this updated guide from Plan C.
   image:
-    discriminant: ''
+    discriminant: state
+    value:
+      highPriority: true
+      altText: Abortion pill %0%
   seoSchemas:
     - basic-pages
     - state-page-breadcrumb
