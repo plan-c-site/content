@@ -22,9 +22,7 @@ status: published
 es:
   title: Asociaciones
   __title: gsDowdHVd1yY2Aeo40IsLjsJ1DHo9FCIRbYypPIYHf8=
-
 ---
-
 {% heroSection
    image={discriminant: "noco-with-alt", value: {image: "Partnerships collage - Hero", highPriority: false}}
    imageSide="right"
@@ -132,8 +130,10 @@ Over the past ten years we’ve partnered with a wide variety of artists and cre
    color="beige"
    textSize="medium"
    _language="" %}
-Hubspot form 66da9a64-c807-4fb2-83fa-49791c2759d6
-
+{% formWrapper
+   formType={discriminant: "hubspot", value: {formId: "b4570ae3-3568-4f50-be01-5d68e3865dac", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Advocacy or Partnership"}}]}}
+   afterSubmit="show-screens"
+   _language="" %}
 {% formSection type="waiting" _language="" %}
 ## Partnership inquiry
 
@@ -168,4 +168,5 @@ Thanks, your information was received.
 Submitting...
 {% /narrowBanner %}
 {% /formSection %}
+{% /formWrapper %}
 {% /bodySection %}
