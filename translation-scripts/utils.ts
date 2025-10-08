@@ -584,7 +584,10 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
       key: "type",
       container: "object",
       condition: "carousel",
-      keys: [{ key: "title", type: "text" }],
+      keys: [
+        { key: "title", type: "text" },
+        { key: "text", type: "text" },
+      ],
     },
   ],
   postList: [
