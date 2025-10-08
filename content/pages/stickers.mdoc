@@ -56,7 +56,7 @@ You can also print your own stickers, mini-flyers and protest posters using our 
    _language="" /%}
 
 {% formWrapper
-   formType={discriminant: "multiStep", value: [{discriminant: "hubspot", value: {formId: "b2d46224-0d6f-40e0-b2bb-cc977dc01eb2", invisibleFields: []}}, {discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236994830559", input: "id_spa"}, {id: "46236791013599", input: "id_eng"}]}}]}
+   formType={discriminant: "multiStep", value: [{discriminant: "hubspot", value: {formId: "c2742058-fff6-4722-b49b-b9daa62fab99", invisibleFields: []}}, {discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236994830559", input: "id_spa"}, {id: "46236791013599", input: "id_eng"}]}}]}
    afterSubmit="nothing"
    customValidation="let atLeast1 = false\nif (inputs.id_eng && inputs.id_eng !== '0') {\natLeast1 = true \n}\nif (inputs.id_spa && inputs.id_spa !== '0') {\natLeast1 = true \n}\nif (!atLeast1) {\n   return {\n  id_eng: \"Please select at least one type of sticker\",\nid_spa: \"Please select at least one item\"\n}\n}\nreturn true"
    _language="" %}

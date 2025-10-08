@@ -1,6 +1,6 @@
 title: All Options
 author: All Options
-website: all-options.org
+website: https://all-options.org
 phone: (888) 493-0092
 summary: >-
   Offers counseling, emotional support and referrals for people experiencing
@@ -9,6 +9,8 @@ buttonText: Call or text
 resourceIcon: rainbow
 iconColor: green
 buttonIcon: phone
+buttonAction:
+  discriminant: ''
 buttonUrl:
   discriminant: none
 es:

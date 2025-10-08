@@ -32,13 +32,7 @@ clinicTypes:
     isLink:
       discriminant: false
     howManyPills:
-      discriminant: true
-      value:
-        howManyPillsPopup: pill-examples-online-clinics
-        howManyPillsLabel: What do the pills look like?
-        es:
-          howManyPillsLabel: ¿Qué aspecto tienen las pastillas?
-          __howManyPillsLabel: pg9VAICunqM3q7eszCDzVOrAKGgz62ALc6N8pGRnH5Y=
+      discriminant: false
     es:
       label: Clínicas en línea de EE.UU.
       __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
@@ -143,8 +137,8 @@ clinicTypes:
       __label: Jgjbu7xUoByUp2VC/amDZqKSLS9tNXbii5lbck05DBg=
       singular: Sitio web que vende pastillas
       __singular: 9LAC7LJ8gZTbznvVoouALLoq1hn95GHcPPqXpvQkjdw=
-  - label: In person clinics
-    singular: In person clinic
+  - label: In-person clinics
+    singular: In-person clinic
     maxVisibleDefault: 3
     color: grey
     icon: hospital
@@ -175,9 +169,9 @@ clinicTypes:
       discriminant: false
     es:
       label: Clínicas en persona
-      __label: 09YiIvToz5OzuolzkhimOqY9vPaaikrV3waOa2r6jhQ=
-      singular: Clínica en persona
-      __singular: MHa1yMjUFGF7MFjAuIb36stfLihNnMbIWYSsJ+20C5o=
+      __label: SE5NPQar1ez72fqPZPsruSRVpIKKZFg9WnsqpHhytGc=
+      singular: Clínicas en persona
+      __singular: UQyDC1Rd2TpAFhxU3Lq8TdphNuKjVJ/oSSi0ldqqjsA=
 filterFields:
   - field: Financial aid
     label: Financial Assistance
@@ -286,11 +280,11 @@ filterFields:
             label: हिन्दी
             __label: ndsSr4RX1jXsFXc/kFyoWHdy72TV7L4k2apOqyei55s=
         - value: Hmong-Mien
-          label: Hmong-Mein
+          label: Hmong-Mien
           invert: false
           es:
-            label: Hmong-Mein
-            __label: pHh23YKG08qyffyRDM8W0PC2GYsp3kbia8piZiEVO5U=
+            label: Hmong-Mien
+            __label: K31BMzbdXAAVFtRYAepBrZ18MLVI38adTIbkCiDKT+A=
         - value: Punjabi
           label: Punjabi
           invert: false
@@ -342,7 +336,10 @@ seo:
     Abortion pills are available by mail in %Name%. Compare providers by price,
     delivery time, and financial aid in this updated guide from Plan C.
   image:
-    discriminant: ''
+    discriminant: state
+    value:
+      highPriority: true
+      altText: Abortion pill %0%
   seoSchemas:
     - basic-pages
     - state-page-breadcrumb
