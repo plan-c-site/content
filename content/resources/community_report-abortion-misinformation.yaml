@@ -3,13 +3,14 @@ heading: Report abortion misinformation
 summary: >-
   If you see misinformation in news publications, write a letter to the editor. 
   You can use our PDF template as a starting point.
-buttonText: Download PDF
+buttonText: View template
 resourceIcon: megaphone
 iconColor: green
 buttonIcon: fileDown
 buttonAction:
-  discriminant: download
-  value: Letter to Editor - Community - Template
+  discriminant: blog
+  value:
+    page: letters-to-the-editor
 buttonUrl:
   discriminant: none
 es:
