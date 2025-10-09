@@ -1,10 +1,12 @@
 title: Abortion Subreddit
 author: Abortion Subreddit
-website: https://reddit.com/abortion
+website: https://www.reddit.com/r/abortion/
 summary: Peer-to-peer conversations about abortion, with expert moderators.
 resourceIcon: reddit
 iconColor: green
 buttonIcon: ''
+buttonAction:
+  discriminant: ''
 buttonUrl:
   discriminant: url
 es:
