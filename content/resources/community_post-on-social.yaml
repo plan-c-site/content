@@ -4,7 +4,7 @@ summary: "With our\_Social Media Toolkit\_you can construct stories and posts to
 buttonText: Social media toolkit
 resourceIcon: messageCircleHeart
 iconColor: green
-buttonIcon: arrowRight
+buttonIcon: ''
 buttonAction:
   discriminant: internal
   value:
