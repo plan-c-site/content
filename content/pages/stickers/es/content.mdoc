@@ -16,35 +16,35 @@ También puede imprimir sus propias pegatinas, minifolletos y carteles de protes
 {% formSection type="waiting" _language="" %}
 {% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader color="green" title="Códigos QR" icon="" _language="" %}
-Pegatinas de 2", disponibles en inglés y español, con un código QR que enlaza directamente con el sitio web de Plan C.
+Pegatinas de 2”, disponibles en inglés y español, con un código QR que enlaza directamente con el sitio web de Plan C.
 
 {% inContentImage image={discriminant: "noco-with-alt", value: {image: "Stickers - Hero", highPriority: false}} maxWidth=100 action={discriminant: ""} newTab=false _language="" /%}
 {% /sectionHeader %}
 
 {% bodySection centered=false width="narrow" color="beige" textSize="medium" _language="" %}
-{% textSize textSize="large" inline=true _language="" %}**¿Cuántas pegatinas necesita?**{% /textSize %}
+{% textSize textSize="large" inline=true _language="" %}**¿Cuántas pegatinas necesitas?**{% /textSize %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=1.5 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
 {% formInput fields=[{label: {name: "Inglés", slug: "id_eng"}, required: false, type: {discriminant: "select", value: {placeholder: "Cantidad", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Español", slug: "id_spa"}, required: false, type: {discriminant: "select", value: {placeholder: "Cantidad", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}] _language="" /%}
 
 {% narrowBanner icon="asterisk" color="beige" iconAlign="items-start" fullWidth=false _language="" %}
-**¿Necesita más material? Tenemos todo lo que necesita.**
+**¿Necesita más materiales? ¡Lo tenemos cubierto!**
 
-Envíenos un correo electrónico a [community@plancpills.org](mailto:community@plancpills.org) con los detalles y necesidades de su campaña, y nos pondremos en contacto con usted lo antes posible.
+Envíenos un correo electrónico a [community@plancpills.org](mailto:community@plancpills.org) con los detalles y las necesidades de su divulgación, y nos pondremos en contacto con usted lo antes posible para discutirlo.
 {% /narrowBanner %}
 {% /flexSection %}
 {% /bodySection %}
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false _language="" %}
-{% sectionHeader color="cyan" title="Pedido" icon="" _language="" %}
-Será dirigido a una plataforma segura para recoger su dirección de envío.
+{% sectionHeader color="cyan" title="Finalizar compra" icon="" _language="" %}
+Serás redirigido a una plataforma segura para recoger tu dirección de envío.
 {% /sectionHeader %}
 
 {% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
-{% textSize textSize="large" inline=true _language="" %}**Tus datos**{% /textSize %}
+{% textSize textSize="large" inline=true _language="" %}**Tu información**{% /textSize %}
 
-{% formInput fields=[{label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Tu correo electrónico", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "¿Cómo ha conocido los adhesivos con código QR de Plan C?", slug: "how_did_you_hear_about_plan_c__dropdown_"}, required: false, type: {discriminant: "select", value: {placeholder: "Seleccione una...", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Búsqueda en Google"}, {label: "Publicaciones en redes sociales"}, {label: "Radio"}, {label: "Cartelera"}, {label: "Pegatina"}, {label: "Organización o acontecimiento local"}, {label: "De boca en boca"}, {label: "Otros"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "¿Tienes relación con algún grupo de la comunidad de salud reproductiva? (Grupos de estudiantes, organizaciones de salud reproductiva, profesionales sanitarios, etc.)", slug: "are_you_connected_with_any_repro_groups_"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Por favor, comparta cualquier información adicional sobre sus afiliaciones, trayectoria de activismo o comentarios:", slug: "additional_notes"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Me gustaría recibir actualizaciones y acciones del Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}] _language="" /%}
+{% formInput fields=[{label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Tu correo electrónico", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "¿Cómo te enteraste de los adhesivos con el código QR de Plan C?", slug: "how_did_you_hear_about_plan_c__dropdown_"}, required: false, type: {discriminant: "select", value: {placeholder: "Selecciona una...", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Búsqueda en Google"}, {label: "Publicación en redes sociales"}, {label: "Radio"}, {label: "Cartelera"}, {label: "Pegatina"}, {label: "Organización o acontecimiento local"}, {label: "De boca en boca"}, {label: "Otro"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "¿Está conectado con algún grupo en la comunidad de salud reproductiva? (Grupos de estudiantes, organizaciones de salud reproductiva, proveedores de atención médica, etc.)", slug: "are_you_connected_with_any_repro_groups_"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Por favor, comparta cualquier información adicional sobre sus afiliaciones, trayectoria de activismo o comentarios:", slug: "additional_notes"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Me gustaría recibir actualizaciones y acciones del Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}] _language="" /%}
 
 {% narrowBanner icon="handCoins" color="beige" iconAlign="items-start" fullWidth=false _language="" %}
 **Paga lo que puedas / Págalo**

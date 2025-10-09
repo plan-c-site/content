@@ -16,8 +16,8 @@ seo:
     title: Proveedores de Las Pastillas Abortivas en %Name% | Guía Plan C
     __title: Mq3ls64nwKc38YDpCY3eI6IQjZxEIvHrXh2rlgE/IoE=
     description: >-
-      Pastillas abortivas están disponibles por correo en %Name%. Compare los
-      proveedores por precio, plazo de entrega y ayuda financiera en esta guía
+      Las pastillas abortivas están disponibles por correo en %Name%. Compare
+      proveedores por precio, tiempo de entrega y ayuda financiera en esta guía
       actualizada de Plan C.
     __description: 1sPG2iv5asXGiuipyRFB3lAMv2o/yT1aUPFlkw08il4=
 medicallySafe: medically-safe-possible-legal-risk
@@ -167,7 +167,7 @@ clinicTypes:
           __label: QSva/7KZG6mPHtQ80cwGzAoQ2fx9Ctq4IsqKW3mtuJo=
       - label: Pick-up
         es:
-          label: Recogida
+          label: Recoger
           __label: UyZZYP3tyd6z2s8pp4xssEKOHWBTFBsarJ/WJsqLPdQ=
       - label: FDA-approved
         es:

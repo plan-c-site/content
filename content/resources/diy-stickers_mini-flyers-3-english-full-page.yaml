@@ -11,7 +11,7 @@ buttonAction:
 buttonUrl:
   discriminant: url
 es:
-  summary: Imprime 9 por página, anverso y reverso.
+  summary: Imprime 9 por página, por delante y por detrás.
   __summary: 5wdAVp2dXrV7YV/oItSMmA7HdtuHIBXVALQ2POnObj8=
   buttonText: Descargar PDF
   __buttonText: YYO+CIPSqJxx7oZWl2fbplzXSU6K99Js7z145rqUPZY=

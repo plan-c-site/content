@@ -16,11 +16,11 @@ externalLink:
   continueText: Continue to provider
   continueIcon: arrowUpRight
   es:
-    title: Está abandonando el sitio web de Plan C.
+    title: Está saliendo del sitio web de Plan C.
     __title: 65NwupSXpbLX4bQh7yrKkmCJolV/hcHl2na7LNaPb1Y=
-    dontShowAgainText: No vuelvas a mostrar esto
+    dontShowAgainText: No mostrar esto de nuevo
     __dontShowAgainText: LCPCHUcXjdBNQ1T4dRwSCle5e/aaPPi6o4w1hwcR0nA=
-    continueText: Continuar con el proveedor
+    continueText: Continuar al proveedor
     __continueText: DIFLYPyl8BsrLC1Evc6nHnmwVgZ/7JHfwO//qqubSXc=
 social:
   - action:
