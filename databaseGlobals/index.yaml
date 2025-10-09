@@ -1,7 +1,4 @@
 forceTranslate: false
-faqs: []
-support: []
-inPersonClinicResources: []
 medicallySafe: medically-safe-possible-legal-risk
 medicallySafeLabel: Medically very safe, possible legal risk
 clinicTypes:
@@ -324,9 +321,6 @@ filterFields:
           - 14
     helpPopup:
       discriminant: false
-linkToStudies:
-  color: beige
-  icon: arrowUp
 medicaidText:
   color: yellow
   icon: info
