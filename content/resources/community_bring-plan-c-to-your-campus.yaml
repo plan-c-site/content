@@ -7,7 +7,7 @@ summary: >-
 buttonText: Email us
 resourceIcon: graduationCap
 iconColor: green
-buttonIcon: ''
+buttonIcon: mail
 buttonAction:
   discriminant: mailto
   value: community@plancpills.org
