@@ -4,8 +4,10 @@ description: >-
   pills. Learn how people in the U.S. are accessing abortion pill options
   online.
 image:
-  discriminant: url
-  value: https://www.plancpills.org/logo.svg
+  discriminant: noco-with-alt
+  value:
+    image: Plan C - Logo
+    highPriority: false
 seoSchemas:
   - basic-pages
   - basic-breadcrumb
