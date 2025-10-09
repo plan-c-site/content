@@ -59,7 +59,7 @@ clinicTypes:
   - label: Other online clinics
     keyValue: International online clinic
     singular: Other online clinic
-    maxVisibleDefault: 2
+    maxVisibleDefault: 3
     color: blue
     icon: globe
     labels:
