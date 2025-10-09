@@ -198,7 +198,7 @@ navBar:
             value:
               label: Social media toolkit
               es:
-                label: Herramientas para las redes sociales
+                label: Kit para las redes sociales
                 __label: 2IHpUD7hcfcvputz/wvxGWefKcqDlH7e+ILSuWWj4R0=
               action:
                 discriminant: internal
