@@ -17,7 +17,7 @@ Plan C es una campaña de información y sensibilización sobre las pastillas ab
 Utilice estos enlaces para saber más sobre nuestro trabajo:
 
 - {% inlineLink action={discriminant: "internal", value: {page: "about"}} _language="" %}Acerca de Plan C{% /inlineLink %}
-- {% inlineLink action={discriminant: "home", value: {}} _language="" %}La guía de píldoras abortivas de Plan C‍{% /inlineLink %}
+- {% inlineLink action={discriminant: "home", value: {anchor: "search-by-state"}} _language="" %}La guía de píldoras abortivas de Plan C‍{% /inlineLink %}
 - {% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}Preguntas frecuentes{% /inlineLink %}
 - {% inlineLink action={discriminant: "internal", value: {page: "community"}} _language="" %}Comunidad del Plan C{% /inlineLink %}
 - {% inlineLink action={discriminant: "internal", value: {page: "partnerships"}} _language="" %}Asociaciones{% /inlineLink %}
@@ -43,8 +43,7 @@ Utilice estos enlaces para saber más sobre nuestro trabajo:
 **Más consejos previos a la entrevista:**
 
 - Por favor, revise estas {% inlineLink action={discriminant: "external", value: {url: "https://prh.org/reporterresource/", showPopup: false}} _language="" %}directrices para informar sobre el aborto{% /inlineLink %} de Médicos por la Salud Reproductiva
-- Puede consultar estos {% inlineLink action={discriminant: "external", value: {url: "https://prh.org/reporterresource/", showPopup: false}} _language="" %}consejos de prensa{% /inlineLink %} de Médicos por la Salud Reproductiva.
-- Para obtener información sobre lo que ocurre sobre el terreno en los distintos estados, póngase en contacto con {% inlineLink action={discriminant: "external", value: {url: "https://abortionfunds.org/funds", showPopup: false}} _language="" %}una organización local{% /inlineLink %}.**‍**
+- Para obtener información sobre lo que ocurre sobre el terreno en los distintos estados, póngase en contacto con {% inlineLink action={discriminant: "external", value: {url: "https://abortionfunds.org/find-a-fund", showPopup: false}} _language="" %}una organización local{% /inlineLink %}.**‍**
 - **No nos pida que le pongamos en contacto con alguien que vaya a abortar o haya abortado.**
 {% /bodySection %}
 
@@ -56,6 +55,18 @@ Después de leer los consejos anteriores, rellene este formulario para ponerse e
 {% formWrapper formType={discriminant: "hubspot", value: {formId: "f880fdae-255c-406b-b373-ce07acd62453", invisibleFields: [{id: "datetime_stamp", value: {discriminant: "datetime"}}, {id: "webform_subject", value: {discriminant: "text", value: "Press or Public Relations"}}]}} afterSubmit="show-screens" _language="" %}
 {% formSection type="waiting" _language="" %}
 {% formInput fields=[{label: {name: "Nombre", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Apellido", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Teléfono", slug: "phone"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organización", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Mensaje", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Envíenme futuros comunicados de prensa del equipo de medios de Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] _language="" /%}
+{% /formSection %}
+
+{% formSection type="success" _language="" %}
+{% insetSection _language="" %}
+Gracias. Su información ha sido recibida.
+{% /insetSection %}
+{% /formSection %}
+
+{% formSection type="submitted" _language="" %}
+{% insetSection _language="" %}
+Presentar...
+{% /insetSection %}
 {% /formSection %}
 {% /formWrapper %}
 {% /bodySection %}
