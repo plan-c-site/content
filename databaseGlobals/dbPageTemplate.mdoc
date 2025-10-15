@@ -126,7 +126,7 @@ In-person abortion clinics usually offer both abortion pills and abortion proced
    _language="" /%}
 
 {% faqList
-   faqs=["can-people-buy-abortion-pills-now-to-use-later"]
+   faqs=["can-people-buy-abortion-pills-in-advance-to-use-later"]
    color="beige"
    appendStateField="Additional FAQs"
    anchor=false
@@ -192,4 +192,8 @@ In-person abortion clinics usually offer both abortion pills and abortion proced
 {% tocAnchor
    slug={name: "Pregnancy calculator", slug: "pregnancy-calculator"}
    type={discriminant: "action", value: {discriminant: "pregnancy"}}
+   _language="" /%}
+
+{% conditionalSection
+   condition={discriminant: "stateFieldTruthy"}
    _language="" /%}
