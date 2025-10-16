@@ -129,6 +129,13 @@ navBar:
                   page: in-advance
           - discriminant: link
             value:
+              label: Missed Period Pills
+              action:
+                discriminant: internal
+                value:
+                  page: period-pills
+          - discriminant: link
+            value:
               label: Abortion pill instructions
               es:
                 label: Pastillas abortivas instrucciones
