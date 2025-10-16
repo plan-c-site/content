@@ -129,7 +129,7 @@ navBar:
                   page: in-advance
           - discriminant: link
             value:
-              label: Missed Period Pills
+              label: Missed period pills
               action:
                 discriminant: internal
                 value:
