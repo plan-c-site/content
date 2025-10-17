@@ -134,6 +134,9 @@ navBar:
                 discriminant: internal
                 value:
                   page: period-pills
+              es:
+                label: Píldoras para la falta de menstruación
+                __label: z8mBJv/1HSbloJZVc28hq0+BC0oQXc4prfoLOGITrBU=
           - discriminant: link
             value:
               label: Abortion pill instructions
