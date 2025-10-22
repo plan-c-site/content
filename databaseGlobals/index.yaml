@@ -264,11 +264,13 @@ filterFields:
           numberLabel: Edades %%+
           __numberLabel: bUeHPBxlA1by5bGujXpnKZo19JS0aTwx0y8DHTeIG7s=
         options:
-          - 14
-          - 15
-          - 16
-          - 17
           - 18
+          - 17
+          - 16
+          - 15
+          - 14
+          - 13
+          - 12
     helpPopup:
       discriminant: false
   - field: Languages
