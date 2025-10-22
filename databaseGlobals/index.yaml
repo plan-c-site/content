@@ -259,6 +259,7 @@ filterFields:
         direction: lte
         zeroIsAny: true
         emptyIsAny: true
+        anyLabel: All ages
         numberLabel: Serves ages %%+
         es:
           numberLabel: Edades %%+
