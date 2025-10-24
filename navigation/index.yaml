@@ -131,7 +131,7 @@ navBar:
             value:
               label: Missed period pills
               es:
-                label: Píldoras para la falta de menstruación
+                label: pastillas para la falta de menstruación
                 __label: z8mBJv/1HSbloJZVc28hq0+BC0oQXc4prfoLOGITrBU=
               action:
                 discriminant: internal
@@ -141,7 +141,7 @@ navBar:
             value:
               label: Abortion pill instructions
               es:
-                label: Pastillas abortivas instrucciones
+                label: "instrucciones de las pastillas abortivas\_"
                 __label: Vn159vrGRnpG3WtmFnsZWSWcUNblxj4x0z8om5ZwfMU=
               action:
                 discriminant: internal
