@@ -130,13 +130,13 @@ navBar:
           - discriminant: link
             value:
               label: Missed period pills
-              action:
-                discriminant: internal
-                value:
-                  page: period-pills
               es:
                 label: Píldoras para la falta de menstruación
                 __label: z8mBJv/1HSbloJZVc28hq0+BC0oQXc4prfoLOGITrBU=
+              action:
+                discriminant: internal
+                value:
+                  page: missed-period-pills
           - discriminant: link
             value:
               label: Abortion pill instructions
