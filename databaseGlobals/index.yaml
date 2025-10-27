@@ -354,6 +354,9 @@ filterFields:
       discriminant: number
       value:
         items:
+          - value: 99
+            label: No Gestational Age Limit
+            comparison: <=
           - value: 8
             label: 8 weeks or less
             comparison: <=
