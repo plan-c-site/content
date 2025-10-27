@@ -1,0 +1,29 @@
+---
+slug: test conditional popup
+title: Test Conditional Popup
+---
+{% conditionalSection
+   condition={discriminant: "eq", value: {field: "slug", value: "california"}}
+   _language="" %}
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium"
+   _language="" %}
+THIS IS CALIFORNIA
+{% /bodySection %}
+{% /conditionalSection %}
+
+{% conditionalSection
+   condition={discriminant: "not", value: {field: "slug", value: "california"}}
+   _language="" %}
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium"
+   _language="" %}
+THIS IS NOT CALIFORNIA
+{% /bodySection %}
+{% /conditionalSection %}
