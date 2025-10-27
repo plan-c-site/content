@@ -262,25 +262,25 @@ filterFields:
             comparison: '='
           - value: 12
             label: Serves ages 12+
-            comparison: '>='
+            comparison: <=
           - value: 13
             label: Serves ages 13+
-            comparison: '>='
+            comparison: <=
           - value: 14
             label: Serves ages 14+
-            comparison: '>='
+            comparison: <=
           - value: 15
             label: Serves ages 15+
-            comparison: '>='
+            comparison: <=
           - value: 16
             label: Serves ages 16+
-            comparison: '>='
+            comparison: <=
           - value: 17
             label: Serves ages 17+
-            comparison: '>='
+            comparison: <=
           - value: 18
             label: Serves ages 18+
-            comparison: '>='
+            comparison: <=
         emptyIs: 0
         zeroIs: 0
         direction: gte
