@@ -281,7 +281,7 @@ filterFields:
           - value: 18
             label: Serves ages 18+
             comparison: '>='
-        emptyIs: 0
+        emptyIs: 99
         direction: lte
         zeroIsAny: true
         emptyIsAny: true
