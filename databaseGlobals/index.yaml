@@ -369,6 +369,7 @@ filterFields:
             label: 14 weeks or less
             comparison: <=
         emptyIs: 99
+        zeroIs: 99
         direction: gte
         zeroIsAny: false
         emptyIsAny: false
