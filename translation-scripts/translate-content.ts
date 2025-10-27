@@ -70,6 +70,7 @@ async function Translate() {
         key: "filterFields",
         container: "array",
         keys: [
+          { key: "items", container: "array", keys: [{ key: "label" }] },
           { key: "label" },
           {
             key: "selectType",
