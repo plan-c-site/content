@@ -256,6 +256,32 @@ filterFields:
     selectType:
       discriminant: number
       value:
+        items:
+          - value: 0
+            label: All Ages
+            comparison: '>='
+          - value: 12
+            label: Serves ages 12+
+            comparison: '>='
+          - value: 13
+            label: Serves ages 13+
+            comparison: '>='
+          - value: 14
+            label: Serves ages 14+
+            comparison: '>='
+          - value: 15
+            label: Serves ages 15+
+            comparison: '>='
+          - value: 16
+            label: Serves ages 16+
+            comparison: '>='
+          - value: 17
+            label: Serves ages 17+
+            comparison: '>='
+          - value: 18
+            label: Serves ages 18+
+            comparison: '>='
+        emptyIs: 0
         direction: lte
         zeroIsAny: true
         emptyIsAny: true
@@ -327,6 +353,29 @@ filterFields:
     selectType:
       discriminant: number
       value:
+        items:
+          - value: 8
+            label: 8 weeks or less
+            comparison: <=
+          - value: 9
+            label: 9 weeks or less
+            comparison: <=
+          - value: 10
+            label: 10 weeks or less
+            comparison: <=
+          - value: 11
+            label: 11 weeks or less
+            comparison: <=
+          - value: 12
+            label: 12 weeks or less
+            comparison: <=
+          - value: 13
+            label: 13 weeks or less
+            comparison: <=
+          - value: 14
+            label: 14 weeks or less
+            comparison: <=
+        emptyIs: 99
         direction: gte
         zeroIsAny: true
         emptyIsAny: true
