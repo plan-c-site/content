@@ -30,17 +30,17 @@ clinicTypes:
     color: cyan
     icon: mousePointer
     labels:
-      - label: "Price:"
+      - label: 'Price:'
         es:
-          label: "Precio:"
+          label: 'Precio:'
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: "Delivery:"
+      - label: 'Delivery:'
         es:
-          label: "Entrega:"
+          label: 'Entrega:'
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
-      - label: "FDA-approved "
+      - label: 'FDA-approved '
         es:
-          label: "Medicamentos aprobados por la FDA "
+          label: 'Medicamentos aprobados por la FDA '
           __label: 4eN9tF1jbkqja/C8ijo06GDOO+8VpyB6WWA+/5PfbMs=
       - label: Medical support
         es:
@@ -63,13 +63,13 @@ clinicTypes:
     color: blue
     icon: globe
     labels:
-      - label: "Price:"
+      - label: 'Price:'
         es:
-          label: "Precio:"
+          label: 'Precio:'
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: "Delivery:"
+      - label: 'Delivery:'
         es:
-          label: "Entrega:"
+          label: 'Entrega:'
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
         es:
@@ -96,13 +96,13 @@ clinicTypes:
     color: pink
     icon: heartHandshake
     labels:
-      - label: "Price:"
+      - label: 'Price:'
         es:
-          label: "Precio:"
+          label: 'Precio:'
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: "Delivery:"
+      - label: 'Delivery:'
         es:
-          label: "Entrega:"
+          label: 'Entrega:'
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
         es:
@@ -129,13 +129,13 @@ clinicTypes:
     color: red
     icon: shoppingCart
     labels:
-      - label: "Price:"
+      - label: 'Price:'
         es:
-          label: "Precio:"
+          label: 'Precio:'
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: "Delivery:"
+      - label: 'Delivery:'
         es:
-          label: "Entrega:"
+          label: 'Entrega:'
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
         es:
@@ -259,30 +259,34 @@ filterFields:
         items:
           - value: 0
             label: All Ages
-            comparison: ">="
+            comparison: '>='
           - value: 12
             label: Serves ages 12+
-            comparison: ">="
+            comparison: '>='
           - value: 13
             label: Serves ages 13+
-            comparison: ">="
+            comparison: '>='
           - value: 14
             label: Serves ages 14+
-            comparison: ">="
+            comparison: '>='
           - value: 15
             label: Serves ages 15+
-            comparison: ">="
+            comparison: '>='
           - value: 16
             label: Serves ages 16+
-            comparison: ">="
+            comparison: '>='
           - value: 17
             label: Serves ages 17+
-            comparison: ">="
+            comparison: '>='
           - value: 18
             label: Serves ages 18+
-            comparison: ">="
+            comparison: '>='
         emptyIs: 0
         zeroIs: 99
+        direction: gte
+        zeroIsAny: false
+        emptyIsAny: false
+        options: []
     helpPopup:
       discriminant: false
   - field: Languages
@@ -365,6 +369,10 @@ filterFields:
             label: 14 weeks or less
             comparison: <=
         emptyIs: 99
+        direction: gte
+        zeroIsAny: false
+        emptyIsAny: false
+        options: []
     helpPopup:
       discriminant: false
 medicaidText:
