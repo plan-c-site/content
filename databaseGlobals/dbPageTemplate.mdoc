@@ -132,6 +132,17 @@ In-person abortion clinics usually offer both abortion pills and abortion proced
    anchor=false
    _language="" /%}
 
+{% conditionalSection
+   condition={discriminant: "eq", value: {field: "Name", value: "Guam"}}
+   _language="" %}
+{% faqSection
+   faq="can-people-buy-abortion-pills-in-advance-to-use-later"
+   color="beige"
+   embedded=false
+   anchor=true
+   _language="" /%}
+{% /conditionalSection %}
+
 {% narrowBanner
    icon="arrowRight"
    color="beige"
