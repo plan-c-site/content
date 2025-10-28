@@ -6,4 +6,6 @@ Las clínicas en línea son atendidas por personal médico licenciado de los Est
 
 {% faqSection faq="guide_online-clinics_what-if-i-have-medical-questions" color="beige" embedded=true anchor=false _language="" /%}
 
+{% conditionalSection condition={discriminant: "not", value: {field: "Access: Online Clinics", value: "available"}} _language="" %}
 {% faqSection faq="guide_online-clinics_why-are-online-clinics-listed-if-my-state-does-not-allow-telehealth-for-abortion" color="beige" embedded=true anchor=false _language="" /%}
+{% /conditionalSection %}

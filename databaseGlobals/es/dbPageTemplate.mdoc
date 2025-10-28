@@ -48,7 +48,15 @@ Las clínicas de aborto presenciales suelen ofrecer tanto pastillas abortivas co
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=true gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% faqList faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills"] color="beige" anchor=true _language="" /%}
+{% faqList faqs=["guide_how-do-people-choose-a-provider"] color="beige" anchor=true _language="" /%}
+
+{% conditionalSection condition={discriminant: "eq", value: {field: "Access: Online Clinics", value: "available"}} _language="" %}
+{% faqSection faq="can-i-get-in-trouble-for-using-abortion-pills" color="beige" embedded=false anchor=false _language="" /%}
+{% /conditionalSection %}
+
+{% conditionalSection condition={discriminant: "not", value: {field: "Access: Online Clinics", value: "available"}} _language="" %}
+{% faqSection faq="can-i-get-in-trouble-for-using-abortion-pills" color="beige" embedded=false anchor=true _language="" /%}
+{% /conditionalSection %}
 
 {% faqList faqs=["can-people-buy-abortion-pills-in-advance-to-use-later"] color="beige" appendStateField="Additional FAQs" anchor=false _language="" /%}
 
