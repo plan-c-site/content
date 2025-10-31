@@ -368,6 +368,9 @@ filterFields:
           - value: 14
             label: 14 weeks or less
             comparison: <=
+          - value: 15
+            label: More than 14 weeks
+            comparison: '>='
         emptyIs: 99
         zeroIs: 99
         direction: gte
