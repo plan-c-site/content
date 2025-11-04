@@ -30,35 +30,4 @@ template: |-
       }
     ]
   }
-es:
-  template: |-
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BreadcrumbList",
-          "@id": "{{ pageUrl }}#breadcrumb",
-          "name": "Breadcrumb for {{ pageUrl }}",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "item": "https://www.plancpills.org/",
-              "name": "Home"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "item": "https://www.plancpills.org/abortion-pill/",
-              "name": "Where people get abortion pills online"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "item": "{{ pageUrl }}",
-              "name": "{{ pageTitle }}"
-            }
-          ]
-        }
-      ]
-    }
+es: {}
