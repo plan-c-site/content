@@ -344,30 +344,30 @@ filterFields:
       discriminant: number
       value:
         items:
-          - value: 99
+          - value: 0
             label: Any
-            comparison: <=
+            comparison: '>='
           - value: 8
             label: 8 weeks or less
-            comparison: <=
+            comparison: '>='
           - value: 9
             label: 9 weeks or less
-            comparison: <=
+            comparison: '>='
           - value: 10
             label: 10 weeks or less
-            comparison: <=
+            comparison: '>='
           - value: 11
             label: 11 weeks or less
-            comparison: <=
+            comparison: '>='
           - value: 12
             label: 12 weeks or less
-            comparison: <=
+            comparison: '>='
           - value: 13
             label: 13 weeks or less
-            comparison: <=
+            comparison: '>='
           - value: 14
             label: 14 weeks or less
-            comparison: <=
+            comparison: '>='
           - value: 15
             label: More than 14 weeks
             comparison: '>='
