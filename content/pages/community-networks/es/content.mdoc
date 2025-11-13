@@ -1,17 +1,31 @@
-{% heroSection image={discriminant: "noco-with-alt", value: {image: "Pill bottle box - Hero", highPriority: false}} imageSide="right" color="beige" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
+{% heroSection image={discriminant: "one-off", value: {image: "/images/community-networks/community-support-tiny.png", highPriority: false}} imageSide="right" color="beige" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
 # Redes comunitarias
 
-Descripción
+Las redes comunitarias envían pastillas abortivas genéricas gratuitas a personas de EE.UU. y ofrecen apoyo entre iguales.
 
 {% tableOfContents _language="" /%}
 {% /heroSection %}
 
 {% tocAnchor slug={name: "¿Qué son las redes comunitarias?", slug: "what-are-community-networks"} type={discriminant: "toc"} _language="" /%}
 
-{% bodySection centered=false width="default" color="blue" textSize="medium" _language="" %}
+{% bodySection centered=false width="default" color="pink" textSize="medium" _language="" %}
 ## ¿Qué son las redes comunitarias?
 
-texto
+Las redes comunitarias envían pastillas abortivas genéricas a las personas de EE.UU. que tienen embarazos confirmados, es decir, que han dado positivo en una prueba de embarazo. En su mayoría son voluntarios que creen en un modelo de atención comunitaria, y envían las pastillas por correo gratuitamente. 
+
+Las pastillas pueden venir reenvasadas en bolsas de plástico o mylar, pero en nuestras pruebas hemos comprobado que son pastillas reales, de buena calidad.
+{% /bodySection %}
+
+{% bodySection centered=false width="medium" color="blue" textSize="medium" _language="" %}
+## Encontrar una red comunitaria
+
+Haga clic a continuación para buscar por estado o territorio.
+
+{% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}} afterSubmit="nothing" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Buscar por estado o territorio", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] _language="" /%}
+{% /formSection %}
+{% /formWrapper %}
 {% /bodySection %}
 
 {% tocAnchor slug={name: "Preguntas frecuentes", slug: "frequently-asked-questions"} type={discriminant: "toc"} _language="" /%}
@@ -22,7 +36,7 @@ texto
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% faqList faqs=[] color="beige" anchor=false _language="" /%}
+{% faqList faqs=["community-networks_can-someone-get-free-pills-in-advance-to-keep-on-hand-just-in-case", "community-networks_what-if-someone-has-a-medical-questions", "community-networks_what-states-do-community-networks-operate-in", "can-i-get-in-trouble-for-using-abortion-pills"] color="beige" anchor=false _language="" /%}
 
 {% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
 {% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}Ver todas las preguntas frecuentes{% /inlineLink %}
