@@ -13,9 +13,7 @@ noIndex: false
 es:
   title: Redes comunitarias
   __title: GZU6raPLi0/RZ7mbWiaSDPLzQT10wn/jojUZGLRqKn4=
-
 ---
-
 {% heroSection
    image={discriminant: "noco-with-alt", value: {image: "Pill bottle box - Hero", highPriority: false}}
    imageSide="right"
@@ -32,7 +30,7 @@ es:
    _language="" %}
 # Community networks
 
-Description
+Community networks ship free, generic abortion pills to people in the US and offer peer support.
 
 {% tableOfContents _language="" /%}
 {% /heroSection %}
@@ -45,12 +43,34 @@ Description
 {% bodySection
    centered=false
    width="default"
-   color="blue"
+   color="pink"
    textSize="medium"
    _language="" %}
 ## What are community networks?
 
-text
+Community-based networks ship generic abortion pills to people in the US who have confirmed pregnancies, meaning they have a&nbsp;positive pregnancy test. They are mostly volunteers who believe in a model of community care, and they mail pills for free.&nbsp;
+
+The pills may come repackaged in plastic or mylar baggies, but in our testing we found they are real pills, of good quality.
+{% /bodySection %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="blue"
+   textSize="medium"
+   _language="" %}
+## Find a community network
+
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
+   afterSubmit="nothing"
+   _language="" %}
+{% formSection type="waiting" _language="" %}
+{% formInput
+   fields=[{label: {name: "Location", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Search by state or territory", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}]
+   _language="" /%}
+{% /formSection %}
+{% /formWrapper %}
 {% /bodySection %}
 
 {% tocAnchor
