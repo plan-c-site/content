@@ -125,27 +125,12 @@ In-person abortion clinics usually offer both abortion pills and abortion proced
    anchor=true
    _language="" /%}
 
-{% conditionalSection
-   condition={discriminant: "eq", value: {field: "Access: Online Clinics", value: "available"}}
-   _language="" %}
 {% faqSection
    faq="can-i-get-in-trouble-for-using-abortion-pills"
    color="beige"
-   embedded=false
+   embedded=true
    anchor=false
    _language="" /%}
-{% /conditionalSection %}
-
-{% conditionalSection
-   condition={discriminant: "not", value: {field: "Access: Online Clinics", value: "available"}}
-   _language="" %}
-{% faqSection
-   faq="can-i-get-in-trouble-for-using-abortion-pills"
-   color="beige"
-   embedded=false
-   anchor=true
-   _language="" /%}
-{% /conditionalSection %}
 
 {% faqList
    faqs=["can-people-buy-abortion-pills-in-advance-to-use-later"]
