@@ -83,20 +83,20 @@ Make a monthly recurring gift or a one-time donation using the form above. {% in
 {% sectionHeader color="cyan" title="Give by check" icon="" _language="" %}
 Please always include our name "Plan C" in the memo line.
 
+{% narrowBanner
+   icon="mail"
+   color="cyan"
+   iconAlign="items-center"
+   fullWidth=false
+   _language="" %}
+Please note Possibility Labs' new mailing address for checks, below:
+{% /narrowBanner %}
+
 Mail to: Possibility Labs\
 P.O. Box 45142\
 San Francisco, CA 94145-5142
 
 A note that checks may take 3-4 weeks to process. Contact us at {% inlineLink action={discriminant: "mailto", value: "support@plancpills.org"} _language="" %}support@plancpills.org{% /inlineLink %} to check on the status of your donation check.
-
-{% narrowBanner
-   icon="mail"
-   color="red"
-   iconAlign="items-center"
-   fullWidth=false
-   _language="" %}
-Please note Possibility Labs' new mailing address for checks, above.
-{% /narrowBanner %}
 {% /sectionHeader %}
 {% /flexSection %}
 {% /horizontalSplit %}
