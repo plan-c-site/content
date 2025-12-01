@@ -1,0 +1,13 @@
+{% bodySection centered=false width="full" color="beige" textSize="medium" _language="" %}
+# Artículos
+{% /bodySection %}
+
+{% postList type={discriminant: "headlines", value: {color: "beige", buttonLabel: "Leer publicación", pagination: 10}} filtering={discriminant: "category", value: {category: "articles"}} _language="" /%}
+
+{% bodySection centered=false width="full" color="beige" textSize="medium" _language="" %}
+## ¿Busca artículos recientes en los medios de comunicación?
+
+Lea artículos recientes de los medios de comunicación y encuentre información para periodistas y miembros de la prensa.
+
+{% inContentButton label="Ver medios recientes" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false rightIcon=false action={discriminant: "internal", value: {page: "media"}} _language="" /%}
+{% /bodySection %}

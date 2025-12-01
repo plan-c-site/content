@@ -188,7 +188,7 @@ navBar:
             value:
               label: Stickers & flyers
               es:
-                label: Pegatinas y folletos
+                label: Stickers y folletos
                 __label: nrI7IOn40eCOftfpC+BVF/Zv2EuutWpSakeDTloZujg=
               action:
                 discriminant: internal
@@ -289,7 +289,7 @@ navBar:
             value:
               label: Research & learning
               es:
-                label: Investigación y formación
+                label: Investigación y aprendizaje
                 __label: tjGUWPk7NvPeuW3/q9HMRbjCN+3jaZXUa3Ve2PmL4a0=
               action:
                 discriminant: internal
