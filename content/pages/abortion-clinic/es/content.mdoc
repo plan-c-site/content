@@ -1,46 +1,34 @@
-{% narrowBanner icon="circleAlert" color="red" iconAlign="items-center" fullWidth=true _language="" %}
-{% textSize textSize="small" inline=false _language="" %}**Plan C no vende pastillas ni ofrece asesoría médica.** Esta guía muestra los resultados verificados de nuestra investigación.{% /textSize %}
-{% /narrowBanner %}
+{% tocAnchor slug={name: "Top", slug: "top"} type={discriminant: "anchor"} _language="" /%}
 
-{% heroSection image={discriminant: "uploaded", value: "mailbox"} imageSide="right" color="beige" imageBackgroundColor="beige" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="left" largeLeftColumn=true reverseOnMobile=false _language="" %}
-# Clínicas de aborto en STATE
+{% tocAnchor slug={name: "Buscar por estado", slug: "search-by-state"} type={discriminant: "anchor"} _language="" /%}
 
-{% tableOfContents _language="" /%}
+{% heroSection image={discriminant: "noco-with-alt", value: {image: "Mailbox - Hero", highPriority: true}} imageSide="right" color="blue" imageBackgroundColor="blue" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-bottom" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=true _language="" %}
+# Pastillas abortivas por correo en todos los estados.
 
-{% narrowBanner icon="alertCircle" color="beige" iconAlign="items-start" fullWidth=false _language="" %}
-{% textSize textSize="small" inline=false _language="" %}Si vive en este estado y desea abortar, puede participar en un estudio de investigación remunerado sobre el acceso al aborto. {% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} _language="" %}Haga clic aquí para obtener más información{% /inlineLink %}.{% /textSize %}
-{% /narrowBanner %}
+Plan C ofrece información sobre cómo las personas en los Estados Unidos están obteniendo pastillas abortivas en línea para tener abortos seguros en casa.
+
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=0.25 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}} afterSubmit="nothing" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Buscar por estado o territorio", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] _language="" /%}
+{% /formSection %}
+{% /formWrapper %}
+
+{% textSize textSize="small" inline=false _language="" %}No recogemos ni almacenamos datos personales.{% /textSize %}
+{% /flexSection %}
 {% /heroSection %}
 
-{% tocAnchor slug={name: "Lista de proveedores", slug: "list-of-providers"} type={discriminant: "toc"} _language="" /%}
-
-{% filteredListings title="Clínicas" color="grey" maxVisibleDefault=6 listings={discriminant: "field", value: {field: "States", value: "California"}} _language="" /%}
-
-{% horizontalSplit noHeader=false _language="" %}
-{% bodySection centered=false width="default" color="black" textSize="medium" _language="" %}
-## Clínicas en persona
-
-Las clínicas de aborto en persona suelen ofrecer tanto pastillas abortivas como procedimientos de aborto. Para encontrar la clínica más cercana a STATE, utilice esta herramienta de búsqueda.
-{% /bodySection %}
-
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceItem resource="i-need-an-a" header={discriminant: "override", value: "Encontrar la clínica más cercana"} type={discriminant: "block", value: {icon: "", iconColor: "grey", buttonIconRight: false}} overrideWebsite={discriminant: ""} overrideAction={discriminant: false} _language="" /%}
-{% /flexSection %}
-{% /horizontalSplit %}
-
-{% narrowBanner icon="arrowUp" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
-{% inlineLink action={discriminant: "anchor", value: "top"} _language="" %}Volver arriba{% /inlineLink %}
-{% /narrowBanner %}
+{% actionBanner title="¿Pastillas abortivas por adelantado?" color="red" icon="truckFast" link={label: "Conoce más", click: {discriminant: "internal", value: {page: "in-advance"}}} _language="" %}
+Algunas personas piden pastillas abortivas con anticipación, por si acaso.
+{% /actionBanner %}
 
 {% horizontalSplit noHeader=false _language="" %}
-{% bodySection centered=false width="default" color="pink" textSize="medium" _language="" %}
-## Preguntas frecuentes
-{% /bodySection %}
+{% sectionHeader color="pink" title="Preguntas frecuentes" icon="" _language="" %}
+Algunas preguntas comunes sobre las pastillas abortivas.
+{% /sectionHeader %}
 
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=true gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% faqList faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills"] color="beige" anchor=true _language="" /%}
-
-{% faqList faqs=["can-people-buy-abortion-pills-now-to-use-later"] color="beige" appendStateField="Additional FAQs" anchor=false _language="" /%}
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=0 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% faqList faqs=["home_what-is-the-abortion-pill", "home_where-can-someone-get-abortion-pills", "is-the-abortion-pill-the-same-as-plan-b-the-morning-after-pill", "can-i-get-in-trouble-for-using-abortion-pills", "i-ve-heard-about-period-pills-are-they-different-from-abortion-pills"] color="beige" anchor=true _language="" /%}
 
 {% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
 {% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}Ver todas las preguntas frecuentes{% /inlineLink %}
@@ -49,19 +37,61 @@ Las clínicas de aborto en persona suelen ofrecer tanto pastillas abortivas como
 {% /horizontalSplit %}
 
 {% horizontalSplit noHeader=false _language="" %}
-{% bodySection centered=false width="default" color="green" textSize="medium" _language="" %}
-## Obtén apoyo en STATE
-{% /bodySection %}
+{% sectionHeader color="green" title="Líneas de ayuda y apoyo" icon="" _language="" %}
+Obtén soporte en vivo por teléfono y mensaje de texto de personas expertas que se preocupan y pueden ayudar.
+{% /sectionHeader %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
 {% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=false buttonIconRight=false _language="" /%}
 
 {% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
-{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}Ver todas las ayudas{% /inlineLink %}
+{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}Ver todas las opciones de soporte{% /inlineLink %}
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% actionBanner title="¿Tiene alguna opinión sobre el Plan C o un proveedor?" color="cyan" icon="" link={label: "Háganoslo saber", click: {discriminant: "internal", value: {page: "contact"}}} _language="" /%}
+{% bodySection centered=false width="default" color="red" textSize="medium" _language="" %}
+## Plan C es un recurso de información.
 
-{% tocAnchor slug={name: "Calculadora de embarazo", slug: "pregnancy-calculator"} type={discriminant: "action", value: {discriminant: "pregnancy"}} _language="" /%}
+No ofrecemos asesoramiento médico o legal, no vendemos pastillas abortivas ni ofrecemos atención médica. Este sitio web es un recurso de investigación y aprendizaje sobre cómo las personas en los Estados Unidos están obteniendo pastillas abortivas y gestionando sus propios abortos de manera segura.
+
+Cuando mencionamos "Guía," nos referimos a un recurso que incluye los servicios, líneas de ayuda y datos disponibles. Plan C comparte investigaciones, pero no respalda ningún servicio mencionado en la Guía y no está afiliado a ninguno de ellos. Las preguntas sobre pedir o recibir pastillas abortivas deben dirigirse a esos servicios.
+
+**Nota sobre el lenguaje:** Las pastillas abortivas pueden ser usadas por personas con útero que pueden quedar embarazadas, incluyendo mujeres cisgénero y aquellos que se identifican como trans, no binarios, de género expansivo, intersexuales, Two-Spirit, y más. Cuando pasamos de un término a otro, como “mujeres” y “personas que están embarazadas”, buscamos incluir a todas las personas embarazadas.
+{% /bodySection %}
+
+{% tocAnchor slug={name: "prueba", slug: "test"} type={discriminant: "toc"} _language="" /%}
+
+{% cardLayoutSection color="beige" _language="" %}
+{% cardSection image={discriminant: "noco-with-alt", value: {image: "Pill packs - Hero", highPriority: false}} imageOnly=false title="¿Pastillas abortivas por adelantado?" action={discriminant: "internal", value: {page: "in-advance"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
+Algunas personas piden pastillas abortivas con anticipación, por si acaso.
+{% /cardSection %}
+
+{% cardSection image={discriminant: "noco-with-alt", value: {image: "Stickers - Hero", highPriority: false}} imageOnly=false title="Obtén stickers gratis" action={discriminant: "internal", value: {page: "stickers"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
+Ayuda a correr la voz sobre el acceso a las pastillas abortivas.
+{% /cardSection %}
+
+{% cardSection image={discriminant: "noco-with-alt", value: {image: "Megaphone - Hero", highPriority: false}} imageOnly=false title="Únete a la Comunidad de Plan C" action={discriminant: "internal", value: {page: "community"}} imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
+Un grupo de activistas y personas defensoras que están tomando acción en sus comunidades.
+{% /cardSection %}
+{% /cardLayoutSection %}
+
+{% horizontalSplit noHeader=true _language="" %}
+{% bodySection centered=false width="default" color="green" textSize="medium" _language="" %}
+### {% textSize textSize="h2" inline=false _language="" %}**Dona para apoyar nuestra labor.**{% /textSize %}
+
+Plan C es una iniciativa sin fines de lucro 501c3. Las becas y donaciones individuales hacen posible este trabajo.
+
+{% inContentButton label="Haz una donación" icon="" size="primary" background="green" altHoverBackground="" smallShadow=false rightIcon=true action={discriminant: "internal", value: {page: "donate"}} _language="" /%}
+{% /bodySection %}
+
+{% bodySection centered=false width="default" color="cyan" textSize="medium" _language="" %}
+### {% textSize textSize="h2" inline=false _language="" %}**Hacemos investigación y compartimos información sobre las pastillas abortivas.**{% /textSize %}
+
+Desde 2016, nuestra misión ha sido investigar el acceso a pastillas abortivas y normalizar métodos modernos de aborto virtual y autogestionado en los Estados Unidos.
+
+{% inContentButton label="Acerca de Plan C" icon="" size="primary" background="cyan" altHoverBackground="" smallShadow=false rightIcon=true action={discriminant: "internal", value: {page: "about"}} _language="" /%}
+{% /bodySection %}
+{% /horizontalSplit %}
+
+{% inContentImage image={discriminant: "one-off", value: {image: "/images/abortion-clinic/milagros-mural-wide-crop-2.jpg", altText: "Abortion pills by mail in all states mural by Milagros for Plan C", highPriority: false}} maxWidth=100 action={discriminant: ""} newTab=false _language="" /%}

@@ -28,49 +28,19 @@ ver {% inlineLink action={discriminant: "external", value: {url: "#testimonials"
 THIS IS ONLY VISIBLE IN ENGLISH! It will not be translated.
 {% /bodySection %}
 
+{% rawHtml html="<div>This is an english only embed</div>" _language="en" /%}
+
 {% bodySection centered=false width="default" color="beige" textSize="medium" _language="es" %}
 THIS IS ONLY VISIBLE IN SPANISH! It will not be translated.
 {% /bodySection %}
+
+{% rawHtml html="<div>This is an spanish only embed</div>" _language="es" /%}
 
 {% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
 VISIBLE EN TODOS LOS IDIOMAS Se traducirá
 {% /bodySection %}
 
-{% horizontalSplit noHeader=true _language="" %}
-{% sectionHeader color="green" title="Dona en línea" icon="" _language="" %}
-Haz una donación mensual recurrente o una donación única usando&nbsp; el formulario anterior. {% inlineLink action={discriminant: "external", value: {url: "https://planc.givevirtuous.org", showPopup: false}} _language="" %}Puedes manejar tu donación recurrente iniciando sesión aquí{% /inlineLink %}.
-{% /sectionHeader %}
-
-{% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=true gap=0 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% tocAnchor slug={name: "Dona con cheque", slug: "give-by-check"} type={discriminant: "toc"} _language="" /%}
-
-{% sectionHeader color="cyan" title="Dona con cheque" icon="" _language="" %}
-**Tenga en cuenta la nueva dirección postal de Possibility Labs para los cheques:**
-
-{% narrowBanner icon="mail" color="cyan" iconAlign="items-start" fullWidth=false _language="" %}
-Enviar por correo a:
-
-Possibility Labs\
-P.O. Box 45142\
-San Francisco, CA 94145-5142
-{% /narrowBanner %}
-
-Por favor, incluye siempre nuestro nombre "Plan C" en la línea de la nota.
-
-Ten en cuenta que los cheques pueden tardar de 3 a 4 semanas en procesarse. Contáctanos escribiendo a&nbsp;{% inlineLink action={discriminant: "mailto", value: "support@plancpills.org"} _language="" %}support@plancpills.org{% /inlineLink %} para comprobar el estado del cheque de tu donación.
-{% /sectionHeader %}
-{% /flexSection %}
-{% /horizontalSplit %}
-
-{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
-{% narrowBanner icon="mail" color="cyan" iconAlign="items-start" fullWidth=false _language="" %}
-Enviar por correo a:
-
-Possibility Labs\
-P.O. Box 45142\
-San Francisco, CA 94145-5142
-{% /narrowBanner %}
-{% /bodySection %}
+{% rawHtml html="<div>This is an all-languages embed</div>" _language="" /%}
 
 {% cardLayoutSection color="green" _language="" %}
 {% cardSection image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"} imageOnly=false title="Algunos títulos" label="Una etiqueta debajo de la tarjeta" action={discriminant: ""} imageCover="bg-cover" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" _language="" %}
@@ -112,8 +82,6 @@ para repasar en altura
 
 {% bodySection centered=false width="default" color="yellow" textSize="medium" _language="" %}
 {% resourceItem resource="abortion-with-pills-after-12-weeks" header={discriminant: "override", value: "Anulación del encabezado"} type={discriminant: "block", value: {icon: "", iconColor: "", buttonIconRight: false}} overrideWebsite={discriminant: ""} overrideAction={discriminant: false} _language="" /%}
-
-{% rawHtml html="<div class=\"raisely-donate\" data-campaign-path=\"plan-c\" data-profile=\"\" data-width=\"100%\" data-height=\"600\"><script src=\"https://cdn.raisely.com/v3/public/embed.js\"></script></div>" _language="" /%}
 {% /bodySection %}
 
 {% tocAnchor slug={name: "Antes de los proveedores prefiltrados", slug: "faq"} type={discriminant: "toc"} _language="" /%}

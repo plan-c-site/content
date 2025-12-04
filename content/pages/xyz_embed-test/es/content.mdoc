@@ -1,0 +1,17 @@
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
+{% rawHtml html="<div>This is a div for all languages</div>" _language="" /%}
+
+{% rawHtml html="<div id=\"divALL\"></div>\n<script>\ndocument.getElementById(\"divALL\").innerHTML = \"This is a script, for all languages\";\n</script>" _language="" /%}
+{% /bodySection %}
+
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
+{% rawHtml html="<div>This is a div for english only</div>" _language="en" /%}
+
+{% rawHtml html="<div id=\"divEN\"></div>\n<script>\ndocument.getElementById(\"divEN\").innerHTML = \"This is a script for english only\";\n</script>" _language="en" /%}
+{% /bodySection %}
+
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
+{% rawHtml html="<div>This is a div for spanish only</div>" _language="es" /%}
+
+{% rawHtml html="<div id=\"divES\"></div>\n<script>\ndocument.getElementById(\"divES\").innerHTML = \"This is a script for spanish only\";\n</script>" _language="es" /%}
+{% /bodySection %}
