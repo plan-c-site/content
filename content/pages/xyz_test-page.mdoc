@@ -60,6 +60,8 @@ see {% inlineLink action={discriminant: "external", value: {url: "#testimonials"
 THIS IS ONLY VISIBLE IN ENGLISH! It will not be translated.
 {% /bodySection %}
 
+{% rawHtml html="<div>This is an english only embed</div>" _language="en" /%}
+
 {% bodySection
    centered=false
    width="default"
@@ -69,6 +71,8 @@ THIS IS ONLY VISIBLE IN ENGLISH! It will not be translated.
 THIS IS ONLY VISIBLE IN SPANISH! It will not be translated.
 {% /bodySection %}
 
+{% rawHtml html="<div>This is an spanish only embed</div>" _language="es" /%}
+
 {% bodySection
    centered=false
    width="default"
@@ -77,6 +81,8 @@ THIS IS ONLY VISIBLE IN SPANISH! It will not be translated.
    _language="" %}
 THIS IS VISIBLE IN ALL LANGUAGES! It will be translated
 {% /bodySection %}
+
+{% rawHtml html="<div>This is an all-languages embed</div>" _language="es" /%}
 
 {% cardLayoutSection color="green" _language="" %}
 {% cardSection
