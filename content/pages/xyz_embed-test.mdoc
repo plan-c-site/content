@@ -18,6 +18,6 @@ noIndex: false
    _language="en" /%}
 
 {% rawHtml
-   html="<script>\ndocument.write(\"This is a script, for all languages.\");\n</script>"
+   html="<div id=\"divEN\"></div>\n<script>\ndocument.getElementById(\"divEN\").innerHTML = \"This is a script, for all languages\";\n</script>"
    _language="" /%}
 {% /bodySection %}
