@@ -32,3 +32,16 @@ noIndex: false
    html="<div id=\"divEN\"></div>\n<script>\ndocument.getElementById(\"divEN\").innerHTML = \"This is a script for english only\";\n</script>"
    _language="en" /%}
 {% /bodySection %}
+
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium"
+   _language="" %}
+{% rawHtml html="<div>This is a div for spanish only</div>" _language="es" /%}
+
+{% rawHtml
+   html="<div id=\"divES\"></div>\n<script>\ndocument.getElementById(\"divES\").innerHTML = \"This is a script for spanish only\";\n</script>"
+   _language="en" /%}
+{% /bodySection %}
