@@ -12,4 +12,12 @@ noIndex: false
    width="default"
    color="beige"
    textSize="medium"
+   _language="" %}
+{% rawHtml
+   html="<div>This is a div for all languages</div>"
+   _language="en" /%}
+
+{% rawHtml
+   html="<script>\ndocument.write(\"This is a script, for all languages.\");\n</script>"
    _language="" /%}
+{% /bodySection %}
