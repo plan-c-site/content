@@ -43,6 +43,8 @@ es:
 {% rawHtml
    html="<div id=\"divEN\"></div>\n<script>\ndocument.getElementById(\"divEN\").innerHTML = \"This is a script for english only\";\n</script>"
    _language="en" /%}
+
+{% textSize textSize="medium" inline=false _language="en" %}Some Text For English Only{% /textSize %}
 {% /bodySection %}
 
 {% bodySection
@@ -56,4 +58,6 @@ es:
 {% rawHtml
    html="<div id=\"divES\"></div>\n<script>\ndocument.getElementById(\"divES\").innerHTML = \"This is a script for spanish only\";\n</script>"
    _language="es" /%}
+
+{% textSize textSize="medium" inline=false _language="es" %}Some Text for Spanish Only{% /textSize %}
 {% /bodySection %}
