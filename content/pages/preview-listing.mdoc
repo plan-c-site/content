@@ -1,0 +1,32 @@
+---
+title: Preview listing
+seo:
+  image:
+    discriminant: ''
+  seoSchemas: []
+status: draft
+noIndex: false
+---
+{% heroSection
+   image={discriminant: ""}
+   imageSide="right"
+   color="beige"
+   imageBackgroundColor="beige"
+   ignoreImageBorder=false
+   imageCover="bg-cover"
+   imageVertical="bg-center"
+   imageHorizontal="center"
+   mobileImageVertical="desktop"
+   mobileImageHorizontal="desktop"
+   largeLeftColumn=false
+   reverseOnMobile=false
+   _language="" %}
+# Preview listing
+{% /heroSection %}
+
+{% filteredListings
+   title="Provider type"
+   color="cyan"
+   maxVisibleDefault=10
+   listings={discriminant: "field", value: {field: "Provider type", value: "Preview"}}
+   _language="" /%}
