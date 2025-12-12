@@ -1,10 +1,12 @@
 title: Merch with a purpose
 heading: Merch with a purpose
 summary: >-
-  100% of the profits from our Threadless merch store goes to WRRAP: a
-  non-partisan, non-profit organization assisting those financially unable to
-  pay for abortions or emergency contraception.
-buttonText: Visit our Threadless store
+  One hundred percent of the profits from our Bonfire shop go toward supporting
+  frontline reproductive access. Each quarter, we highlight a different movement
+  partner and direct all proceeds to their work. Every purchase helps share
+  vital information and moves resources straight to the people who need them
+  most.
+buttonText: Visit our Bonfire store
 resourceIcon: shirt
 iconColor: green
 buttonIcon: arrowUpRight
@@ -12,7 +14,7 @@ buttonAction:
   discriminant: ''
 buttonUrl:
   discriminant: url
-  value: https://plancpills.threadless.com/
+  value: https://www.bonfire.com/store/plan-c-pills/
 es:
   heading: Productos con propósito
   __heading: 31zvMNXHkrIknY+FdhcytiWDVsSosCu40uJNGANgi70=
