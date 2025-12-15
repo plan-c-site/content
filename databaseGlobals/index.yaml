@@ -211,7 +211,7 @@ filterFields:
           es:
             label: Acepta algunos seguros
             __label: P5bMgRGRNPAsXxsVzL4Ku4FTxIvIJKAmQG798bdup2c=
-        - value: Accepts medicaid
+        - value: Free with medicaid
           label: Free with medicaid
           invert: false
           es:
