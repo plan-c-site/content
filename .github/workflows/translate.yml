@@ -31,7 +31,7 @@ jobs:
           cd ./translation-scripts
           npm run translate
       - name: Commit changes
-        uses: EndBug/add-and-commit@v7
+        uses: EndBug/add-and-commit@v9
         with:
           author_name: translate-bot
           author_email: mail@example.com
