@@ -10,7 +10,7 @@ const API_KEY = process.env.WEGLOT_API_KEY || false;
 const WEGLOT_URL = API_KEY
   ? `https://api.weglot.com/translate?api_key=${API_KEY}`
   : false;
-const BASE_URL = process.env.BASE_URL || "https://www.ineedaplanc.org";
+const BASE_URL = process.env.BASE_URL || "https://www.guideupdates.org";
 const FORCE_TRANSLATE = process.env.FORCE_TRANSLATE === "true";
 
 const textTypes = {
