@@ -15,7 +15,7 @@ También puedes imprimir tus propios stickers, minifolletos y carteles de protes
 {% formWrapper formType={discriminant: "multiStep", value: [{discriminant: "hubspot", value: {formId: "c2742058-fff6-4722-b49b-b9daa62fab99", invisibleFields: []}}, {discriminant: "shopify", value: {emailField: "email", itemFields: [{id: "46236994830559", input: "id_spa"}, {id: "46236791013599", input: "id_eng"}]}}]} afterSubmit="nothing" customValidation="let atLeast1 = false\nif (inputs.id_eng && inputs.id_eng !== '0') {\natLeast1 = true \n}\nif (inputs.id_spa && inputs.id_spa !== '0') {\natLeast1 = true \n}\nif (!atLeast1) {\n   return {\n  id_eng: \"Please select at least one type of sticker\",\nid_spa: \"Please select at least one item\"\n}\n}\nreturn true" _language="" %}
 {% formSection type="waiting" _language="" %}
 {% horizontalSplit noHeader=false _language="" %}
-{% sectionHeader color="green" title="Códigos QR" icon="" _language="" %}
+{% sectionHeader color="green" title="Pegatinas con Código QR" icon="" _language="" %}
 Stickers de 2”, disponibles en inglés y español, con un código QR que enlaza directamente con el sitio web de Plan C.
 
 {% inContentImage image={discriminant: "noco-with-alt", value: {image: "Stickers - Hero", highPriority: false}} maxWidth=100 action={discriminant: ""} newTab=false _language="" /%}
@@ -28,7 +28,7 @@ Stickers de 2”, disponibles en inglés y español, con un código QR que enlaz
 {% formInput fields=[{label: {name: "Inglés", slug: "id_eng"}, required: false, type: {discriminant: "select", value: {placeholder: "Cantidad", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Español", slug: "id_spa"}, required: false, type: {discriminant: "select", value: {placeholder: "Cantidad", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "0", value: "0"}, {label: "50", value: "1"}, {label: "100", value: "2"}]}, embedSubmitButton: {discriminant: false}}}}] _language="" /%}
 
 {% narrowBanner icon="asterisk" color="beige" iconAlign="items-start" fullWidth=false _language="" %}
-**¿Necesita más materiales? ¡Lo tenemos cubierto!**
+**¿Necesita más materiales? ¡Tenemos lo que necesita!**
 
 Envíanos un correo electrónico a [community@plancpills.org](mailto:community@plancpills.org) con los detalles y las necesidades de su divulgación, y nos pondremos en contacto con usted lo antes posible para discutirlo.
 {% /narrowBanner %}
@@ -38,39 +38,39 @@ Envíanos un correo electrónico a [community@plancpills.org](mailto:community@p
 
 {% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader color="cyan" title="Finalizar compra" icon="" _language="" %}
-Serás redirigido a una plataforma segura para recoger tu dirección de envío.
+Será dirigido a una plataforma segura para recopilar su dirección de envío.
 {% /sectionHeader %}
 
 {% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
-{% textSize textSize="large" inline=true _language="" %}**Tu información**{% /textSize %}
+{% textSize textSize="large" inline=true _language="" %}**Su información**{% /textSize %}
 
-{% formInput fields=[{label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Tu correo electrónico", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "¿Cómo te enteraste de los adhesivos con el código QR de Plan C?", slug: "how_did_you_hear_about_plan_c__dropdown_"}, required: false, type: {discriminant: "select", value: {placeholder: "Selecciona una...", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Búsqueda en Google"}, {label: "Publicación en redes sociales"}, {label: "Radio"}, {label: "Cartelera"}, {label: "Pegatina"}, {label: "Organización o acontecimiento local"}, {label: "De boca en boca"}, {label: "Otro"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "¿Está conectado con algún grupo en la comunidad de salud reproductiva? (Grupos de estudiantes, organizaciones de salud reproductiva, proveedores de atención médica, etc.)", slug: "are_you_connected_with_any_repro_groups_"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Por favor, comparta cualquier información adicional sobre sus afiliaciones, trayectoria de activismo o comentarios:", slug: "additional_notes"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Me gustaría recibir actualizaciones y acciones del Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}] _language="" /%}
+{% formInput fields=[{label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Su correo electrónico", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "¿Cómo se enteró de las pegatinas con código QR de Plan C?", slug: "how_did_you_hear_about_plan_c__dropdown_"}, required: false, type: {discriminant: "select", value: {placeholder: "Seleccione uno...", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Búsqueda en Google"}, {label: "Publicación en redes sociales"}, {label: "Radio"}, {label: "Valla publicitaria"}, {label: "Adhesivo"}, {label: "Organización o evento local"}, {label: "Boca a boca"}, {label: "Otros"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "¿Está conectado con algún grupo de la comunidad de salud reproductiva? (Grupos estudiantiles, organizaciones de salud reproductiva, proveedores de atención médica, etc.)", slug: "are_you_connected_with_any_repro_groups_"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Por favor, comparta cualquier información adicional sobre sus afiliaciones, trayectoria de activismo o comentarios:", slug: "additional_notes"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Deseo recibir actualizaciones y acciones de Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}] _language="" /%}
 
 {% narrowBanner icon="handCoins" color="beige" iconAlign="items-start" fullWidth=false _language="" %}
-**Paga lo que puedas / Págalo**
+**Paga lo que puedas / Contribuye para otros**
 
 Los stickers nos cuestan un mínimo de 10 dólares por paquete. Después de pagar tendrás la opción de donar a Plan C. Si puedes, por favor da lo que puedas para cubrir estos costes o dónalo. **La donación no es obligatoria.**
 
-*Los materiales se entregarán en material de embalaje sin marca. En el exterior del paquete o sobre no figurará Plan C ni "aborto".*
+*Los materiales se entregarán en un embalaje sin marca. No dirá Plan C ni "aborto" en el exterior del paquete o sobre.*
 {% /narrowBanner %}
 
-{% formInput fields=[{label: {name: "Continuar con la compra", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "arrowRight", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] _language="" /%}
+{% formInput fields=[{label: {name: "Continuar al pago", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "arrowRight", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] _language="" /%}
 
 {% formSection type="error" _language="" %}
 {% narrowBanner icon="alertCircle" color="red" iconAlign="items-center" fullWidth=false _language="" %}
-Se ha producido un error al enviar el formulario.  Por favor {% inlineLink action={discriminant: "internal", value: {page: "contact"}} _language="" %}háganoslo saber{% /inlineLink %}.
+Hubo un error al enviar su formulario. Por favor, {% inlineLink action={discriminant: "internal", value: {page: "contact"}} _language="" %}háganoslo saber{% /inlineLink %}.
 {% /narrowBanner %}
 {% /formSection %}
 
 {% formSection type="submitted" _language="" %}
 {% narrowBanner icon="" color="beige" iconAlign="items-center" fullWidth=false _language="" %}
-Presentar...
+Enviando...
 {% /narrowBanner %}
 {% /formSection %}
 
 {% formSection type="success" _language="" %}
 {% narrowBanner icon="" color="beige" iconAlign="items-center" fullWidth=false _language="" %}
-Gracias, su información ha sido recibida.  Será redirigido a la página de pago.
+Gracias, su información fue recibida. Será redirigido a la página de pago.
 {% /narrowBanner %}
 {% /formSection %}
 {% /bodySection %}
@@ -78,8 +78,8 @@ Gracias, su información ha sido recibida.  Será redirigido a la página de pag
 {% /formSection %}
 {% /formWrapper %}
 
-{% tocAnchor slug={name: "Imprima sus propios adhesivos y folletos", slug: "print-your-own-stickers-and-flyers"} type={discriminant: "action", value: {discriminant: "internal", value: {page: "diy-stickers"}}} _language="" /%}
+{% tocAnchor slug={name: "Imprime tus propias pegatinas y volantes", slug: "print-your-own-stickers-and-flyers"} type={discriminant: "action", value: {discriminant: "internal", value: {page: "diy-stickers"}}} _language="" /%}
 
-{% actionBanner title="Imprima sus propios adhesivos y folletos" color="red" icon="fileText" link={label: "Adhesivos y folletos hechos por ti", click: {discriminant: "internal", value: {page: "diy-stickers"}}} _language="" %}
+{% actionBanner title="Imprime tus propias pegatinas y volantes" color="red" icon="fileText" link={label: "Adhesivos y folletos hechos por ti", click: {discriminant: "internal", value: {page: "diy-stickers"}}} _language="" %}
 Echa un vistazo a nuestras plantillas de stickers hechos por ti, minifolletos y carteles de protesta.
 {% /actionBanner %}

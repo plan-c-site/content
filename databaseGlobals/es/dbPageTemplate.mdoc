@@ -15,7 +15,7 @@
 
 {% conditionalSection condition={discriminant: "stateFieldTruthy", value: "Link to studies (in languages)"} _language="" %}
 {% narrowBanner icon="alertCircle" color="beige" iconAlign="items-start" fullWidth=false _language="" %}
-{% textSize textSize="small" inline=false _language="" %}Si vive en este estado y desea abortar, puede participar en un estudio de investigación remunerado sobre el acceso al aborto. {% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} _language="" %}Haga clic aquí para obtener más información{% /inlineLink %}.{% /textSize %}
+{% textSize textSize="small" inline=false _language="" %}Si reside en este estado y busca un aborto, podría calificar para participar en un estudio de investigación remunerado sobre el acceso al aborto. {% inlineLink action={discriminant: "internal", value: {page: "research-and-learning", anchor: "participate-in-research"}} _language="" %}Haga clic aquí para obtener más información{% /inlineLink %}.{% /textSize %}
 {% /narrowBanner %}
 {% /conditionalSection %}
 {% /heroSection %}
@@ -34,7 +34,7 @@ Las clínicas de aborto presenciales suelen ofrecer tanto pastillas abortivas co
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% resourceItem resource="i-need-an-a" header={discriminant: "override", value: "Encontrar la clínica más cercana"} type={discriminant: "block", value: {icon: "", iconColor: "grey", buttonIconRight: false}} overrideWebsite={discriminant: "state-db", value: {source: "I Need an A Link"}} overrideAction={discriminant: false} _language="" /%}
+{% resourceItem resource="i-need-an-a" header={discriminant: "override", value: "Encuentre la clínica más cercana"} type={discriminant: "block", value: {icon: "", iconColor: "grey", buttonIconRight: false}} overrideWebsite={discriminant: "state-db", value: {source: "I Need an A Link"}} overrideAction={discriminant: false} _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -60,7 +60,7 @@ Las clínicas de aborto presenciales suelen ofrecer tanto pastillas abortivas co
 
 {% horizontalSplit noHeader=false _language="" %}
 {% bodySection centered=false width="default" color="green" textSize="medium" _language="" %}
-## Obtenga ayuda en {% dbText source="Name" _language="" %}ESTADO{% /dbText %}
+## Obtenga apoyo en {% dbText source="Name" _language="" %}STATE{% /dbText %}
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
@@ -72,7 +72,7 @@ Las clínicas de aborto presenciales suelen ofrecer tanto pastillas abortivas co
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% actionBanner title="¿Tiene alguna opinión sobre el Plan C o un proveedor?" color="cyan" icon="" link={label: "Háganoslo saber", click: {discriminant: "internal", value: {page: "contact"}}} _language="" /%}
+{% actionBanner title="¿Tiene comentarios sobre Plan C o un proveedor?" color="cyan" icon="" link={label: "Háganoslo saber", click: {discriminant: "internal", value: {page: "contact"}}} _language="" /%}
 
 {% tocAnchor slug={name: "Calculadora de embarazo", slug: "pregnancy-calculator"} type={discriminant: "action", value: {discriminant: "pregnancy"}} _language="" /%}
 

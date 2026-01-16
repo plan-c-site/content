@@ -52,9 +52,9 @@ clinicTypes:
     howManyPills:
       discriminant: false
     es:
-      label: Clínicas en línea de EE.UU.
+      label: Clínicas en línea de los Estados Unidos
       __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
-      singular: Clínica en línea de EE.UU.
+      singular: Clínica en línea de los Estados Unidos
       __singular: pJuYPhDXCYHqTBIeiocCyDn+VcTPGwhPc4cXIbWY/OI=
   - label: Other online clinics
     keyValue: International online clinic
@@ -167,7 +167,7 @@ clinicTypes:
           __label: QSva/7KZG6mPHtQ80cwGzAoQ2fx9Ctq4IsqKW3mtuJo=
       - label: Pick-up
         es:
-          label: Recoger
+          label: Recogida
           __label: UyZZYP3tyd6z2s8pp4xssEKOHWBTFBsarJ/WJsqLPdQ=
       - label: FDA-approved
         es:

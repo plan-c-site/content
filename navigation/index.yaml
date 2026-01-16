@@ -18,7 +18,7 @@ externalLink:
   es:
     title: Está saliendo del sitio web de Plan C.
     __title: 65NwupSXpbLX4bQh7yrKkmCJolV/hcHl2na7LNaPb1Y=
-    dontShowAgainText: No mostrar esto de nuevo
+    dontShowAgainText: No volver a mostrar esto
     __dontShowAgainText: LCPCHUcXjdBNQ1T4dRwSCle5e/aaPPi6o4w1hwcR0nA=
     continueText: Continuar al proveedor
     __continueText: DIFLYPyl8BsrLC1Evc6nHnmwVgZ/7JHfwO//qqubSXc=
@@ -218,7 +218,7 @@ navBar:
             value:
               label: Merch
               es:
-                label: Mercancía
+                label: Productos
                 __label: G5mfdxUY+cvNY3/lJqf66ZXHT8QPL6Y47mMdkKMM0Ec=
               action:
                 discriminant: external
@@ -309,7 +309,7 @@ navBar:
             value:
               label: 2024 Annual report
               es:
-                label: 2024 Informe anual
+                label: Informe anual 2024
                 __label: s7ML3HbRdBWtEFBBIl2VEcj2gK9QGel5qUCq9t4Hf+M=
               action:
                 discriminant: external
