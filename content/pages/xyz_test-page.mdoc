@@ -11,11 +11,9 @@ noIndex: false
 es:
   title: página de prueba
   __title: LhwG6ZTecgwh3ThR4BR9clVGSyBRkm1cZTNnkqjBtE8=
-
 ---
-
 {% heroSection
-   image={discriminant: "noco", value: "Mailbox - Hero"}
+   image={discriminant: "noco-with-alt", value: {image: "Mailbox - Hero", highPriority: false}}
    imageSide="right"
    color="blue"
    imageBackgroundColor="cyan"
@@ -88,7 +86,7 @@ THIS IS VISIBLE IN ALL LANGUAGES! It will be translated
 
 {% cardLayoutSection color="green" _language="" %}
 {% cardSection
-   image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"}
+   image={discriminant: "noco-with-alt", value: {image: "Education Foundation of America - Logo", highPriority: false}}
    imageOnly=false
    title="Some Title"
    label="A label below the card"
@@ -105,7 +103,7 @@ I think we can add content...
 {% /cardSection %}
 
 {% cardSection
-   image={discriminant: "uploaded", value: "logo-educational-foundation-of-america"}
+   image={discriminant: "noco-with-alt", value: {image: "Education Foundation of America - Logo", highPriority: false}}
    imageOnly=false
    title="Some Title"
    label="A label below the card"
@@ -146,7 +144,7 @@ to go over in height
 {% /cardSection %}
 
 {% cardSection
-   image={discriminant: "noco", value: "Stickers - Card - Wide"}
+   image={discriminant: "noco-with-alt", value: {image: "Stickers - Hero", highPriority: false}}
    imageOnly=true
    label="A label below the card"
    action={discriminant: "external", value: {url: "https://google.com", showPopup: false}}
@@ -254,7 +252,7 @@ Some text is here
 **Test** {% inlineLink action={discriminant: "external", value: {url: "https://google.com", showPopup: false}} _language="" %}some{% /inlineLink %} text
 
 {% inContentImage
-   image={discriminant: "uploaded", value: "mailbox"}
+   image={discriminant: "noco-with-alt", value: {image: "Mailbox - Hero", highPriority: false}}
    maxWidth=100
    action={discriminant: ""}
    newTab=false
