@@ -20,6 +20,16 @@ Artículos que cubren las últimas noticias, batallas legales, cambios de polít
 {% /flexSection %}
 {% /horizontalSplit %}
 
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="cyan" title="Artículos de opinión y campañas" icon="" _language="" %}
+Artículos que cubren las últimas noticias, batallas legales, cambios de políticas y discusiones clave sobre el aborto.
+{% /sectionHeader %}
+
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% postList type={discriminant: "postList", value: {pagination: 4}} filtering={discriminant: "category", value: {category: "articles"}} _language="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
 {% tocAnchor slug={name: "Acerca de Plan C", slug: "about-plan-c"} type={discriminant: "toc"} _language="" /%}
 
 {% horizontalSplit noHeader=false _language="" %}

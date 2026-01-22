@@ -54,6 +54,9 @@ clinicTypes:
       value:
         howManyPillsPopup: pill-examples-online-clinics
         howManyPillsLabel: What do abortion pills look like?
+        es:
+          howManyPillsLabel: ¿Cómo son las pastillas abortivas?
+          __howManyPillsLabel: 0b+GiOuAxWvfYfBkA3lMcSBqnPzaJkdaJWm7NRXgk2s=
     es:
       label: Clínicas en línea de los Estados Unidos
       __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
@@ -90,6 +93,9 @@ clinicTypes:
       value:
         howManyPillsPopup: pill-examples-other-online-clinics
         howManyPillsLabel: What do abortion pills look like?
+        es:
+          howManyPillsLabel: ¿Cómo son las pastillas abortivas?
+          __howManyPillsLabel: 0b+GiOuAxWvfYfBkA3lMcSBqnPzaJkdaJWm7NRXgk2s=
     es:
       label: Otras clínicas en línea
       __label: Jb00eFJ3DB1rWFd5LVhgbLEOAyoC9SGS1ANKOCM+5B4=
@@ -126,6 +132,9 @@ clinicTypes:
       value:
         howManyPillsPopup: pill-examples-community-networks
         howManyPillsLabel: What do abortion pills look like?
+        es:
+          howManyPillsLabel: ¿Cómo son las pastillas abortivas?
+          __howManyPillsLabel: 0b+GiOuAxWvfYfBkA3lMcSBqnPzaJkdaJWm7NRXgk2s=
     es:
       label: Redes comunitarias
       __label: GZU6raPLi0/RZ7mbWiaSDPLzQT10wn/jojUZGLRqKn4=
@@ -162,6 +171,9 @@ clinicTypes:
       value:
         howManyPillsPopup: pill-examples-websites-that-sell-pills
         howManyPillsLabel: What do abortion pills look like?
+        es:
+          howManyPillsLabel: ¿Cómo son las pastillas abortivas?
+          __howManyPillsLabel: 0b+GiOuAxWvfYfBkA3lMcSBqnPzaJkdaJWm7NRXgk2s=
     es:
       label: Sitios web que venden pastillas
       __label: Jgjbu7xUoByUp2VC/amDZqKSLS9tNXbii5lbck05DBg=
