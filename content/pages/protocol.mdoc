@@ -20,12 +20,11 @@ seo:
       pastillas abortivas. Aprende cómo tomar la mifepristona y el misoprostol.
     __description: 7ZY3Bg9eO0qy/BBPgB7S5aMGVmkhcBrSmRq3SQOi4nE=
 status: published
+noIndex: false
 es:
   title: 'Cómo utilizar pastillas abortivas: Instrucciones paso a paso'
   __title: PilLTKS9SBVeOQLa56KIrEGh8HLSKNeeLCh03qy+tvM=
-
 ---
-
 {% heroSection
    image={discriminant: "noco-with-alt", value: {image: "Abortion pill instructions - Hero", highPriority: false}}
    imageSide="right"
@@ -487,7 +486,7 @@ You can get pregnant again as soon as 8 days after an abortion. Most birth contr
 
 {% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader
-   color="green"
+   color="pink"
    title="Video: How to use abortion pills"
    icon=""
    _language="" %}
@@ -495,4 +494,42 @@ This video features six abortion storytellers who’ve had medication abortions 
 {% /sectionHeader %}
 
 {% youtubeEmbed videoId="yhw-ItyTeao" startAt=0 _language="" /%}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="green"
+   title="Hotlines & support"
+   icon=""
+   _language="" %}
+Get live phone and text support from caring experts who can help.
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch"
+   _language="" %}
+{% resourceList
+   resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="green"
+   hideHeaders=false
+   buttonIconRight=false
+   _language="" /%}
+
+{% narrowBanner
+   icon="arrowRight"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true
+   _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}See all support options{% /inlineLink %}
+{% /narrowBanner %}
+{% /flexSection %}
 {% /horizontalSplit %}
