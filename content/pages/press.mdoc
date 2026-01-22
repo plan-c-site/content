@@ -21,9 +21,7 @@ noIndex: false
 es:
   title: Prensa
   __title: ntEnPptaVXmfXpVKSCwE/C4Br1+gbb/3cGs1BnvgEpk=
-
 ---
-
 {% heroSection
    image={discriminant: "noco-with-alt", value: {image: "Megaphone - Hero", highPriority: false}}
    imageSide="right"
@@ -78,6 +76,30 @@ Articles covering the latest news, legal battles, policy changes, and key discus
 {% articleList
    pagination=4
    filtering={discriminant: "category", value: {category: "plan-c"}}
+   _language="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="cyan"
+   title="Op-eds and campaigns"
+   icon=""
+   _language="" %}
+Articles covering the latest news, legal battles, policy changes, and key discussions on abortion.
+{% /sectionHeader %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch"
+   _language="" %}
+{% postList
+   type={discriminant: "postList", value: {pagination: 4}}
+   filtering={discriminant: "category", value: {category: "articles"}}
    _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
