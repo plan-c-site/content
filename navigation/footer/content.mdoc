@@ -180,17 +180,24 @@ Site by {% inlineLink action={discriminant: "external", value: {url: "https://ey
 {% /flexSection %}
 
 {% flexSection
-   direction="flex-row"
+   direction="flex-col"
    noWrap=false
    noInnerBorders=true
    grow=false
    gap=2
-   maxWidth="21rem"
+   maxWidth="13rem"
    itemsAlign="items-center"
    justiftContent="justify-stretch"
    _language="" %}
 {% inContentImage
-   image={discriminant: "noco", value: "Abortion Care Network - Logo"}
+   image={discriminant: "noco-with-alt", value: {image: "Abortion Care Network - Logo", highPriority: false}}
+   maxWidth=100
+   action={discriminant: "external", value: {url: "https://abortioncarenetwork.org/", showPopup: false}}
+   newTab=false
+   _language="" /%}
+
+{% inContentImage
+   image={discriminant: "noco-with-alt", value: {image: "NAF - Logo", highPriority: false}}
    maxWidth=100
    action={discriminant: "external", value: {url: "https://abortioncarenetwork.org/", showPopup: false}}
    newTab=false
