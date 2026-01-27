@@ -184,12 +184,18 @@ Si actualmente tiene un servicio de telesalud que ofrece pastillas abortivas por
 
 {% formWrapper formType={discriminant: "hubspot", value: {formId: "0f9391ab-74f6-4d84-b100-8f4cae800143", invisibleFields: [{id: "webform_subject", value: {discriminant: "text", value: "I am a medical provider"}}, {id: "datetime_stamp", value: {discriminant: "datetime"}}]}} afterSubmit="show-screens" _language="" %}
 {% formSection type="waiting" _language="" %}
-{% formInput fields=[{label: {name: "Nombre", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Apellido", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organización", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Mensaje", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Deseo recibir actualizaciones y acciones de Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] _language="" /%}
+{% formInput fields=[{label: {name: "Nombre", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Apellido", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Correo electrónico", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organización", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Deseo recibir actualizaciones y acciones de Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] _language="" /%}
 {% /formSection %}
 
 {% formSection type="success" _language="" %}
 {% narrowBanner icon="" color="beige" iconAlign="items-center" fullWidth=false _language="" %}
 Gracias, su información fue recibida.
+{% /narrowBanner %}
+{% /formSection %}
+
+{% formSection type="error" _language="" %}
+{% narrowBanner icon="" color="beige" iconAlign="items-center" fullWidth=false _language="" %}
+Se ha producido un error al enviar el formulario.  Por favor, {% inlineLink action={discriminant: "internal", value: {page: "contact"}} _language="" %}póngase en contacto con nosotros aquí{% /inlineLink %}.
 {% /narrowBanner %}
 {% /formSection %}
 
