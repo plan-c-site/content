@@ -350,6 +350,17 @@ Thanks, your information was received.
 {% /narrowBanner %}
 {% /formSection %}
 
+{% formSection type="error" _language="" %}
+{% narrowBanner
+   icon=""
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=false
+   _language="" %}
+There was an error submitting the form.  Please {% inlineLink action={discriminant: "internal", value: {page: "contact"}} _language="" %}contact us here{% /inlineLink %}.
+{% /narrowBanner %}
+{% /formSection %}
+
 {% formSection type="submitted" _language="" %}
 {% narrowBanner
    icon=""
