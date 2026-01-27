@@ -1,0 +1,27 @@
+---
+title: Preview all listings
+seo:
+  image:
+    discriminant: ''
+  seoSchemas: []
+status: published
+noIndex: true
+es:
+  title: Vista previa del anuncio
+  __title: PSF8Io59l9aP8vZfoR5SIz64cbX1eb8DhgqypH1pSsk=
+---
+{% bodySection
+   centered=false
+   width="default"
+   color="beige"
+   textSize="medium"
+   _language="" %}
+# Preview listing
+{% /bodySection %}
+
+{% filteredListings
+   title="Provider type"
+   color="cyan"
+   maxVisibleDefault=0
+   listings={discriminant: "field", value: {field: "Provider type", value: "Online clinic"}}
+   _language="" /%}
