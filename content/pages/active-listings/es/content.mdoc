@@ -1,0 +1,19 @@
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
+# Anuncios activos
+
+{% textSize textSize="large" inline=false _language="" %}Esta página incluye todos los anuncios activos, ordenados por precio.{% /textSize %}
+
+Notas:
+
+- Esto también incluye anuncios cuyo estado es «Solo vista previa».
+- Considera añadir «Nombre del proveedor» a cada anuncio para diferenciar mejor los múltiples.
+- Considera añadir una lista de «Estados» a cada anuncio.
+{% /bodySection %}
+
+{% filteredListings title="Tipo de proveedor" color="cyan" maxVisibleDefault=0 listings={discriminant: "field", value: {field: "Provider type", value: "Online clinic"}} _language="" /%}
+
+{% filteredListings title="Tipo de proveedor" color="blue" maxVisibleDefault=0 listings={discriminant: "field", value: {field: "Provider type", value: "International online clinic"}} _language="" /%}
+
+{% filteredListings title="Tipo de proveedor" color="pink" maxVisibleDefault=0 listings={discriminant: "field", value: {field: "Provider type", value: "Community network"}} _language="" /%}
+
+{% filteredListings title="Tipo de proveedor" color="red" maxVisibleDefault=0 listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}} _language="" /%}
