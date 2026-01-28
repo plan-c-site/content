@@ -24,9 +24,7 @@ noIndex: false
 es:
   title: Apoyo y recursos
   __title: kFi1o64E1bZbHa+9caXoI7r7bqH7cwD0cqZj8GyO9jk=
-
 ---
-
 {% heroSection
    image={discriminant: "noco-with-alt", value: {image: "Counselor with red dots - Hero", highPriority: false}}
    imageSide="right"
@@ -378,7 +376,9 @@ Resources for self-managed abortion outside of the US.
    color="red"
    title="Later gestation info & support"
    icon=""
-   _language="" /%}
+   _language="" %}
+Pregnant people need and seek abortion care at all stages of pregnancy.
+{% /sectionHeader %}
 
 {% flexSection
    direction="flex-row"
@@ -440,7 +440,9 @@ Resources for self-managed abortion outside of the US.
    color="cyan"
    title="Find an abortion doula"
    icon=""
-   _language="" /%}
+   _language="" %}
+Doulas are companions who can provide emotional, logistical, spiritual, and informational support during abortion.
+{% /sectionHeader %}
 
 {% flexSection
    direction="flex-row"
@@ -452,6 +454,37 @@ Resources for self-managed abortion outside of the US.
    _language="" %}
 {% resourceList
    resources=[{resource: "dopo-co-op"}, {resource: "rouge-doulas"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="cyan"
+   hideHeaders=true
+   buttonIconRight=false
+   _language="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor
+   slug={name: "Sexual violence support", slug: "sexual-violence-support"}
+   type={discriminant: "toc"}
+   _language="" /%}
+
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader
+   color="pink"
+   title="Find an abortion doula"
+   icon=""
+   _language="" /%}
+
+{% flexSection
+   direction="flex-row"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch"
+   _language="" %}
+{% resourceList
+   resources=[{resource: "national-domestic-violence-hotline"}, {resource: "national-sexual-assault-hotline"}]
    type={discriminant: "simple", value: 2}
    icon=""
    iconColor="cyan"
