@@ -331,7 +331,7 @@ filterFields:
           label: Español
           invert: false
           es:
-            label: English
+            label: Español
             __label: lLOCthud3g/41FpEo0thlx2Y31vYEMgDo/M85bEV6ug=
         - value: Hindi
           label: हिन्दी
