@@ -17,18 +17,18 @@
 {% formInput fields=[{label: {name: "Dénos su opinión", slug: "feedback"}, required: true, type: {discriminant: "text", value: {placeholder: "Comentarios", multiline: true, embedSubmitButton: {discriminant: true, value: {icon: "x", background: "blue", altHoverBackground: "blue", autoSubmit: false}}}}}] _language="" /%}
 {% /formWrapper %}
 
-{% inContentButton label="Prueba Popup" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false rightIcon=true action={discriminant: "popup", value: "xyz-test-popup"} _language="" /%}
+{% inContentButton label="Prueba de ventana emergente" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false rightIcon=true action={discriminant: "popup", value: "xyz-test-popup"} _language="" /%}
 {% /heroSection %}
 
 {% formWrapper formType={discriminant: "link", value: {pattern: "/[:lang:]/[:text:]"}} afterSubmit="show-screens" _language="" %}
 {% formSection type="waiting" _language="" %}
 {% horizontalSplit noHeader=false _language="" %}
-{% sectionHeader color="green" title="¿Probando un formulario de enlace?" icon="" _language="" /%}
+{% sectionHeader color="green" title="¡¿Probando un formulario de enlace?!" icon="" _language="" /%}
 
 {% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
-{% formInput fields=[{label: {name: "Algunos textos", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Algo...", multiline: false, embedSubmitButton: {discriminant: false}}}}] _language="" /%}
+{% formInput fields=[{label: {name: "Algún texto", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Algo...", multiline: false, embedSubmitButton: {discriminant: false}}}}] _language="" /%}
 
-{% formInput fields=[{label: {name: "Algunos textos", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Algo...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Idioma", slug: "lang"}, required: true, type: {discriminant: "select", value: {autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Inglés", value: "en"}, {label: "Español", value: "es"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] _language="" /%}
+{% formInput fields=[{label: {name: "Algún texto", slug: "text"}, required: false, type: {discriminant: "text", value: {placeholder: "Algo...", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Idioma", slug: "lang"}, required: true, type: {discriminant: "select", value: {autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Inglés", value: "en"}, {label: "Español", value: "es"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] _language="" /%}
 {% /bodySection %}
 {% /horizontalSplit %}
 {% /formSection %}
