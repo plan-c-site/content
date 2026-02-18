@@ -1,6 +1,119 @@
 homePage: abortion-clinic-home
 seo:
   image:
-    discriminant: ''
+    discriminant: ""
   seoSchemas: []
-clinicTypes: []
+clinicTypes:
+  - label: US-based online clinics
+    keyValue: Online clinic
+    singular: US-based online clinic
+    maxVisibleDefault: 6
+    color: cyan
+    icon: mousePointer
+    labels:
+      - label: "Price:"
+        es:
+          label: "Precio:"
+          __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
+      - label: "Delivery:"
+        es:
+          label: "Entrega:"
+          __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
+      - label: "FDA-approved "
+        es:
+          label: "Medicamentos aprobados por la FDA "
+          __label: 4eN9tF1jbkqja/C8ijo06GDOO+8VpyB6WWA+/5PfbMs=
+      - label: Medical support
+        es:
+          label: Apoyo médico
+          __label: //U8H6EehYV7ubJvO6O3yhyHiEOnM34LbHqyfD5HP0I=
+    howDoesThisWork: how-does-this-work-online-clinics
+    isLink:
+      discriminant: false
+    howManyPills:
+      discriminant: true
+      value:
+        howManyPillsPopup: pill-examples-online-clinics
+        howManyPillsLabel: What do abortion pills look like?
+        es:
+          howManyPillsLabel: ¿Cómo son las pastillas abortivas?
+          __howManyPillsLabel: 0b+GiOuAxWvfYfBkA3lMcSBqnPzaJkdaJWm7NRXgk2s=
+    es:
+      label: Clínicas en línea de los Estados Unidos
+      __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
+      singular: Clínica en línea de los Estados Unidos
+      __singular: pJuYPhDXCYHqTBIeiocCyDn+VcTPGwhPc4cXIbWY/OI=
+  - label: Other online clinics
+    keyValue: International online clinic
+    singular: Other online clinic
+    maxVisibleDefault: 3
+    color: blue
+    icon: globe
+    labels:
+      - label: "Price:"
+        es:
+          label: "Precio:"
+          __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
+      - label: "Delivery:"
+        es:
+          label: "Entrega:"
+          __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
+      - label: Generic
+        es:
+          label: Medicamentos genéricos
+          __label: AijG1I7PkrkAkpdEANvzkHtXrRrn245/0q4IUeO6gHk=
+      - label: Medical support
+        es:
+          label: Apoyo médico
+          __label: //U8H6EehYV7ubJvO6O3yhyHiEOnM34LbHqyfD5HP0I=
+    howDoesThisWork: how-does-this-work-international-online-clinics
+    isLink:
+      discriminant: false
+    howManyPills:
+      discriminant: true
+      value:
+        howManyPillsPopup: pill-examples-other-online-clinics
+        howManyPillsLabel: What do abortion pills look like?
+        es:
+          howManyPillsLabel: ¿Cómo son las pastillas abortivas?
+          __howManyPillsLabel: 0b+GiOuAxWvfYfBkA3lMcSBqnPzaJkdaJWm7NRXgk2s=
+    es:
+      label: Otras clínicas en línea
+      __label: Jb00eFJ3DB1rWFd5LVhgbLEOAyoC9SGS1ANKOCM+5B4=
+      singular: Otra clínica en línea
+      __singular: 7FBG9GIt79OWigyBMNr9fBpNqhTQHk0MCeUqlkWrGfY=
+  - label: In-person clinics
+    singular: In-person clinic
+    maxVisibleDefault: 3
+    color: grey
+    icon: hospital
+    labels:
+      - label: Pricing varies
+        es:
+          label: Los precios varían
+          __label: QSva/7KZG6mPHtQ80cwGzAoQ2fx9Ctq4IsqKW3mtuJo=
+      - label: Pick-up
+        es:
+          label: Recogida
+          __label: UyZZYP3tyd6z2s8pp4xssEKOHWBTFBsarJ/WJsqLPdQ=
+      - label: FDA-approved
+        es:
+          label: Medicamentos aprobados por la FDA
+          __label: CYBqONC2yqBTl2hmjxKWURS9Tq+hpw7y8z9OyikHB7I=
+      - label: Medical support
+        es:
+          label: Apoyo médico
+          __label: //U8H6EehYV7ubJvO6O3yhyHiEOnM34LbHqyfD5HP0I=
+    isLink:
+      discriminant: true
+      value:
+        action:
+          discriminant: anchor
+          value: in-person-clinics
+    howManyPills:
+      discriminant: false
+    es:
+      label: Clínicas en persona
+      __label: SE5NPQar1ez72fqPZPsruSRVpIKKZFg9WnsqpHhytGc=
+      singular: Clínicas en persona
+      __singular: UQyDC1Rd2TpAFhxU3Lq8TdphNuKjVJ/oSSi0ldqqjsA=
