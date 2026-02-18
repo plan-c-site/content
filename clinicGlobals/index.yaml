@@ -1,7 +1,7 @@
 homePage: abortion-clinic-home
 seo:
   image:
-    discriminant: ""
+    discriminant: ''
   seoSchemas: []
 clinicTypes:
   - label: US-based online clinics
@@ -11,17 +11,17 @@ clinicTypes:
     color: cyan
     icon: mousePointer
     labels:
-      - label: "Price:"
+      - label: 'Price:'
         es:
-          label: "Precio:"
+          label: 'Precio:'
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: "Delivery:"
+      - label: 'Delivery:'
         es:
-          label: "Entrega:"
+          label: 'Entrega:'
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
-      - label: "FDA-approved "
+      - label: 'FDA-approved '
         es:
-          label: "Medicamentos aprobados por la FDA "
+          label: 'Medicamentos aprobados por la FDA '
           __label: 4eN9tF1jbkqja/C8ijo06GDOO+8VpyB6WWA+/5PfbMs=
       - label: Medical support
         es:
@@ -50,13 +50,13 @@ clinicTypes:
     color: blue
     icon: globe
     labels:
-      - label: "Price:"
+      - label: 'Price:'
         es:
-          label: "Precio:"
+          label: 'Precio:'
           __label: v8id2CKLRsu6wlXF/4PpfXAymR5NYIzmLoi7MDGtc9g=
-      - label: "Delivery:"
+      - label: 'Delivery:'
         es:
-          label: "Entrega:"
+          label: 'Entrega:'
           __label: jAfz8rFbtKeWNn/9jjlGjK1VaVpCP/G+JJCkI03Bkc4=
       - label: Generic
         es:
