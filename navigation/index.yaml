@@ -307,14 +307,14 @@ navBar:
                   page: documentary
           - discriminant: link
             value:
-              label: 2024 Annual report
+              label: 2025 Annual report
               es:
                 label: Informe anual 2024
                 __label: s7ML3HbRdBWtEFBBIl2VEcj2gK9QGel5qUCq9t4Hf+M=
               action:
                 discriminant: external
                 value:
-                  url: /2024-annual-report
+                  url: /2025-annual-report
                   showPopup: false
                   es:
                     url: /2024-annual-report
