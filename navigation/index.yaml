@@ -309,16 +309,16 @@ navBar:
             value:
               label: 2025 Annual report
               es:
-                label: Informe anual 2024
-                __label: s7ML3HbRdBWtEFBBIl2VEcj2gK9QGel5qUCq9t4Hf+M=
+                label: Informe anual 2025
+                __label: OjnzdHCFuZA10PggvxHX1AsAfjkAXt/g1mP47hHDHJY=
               action:
                 discriminant: external
                 value:
                   url: /2025-annual-report
                   showPopup: false
                   es:
-                    url: /2024-annual-report
-                    __url: uLl+Taj8qXlhzSkuOVgxM3Vz7nf+onyll9SrK5pt/bA=
+                    url: /2025-annual-report
+                    __url: WL9WmQlYnqaasaAz8N4ngrE6u1MW+rZnU8FZHJPHz+M=
           - discriminant: link
             value:
               label: Contact us
