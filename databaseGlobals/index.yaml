@@ -406,6 +406,7 @@ filterFields:
 medicaidText:
   color: yellow
   icon: info
+searchWeight: 10
 es:
   medicallySafeLabel: Médicamente muy seguro, posible riesgo legal
   __medicallySafeLabel: YRedroI0azDmN44tftefRVruytDQ4yTP5v80+6qDLbo=
