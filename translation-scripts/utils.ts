@@ -434,7 +434,7 @@ async function clearOldTranslations(folder: string) {
       const enExists = !!(await fs.stat(enFile).catch((e) => false));
       if (!enExists) {
         console.log("Cleared ", v);
-        await fs.rm(path.dirname(v), { recursive: true, force: true });
+        await fs.rm(v, { force: true });
       }
     }),
   ]);
