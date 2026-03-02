@@ -198,6 +198,9 @@ async function Translate() {
     [],
     { url_base: "/databaseGlobals" }
   );
+  await translateMarkdownValues(path.join(__dirname, "../clinicGlobals"), [], {
+    url_base: "/clinicGlobals",
+  });
   await translateMarkdownValues(path.join(__dirname, "../navigation"), [], {
     url_base: "/navigation",
   });
