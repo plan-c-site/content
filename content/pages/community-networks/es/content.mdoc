@@ -1,0 +1,61 @@
+{% heroSection image={discriminant: "one-off", value: {image: "/images/community-networks/community-support-tiny.png", highPriority: false}} imageSide="right" color="beige" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
+# Redes comunitarias
+
+Las redes comunitarias envían pastillas abortivas genéricas gratis y ofrecen apoyo entre pares a personas en Estados Unidos.
+
+{% tableOfContents _language="" /%}
+{% /heroSection %}
+
+{% tocAnchor slug={name: "¿Qué son las redes comunitarias?", slug: "what-are-community-networks"} type={discriminant: "toc"} _language="" /%}
+
+{% bodySection centered=false width="default" color="pink" textSize="medium" _language="" %}
+## ¿Qué son las redes comunitarias?
+
+Son redes creadas en las comunidades que envían pastillas abortivas genéricas a personas en Estados Unidos que ya tiene un embarazo confirmado, es decir, que tienen una prueba de embarazo positiva. La mayoría son personas voluntarias que creen en un modelo de cuidado comunitario y envían las pastillas sin costo. 
+
+Las pastillas pueden llegar reempacadas en bolsitas plásticas o sobres de mylar. Ver ejemplos de {% inlineLink action={discriminant: "blog", value: {page: "what-do-abortion-pills-look-like"}} _language="" %}pastillas abortivas y empaques de diferentes proveedores{% /inlineLink %}.
+{% /bodySection %}
+
+{% bodySection centered=false width="medium" color="blue" textSize="medium" _language="" %}
+## Encuentra una red comunitaria
+
+Haz clic a continuación para buscar por estado o territorio.
+
+{% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}} afterSubmit="nothing" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Buscar por estado o territorio", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: true, value: {icon: "search", background: "slate", altHoverBackground: ""}}}}}] _language="" /%}
+{% /formSection %}
+{% /formWrapper %}
+{% /bodySection %}
+
+{% tocAnchor slug={name: "Preguntas frecuentes", slug: "frequently-asked-questions"} type={discriminant: "toc"} _language="" /%}
+
+{% horizontalSplit noHeader=false _language="" %}
+{% bodySection centered=false width="default" color="pink" textSize="medium" _language="" %}
+## Preguntas frecuentes
+{% /bodySection %}
+
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% faqList faqs=["community-networks_do-community-networks-ship-pills-in-advance-to-people-who-are-not-pregnant-to-have-on-hand-just-in-case", "community-networks_what-if-someone-has-a-medical-questions", "community-networks_what-states-do-community-networks-operate-in", "can-i-get-in-trouble-for-using-abortion-pills"] color="beige" anchor=false _language="" /%}
+
+{% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}Ver todas las preguntas frecuentes{% /inlineLink %}
+{% /narrowBanner %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor slug={name: "Líneas de ayuda y apoyo", slug: "hotlines-and-support"} type={discriminant: "toc"} _language="" /%}
+
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="green" title="Líneas de ayuda y apoyo" icon="" _language="" %}
+Obtén apoyo en vivo por teléfono y mensaje de texto de personas expertas que se preocupan y pueden ayudar.
+{% /sectionHeader %}
+
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% resourceList resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}] type={discriminant: "simple", value: 2} icon="" iconColor="green" hideHeaders=false buttonIconRight=false _language="" /%}
+
+{% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}Ver todas las opciones de apoyo{% /inlineLink %}
+{% /narrowBanner %}
+{% /flexSection %}
+{% /horizontalSplit %}

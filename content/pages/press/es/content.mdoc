@@ -1,0 +1,59 @@
+{% heroSection image={discriminant: "noco-with-alt", value: {image: "Megaphone - Hero", highPriority: false}} imageSide="right" color="beige" imageBackgroundColor="cyan" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-bottom" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
+# Plan C en las noticias
+
+Plan C es una campaña creativa de salud pública sobre el acceso a pastillas abortivas , iniciada en 2015 por un pequeño equipo de veteranos defensores de la salud pública, investigadores, activistas por la justicia social.
+
+{% tableOfContents _language="" /%}
+{% /heroSection %}
+
+{% logoBanner title="Nuestra investigación y trabajo han sido destacados en:" color="blue" logos=[{discriminant: "noco-with-alt", value: {image: "NPR - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "USA today - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "CBS - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "CNN - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "New York Times - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Bloomberg - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Healthline - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Vice - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Ms. Magazine - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Buzzfeed - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Rolling Stone - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "MIT Technology Review - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Politico - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Huffpost - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "The Hill - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Axios - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Mother Jones - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Elle - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Bustle - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Time - Logo", highPriority: false}}, {discriminant: "noco-with-alt", value: {image: "Vogue - Logo", highPriority: false}}] maxItemWidth=7 maxItemHeight=0 _language="" /%}
+
+{% tocAnchor slug={name: "Prensa reciente de Plan C", slug: "recent-plan-c-press"} type={discriminant: "toc"} _language="" /%}
+
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="green" title="Prensa reciente de Plan C" icon="" _language="" %}
+Artículos que cubren las últimas noticias, batallas legales, cambios de políticas y discusiones clave sobre el aborto.
+{% /sectionHeader %}
+
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% articleList pagination=4 filtering={discriminant: "category", value: {category: "plan-c"}} _language="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor slug={name: "Artículos de opinión y campañas", slug: "op-eds-and-campaigns"} type={discriminant: "toc"} _language="" /%}
+
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="cyan" title="Artículos de opinión y campañas" icon="" _language="" %}
+Artículos de opinión y campañas mediáticas del equipo de Plan C.
+{% /sectionHeader %}
+
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% postList type={discriminant: "postList", value: {pagination: 4}} filtering={discriminant: "category", value: {category: "articles"}} _language="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% tocAnchor slug={name: "Acerca de Plan C", slug: "about-plan-c"} type={discriminant: "toc"} _language="" /%}
+
+{% horizontalSplit noHeader=false _language="" %}
+{% sectionHeader color="pink" title="Acerca de Plan C" icon="" _language="" /%}
+
+{% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
+Plan C es una campaña creativa de salud pública sobre el acceso a pastillas abortivas , iniciada en 2015 por un pequeño equipo de veteranos defensores de la salud pública, investigadores, activistas por la justicia social.
+
+Plan C trabaja para transformar el acceso al aborto en Estados Unidos normalizando la opción de usar pastillas abortivas por correo de manera autodirigida.‍
+
+Nuestra visión: un futuro cercano en el que la posibilidad de terminar un embarazo temprano esté directamente en manos de cualquier persona que lo necesite.
+
+Lea más sobre nuestro trabajo en el {% inlineLink action={discriminant: "external", value: {url: "/2024-annual-report", showPopup: false}} _language="" %}Informe Anual 2024{% /inlineLink %}.
+{% /bodySection %}
+
+{% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "about", anchor: "our-history"}} _language="" %}Nuestra historia{% /inlineLink %}
+{% /narrowBanner %}
+{% /flexSection %}
+{% /horizontalSplit %}
+
+{% actionBanner title="Comunicados de prensa y consultas de medios" color="red" icon="newspaper" link={label: "Visite nuestra página de medios", click: {discriminant: "internal", value: {page: "media"}}} _language="" %}
+¿Es usted miembro de la prensa y busca entrevistar o destacar a Plan C?
+{% /actionBanner %}
