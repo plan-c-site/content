@@ -8,7 +8,7 @@
 Plan C ofrece información sobre cómo las personas en los Estados Unidos están obteniendo pastillas abortivas en línea para tener abortos seguros en casa.
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=true grow=false gap=0.25 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% formWrapper formType={discriminant: "link", value: {pattern: "./[:location:]"}} afterSubmit="nothing" _language="" %}
+{% formWrapper formType={discriminant: "link", value: {pattern: "/[:location:]"}} afterSubmit="nothing" _language="" %}
 {% formSection type="waiting" _language="" %}
 {% formInput fields=[{label: {name: "Ubicación", slug: "location"}, required: true, type: {discriminant: "select", value: {placeholder: "Buscar por estado o territorio", autoSubmit: true, noSearch: true, customSelect: false, options: {discriminant: true, value: {valueType: "slug"}}, embedSubmitButton: {discriminant: false}}}}] _language="" /%}
 {% /formSection %}
@@ -94,4 +94,4 @@ Desde 2016, nuestra misión ha sido investigar el acceso a pastillas abortivas y
 {% /bodySection %}
 {% /horizontalSplit %}
 
-{% inContentImage image={discriminant: "one-off", value: {image: "/images/abortion-clinic-home/milagros-mural-wide-crop-2.jpg", altText: "Abortion pills by mail in all states mural by Milagros for Plan C", highPriority: false}} maxWidth=100 desktopMaxWidth="100" mobileMaxWidth="100" action={discriminant: ""} newTab=false _language="" /%}
+{% inContentImage image={discriminant: "one-off", value: {image: "/images/abortion-clinic-home/milagros-mural-wide-crop-2.jpg", altText: "Abortion pills by mail in all states mural by Milagros for Plan C", highPriority: false}} desktopMaxWidth="100" mobileMaxWidth="100" maxWidth=100 action={discriminant: ""} newTab=false _language="" /%}
