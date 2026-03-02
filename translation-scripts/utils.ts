@@ -411,12 +411,8 @@ export async function translateAllYaml(
   );
 }
 
-export async function translateMarkdownValues(
-  folder: string,
-  keys: TranslationKey[],
-  { url_base }: { url_base?: string }
-) {
-  if (!WEGLOT_URL) throw new Error("No weglot url");
+async function clearOldTranslations(folder: string) {
+  console.log("Clearing Unused Translations from ", folder);
   const filePaths: string[] = await glob(folder + "/**/*.mdoc");
   await Promise.all(
     filePaths.map(async (v) => {
@@ -426,6 +422,23 @@ export async function translateMarkdownValues(
         if (!enExists) {
           await fs.rm(path.dirname(v), { recursive: true, force: true });
         }
+        return;
+      }
+    })
+  );
+}
+
+export async function translateMarkdownValues(
+  folder: string,
+  keys: TranslationKey[],
+  { url_base }: { url_base?: string }
+) {
+  if (!WEGLOT_URL) throw new Error("No weglot url");
+  await clearOldTranslations(folder);
+  const filePaths: string[] = await glob(folder + "/**/*.mdoc");
+  await Promise.all(
+    filePaths.map(async (v) => {
+      if (v.includes("/es/")) {
         return;
       }
       const url = url_base + v.replace(folder, "");
@@ -444,15 +457,11 @@ export async function translateMarkdownRoots(
   { url_base }: { url_base?: string }
 ) {
   if (!WEGLOT_URL) throw new Error("No weglot url");
+  await clearOldTranslations(folder);
   const filePaths: string[] = await glob(folder + "/**/*.mdoc");
   await Promise.all(
     filePaths.map(async (v) => {
       if (v.includes("/es/")) {
-        const enFile = v.replace("/es/", "/");
-        const enExists = !!(await fs.stat(enFile).catch((e) => false));
-        if (!enExists) {
-          await fs.rm(path.dirname(v), { recursive: true, force: true });
-        }
         return;
       }
       const url = url_base + v.replace(folder, "");
