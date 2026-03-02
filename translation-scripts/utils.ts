@@ -413,9 +413,12 @@ export async function translateAllYaml(
 
 async function clearOldTranslations(folder: string) {
   console.log("Clearing Unused Translations from ", folder);
-  const filePaths: string[] = await glob(folder + "/**/*.mdoc");
-  await Promise.all(
-    filePaths.map(async (v) => {
+  const [filePaths, hashPaths] = (await Promise.all([
+    glob(folder + "/**/*.mdoc"),
+    glob(folder + "/**/*.hash"),
+  ])) as string[][];
+  await Promise.all([
+    ...filePaths.map(async (v) => {
       if (v.includes("/es/")) {
         const enFile = v.replace("/es/", "/");
         const enExists = !!(await fs.stat(enFile).catch((e) => false));
@@ -425,8 +428,16 @@ async function clearOldTranslations(folder: string) {
         }
         return;
       }
-    })
-  );
+    }),
+    ...hashPaths.map(async (v) => {
+      const enFile = v.replace(".hash", "");
+      const enExists = !!(await fs.stat(enFile).catch((e) => false));
+      if (!enExists) {
+        console.log("Cleared ", v);
+        await fs.rm(path.dirname(v), { recursive: true, force: true });
+      }
+    }),
+  ]);
 }
 
 export async function translateMarkdownValues(
