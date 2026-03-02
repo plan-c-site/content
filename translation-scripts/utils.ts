@@ -421,6 +421,11 @@ export async function translateMarkdownValues(
   await Promise.all(
     filePaths.map(async (v) => {
       if (v.includes("/es/")) {
+        const enFile = v.replace("/es/", "/");
+        const enExists = !!(await fs.stat(enFile).catch((e) => false));
+        if (!enExists) {
+          await fs.rm(path.dirname(v), { recursive: true, force: true });
+        }
         return;
       }
       const url = url_base + v.replace(folder, "");
@@ -443,6 +448,11 @@ export async function translateMarkdownRoots(
   await Promise.all(
     filePaths.map(async (v) => {
       if (v.includes("/es/")) {
+        const enFile = v.replace("/es/", "/");
+        const enExists = !!(await fs.stat(enFile).catch((e) => false));
+        if (!enExists) {
+          await fs.rm(path.dirname(v), { recursive: true, force: true });
+        }
         return;
       }
       const url = url_base + v.replace(folder, "");
