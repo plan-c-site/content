@@ -49,6 +49,7 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-online-clinics
     isLink:
       discriminant: false
+    showPillLink: always
     howManyPills:
       discriminant: true
       value:
@@ -88,6 +89,7 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-international-online-clinics
     isLink:
       discriminant: false
+    showPillLink: always
     howManyPills:
       discriminant: true
       value:
@@ -127,6 +129,7 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-community-networks
     isLink:
       discriminant: false
+    showPillLink: always
     howManyPills:
       discriminant: true
       value:
@@ -166,6 +169,7 @@ clinicTypes:
     howDoesThisWork: how-does-this-work-websites-that-sell-pills
     isLink:
       discriminant: false
+    showPillLink: always
     howManyPills:
       discriminant: true
       value:
@@ -207,6 +211,7 @@ clinicTypes:
         action:
           discriminant: anchor
           value: in-person-clinics
+    showPillLink: state-page
     howManyPills:
       discriminant: false
     es:
@@ -403,6 +408,7 @@ filterFields:
         options: []
     helpPopup:
       discriminant: false
+filterPresets: []
 medicaidText:
   color: yellow
   icon: info
