@@ -416,7 +416,7 @@ filterPresets:
           discriminant: number
           value:
             value: 12
-            comparison: '>='
+            comparison: <=
 medicaidText:
   color: yellow
   icon: info
