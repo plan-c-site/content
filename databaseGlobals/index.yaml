@@ -416,6 +416,9 @@ filterPresets:
           discriminant: multi
           value:
             - Pills in advance
+    es:
+      label: Pastillas por adelantado
+      __label: JeAz5CfbZ0IV5WZuhQCIx2Fqgf9jDSNTgCnMqTFCkps=
   - label: Discounts available
     values:
       - field: Financial aid
@@ -423,6 +426,9 @@ filterPresets:
           discriminant: multi
           value:
             - Discounts available
+    es:
+      label: Descuentos disponibles
+      __label: moaN7bU5TIeu4EMDKsOZiaHXk7Mf/RlEgMBqC0aSz/c=
   - label: Free with medicaid
     values:
       - field: Financial aid
@@ -430,6 +436,9 @@ filterPresets:
           discriminant: multi
           value:
             - Free with medicaid
+    es:
+      label: Gratis con Medicaid
+      __label: l+u/mWOezhtTbAULtXd9BUMm63+mgKu6h9L/hktRYMY=
 medicaidText:
   color: yellow
   icon: info
