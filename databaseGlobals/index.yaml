@@ -417,10 +417,19 @@ filterPresets:
           value:
             value: 12
             comparison: <=
+    es:
+      label: 12+
+      __label: bL7VbZ2zNMllJ5VA+lRUaXB3v8GzIDUBTdsFL+Erkeo=
   - label: a long filter name
     values: []
+    es:
+      label: un nombre de filtro largo
+      __label: wHeY592l9BO4wPmUkfhXoUaBLUzCtlAHZuSjN5Sv7HE=
   - label: some other filter
     values: []
+    es:
+      label: algún otro filtro
+      __label: vefVN3VLk8rlejAfYbaK3AcOA1Nv6f1OVMhMpIhwjZ0=
 medicaidText:
   color: yellow
   icon: info
