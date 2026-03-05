@@ -417,6 +417,9 @@ filterPresets:
           value:
             value: 12
             comparison: <=
+    es:
+      label: 12+
+      __label: bL7VbZ2zNMllJ5VA+lRUaXB3v8GzIDUBTdsFL+Erkeo=
 medicaidText:
   color: yellow
   icon: info
