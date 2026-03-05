@@ -408,7 +408,15 @@ filterFields:
         options: []
     helpPopup:
       discriminant: false
-filterPresets: []
+filterPresets:
+  - label: 12+
+    values:
+      - field: Age minimum
+        value:
+          discriminant: number
+          value:
+            value: 12
+            comparison: <=
 medicaidText:
   color: yellow
   icon: info
