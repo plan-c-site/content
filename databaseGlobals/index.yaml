@@ -416,13 +416,6 @@ filterPresets:
           discriminant: multi
           value:
             - Pills in advance
-  - label: Free with Medicaid
-    values:
-      - field: Financial aid
-        value:
-          discriminant: multi
-          value:
-            - Free with medicaid
   - label: Discounts available
     values:
       - field: Financial aid
@@ -430,6 +423,13 @@ filterPresets:
           discriminant: multi
           value:
             - Discounts available
+  - label: Free with Medicaid
+    values:
+      - field: Financial aid
+        value:
+          discriminant: multi
+          value:
+            - Free with medicaid
 medicaidText:
   color: yellow
   icon: info
