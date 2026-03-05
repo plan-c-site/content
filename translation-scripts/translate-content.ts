@@ -99,6 +99,11 @@ async function Translate() {
         ],
       },
       {
+        key: "filterPresets",
+        container: "array",
+        keys: [{ key: "label" }],
+      },
+      {
         key: "seo",
         keys: SeoFields,
         container: "object",
