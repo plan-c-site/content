@@ -417,6 +417,10 @@ filterPresets:
           value:
             value: 12
             comparison: <=
+  - label: a long filter name
+    values: []
+  - label: some other filter
+    values: []
 medicaidText:
   color: yellow
   icon: info
