@@ -408,7 +408,15 @@ filterFields:
         options: []
     helpPopup:
       discriminant: false
-filterPresets: []
+filterPresets:
+  - label:
+      name: Over 12 Years Old
+      slug: over-12-years-old
+    values:
+      - field: Age minimum
+        value:
+          discriminant: number
+          value: 12
 medicaidText:
   color: yellow
   icon: info
