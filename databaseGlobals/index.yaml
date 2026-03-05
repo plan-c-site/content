@@ -423,7 +423,7 @@ filterPresets:
           discriminant: multi
           value:
             - Discounts available
-  - label: Free with Medicaid
+  - label: Free with medicaid
     values:
       - field: Financial aid
         value:
