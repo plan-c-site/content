@@ -409,17 +409,27 @@ filterFields:
     helpPopup:
       discriminant: false
 filterPresets:
-  - label: 12+
+  - label: Pills in advance
     values:
-      - field: Age minimum
+      - field: Services
         value:
-          discriminant: number
+          discriminant: multi
           value:
-            value: 12
-            comparison: <=
-    es:
-      label: 12+
-      __label: bL7VbZ2zNMllJ5VA+lRUaXB3v8GzIDUBTdsFL+Erkeo=
+            - Pills in advance
+  - label: Free with Medicaid
+    values:
+      - field: Financial aid
+        value:
+          discriminant: multi
+          value:
+            - Free with medicaid
+  - label: Discounts available
+    values:
+      - field: Financial aid
+        value:
+          discriminant: multi
+          value:
+            - Discounts available
 medicaidText:
   color: yellow
   icon: info
