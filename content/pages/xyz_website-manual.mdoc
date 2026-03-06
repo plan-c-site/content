@@ -9,9 +9,7 @@ noIndex: false
 es:
   title: Manual del sitio web - Componentes
   __title: rlUoYDA16oZGZOgexG5AbNjGJ5ig2SoHycQCjUDhzHM=
-
 ---
-
 {% bodySection
    centered=false
    width="default"
@@ -58,16 +56,15 @@ This is an overview of all the components that can be used to construct a page. 
    color="beige"
    textSize="medium"
    _language="" %}
-{% stateFieldText state="arizona" source="WTSP price override" _language="" %}State summary from any state{% /stateFieldText %} test 2
+Custom link to
 
-test
-
-{% inContentImage
-   image={discriminant: "noco-with-alt", value: {image: "Mailbox - Hero", highPriority: false}}
-   desktopMaxWidth="50"
-   mobileMaxWidth="100"
-   maxWidth=100
-   action={discriminant: ""}
-   newTab=false
+{% formSection type="waiting" _language="" %}
+{% formInput
+   fields=[{label: {name: "Text", slug: "text"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, rightIcon: false}}}]
    _language="" /%}
+{% /formSection %}
+
+{% formSection type="validationError" _language="" %}
+One or more required fields is empty.
+{% /formSection %}
 {% /bodySection %}
