@@ -147,17 +147,6 @@ Stickers cost us a minimum of $10 per package to fulfill. After checkout you wil
    fields=[{label: {name: "Continue to checkout", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "arrowRight", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}]
    _language="" /%}
 
-{% formSection type="validationError" _language="" %}
-{% narrowBanner
-   icon="alertCircle"
-   color="red"
-   iconAlign="items-center"
-   fullWidth=false
-   _language="" %}
-One or more required fields is empty.
-{% /narrowBanner %}
-{% /formSection %}
-
 {% formSection type="submitted" _language="" %}
 {% narrowBanner
    icon=""
