@@ -56,8 +56,10 @@ This is an overview of all the components that can be used to construct a page. 
    color="beige"
    textSize="medium"
    _language="" %}
-Custom link to
-
+{% formWrapper
+   formType={discriminant: "link", value: {}}
+   afterSubmit="show-screens"
+   _language="" %}
 {% formSection type="waiting" _language="" %}
 {% formInput
    fields=[{label: {name: "Text", slug: "text"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, rightIcon: false}}}]
@@ -67,4 +69,9 @@ Custom link to
 {% formSection type="validationError" _language="" %}
 One or more required fields is empty.
 {% /formSection %}
+
+{% formSection type="success" _language="" %}
+One or more required fields is empty.
+{% /formSection %}
+{% /formWrapper %}
 {% /bodySection %}
