@@ -11,9 +11,13 @@ Esta es una descripción general de todos los componentes que se pueden utilizar
 {% /bodySection %}
 
 {% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
-{% stateFieldText state="arizona" source="WTSP price override" _language="" %}Resumen estatal de cualquier estado{% /stateFieldText %} prueba 2
+{% formWrapper formType={discriminant: "link", value: {}} afterSubmit="show-screens" _language="" %}
+{% formSection type="waiting" _language="" %}
+{% formInput fields=[{label: {name: "Texto", slug: "text"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] _language="" /%}
+{% /formSection %}
 
-prueba
-
-{% inContentImage image={discriminant: "noco-with-alt", value: {image: "Mailbox - Hero", highPriority: false}} desktopMaxWidth="50" mobileMaxWidth="100" maxWidth=100 action={discriminant: ""} newTab=false _language="" /%}
+{% formSection type="success" _language="" %}
+Uno o más campos obligatorios están vacíos.
+{% /formSection %}
+{% /formWrapper %}
 {% /bodySection %}
