@@ -7,4 +7,4 @@ allowedTypes:
   - International online clinic
   - Online clinic
 maxVisibleDefault: 1
-overrideSupplierMaxVisibileDefault: true
+overrideSupplierMaxVisibileDefault: false
