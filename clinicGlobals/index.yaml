@@ -6,5 +6,5 @@ seo:
 allowedTypes:
   - International online clinic
   - Online clinic
-maxVisibleDefault: 10
+maxVisibleDefault: 4
 overrideSupplierMaxVisibileDefault: false
