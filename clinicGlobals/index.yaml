@@ -1,7 +1,12 @@
 homePage: abortion-clinic
 seo:
+  title: Abortion Clinics Serving %Name%
+  description: '%Clinic Page Summary%'
   image:
-    discriminant: ''
+    discriminant: state
+    value:
+      highPriority: false
+      altText: '%Name% abortion clinics'
   seoSchemas: []
 allowedTypes:
   - International online clinic
