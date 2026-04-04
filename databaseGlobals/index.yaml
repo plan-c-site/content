@@ -220,63 +220,6 @@ clinicTypes:
       singular: Clínicas en persona
       __singular: UQyDC1Rd2TpAFhxU3Lq8TdphNuKjVJ/oSSi0ldqqjsA=
 filterFields:
-  - field: Financial aid
-    label: Financial Assistance
-    es:
-      label: Asistencia financiera
-      __label: NNhCXeq24o/MaHCKtZ/KLsYfmGL+tP4YrrjNbq4TJ4g=
-    selectType:
-      discriminant: multi
-      value:
-        - value: Discounts available
-          label: Discounts available
-          invert: false
-          es:
-            label: Descuentos disponibles
-            __label: moaN7bU5TIeu4EMDKsOZiaHXk7Mf/RlEgMBqC0aSz/c=
-        - value: Accepts some insurance
-          label: Accepts some insurance
-          invert: false
-          es:
-            label: Acepta algunos seguros
-            __label: P5bMgRGRNPAsXxsVzL4Ku4FTxIvIJKAmQG798bdup2c=
-        - value: Free with medicaid
-          label: Free with medicaid
-          invert: false
-          es:
-            label: Gratis con Medicaid
-            __label: l+u/mWOezhtTbAULtXd9BUMm63+mgKu6h9L/hktRYMY=
-    helpPopup:
-      discriminant: false
-  - field: Services
-    label: Service options
-    es:
-      label: Opciones de servicio
-      __label: oea+nl4av4ejmhIfxvsdqAnafLcoKXe1T6UAlZ37nYg=
-    selectType:
-      discriminant: multi
-      value:
-        - value: Pills in advance
-          label: Offers pills in advance
-          invert: false
-          es:
-            label: Ofrece pastillas por adelantado
-            __label: B73Ca/5JSQuaT5mDadiSFdLvYP3JyVriGVjsYr2y1Io=
-        - value: Video visit required
-          label: No video visit required
-          invert: true
-          overrideField: Provider Interaction
-          es:
-            label: No se requiere cita por video
-            __label: 25CpaeKpnrWw4iW+41SvByNQhnGHlxUZNA9mC2/nar8=
-        - value: Period pills
-          label: Offers period pills
-          invert: false
-          es:
-            label: Ofrece pastillas para el retraso menstrual
-            __label: 2DYKPe83jCHJXV5BU1M57GfvysfeummaKlPQLcAn0eM=
-    helpPopup:
-      discriminant: false
   - field: Age minimum
     label: Ages served
     es:
@@ -408,44 +351,6 @@ filterFields:
         options: []
     helpPopup:
       discriminant: false
-filterPresets:
-  - label: Pills in advance
-    values:
-      - field: Services
-        value:
-          discriminant: multi
-          value:
-            - Pills in advance
-    es:
-      label: Pastillas por adelantado
-      __label: JeAz5CfbZ0IV5WZuhQCIx2Fqgf9jDSNTgCnMqTFCkps=
-  - label: Discounts available
-    values:
-      - field: Financial aid
-        value:
-          discriminant: multi
-          value:
-            - Discounts available
-    es:
-      label: Descuentos disponibles
-      __label: moaN7bU5TIeu4EMDKsOZiaHXk7Mf/RlEgMBqC0aSz/c=
-  - label: Free with medicaid
-    values:
-      - field: Financial aid
-        value:
-          discriminant: multi
-          value:
-            - Free with medicaid
-    es:
-      label: Gratis con Medicaid
-      __label: l+u/mWOezhtTbAULtXd9BUMm63+mgKu6h9L/hktRYMY=
-  - label: Test 3x
-    values:
-      - field: Financial aid
-        value:
-          discriminant: multi
-          value:
-            - Accepts some insurance
 medicaidText:
   color: yellow
   icon: info
