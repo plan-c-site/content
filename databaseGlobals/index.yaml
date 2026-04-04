@@ -426,6 +426,10 @@ filterPresets:
           discriminant: multi
           value:
             - Discounts available
+      - field: Financial aid
+        value:
+          discriminant: string
+          value: Free to those who cannot afford other services
     es:
       label: Descuentos disponibles
       __label: moaN7bU5TIeu4EMDKsOZiaHXk7Mf/RlEgMBqC0aSz/c=
