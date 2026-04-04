@@ -445,7 +445,7 @@ filterPresets:
         value:
           discriminant: multi
           value:
-            - Free to those who cannot afford other services
+            - Discounts available
 medicaidText:
   color: yellow
   icon: info
