@@ -445,7 +445,7 @@ filterPresets:
         value:
           discriminant: multi
           value:
-            - Discounts available
+            - Accepts some insurance
 medicaidText:
   color: yellow
   icon: info
