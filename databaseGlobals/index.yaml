@@ -446,16 +446,6 @@ filterPresets:
           discriminant: multi
           value:
             - Accepts some insurance
-      - field: Financial aid
-        value:
-          discriminant: multi
-          value:
-            - Discounts available
-      - field: Financial aid
-        value:
-          discriminant: multi
-          value:
-            - Free with medicaid
 medicaidText:
   color: yellow
   icon: info
