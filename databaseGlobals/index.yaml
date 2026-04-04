@@ -220,13 +220,7 @@ clinicTypes:
       singular: Clínicas en persona
       __singular: UQyDC1Rd2TpAFhxU3Lq8TdphNuKjVJ/oSSi0ldqqjsA=
 filterFields:
-  - field: Age minimum
-    label: Ages served
-    es:
-      label: Edades atendidas
-      __label: Jc5ro9QseSC1mn0cs6HM3VchrSSLn46Lev124/MhW5E=
-    selectType:
-      discriminant: number
+  - discriminant: number
       value:
         items:
           - value: 0
@@ -261,13 +255,7 @@ filterFields:
         options: []
     helpPopup:
       discriminant: false
-  - field: Languages
-    label: Language
-    es:
-      label: Idioma
-      __label: pP5lJk7327ONEEsegeszUPMULz0W8yvew5sdm0LBuNE=
-    selectType:
-      discriminant: single
+  - discriminant: single
       value:
         - value: English
           label: English
@@ -307,13 +295,7 @@ filterFields:
             __label: 1K2o7CdkEaHXNCgRfqDX2OpIeJ6fB85rtpCMuFG1JEE=
     helpPopup:
       discriminant: false
-  - field: Gestational age limit
-    label: Weeks of pregnancy
-    es:
-      label: Semanas de embarazo
-      __label: f3bw9iZtQnQygOGqWTfrU/kb55IJe7iM/V16JpMnO9k=
-    selectType:
-      discriminant: number
+  - discriminant: number
       value:
         items:
           - value: 0
