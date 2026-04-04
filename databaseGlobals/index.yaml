@@ -439,13 +439,6 @@ filterPresets:
     es:
       label: Gratis con Medicaid
       __label: l+u/mWOezhtTbAULtXd9BUMm63+mgKu6h9L/hktRYMY=
-  - label: Test
-    values:
-      - field: Financial aid
-        value:
-          discriminant: multi
-          value:
-            - Free to those who cannot afford other services
 medicaidText:
   color: yellow
   icon: info
