@@ -439,7 +439,7 @@ filterPresets:
     es:
       label: Gratis con Medicaid
       __label: l+u/mWOezhtTbAULtXd9BUMm63+mgKu6h9L/hktRYMY=
-  - label: Test
+  - label: Test 3x
     values:
       - field: Financial aid
         value:
@@ -451,6 +451,11 @@ filterPresets:
           discriminant: multi
           value:
             - Discounts available
+      - field: Financial aid
+        value:
+          discriminant: multi
+          value:
+            - Free with medicaid
 medicaidText:
   color: yellow
   icon: info
