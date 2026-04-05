@@ -230,6 +230,8 @@ filterFields:
       criteria:
         - field: Financial aid
           value: Discounts available
+        - field: Financial aid
+          value: Free to those who cannot afford other services
 filterPresets:
   - label: Discounts available
     operator: OR
@@ -239,22 +241,6 @@ filterPresets:
           discriminant: multi
           value:
             - Discounts available
-      - field: Financial aid
-        value:
-          discriminant: multi
-          value:
-            - Free to those who cannot afford other services
-  - label: OC
-    operator: OR
-    values:
-      - field: Provider type
-        value:
-          discriminant: multi
-          value:
-            - Online clinic
-  - label: Free for
-    operator: OR
-    values:
       - field: Financial aid
         value:
           discriminant: multi
