@@ -239,7 +239,6 @@ filterPresets:
           discriminant: multi
           value:
             - Discounts available
-            - Accepts some insurance
   - label: Free for those
     values:
       - field: Financial aid
