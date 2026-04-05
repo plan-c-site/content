@@ -223,7 +223,27 @@ filterFields:
   - discriminant: group-label
     value:
       label: Financial aid
-filterPresets: []
+  - discriminant: checkbox-group
+    value:
+      label: Discounts available
+      operator: OR
+      criteria:
+        - field: Financial aid
+          value: Discounts available
+        - field: Financial aid
+          value: Free to those who cannot afford other services
+filterPresets:
+  - label: Discounts available
+    operator: OR
+    values:
+      - field: Financial aid
+        value:
+          discriminant: string
+          value: Discounts available
+      - field: Financial aid
+        value:
+          discriminant: string
+          value: Free to those who cannot afford other services
 medicaidText:
   color: yellow
   icon: info
