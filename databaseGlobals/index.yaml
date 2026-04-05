@@ -246,6 +246,11 @@ filterPresets:
           discriminant: multi
           value:
             - Free to those who cannot afford other services
+      - field: Financial aid
+        value:
+          discriminant: multi
+          value:
+            - Free with medicaid
   - label: Discounts only
     operator: OR
     values:
