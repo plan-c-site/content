@@ -231,7 +231,7 @@ filterFields:
         - field: Financial aid
           value: Discounts available
 filterPresets:
-  - label: Discounts
+  - label: Discounts available
     operator: OR
     values:
       - field: Financial aid
