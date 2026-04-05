@@ -246,6 +246,14 @@ filterPresets:
           discriminant: multi
           value:
             - Free to those who cannot afford other services
+  - label: Discounts only
+    operator: OR
+    values:
+      - field: Financial aid
+        value:
+          discriminant: multi
+          value:
+            - Discounts available
 medicaidText:
   color: yellow
   icon: info
