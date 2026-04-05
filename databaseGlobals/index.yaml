@@ -239,6 +239,11 @@ filterPresets:
           discriminant: multi
           value:
             - Discounts available
+      - field: Financial aid
+        value:
+          discriminant: multi
+          value:
+            - Free to those who cannot afford other services
   - label: OC
     operator: OR
     values:
