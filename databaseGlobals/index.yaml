@@ -230,7 +230,6 @@ filterFields:
           criteria:
             - field: Financial aid
               value: Discounts available
-              invert: false
 filterPresets:
   - label: Discounts
     values:
