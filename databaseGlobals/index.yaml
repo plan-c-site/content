@@ -219,7 +219,18 @@ clinicTypes:
       __label: SE5NPQar1ez72fqPZPsruSRVpIKKZFg9WnsqpHhytGc=
       singular: Clínicas en persona
       __singular: UQyDC1Rd2TpAFhxU3Lq8TdphNuKjVJ/oSSi0ldqqjsA=
-filterFields: []
+filterFields:
+  - discriminant: group-label
+    value:
+      label: Financial aid
+  - discriminant: checkbox-group
+    value:
+      items:
+        - label: Discounts
+          criteria:
+            - field: Financial aid
+              value: Discounts available
+              invert: false
 filterPresets:
   - label: Discounts + Insurance
     values:
