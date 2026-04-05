@@ -219,6 +219,23 @@ clinicTypes:
       __label: SE5NPQar1ez72fqPZPsruSRVpIKKZFg9WnsqpHhytGc=
       singular: Clínicas en persona
       __singular: UQyDC1Rd2TpAFhxU3Lq8TdphNuKjVJ/oSSi0ldqqjsA=
+filterFields: []
+filterPresets:
+  - label: Discounts + Insurance
+    values:
+      - field: Financial aid
+        value:
+          discriminant: multi
+          value:
+            - Discounts available
+            - Accepts some insurance
+  - label: Free for those
+    values:
+      - field: Financial aid
+        value:
+          discriminant: multi
+          value:
+            - Free to those who cannot afford other services
 medicaidText:
   color: yellow
   icon: info
