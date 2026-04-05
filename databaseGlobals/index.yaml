@@ -227,11 +227,18 @@ filterFields:
     value:
       items:
         - label: Discounts available
+          operator: OR
           criteria:
             - field: Financial aid
               value: Discounts available
+        - label: Pills in advance
+          operator: OR
+          criteria:
+            - field: Services
+              value: Pills in advance
 filterPresets:
   - label: Discounts
+    operator: OR
     values:
       - field: Financial aid
         value:
@@ -239,6 +246,7 @@ filterPresets:
           value:
             - Discounts available
   - label: OC
+    operator: OR
     values:
       - field: Provider type
         value:
