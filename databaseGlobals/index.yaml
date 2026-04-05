@@ -247,6 +247,14 @@ filterPresets:
           discriminant: multi
           value:
             - Online clinic
+  - label: Free for
+    operator: OR
+    values:
+      - field: Financial aid
+        value:
+          discriminant: multi
+          value:
+            - Free to those who cannot afford other services
 medicaidText:
   color: yellow
   icon: info
