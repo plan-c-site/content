@@ -232,6 +232,7 @@ filterFields:
           value: Discounts available
         - field: Financial aid
           value: Free to those who cannot afford other services
+  - discriminant: spacer
   - discriminant: number
     value:
       field: Age minimum
@@ -263,6 +264,61 @@ filterFields:
           comparison: <=
       emptyIs: 0
       zeroIs: 0
+      helpPopup:
+        discriminant: false
+  - discriminant: single
+    value:
+      field: Languages
+      label: Language
+      options:
+        - value: English
+          label: English
+        - value: Spanish
+          label: Español
+        - value: Hindi
+          label: हिन्दी
+        - value: Hmong-Mien
+          label: Hmong-Mien
+        - value: Punjabi
+          label: Punjabi
+        - value: Portuguese
+          label: Português
+      helpPopup:
+        discriminant: false
+  - discriminant: number
+    value:
+      field: Gestational age limit
+      label: Weeks of pregnancy
+      items:
+        - value: 0
+          label: Any
+          comparison: '>='
+        - value: 8
+          label: 8 weeks or less
+          comparison: '>='
+        - value: 9
+          label: 9 weeks or less
+          comparison: '>='
+        - value: 10
+          label: 10 weeks or less
+          comparison: '>='
+        - value: 11
+          label: 11 weeks or less
+          comparison: '>='
+        - value: 12
+          label: 12 weeks or less
+          comparison: '>='
+        - value: 13
+          label: 13 weeks or less
+          comparison: '>='
+        - value: 14
+          label: 14 weeks or less
+          comparison: '>='
+        - value: 15
+          label: More than 14 weeks
+          comparison: '>='
+      emptyIs: 99
+      zeroIs: 99
       helpPopup:
         discriminant: false
 filterPresets:
