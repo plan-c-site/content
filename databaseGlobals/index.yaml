@@ -232,7 +232,7 @@ filterFields:
               value: Discounts available
               invert: false
 filterPresets:
-  - label: Discounts + Insurance
+  - label: Discounts
     values:
       - field: Financial aid
         value:
