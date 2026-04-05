@@ -232,6 +232,45 @@ filterFields:
           value: Discounts available
         - field: Financial aid
           value: Free to those who cannot afford other services
+  - discriminant: checkbox-group
+    value:
+      label: Accepts some insurance
+      operator: OR
+      criteria:
+        - field: Financial aid
+          value: Accepts some insurance
+  - discriminant: checkbox-group
+    value:
+      label: Free with medicaid
+      operator: OR
+      criteria:
+        - field: Financial aid
+          value: Free with medicaid
+  - discriminant: spacer
+  - discriminant: group-label
+    value:
+      label: Service options
+  - discriminant: checkbox-group
+    value:
+      label: Offers pills in advance
+      operator: OR
+      criteria:
+        - field: Services
+          value: Pills in advance
+  - discriminant: checkbox-group
+    value:
+      label: No video visit required
+      operator: NOT
+      criteria:
+        - field: Provider Interaction
+          value: Video visit required
+  - discriminant: checkbox-group
+    value:
+      label: Offers period pills
+      operator: OR
+      criteria:
+        - field: Services
+          value: Period pills
   - discriminant: spacer
   - discriminant: number
     value:
@@ -322,6 +361,13 @@ filterFields:
       helpPopup:
         discriminant: false
 filterPresets:
+  - label: Pills in advance
+    operator: OR
+    values:
+      - field: Services
+        value:
+          discriminant: string
+          value: Pills in advance
   - label: Discounts available
     operator: OR
     values:
@@ -333,6 +379,13 @@ filterPresets:
         value:
           discriminant: string
           value: Free to those who cannot afford other services
+  - label: Free with medicaid
+    operator: OR
+    values:
+      - field: Financial aid
+        value:
+          discriminant: string
+          value: Free with medicaid
 medicaidText:
   color: yellow
   icon: info
