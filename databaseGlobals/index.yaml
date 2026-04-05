@@ -234,7 +234,7 @@ filterFields:
           value: Free to those who cannot afford other services
 filterPresets:
   - label: Discounts available
-    operator: OR
+    operator: AND
     values:
       - field: Financial aid
         value:
