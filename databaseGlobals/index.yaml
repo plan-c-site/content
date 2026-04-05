@@ -219,23 +219,7 @@ clinicTypes:
       __label: SE5NPQar1ez72fqPZPsruSRVpIKKZFg9WnsqpHhytGc=
       singular: Clínicas en persona
       __singular: UQyDC1Rd2TpAFhxU3Lq8TdphNuKjVJ/oSSi0ldqqjsA=
-filterFields:
-  - discriminant: group-label
-    value:
-      label: Financial aid
-  - discriminant: checkbox-group
-    value:
-      items:
-        - label: Discounts available
-          operator: OR
-          criteria:
-            - field: Financial aid
-              value: Discounts available
-        - label: Pills in advance
-          operator: OR
-          criteria:
-            - field: Services
-              value: Pills in advance
+filterFields: []
 filterPresets:
   - label: Discounts
     operator: OR
