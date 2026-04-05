@@ -239,13 +239,13 @@ filterPresets:
           discriminant: multi
           value:
             - Discounts available
-  - label: Free for those
+  - label: OC
     values:
-      - field: Financial aid
+      - field: Provider type
         value:
           discriminant: multi
           value:
-            - Free to those who cannot afford other services
+            - Online clinic
 medicaidText:
   color: yellow
   icon: info
