@@ -19,12 +19,11 @@ seo:
       difundir el acceso a pastillas abortivas por correo.
     __description: lR7l3vUZY2bPcxhQQGKxHfM4pEbEvIo95c8V7Le6zaY=
 status: published
+noIndex: false
 es:
   title: Alianzas
   __title: gsDowdHVd1yY2Aeo40IsLjsJ1DHo9FCIRbYypPIYHf8=
-
 ---
-
 {% heroSection
    image={discriminant: "noco-with-alt", value: {image: "Partnerships collage - Hero", highPriority: false}}
    imageSide="right"
@@ -155,7 +154,13 @@ Enter your information below, along with your ideas for sharing the Plan C websi
 - If you have press, podcast, video or speaking inquiries, please use our {% inlineLink action={discriminant: "internal", value: {page: "media"}} _language="" %}media inquiry form{% /inlineLink %}.
 
 {% formInput
-   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organization", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Message", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}, {label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}]
+   fields=[{label: {name: "First name", slug: "firstname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Last name", slug: "lastname"}, required: false, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Organization", slug: "company"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Message", slug: "message"}, required: true, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}]
+   _language="" /%}
+{% /formSection %}
+
+{% formSection type="waiting" _language="" %}
+{% formInput
+   fields=[{label: {name: "Submit", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "primary", background: "slate", altHoverBackground: "", smallShadow: false, rightIcon: false}}}]
    _language="" /%}
 {% /formSection %}
 
