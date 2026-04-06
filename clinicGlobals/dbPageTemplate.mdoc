@@ -32,3 +32,47 @@
    _language="" /%}
 
 {% dbClinic _language="" /%}
+
+{% tocAnchor
+   slug={name: "Get support", slug: "get-support"}
+   type={discriminant: "toc"}
+   _language="" /%}
+
+{% horizontalSplit noHeader=false _language="" %}
+{% bodySection
+   centered=false
+   width="default"
+   color="green"
+   textSize="medium"
+   _language="" %}
+## Get support in {% dbText source="Name" _language="" %}STATE{% /dbText %}
+{% /bodySection %}
+
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=2
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch"
+   _language="" %}
+{% resourceList
+   resources=[{resource: "m-a-hotline"}, {resource: "reprocare-healthline"}, {resource: "repro-legal-helpline"}, {resource: "aya-contigo"}]
+   type={discriminant: "simple", value: 2}
+   icon=""
+   iconColor="green"
+   hideHeaders=false
+   buttonIconRight=false
+   _language="" /%}
+
+{% narrowBanner
+   icon="arrowRight"
+   color="beige"
+   iconAlign="items-center"
+   fullWidth=true
+   _language="" %}
+{% inlineLink action={discriminant: "internal", value: {page: "support-resources"}} _language="" %}See all support{% /inlineLink %}
+{% /narrowBanner %}
+{% /flexSection %}
+{% /horizontalSplit %}
