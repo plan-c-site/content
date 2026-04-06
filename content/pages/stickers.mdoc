@@ -23,9 +23,7 @@ noIndex: false
 es:
   title: Stickers
   __title: 2/nLvg03m2NBM0CqRjfgNnC+G1rxcNYdv8nr/yNWGAQ=
-
 ---
-
 {% heroSection
    image={discriminant: "noco-with-alt", value: {image: "Stickers - Hero", highPriority: false}}
    imageSide="right"
@@ -131,6 +129,8 @@ You will be directed to a secure platform to collect your shipping address.
 {% formInput
    fields=[{label: {name: "Email", slug: "email"}, required: true, type: {discriminant: "text", value: {placeholder: "Your email", multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "How did you hear about the Plan C QR code stickers?", slug: "how_did_you_hear_about_plan_c__dropdown_"}, required: false, type: {discriminant: "select", value: {placeholder: "Select one...", autoSubmit: false, noSearch: false, customSelect: false, options: {discriminant: false, value: [{label: "Google search"}, {label: "Social media post"}, {label: "Radio"}, {label: "Billboard"}, {label: "Sticker"}, {label: "Local organization or event"}, {label: "Word of mouth"}, {label: "Other"}]}, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Are you connected with any groups in the reproductive health community? (Student groups, reproductive health orgs, healthcare providers, etc.)", slug: "are_you_connected_with_any_repro_groups_"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Please share any additional information about your affiliations, activism journey or feedback:", slug: "additional_notes"}, required: false, type: {discriminant: "text", value: {multiline: true, embedSubmitButton: {discriminant: false}}}}, {label: {name: "I would like to receive updates and actions from Plan C", slug: "add_me_to_the_newsletter_list"}, required: false, type: {discriminant: "checkbox"}}]
    _language="" /%}
+
+{% spacerComponent spacing=".5rem" _language="" /%}
 
 {% narrowBanner
    icon="handCoins"
