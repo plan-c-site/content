@@ -386,13 +386,6 @@ filterPresets:
         value:
           discriminant: string
           value: Free with medicaid
-  - label: Free for
-    operator: OR
-    values:
-      - field: Financial aid
-        value:
-          discriminant: string
-          value: Free to those who cannot afford other services
 medicaidText:
   color: yellow
   icon: info
