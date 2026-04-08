@@ -3,21 +3,3 @@
 
 Esta es una descripción general de todos los componentes que se pueden utilizar para construir una página. Puede seleccionar y copiar/pegar componentes de esta página o de otra página del sitio.
 {% /bodySection %}
-
-{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
-{% inContentButton label="Nombre del filtro" icon="" size="standard" background="beige" altHoverBackground="" smallShadow=false rightIcon=false action={discriminant: ""} _language="" /%}
-
-{% inContentButton label="Nombre del filtro" icon="" size="primary" background="beige" altHoverBackground="" smallShadow=false rightIcon=false action={discriminant: ""} _language="" /%}
-{% /bodySection %}
-
-{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
-{% formWrapper formType={discriminant: "link", value: {}} afterSubmit="show-screens" _language="" %}
-{% formSection type="waiting" _language="" %}
-{% formInput fields=[{label: {name: "Texto", slug: "text"}, required: true, type: {discriminant: "text", value: {multiline: false, embedSubmitButton: {discriminant: false}}}}, {label: {name: "Enviar", slug: "submit"}, required: false, type: {discriminant: "submit", value: {icon: "", size: "standard", background: "beige", altHoverBackground: "", smallShadow: false, rightIcon: false}}}] _language="" /%}
-{% /formSection %}
-
-{% formSection type="success" _language="" %}
-Uno o más campos obligatorios están vacíos.
-{% /formSection %}
-{% /formWrapper %}
-{% /bodySection %}
