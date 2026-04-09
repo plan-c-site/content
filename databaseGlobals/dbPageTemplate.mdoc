@@ -21,6 +21,9 @@
    largeLeftColumn=true
    reverseOnMobile=false
    _language="" %}
+{% conditionalSection
+   condition={discriminant: "not", value: {field: "Name", value: "Iowa"}}
+   _language="" %}
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
    afterSubmit="nothing"
@@ -29,6 +32,20 @@
 # Abortion pill providers in {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} _language="" %}{% dbText source="Name" _language="" %}State{% /dbText %}{% /inlineForm %}
 {% /formSection %}
 {% /formWrapper %}
+{% /conditionalSection %}
+
+{% conditionalSection
+   condition={discriminant: "eq", value: {field: "Name", value: "Iowa"}}
+   _language="" %}
+{% formWrapper
+   formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
+   afterSubmit="nothing"
+   _language="" %}
+{% formSection type="waiting" _language="" %}
+# Abortion pill access in {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} _language="" %}{% dbText source="Name" _language="" %}State{% /dbText %}{% /inlineForm %}
+{% /formSection %}
+{% /formWrapper %}
+{% /conditionalSection %}
 
 {% dbMarkdoc source="Summary" _language="" /%}
 
