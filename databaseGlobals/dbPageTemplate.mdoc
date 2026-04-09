@@ -22,7 +22,7 @@
    reverseOnMobile=false
    _language="" %}
 {% conditionalSection
-   condition={discriminant: "not", value: {field: "Name", value: "Iowa"}}
+   condition={discriminant: "not", value: {field: "Name", value: "South Dakota"}}
    _language="" %}
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
@@ -35,7 +35,7 @@
 {% /conditionalSection %}
 
 {% conditionalSection
-   condition={discriminant: "eq", value: {field: "Name", value: "Iowa"}}
+   condition={discriminant: "eq", value: {field: "Name", value: "South Dakota"}}
    _language="" %}
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "/abortion-pill/[:location:]"}}
