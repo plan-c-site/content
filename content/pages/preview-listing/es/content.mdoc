@@ -2,4 +2,4 @@
 # Vista previa del listado
 {% /bodySection %}
 
-{% filteredListings title="Tipo de proveedor" color="cyan" maxVisibleDefault=10 listings={discriminant: "field", value: {field: "States", value: "Preview only"}} _language="" /%}
+{% filteredListings title="Tipo de proveedor" color="cyan" maxVisibleDefault=10 listings={discriminant: "field", value: {operator: "and", criteria: [{field: "States", value: "Preview only"}]}} _language="" /%}

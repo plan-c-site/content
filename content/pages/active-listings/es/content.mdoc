@@ -10,10 +10,10 @@ Notas:
 - Considere añadir una lista de "Estados" a cada listado.
 {% /bodySection %}
 
-{% filteredListings title="Tipo de proveedor" color="cyan" maxVisibleDefault=0 listings={discriminant: "field", value: {field: "Provider type", value: "Online clinic"}} _language="" /%}
+{% filteredListings title="Tipo de proveedor" color="cyan" maxVisibleDefault=0 listings={discriminant: "field", value: {operator: "and", criteria: [{field: "Provider type", value: "Online clinic"}]}} _language="" /%}
 
-{% filteredListings title="Tipo de proveedor" color="blue" maxVisibleDefault=0 listings={discriminant: "field", value: {field: "Provider type", value: "International online clinic"}} _language="" /%}
+{% filteredListings title="Tipo de proveedor" color="blue" maxVisibleDefault=0 listings={discriminant: "field", value: {operator: "and", criteria: [{field: "Provider type", value: "International online clinic"}]}} _language="" /%}
 
-{% filteredListings title="Tipo de proveedor" color="pink" maxVisibleDefault=0 listings={discriminant: "field", value: {field: "Provider type", value: "Community network"}} _language="" /%}
+{% filteredListings title="Tipo de proveedor" color="pink" maxVisibleDefault=0 listings={discriminant: "field", value: {operator: "and", criteria: [{field: "Provider type", value: "Community network"}]}} _language="" /%}
 
-{% filteredListings title="Tipo de proveedor" color="red" maxVisibleDefault=0 listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}} _language="" /%}
+{% filteredListings title="Tipo de proveedor" color="red" maxVisibleDefault=0 listings={discriminant: "field", value: {operator: "and", criteria: [{field: "Provider type", value: "Website that sells pills"}]}} _language="" /%}
