@@ -359,7 +359,10 @@ filterFields:
       emptyIs: 99
       zeroIs: 99
       helpPopup:
-        discriminant: false
+        discriminant: true
+        value:
+          label: Help
+          popup: what-do-abortion-pills-look-like
 filterPresets:
   - label: Pills in advance
     operator: OR
