@@ -183,23 +183,6 @@ to go over in height
    _language="" /%}
 {% /bodySection %}
 
-{% tocAnchor
-   slug={name: "Before Pre Filtered Suppliers", slug: "faq"}
-   type={discriminant: "toc"}
-   _language="" /%}
-
-{% filteredListings
-   title="1 week or less"
-   color="red"
-   listings={discriminant: "field", value: {field: "Delivery", value: "1 week or less"}}
-   _language="" /%}
-
-{% filteredListings
-   title="Websites that sell pills"
-   color="red"
-   listings={discriminant: "field", value: {field: "Provider type", value: "Website that sells pills"}}
-   _language="" /%}
-
 {% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader color="pink" title="A Section" icon="" _language="" %}
 {% inContentDropdown
