@@ -232,6 +232,8 @@ filterFields:
           value: Discounts available
         - field: Financial aid
           value: Free to those who cannot afford other services
+      helpPopup:
+        discriminant: false
   - discriminant: checkbox-group
     value:
       label: Accepts some insurance
@@ -239,6 +241,8 @@ filterFields:
       criteria:
         - field: Financial aid
           value: Accepts some insurance
+      helpPopup:
+        discriminant: false
   - discriminant: checkbox-group
     value:
       label: Free with medicaid
@@ -246,6 +250,8 @@ filterFields:
       criteria:
         - field: Financial aid
           value: Free with medicaid
+      helpPopup:
+        discriminant: false
   - discriminant: spacer
   - discriminant: group-label
     value:
@@ -257,6 +263,8 @@ filterFields:
       criteria:
         - field: Services
           value: Pills in advance
+      helpPopup:
+        discriminant: false
   - discriminant: checkbox-group
     value:
       label: No video visit required
@@ -264,6 +272,8 @@ filterFields:
       criteria:
         - field: Provider Interaction
           value: Video visit required
+      helpPopup:
+        discriminant: false
   - discriminant: checkbox-group
     value:
       label: Offers period pills
@@ -271,6 +281,11 @@ filterFields:
       criteria:
         - field: Services
           value: Period pills
+      helpPopup:
+        discriminant: true
+        value:
+          label: What are period pills?
+          popup: pill-examples-online-clinics
   - discriminant: spacer
   - discriminant: number
     value:
@@ -359,10 +374,7 @@ filterFields:
       emptyIs: 99
       zeroIs: 99
       helpPopup:
-        discriminant: true
-        value:
-          label: Help
-          popup: what-do-abortion-pills-look-like
+        discriminant: false
 filterPresets:
   - label: Pills in advance
     operator: OR
