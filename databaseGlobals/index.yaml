@@ -282,10 +282,7 @@ filterFields:
         - field: Services
           value: Period pills
       helpPopup:
-        discriminant: true
-        value:
-          label: What are period pills?
-          popup: pill-examples-online-clinics
+        discriminant: false
   - discriminant: spacer
   - discriminant: number
     value:
