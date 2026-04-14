@@ -223,6 +223,9 @@ filterFields:
   - discriminant: group-label
     value:
       label: Financial aid
+      es:
+        label: Ayuda financiera
+        __label: K8aX7lFKmr6kZQdSqNUX44y9Nm96wa3XBv+HaS43tl8=
   - discriminant: checkbox-group
     value:
       label: Discounts available
@@ -234,6 +237,9 @@ filterFields:
           value: Free to those who cannot afford other services
       helpPopup:
         discriminant: false
+      es:
+        label: Descuentos disponibles
+        __label: moaN7bU5TIeu4EMDKsOZiaHXk7Mf/RlEgMBqC0aSz/c=
   - discriminant: checkbox-group
     value:
       label: Accepts some insurance
@@ -243,6 +249,9 @@ filterFields:
           value: Accepts some insurance
       helpPopup:
         discriminant: false
+      es:
+        label: Acepta algunos seguros
+        __label: P5bMgRGRNPAsXxsVzL4Ku4FTxIvIJKAmQG798bdup2c=
   - discriminant: checkbox-group
     value:
       label: Free with medicaid
@@ -252,10 +261,16 @@ filterFields:
           value: Free with medicaid
       helpPopup:
         discriminant: false
+      es:
+        label: Gratis con Medicaid
+        __label: l+u/mWOezhtTbAULtXd9BUMm63+mgKu6h9L/hktRYMY=
   - discriminant: spacer
   - discriminant: group-label
     value:
       label: Service options
+      es:
+        label: Opciones de servicio
+        __label: oea+nl4av4ejmhIfxvsdqAnafLcoKXe1T6UAlZ37nYg=
   - discriminant: checkbox-group
     value:
       label: Offers pills in advance
@@ -265,6 +280,9 @@ filterFields:
           value: Pills in advance
       helpPopup:
         discriminant: false
+      es:
+        label: Ofrece pastillas por adelantado
+        __label: B73Ca/5JSQuaT5mDadiSFdLvYP3JyVriGVjsYr2y1Io=
   - discriminant: checkbox-group
     value:
       label: No video visit required
@@ -274,6 +292,9 @@ filterFields:
           value: Video visit required
       helpPopup:
         discriminant: false
+      es:
+        label: No se requiere cita por video
+        __label: 25CpaeKpnrWw4iW+41SvByNQhnGHlxUZNA9mC2/nar8=
   - discriminant: checkbox-group
     value:
       label: Offers period pills
@@ -283,6 +304,9 @@ filterFields:
           value: Period pills
       helpPopup:
         discriminant: false
+      es:
+        label: Ofrece pastillas para el retraso menstrual
+        __label: 2DYKPe83jCHJXV5BU1M57GfvysfeummaKlPQLcAn0eM=
   - discriminant: spacer
   - discriminant: number
     value:
@@ -292,31 +316,58 @@ filterFields:
         - value: 0
           label: All ages
           comparison: '='
+          es:
+            label: Todas las edades
+            __label: +SsasjQZSuSZl4rR9mZxxGuSAK//3vvcoB0c4yh8OoI=
         - value: 12
           label: Serves ages 12+
           comparison: <=
+          es:
+            label: Recomendado para mayores de 12 años
+            __label: BUOulqVYxk/c0yFtN8m0LMk6r9/DGjB+fMNRqgv3Af8=
         - value: 13
           label: Serves ages 13+
           comparison: <=
+          es:
+            label: Recomendado para mayores de 13 años
+            __label: OfEa7GPrsBeXjANf7LgxvzNfO48RQ9a3KdasT0aXvSc=
         - value: 14
           label: Serves ages 14+
           comparison: <=
+          es:
+            label: Recomendado para mayores de 14 años
+            __label: 57tdzaT+sd1I+T5qX6TD7XZvioI616l3vG04W6XAADs=
         - value: 15
           label: Serves ages 15+
           comparison: <=
+          es:
+            label: Recomendado para mayores de 15 años
+            __label: 8KZTHwaamR7NKA1ZCHN5ZLtOPBReXPJyFrGMJoZN6Og=
         - value: 16
           label: Serves ages 16+
           comparison: <=
+          es:
+            label: Para mayores de 16 años
+            __label: KiK2IRJTKfuMeLaOr2ku7AZaiWeCA+mUDwKm3ioS6lk=
         - value: 17
           label: Serves ages 17+
           comparison: <=
+          es:
+            label: Para mayores de 17 años
+            __label: uWQui+rotVDMA/s22ODBNxYcTRevnmJlENYVmdWxsxQ=
         - value: 18
           label: Serves ages 18+
           comparison: <=
+          es:
+            label: Para mayores de 18 años
+            __label: ylrpRAGhI8ccKnyMqxK1hxaDtvFRpQ7hvzUKCqrH2rE=
       emptyIs: 0
       zeroIs: 0
       helpPopup:
         discriminant: false
+      es:
+        label: Edades atendidas
+        __label: Jc5ro9QseSC1mn0cs6HM3VchrSSLn46Lev124/MhW5E=
   - discriminant: single
     value:
       field: Languages
@@ -324,18 +375,39 @@ filterFields:
       options:
         - value: English
           label: English
+          es:
+            label: Inglés
+            __label: uhGL9/ycGu3B7bKKCqhuC0O2gfIir2YW4TxDvoeBWwY=
         - value: Spanish
           label: Español
+          es:
+            label: Español
+            __label: lLOCthud3g/41FpEo0thlx2Y31vYEMgDo/M85bEV6ug=
         - value: Hindi
           label: हिन्दी
+          es:
+            label: हिन्दी
+            __label: ndsSr4RX1jXsFXc/kFyoWHdy72TV7L4k2apOqyei55s=
         - value: Hmong-Mien
           label: Hmong-Mien
+          es:
+            label: Hmong-Mien
+            __label: K31BMzbdXAAVFtRYAepBrZ18MLVI38adTIbkCiDKT+A=
         - value: Punjabi
           label: Punjabi
+          es:
+            label: Punjabi
+            __label: nmH4xPvK50xODMo0cOcfBwMS4p9qt2vQPUAXeSZ+Yo0=
         - value: Portuguese
           label: Português
+          es:
+            label: Português
+            __label: 1K2o7CdkEaHXNCgRfqDX2OpIeJ6fB85rtpCMuFG1JEE=
       helpPopup:
         discriminant: false
+      es:
+        label: Idioma
+        __label: pP5lJk7327ONEEsegeszUPMULz0W8yvew5sdm0LBuNE=
   - discriminant: number
     value:
       field: Gestational age limit
@@ -344,34 +416,64 @@ filterFields:
         - value: 0
           label: Any
           comparison: '>='
+          es:
+            label: Cualquiera
+            __label: K1BVl9qnNvE8KRDCYOjesa87IP/jdeteAaAD6S9UHbk=
         - value: 8
           label: 8 weeks or less
           comparison: '>='
+          es:
+            label: 8 semanas o menos
+            __label: LtgwtmcyKmhhwMFW2VZtLSMYwICKfnCPX7bpMAB8Dzw=
         - value: 9
           label: 9 weeks or less
           comparison: '>='
+          es:
+            label: 9 semanas o menos
+            __label: iNahytDRr1MjlMdj6Mnvb5YY0V3+gyGwr2d28DPaBoI=
         - value: 10
           label: 10 weeks or less
           comparison: '>='
+          es:
+            label: 10 semanas o menos
+            __label: GF38eJ2q3X2v/HBttrmR80AckiVy385UVF+krO0D9QQ=
         - value: 11
           label: 11 weeks or less
           comparison: '>='
+          es:
+            label: 11 semanas o menos
+            __label: tNi0u0n+r9D0PrDcI13Ag4DW++hhzftCcBf+wYdIbAE=
         - value: 12
           label: 12 weeks or less
           comparison: '>='
+          es:
+            label: 12 semanas o menos
+            __label: gEysSsHyYsJ1ljuibRmsiLi34knyrBD+zTQEpxq0cTM=
         - value: 13
           label: 13 weeks or less
           comparison: '>='
+          es:
+            label: 13 semanas o menos
+            __label: Q/K5eF1KKK+szYRv8xlrWywIxD6yo9hig4ejfJtemt0=
         - value: 14
           label: 14 weeks or less
           comparison: '>='
+          es:
+            label: 14 semanas o menos
+            __label: yj4aZWTwNqmJzpnQgsi3l38gaEQmtJ6m7cSPY/RjQ2M=
         - value: 15
           label: More than 14 weeks
           comparison: '>='
+          es:
+            label: Más de 14 semanas
+            __label: tnYeX1PEzbjm1XZDINPO5iG3dVm21J7TdfJnJly/az0=
       emptyIs: 99
       zeroIs: 99
       helpPopup:
         discriminant: false
+      es:
+        label: Semanas de embarazo
+        __label: f3bw9iZtQnQygOGqWTfrU/kb55IJe7iM/V16JpMnO9k=
 filterPresets:
   - label: Pills in advance
     operator: OR
