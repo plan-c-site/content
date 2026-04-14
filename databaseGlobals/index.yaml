@@ -323,43 +323,43 @@ filterFields:
           label: Serves ages 12+
           comparison: <=
           es:
-            label: Recomendado para mayores de 12 años
+            label: Atiende a mayores de 12 años
             __label: BUOulqVYxk/c0yFtN8m0LMk6r9/DGjB+fMNRqgv3Af8=
         - value: 13
           label: Serves ages 13+
           comparison: <=
           es:
-            label: Recomendado para mayores de 13 años
+            label: Atiende a mayores de 13 años
             __label: OfEa7GPrsBeXjANf7LgxvzNfO48RQ9a3KdasT0aXvSc=
         - value: 14
           label: Serves ages 14+
           comparison: <=
           es:
-            label: Recomendado para mayores de 14 años
+            label: Atiende a mayores de 14 años
             __label: 57tdzaT+sd1I+T5qX6TD7XZvioI616l3vG04W6XAADs=
         - value: 15
           label: Serves ages 15+
           comparison: <=
           es:
-            label: Recomendado para mayores de 15 años
+            label: Atiende a mayores de 15 años
             __label: 8KZTHwaamR7NKA1ZCHN5ZLtOPBReXPJyFrGMJoZN6Og=
         - value: 16
           label: Serves ages 16+
           comparison: <=
           es:
-            label: Para mayores de 16 años
+            label: Atiende a mayores de 16 años
             __label: KiK2IRJTKfuMeLaOr2ku7AZaiWeCA+mUDwKm3ioS6lk=
         - value: 17
           label: Serves ages 17+
           comparison: <=
           es:
-            label: Para mayores de 17 años
+            label: Atiende a mayores de 17 años
             __label: uWQui+rotVDMA/s22ODBNxYcTRevnmJlENYVmdWxsxQ=
         - value: 18
           label: Serves ages 18+
           comparison: <=
           es:
-            label: Para mayores de 18 años
+            label: Atiende a mayores de 18 años
             __label: ylrpRAGhI8ccKnyMqxK1hxaDtvFRpQ7hvzUKCqrH2rE=
       emptyIs: 0
       zeroIs: 0
