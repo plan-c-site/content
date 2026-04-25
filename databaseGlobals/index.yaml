@@ -61,7 +61,7 @@ clinicTypes:
     es:
       label: Clínicas en línea de EE. UU.
       __label: q2SuUr85aTRg6LkROgheYgkb4abfqj7atsHR/yglOe4=
-      singular: Clínica en línea de los Estados Unidos
+      singular: Clínica en línea de EE. UU.
       __singular: pJuYPhDXCYHqTBIeiocCyDn+VcTPGwhPc4cXIbWY/OI=
   - label: Other online clinics
     keyValue: International online clinic
