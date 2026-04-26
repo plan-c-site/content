@@ -4,8 +4,4 @@
 Esta es una descripción general de todos los componentes que se pueden utilizar para construir una página. Puede seleccionar y copiar/pegar componentes de esta página o de otra página del sitio.
 {% /bodySection %}
 
-{% bodySection centered=false width="default" color="beige" textSize="medium" _language="" %}
-{% inlineLink action={discriminant: "external", value: {url: "https://www.noscuidamos.org", showPopup: false}} _language="" %}Nos Cuidamos{% /inlineLink %}
-
-{% inlineLink action={discriminant: "external", value: {url: "https://www.noscuidamos.org", showPopup: true}} _language="" %}Nos Cuidamos{% /inlineLink %}
-{% /bodySection %}
+{% filteredListings color="beige" maxVisibleDefault=3 listings={discriminant: "list", value: ["6604", "6497", "6556"]} _language="" /%}
