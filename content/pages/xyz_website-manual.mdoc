@@ -9,9 +9,7 @@ noIndex: false
 es:
   title: Manual del sitio web
   __title: Bek+REia+jQo8pvVFhR5smxuM0/Kl3Ud46S18LWBFVE=
-
 ---
-
 {% bodySection
    centered=false
    width="default"
@@ -23,13 +21,8 @@ es:
 This is an overview of all the components that can be used to construct a page.  You can select and copy/paste components from this page, or another page on the site.
 {% /bodySection %}
 
-{% bodySection
-   centered=false
-   width="default"
+{% filteredListings
    color="beige"
-   textSize="medium"
-   _language="" %}
-{% inlineLink action={discriminant: "external", value: {url: "https://wtcou.squarespace.com", showPopup: false}} _language="" %}Nos Cuidamos{% /inlineLink %}
-
-{% inlineLink action={discriminant: "external", value: {url: "https://wtcou.squarespace.com", showPopup: true}} _language="" %}Nos Cuidamos{% /inlineLink %}
-{% /bodySection %}
+   maxVisibleDefault=3
+   listings={discriminant: "list", value: ["6497", "6497"]}
+   _language="" /%}
