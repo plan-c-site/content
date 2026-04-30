@@ -229,6 +229,9 @@ filterFields:
   - discriminant: checkbox-group
     value:
       label: Discounts available
+      es:
+        label: Descuentos disponibles
+        __label: moaN7bU5TIeu4EMDKsOZiaHXk7Mf/RlEgMBqC0aSz/c=
       operator: OR
       criteria:
         - field: Financial aid
@@ -237,33 +240,30 @@ filterFields:
           value: Free to those who cannot afford other services
       helpPopup:
         discriminant: false
-      es:
-        label: Descuentos disponibles
-        __label: moaN7bU5TIeu4EMDKsOZiaHXk7Mf/RlEgMBqC0aSz/c=
   - discriminant: checkbox-group
     value:
       label: Accepts some insurance
+      es:
+        label: Acepta algunos seguros
+        __label: P5bMgRGRNPAsXxsVzL4Ku4FTxIvIJKAmQG798bdup2c=
       operator: OR
       criteria:
         - field: Financial aid
           value: Accepts some insurance
       helpPopup:
         discriminant: false
-      es:
-        label: Acepta algunos seguros
-        __label: P5bMgRGRNPAsXxsVzL4Ku4FTxIvIJKAmQG798bdup2c=
   - discriminant: checkbox-group
     value:
       label: Free with medicaid
+      es:
+        label: Gratis con Medicaid
+        __label: l+u/mWOezhtTbAULtXd9BUMm63+mgKu6h9L/hktRYMY=
       operator: OR
       criteria:
         - field: Financial aid
           value: Free with medicaid
       helpPopup:
         discriminant: false
-      es:
-        label: Gratis con Medicaid
-        __label: l+u/mWOezhtTbAULtXd9BUMm63+mgKu6h9L/hktRYMY=
   - discriminant: spacer
   - discriminant: group-label
     value:
@@ -274,44 +274,47 @@ filterFields:
   - discriminant: checkbox-group
     value:
       label: Offers pills in advance
+      es:
+        label: Ofrece pastillas por adelantado
+        __label: B73Ca/5JSQuaT5mDadiSFdLvYP3JyVriGVjsYr2y1Io=
       operator: OR
       criteria:
         - field: Services
           value: Pills in advance
       helpPopup:
         discriminant: false
-      es:
-        label: Ofrece pastillas por adelantado
-        __label: B73Ca/5JSQuaT5mDadiSFdLvYP3JyVriGVjsYr2y1Io=
   - discriminant: checkbox-group
     value:
       label: No video visit required
+      es:
+        label: No se requiere cita por video
+        __label: 25CpaeKpnrWw4iW+41SvByNQhnGHlxUZNA9mC2/nar8=
       operator: NOT
       criteria:
         - field: Provider Interaction
           value: Video visit required
       helpPopup:
         discriminant: false
-      es:
-        label: No se requiere cita por video
-        __label: 25CpaeKpnrWw4iW+41SvByNQhnGHlxUZNA9mC2/nar8=
   - discriminant: checkbox-group
     value:
       label: Offers period pills
+      es:
+        label: Ofrece pastillas para el retraso menstrual
+        __label: 2DYKPe83jCHJXV5BU1M57GfvysfeummaKlPQLcAn0eM=
       operator: OR
       criteria:
         - field: Services
           value: Period pills
       helpPopup:
         discriminant: false
-      es:
-        label: Ofrece pastillas para el retraso menstrual
-        __label: 2DYKPe83jCHJXV5BU1M57GfvysfeummaKlPQLcAn0eM=
   - discriminant: spacer
   - discriminant: number
     value:
       field: Age minimum
       label: Ages served
+      es:
+        label: Edades atendidas
+        __label: Jc5ro9QseSC1mn0cs6HM3VchrSSLn46Lev124/MhW5E=
       items:
         - value: 0
           label: All ages
@@ -365,13 +368,13 @@ filterFields:
       zeroIs: 0
       helpPopup:
         discriminant: false
-      es:
-        label: Edades atendidas
-        __label: Jc5ro9QseSC1mn0cs6HM3VchrSSLn46Lev124/MhW5E=
   - discriminant: single
     value:
       field: Languages
       label: Language
+      es:
+        label: Idioma
+        __label: pP5lJk7327ONEEsegeszUPMULz0W8yvew5sdm0LBuNE=
       options:
         - value: English
           label: English
@@ -405,13 +408,13 @@ filterFields:
             __label: 1K2o7CdkEaHXNCgRfqDX2OpIeJ6fB85rtpCMuFG1JEE=
       helpPopup:
         discriminant: false
-      es:
-        label: Idioma
-        __label: pP5lJk7327ONEEsegeszUPMULz0W8yvew5sdm0LBuNE=
   - discriminant: number
     value:
       field: Gestational age limit
       label: Weeks of pregnancy
+      es:
+        label: Semanas de embarazo
+        __label: f3bw9iZtQnQygOGqWTfrU/kb55IJe7iM/V16JpMnO9k=
       items:
         - value: 0
           label: Any
@@ -471,9 +474,6 @@ filterFields:
       zeroIs: 99
       helpPopup:
         discriminant: false
-      es:
-        label: Semanas de embarazo
-        __label: f3bw9iZtQnQygOGqWTfrU/kb55IJe7iM/V16JpMnO9k=
 filterPresets:
   - label: Pills in advance
     operator: OR
