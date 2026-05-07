@@ -131,7 +131,7 @@ navBar:
             value:
               label: Missed period pills
               es:
-                label: Pastillas para la falta de menstruación
+                label: Pastillas para el retraso menstrual
                 __label: z8mBJv/1HSbloJZVc28hq0+BC0oQXc4prfoLOGITrBU=
               action:
                 discriminant: internal
