@@ -9,7 +9,8 @@ seo:
       altText: '%Name% abortion clinics'
   seoSchemas: []
 allowedTypes:
-  - International online clinic
   - Online clinic
+  - International online clinic
+  - Community network
 maxVisibleDefault: 10
 overrideSupplierMaxVisibileDefault: false
