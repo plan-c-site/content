@@ -12,5 +12,5 @@ allowedTypes:
   - Online clinic
   - International online clinic
   - Community network
-maxVisibleDefault: 10
+maxVisibleDefault: 13
 overrideSupplierMaxVisibileDefault: false
