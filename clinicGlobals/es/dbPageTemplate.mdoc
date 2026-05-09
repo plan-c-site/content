@@ -1,4 +1,4 @@
-{% heroSection image={discriminant: "state", value: {highPriority: false}} imageSide="right" color="beige" imageBackgroundColor="beige" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="left" largeLeftColumn=false reverseOnMobile=false _language="" %}
+{% heroSection image={discriminant: "state", value: {highPriority: false}} imageSide="right" color="beige" imageBackgroundColor="beige" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="left" largeLeftColumn=true reverseOnMobile=false _language="" %}
 {% formWrapper formType={discriminant: "link", value: {pattern: "/[:location:]"}} afterSubmit="nothing" _language="" %}
 {% formSection type="waiting" _language="" %}
 # Clínicas de aborto que prestan servicios en {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} _language="" %}{% dbText source="Name" _language="" %}Estado{% /dbText %}{% /inlineForm %}
@@ -13,6 +13,10 @@
 {% tocAnchor slug={name: "Lista de proveedores", slug: "list-of-providers"} type={discriminant: "toc"} _language="" /%}
 
 {% dbClinic _language="" /%}
+
+{% narrowBanner icon="arrowUp" color="beigeDark" iconAlign="items-center" fullWidth=true _language="" %}
+{% inlineLink action={discriminant: "anchor", value: "top"} _language="" %}Volver arriba{% /inlineLink %}
+{% /narrowBanner %}
 
 {% tocAnchor slug={name: "Obtener apoyo", slug: "get-support"} type={discriminant: "toc"} _language="" /%}
 
