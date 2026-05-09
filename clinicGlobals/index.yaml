@@ -7,7 +7,9 @@ seo:
     value:
       highPriority: false
       altText: '%Name% abortion clinics'
-  seoSchemas: []
+  seoSchemas:
+    - state-page-breadcrumb
+    - basic-pages
 allowedTypes:
   - Online clinic
   - International online clinic
