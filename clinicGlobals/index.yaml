@@ -6,7 +6,7 @@ seo:
     discriminant: state
     value:
       highPriority: false
-      altText: '%Name% abortion clinics'
+      altText: '%0% abortion clinics'
   seoSchemas:
     - clinic-page-breadcrumb
     - basic-pages
