@@ -33,6 +33,15 @@
 
 {% dbClinic _language="" /%}
 
+{% narrowBanner
+   icon="arrowUp"
+   color="beigeDark"
+   iconAlign="items-center"
+   fullWidth=true
+   _language="" %}
+{% inlineLink action={discriminant: "anchor", value: "top"} _language="" %}Back to top{% /inlineLink %}
+{% /narrowBanner %}
+
 {% tocAnchor
    slug={name: "Get support", slug: "get-support"}
    type={discriminant: "toc"}
