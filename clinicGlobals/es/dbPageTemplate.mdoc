@@ -1,5 +1,5 @@
 {% heroSection image={discriminant: "state", value: {highPriority: false}} imageSide="right" color="beige" imageBackgroundColor="beige" ignoreImageBorder=true imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="left" largeLeftColumn=true reverseOnMobile=false _language="" %}
-{% formWrapper formType={discriminant: "link", value: {pattern: "/[:location:]"}} afterSubmit="nothing" _language="" %}
+{% formWrapper formType={discriminant: "link", value: {pattern: "/abortion-clinic/[:location:]"}} afterSubmit="nothing" _language="" %}
 {% formSection type="waiting" _language="" %}
 # Clínicas de aborto que prestan servicios en {% inlineForm slug="location" required=false autoSubmit=true options={discriminant: true, value: {valueType: "slug"}} _language="" %}{% dbText source="Name" _language="" %}Estado{% /dbText %}{% /inlineForm %}
 {% /formSection %}
