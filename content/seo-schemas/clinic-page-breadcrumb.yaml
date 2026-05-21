@@ -17,8 +17,8 @@ template: |-
           {
             "@type": "ListItem",
             "position": 2,
-            "item": "https://www.plancpills.org/abortion-pill/",
-            "name": "Where people get abortion pills online"
+            "item": "https://www.plancpills.org/abortion-clinic/",
+            "name": "Abortion clinics and online providers in every state."
           },
           {
             "@type": "ListItem",
