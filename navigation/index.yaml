@@ -93,8 +93,14 @@ social:
       value:
         url: https://www.youtube.com/@plancpills
         showPopup: false
+        es:
+          url: https://www.youtube.com/@plancpills
+          __url: 7Z94S/rjbcvq9xm6t8PSD+dTVJElgbNRxXKr+hG/rPc=
     icon: youTube
     altText: YouTube
+    es:
+      altText: YouTube
+      __altText: +3rM//jG+OqbA8ke5VdtDQgIDpujWRjYAarrYCDbyIw=
 navBar:
   links:
     - discriminant: section
