@@ -88,6 +88,13 @@ social:
     es:
       altText: TikTok
       __altText: G7b8+/E2insnptsEgC4nVqniCesk8YnD41voVC9Dmiw=
+  - action:
+      discriminant: external
+      value:
+        url: https://www.youtube.com/@plancpills
+        showPopup: false
+    icon: youTube
+    altText: YouTube
 navBar:
   links:
     - discriminant: section
