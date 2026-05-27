@@ -5,11 +5,9 @@ template: |-
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "{{ pageUrl }}#webpage",
-        "url": "{{ pageUrl }}",
+        "@id": "https://www.plancpills.org/abortion-clinic#webpage",
+        "url": "https://www.plancpills.org/abortion-clinic",
         "name": "{{ pageTitle }}",
-        "breadcrumb": {
-          "@id": "{{ pageUrl }}#breadcrumb"},
         "description": "{{ pageDescription }}",
         "inLanguage": "en-US",
         "publisher": {
@@ -24,12 +22,31 @@ template: |-
           "@type": "ReadAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "{{ pageUrl }}"
+            "urlTemplate": "https://www.plancpills.org/abortion-clinic"
           }
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.plancpills.org/abortion-clinic#breadcrumb",
+          "name": "Breadcrumb for https://www.plancpills.org/abortion-clinic",
+          "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": "https://www.plancpills.org/",
+            "name": "Home"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": "https://www.plancpills.org/abortion-clinic",
+            "name": "Abortion clinics and online providers in every state."
+          }
+        ]
         },
         "primaryImageOfPage": {
           "@type": "ImageObject",
-          "@id": "{{ pageUrl }}#primaryimage",
+          "@id": "https://www.plancpills.org/abortion-clinic#primaryimage",
           "contentUrl": "{{ image.url }}",
           "name": "{{ image.name }}",
           "description": "Image of {{ image.name }}",
@@ -41,7 +58,7 @@ template: |-
           "copyrightNotice": "© 2025 Plan C",
           "creditText": "© 2025 Plan C",
           "creator": { "@id": "https://www.plancpills.org/#organization" },
-          "isPartOf": {"@id": "{{ pageUrl }}#webpage"}
+          "isPartOf": {"@id": "https://www.plancpills.org/abortion-clinic#webpage"}
         }
       }
     ]
