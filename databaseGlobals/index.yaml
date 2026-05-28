@@ -15,8 +15,11 @@ seo:
   es:
     title: 'Acceso a Pastillas Abortivas: %Name% | Guía del Plan C'
     __title: xuFcsXkjVHdzmyeqoTlaoYvYz2iEYyU5uRx151P+dn4=
-    description: '%Template meta%'
-    __description: oHkYPP6zNd63/dE0vOyEjj72KsacPIM6SbZlGJDvZ4Q=
+    description: >-
+      Las personas están accediendo a pastillas abortivas por correo en %Name%.
+      Consulte la investigación de Plan C sobre precios, tiempos de entrega y
+      apoyo financiero en esta guía actualizada.
+    __description: xZ7MmN7tve4C9ASFIRCDj+L4WCrNASIwM5RhFh2qzTw=
 medicallySafe: medically-safe-possible-legal-risk
 medicallySafeLabel: Medically very safe, possible legal risk
 clinicTypes:
