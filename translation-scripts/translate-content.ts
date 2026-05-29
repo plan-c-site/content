@@ -121,6 +121,18 @@ async function Translate() {
   );
 
   await translateAllYaml(
+    path.join(__dirname, "../clinicGlobals"),
+    [
+      {
+        key: "seo",
+        keys: SeoFields,
+        container: "object",
+      },
+    ],
+    { url: "/clinicGlobals" }
+  );
+
+  await translateAllYaml(
     path.join(__dirname, "../navigation"),
     [
       {
