@@ -1,7 +1,7 @@
 homePage: abortion-clinic
 seo:
   title: Abortion Clinics Serving %Name%
-  description: '%Template clinic meta%'
+  description: '%Resolved template clinic meta%'
   image:
     discriminant: state
     value:
