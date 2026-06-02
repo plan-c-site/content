@@ -271,7 +271,7 @@ async function Translate() {
   );
   await translateMarkdownRoots(
     path.join(__dirname, "../content/roadTrip"),
-    [{ key: "title" }, { key: "city" }],
+    [{ key: "title" }],
     "description",
     { url_base: "/roadTrip" }
   );
