@@ -1,0 +1,27 @@
+title: Get Later Care
+heading: Information on safe later care through a clinic
+author: Get Later Care
+website: https://www.getlatercare.com/
+summary: >-
+  Information about how to access safe abortion care later in pregnancy through
+  a clinic. 
+resourceIcon: heartHandshake
+iconColor: green
+buttonIcon: phone
+buttonAction:
+  discriminant: ''
+buttonUrl:
+  discriminant: none
+es:
+  heading: Apoyo logístico y emocional
+  __heading: BHuIC7RloZ57T+YNm1k9wY/dr5YwdvPcEGg+hpTHqWE=
+  summary: >-
+    Apoyo gratuito y confidencial entre personas similares para obtener y usar
+    pastillas abortivas.
+  __summary: 5j+n9ZkZk0BJ9QfTzluoUWYCaJZKYxanmfRj/oBOQ/U=
+  buttonText: Llamar o enviar un mensaje de texto
+  __buttonText: FQO3ilANrNnTO07lUmSOZrXq1yYCuEPGtSpRSng1ZIc=
+  author: Línea de Ayuda Reprocare
+  __author: q4WIaXZzBp8GZyk5krUiOFtbb2tR++IjHP+GNsKV2yA=
+  website: https://reprocare.com
+  __website: krtYxxQAoSxsEVBK6L+qywkeDd1PPGv4+df9Eu4Hiwc=
