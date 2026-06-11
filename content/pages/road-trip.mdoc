@@ -21,12 +21,11 @@ seo:
       la lucha por el acceso al aborto para todos.
     __description: giYTcc8V/U3aVGXLTPZ0wO8eUNVsfhXp7JJO7YXzLtE=
 status: published
+noIndex: false
 es:
   title: Gira
   __title: f6ZVzBI/Fd72Vsi8KTiZD2FrTE4U2fkAy+p4tewpABI=
-
 ---
-
 {% heroSection
    image={discriminant: "noco-with-alt", value: {image: "Road trip map 2025 - Hero", highPriority: false}}
    imageSide="right"
@@ -83,7 +82,11 @@ Follow our state-by-state guide to find your stop—and if you’ve got an event
 {% /formWrapper %}
 {% /bodySection %}
 
-{% roadtripList startDate="2025/01/01" pageLength=100 _language="" /%}
+{% roadtripList
+   startDate="2025/01/01"
+   endDate="2025/12/31"
+   pageLength=100
+   _language="" /%}
 
 {% narrowBanner
    icon="arrowUp"
