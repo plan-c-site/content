@@ -5,6 +5,7 @@ website: https://www.thehotline.org
 summary: >-
   Offers free, confidential, and compassionate support, crisis intervention
   information, education, and referral services in 200 languages.
+spanish: true
 resourceIcon: heartHandshake
 iconColor: green
 buttonIcon: ''
