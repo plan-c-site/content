@@ -21,12 +21,11 @@ seo:
       la lucha por el acceso al aborto para todos.
     __description: giYTcc8V/U3aVGXLTPZ0wO8eUNVsfhXp7JJO7YXzLtE=
 status: published
+noIndex: false
 es:
   title: Gira 2024
   __title: 5zNHnLNreYTVrqWYLJPsixlUmVzk0cjOnqv4janlJoA=
-
 ---
-
 {% heroSection
    image={discriminant: "noco-with-alt", value: {image: "Road trip 2024 svg", highPriority: false}}
    imageSide="right"
@@ -41,7 +40,7 @@ es:
    largeLeftColumn=false
    reverseOnMobile=false
    _language="" %}
-# Plan C Community Road trip archive
+# Plan C Community Road trip (2024)
 
 The Plan C Community Road Trip traveled coast‑to‑coast from June 23 to November 5 2024, bringing together communities and organizers through dynamic, partner‑hosted events.
 
@@ -53,13 +52,18 @@ If you’ve got an event or idea that belongs on the map, reach out to us at {% 
 {% /heroSection %}
 
 {% tocAnchor
-   slug={name: "Events archive", slug: "events-archive"}
+   slug={name: "Find your stop", slug: "find-your-stop"}
    type={discriminant: "toc"}
    _language="" /%}
 
 {% tocAnchor
-   slug={name: "Road trip (2025)", slug: "road-trip-2025"}
+   slug={name: "Road trip 2026", slug: "road-trip-2026"}
    type={discriminant: "action", value: {discriminant: "internal", value: {page: "road-trip"}}}
+   _language="" /%}
+
+{% tocAnchor
+   slug={name: "Road trip 2025", slug: "road-trip-2025"}
+   type={discriminant: "action", value: {discriminant: "internal", value: {page: "road-trip-2025"}}}
    _language="" /%}
 
 {% bodySection
@@ -68,7 +72,7 @@ If you’ve got an event or idea that belongs on the map, reach out to us at {% 
    color="green"
    textSize="medium"
    _language="" %}
-## Events archive
+## Find your stop
 
 {% formWrapper
    formType={discriminant: "link", value: {pattern: "#[:location:]"}}
@@ -83,7 +87,11 @@ If you’ve got an event or idea that belongs on the map, reach out to us at {% 
 {% /formWrapper %}
 {% /bodySection %}
 
-{% roadtripList endDate="2024-12-31" pageLength=100 _language="" /%}
+{% roadtripList
+   endDate="2024-12-31"
+   pageLength=100
+   scrollOnPageChange=false
+   _language="" /%}
 
 {% narrowBanner
    icon="arrowUp"
