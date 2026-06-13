@@ -76,25 +76,27 @@ Every stop is shaped by the communities hosting it, making each event unique, lo
    scrollOnPageChange=true
    _language="" /%}
 
-{% actionBanner
-   title="Bring the road trip to you"
+{% horizontalSplit noHeader=true _language="" %}
+{% bodySection
+   centered=false
+   width="default"
    color="red"
-   icon="mapPin"
-   link={label: "Email us", click: {discriminant: "mailto", value: "community@plancpills.org"}}
+   textSize="medium"
    _language="" %}
-If you’ve got an event or idea that belongs on the map, reach out to us at community@plancpills.org.
-{% /actionBanner %}
+## Bring the Road Trip to you
 
-{% horizontalSplit noHeader=false _language="" %}
-{% sectionHeader color="blue" title="Events archive" icon="" _language="" /%}
+If you’ve got an event or idea that belongs on the map, reach out to us at {% inlineLink action={discriminant: "mailto", value: "community@plancpills.org"} _language="" %}community@plancpills.org{% /inlineLink %}.
+{% /bodySection %}
 
 {% bodySection
    centered=false
    width="default"
-   color="beige"
+   color="blue"
    textSize="medium"
    _language="" %}
-- {% inlineLink action={discriminant: "internal", value: {page: "road-trip-2025"}} _language="" %}Road Trip 2025{% /inlineLink %}
-- {% inlineLink action={discriminant: "internal", value: {page: "road-trip-2024"}} _language="" %}Road Trip 2024{% /inlineLink %}
+## Events archive
+
+- {% inlineLink action={discriminant: ""} _language="" %}Road Trip 2025{% /inlineLink %}
+- {% inlineLink action={discriminant: ""} _language="" %}Road Trip 2024{% /inlineLink %}
 {% /bodySection %}
 {% /horizontalSplit %}
