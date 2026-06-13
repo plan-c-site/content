@@ -108,20 +108,30 @@ If you’ve got an event or idea that belongs on the map, reach out to us at com
    _language="" /%}
 {% /bodySection %}
 
-{% bodySection
-   centered=false
-   width="default"
-   color="blue"
-   textSize="medium"
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
+   grow=false
+   gap=0
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch"
    _language="" %}
 {% tocAnchor
    slug={name: "Events archive", slug: "events-archive"}
    type={discriminant: "toc"}
    _language="" /%}
 
+{% bodySection
+   centered=false
+   width="default"
+   color="blue"
+   textSize="medium"
+   _language="" %}
 ## Events archive
 
 - {% inlineLink action={discriminant: "internal", value: {page: "road-trip-2025"}} _language="" %}Road Trip 2025{% /inlineLink %}
 - {% inlineLink action={discriminant: "internal", value: {page: "road-trip-2024"}} _language="" %}Road Trip 2024{% /inlineLink %}
 {% /bodySection %}
+{% /flexSection %}
 {% /horizontalSplit %}
