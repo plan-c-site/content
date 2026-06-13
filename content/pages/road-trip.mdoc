@@ -69,16 +69,6 @@ Every stop is shaped by the communities hosting it, making each event unique, lo
 {% /bodySection %}
 {% /horizontalSplit %}
 
-{% tocAnchor
-   slug={name: "Event archive (2025)", slug: "road-trip-2025"}
-   type={discriminant: "action", value: {discriminant: "internal", value: {page: "road-trip-2025"}}}
-   _language="" /%}
-
-{% tocAnchor
-   slug={name: "Event archive 2024", slug: "road-trip-2024"}
-   type={discriminant: "action", value: {discriminant: "internal", value: {page: "road-trip-2024"}}}
-   _language="" /%}
-
 {% roadtripList
    startDate="2026/01/01"
    endDate="2026/12/31"
@@ -86,14 +76,14 @@ Every stop is shaped by the communities hosting it, making each event unique, lo
    scrollOnPageChange=true
    _language="" /%}
 
-{% narrowBanner
-   icon="arrowUp"
-   color="beige"
-   iconAlign="items-center"
-   fullWidth=true
+{% actionBanner
+   title="Bring the road trip to you"
+   color="red"
+   icon="mapPin"
+   link={label: "Email us", click: {discriminant: "mailto", value: "community@plancpills.org"}}
    _language="" %}
-{% inlineLink action={discriminant: "anchor", value: "find-your-stop"} _language="" %}Back to top{% /inlineLink %}
-{% /narrowBanner %}
+If you’ve got an event or idea that belongs on the map, reach out to us at community@plancpills.org.
+{% /actionBanner %}
 
 {% horizontalSplit noHeader=false _language="" %}
 {% sectionHeader color="blue" title="Events archive" icon="" _language="" /%}
@@ -108,12 +98,3 @@ Every stop is shaped by the communities hosting it, making each event unique, lo
 - {% inlineLink action={discriminant: "internal", value: {page: "road-trip-2024"}} _language="" %}Road Trip 2024{% /inlineLink %}
 {% /bodySection %}
 {% /horizontalSplit %}
-
-{% actionBanner
-   title="Bring the road trip to you"
-   color="red"
-   icon="mapPin"
-   link={label: "Email us", click: {discriminant: "mailto", value: "community@plancpills.org"}}
-   _language="" %}
-If you’ve got an event or idea that belongs on the map, reach out to us at community@plancpills.org.
-{% /actionBanner %}
