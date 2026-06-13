@@ -1,5 +1,5 @@
 {% heroSection image={discriminant: "noco-with-alt", value: {image: "Road trip 2024 svg", highPriority: false}} imageSide="right" color="beige" imageBackgroundColor="pink" ignoreImageBorder=false imageCover="bg-contain" imageVertical="bg-center" imageHorizontal="center" mobileImageVertical="desktop" mobileImageHorizontal="desktop" largeLeftColumn=false reverseOnMobile=false _language="" %}
-# Archivo del Community Road Trip de Plan C
+# Viaje por carretera de la comunidad «Plan C» (2024)
 
 La Gira Comunitaria Plan C recorrió el país de costa a costa del 23 de junio al 5 de noviembre de 2024, reuniendo a comunidades y organizadores a través de eventos dinámicos organizados por socios.
 
@@ -10,12 +10,14 @@ Si tienes un evento o una idea que debería estar en el mapa, escríbenos a&nbsp
 {% tableOfContents _language="" /%}
 {% /heroSection %}
 
-{% tocAnchor slug={name: "Archivo de eventos", slug: "events-archive"} type={discriminant: "toc"} _language="" /%}
+{% tocAnchor slug={name: "Encuentra tu parada", slug: "find-your-stop"} type={discriminant: "toc"} _language="" /%}
 
-{% tocAnchor slug={name: "Gira (2025)", slug: "road-trip-2025"} type={discriminant: "action", value: {discriminant: "internal", value: {page: "road-trip"}}} _language="" /%}
+{% tocAnchor slug={name: "Viaje por carretera 2026", slug: "road-trip-2026"} type={discriminant: "action", value: {discriminant: "internal", value: {page: "road-trip"}}} _language="" /%}
+
+{% tocAnchor slug={name: "Viaje por carretera 2025", slug: "road-trip-2025"} type={discriminant: "action", value: {discriminant: "internal", value: {page: "road-trip-2025"}}} _language="" /%}
 
 {% bodySection centered=true width="narrow" color="green" textSize="medium" _language="" %}
-## Archivo de eventos
+## Encuentra tu parada
 
 {% formWrapper formType={discriminant: "link", value: {pattern: "#[:location:]"}} afterSubmit="nothing" customValidation="if (!document.getElementById(inputs.location)) {\n  return {\n  location: \"There are no events scheduled in this state.\"\n  }\n}" _language="" %}
 {% formSection type="waiting" _language="" %}
@@ -24,7 +26,7 @@ Si tienes un evento o una idea que debería estar en el mapa, escríbenos a&nbsp
 {% /formWrapper %}
 {% /bodySection %}
 
-{% roadtripList endDate="2024-12-31" pageLength=100 _language="" /%}
+{% roadtripList endDate="2024-12-31" pageLength=100 scrollOnPageChange=false _language="" /%}
 
 {% narrowBanner icon="arrowUp" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
 {% inlineLink action={discriminant: "anchor", value: "events-archive"} _language="" %}Volver arriba{% /inlineLink %}
