@@ -16,7 +16,7 @@ Artículos que cubren las últimas noticias, batallas legales, cambios de polít
 {% /sectionHeader %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% articleList pagination=4 filtering={discriminant: "category", value: {category: "plan-c"}} _language="" /%}
+{% articleList pagination=4 scrollOnPageChange=true filtering={discriminant: "category", value: {category: "plan-c"}} _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
@@ -28,7 +28,7 @@ Artículos de opinión y campañas mediáticas del equipo de Plan C.
 {% /sectionHeader %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% postList type={discriminant: "postList", value: {pagination: 4}} filtering={discriminant: "category", value: {category: "articles"}} _language="" /%}
+{% postList type={discriminant: "postList", value: {pagination: 4, scrollOnPageChange: true}} filtering={discriminant: "category", value: {category: "articles"}} _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 

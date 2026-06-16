@@ -85,7 +85,7 @@ Lea la cobertura de prensa más reciente que destaca el trabajo de Plan C.
 {% /sectionHeader %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% postList type={discriminant: "postList", value: {pagination: 4}} filtering={discriminant: "category", value: {category: "press-releases"}} _language="" /%}
+{% postList type={discriminant: "postList", value: {pagination: 4, scrollOnPageChange: true}} filtering={discriminant: "category", value: {category: "press-releases"}} _language="" /%}
 {% /flexSection %}
 {% /horizontalSplit %}
 
