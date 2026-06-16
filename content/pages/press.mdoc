@@ -21,9 +21,7 @@ noIndex: false
 es:
   title: Prensa
   __title: ntEnPptaVXmfXpVKSCwE/C4Br1+gbb/3cGs1BnvgEpk=
-
 ---
-
 {% heroSection
    image={discriminant: "noco-with-alt", value: {image: "Megaphone - Hero", highPriority: false}}
    imageSide="right"
@@ -77,6 +75,7 @@ Articles covering the latest news, legal battles, policy changes, and key discus
    _language="" %}
 {% articleList
    pagination=4
+   scrollOnPageChange=true
    filtering={discriminant: "category", value: {category: "plan-c"}}
    _language="" /%}
 {% /flexSection %}
@@ -105,7 +104,7 @@ Op-eds and media campaigns from the Plan C team.
    justiftContent="justify-stretch"
    _language="" %}
 {% postList
-   type={discriminant: "postList", value: {pagination: 4}}
+   type={discriminant: "postList", value: {pagination: 4, scrollOnPageChange: true}}
    filtering={discriminant: "category", value: {category: "articles"}}
    _language="" /%}
 {% /flexSection %}
