@@ -2449,4 +2449,45 @@ template: |
       }
     ]
   }
-es: {}
+es:
+  template: |-
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "{{ pageUrl }}#webpage",
+          "url": "{{ pageUrl }}",
+          "name": "{{ pageTitle }}",
+          "description": "{{ pageDescription }}",
+          "inLanguage": "{{ site.language }}-US",
+          "breadcrumb": {"@id":"{{ pageUrl }}#breadcrumb"},
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://www.plancpills.org/#organization",
+            "name": "Plan C"},
+          "potentialAction": {
+            "@type": "ReadAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "{{ pageUrl }}"
+            }
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "@id": "{{ pageUrl }}#primaryImage",
+            "contentUrl": "{{ image.url }}",
+            "name": "{{ image.name }}",
+            "description": "Image of {{ image.name }}",
+            "width": {{ image.width }},
+            "height": {{ image.height }},
+            "caption": "{{ image.name }}",
+            "license": "https://www.plancpills.org/privacy-terms",
+            "acquireLicensePage": "https://www.plancpills.org/privacy-terms",
+            "copyrightNotice": "© 2026 Plan C",
+            "creditText": "© 2026 Plan C",
+            "creator": { "@id": "https://www.plancpills.org/#organization" }
+          }
+        }
+      ]
+    }
