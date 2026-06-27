@@ -9,7 +9,7 @@ template: |-
         "url": "{{ pageUrl }}",
         "name": "{{ pageTitle }}",
         "description": "{{ pageDescription }}",
-        "inLanguage": "{{ language }}-US",
+        "inLanguage": "{{ site.language }}-US",
         "breadcrumb": {"@id":"{{ pageUrl }}#breadcrumb"},
         "publisher": {
           "@type": "Organization",
