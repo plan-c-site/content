@@ -8,18 +8,13 @@ template: |-
         "@id": "{{ pageUrl }}#webpage",
         "url": "{{ pageUrl }}",
         "name": "{{ pageTitle }}",
-        "breadcrumb": {
-          "@id": "{{ pageUrl }}#breadcrumb"},
         "description": "{{ pageDescription }}",
-        "inLanguage": "en-US",
+        "inLanguage": "{{ language }}-US",
+        "breadcrumb": {"@id":"{{ pageUrl }}#breadcrumb"},
         "publisher": {
           "@type": "Organization",
           "@id": "https://www.plancpills.org/#organization",
           "name": "Plan C"},
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://www.plancpills.org/#website"
-        },
         "potentialAction": {
           "@type": "ReadAction",
           "target": {
@@ -29,7 +24,7 @@ template: |-
         },
         "primaryImageOfPage": {
           "@type": "ImageObject",
-          "@id": "{{ pageUrl }}#primaryimage",
+          "@id": "{{ pageUrl }}#primaryImage",
           "contentUrl": "{{ image.url }}",
           "name": "{{ image.name }}",
           "description": "Image of {{ image.name }}",
@@ -38,10 +33,9 @@ template: |-
           "caption": "{{ image.name }}",
           "license": "https://www.plancpills.org/privacy-terms",
           "acquireLicensePage": "https://www.plancpills.org/privacy-terms",
-          "copyrightNotice": "© 2025 Plan C",
-          "creditText": "© 2025 Plan C",
-          "creator": { "@id": "https://www.plancpills.org/#organization" },
-          "isPartOf": {"@id": "{{ pageUrl }}#webpage"}
+          "copyrightNotice": "© 2026 Plan C",
+          "creditText": "© 2026 Plan C",
+          "creator": { "@id": "https://www.plancpills.org/#organization" }
         }
       }
     ]
