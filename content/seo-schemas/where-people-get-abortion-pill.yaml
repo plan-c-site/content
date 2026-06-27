@@ -1,5 +1,5 @@
 title: Where people get abortion pill
-template: |-
+template: |
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -11,10 +11,16 @@ template: |-
         "description": "Explore Plan C's research on where people order abortion pills online. Find state-by-state options, online clinics, and programs with free abortion pills.",
         "inLanguage": "en-US",
         "isPartOf": "https://www.plancpills.org/",
-        "mainEntity": {"@id": "https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList"},
+        "mainEntity": {
+          "@id": "https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList"
+        },
         "about": [
-          {"@id":"https://www.plancpills.org/abortion-pill#AbortionPills"},
-          {"@id":"https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList"}
+          {
+            "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+          },
+          {
+            "@id": "https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList"
+          }
         ],
         "potentialAction": [
           {
@@ -24,7 +30,9 @@ template: |-
               "urlTemplate": "https://www.plancpills.org/abortion-pill"
             }
           },
-          {"@id": "https://www.plancpills.org/abortion-pill#FindProviderAction"}
+          {
+            "@id": "https://www.plancpills.org/abortion-pill#FindProviderAction"
+          }
         ],
         "publisher": {
           "@type": "Organization",
@@ -45,83 +53,198 @@ template: |-
           "acquireLicensePage": "https://www.plancpills.org/privacy-terms",
           "copyrightNotice": "© 2026 Plan C",
           "creditText": "© 2026 Plan C",
-          "creator": { "@id": "https://www.plancpills.org/#organization" }
+          "creator": {
+            "@id": "https://www.plancpills.org/#organization"
+          }
         },
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "@id": "https://www.plancpills.org/abortion-pill#breadcrumb",
           "name": "breadcrumb: Where people get abortion pills online",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "item": "https://www.plancpills.org/", "name": "Home" },
-            { "@type": "ListItem", "position": 2, "item": "https://www.plancpills.org/abortion-pill", "name": "Where people get abortion pills online" }
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": "https://www.plancpills.org/",
+              "name": "Home"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": "https://www.plancpills.org/abortion-pill",
+              "name": "Where people get abortion pills online"
+            }
           ]
         }
       },
       {
-          "@type": "ItemList",
-          "@id": "https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList",
-          "numberOfItems": 15,
-          "name":"Online abortion pill provider directory",
-          "description": "A directory of online provider services that offer abortion pills by mail in the United States.",
-          "mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pill#webpage"},
-          "subjectOf":{"@id":"https://www.plancpills.org/abortion-pill#webpage"},
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "item": { "@id": "https://www.plancpills.org/abortion-pill#The-MAP" } },
-            { "@type": "ListItem", "position": 2, "item": { "@id": "https://www.plancpills.org/abortion-pill#We-Take-Care-of-Us" } },
-            { "@type": "ListItem", "position": 3, "item": { "@id": "https://www.plancpills.org/abortion-pill#Abuzz" } },
-            { "@type": "ListItem", "position": 4, "item": { "@id": "https://www.plancpills.org/abortion-pill#Aid-Access" } },
-            { "@type": "ListItem", "position": 5, "item": { "@id": "https://www.plancpills.org/abortion-pill#AccessMA" } },
-            { "@type": "ListItem", "position": 6, "item": { "@id": "https://www.plancpills.org/abortion-pill#A-Safe-Choice" } },
-            { "@type": "ListItem", "position": 7, "item": { "@id": "https://www.plancpills.org/abortion-pill#Choices-Rising" } },
-            { "@type": "ListItem", "position": 8, "item": { "@id": "https://www.plancpills.org/abortion-pill#Dash" } },
-            { "@type": "ListItem", "position": 9, "item": { "@id": "https://www.plancpills.org/abortion-pill#Women-on-Web" } },
-            { "@type": "ListItem", "position": 10, "item": { "@id": "https://www.plancpills.org/abortion-pill#Abortion-Pills-in-Private" } },
-            { "@type": "ListItem", "position": 11, "item": { "@id": "https://www.plancpills.org/abortion-pill#Juniper-Midwifery" } },
-            { "@type": "ListItem", "position": 12, "item": { "@id": "https://www.plancpills.org/abortion-pill#Forward-Midwifery" } },
-            { "@type": "ListItem", "position": 13, "item": { "@id": "https://www.plancpills.org/abortion-pill#Abortion-on-Demand" } },
-            { "@type": "ListItem", "position": 14, "item": { "@id": "https://www.plancpills.org/abortion-pill#Carafem" } },
-            { "@type": "ListItem", "position": 15, "item": { "@id": "https://www.plancpills.org/abortion-pill#Hey-Jane" } }
-          ]
+        "@type": "ItemList",
+        "@id": "https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList",
+        "numberOfItems": 15,
+        "name": "Online abortion pill provider directory",
+        "description": "A directory of online provider services that offer abortion pills by mail in the United States.",
+        "mainEntityOfPage": {
+          "@id": "https://www.plancpills.org/abortion-pill#webpage"
+        },
+        "subjectOf": {
+          "@id": "https://www.plancpills.org/abortion-pill#webpage"
+        },
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#The-MAP"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#We-Take-Care-of-Us"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#Abuzz"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#Aid-Access"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#AccessMA"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#A-Safe-Choice"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#Choices-Rising"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#Dash"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#Women-on-Web"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#Abortion-Pills-in-Private"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#Juniper-Midwifery"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#Forward-Midwifery"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#Abortion-on-Demand"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#Carafem"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "item": {
+              "@id": "https://www.plancpills.org/abortion-pill#Hey-Jane"
+            }
+          }
+        ]
       },
       {
         "@type": "Drug",
         "@id": "https://www.plancpills.org/abortion-pill#AbortionPills",
         "name": "Abortion pills",
-        "activeIngredient": ["Mifepristone","Misoprostol"],
+        "activeIngredient": [
+          "Mifepristone",
+          "Misoprostol"
+        ],
         "isAvailableGenerically": true,
-        "alternateName": ["abortion pill","medication abortion", "mtp kit"],
+        "alternateName": [
+          "abortion pill",
+          "medication abortion",
+          "mtp kit"
+        ],
         "offers": {
           "@type": "AggregateOffer",
           "lowPrice": 0.00,
           "highPrice": 499.00,
           "priceCurrency": "USD",
-          "itemOffered": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+          "itemOffered": {
+            "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+          },
           "availability": "https://schema.org/InStock"
-          }
-       },
-  {
-    "@type": "DiscoverAction",
-    "@id": "https://www.plancpills.org/abortion-pill#FindProviderAction",
-    "name": "Find an online provider that offers abortion pills by mail",
-    "description": "People use this online guide to discover providers that offer abortion pill services by mail.",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://www.plancpills.org/abortion-pill"
-    },
-    "instrument": {
-      "@id": "https://www.plancpills.org/abortion-pill#webpage"
-    },
-    "object": {
-      "@id": "https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList"
-    },
-    "result": {
-      "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
-    }
-  },
+        }
+      },
       {
-        "@type":"ServiceChannel",
-        "@id":"https://www.plancpills.org/abortion-pill#Online",
-        "name":"Online"
+        "@type": "DiscoverAction",
+        "@id": "https://www.plancpills.org/abortion-pill#FindProviderAction",
+        "name": "Find an online provider that offers abortion pills by mail",
+        "description": "People use this online guide to discover providers that offer abortion pill services by mail.",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.plancpills.org/abortion-pill"
+        },
+        "instrument": {
+          "@id": "https://www.plancpills.org/abortion-pill#webpage"
+        },
+        "object": {
+          "@id": "https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList"
+        },
+        "result": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        }
+      },
+      {
+        "@type": "ServiceChannel",
+        "@id": "https://www.plancpills.org/abortion-pill#Online",
+        "name": "Online"
       },
       {
         "@type": "Service",
@@ -130,29 +253,115 @@ template: |-
         "name": "AccessMA",
         "identifier": "#AccessMA",
         "serviceType": "Community Network",
-        "areaServed": ["Alabama", "Florida", "Georgia", "Iowa", "Kansas", "Louisiana", "Mississippi", "Missouri", "New Hampshire", "North Carolina", "South Carolina", "Texas", "Wisconsin", "American Samoa", "Guam", "Northern Mariana Islands", "U.S. Virgin Islands"],
-        "provider": {"@type": "NGO", "name": "AccessMA"},
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "Alabama",
+          "Florida",
+          "Georgia",
+          "Iowa",
+          "Kansas",
+          "Louisiana",
+          "Mississippi",
+          "Missouri",
+          "New Hampshire",
+          "North Carolina",
+          "South Carolina",
+          "Texas",
+          "Wisconsin",
+          "American Samoa",
+          "Guam",
+          "Northern Mariana Islands",
+          "U.S. Virgin Islands"
+        ],
+        "provider": {
+          "@type": "NGO",
+          "name": "AccessMA"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
           "@type": "Offer",
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 0.00, "priceCurrency": "USD" }
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 0.00,
+            "maxPrice": 0.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$0" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "All" },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": false },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
-          { "@type": "PropertyValue", "name": "peer_support", "value": true },
-          { "@type": "PropertyValue", "name": "medical_support", "value": false }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$0"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "All"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "All"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": false
+          }
         ]
       },
       {
@@ -162,29 +371,112 @@ template: |-
         "name": "DASH",
         "identifier": "#Dash",
         "serviceType": "Community Network",
-        "areaServed": ["Arkansas", "Florida", "Idaho", "Indiana", "Iowa", "Kentucky", "Mississippi", "Missouri", "Oklahoma", "Puerto Rico", "South Carolina", "Tennessee", "Texas", "West Virginia"],
-        "provider": { "@type": "NGO", "name": "DASH" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "Arkansas",
+          "Florida",
+          "Idaho",
+          "Indiana",
+          "Iowa",
+          "Kentucky",
+          "Mississippi",
+          "Missouri",
+          "Oklahoma",
+          "Puerto Rico",
+          "South Carolina",
+          "Tennessee",
+          "Texas",
+          "West Virginia"
+        ],
+        "provider": {
+          "@type": "NGO",
+          "name": "DASH"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
           "@type": "Offer",
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 0.00, "priceCurrency": "USD" }
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 0.00,
+            "maxPrice": 0.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$0" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7-14 days" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 7 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 14 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "All" },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": false },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
-          { "@type": "PropertyValue", "name": "peer_support", "value": true },
-          { "@type": "PropertyValue", "name": "medical_support", "value": false }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$0"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7-14 days"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 14
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "All"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "All"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": false
+          }
         ]
       },
       {
@@ -194,31 +486,164 @@ template: |-
         "name": "Women on Web",
         "identifier": "#Women-on-Web",
         "serviceType": "Other online clinics",
-        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "Puerto Rico", "American Samoa", "Guam", "Northern Mariana Islands", "U.S. Virgin Islands"],
-        "provider": { "@type": "Organization", "name": "Women on Web" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "Alabama",
+          "Alaska",
+          "Arizona",
+          "Arkansas",
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Florida",
+          "Georgia",
+          "Hawaii",
+          "Idaho",
+          "Illinois",
+          "Indiana",
+          "Iowa",
+          "Kansas",
+          "Kentucky",
+          "Louisiana",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Mississippi",
+          "Missouri",
+          "Montana",
+          "Nebraska",
+          "Nevada",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "North Carolina",
+          "North Dakota",
+          "Ohio",
+          "Oklahoma",
+          "Oregon",
+          "Pennsylvania",
+          "Rhode Island",
+          "South Carolina",
+          "South Dakota",
+          "Tennessee",
+          "Texas",
+          "Utah",
+          "Vermont",
+          "Virginia",
+          "Washington",
+          "West Virginia",
+          "Wisconsin",
+          "Wyoming",
+          "Washington DC",
+          "Puerto Rico",
+          "American Samoa",
+          "Guam",
+          "Northern Mariana Islands",
+          "U.S. Virgin Islands"
+        ],
+        "provider": {
+          "@type": "Organization",
+          "name": "Women on Web"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
           "@type": "Offer",
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 120.00, "priceCurrency": "USD" }
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 0.00,
+            "maxPrice": 120.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$120 or less" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 13 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 13 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$120 or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "All"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 0
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 13 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 13
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
@@ -228,30 +653,159 @@ template: |-
         "name": "Abuzz",
         "identifier": "#Abuzz",
         "serviceType": "US-based online clinics",
-        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "Guam", "Northern Mariana Islands", "Puerto Rico", "U.S. Virgin Islands"],
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "Alabama",
+          "Alaska",
+          "Arizona",
+          "Arkansas",
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Florida",
+          "Georgia",
+          "Hawaii",
+          "Idaho",
+          "Illinois",
+          "Indiana",
+          "Iowa",
+          "Kansas",
+          "Kentucky",
+          "Louisiana",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Mississippi",
+          "Missouri",
+          "Montana",
+          "Nebraska",
+          "Nevada",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "North Carolina",
+          "North Dakota",
+          "Ohio",
+          "Oklahoma",
+          "Oregon",
+          "Pennsylvania",
+          "Rhode Island",
+          "South Carolina",
+          "South Dakota",
+          "Tennessee",
+          "Texas",
+          "Utah",
+          "Vermont",
+          "Virginia",
+          "Washington",
+          "West Virginia",
+          "Wisconsin",
+          "Wyoming",
+          "Washington DC",
+          "Guam",
+          "Northern Mariana Islands",
+          "Puerto Rico",
+          "U.S. Virgin Islands"
+        ],
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
-          "@type": "Offer",  
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 145.00, "priceCurrency": "USD" }
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 0.00,
+            "maxPrice": 145.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$0-$145" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "16+" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 16 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 13 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 13 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$0-$145"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "16+"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 16
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 13 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 13
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
@@ -261,31 +815,163 @@ template: |-
         "name": "The MAP: Cambridge Reproductive Health Consultants",
         "identifier": "#The-MAP",
         "serviceType": "US-based online clinics",
-        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "American Samoa", "Guam", "Northern Mariana Islands", "U.S. Virgin Islands"],
-        "provider": { "@type": "MedicalOrganization", "name": "The MAP: Cambridge Reproductive Health Consultants" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "Alabama",
+          "Alaska",
+          "Arizona",
+          "Arkansas",
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Florida",
+          "Georgia",
+          "Hawaii",
+          "Idaho",
+          "Illinois",
+          "Indiana",
+          "Iowa",
+          "Kansas",
+          "Kentucky",
+          "Louisiana",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Mississippi",
+          "Missouri",
+          "Montana",
+          "Nebraska",
+          "Nevada",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "North Carolina",
+          "North Dakota",
+          "Ohio",
+          "Oklahoma",
+          "Oregon",
+          "Pennsylvania",
+          "Rhode Island",
+          "South Carolina",
+          "South Dakota",
+          "Tennessee",
+          "Texas",
+          "Utah",
+          "Vermont",
+          "Virginia",
+          "Washington",
+          "West Virginia",
+          "Wisconsin",
+          "Wyoming",
+          "Washington DC",
+          "American Samoa",
+          "Guam",
+          "Northern Mariana Islands",
+          "U.S. Virgin Islands"
+        ],
+        "provider": {
+          "@type": "MedicalOrganization",
+          "name": "The MAP: Cambridge Reproductive Health Consultants"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
           "@type": "Offer",
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 5.00, "maxPrice": 75.00, "priceCurrency": "USD" }
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 5.00,
+            "maxPrice": 75.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$5-$75" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "16+" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 16 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 11 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 11 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$5-$75"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "16+"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 16
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 11 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 11
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
@@ -295,31 +981,161 @@ template: |-
         "name": "We Take Care of Us",
         "identifier": "#We-Take-Care-of-Us",
         "serviceType": "US-based online clinics",
-        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "Guam", "Puerto Rico"],
-        "provider": { "@type": "MedicalOrganization", "name": "We Take Care of Us" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "Alabama",
+          "Alaska",
+          "Arizona",
+          "Arkansas",
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Florida",
+          "Georgia",
+          "Hawaii",
+          "Idaho",
+          "Illinois",
+          "Indiana",
+          "Iowa",
+          "Kansas",
+          "Kentucky",
+          "Louisiana",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Mississippi",
+          "Missouri",
+          "Montana",
+          "Nebraska",
+          "Nevada",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "North Carolina",
+          "North Dakota",
+          "Ohio",
+          "Oklahoma",
+          "Oregon",
+          "Pennsylvania",
+          "Rhode Island",
+          "South Carolina",
+          "South Dakota",
+          "Tennessee",
+          "Texas",
+          "Utah",
+          "Vermont",
+          "Virginia",
+          "Washington",
+          "West Virginia",
+          "Wisconsin",
+          "Wyoming",
+          "Washington DC",
+          "Guam",
+          "Puerto Rico"
+        ],
+        "provider": {
+          "@type": "MedicalOrganization",
+          "name": "We Take Care of Us"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
-          "@type": "Offer", 
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 125.00, "priceCurrency": "USD" }
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 0.00,
+            "maxPrice": 125.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$125 or less" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 13 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 13 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$125 or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "All"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 0
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 13 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 13
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
@@ -329,31 +1145,164 @@ template: |-
         "name": "Abortion Pills in Private",
         "identifier": "#Abortion-Pills-in-Private",
         "serviceType": "Other online clinics",
-        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "American Samoa", "Guam", "Northern Mariana Islands", "Puerto Rico", "U.S. Virgin Islands"],
-        "provider": { "@type": "Organization", "name": "Abortion Pills in Private" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "Alabama",
+          "Alaska",
+          "Arizona",
+          "Arkansas",
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Florida",
+          "Georgia",
+          "Hawaii",
+          "Idaho",
+          "Illinois",
+          "Indiana",
+          "Iowa",
+          "Kansas",
+          "Kentucky",
+          "Louisiana",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Mississippi",
+          "Missouri",
+          "Montana",
+          "Nebraska",
+          "Nevada",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "North Carolina",
+          "North Dakota",
+          "Ohio",
+          "Oklahoma",
+          "Oregon",
+          "Pennsylvania",
+          "Rhode Island",
+          "South Carolina",
+          "South Dakota",
+          "Tennessee",
+          "Texas",
+          "Utah",
+          "Vermont",
+          "Virginia",
+          "Washington",
+          "West Virginia",
+          "Wisconsin",
+          "Wyoming",
+          "Washington DC",
+          "American Samoa",
+          "Guam",
+          "Northern Mariana Islands",
+          "Puerto Rico",
+          "U.S. Virgin Islands"
+        ],
+        "provider": {
+          "@type": "Organization",
+          "name": "Abortion Pills in Private"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
-          "@type": "Offer", 
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 95.00, "maxPrice": 95.00, "priceCurrency": "USD" }
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 95.00,
+            "maxPrice": 95.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$95" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "16+" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 16 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 11 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 11 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": false },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$95"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "16+"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 16
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 11 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 11
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
@@ -363,31 +1312,127 @@ template: |-
         "name": "Juniper Midwifery",
         "identifier": "#Juniper-Midwifery",
         "serviceType": "US-based online clinics",
-        "areaServed": ["California", "Colorado", "Connecticut", "Delaware", "Hawaii", "Illinois", "Maine", "Maryland", "Massachusetts", "Minnesota", "New Hampshire", "New Jersey", "New Mexico", "New York", "Oregon", "Rhode Island", "Vermont", "Virginia", "Washington"],
-        "provider": { "@type": "MedicalOrganization", "name": "Juniper Midwifery" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Hawaii",
+          "Illinois",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Minnesota",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "Oregon",
+          "Rhode Island",
+          "Vermont",
+          "Virginia",
+          "Washington"
+        ],
+        "provider": {
+          "@type": "MedicalOrganization",
+          "name": "Juniper Midwifery"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
-          "@type": "Offer", 
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 100.00, "priceCurrency": "USD" }
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 0.00,
+            "maxPrice": 100.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$100 or less" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 11 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 11 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$100 or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "All"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 0
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 11 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 11
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
@@ -397,31 +1442,163 @@ template: |-
         "name": "Aid Access",
         "identifier": "#Aid-Access",
         "serviceType": "US-based online clinics",
-        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "American Samoa", "Guam", "Northern Mariana Islands", "U.S. Virgin Islands"],
-        "provider": { "@type": "MedicalOrganization", "name": "Aid Access" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "Alabama",
+          "Alaska",
+          "Arizona",
+          "Arkansas",
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Florida",
+          "Georgia",
+          "Hawaii",
+          "Idaho",
+          "Illinois",
+          "Indiana",
+          "Iowa",
+          "Kansas",
+          "Kentucky",
+          "Louisiana",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Mississippi",
+          "Missouri",
+          "Montana",
+          "Nebraska",
+          "Nevada",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "North Carolina",
+          "North Dakota",
+          "Ohio",
+          "Oklahoma",
+          "Oregon",
+          "Pennsylvania",
+          "Rhode Island",
+          "South Carolina",
+          "South Dakota",
+          "Tennessee",
+          "Texas",
+          "Utah",
+          "Vermont",
+          "Virginia",
+          "Washington",
+          "West Virginia",
+          "Wisconsin",
+          "Wyoming",
+          "Washington DC",
+          "American Samoa",
+          "Guam",
+          "Northern Mariana Islands",
+          "U.S. Virgin Islands"
+        ],
+        "provider": {
+          "@type": "MedicalOrganization",
+          "name": "Aid Access"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
-          "@type": "Offer", 
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 150.00, "priceCurrency": "USD" }
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 0.00,
+            "maxPrice": 150.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$150 or less" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 14 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 14 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$150 or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "All"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 0
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 14 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 14
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
@@ -431,65 +1608,324 @@ template: |-
         "name": "Choices Rising",
         "identifier": "#Choices-Rising",
         "serviceType": "US-based online clinics",
-        "areaServed": ["Alabama", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wyoming", "Washington DC", "American Samoa", "Guam", "Northern Mariana Islands", "U.S. Virgin Islands"],
-        "provider": { "@type": "MedicalOrganization", "name": "Choices Rising" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "Alabama",
+          "Arizona",
+          "Arkansas",
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Florida",
+          "Georgia",
+          "Hawaii",
+          "Idaho",
+          "Illinois",
+          "Indiana",
+          "Iowa",
+          "Kansas",
+          "Kentucky",
+          "Louisiana",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Mississippi",
+          "Missouri",
+          "Montana",
+          "Nebraska",
+          "Nevada",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "North Carolina",
+          "North Dakota",
+          "Ohio",
+          "Oklahoma",
+          "Oregon",
+          "Pennsylvania",
+          "Rhode Island",
+          "South Carolina",
+          "South Dakota",
+          "Tennessee",
+          "Texas",
+          "Utah",
+          "Vermont",
+          "Virginia",
+          "Washington",
+          "West Virginia",
+          "Wyoming",
+          "Washington DC",
+          "American Samoa",
+          "Guam",
+          "Northern Mariana Islands",
+          "U.S. Virgin Islands"
+        ],
+        "provider": {
+          "@type": "MedicalOrganization",
+          "name": "Choices Rising"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
-          "@type": "Offer", 
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 150.00, "priceCurrency": "USD" }
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 0.00,
+            "maxPrice": 150.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$0-$150" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "15+" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 15 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 12 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 12 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": true },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$0-$150"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "15+"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 15
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 12 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 12
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
         "@type": "Service",
         "@id": "https://www.plancpills.org/abortion-pill#A-Safe-Choice",
         "url": "https://asafechoicenetwork.com/",
-        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "Puerto Rico"],
+        "areaServed": [
+          "Alabama",
+          "Alaska",
+          "Arizona",
+          "Arkansas",
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Florida",
+          "Georgia",
+          "Hawaii",
+          "Idaho",
+          "Illinois",
+          "Indiana",
+          "Iowa",
+          "Kansas",
+          "Kentucky",
+          "Louisiana",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Mississippi",
+          "Missouri",
+          "Montana",
+          "Nebraska",
+          "Nevada",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "North Carolina",
+          "North Dakota",
+          "Ohio",
+          "Oklahoma",
+          "Oregon",
+          "Pennsylvania",
+          "Rhode Island",
+          "South Carolina",
+          "South Dakota",
+          "Tennessee",
+          "Texas",
+          "Utah",
+          "Vermont",
+          "Virginia",
+          "Washington",
+          "West Virginia",
+          "Wisconsin",
+          "Wyoming",
+          "Washington DC",
+          "Puerto Rico"
+        ],
         "identifier": "#A-Safe-Choice",
         "serviceType": "US-based online clinics",
         "name": "A Safe Choice",
-        "provider": { "@type": "MedicalOrganization", "name": "A Safe Choice" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "provider": {
+          "@type": "MedicalOrganization",
+          "name": "A Safe Choice"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
-          "@type": "Offer", 
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 150.00, "maxPrice": 150.00, "priceCurrency": "USD" }
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 150.00,
+            "maxPrice": 150.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$150" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 13 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 13 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": false },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$150"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "All"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 0
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 13 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 13
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
@@ -499,31 +1935,115 @@ template: |-
         "name": "Forward Midwifery",
         "identifier": "#Forward-Midwifery",
         "serviceType": "US-based online clinics",
-        "areaServed": ["California", "Colorado", "Maryland", "Massachusetts", "New Mexico", "Oregon", "Washington DC"],
-        "provider": { "@type": "MedicalOrganization", "name": "Forward Midwifery" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "California",
+          "Colorado",
+          "Maryland",
+          "Massachusetts",
+          "New Mexico",
+          "Oregon",
+          "Washington DC"
+        ],
+        "provider": {
+          "@type": "MedicalOrganization",
+          "name": "Forward Midwifery"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
-          "@type": "Offer", 
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 150.00, "maxPrice": 150.00, "priceCurrency": "USD" }
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 150.00,
+            "maxPrice": 150.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$150" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 12 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 12 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$150"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "All"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 0
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 12 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 12
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
@@ -533,31 +2053,133 @@ template: |-
         "name": "Abortion on Demand",
         "identifier": "#Abortion-on-Demand",
         "serviceType": "US-based online clinics",
-        "areaServed": ["California", "Colorado", "Connecticut", "Delaware", "Hawaii", "Illinois", "Kansas", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Montana", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "Ohio", "Oregon", "Pennsylvania", "Rhode Island", "Vermont", "Virginia", "Washington"],
-        "provider": { "@type": "MedicalOrganization", "name": "Abortion on Demand" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Hawaii",
+          "Illinois",
+          "Kansas",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Montana",
+          "Nevada",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "Ohio",
+          "Oregon",
+          "Pennsylvania",
+          "Rhode Island",
+          "Vermont",
+          "Virginia",
+          "Washington"
+        ],
+        "provider": {
+          "@type": "MedicalOrganization",
+          "name": "Abortion on Demand"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
-          "@type": "Offer", 
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 389.00, "priceCurrency": "USD" }
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 0.00,
+            "maxPrice": 389.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$389 or less" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "18+" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 18 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 10 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 10 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": false },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$389 or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "18+"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 18
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 10 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 10
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
@@ -567,31 +2189,128 @@ template: |-
         "name": "Carafem",
         "identifier": "#Carafem",
         "serviceType": "US-based online clinics",
-        "areaServed": ["Colorado", "Connecticut", "Delaware", "Illinois", "Iowa", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Nevada", "New Jersey", "New Mexico", "New York", "Ohio", "Oregon", "Rhode Island", "Vermont", "Virginia", "Washington DC"],
-        "provider": { "@type": "MedicalOrganization", "name": "Carafem" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "areaServed": [
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Illinois",
+          "Iowa",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Nevada",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "Ohio",
+          "Oregon",
+          "Rhode Island",
+          "Vermont",
+          "Virginia",
+          "Washington DC"
+        ],
+        "provider": {
+          "@type": "MedicalOrganization",
+          "name": "Carafem"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
           "@type": "Offer",
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 399.00, "priceCurrency": "USD" }
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 0.00,
+            "maxPrice": 399.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$0-$399" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 12 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 12 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": true },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$0-$399"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "All"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 0
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 12 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 12
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       },
       {
@@ -601,31 +2320,131 @@ template: |-
         "name": "Hey Jane",
         "identifier": "#Hey-Jane",
         "serviceType": "US-based online clinics",
-        "areaServed": ["California", "Colorado", "Connecticut", "Delaware", "Hawaii", "Illinois", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "Ohio", "Oregon", "Rhode Island", "Vermont", "Virginia", "Washington", "Washington DC"],
-        "provider": { "@type": "MedicalOrganization", "name": "Hey Jane" },
-        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
-        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },      
+        "areaServed": [
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Hawaii",
+          "Illinois",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Nevada",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "Ohio",
+          "Oregon",
+          "Rhode Island",
+          "Vermont",
+          "Virginia",
+          "Washington",
+          "Washington DC"
+        ],
+        "provider": {
+          "@type": "MedicalOrganization",
+          "name": "Hey Jane"
+        },
+        "availableChannel": {
+          "@id": "https://www.plancpills.org/abortion-pill#Online"
+        },
+        "serviceOutput": {
+          "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+        },
         "offers": {
           "@type": "Offer",
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 499.00, "priceCurrency": "USD" }
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 0.00,
+            "maxPrice": 499.00,
+            "priceCurrency": "USD"
+          }
         },
         "additionalProperty": [
-          { "@type": "PropertyValue", "name": "price_display", "value": "$0-$499" },
-          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
-          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
-          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
-          { "@type": "PropertyValue", "name": "ages_display", "value": "18+" },
-          { "@type": "PropertyValue", "name": "ages_min", "value": 18 },
-          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 10 weeks" },
-          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 10 },
-          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
-          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
-          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
-          { "@type": "PropertyValue", "name": "insurance_accepted", "value": true },
-          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
-          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
-          { "@type": "PropertyValue", "name": "peer_support", "value": false },
-          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+          {
+            "@type": "PropertyValue",
+            "name": "price_display",
+            "value": "$0-$499"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_display",
+            "value": "7 days or less"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_min",
+            "value": 1
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "delivery_max",
+            "value": 7
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_display",
+            "value": "18+"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "ages_min",
+            "value": 18
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_display",
+            "value": "For pregnancies up to 10 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "availability_weeks_max",
+            "value": 10
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_by_mail",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "abortion_pills_in_advance",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "financial_aid",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "insurance_accepted",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "online_intake_form",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "video_visit_available",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "peer_support",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "medical_support",
+            "value": true
+          }
         ]
       }
     ]
