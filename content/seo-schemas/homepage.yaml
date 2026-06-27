@@ -199,4 +199,5 @@ template: |-
       }
     ]
   }
-es: {}
+es:
+  omit: true
