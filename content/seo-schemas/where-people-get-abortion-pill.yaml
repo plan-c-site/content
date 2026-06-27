@@ -1,146 +1,633 @@
 title: Where people get abortion pill
-template: >-
-  {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage","url":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill","name":"Plan
-  C Abortion Pill Finder | Where People Get Pills Online","description":"Explore
-  Plan C’s research on where people order abortion pills online. Find
-  state-by-state options, online clinics, and programs with free abortion
-  pills.","inLanguage":"en-US","isPartOf":"https://www.plancpills.org/","publisher":{"@type":"Organization","@id":"https://www.plancpills.org/#organization","url":"https://www.plancpills.org/","name":"Plan
-  C"},"mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#AccessMA"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Dash"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Women-on-Web"}},{"@type":"ListItem","position":4,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Abuzz"}},{"@type":"ListItem","position":5,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#The-MAP"}},{"@type":"ListItem","position":6,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#We-Take-Care-of-Us"}},{"@type":"ListItem","position":7,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Websites-that-Sell-Pills"}},{"@type":"ListItem","position":8,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Abortion-Pills-in-Private"}},{"@type":"ListItem","position":9,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Juniper-Midwifery"}},{"@type":"ListItem","position":10,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#MYAbortion-Network"}},{"@type":"ListItem","position":11,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Aid-Access"}},{"@type":"ListItem","position":12,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Choices-Rising"}},{"@type":"ListItem","position":13,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#A-Safe-Choice"}},{"@type":"ListItem","position":14,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Forward-Midwifery"}},{"@type":"ListItem","position":15,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Maitri-Wellness"}},{"@type":"ListItem","position":16,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Abortion-Telemedicine"}},{"@type":"ListItem","position":17,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Abortion-on-Demand"}},{"@type":"ListItem","position":18,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Carafem"}},{"@type":"ListItem","position":19,"item":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Hey-Jane"}}]}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#AccessMA","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"AccessMA","description":"States
-  that they are an information resource that provides support to pregnant people
-  looking for abortion pills. All services are free for people in need. No
-  medical consultation provided, no prescription
-  needed.","areaServed":["CA","CO","CT","DE","HI","KS","IL","ME","MD","MA","MI","MN","MT","NV","NH","NJ","NM","NY","OH","OR","PA","RI","VT","VA","WA"],"provider":{"@type":"NGO","name":"AccessMA"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":0,"priceSpecification":{"@type":"PriceSpecification","minPrice":0,"maxPrice":0,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Dash","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"DASH","description":"Volunteer
-  network providing no-cost abortion pills and support; no prescription, no
-  medical consultation
-  required.","areaServed":["FL","TX","PR"],"provider":{"@type":"NGO","name":"DASH"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":0,"priceSpecification":{"@type":"PriceSpecification","minPrice":0,"maxPrice":0,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Women-on-Web","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Women
-  on Web","description":"Online abortion service and Canadian non-profit open in
-  all US states, with multilingual
-  support.","areaServed":"Nationwide","provider":{"@type":"MedicalOrganization","name":"Women
-  on
-  Web"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es","pt"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":120,"priceSpecification":{"@type":"PriceSpecification","minPrice":0,"maxPrice":120,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Abuzz","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Abuzz","description":"Connects
-  people to abortion pills by mail from US clinicians; no appointment
-  necessary.","areaServed":["AL","AK","AZ","AR","CA","CO","CT","DE","FL","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","UT","VT","VA","WA","WV","WI","WY","DC"],"provider":{"@type":"MedicalOrganization","name":"Abuzz"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":150,"priceSpecification":{"@type":"PriceSpecification","minPrice":0,"maxPrice":150,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#The-MAP","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"The
-  MAP: Cambridge Reproductive Health
-  Consultants","description":"Massachusetts-based non-profit providing
-  asynchronous telemedicine for abortion pills across the
-  US.","areaServed":"Nationwide","provider":{"@type":"MedicalOrganization","name":"The
-  MAP: Cambridge Reproductive Health
-  Consultants"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":150,"priceSpecification":{"@type":"PriceSpecification","minPrice":5,"maxPrice":150,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#We-Take-Care-of-Us","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Community
-  Supported Abortion, by We Take Care of Us","description":"Pay-what-you-can
-  telemedicine abortion with 24/7 secure messaging; solidarity-based
-  accompaniment.","areaServed":"Nationwide","provider":{"@type":"MedicalOrganization","name":"We
-  Take Care of
-  Us"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":300,"priceSpecification":{"@type":"PriceSpecification","minPrice":5,"maxPrice":300,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Websites-that-Sell-Pills","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Websites
-  Where People Buy Abortion Pills","description":"E-commerce sellers of generic
-  abortion pills; no prescription or medical
-  support.","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Multiple
-  independent e-commerce
-  vendors"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":93,"priceSpecification":{"@type":"PriceSpecification","minPrice":93,"maxPrice":117,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Abortion-Pills-in-Private","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Abortion
-  Pills in Private","description":"Medically-supported online abortion care;
-  BIPOC-owned; live chat
-  support.","areaServed":"Nationwide","provider":{"@type":"MedicalOrganization","name":"Abortion
-  Pills in
-  Private"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":95,"priceSpecification":{"@type":"PriceSpecification","minPrice":95,"maxPrice":95,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Juniper-Midwifery","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Juniper
-  Midwifery","description":"Telemedicine medication abortion practice founded by
-  midwives; affordable, convenient
-  care.","areaServed":["CA","CO","CT","DE","HI","IL","ME","MD","MA","MN","NH","NJ","NM","NY","OR","RI","VT","VA","WA"],"provider":{"@type":"MedicalOrganization","name":"Juniper
-  Midwifery"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":100,"priceSpecification":{"@type":"PriceSpecification","minPrice":100,"maxPrice":100,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#MYAbortion-Network","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"MYA
-  Network","description":"Primary care clinicians offering private, personalized
-  early abortion with pills at
-  home.","areaServed":["CA","CO","CT","DE","IL","ME","MD","MA","MN","NJ","NM","NY","RI","VT","VA","WA"],"provider":{"@type":"MedicalOrganization","name":"MYA
-  Network"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":95,"priceSpecification":{"@type":"PriceSpecification","minPrice":100,"maxPrice":295,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Aid-Access","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Aid
-  Access","description":"Clinician-supported online abortion service mailing
-  FDA-approved pills to all
-  states.","areaServed":"Nationwide","provider":{"@type":"MedicalOrganization","name":"Aid
-  Access"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":150,"priceSpecification":{"@type":"PriceSpecification","minPrice":150,"maxPrice":150,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Choices-Rising","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Choices
-  Rising","description":"FDA-approved abortion pill access with licensed
-  physicians; free
-  shipping.","areaServed":"Nationwide","provider":{"@type":"MedicalOrganization","name":"Choices
-  Rising"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":150,"priceSpecification":{"@type":"PriceSpecification","minPrice":150,"maxPrice":150,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#A-Safe-Choice","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"A
-  Safe Choice","description":"Medication abortions at home with support via
-  secure messaging; phone consults
-  available.","areaServed":"Nationwide","provider":{"@type":"MedicalOrganization","name":"A
-  Safe
-  Choice"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":150,"priceSpecification":{"@type":"PriceSpecification","minPrice":150,"maxPrice":150,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Forward-Midwifery","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Forward
-  Midwifery","description":"Telehealth clinic; abortions up to 84 days LMP;
-  text/phone support; sliding
-  fee.","areaServed":["CA","CO","CT","DE","IL","ME","MD","MA","MN","NJ","NM","NY","RI","VT","VA","WA"],"provider":{"@type":"MedicalOrganization","name":"Forward
-  Midwifery"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":150,"priceSpecification":{"@type":"PriceSpecification","minPrice":150,"maxPrice":150,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Maitri-Wellness","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Maitri
-  Wellness","description":"Telemedicine abortions by form or virtual visit;
-  privacy emphasized; sliding
-  scale.","areaServed":["CA","CO","MD","MA","NM","OR","DC"],"provider":{"@type":"MedicalOrganization","name":"Maitri
-  Wellness"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es","hi"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":150,"priceSpecification":{"@type":"PriceSpecification","minPrice":150,"maxPrice":150,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Abortion-Telemedicine","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"199
-  Abortion Telemedicine","description":"Telemedicine abortion service with
-  private, secure video visit; ships to select
-  states.","areaServed":["CO","CT","IL","ME","MD","MI","MN","NJ","NY","WA"],"provider":{"@type":"MedicalOrganization","name":"199
-  Abortion
-  Telemedicine"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":199,"priceSpecification":{"@type":"PriceSpecification","minPrice":199,"maxPrice":199,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Abortion-on-Demand","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Abortion
-  on Demand","description":"Virtual visits for adults ≤10 weeks; overnight
-  shipping; profits support later-gestation
-  access.","areaServed":["CO","CT","DE","IL","IA","ME","MD","MA","MI","MN","NV","NJ","NM","NY","OH","OR","RI","VT","VA","DC"],"provider":{"@type":"MedicalOrganization","name":"Abortion
-  on
-  Demand"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":389,"priceSpecification":{"@type":"PriceSpecification","minPrice":0,"maxPrice":389,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Carafem","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Carafem","description":"Abortion
-  pills online with medical support and check-ins; immediate eval or video
-  visit.","areaServed":["CA","CO","CT","DE","HI","IL","ME","MD","MA","MN","MI","NH","NJ","NM","NY","NV","OH","OR","RI","VT","VA","WA","DC"],"provider":{"@type":"MedicalOrganization","name":"Carafem"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en","es"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":399,"priceSpecification":{"@type":"PriceSpecification","minPrice":0,"maxPrice":399,"priceCurrency":"USD"}}}},{"@type":"Service","@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#Hey-Jane","mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pills/where-people-get-abortion-pill#webpage"},"name":"Hey
-  Jane","description":"Virtual clinic with FDA-approved pills, ongoing medical
-  and emotional support; some insurance
-  plans.","areaServed":["CA","CO","CT","DE","HI","IL","ME","MD","MA","MT","NJ","NM","NY","OR","RI","VT","VA","WA","DC"],"provider":{"@type":"MedicalOrganization","name":"Hey
-  Jane"},"availableChannel":{"@type":"ServiceChannel","name":"Online","availableLanguage":["en"]},"serviceOutput":{"@type":"Drug","name":"Abortion
-  pills","activeIngredient":["Mifepristone","Misoprostol"],"isAvailableGenerically":true,"alternateName":["abortion
-  pill","medication
-  abortion","mifeprex","cytotec"],"offers":{"@type":"Offer","priceCurrency":"USD","price":409,"priceSpecification":{"@type":"PriceSpecification","minPrice":199,"maxPrice":409,"priceCurrency":"USD"}}}}]}
+template: |-
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.plancpills.org/abortion-pill#webpage",
+        "url": "https://www.plancpills.org/abortion-pill",
+        "name": "Plan C Abortion Pill Finder | Where People Get Pills Online",
+        "description": "Explore Plan C's research on where people order abortion pills online. Find state-by-state options, online clinics, and programs with free abortion pills.",
+        "inLanguage": "en-US",
+        "isPartOf": "https://www.plancpills.org/",
+        "mainEntity": {"@id": "https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList"},
+        "about": [
+          {"@id":"https://www.plancpills.org/abortion-pill#AbortionPills"},
+          {"@id":"https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList"}
+        ],
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.plancpills.org/abortion-pill"
+            }
+          },
+          {"@id": "https://www.plancpills.org/abortion-pill#FindProviderAction"}
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://www.plancpills.org/#organization",
+          "url": "https://www.plancpills.org/",
+          "name": "Plan C"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "https://www.plancpills.org/abortion-pill#primaryimage",
+          "contentUrl": "https://www.plancpills.org/cached/Infographic-Ways-people-get-an-abortion-pill.png",
+          "name": "Where people get an abortion pill",
+          "description": "Infographic explaining where people get abortion pills online in every US state",
+          "width": 800,
+          "height": 1515,
+          "caption": "Ways people get an abortion pill",
+          "license": "https://www.plancpills.org/privacy-terms",
+          "acquireLicensePage": "https://www.plancpills.org/privacy-terms",
+          "copyrightNotice": "© 2026 Plan C",
+          "creditText": "© 2026 Plan C",
+          "creator": { "@id": "https://www.plancpills.org/#organization" }
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.plancpills.org/abortion-pill#breadcrumb",
+          "name": "breadcrumb: Where people get abortion pills online",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "item": "https://www.plancpills.org/", "name": "Home" },
+            { "@type": "ListItem", "position": 2, "item": "https://www.plancpills.org/abortion-pill", "name": "Where people get abortion pills online" }
+          ]
+        }
+      },
+      {
+          "@type": "ItemList",
+          "@id": "https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList",
+          "numberOfItems": 15,
+          "name":"Online abortion pill provider directory",
+          "description": "A directory of online provider services that offer abortion pills by mail in the United States.",
+          "mainEntityOfPage":{"@id":"https://www.plancpills.org/abortion-pill#webpage"},
+          "subjectOf":{"@id":"https://www.plancpills.org/abortion-pill#webpage"},
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "item": { "@id": "https://www.plancpills.org/abortion-pill#The-MAP" } },
+            { "@type": "ListItem", "position": 2, "item": { "@id": "https://www.plancpills.org/abortion-pill#We-Take-Care-of-Us" } },
+            { "@type": "ListItem", "position": 3, "item": { "@id": "https://www.plancpills.org/abortion-pill#Abuzz" } },
+            { "@type": "ListItem", "position": 4, "item": { "@id": "https://www.plancpills.org/abortion-pill#Aid-Access" } },
+            { "@type": "ListItem", "position": 5, "item": { "@id": "https://www.plancpills.org/abortion-pill#AccessMA" } },
+            { "@type": "ListItem", "position": 6, "item": { "@id": "https://www.plancpills.org/abortion-pill#A-Safe-Choice" } },
+            { "@type": "ListItem", "position": 7, "item": { "@id": "https://www.plancpills.org/abortion-pill#Choices-Rising" } },
+            { "@type": "ListItem", "position": 8, "item": { "@id": "https://www.plancpills.org/abortion-pill#Dash" } },
+            { "@type": "ListItem", "position": 9, "item": { "@id": "https://www.plancpills.org/abortion-pill#Women-on-Web" } },
+            { "@type": "ListItem", "position": 10, "item": { "@id": "https://www.plancpills.org/abortion-pill#Abortion-Pills-in-Private" } },
+            { "@type": "ListItem", "position": 11, "item": { "@id": "https://www.plancpills.org/abortion-pill#Juniper-Midwifery" } },
+            { "@type": "ListItem", "position": 12, "item": { "@id": "https://www.plancpills.org/abortion-pill#Forward-Midwifery" } },
+            { "@type": "ListItem", "position": 13, "item": { "@id": "https://www.plancpills.org/abortion-pill#Abortion-on-Demand" } },
+            { "@type": "ListItem", "position": 14, "item": { "@id": "https://www.plancpills.org/abortion-pill#Carafem" } },
+            { "@type": "ListItem", "position": 15, "item": { "@id": "https://www.plancpills.org/abortion-pill#Hey-Jane" } }
+          ]
+      },
+      {
+        "@type": "Drug",
+        "@id": "https://www.plancpills.org/abortion-pill#AbortionPills",
+        "name": "Abortion pills",
+        "activeIngredient": ["Mifepristone","Misoprostol"],
+        "isAvailableGenerically": true,
+        "alternateName": ["abortion pill","medication abortion", "mtp kit"],
+        "offers": {
+          "@type": "AggregateOffer",
+          "lowPrice": 0.00,
+          "highPrice": 499.00,
+          "priceCurrency": "USD",
+          "itemOffered": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+          "availability": "https://schema.org/InStock"
+          }
+       },
+  {
+    "@type": "DiscoverAction",
+    "@id": "https://www.plancpills.org/abortion-pill#FindProviderAction",
+    "name": "Find an online provider that offers abortion pills by mail",
+    "description": "People use this online guide to discover providers that offer abortion pill services by mail.",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.plancpills.org/abortion-pill"
+    },
+    "instrument": {
+      "@id": "https://www.plancpills.org/abortion-pill#webpage"
+    },
+    "object": {
+      "@id": "https://www.plancpills.org/abortion-pill#OnlineAbortionPillProviderList"
+    },
+    "result": {
+      "@id": "https://www.plancpills.org/abortion-pill#AbortionPills"
+    }
+  },
+      {
+        "@type":"ServiceChannel",
+        "@id":"https://www.plancpills.org/abortion-pill#Online",
+        "name":"Online"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#AccessMA",
+        "url": "https://www.redstateaccess.com/",
+        "name": "AccessMA",
+        "identifier": "#AccessMA",
+        "serviceType": "Community Network",
+        "areaServed": ["Alabama", "Florida", "Georgia", "Iowa", "Kansas", "Louisiana", "Mississippi", "Missouri", "New Hampshire", "North Carolina", "South Carolina", "Texas", "Wisconsin", "American Samoa", "Guam", "Northern Mariana Islands", "U.S. Virgin Islands"],
+        "provider": {"@type": "NGO", "name": "AccessMA"},
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer",
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 0.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$0" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "All" },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": false },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
+          { "@type": "PropertyValue", "name": "peer_support", "value": true },
+          { "@type": "PropertyValue", "name": "medical_support", "value": false }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#Dash",
+        "url": "https://www.plancpills.org/dash",
+        "name": "DASH",
+        "identifier": "#Dash",
+        "serviceType": "Community Network",
+        "areaServed": ["Arkansas", "Florida", "Idaho", "Indiana", "Iowa", "Kentucky", "Mississippi", "Missouri", "Oklahoma", "Puerto Rico", "South Carolina", "Tennessee", "Texas", "West Virginia"],
+        "provider": { "@type": "NGO", "name": "DASH" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer",
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 0.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$0" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7-14 days" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 7 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 14 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "All" },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": false },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
+          { "@type": "PropertyValue", "name": "peer_support", "value": true },
+          { "@type": "PropertyValue", "name": "medical_support", "value": false }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#Women-on-Web",
+        "url": "https://www.womenonweb.org/en/order-abortion-pill-online/usa",
+        "name": "Women on Web",
+        "identifier": "#Women-on-Web",
+        "serviceType": "Other online clinics",
+        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "Puerto Rico", "American Samoa", "Guam", "Northern Mariana Islands", "U.S. Virgin Islands"],
+        "provider": { "@type": "Organization", "name": "Women on Web" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer",
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 120.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$120 or less" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 13 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 13 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#Abuzz",
+        "url": "https://www.abuzzhealth.com/",
+        "name": "Abuzz",
+        "identifier": "#Abuzz",
+        "serviceType": "US-based online clinics",
+        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "Guam", "Northern Mariana Islands", "Puerto Rico", "U.S. Virgin Islands"],
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer",  
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 145.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$0-$145" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "16+" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 16 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 13 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 13 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#The-MAP",
+        "url": "https://www.cambridgereproductivehealthconsultants.org/map",
+        "name": "The MAP: Cambridge Reproductive Health Consultants",
+        "identifier": "#The-MAP",
+        "serviceType": "US-based online clinics",
+        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "American Samoa", "Guam", "Northern Mariana Islands", "U.S. Virgin Islands"],
+        "provider": { "@type": "MedicalOrganization", "name": "The MAP: Cambridge Reproductive Health Consultants" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer",
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 5.00, "maxPrice": 75.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$5-$75" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "16+" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 16 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 11 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 11 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#We-Take-Care-of-Us",
+        "url": "https://www.wetakecareof.us/",
+        "name": "We Take Care of Us",
+        "identifier": "#We-Take-Care-of-Us",
+        "serviceType": "US-based online clinics",
+        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "Guam", "Puerto Rico"],
+        "provider": { "@type": "MedicalOrganization", "name": "We Take Care of Us" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer", 
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 125.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$125 or less" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 13 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 13 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#Abortion-Pills-in-Private",
+        "url": "https://www.abortionpillsinprivate.com/",
+        "name": "Abortion Pills in Private",
+        "identifier": "#Abortion-Pills-in-Private",
+        "serviceType": "Other online clinics",
+        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "American Samoa", "Guam", "Northern Mariana Islands", "Puerto Rico", "U.S. Virgin Islands"],
+        "provider": { "@type": "Organization", "name": "Abortion Pills in Private" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer", 
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 95.00, "maxPrice": 95.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$95" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "16+" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 16 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 11 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 11 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": false },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#Juniper-Midwifery",
+        "url": "https://junipermidwifery.com/",
+        "name": "Juniper Midwifery",
+        "identifier": "#Juniper-Midwifery",
+        "serviceType": "US-based online clinics",
+        "areaServed": ["California", "Colorado", "Connecticut", "Delaware", "Hawaii", "Illinois", "Maine", "Maryland", "Massachusetts", "Minnesota", "New Hampshire", "New Jersey", "New Mexico", "New York", "Oregon", "Rhode Island", "Vermont", "Virginia", "Washington"],
+        "provider": { "@type": "MedicalOrganization", "name": "Juniper Midwifery" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer", 
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 100.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$100 or less" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 11 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 11 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#Aid-Access",
+        "url": "https://aidaccess.org/en/i-need-an-abortion",
+        "name": "Aid Access",
+        "identifier": "#Aid-Access",
+        "serviceType": "US-based online clinics",
+        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "American Samoa", "Guam", "Northern Mariana Islands", "U.S. Virgin Islands"],
+        "provider": { "@type": "MedicalOrganization", "name": "Aid Access" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer", 
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 150.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$150 or less" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 14 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 14 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": false },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#Choices-Rising",
+        "url": "https://choicesrising.com/",
+        "name": "Choices Rising",
+        "identifier": "#Choices-Rising",
+        "serviceType": "US-based online clinics",
+        "areaServed": ["Alabama", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wyoming", "Washington DC", "American Samoa", "Guam", "Northern Mariana Islands", "U.S. Virgin Islands"],
+        "provider": { "@type": "MedicalOrganization", "name": "Choices Rising" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer", 
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 150.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$0-$150" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "15+" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 15 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 12 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 12 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": true },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#A-Safe-Choice",
+        "url": "https://asafechoicenetwork.com/",
+        "areaServed": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "Washington DC", "Puerto Rico"],
+        "identifier": "#A-Safe-Choice",
+        "serviceType": "US-based online clinics",
+        "name": "A Safe Choice",
+        "provider": { "@type": "MedicalOrganization", "name": "A Safe Choice" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer", 
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 150.00, "maxPrice": 150.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$150" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 13 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 13 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": false },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#Forward-Midwifery",
+        "url": "https://www.forwardmidwifery.org/",
+        "name": "Forward Midwifery",
+        "identifier": "#Forward-Midwifery",
+        "serviceType": "US-based online clinics",
+        "areaServed": ["California", "Colorado", "Maryland", "Massachusetts", "New Mexico", "Oregon", "Washington DC"],
+        "provider": { "@type": "MedicalOrganization", "name": "Forward Midwifery" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer", 
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 150.00, "maxPrice": 150.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$150" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 12 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 12 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#Abortion-on-Demand",
+        "url": "https://abortionondemand.org/",
+        "name": "Abortion on Demand",
+        "identifier": "#Abortion-on-Demand",
+        "serviceType": "US-based online clinics",
+        "areaServed": ["California", "Colorado", "Connecticut", "Delaware", "Hawaii", "Illinois", "Kansas", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Montana", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "Ohio", "Oregon", "Pennsylvania", "Rhode Island", "Vermont", "Virginia", "Washington"],
+        "provider": { "@type": "MedicalOrganization", "name": "Abortion on Demand" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer", 
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 389.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$389 or less" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "18+" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 18 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 10 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 10 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": false },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": false },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#Carafem",
+        "url": "https://carafem.org/",
+        "name": "Carafem",
+        "identifier": "#Carafem",
+        "serviceType": "US-based online clinics",
+        "areaServed": ["Colorado", "Connecticut", "Delaware", "Illinois", "Iowa", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Nevada", "New Jersey", "New Mexico", "New York", "Ohio", "Oregon", "Rhode Island", "Vermont", "Virginia", "Washington DC"],
+        "provider": { "@type": "MedicalOrganization", "name": "Carafem" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },
+        "offers": {
+          "@type": "Offer",
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 399.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$0-$399" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "All" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 0 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 12 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 12 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": true },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": true },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.plancpills.org/abortion-pill#Hey-Jane",
+        "url": "https://www.heyjane.com/",
+        "name": "Hey Jane",
+        "identifier": "#Hey-Jane",
+        "serviceType": "US-based online clinics",
+        "areaServed": ["California", "Colorado", "Connecticut", "Delaware", "Hawaii", "Illinois", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "Ohio", "Oregon", "Rhode Island", "Vermont", "Virginia", "Washington", "Washington DC"],
+        "provider": { "@type": "MedicalOrganization", "name": "Hey Jane" },
+        "availableChannel":{"@id":"https://www.plancpills.org/abortion-pill#Online"},
+        "serviceOutput": { "@id": "https://www.plancpills.org/abortion-pill#AbortionPills" },      
+        "offers": {
+          "@type": "Offer",
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": 0.00, "maxPrice": 499.00, "priceCurrency": "USD" }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "price_display", "value": "$0-$499" },
+          { "@type": "PropertyValue", "name": "delivery_display", "value": "7 days or less" },
+          { "@type": "PropertyValue", "name": "delivery_min", "value": 1 },
+          { "@type": "PropertyValue", "name": "delivery_max", "value": 7 },
+          { "@type": "PropertyValue", "name": "ages_display", "value": "18+" },
+          { "@type": "PropertyValue", "name": "ages_min", "value": 18 },
+          { "@type": "PropertyValue", "name": "availability_weeks_display", "value": "For pregnancies up to 10 weeks" },
+          { "@type": "PropertyValue", "name": "availability_weeks_max", "value": 10 },
+          { "@type": "PropertyValue", "name": "abortion_pills_by_mail", "value": true },
+          { "@type": "PropertyValue", "name": "abortion_pills_in_advance", "value": false },
+          { "@type": "PropertyValue", "name": "financial_aid", "value": true },
+          { "@type": "PropertyValue", "name": "insurance_accepted", "value": true },
+          { "@type": "PropertyValue", "name": "online_intake_form", "value": true },
+          { "@type": "PropertyValue", "name": "video_visit_available", "value": true },
+          { "@type": "PropertyValue", "name": "peer_support", "value": false },
+          { "@type": "PropertyValue", "name": "medical_support", "value": true }
+        ]
+      }
+    ]
+  }
 es: {}
