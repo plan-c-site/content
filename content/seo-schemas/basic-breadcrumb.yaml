@@ -19,7 +19,7 @@ template: |-
             "@type": "ListItem",
             "position": 2,
             "item": "{{ pageUrl }}",
-            "name": "{{ pageName }}"
+            "name": "{{ pageTitle }}"
           }
         ]
       }
