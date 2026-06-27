@@ -2488,6 +2488,26 @@ es:
             "creditText": "© 2026 Plan C",
             "creator": { "@id": "https://www.plancpills.org/#organization" }
           }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "{{ pageUrl }}#breadcrumb",
+          "name": "Breadcrumb for {{ pageUrl }}",
+          "isPartOf": { "@id": "{{ pageUrl }}#webpage" },
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": "{{ site.url }}",
+              "name": "Home"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": "{{ pageUrl }}",
+              "name": "{{ pageTitle }}"
+            }
+          ]
         }
       ]
     }
