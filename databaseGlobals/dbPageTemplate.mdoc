@@ -122,6 +122,7 @@ In-person abortion clinics usually offer both abortion pills and abortion proced
 {% faqList
    faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills"]
    color="beige"
+   bottomBorder=false
    anchor=true
    _language="" /%}
 
@@ -129,6 +130,7 @@ In-person abortion clinics usually offer both abortion pills and abortion proced
    faqs=["can-people-buy-abortion-pills-in-advance-to-use-later"]
    color="beige"
    appendStateField="Template FAQs"
+   bottomBorder=false
    anchor=false
    _language="" /%}
 
@@ -136,6 +138,7 @@ In-person abortion clinics usually offer both abortion pills and abortion proced
    faqs=[]
    color="beige"
    appendStateField="Additional FAQs"
+   bottomBorder=false
    anchor=false
    _language="" /%}
 
@@ -189,9 +192,11 @@ In-person abortion clinics usually offer both abortion pills and abortion proced
 {% /flexSection %}
 {% /horizontalSplit %}
 
-{% faqList
-   faqs=["abortion-pill-provider-comparison-table"]
+{% faqSection
+   faq="abortion-pill-provider-comparison-table"
    color="beige"
+   embedded=false
+   bottomBorder=true
    anchor=false
    _language="" /%}
 
