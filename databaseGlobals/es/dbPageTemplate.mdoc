@@ -48,11 +48,11 @@ Las clínicas de aborto presenciales suelen ofrecer tanto pastillas abortivas co
 {% /bodySection %}
 
 {% flexSection direction="flex-col" noWrap=false noInnerBorders=false grow=true gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
-{% faqList faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills"] color="beige" anchor=true _language="" /%}
+{% faqList faqs=["guide_how-do-people-choose-a-provider", "can-i-get-in-trouble-for-using-abortion-pills"] color="beige" bottomBorder=false anchor=true _language="" /%}
 
-{% faqList faqs=["can-people-buy-abortion-pills-in-advance-to-use-later"] color="beige" appendStateField="Template FAQs" anchor=false _language="" /%}
+{% faqList faqs=["can-people-buy-abortion-pills-in-advance-to-use-later"] color="beige" appendStateField="Template FAQs" bottomBorder=false anchor=false _language="" /%}
 
-{% faqList faqs=[] color="beige" appendStateField="Additional FAQs" anchor=false _language="" /%}
+{% faqList faqs=[] color="beige" appendStateField="Additional FAQs" bottomBorder=false anchor=false _language="" /%}
 
 {% narrowBanner icon="arrowRight" color="beige" iconAlign="items-center" fullWidth=true _language="" %}
 {% inlineLink action={discriminant: "internal", value: {page: "guide-how-to-get-abortion-pills"}} _language="" %}Ver todas las preguntas frecuentes{% /inlineLink %}
@@ -73,6 +73,8 @@ Las clínicas de aborto presenciales suelen ofrecer tanto pastillas abortivas co
 {% /narrowBanner %}
 {% /flexSection %}
 {% /horizontalSplit %}
+
+{% faqSection faq="abortion-pill-provider-comparison-table-dynamic" color="beige" embedded=false bottomBorder=true anchor=false _language="" /%}
 
 {% actionBanner title="¿Tiene comentarios sobre Plan C o un proveedor?" color="cyan" icon="" link={label: "Háganoslo saber", click: {discriminant: "internal", value: {page: "contact"}}} _language="" /%}
 
