@@ -31,4 +31,37 @@ template: |-
       }
     ]
   }
-es: {}
+es:
+  omit: false
+  template: |-
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "@id": "{{ pageUrl }}#breadcrumb",
+          "name": "Breadcrumb for {{ pageUrl }}",
+          "isPartOf": { "@id": "{{ pageUrl }}#webpage" },
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": "{{ site.url }}",
+              "name": "Inicio"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": "{{ site.url }}abortion-clinic",
+              "name": "Clínicas de aborto y proveedores en cada estado."
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": "{{ pageUrl }}",
+              "name": "{{ pageTitle }}"
+            }
+          ]
+        }
+      ]
+    }
