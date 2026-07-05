@@ -55,12 +55,13 @@ template: |-
           "caption": "{{ image.name }}",
           "license": "https://www.plancpills.org/privacy-terms",
           "acquireLicensePage": "https://www.plancpills.org/privacy-terms",
-          "copyrightNotice": "© 2025 Plan C",
-          "creditText": "© 2025 Plan C",
+          "copyrightNotice": "© 2026 Plan C",
+          "creditText": "© 2026 Plan C",
           "creator": { "@id": "https://www.plancpills.org/#organization" },
           "isPartOf": {"@id": "https://www.plancpills.org/abortion-clinic#webpage"}
         }
       }
     ]
   }
-es: {}
+es:
+  omit: false
