@@ -73,9 +73,9 @@ In-person abortion clinics usually offer both abortion pills and abortion proced
 {% /bodySection %}
 
 {% flexSection
-   direction="flex-row"
-   noWrap=true
-   noInnerBorders=false
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=true
    grow=false
    gap=2
    itemsAlign="items-stretch"
@@ -83,15 +83,7 @@ In-person abortion clinics usually offer both abortion pills and abortion proced
    _language="" %}
 {% resourceItem
    resource="i-need-an-a"
-   header={discriminant: "override"}
-   type={discriminant: "block", value: {icon: "", iconColor: "grey", buttonIconRight: false}}
-   overrideWebsite={discriminant: "state-db", value: {source: "I Need an A Link"}}
-   overrideAction={discriminant: false}
-   _language="" /%}
-
-{% resourceItem
-   resource="plan-c-clinic-listings"
-   header={discriminant: "none"}
+   header={discriminant: "override", value: "Find the nearest clinic"}
    type={discriminant: "block", value: {icon: "", iconColor: "grey", buttonIconRight: false}}
    overrideWebsite={discriminant: "state-db", value: {source: "I Need an A Link"}}
    overrideAction={discriminant: false}
