@@ -1,0 +1,24 @@
+title: Plan C Clinic Listings
+author: Find nearby clinics
+website: https://www.plancpills.org/abortion-clinic
+summary: Find clinics in or near %state% for in-person care options.
+buttonText: Visit website
+spanish: false
+resourceIcon: mapPin
+iconColor: green
+buttonIcon: ''
+buttonAction:
+  discriminant: ''
+buttonUrl:
+  discriminant: none
+es:
+  summary: >-
+    Un recurso completo y actualizado para personas que buscan servicios de
+    aborto en Estados Unidos.
+  __summary: 4AMWls12Wi8OvOG+dHnu0hnEb83WeLhQvinxGcjYv6s=
+  buttonText: Visitar el sitio web
+  __buttonText: Fb90cmxrQBdf8K+GmHofdZaxaELvJgF9w0rVabdJWpU=
+  author: I Need an A
+  __author: ZO7h3vnrVEZKJLAIDW1BNtRJVeXwtp/Davua+bgBbxU=
+  website: https://ineedana.com/es
+  __website: SClqdINagFMSOAwWimDQfxBK0tYLRvTvKun3Sylu4L0=
