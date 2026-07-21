@@ -8,4 +8,18 @@ Esta es una descripción general de todos los componentes que se pueden utilizar
 Este es el {% stateFieldText state="arizona" source="Template summary" _language="" %}resumen{% /stateFieldText %}
 {% /bodySection %}
 
+{% horizontalSplit noHeader=false _language="" %}
+{% bodySection centered=false width="default" color="black" textSize="medium" _language="" %}
+## Clínicas en persona
+
+Las clínicas de aborto presenciales suelen ofrecer tanto pastillas abortivas intervenciones de aborto. Para encontrar la clínica más cercana a ESTADO, utiliza esta herramienta de búsqueda.
+{% /bodySection %}
+
+{% flexSection direction="flex-row" noWrap=false noInnerBorders=false grow=false gap=2 itemsAlign="items-stretch" justiftContent="justify-stretch" _language="" %}
+{% resourceItem resource="i-need-an-a" header={discriminant: "override", value: "Encuentre la clínica más cercana"} type={discriminant: "block", value: {icon: "", iconColor: "grey", buttonIconRight: false}} overrideWebsite={discriminant: "state-db", value: {source: "I Need an A Link"}} overrideAction={discriminant: false} _language="" /%}
+
+{% resourceItem resource="i-need-an-a" header={discriminant: "override", value: "Encuentre la clínica más cercana"} type={discriminant: "block", value: {icon: "", iconColor: "grey", buttonIconRight: false}} overrideWebsite={discriminant: "state-db", value: {source: "I Need an A Link"}} overrideAction={discriminant: false} _language="" /%}
+{% /flexSection %}
+{% /horizontalSplit %}
+
 {% filteredListings color="beige" maxVisibleDefault=3 listings={discriminant: "list", value: ["6604", "6497", "6556"]} _language="" /%}
