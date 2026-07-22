@@ -1,10 +1,10 @@
 title: Plan C Clinic Listings
-author: Plan C Clinic Listings
+author: Plan C clinic listings
 website: https://www.plancpills.org/abortion-clinic
 summary: Find clinics in or near %Name% for in-person care options.
 buttonText: Visit website
 spanish: false
-resourceIcon: mapPin
+resourceIcon: search
 iconColor: green
 buttonIcon: ''
 buttonAction:
