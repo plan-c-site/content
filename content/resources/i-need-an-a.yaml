@@ -5,9 +5,12 @@ summary: >-
   A complete and up-to-date resource for people seeking abortion services in the
   US.
 buttonText: Visit website
-resourceIcon: mapPin
+spanish: false
+resourceIcon: search
 iconColor: green
 buttonIcon: ''
+buttonAction:
+  discriminant: ''
 buttonUrl:
   discriminant: none
 es:
