@@ -4,7 +4,7 @@ website: https://www.plancpills.org/abortion-clinic
 summary: Find clinics in or near %Name% for in-person care options.
 buttonText: Visit website
 spanish: false
-resourceIcon: search
+resourceIcon: mapPin
 iconColor: green
 buttonIcon: ''
 buttonAction:
