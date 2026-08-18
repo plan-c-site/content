@@ -526,6 +526,7 @@ const sectionTranslations: Record<string, TranslationKey[]> = {
       keys: [{ key: "label" }, ...clickEventTranslation("click")],
     },
   ],
+  cardLayoutSection: [{ key: "title" }],
   cardSection: [
     { key: "title" },
     { key: "label" },
