@@ -86,12 +86,22 @@ Make a monthly recurring gift or a one-time donation to Plan C through our fisca
    icon=""
    _language="" /%}
 
+{% flexSection
+   direction="flex-col"
+   noWrap=false
+   noInnerBorders=false
+   grow=false
+   gap=0
+   itemsAlign="items-stretch"
+   justiftContent="justify-stretch"
+   _language="" %}
 {% faqList
    faqs=["donate_give-by-check", "donate_give-via-donor-advised-fund-daf-or-other-online-giving-portal", "donate_give-by-ach-wire-or-stock-transfer", "donate_workplace-matching-gift", "donate_give-from-your-ira"]
    color="beige"
    bottomBorder=false
    anchor=false
    _language="" /%}
+{% /flexSection %}
 {% /horizontalSplit %}
 
 {% tocAnchor
