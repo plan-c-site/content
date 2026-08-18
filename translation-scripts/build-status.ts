@@ -3,6 +3,10 @@ import process from "node:process";
 const clientConfig = {
   auth: process.env.NOCODB_TOKEN || "",
   baseUrl: process.env.NOCODB_SERVER || "",
+  headers: {
+    "CF-Access-Client-Id": process.env.CF_ACCESS_CLIENT_ID || "",
+    "CF-Access-Client-Secret": process.env.CF_ACCESS_CLIENT_SECRET || "",
+  },
 };
 
 const Id = process.env.BUILD_CONTROLLER_ID;
@@ -37,7 +41,9 @@ async function triggerUpdate() {
 
   const r = await fetch(url, {
     method: "PATCH",
+    redirect: "manual",
     headers: {
+      ...clientConfig.headers,
       "xc-token": clientConfig.auth,
       "Content-Type": "application/json",
     },
@@ -48,12 +54,21 @@ async function triggerUpdate() {
       },
     ]),
   });
+  const responseText = await r.text();
+  if (!r.ok) {
+    throw new Error(
+      `Failed to update build status in NocoDB: HTTP ${r.status} ${r.statusText}`,
+    );
+  }
   console.log(
     "Done updating status in nocodb",
     `
     ${r.status}
-    ${await r.text()}`,
+    ${responseText}`,
   );
 }
 
-triggerUpdate();
+triggerUpdate().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
